@@ -1,5 +1,6 @@
 import base64
-import requests
+import os
+from openai import OpenAI
 
 def encode_image(image_path):
   with open(image_path, "rb") as image_file:
@@ -7,8 +8,11 @@ def encode_image(image_path):
 
 
 def evaluate_image_with_gpt(image_path, prompt, key):
-    url = "https://api.openai.com/v1/chat/completions"
-    api_key = key
+    api_key = key or os.getenv("ROUTERAI_API_KEY", "")
+    base_url = os.getenv("ROUTERAI_BASE_URL", "https://routerai.ru/api/v1")
+    if not api_key:
+        raise ValueError("Missing API key. Set ROUTERAI_API_KEY environment variable.")
+    client = OpenAI(api_key=api_key, base_url=base_url)
 
     # GPT PROMPT
 
@@ -69,38 +73,21 @@ Respond using this format:
     # Getting the base64 string
     base64_image = encode_image(image_path)
 
-    payload = {
-      "model": "gpt-4o-2024-05-13",
-      "messages": [
-        {
-          "role": "user",
-          "content": [
+    print("waiting for qwen/qwen3-vl-235b-a22b-thinking response")
+    response = client.chat.completions.create(
+        model="qwen/qwen3-vl-235b-a22b-thinking",
+        messages=[
             {
-              "type": "text",
-              "text": eval_prompt
-            },
-            {
-              "type": "image_url",
-              "image_url": {
-                "url": f"data:image/jpeg;base64,{base64_image}"
-              }
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": eval_prompt},
+                    {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}},
+                ],
             }
-          ]
-        }
-      ],
-      "max_tokens": 4096
-    }
-
-    headers = {
-      "Content-Type": "application/json",
-      "Authorization": f"Bearer {api_key}"
-    }
-
-    print('waiting for GPT-4 response')
-    response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
-    output=response.json()
-    
-    text=output['choices'][0]['message']['content']
+        ],
+        max_tokens=4096,
+    )
+    text = response.choices[0].message.content
     print(text)
     
     alignment_score = int(text.split("### ALIGNMENT SCORE:")[1].split("\n")[0].strip())

@@ -1,12 +1,10 @@
 
 import torch
 import numpy as np
-from diffusers import FluxPipeline
-from typing import Any, Callable, Dict, List, Optional, Union
-from diffusers.image_processor import PipelineImageInput
-from diffusers.pipelines.flux.pipeline_flux import calculate_shift, retrieve_timesteps
+from diffusers import Flux2KleinPipeline
+from typing import Any, Callable, Dict, List, Optional
+from diffusers.pipelines.flux2.pipeline_flux2_klein import compute_empirical_mu, retrieve_timesteps, Flux2PipelineOutput
 from diffusers.utils import is_torch_xla_available
-from diffusers.pipelines.flux.pipeline_output import FluxPipelineOutput
 
 if is_torch_xla_available():
     import torch_xla.core.xla_model as xm
@@ -49,138 +47,137 @@ def verify_SAP_prompts(prompts_list, switch_prompts_steps, num_inference_steps):
                     f"switch_prompts_steps is out of boundes. switch_prompts_steps: {switch_prompts_steps}"
                 )
 
-class SapFlux(FluxPipeline):
+class SapFlux(Flux2KleinPipeline):
     @torch.no_grad()
     def __call__(
         self,
-        batch_size: Optional[int] = 1,
-        sap_prompts = None,
-        prompt_2: Optional[Union[str, List[str]]] = None,
-        negative_prompt: Union[str, List[str]] = None,
-        negative_prompt_2: Optional[Union[str, List[str]]] = None,
-        true_cfg_scale: float = 1.0,
+        image=None,
+        sap_prompts=None,
         height: Optional[int] = None,
         width: Optional[int] = None,
-        num_inference_steps: int = 28,
+        num_inference_steps: int = 50,
         sigmas: Optional[List[float]] = None,
-        guidance_scale: float = 3.5,
+        guidance_scale: float = 4.0,
         num_images_per_prompt: Optional[int] = 1,
-        generator: Optional[Union[torch.Generator, List[torch.Generator]]] = None,
+        generator: Optional[torch.Generator | List[torch.Generator]] = None,
         latents: Optional[torch.FloatTensor] = None,
         prompt_embeds: Optional[torch.FloatTensor] = None,
-        pooled_prompt_embeds: Optional[torch.FloatTensor] = None,
-        ip_adapter_image: Optional[PipelineImageInput] = None,
-        ip_adapter_image_embeds: Optional[List[torch.Tensor]] = None,
-        negative_ip_adapter_image: Optional[PipelineImageInput] = None,
-        negative_ip_adapter_image_embeds: Optional[List[torch.Tensor]] = None,
-        negative_prompt_embeds: Optional[torch.FloatTensor] = None,
-        negative_pooled_prompt_embeds: Optional[torch.FloatTensor] = None,
+        negative_prompt_embeds=None,
         output_type: Optional[str] = "pil",
         return_dict: bool = True,
-        joint_attention_kwargs: Optional[Dict[str, Any]] = None,
+        attention_kwargs: Optional[Dict[str, Any]] = None,
         callback_on_step_end: Optional[Callable[[int, int, Dict], None]] = None,
         callback_on_step_end_tensor_inputs: List[str] = ["latents"],
         max_sequence_length: int = 512,
+        text_encoder_out_layers: tuple[int] = (9, 18, 27),
     ):
-        
-        height = height or self.default_sample_size * self.vae_scale_factor
-        width = width or self.default_sample_size * self.vae_scale_factor
-        # 1. Check inputs, and apply SAP mapping
+        if sap_prompts is None:
+            raise ValueError("sap_prompts must be provided with prompts_list and switch_prompts_steps.")
+
+        prompts_list, SAP_mapping = map_SAP_dict(sap_prompts, num_inference_steps)
+        base_prompt = prompts_list[0]
+
+        # 1. Check inputs
         self.check_inputs(
-            sap_prompts['prompts_list'][0], # verify there is at least a single prompt
-            prompt_2,
-            height,
-            width,
-            negative_prompt=negative_prompt,
-            negative_prompt_2=negative_prompt_2,
+            prompt=base_prompt,
+            height=height,
+            width=width,
             prompt_embeds=prompt_embeds,
-            negative_prompt_embeds=negative_prompt_embeds,
-            pooled_prompt_embeds=pooled_prompt_embeds,
-            negative_pooled_prompt_embeds=negative_pooled_prompt_embeds,
             callback_on_step_end_tensor_inputs=callback_on_step_end_tensor_inputs,
-            max_sequence_length=max_sequence_length,
+            guidance_scale=guidance_scale,
         )
 
-
         self._guidance_scale = guidance_scale
-        self._joint_attention_kwargs = joint_attention_kwargs
+        self._attention_kwargs = attention_kwargs
         self._current_timestep = None
         self._interrupt = False
 
-
         # 2. Define call parameters
+        batch_size = 1
         device = self._execution_device
 
-        lora_scale = (
-            self.joint_attention_kwargs.get("scale", None) if self.joint_attention_kwargs is not None else None
-        )
-        has_neg_prompt = negative_prompt is not None or (
-            negative_prompt_embeds is not None and negative_pooled_prompt_embeds is not None
-        )
-        do_true_cfg = true_cfg_scale > 1 and has_neg_prompt
-
-
-        # maps from the input dict to the 1) prompts list 2) step->prompt_index dict and generate prompr embeds
-        prompts_list, SAP_mapping = map_SAP_dict(sap_prompts, num_inference_steps)
+        # 3. Prepare prompt embeddings per SAP stage
         prompt_embeds_dicts = []
-        for i in range(len(prompts_list)):
-            d = dict()
-            (
-                d["prompt_embeds"],
-                d["pooled_prompt_embeds"],
-                d["text_ids"],
-            ) = self.encode_prompt(
-                prompt=prompts_list[i],
-                prompt_2=prompt_2,
+        for prompt in prompts_list:
+            stage_prompt_embeds, stage_text_ids = self.encode_prompt(
+                prompt=prompt,
                 prompt_embeds=prompt_embeds,
-                pooled_prompt_embeds=pooled_prompt_embeds,
                 device=device,
                 num_images_per_prompt=num_images_per_prompt,
                 max_sequence_length=max_sequence_length,
-                lora_scale=lora_scale,
+                text_encoder_out_layers=text_encoder_out_layers,
             )
-            prompt_embeds_dicts.append(d)
-        prompt_embeds = prompt_embeds_dicts[0]["prompt_embeds"]
+            prompt_embeds_dicts.append({"prompt_embeds": stage_prompt_embeds, "text_ids": stage_text_ids})
 
-        if do_true_cfg:
-            (
-                negative_prompt_embeds,
-                negative_pooled_prompt_embeds,
-                negative_text_ids,
-            ) = self.encode_prompt(
+        first_prompt_embeds = prompt_embeds_dicts[0]["prompt_embeds"]
+
+        if self.do_classifier_free_guidance:
+            negative_prompt = ""
+            negative_prompt_embeds, negative_text_ids = self.encode_prompt(
                 prompt=negative_prompt,
-                prompt_2=negative_prompt_2,
                 prompt_embeds=negative_prompt_embeds,
-                pooled_prompt_embeds=negative_pooled_prompt_embeds,
                 device=device,
                 num_images_per_prompt=num_images_per_prompt,
                 max_sequence_length=max_sequence_length,
-                lora_scale=lora_scale,
+                text_encoder_out_layers=text_encoder_out_layers,
             )
 
         # 4. Prepare latent variables
+        if image is not None and not isinstance(image, list):
+            image = [image]
+
+        condition_images = None
+        if image is not None:
+            for img in image:
+                self.image_processor.check_image_input(img)
+
+            condition_images = []
+            for img in image:
+                image_width, image_height = img.size
+                if image_width * image_height > 1024 * 1024:
+                    img = self.image_processor._resize_to_target_area(img, 1024 * 1024)
+                    image_width, image_height = img.size
+
+                multiple_of = self.vae_scale_factor * 2
+                image_width = (image_width // multiple_of) * multiple_of
+                image_height = (image_height // multiple_of) * multiple_of
+                img = self.image_processor.preprocess(img, height=image_height, width=image_width, resize_mode="crop")
+                condition_images.append(img)
+                height = height or image_height
+                width = width or image_width
+
+        height = height or self.default_sample_size * self.vae_scale_factor
+        width = width or self.default_sample_size * self.vae_scale_factor
+
         num_channels_latents = self.transformer.config.in_channels // 4
-        latents, latent_image_ids = self.prepare_latents(
-            batch_size * num_images_per_prompt,
-            num_channels_latents,
-            height,
-            width,
-            prompt_embeds.dtype,
-            device,
-            generator,
-            latents,
+        latents, latent_ids = self.prepare_latents(
+            batch_size=batch_size * num_images_per_prompt,
+            num_latents_channels=num_channels_latents,
+            height=height,
+            width=width,
+            dtype=first_prompt_embeds.dtype,
+            device=device,
+            generator=generator,
+            latents=latents,
         )
+
+        image_latents = None
+        image_latent_ids = None
+        if condition_images is not None:
+            image_latents, image_latent_ids = self.prepare_image_latents(
+                images=condition_images,
+                batch_size=batch_size * num_images_per_prompt,
+                generator=generator,
+                device=device,
+                dtype=self.vae.dtype,
+            )
 
         # 5. Prepare timesteps
         sigmas = np.linspace(1.0, 1 / num_inference_steps, num_inference_steps) if sigmas is None else sigmas
+        if hasattr(self.scheduler.config, "use_flow_sigmas") and self.scheduler.config.use_flow_sigmas:
+            sigmas = None
         image_seq_len = latents.shape[1]
-        mu = calculate_shift(
-            image_seq_len,
-            self.scheduler.config.get("base_image_seq_len", 256),
-            self.scheduler.config.get("max_image_seq_len", 4096),
-            self.scheduler.config.get("base_shift", 0.5),
-            self.scheduler.config.get("max_shift", 1.15),
-        )
+        mu = compute_empirical_mu(image_seq_len=image_seq_len, num_steps=num_inference_steps)
         timesteps, num_inference_steps = retrieve_timesteps(
             self.scheduler,
             num_inference_steps,
@@ -191,90 +188,57 @@ class SapFlux(FluxPipeline):
         num_warmup_steps = max(len(timesteps) - num_inference_steps * self.scheduler.order, 0)
         self._num_timesteps = len(timesteps)
 
-        # handle guidance
-        if self.transformer.config.guidance_embeds:
-            guidance = torch.full([1], guidance_scale, device=device, dtype=torch.float32)
-            guidance = guidance.expand(latents.shape[0])
-        else:
-            guidance = None
-
-        if (ip_adapter_image is not None or ip_adapter_image_embeds is not None) and (
-            negative_ip_adapter_image is None and negative_ip_adapter_image_embeds is None
-        ):
-            negative_ip_adapter_image = np.zeros((width, height, 3), dtype=np.uint8)
-            negative_ip_adapter_image = [negative_ip_adapter_image] * self.transformer.encoder_hid_proj.num_ip_adapters
-
-        elif (ip_adapter_image is None and ip_adapter_image_embeds is None) and (
-            negative_ip_adapter_image is not None or negative_ip_adapter_image_embeds is not None
-        ):
-            ip_adapter_image = np.zeros((width, height, 3), dtype=np.uint8)
-            ip_adapter_image = [ip_adapter_image] * self.transformer.encoder_hid_proj.num_ip_adapters
-
-        if self.joint_attention_kwargs is None:
-            self._joint_attention_kwargs = {}
-
-        image_embeds = None
-        negative_image_embeds = None
-        if ip_adapter_image is not None or ip_adapter_image_embeds is not None:
-            image_embeds = self.prepare_ip_adapter_image_embeds(
-                ip_adapter_image,
-                ip_adapter_image_embeds,
-                device,
-                batch_size * num_images_per_prompt,
-            )
-        if negative_ip_adapter_image is not None or negative_ip_adapter_image_embeds is not None:
-            negative_image_embeds = self.prepare_ip_adapter_image_embeds(
-                negative_ip_adapter_image,
-                negative_ip_adapter_image_embeds,
-                device,
-                batch_size * num_images_per_prompt,
-            )
-
         # 6. Denoising loop
+        self.scheduler.set_begin_index(0)
         with self.progress_bar(total=num_inference_steps) as progress_bar:
             for i, t in enumerate(timesteps):
                 if self.interrupt:
                     continue
 
                 self._current_timestep = t
-                if image_embeds is not None:
-                    self._joint_attention_kwargs["ip_adapter_image_embeds"] = image_embeds
                 # broadcast to batch dimension in a way that's compatible with ONNX/Core ML
                 timestep = t.expand(latents.shape[0]).to(latents.dtype)
 
+                latent_model_input = latents.to(self.transformer.dtype)
+                latent_image_ids = latent_ids
+
+                if image_latents is not None:
+                    latent_model_input = torch.cat([latents, image_latents], dim=1).to(self.transformer.dtype)
+                    latent_image_ids = torch.cat([latent_ids, image_latent_ids], dim=1)
+
                 # use corresponding proxy prompt embeds
                 prompt_dict = prompt_embeds_dicts[SAP_mapping[f'step{i}']]
-                pooled_prompt_embeds = prompt_dict["pooled_prompt_embeds"]
                 prompt_embeds = prompt_dict["prompt_embeds"]
                 text_ids = prompt_dict["text_ids"]
 
-                noise_pred = self.transformer(
-                    hidden_states=latents,
-                    timestep=timestep / 1000,
-                    guidance=guidance,
-                    pooled_projections=pooled_prompt_embeds,
-                    encoder_hidden_states=prompt_embeds,
-                    txt_ids=text_ids,
-                    img_ids=latent_image_ids,
-                    joint_attention_kwargs=self.joint_attention_kwargs,
-                    return_dict=False,
-                )[0]
-
-                if do_true_cfg:
-                    if negative_image_embeds is not None:
-                        self._joint_attention_kwargs["ip_adapter_image_embeds"] = negative_image_embeds
-                    neg_noise_pred = self.transformer(
-                        hidden_states=latents,
+                with self.transformer.cache_context("cond"):
+                    noise_pred = self.transformer(
+                        hidden_states=latent_model_input,
                         timestep=timestep / 1000,
-                        guidance=guidance,
-                        pooled_projections=negative_pooled_prompt_embeds,
-                        encoder_hidden_states=negative_prompt_embeds,
-                        txt_ids=negative_text_ids,
+                        guidance=None,
+                        encoder_hidden_states=prompt_embeds,
+                        txt_ids=text_ids,
                         img_ids=latent_image_ids,
-                        joint_attention_kwargs=self.joint_attention_kwargs,
+                        joint_attention_kwargs=self.attention_kwargs,
                         return_dict=False,
                     )[0]
-                    noise_pred = neg_noise_pred + true_cfg_scale * (noise_pred - neg_noise_pred)
+
+                noise_pred = noise_pred[:, : latents.size(1) :]
+
+                if self.do_classifier_free_guidance:
+                    with self.transformer.cache_context("uncond"):
+                        neg_noise_pred = self.transformer(
+                            hidden_states=latent_model_input,
+                            timestep=timestep / 1000,
+                            guidance=None,
+                            encoder_hidden_states=negative_prompt_embeds,
+                            txt_ids=negative_text_ids,
+                            img_ids=latent_image_ids,
+                            joint_attention_kwargs=self._attention_kwargs,
+                            return_dict=False,
+                        )[0]
+                    neg_noise_pred = neg_noise_pred[:, : latents.size(1) :]
+                    noise_pred = neg_noise_pred + guidance_scale * (noise_pred - neg_noise_pred)
 
                 # compute the previous noisy sample x_t -> x_t-1
                 latents_dtype = latents.dtype
@@ -303,11 +267,20 @@ class SapFlux(FluxPipeline):
 
         self._current_timestep = None
 
+        latent_height = 2 * (int(height) // (self.vae_scale_factor * 2))
+        latent_width = 2 * (int(width) // (self.vae_scale_factor * 2))
+        latents = self._unpack_latents_with_ids(latents, latent_ids, latent_height // 2, latent_width // 2)
+
+        latents_bn_mean = self.vae.bn.running_mean.view(1, -1, 1, 1).to(latents.device, latents.dtype)
+        latents_bn_std = torch.sqrt(self.vae.bn.running_var.view(1, -1, 1, 1) + self.vae.config.batch_norm_eps).to(
+            latents.device, latents.dtype
+        )
+        latents = latents * latents_bn_std + latents_bn_mean
+        latents = self._unpatchify_latents(latents)
+
         if output_type == "latent":
             image = latents
         else:
-            latents = self._unpack_latents(latents, height, width, self.vae_scale_factor)
-            latents = (latents / self.vae.config.scaling_factor) + self.vae.config.shift_factor
             image = self.vae.decode(latents, return_dict=False)[0]
             image = self.image_processor.postprocess(image, output_type=output_type)
 
@@ -317,4 +290,4 @@ class SapFlux(FluxPipeline):
         if not return_dict:
             return (image,)
 
-        return FluxPipelineOutput(images=image)
+        return Flux2PipelineOutput(images=image)

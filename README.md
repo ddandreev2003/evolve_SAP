@@ -23,23 +23,22 @@ Official implementation of our "Image Generation from Contextually-Contradictory
 
 ### Environment
 ```
-This project uses [`uv`](https://github.com/astral-sh/uv), a modern Python package manager and virtual environment tool.
+This project uses conda to manage the Python environment.
 
 1. Clone the repository:
 git clone https://github.com/TDPC2025/SAP.git
 cd SAP
 
-2. install uv (if not already installed):
-curl -Ls https://astral.sh/uv/install.sh | sh
+2. Create a conda environment:
+conda create -n sap python=3.10 -y
 
-3. Create and activate the environment:
-uv venv
-source .venv/bin/activate
+3. Activate the environment:
+conda activate sap
 
 4. Install dependencies:
-uv pip install --requirements pyproject.toml
+pip install -r requirements.txt
 
-This will install all required packages listed in pyproject.toml and lock their exact versions using uv.lock.
+This installs all required packages listed in requirements.txt inside the conda environment.
 ```
 
 ## Usage
@@ -53,10 +52,16 @@ for example:
 python run_SAP_flux.py --prompt "A bear is performing a handstand in the park" --seeds_list 30498
 ```
 
-Before running, make sure to insert your API key in the run_SAP_flux.py script:
+Before running, export RouterAI credentials:
 ```
-API_KEY = "YOUR_API_KEY"
+export ROUTERAI_API_KEY="YOUR_API_KEY"
+export ROUTERAI_BASE_URL="https://routerai.ru/api/v1"
 ```
+The project uses:
+- Image model: `black-forest-labs/FLUX.2-klein-base-4B`
+- Prompt decomposition model: `qwen/qwen3.5-35b-a3b`
+- Benchmark scoring model: `qwen/qwen3-vl-235b-a22b-thinking`
+
 All generated images will be saved to:
 ```
 results/<prompt>/Seed<seed>.png
@@ -77,7 +82,7 @@ We evaluate our method using three benchmarks designed to challenge text-to-imag
 ### 🧪 Evaluation
 
 We include `gpt_eval.py`, the automatic evaluator used in the paper.  
-It uses GPT-4o to assess image–text alignment by scoring how well generated images reflect the semantics of the prompt.
+It uses `qwen/qwen3-vl-235b-a22b-thinking` (via RouterAI) to assess image-text alignment by scoring how well generated images reflect the semantics of the prompt.
 
 
 ### 📁 Benchmarks Structure

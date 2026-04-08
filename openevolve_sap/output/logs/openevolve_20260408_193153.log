@@ -1,0 +1,13 @@
+2026-04-08 19:31:53,678 - openevolve.controller - INFO - Logging to /home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/output/logs/openevolve_20260408_193153.log
+2026-04-08 19:31:53,683 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-04-08 19:31:53,737 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemma-4-31b-it
+2026-04-08 19:31:53,738 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemma-4-31b-it (weight: 1.00)
+2026-04-08 19:31:53,755 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-04-08 19:31:53,755 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-04-08 19:31:53,756 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-04-08 19:32:02,034 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-08 19:32:02,035 - openevolve.evaluator - WARNING - Configuration has 'cascade_evaluation: true' but evaluator '/home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/evaluator.py' does not define 'evaluate_stage1' function. This will fall back to direct evaluation, making the cascade setting useless. Consider setting 'cascade_evaluation: false' or implementing cascade functions.
+2026-04-08 19:32:02,035 - openevolve.evaluator - INFO - Initialized evaluator with /home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-08 19:32:02,035 - openevolve.controller - INFO - Initialized OpenEvolve with /home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/initial_program.py
+2026-04-08 19:32:02,035 - openevolve.controller - INFO - Adding initial program to database
+2026-04-08 19:34:59,215 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"

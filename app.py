@@ -48,9 +48,9 @@ Our **SAP (Stage Aware Prompting)** method supports multiple diffusion models an
 
 - **FLUX.dev**: Baseline image generation using the unmodified FLUX model.
 - **SAP with zephyr-7b-beta**: SAP applied to FLUX with zephyr-7b-beta as the LLM.
-- **SAP with GPT-4o**: SAP applied to FLUX with GPT-4o as the LLM *(requires an OpenAI API key)*.
+- **SAP with qwen/qwen3.5-35b-a3b**: SAP applied to FLUX with RouterAI-hosted Qwen as the LLM *(requires RouterAI API key)*.
 
-For best results, we recommend using **SAP with GPT-4o**, which delivers the best implementation of our method.
+For best results, we recommend using **SAP with qwen/qwen3.5-35b-a3b**, which delivers the best implementation of our method.
 
 **Note:** When using **SAP with zephyr-7b-beta**, the model may take a few seconds to load on the first run, as the LLM is initialized. Subsequent generations will be faster.
 '''
@@ -60,7 +60,7 @@ model_cache = {}
 llm_cache = {}
 
 def toggle_api_visibility(choice):
-    return gr.update(visible=(choice == "SAP with GPT-4o"))
+    return gr.update(visible=(choice == "SAP with qwen/qwen3.5-35b-a3b"))
 
 @spaces.GPU
 def main_pipeline(
@@ -188,13 +188,13 @@ with gr.Blocks(css='app/style.css') as demo:
         with gr.Column():
 
             model_choice = gr.Radio(
-                choices=["FLUX", "SAP with zephyr-7b-beta", "SAP with GPT-4o"],
+                choices=["FLUX", "SAP with zephyr-7b-beta", "SAP with qwen/qwen3.5-35b-a3b"],
                 label="Model Selection",
                 value="FLUX"
             )
 
             api_key = gr.Textbox(
-                label="OpenAI API Key (for GPT)",
+                label="RouterAI API Key (for Qwen)",
                 placeholder="sk-...",
                 visible=False
             )
@@ -229,7 +229,7 @@ with gr.Blocks(css='app/style.css') as demo:
                 elem_id="result-image"
             )
     with gr.Row():
-        gr.Markdown("### ✨ SAP + GPT-4o Examples")
+        gr.Markdown("### ✨ SAP + Qwen Examples")
     with gr.Row():
 
         example_data = [
@@ -271,7 +271,7 @@ with gr.Blocks(css='app/style.css') as demo:
             elem_id="flux-output-img"
         )
         sap_out = gr.Image(
-            label="SAP + GPT-4o Output",
+            label="SAP + Qwen Output",
             type="pil",
             elem_id="sap-output-img"
         )

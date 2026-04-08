@@ -1,0 +1,12 @@
+{
+  "prompt": "A allien glove with six fingers",
+  "use_sap": true,
+  "scores": {
+    "30498": {
+      "alignment score": 2,
+      "alignment explanation": "The image depicts a biological alien hand rather than a \"glove,\" misrepresenting the core object type. While the hand has an alien aesthetic (textured green skin, circular patterns), it only features five digits (including the thumb), contradicting the explicit \"six fingers\" requirement. The prompt specifies a wearable item (\"glove\"), but the image shows a natural limb, failing to illustrate the intended functional use-case of a glove. Key elements (object type and finger count) are fundamentally misaligned with the prompt.",
+      "quality score": 5,
+      "quality explanation": "The render is visually flawless with consistent lighting, texture, and perspective. The alien hand’s anatomy is coherent and intentionally designed—fingers, thumb, and surface details (bumps, circular patterns) are well-formed without distortion, warping, or artifacts. There are no floating elements, clipped geometry, or implausible blending; the black background enhances focus on the clean, detailed 3D model. The image is physically coherent and realistic within its stylized context."
+    }
+  }
+}

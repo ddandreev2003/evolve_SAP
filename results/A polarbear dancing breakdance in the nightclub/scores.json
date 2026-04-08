@@ -1,0 +1,12 @@
+{
+  "prompt": "A polarbear dancing breakdance in the nightclub",
+  "use_sap": true,
+  "scores": {
+    "30498": {
+      "alignment score": 5,
+      "alignment explanation": "The image fully conveys the prompt's meaning. A polar bear is clearly depicted performing a breakdance move (a freeze-like pose with extended limbs) in a nightclub setting, evidenced by the neon lighting, disco ball, and crowd of onlookers. All key elements—polar bear, breakdancing action, and nightclub environment—are present and functionally represented without symbolic or metaphorical ambiguity. The bear’s posture unambiguously demonstrates breakdancing, and the scene is concrete and contextually accurate.",
+      "quality score": 5,
+      "quality explanation": "The image is visually flawless. The polar bear’s fur, anatomy, and pose are rendered with realistic texture and coherence, with no distortion or unnatural blending. Human figures in the background exhibit consistent lighting, natural proportions, and clear facial features. Neon lighting, perspective, and spatial relationships (e.g., the bear’s placement relative to the crowd) are logically consistent. There are no artifacts, warped elements, or broken details—everything appears deliberate and physically plausible within the scene’s context."
+    }
+  }
+}

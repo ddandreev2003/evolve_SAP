@@ -1,0 +1,33 @@
+max_iterations: 80
+checkpoint_interval: 10
+
+llm:
+  primary_model: "google/gemma-4-31b-it"
+  primary_model_weight: 1.0
+  api_base: "https://routerai.ru/api/v1"
+  temperature: 0.7
+  max_tokens: 8000
+  timeout: 120
+
+prompt:
+  system_message: |
+    You are an expert prompt engineer evolving Python code that defines a SAP system prompt string.
+    Improve the prompt to maximize downstream image alignment for contradictory prompts.
+    Keep Python syntax valid.
+    Preserve the exported variable name SYSTEM_PROMPT.
+    Focus on clear denoising-stage guidance, robust substitution strategy, and parseable outputs.
+
+database:
+  population_size: 40
+  archive_size: 20
+  num_islands: 3
+  elite_selection_ratio: 0.2
+  exploitation_ratio: 0.7
+  similarity_threshold: 0.995
+
+evaluator:
+  timeout: 3600
+  parallel_evaluations: 1
+
+diff_based_evolution: true
+max_code_length: 60000

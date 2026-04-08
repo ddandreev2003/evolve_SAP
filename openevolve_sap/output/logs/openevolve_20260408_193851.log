@@ -1,0 +1,15 @@
+2026-04-08 19:38:51,203 - openevolve.controller - INFO - Logging to /home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/output/logs/openevolve_20260408_193851.log
+2026-04-08 19:38:51,213 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-04-08 19:38:51,259 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemma-4-31b-it
+2026-04-08 19:38:51,260 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemma-4-31b-it (weight: 1.00)
+2026-04-08 19:38:51,282 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-04-08 19:38:51,283 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-04-08 19:38:51,283 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-04-08 19:38:58,123 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-08 19:38:58,123 - openevolve.evaluator - WARNING - Configuration has 'cascade_evaluation: true' but evaluator '/home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/evaluator.py' does not define 'evaluate_stage1' function. This will fall back to direct evaluation, making the cascade setting useless. Consider setting 'cascade_evaluation: false' or implementing cascade functions.
+2026-04-08 19:38:58,124 - openevolve.evaluator - INFO - Initialized evaluator with /home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-08 19:38:58,124 - openevolve.controller - INFO - Initialized OpenEvolve with /home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/initial_program.py
+2026-04-08 19:38:58,124 - openevolve.controller - INFO - Adding initial program to database
+2026-04-08 19:40:39,827 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-08 19:43:34,630 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-08 19:45:01,299 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
