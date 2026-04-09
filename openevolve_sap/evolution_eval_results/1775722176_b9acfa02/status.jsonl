@@ -1,0 +1,3 @@
+{"event": "start_loop", "run_id": "1775722176_b9acfa02", "num_prompts": 2, "timestamp": 1775722178.4273958}
+{"event": "image_saved", "run_id": "1775722176_b9acfa02", "prompt_index": 0, "prompt": "A turtle juggles fish in a forest", "image_path": "/home/andrn/EvolveSAP/evolve_SAP/openevolve_sap/evolution_eval_results/1775722176_b9acfa02/candidate_tmpek_uhuv__0.png", "timestamp": 1775722706.3682551}
+{"event": "score_done", "run_id": "1775722176_b9acfa02", "prompt_index": 0, "alignment_score": 5.0, "timestamp": 1775722731.8671215}
