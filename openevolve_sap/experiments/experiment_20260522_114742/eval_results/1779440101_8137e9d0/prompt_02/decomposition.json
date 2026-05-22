@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows physically align with the object and light source, so the model will strongly resist generating one facing away. By first establishing the layout with a \"flat black cat silhouette on the ground,\" the spatial geometry and opposing direction are locked in before the semantic concept is shifted to an impossible shadow.",
+  "prompts_list": [
+    "A cat and a flat black cat silhouette on the ground facing the opposite direction",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

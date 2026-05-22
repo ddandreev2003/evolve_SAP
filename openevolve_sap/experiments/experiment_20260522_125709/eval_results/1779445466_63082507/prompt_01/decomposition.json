@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove typically conforms to five fingers; requesting six creates an impossible anatomical geometry. Standard gloves would lock a five-finger layout early, making changes difficult. Starting with a hand already possessing six fingers ensures the correct structure is fixed before applying the glove texture and identity.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

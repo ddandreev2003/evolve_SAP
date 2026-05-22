@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This prompt violates common sense regarding how bouquets are typically arranged (stems down, flowers up). To prevent the model from defaulting to a normal vertical arrangement during early denoising steps (0-4), the first sub-prompt explicitly forces the inverted physical geometry without using the word \"bouquet\" initially. The second sub-prompt solidifies the target concept once the impossible structure is established.",
+  "prompts_list": [
+    "A clear glass vase with green stems sticking vertically out of the top and flower heads submerged at the bottom of the water",
+    "An upside-down bouquet of flowers in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

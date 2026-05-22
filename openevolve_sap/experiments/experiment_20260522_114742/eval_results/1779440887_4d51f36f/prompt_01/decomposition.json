@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A six-fingered glove is an unusual structural anomaly. Starting with a standard \"white glove\" establishes the correct base size, shape, and overall layout. The specific count of \"6 fingers\" is a localized feature, so it is introduced during the shape and detail refinement stages, allowing the model to partition the established hand-shape into six digits without destabilizing the object's core structure.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "run_id": "1779442184_c8e87497",
+  "program_path": "/tmp/tmp6zltfic1.py",
+  "program_id": "tmp6zltfic1",
+  "timestamp": 1779442424.4479885,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, which covers the basic elements mentioned in the prompt. However, the critical aspect of the bouquet being \"upside down\" is completely missing. In the image, the flowers are arranged in the standard upright position with stems in the water and blooms facing upward. For the prompt to be fulfilled, the bouquet would need to be positioned with flowers pointing downward into the vase and stems extending upward. The image presents a normal floral arrangement rather than the specific upside-down configuration described in the prompt, significantly misrepresenting the key element of the request.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts or distortions. The flowers, vase, and wooden surface are all clearly defined with natural lighting and consistent perspective. The petals, leaves, and glass vase show realistic textures and proper physical coherence - the stems connect naturally to the flowers and are properly contained within the vase. There are no broken elements, unnatural blending, or anatomical inconsistencies. The composition is sharp, well-lit, and visually coherent throughout, representing a clean and realistic photograph with no flaws."
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_00/score.json"
+    },
+    {
+      "prompt_index": 1,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_01",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_01/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_01/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which matches the \"white glove\" element of the prompt. However, it clearly depicts only 5 fingers (one thumb and four fingers), whereas the prompt explicitly requires 6 fingers. The key attribute—finger count—is fundamentally misrepresented, violating the core functional requirement of the prompt. While the object (glove) is present and correctly identified, the absence of the sixth finger means the scene fails to illustrate the intended situation concretely. This constitutes a significant misrepresentation of the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The glove is rendered with smooth, uniform texture and consistent lighting, with no artifacts, distortions, or broken elements. All fingers and the glove structure are anatomically coherent (for a standard 5-fingered hand), with natural proportions and clean edges. Perspective is stable, and there are no floating or merged shapes; the object appears physically plausible and deliberately designed. The plain background enhances clarity without introducing visual noise."
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_01/score.json"
+    },
+    {
+      "prompt_index": 2,
+      "original_prompt": "The shadow of a cat is facing the opposite direction",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_02",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_02/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_02/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly shows a cat with a shadow cast behind it. The cat is positioned with its back to the viewer (facing away), while the shadow’s orientation aligns with the cat’s back, meaning the shadow “faces” the opposite direction of the cat’s forward orientation. All key elements (cat, shadow, directional relationship) are present and unambiguously demonstrate the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent with no rendering artifacts. The cat’s anatomy (limbs, tail, fur) is anatomically correct and well-defined. Lighting is consistent, with a sharp, natural shadow and realistic texture on the carpet. There are no distortions, broken elements, or implausible blending—everything appears physically grounded and professionally rendered."
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_114742/eval_results/1779442184_c8e87497/prompt_02/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 3.0,
+    "gemma_score": 5.0,
+    "combined_score": 0.6799999999999999
+  }
+}

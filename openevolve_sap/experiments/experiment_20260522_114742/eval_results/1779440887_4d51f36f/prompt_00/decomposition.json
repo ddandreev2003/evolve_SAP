@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Bouquets are strongly associated with flowers at the top and stems inside the vase. To invert this default arrangement, the prompt first establishes the structural layout of bare green stems sticking upwards out of the vase. Once this coarse geometry is stabilized, the full upside-down concept is introduced to render the floral blooms at the base without disrupting the inverted layout.",
+  "prompts_list": [
+    "A vase with bare green stems sticking upwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

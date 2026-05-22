@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows a bouquet of yellow flowers in a vase, but the arrangement is **not upside down**—the blooms face upward with stems extending downward into the vase, which contradicts the prompt's requirement. While the core objects (bouquet, flowers, vase) are present, the critical action (\"upside down\") is entirely absent, misrepresenting the intended scenario. The scene depicts a standard floral arrangement rather than the specified inverted configuration, failing to convey the prompt's meaning.",
+  "quality score": 5,
+  "quality explanation": "The image is visually clean and realistic with no rendering artifacts. The flowers, vase, and table exhibit natural textures, consistent lighting, and coherent perspective. Petals, stems, and the vase surface are well-defined and anatomically/structurally sound, with no distortions, floating elements, or implausible blending. The composition is sharp and physically plausible."
+}

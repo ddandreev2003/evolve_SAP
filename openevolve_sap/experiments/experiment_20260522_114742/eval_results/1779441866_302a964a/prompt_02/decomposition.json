@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows defying physics are difficult for diffusion models to generate naturally, as they are trained on consistent lighting. Starting with two cats facing opposite directions establishes the underlying spatial layout and poses. Transitioning one cat into a black silhouette creates a visual proxy for the shadow before finally refining it into the impossible shadow in the final steps.",
+  "prompts_list": [
+    "Two cats facing opposite directions",
+    "A cat and a black cat silhouette facing opposite directions",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

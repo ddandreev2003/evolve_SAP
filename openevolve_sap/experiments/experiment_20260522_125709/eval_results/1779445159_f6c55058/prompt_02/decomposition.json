@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows depend on consistent light sources, so an opposite-facing shadow contradicts standard physics. Since the model struggles with impossible lighting configurations early in generation, we begin with a structurally neutral cat to lock down its pose and position. The contradictory lighting effect is introduced later in the process when high-frequency details are refined, minimizing structural distortion of the animal itself.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat faces the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

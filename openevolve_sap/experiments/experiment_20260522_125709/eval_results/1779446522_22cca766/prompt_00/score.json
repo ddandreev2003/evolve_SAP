@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented normally (blooms facing upward, stems extending downward into the vase). The prompt explicitly requires the bouquet to be \"upside down,\" which would mean the blooms face downward and stems extend upward. While the core objects (bouquet, vase) are present, the critical action of being \"upside down\" is entirely missing, significantly misrepresenting the prompt’s intent.",
+  "quality score": 5,
+  "quality explanation": "The image is visually clean and coherent. The flowers, vase, and background exhibit consistent lighting, natural textures, and realistic proportions. There are no rendering artifacts, distorted anatomy, or physically implausible elements (e.g., floating objects, merged shapes). The composition is well-balanced, with clear detail in the petals, stems, and glass vase."
+}

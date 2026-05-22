@@ -1,0 +1,6 @@
+{
+  "alignment score": 1,
+  "alignment explanation": "The image depicts a standard bouquet of flowers placed **right-side up** in a vase, with stems submerged in water and blooms facing upward. The prompt explicitly requires the bouquet to be **upside down**, meaning the blooms should face downward toward the vase base while stems point upward. No element in the image reflects this orientation—key attributes (inverted positioning) are entirely absent, and the scene contradicts the prompt's core requirement.",
+  "quality score": 5,
+  "quality explanation": "The image is a high-resolution photograph with no visible rendering artifacts. Lighting is natural and consistent, textures (petals, leaves, glass) are crisp and realistic, and perspective is coherent. All elements (stems, blooms, vase) are anatomically and physically accurate, with no distortion, warping, or implausible blending. The composition is clean and fully coherent."
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet is naturally expected to grow upwards from a vase. Starting with a generic \"vase\" would lock the upright geometry early. Following Strategy B, the first prompt explicitly describes the inverted spatial arrangement (stems up, flowers down) to override priors before introducing the final semantic identity.",
+  "prompts_list": [
+    "A vase with flower stems pointing upward and flowers hanging down",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

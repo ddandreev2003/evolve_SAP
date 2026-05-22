@@ -11,12 +11,14 @@
         <div style="display:flex;flex-direction:column;min-width:220px;">
             <span style="font-size:1.1em;font-weight:bold;">OpenEvolve Evolution Visualizer</span>
             <span id="checkpoint-label" style="font-size:0.9em;color:#888;">Checkpoint: None</span>
+            <span id="data-status-label"></span>
         </div>
         <div class="toolbar-spacer"></div>
         <div class="tabs">
             <div class="tab active" id="tab-branching">Branching</div>
             <div class="tab" id="tab-performance">Performance</div>
             <div class="tab" id="tab-list">List</div>
+            <div class="tab" id="tab-evals">Evals</div>
         </div>
         <label class="toolbar-label" for="metric-select">Metric:
         <select id="metric-select">
@@ -58,7 +60,10 @@
         </div>
         <div id="node-list-container"></div>
     </div>
-    <div id="view-performance" style="padding-top:4.5em;"></div>
+    <div id="view-performance" style="display:none;padding-top:4.5em;"></div>
+    <div id="view-evals" style="display:none;padding-top:3.5em;">
+        <div id="eval-gallery"></div>
+    </div>
     <div id="view-prompts" style="padding-top:3.5em;"></div>
     <script type="module" src="{{ url_for('static', filename='js/state.js') }}"></script>
     <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
@@ -67,5 +72,6 @@
     <script type="module" src="{{ url_for('static', filename='js/graph.js') }}"></script>
     <script type="module" src="{{ url_for('static', filename='js/performance.js') }}"></script>
     <script type="module" src="{{ url_for('static', filename='js/list.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/evals.js') }}"></script>
 </body>
 </html>

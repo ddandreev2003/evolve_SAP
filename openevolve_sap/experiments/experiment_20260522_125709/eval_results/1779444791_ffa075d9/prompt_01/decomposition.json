@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove with 6 fingers violates standard human anatomy priors. The model tends to lock 5-finger geometry in the initial denoising steps (0–4). Using a bare hand with 6 fingers as a structural proxy establishes the correct anomalous shape before transitioning to the glove identity, ensuring the extra digit is preserved.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

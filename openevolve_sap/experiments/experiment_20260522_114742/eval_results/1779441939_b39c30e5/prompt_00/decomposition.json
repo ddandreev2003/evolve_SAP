@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The model's strong prior places flower blooms at the top of a vase. Starting with bare green stems establishes the structural layout of upward-pointing stalks without generating top-heavy blooms. Once this coarse geometry is stable, introducing the upside-down concept forces the flowers to be rendered at the bottom or inside the vase, successfully capturing the spatial contradiction.",
+  "prompts_list": [
+    "A bunch of bare green stems in a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

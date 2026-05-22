@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in a vase are naturally oriented upright; an upside-down arrangement contradicts standard plant geometry and diffusion priors. To enforce the unusual orientation, start with a structural proxy of bare stems sticking upwards to lock the inverted shape, then transition to the full floral identity once the layout is established.",
+  "prompts_list": [
+    "Bare plant stems sticking upwards out of a vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

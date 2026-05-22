@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "A shadow naturally aligns with the subject's posture and the light source, making a shadow facing the opposite direction a physical contradiction. Starting with a regular cat and a black cat facing opposite directions establishes the conflicting spatial geometry. Transitioning the black cat into a dark shadow allows the model to retain this unusual layout before finalizing the prompt to refine the lighting and texture.",
+  "prompts_list": [
+    "A cat and a black cat facing opposite directions",
+    "A cat and a dark shadow facing opposite directions",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

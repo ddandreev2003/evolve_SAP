@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows physically align with the object that casts them, making an opposite-facing shadow geometrically contradictory for diffusion models. Starting with a \"dark cat silhouette on the ground\" establishes the reversed shape and layout as a physical proxy. Once this coarse structure is stabilized, the prompt transitions to the shadow concept to render the correct lighting and semantics without the model \"correcting\" the orientation.",
+  "prompts_list": [
+    "A cat and a dark cat silhouette on the ground facing the opposite direction",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

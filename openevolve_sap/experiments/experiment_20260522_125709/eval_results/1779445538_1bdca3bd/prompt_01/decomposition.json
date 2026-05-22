@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove typically implies a standard five-finger human anatomy, creating a structural contradiction. To prevent the model from locking onto normal hand geometry, we start with a bare hand possessing six fingers to force the anomalous shape early. Once the layout is stable, the prompt transitions to the actual glove identity.",
+  "prompts_list": [
+    "A bare hand with 6 distinct fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are often treated as low-frequency occlusions that automatically align with light physics. Since the prompt requests a shadow behavior (\"facing the opposite\") that contradicts standard object-shadow alignment, the shadow is first established as a visual element before the contradictory directional constraint is applied to prevent the model from overriding the instruction.",
+  "prompts_list": [
+    "A cat casting a shadow",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This prompt presents a structural contradiction where gloves and hands typically possess five digits. Using Strategy B for spatial inconsistencies, the unusual geometry (six fingers) must be encoded in the initial structural stage to override the model’s anatomical priors before it attempts to render textures. We start with a bare hand to lock the six-digit topology, then transition to the specific object (glove) and color once the shape is stable.",
+  "prompts_list": [
+    "A hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The prompt describes a physically impossible lighting condition (shadow direction contradicting the implied light source). Following Strategy A for material/lighting contradictions, the scene must first stabilize the cat's geometry and layout using normal lighting assumptions. Once the object is locked, the impossible shadow direction is introduced to prevent the model from reverting to realistic physics during early generation stages.",
+  "prompts_list": [
+    "A cat on the ground, ordinary composition",
+    "A cat on the ground, its shadow explicitly facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

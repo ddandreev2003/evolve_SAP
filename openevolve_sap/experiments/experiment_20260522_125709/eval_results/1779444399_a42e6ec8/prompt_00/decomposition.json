@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates botanical common sense (roots down, heads up). Strategy B dictates establishing the abnormal geometry (stems up) before identity (flowers) to prevent the model from correcting the orientation in early denoising stages. The sequence seeds the inversion structure, refines the visual mass of the flowers, and finally articulates the full contradictory concept.",
+  "prompts_list": [
+    "A vase with flower stems pointing upwards",
+    "A vase with stems pointing upwards filled with colorful blooms",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

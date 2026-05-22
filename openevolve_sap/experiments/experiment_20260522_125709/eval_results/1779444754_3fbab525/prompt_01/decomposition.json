@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The prompt specifies 6 fingers, which violates typical human anatomy (5 fingers). Following Strategy B, starting with a standard glove would lock the 5-finger geometry. We begin with the anomalous structure (bare hand) to force the correct geometry early, then transition to the specific object identity (glove) once the shape is resolved.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

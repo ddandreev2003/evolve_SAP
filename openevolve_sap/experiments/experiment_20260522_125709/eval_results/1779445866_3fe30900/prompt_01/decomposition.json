@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove implies five fingers anatomically. Starting with the word \"glove\" would trigger the model's prior for five digits, making the addition of a sixth finger structurally difficult later. Strategy B requires establishing the anomalous geometry (6 fingers) with a neutral proxy first, then assigning the identity label.",
+  "prompts_list": [
+    "A white shape with 6 distinct finger segments",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

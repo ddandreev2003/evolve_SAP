@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt involves a lighting contradiction where the shadow physics are inverted. Starting with neutral ambient lighting allows the model to stabilize the cat's geometry before introducing the physically impossible shadow direction in the later stage.",
+  "prompts_list": [
+    "A cat sitting on the ground, neutral ambient lighting",
+    "A cat sitting on the ground, its shadow is cast in the physically wrong direction, facing opposite to the light"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

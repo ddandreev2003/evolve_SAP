@@ -10,12 +10,9 @@ llm:
   timeout: 120
 
 prompt:
+  # Full meta prompt loaded from openevolve_sap/prompts/evolution_system_message.md (scheduler)
   system_message: |
-    You are an expert prompt engineer evolving Python code that defines a SAP system prompt string.
-    Improve the prompt to maximize downstream image alignment for contradictory prompts.
-    Keep Python syntax valid.
-    Preserve the exported variable name SYSTEM_PROMPT.
-    Focus on clear denoising-stage guidance, robust substitution strategy, and parseable outputs.
+    See evolution_system_message.md — loaded at runtime.
 
 database:
   population_size: 40

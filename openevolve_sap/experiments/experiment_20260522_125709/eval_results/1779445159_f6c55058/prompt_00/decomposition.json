@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard flower imagery reinforces upright growth, conflicting with the inverted vase. Following Strategy B, the prompt begins with a geometric proxy of the inverted vase alone to establish the spatial structure, then transitions to the full floral identity once the coarse orientation is stable.",
+  "prompts_list": [
+    "An upside-down vase resting on a table",
+    "Long flower stems hanging from the opening of an inverted vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    5
+  ]
+}

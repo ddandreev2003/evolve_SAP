@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows dictate lighting physics; a shadow opposing the light source creates a physical impossibility. Following Strategy A, we first stabilize the cat's anatomical structure and layout with neutral lighting. Once the geometry is locked (low frequency), we introduce the contradictory shadow direction (high frequency detail) to prevent shape distortion during the denoising process.",
+  "prompts_list": [
+    "A cat standing on the ground with natural lighting",
+    "A cat standing on the ground, shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

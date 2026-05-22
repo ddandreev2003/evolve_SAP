@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove has five fingers, matching the model's strong prior. Starting with a simple white glove establishes the base material, position, and hand geometry. The six-finger requirement is a high-frequency, localized detail. Introducing it during the shape and detail refinement stages allows the model to form an extra digit without destroying the overall structural coherence.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

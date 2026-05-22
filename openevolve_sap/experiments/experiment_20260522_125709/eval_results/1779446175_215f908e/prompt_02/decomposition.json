@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting property that contradicts physical laws in this prompt. Following Strategy A, the cat's structure is established with neutral lighting first (steps 0-4). The impossible shadow is introduced at step 5 after geometry is locked to prevent morphing.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

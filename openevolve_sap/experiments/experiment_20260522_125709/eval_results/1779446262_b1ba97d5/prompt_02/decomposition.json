@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt contains a lighting contradiction (opposite shadow direction) rather than structural impossibility. Following Strategy A, the scene layout is established neutrally first to lock object pose. The impossible lighting is introduced immediately after the layout stage (Step 2) to allow geometry to form correctly before applying the conflicting shadow physics.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow explicitly faces the opposite direction to the light"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This prompt presents a spatial contradiction (flowers inverted in a vase) rather than a standard configuration. Starting with a normal vase description would lock the model into the expected \"stems-down\" growth geometry. Using Strategy B, we begin with a geometric proxy establishing stems pointing upward, then introduce the plant identity, and finally specify the full inverted concept to ensure structural stability.",
+  "prompts_list": [
+    "A vase with stems pointing upward",
+    "Flowers arranged in a vase with stems pointing upward",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

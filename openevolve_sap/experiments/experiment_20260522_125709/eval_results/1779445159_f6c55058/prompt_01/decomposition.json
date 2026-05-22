@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Starting with a standard five-finger glove would lock the model into realistic anatomy, making the six-finger requirement fail. Following Strategy B, the process begins with a structural proxy ('hand with six fingers') to encode the geometric anomaly during the low-frequency layout phase. The object identity ('glove') and material color ('white') are introduced sequentially in subsequent prompts to maintain spatial coherence while refining the high-frequency details.",
+  "prompts_list": [
+    "A hand with six fingers",
+    "A glove with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

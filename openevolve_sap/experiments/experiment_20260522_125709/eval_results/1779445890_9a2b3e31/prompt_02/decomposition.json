@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting and shadow direction are attributes typically resolved after the object's gross geometry is formed. To prevent the model from locking in a correct light source during early steps, the first prompt establishes only the cat and ground neutrally. The contradictory shadow direction is introduced in the second stage (around step 5) when lighting semantics dominate fine details.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of the cat faces the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

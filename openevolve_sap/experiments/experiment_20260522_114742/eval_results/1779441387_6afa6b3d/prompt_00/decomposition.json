@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers are strongly associated with blooming at the top of a vase. Starting with bare green stems establishes the inverted structure (stems pointing up) early in the layout phase. Once the coarse geometry is locked, transitioning to the upside-down bouquet allows the model to resolve the blooms at the bottom without reverting to a standard floral arrangement.",
+  "prompts_list": [
+    "A vase with bare green stems sticking out the top",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This involves a structural contradiction regarding digit count. Directly prompting a 'white glove' typically defaults to 5 fingers due to strong prior training biases. Following Strategy B, the prompt begins with a proxy that enforces the anomalous geometry ('hand with 6 fingers'), stabilizing the shape before transitioning to the target material and identity ('white glove').",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

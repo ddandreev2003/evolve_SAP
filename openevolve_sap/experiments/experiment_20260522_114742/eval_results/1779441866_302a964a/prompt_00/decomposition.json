@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers are almost exclusively generated upright when placed in a vase. Starting with a bundle of bare green stems sticking upwards establishes the inverted geometry of the stalks early in the denoising process. Once this structure is locked in, introducing the full concept resolves the upside-down bouquet without the model reverting to a standard upright arrangement.",
+  "prompts_list": [
+    "A vase with a bundle of bare green stems sticking upwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

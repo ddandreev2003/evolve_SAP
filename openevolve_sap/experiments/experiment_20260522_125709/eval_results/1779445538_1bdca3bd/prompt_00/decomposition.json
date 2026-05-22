@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a Structural / Spatial Contradiction (Strategy B), as flowers naturally grow downwards in vases. To prevent the model from locking the standard \"stems down, blooms up\" geometry, the first prompt establishes the inverted container structure explicitly without assuming the floral arrangement. The switch occurs late in the shape generation phase (step 5) to ensure the odd posture is locked before refining to the specific flower identity.",
+  "prompts_list": [
+    "An upside-down vase with long green stems pointing upwards from the base",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

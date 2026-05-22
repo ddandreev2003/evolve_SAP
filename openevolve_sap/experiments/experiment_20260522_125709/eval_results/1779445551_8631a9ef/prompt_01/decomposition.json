@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The number of fingers is a structural constraint that contradicts standard anatomy. Starting directly with a normal glove would lock the model into five digits due to training biases. Using a bare hand with six fingers establishes the anomalous geometry first, allowing the glove identity to be applied later without collapsing the structure back to five fingers.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

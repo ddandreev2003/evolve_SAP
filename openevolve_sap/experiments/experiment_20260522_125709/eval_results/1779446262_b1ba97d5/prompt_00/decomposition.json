@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An inverted bouquet contradicts standard physical expectations of how flowers sit in a vase (stems down). Per Strategy B, starting with a normal vase would lock the upright geometry permanently. Instead, I use a proxy that establishes the inverted container and stem direction immediately using generic stems, then refine to flowers once the spatial layout is fixed.",
+  "prompts_list": [
+    "An inverted vase with green stems pointing up",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "alignment score": 3,
+  "alignment explanation": "The image depicts a white glove, which matches the primary subject of the prompt. However, the glove has 5 fingers (including the thumb), not 6 as specified. The critical attribute of \"6 fingers\" is missing or incorrect, which significantly misrepresents the prompt’s core requirement. While the main subject (a white glove) is present, the key detail defining the prompt’s uniqueness is unfulfilled.",
+  "quality score": 5,
+  "quality explanation": "The image is visually clean, with no rendering artifacts, distortions, or broken elements. The glove’s shape, fingers, and texture are well-formed and anatomically coherent for a glove. Lighting, perspective, and surface details are consistent, and there are no physical inconsistencies (e.g., floating parts or fused geometry). The image is fully realistic and free of visible flaws."
+}

@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Following Strategy B (Structural/Spatial), the prompt violates gravity expectations for flora. Starting with a bare inverted vase establishes the unusual spatial orientation before introducing organic elements. The intermediate prompt adds generic flowers to populate the scene without triggering upright growth priors, ensuring the final \"bouquet\" maintains the inverted orientation.",
+  "prompts_list": [
+    "An upside-down vase",
+    "Flowers in an upside-down vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

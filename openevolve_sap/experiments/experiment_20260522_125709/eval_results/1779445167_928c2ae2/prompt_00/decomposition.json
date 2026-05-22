@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This prompt presents a structural contradiction where the object arrangement defies natural gravity (flowers hanging out of the bottom/sides rather than standing upright). Starting with \"bouquet in vase\" would lock the upright topology in early steps, making reversal difficult. Following Strategy B, we begin with the exact geometric shape described (stems pointing up/heads down) without using the conflicting label \"bouquet,\" then introduce the semantic term once the inverted structure is established.",
+  "prompts_list": [
+    "A vase with bare stems pointing up and flower heads at the bottom",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

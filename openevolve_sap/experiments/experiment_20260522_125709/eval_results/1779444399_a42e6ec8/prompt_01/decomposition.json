@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Gloves are strongly associated with 5 fingers in diffusion training data, making a 6th digit difficult to generate when labeled directly. By starting with a bare \"hand,\" we force the model to resolve the unusual geometry during the structural phase (steps 3-6) before introducing the \"glove\" label, ensuring the extra digit persists through the materialization process.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

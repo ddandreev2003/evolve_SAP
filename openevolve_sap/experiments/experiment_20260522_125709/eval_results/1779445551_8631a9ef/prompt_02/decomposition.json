@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt contains a lighting contradiction where the shadow direction violates physical laws. Applying Strategy A, the first sub-prompt establishes the cat's pose and scene layout with neutral lighting to prevent the model from locking a standard shadow direction. The switch occurs during the material/detail phase, allowing the impossible shadow behavior to be introduced only after structural coherence is achieved.",
+  "prompts_list": [
+    "A cat sitting on the ground with neutral ambient lighting",
+    "A cat sitting on the ground with its shadow cast in the physically wrong direction"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

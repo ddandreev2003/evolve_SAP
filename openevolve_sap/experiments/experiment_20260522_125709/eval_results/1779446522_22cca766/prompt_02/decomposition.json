@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows typically align with light sources, creating a physics violation when opposing them. Introducing this impossible lighting too early conflicts with the structural phase. Starting with the cat in neutral lighting establishes the body shape, allowing the contradictory shadow to be added only after the coarse geometry is fixed.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

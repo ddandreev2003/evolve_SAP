@@ -1,0 +1,74 @@
+{
+  "run_id": "1779445120_6bfbba06",
+  "program_path": "/tmp/tmpyrocfz_c.py",
+  "program_id": "tmpyrocfz_c",
+  "timestamp": 1779445398.4861555,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the flowers are oriented **upright** (stems in water, blooms facing upward), directly contradicting the prompt's requirement for an \"upside down\" arrangement. While the core elements (bouquet, vase) are present, the critical action described in the prompt—flowers being inverted—is entirely absent. This represents a significant misrepresentation of the intended scenario, as the image depicts a conventional floral arrangement rather than the specified upside-down configuration.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The vase, flowers, and background exhibit consistent lighting, natural textures, and precise perspective. There are no rendering artifacts, distortions, or anatomical inconsistencies (e.g., stems are properly aligned, petals are distinct, and the glass vase reflects light realistically). All elements connect cohesively, with no floating, clipped, or merged geometry. The composition is clean, realistic, and fully coherent."
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_00/score.json"
+    },
+    {
+      "prompt_index": 1,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_01",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_01/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_01/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bare human hand with 5 fingers, not a white glove with 6 fingers. The prompt explicitly requires a *glove* (an object) with 6 fingers, but the image shows a biological hand with standard anatomy. Key elements are entirely misrepresented: the wrong object (hand instead of glove) and incorrect finger count (5 vs. 6). No functional representation of the prompt’s intent is present, as the scene illustrates a natural human hand rather than a glove.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The hand is rendered with perfect anatomical coherence—fingers, joints, and skin texture are realistic and well-formed. Lighting is consistent, with natural shadows and highlights. No artifacts, distortions, or physical incoherence (e.g., floating elements, clipped geometry) are present. The high-contrast black background enhances clarity, and all elements connect naturally. The rendering is clean, deliberate, and fully coherent."
+      },
+      "alignment_score": 1.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_01/score.json"
+    },
+    {
+      "prompt_index": 2,
+      "original_prompt": "The shadow of a cat is facing the opposite direction",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_02",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_02/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_02/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image shows a cat with a shadow extending behind it in a natural, physically accurate manner. However, the prompt describes \"the shadow of a cat facing the opposite direction,\" which is a physically impossible scenario. Shadows do not \"face\" directions—they are projections defined by light source position. The image correctly depicts a standard shadow (aligned with the light source), but it does not and cannot illustrate a shadow \"facing\" *any* direction, let alone \"opposite\" to the cat. The prompt’s wording implies an intentional contradiction (e.g., a shadow oriented as if the light source were reversed), which is absent here. No conceptual representation of \"facing\" is present, making the image completely misaligned with the prompt’s nonsensical requirement.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity photograph with no visible artifacts. Lighting is natural and consistent, with clear highlights on the cat’s fur and a well-defined shadow. Textures (fur, soil, grass) are sharp and detailed. The cat’s anatomy is perfectly rendered—no distorted limbs, merged features, or unnatural proportions. Perspective and depth are coherent, with no floating objects or implausible blending. The composition is realistic and visually cohesive, showing no signs of digital distortion or rendering errors."
+      },
+      "alignment_score": 1.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445120_6bfbba06/prompt_02/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 1.3333333333333333,
+    "gemma_score": 1.0,
+    "combined_score": 0.25333333333333335
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A standard flower arrangement establishes an upright geometry early in the denoising process (steps 0-4). To display the bouquet upside down, the inverted container must be established as a structural proxy first, overriding the natural gravity bias before the flowers are rendered.",
+  "prompts_list": [
+    "A clear glass vase hanging upside down",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

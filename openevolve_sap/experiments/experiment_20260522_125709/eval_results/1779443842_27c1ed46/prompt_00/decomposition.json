@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flower bouquets are visually expected to grow upright from a vase due to gravity. This contradicts the inverted orientation requested. Starting with a standard vase layout stabilizes the object shapes before introducing the gravitational anomaly of the flowers hanging downwards in the second stage.",
+  "prompts_list": [
+    "A vase with flowers on a surface",
+    "A vase with flowers inverted downwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

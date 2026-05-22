@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Diffusion models naturally align shadows with the light source and the object's physical orientation. To break this physical rule, the prompt begins by establishing the geometry of two independent entities facing opposite ways (a cat and a black cat). Once the spatial layout is stable, the black cat is transitioned into a silhouette before finally resolving into the conceptually contradictory shadow.",
+  "prompts_list": [
+    "A cat and a black cat facing opposite directions",
+    "A cat and a black silhouette of a cat facing opposite directions",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

@@ -56,9 +56,8 @@ export function updateGraphNodeSelection() {
 }
 
 export function getNodeColor(d) {
-    if (d.island !== undefined) return d3.schemeCategory10[d.island % 10];
-    return getComputedStyle(document.documentElement)
-        .getPropertyValue('--node-default').trim() || "#fff";
+    const island = d.island !== undefined ? d.island : 0;
+    return d3.schemeCategory10[island % 10];
 }
 
 function getSelectedMetric() {
@@ -184,7 +183,25 @@ function applyDragHandlersToAllNodes() {
     });
 }
 
+function showGraphEmptyBanner(message) {
+    let banner = document.getElementById('graph-empty-banner');
+    if (!banner) {
+        banner = document.createElement('div');
+        banner.id = 'graph-empty-banner';
+        document.getElementById('graph').appendChild(banner);
+    }
+    banner.textContent = message || 'No evolution data yet.';
+    banner.style.display = 'block';
+}
+
+function hideGraphEmptyBanner() {
+    const banner = document.getElementById('graph-empty-banner');
+    if (banner) banner.style.display = 'none';
+}
+
 function renderGraph(data, options = {}) {
+    const nodes = data.nodes || [];
+    const edges = data.edges || [];
     const { svg: svgEl, g: gEl } = ensureGraphSvg();
     svg = svgEl;
     g = gEl;
@@ -193,6 +210,14 @@ function renderGraph(data, options = {}) {
         console.warn('D3 group (g) is null in renderGraph. Aborting render.');
         return;
     }
+    if (!nodes.length) {
+        g.selectAll('*').remove();
+        if (simulation) simulation.stop();
+        showGraphEmptyBanner(data.message);
+        return;
+    }
+    hideGraphEmptyBanner();
+    data = { nodes, edges };
     // Preserve zoom/pan
     let prevTransform = null;
     if (!svg.empty()) {

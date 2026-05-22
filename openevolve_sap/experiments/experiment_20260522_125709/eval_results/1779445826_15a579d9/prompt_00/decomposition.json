@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in a vase are naturally upright, so \"upside down\" is a spatial contradiction. To prevent the model from defaulting to a normal bouquet layout, the first prompt explicitly defines the inverted geometry (stems up, blooms submerged) to lock the coarse structure before introducing the final concept.",
+  "prompts_list": [
+    "A vase with flower stems sticking up out of the top, blooms submerged in the water",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

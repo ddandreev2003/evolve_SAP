@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows two cat silhouettes but does not depict *a cat and its shadow*. The prompt requires a single cat with its shadow facing the opposite direction, implying a light source creating a shadow distinct from the cat itself. Here, there are no visible light sources, no differentiation between a cat and its shadow (both are solid black silhouettes), and no indication of a shadow facing the opposite direction relative to a physical cat. While cats/shadows are present, the core relationship (a cat and its shadow in opposing directions) is missing or misrepresented.",
+  "quality score": 5,
+  "quality explanation": "The image is a clean, high-contrast silhouette with no rendering artifacts, distortions, or broken elements. The shapes of the cats are well-defined, anatomically coherent for silhouettes, and consistent in perspective. Lighting (high-contrast black/white) is uniform, and there are no floating, clipped, or merged objects. The simplicity of the design avoids visual flaws while maintaining clarity."
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt contains a lighting physics contradiction (impossible shadow direction). Following Strategy A, the initial prompt establishes the cat's geometry and basic layout with standard lighting assumptions. The impossible shadow constraint is introduced later (around step 5) to prevent structural artifacts while enforcing the contradiction once the base form is stable.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

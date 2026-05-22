@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This prompt contains a structural contradiction (six fingers) that conflicts with strong anatomical priors in diffusion models. Following Strategy B, we avoid starting with a standard glove, which would lock the geometry to five fingers. Instead, we use a topological proxy (\"hand\") to establish the unusual finger count early during coarse layout generation. Once the digit structure is stable, we switch to the final material identity (\"white glove\") to ensure the anomaly persists.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

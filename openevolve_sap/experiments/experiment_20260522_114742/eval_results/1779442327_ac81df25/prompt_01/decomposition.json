@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves naturally have five fingers, and forcing six from the beginning can severely distort the foundational hand structure. Starting with a basic white glove establishes the correct palm layout and overall proportions. The unnatural six-finger constraint is introduced during the shape formation stage, allowing the model to add the extra digit without corrupting the base geometry.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

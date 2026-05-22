@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The prompt describes a structural impossibility (flowers oriented against gravity within a container). Following Strategy B, the inverted geometry must be established before identity details to prevent the model from auto-correcting the flower stems to a vertical position during the denoising process.",
+  "prompts_list": [
+    "Flower stems pointing upwards from a vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

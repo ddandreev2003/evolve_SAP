@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A vase typically holds flowers upright with stems submerged. The prompt describes a spatial inversion where stems point up and blooms hang down, which conflicts with typical object affordances. Following Strategy B for Structural/Spatial Contradictions, we start by describing the inverted geometry explicitly to lock the layout before applying the full semantic label.",
+  "prompts_list": [
+    "A vase with flower stems pointing up and blooms hanging down",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

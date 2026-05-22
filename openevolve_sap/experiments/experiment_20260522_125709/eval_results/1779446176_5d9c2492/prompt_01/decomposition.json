@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A 6-fingered hand violates the anatomical prior for human limbs. Starting with a bare hand establishes the unusual finger count geometry before the glove material is applied, preventing the model from reverting to 5 fingers during the layout phase.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

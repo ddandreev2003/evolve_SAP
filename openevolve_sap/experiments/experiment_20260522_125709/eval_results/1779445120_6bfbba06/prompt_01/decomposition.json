@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A six-fingered glove creates a structural anomaly incompatible with typical five-finger geometry. Starting with a bare hand establishes the six-digit topology early (Strategy B) before introducing the glove texture, preventing the model from correcting the finger count during later denoising stages.",
+  "prompts_list": [
+    "A bare human hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

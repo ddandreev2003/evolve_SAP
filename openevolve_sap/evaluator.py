@@ -266,7 +266,7 @@ def _gemma_judge(
         ),
     }
     response = client.chat.completions.create(
-        model="google/gemma-4-26b-a4b-it",
+        model="google/gemini-3.1-pro-preview",
         messages=[{"role": "user", "content": json.dumps(judge_request, ensure_ascii=False)}],
         max_tokens=256,
     )

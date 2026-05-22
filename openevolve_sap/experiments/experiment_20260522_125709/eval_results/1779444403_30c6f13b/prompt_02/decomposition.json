@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradictions such as impossible shadow directions fall under Strategy A. The cat's geometry must be established stably before the model attempts to render physically inconsistent shadow lighting.",
+  "prompts_list": [
+    "A cat on the ground",
+    "The shadow of the cat facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

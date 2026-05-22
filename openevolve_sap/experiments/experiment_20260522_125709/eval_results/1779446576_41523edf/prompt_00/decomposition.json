@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This presents a Structural/Spatial Contradiction (Strategy B) where the natural orientation of flowers conflicts with the requested pose. Diffusion priors strongly favor upright bouquets; starting with the final object would cause the model to revert to the normal geometry during later denoising. To maintain the unusual structure, the prompt begins with a structural proxy encoding the inverted geometry (\"vase with stems pointing up\") before transitioning to the full identity, ensuring the low-frequency layout matches the impossible pose before high-frequency petal details are generated.",
+  "prompts_list": [
+    "An inverted vase with bare stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

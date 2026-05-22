@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction depends on light physics, making this geometrically contradictory. Following Strategy A for lighting contradictions, the base scene establishes the cat's structure with standard lighting first, avoiding premature geometry locking that would conflict with the impossible shadow.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet presents a structural contradiction where the flower orientation defies typical training data (blooms up, stems down). Per Strategy B, starting with a normal \"beautiful bouquet\" would lock the model into an upright geometry. Instead, a proxy establishing the inverted spatial arrangement (\"stems-up\") is used first, followed by the explicit target identity once the layout is fixed.",
+  "prompts_list": [
+    "A stems-up floral composition inside a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove has five fingers, making six a structural impossibility. Geometry is locked in steps 0-4. Starting with \"a hand with six fingers\" forces the anomalous shape early without triggering the glove prior, then transitions to \"white glove\" to add material identity without undoing the digit count.",
+  "prompts_list": [
+    "A hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

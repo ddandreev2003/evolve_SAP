@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented **right-side up** (stems in the vase, blooms at the top), directly contradicting the prompt’s requirement that the bouquet be \"upside down.\" While the core objects (bouquet, vase) are present, the critical action/attribute of being upside down is entirely missing, resulting in a significant misrepresentation of the prompt’s intent.",
+  "quality score": 5,
+  "quality explanation": "The image is visually clean, realistic, and coherent. The flowers, vase, and background exhibit consistent lighting, sharp detail, and natural textures. There are no rendering artifacts, distorted elements, or structural inconsistencies—everything appears physically plausible and well-composed."
+}

@@ -24,6 +24,14 @@ from openevolve_sap.exp_logging.gpu_monitor import GPUMonitor
 from openevolve_sap.export_utils import extract_system_prompt_from_program
 from openevolve_sap.sap_eval_settings import get_ram_limit_gb, system_ram_gb
 
+EVOLUTION_META_PROMPT_PATH = PROJECT_ROOT / "openevolve_sap" / "prompts" / "evolution_system_message.md"
+
+
+def load_evolution_system_message() -> str:
+    if not EVOLUTION_META_PROMPT_PATH.is_file():
+        raise FileNotFoundError(f"Evolution meta prompt not found: {EVOLUTION_META_PROMPT_PATH}")
+    return EVOLUTION_META_PROMPT_PATH.read_text(encoding="utf-8").strip()
+
 
 def preflight_gpus(gpu_ids: list[int], min_free_mib: int = 500) -> None:
     if not torch.cuda.is_available():
@@ -164,6 +172,7 @@ async def run_evolution_async(args: argparse.Namespace) -> int:
     from openevolve.config import load_config
 
     config = load_config(str(config_path))
+    config.prompt.system_message = load_evolution_system_message()
     if args.iterations is not None:
         config.max_iterations = args.iterations
     ckpt_int = args.checkpoint_interval or int(os.getenv("SAP_CHECKPOINT_INTERVAL", "0") or 0)

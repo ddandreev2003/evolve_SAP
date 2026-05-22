@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows naturally align with the object's geometry and the light source. To force a shadow to face the opposite way, the model first needs to establish two distinct, opposing shapes. Starting with two cats builds the contradictory layout, which is then transitioned into a cat and a shadow before resolving to the final physical anomaly.",
+  "prompts_list": [
+    "Two cats facing opposite directions",
+    "A cat and a black cat-shaped shadow facing opposite directions",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

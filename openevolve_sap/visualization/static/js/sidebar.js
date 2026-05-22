@@ -1,5 +1,6 @@
 import { allNodeData, archiveProgramIds, formatMetrics, renderMetricBar, getHighlightNodes, selectedProgramId, setSelectedProgramId } from './main.js';
 import { scrollAndSelectNodeById } from './graph.js';
+import { getEvalImagesForNode, renderEvalImagesHtml } from './evalImages.js';
 
 const sidebar = document.getElementById('sidebar');
 // Add a draggable resizer to let users change the sidebar width.
@@ -296,6 +297,7 @@ export function showSidebarContent(d, fromHover = false) {
     let tabContentHtml = '';
     let tabNames = [];
     if (d.code && typeof d.code === 'string' && d.code.trim() !== '') tabNames.push('Code');
+    if (getEvalImagesForNode(d).length > 0) tabNames.push('Images');
     if ((d.prompts && typeof d.prompts === 'object' && Object.keys(d.prompts).length > 0) || (d.artifacts_json && typeof d.artifacts_json === 'object' && Object.keys(d.artifacts_json).length > 0)) tabNames.push('Prompts');
     const children = allNodeData.filter(n => n.parent_id === d.id);
     if (children.length > 0) tabNames.push('Children');
@@ -367,6 +369,9 @@ export function showSidebarContent(d, fromHover = false) {
         function renderSidebarTabContent(tabName, d, children) {
             if (tabName === 'Code') {
                 return `<pre class="sidebar-code-pre">${escapeHtml(d.code)}</pre>`;
+            }
+            if (tabName === 'Images') {
+                return `<div class="sidebar-eval-images">${renderEvalImagesHtml(getEvalImagesForNode(d))}</div>`;
             }
             if (tabName === 'Prompts') {
                 // Prompt select logic

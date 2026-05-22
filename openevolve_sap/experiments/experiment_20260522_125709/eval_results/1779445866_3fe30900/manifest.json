@@ -1,0 +1,74 @@
+{
+  "run_id": "1779445866_3fe30900",
+  "program_path": "/tmp/tmpc25wlz1l.py",
+  "program_id": "tmpc25wlz1l",
+  "timestamp": 1779446148.575662,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but they are arranged in the normal upright position rather than upside down as specified in the prompt. While the main components (flowers and vase) are present, the critical element of the bouquet being upside down is completely misrepresented. The flowers are facing upward with stems going down into the vase, which is the exact opposite orientation of what the prompt describes. The key conceptual element (inversion) is entirely absent, significantly misrepresenting the prompt's intent.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible artifacts or distortions. The vase, flowers, and stems are all well-formed with consistent lighting, texture, and perspective. The elements appear physically coherent and naturally connected, with realistic details throughout the composition. The lighting is even, the textures are clear, and all objects maintain proper form and spatial relationships without any warping, blending issues, or rendering flaws."
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_00/score.json"
+    },
+    {
+      "prompt_index": 1,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_01",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_01/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_01/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a white glove, satisfying the \"white glove\" element of the prompt. However, it clearly shows only 5 fingers (thumb + 4 fingers), directly contradicting the requirement for \"6 fingers.\" This is a critical misrepresentation of a core attribute specified in the prompt. While the object type (glove) and color (white) are correct, the fundamental detail of finger count is entirely wrong, making the scene non-functional for the intended description.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, minimalist 3D render with no visible artifacts, distortions, or structural flaws. The glove’s anatomy is smooth and coherent, with consistent lighting, texture, and perspective. Fingers are well-formed, proportions are natural for a standard glove, and there are no issues like merged geometry, floating elements, or implausible blending. The simplicity of the design enhances its visual coherence."
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_01/score.json"
+    },
+    {
+      "prompt_index": 2,
+      "original_prompt": "The shadow of a cat is facing the opposite direction",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_02",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_02/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_02/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly shows a cat facing forward (toward the camera), with its shadow cast behind it. The shadow’s orientation is opposite to the cat’s direction (facing away from the camera), directly illustrating the prompt’s requirement. The key elements (cat and shadow) are present with the correct spatial relationship, and the scene conveys the intended situation concretely without metaphorical or ambiguous representation.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts. The cat’s anatomy (paws, fur, facial features) is coherent and realistic, lighting and texture are natural and consistent, and the ground/surroundings show no distortions or broken elements. The composition is physically plausible with no floating objects or implausible blending."
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_125709/eval_results/1779445866_3fe30900/prompt_02/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 3.0,
+    "gemma_score": 5.0,
+    "combined_score": 0.6799999999999999
+  }
+}

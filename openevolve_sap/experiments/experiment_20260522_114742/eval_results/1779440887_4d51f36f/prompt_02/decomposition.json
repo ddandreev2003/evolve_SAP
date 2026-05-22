@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows naturally match the pose and orientation of their subjects. To break this physical constraint, the prompt starts with a real cat and a black cat to establish two separate entities with independent orientations. The black cat is then transitioned to a flat silhouette on the ground, serving as a physical proxy for the shadow, before finalizing the contradictory lighting scenario.",
+  "prompts_list": [
+    "A cat and a black cat facing the opposite direction",
+    "A cat and a black silhouette on the ground facing the opposite direction",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

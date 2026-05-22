@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting contradiction requiring Strategy A. The cat's geometry and the light source must be stabilized first to ensure the object remains coherent. The impossible shadow direction is injected later (step 7) after the solid structure is formed, preventing the diffusion model from distorting the cat's shape to accommodate the error.",
+  "prompts_list": [
+    "A cat standing on the ground, strong sunlight coming from the left",
+    "A cat standing on the ground, strong sunlight coming from the left, casting a shadow to the left towards the light"
+  ],
+  "switch_prompts_steps": [
+    7
+  ]
+}

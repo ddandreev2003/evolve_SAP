@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Bouquets are typically depicted right-side up, with flowers at the top and stems in the vase. To enforce the inverted geometry, the prompt begins with bare stems sticking upwards. This establishes the structural layout and prevents the model from generating a standard bouquet. Once the coarse upside-down shape is locked, the final prompt is introduced to render the flowers at the base.",
+  "prompts_list": [
+    "A vase with bare green stems sticking up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

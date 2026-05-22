@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This prompt presents a structural contradiction where flowers defy natural growth direction within a vase. Following Strategy B, we avoid starting with \"flowers\" to prevent the model from locking into upright geometry. Instead, we introduce a neutral proxy (\"bare sticks\") to establish the inverted spatial layout early. The semantic identity (\"flowers\") is introduced after the coarse structure stabilizes to ensure the impossible orientation remains visually coherent.",
+  "prompts_list": [
+    "A vase resting on a table with a bundle of bare sticks sticking out of the top.",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard vases rely on upright geometry (stems up, heads out); an \"upside down\" arrangement violates these physical priors regarding gravity and liquid containment. Following Strategy B, the initial prompt uses a descriptive geometric proxy to lock the inverted flower-and-vase configuration before introducing the semantic contradiction of the \"bouquet\" label later in the generation process.",
+  "prompts_list": [
+    "Flower heads resting on the table with stems pointing up out of a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

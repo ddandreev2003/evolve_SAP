@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt violates physical lighting laws where shadows defy light sources. Following Strategy A for lighting contradictions, we start with a structurally sound scene containing the cat and normal lighting, then switch to the impossible shadow configuration once geometry is locked.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

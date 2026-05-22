@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This involves a structural contradiction (six fingers instead of five). Per Strategy B, starting with 'glove' locks in standard 5-finger anatomy. We begin with a structural proxy ('hand with 6 fingers') to establish the anomalous geometry, then switch to the target material ('white glove') once the shape is stable.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

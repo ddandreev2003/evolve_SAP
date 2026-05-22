@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "",
+  "prompts_list": [
+    "A bundle of bare green stems sticking out of a vase",
+    "A bundle of bare green stems sticking out of a vase, with colorful flower blooms inside the bottom",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A glove typically has five fingers, representing a strong structural prior in diffusion models. Starting with a standard \"white glove\" establishes the object's general shape, size, and color. The unusual trait of \"6 fingers\" is a fine detail that is introduced later in the denoising process, allowing the model to append the extra digit locally without its five-finger prior overriding the initial structure.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    8
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet contradicts the natural growth orientation of flowers (typically upright). According to Strategy B, we must avoid starting with \"flowers\" to prevent locking upright geometry. Instead, we introduce a neutral proxy (\"bare stems\") that enforces the inverted structure early, then transition to the final identity (\"flowers\") once the geometry is stabilized.",
+  "prompts_list": [
+    "A vase containing bare green stems pointing downwards from the opening",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

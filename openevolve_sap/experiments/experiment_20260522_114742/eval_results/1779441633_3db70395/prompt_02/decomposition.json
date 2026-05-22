@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "",
+  "prompts_list": [
+    "Two cats facing opposite directions",
+    "A cat and a black silhouette of a cat facing opposite directions",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

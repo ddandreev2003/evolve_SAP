@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet is typically depicted with blooms at the top and stems resting in the vase. To invert this structure, the prompt first establishes bare stems sticking out of the vase to fix the upward-pointing geometry. Once the layout is stable, the final prompt is introduced to generate the flowers upside down inside the vase.",
+  "prompts_list": [
+    "Bare flower stems sticking out of a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

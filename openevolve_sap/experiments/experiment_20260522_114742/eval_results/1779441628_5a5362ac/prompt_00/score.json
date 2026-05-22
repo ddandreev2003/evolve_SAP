@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented normally (blooms at the top, stems extending downward into the vase). The prompt specifies an *upside-down* bouquet, which would require the blooms to be positioned inside the vase and stems protruding upward. Since the critical spatial relationship (upside-down orientation) is entirely absent, the image significantly misrepresents the prompt’s intent.",
+  "quality score": 5,
+  "quality explanation": "The image is a clean, realistic photograph with no visible rendering artifacts. The flowers, vase, and background exhibit consistent lighting, natural textures, and coherent perspective. All elements are well-formed, with no distortions, merged shapes, or anatomical inconsistencies. The composition is visually coherent and professional."
+}

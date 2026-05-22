@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove having 6 fingers violates anatomical priors as standard gloves fit 5 fingers. Starting with a correct glove would lock the 5-finger geometry irreversibly. A proxy using \"fabric\" and \"exactly 6 fingers\" locks the strange shape first, allowing the final prompt to refine the identity to a glove.",
+  "prompts_list": [
+    "A hand made of white fabric with exactly 6 fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

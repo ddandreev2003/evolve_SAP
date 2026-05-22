@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A glove with 6 fingers contradicts anatomical priors that expect 5 digits. To prevent the model from enforcing standard hand geometry, the prompt begins with a geometrically accurate proxy (hand with 6 fingers) to lock the unusual structure. The material identity (white glove) is introduced in the second stage after the spatial configuration is stable.",
+  "prompts_list": [
+    "A bare human hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

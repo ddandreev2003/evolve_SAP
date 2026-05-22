@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove strongly pulls the model toward a five-finger prior. Establishing the basic structure and layout of the white glove first stabilizes the object's geometry. The unusual count of six fingers is a local structural detail that is introduced later to modify the established shape without breaking the overall composition.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    7
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The contradiction involves lighting physics (shadow direction) rather than gross geometry. Following Strategy A, the prompt starts with a neutral scene to establish the cat’s shape and pose. At step 2, the impossible shadow condition is introduced while the model is still stabilizing large-scale structures, ensuring the anomaly is captured without distorting the object identity.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow explicitly facing the opposite direction to the light"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

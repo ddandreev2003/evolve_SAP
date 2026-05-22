@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove naturally implies five fingers due to strong anatomical priors. Following Strategy B for Structural/Spatial Contradictions, starting with a \"5-finger glove\" causes the model to lock incorrect geometry that is hard to reverse late in generation. We begin with a \"hand with 6 fingers\" to establish the anomalous topology during the shape-building stage (Steps 0–4). Once the unusual digit count is embedded in the latent noise structure, we transition to the specific \"white glove\" identity to apply material and texture without breaking the finger count.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This involves a spatial contradiction where flowers naturally grow upward, while a vase typically holds stems downward. Following Strategy B, starting with a normal vase would lock correct geometry. A structural proxy emphasizing inverted stem direction is used first to stabilize the anomaly, followed by the full semantic concept.",
+  "prompts_list": [
+    "A vase with flower stems sticking upwards from the rim",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

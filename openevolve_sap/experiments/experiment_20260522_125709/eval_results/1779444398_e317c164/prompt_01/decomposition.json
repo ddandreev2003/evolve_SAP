@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Strategy B: Structural / Spatial Contradictions. Six fingers violate standard anatomical priors which the model tends to correct automatically. Following the guideline for geometric proxies, we start with a 'hand with 6 fingers' to lock the unusual topology during the low-frequency phase. Then, we transition to the specific 'white glove' material once the geometry is stabilized, preventing the model from reverting to five fingers.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

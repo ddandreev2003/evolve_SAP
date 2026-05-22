@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The prompt violates physical laws regarding light and shadow directions. Following Strategy A, the scene layout is locked first with a physically consistent base image, then the impossible lighting condition is introduced once the geometry is stable.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, but its shadow is explicitly cast in the opposite direction of its body"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

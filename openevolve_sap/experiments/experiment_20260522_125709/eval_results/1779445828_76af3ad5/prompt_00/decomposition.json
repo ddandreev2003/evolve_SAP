@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upright vase triggers strong gravitational priors, causing the model to correct the inversion during generation. According to Strategy B (Structural Contradictions), we start with a spatial proxy that enforces the inverted geometry in the low-frequency stages (0–3). Only after the shape is locked do we introduce the floral identity and fine texture details to prevent the model from smoothing out the impossible orientation.",
+  "prompts_list": [
+    "An inverted vase with stems pointing upwards",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This falls under Strategy B (Structural Contradiction). Starting with \"a white glove\" would immediately lock standard five-finger anatomy, making it impossible to later render six digits without hallucination. To fix this, the first prompt establishes the impossible 6-finger topology using a generic hand proxy before transitioning to the specific object identity. By switching early at step 4, the model retains the correct finger count while adopting the glove texture and color in the subsequent stages.",
+  "prompts_list": [
+    "A hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

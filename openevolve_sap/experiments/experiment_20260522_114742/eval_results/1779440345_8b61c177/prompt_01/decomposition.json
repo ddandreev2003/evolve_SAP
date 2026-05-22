@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Generating exactly 6 fingers contradicts the model's strong prior for 5-fingered hands and gloves. Starting with a standard white glove establishes the correct coarse shape and layout. The anomalous count is introduced later, when the model shifts to resolving fine local details, ensuring the extra finger is added without corrupting the overall hand geometry.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    8
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt describes a physical impossibility regarding lighting physics (shadow direction opposing the light source). Following Strategy A, we start with a normal cat and scene layout with neutral lighting to lock geometry (Steps 0–4), then switch to enforce the impossible shadow direction during the lighting/material phase (Step 5+).",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

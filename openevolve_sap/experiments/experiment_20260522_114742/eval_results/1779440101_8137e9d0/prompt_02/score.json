@@ -1,0 +1,6 @@
+{
+  "alignment score": 1,
+  "alignment explanation": "The image shows a cat with its back to the viewer and a shadow cast to the right. The shadow’s orientation (facing right) does not align with the prompt’s requirement that the shadow “faces the opposite direction” of the cat. The cat is facing forward (away from the camera), but the shadow’s direction is perpendicular (to the right), not opposite. The key conceptual element—shadow direction relative to the cat—is misrepresented, so the prompt’s meaning is not reflected.",
+  "quality score": 5,
+  "quality explanation": "The image is a clear, high-resolution photograph with no visible rendering artifacts. The cat, shadow, and asphalt surface are well-defined, with consistent lighting, texture, and perspective. All elements appear physically coherent and natural."
+}

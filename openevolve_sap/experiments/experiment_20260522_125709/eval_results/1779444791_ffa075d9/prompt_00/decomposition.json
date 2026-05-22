@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet is physically defined by stems submerged and blooms facing up. An upside-down configuration violates gravitational and botanical priors, which diffusion models often auto-correct to standard orientations. Using Strategy B, the first sub-prompt explicitly locks the inverted geometry (stems up) before refining the identity in the second prompt to prevent the model from enforcing a \"normal\" vase posture.",
+  "prompts_list": [
+    "A vase with flower stems pointing upwards from the opening",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

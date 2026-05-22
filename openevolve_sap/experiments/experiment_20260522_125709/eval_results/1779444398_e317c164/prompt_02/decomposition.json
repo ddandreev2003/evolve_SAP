@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction represents a lighting physics contradiction that can destabilize object geometry if enforced too early. By starting with a standard cat image, the model establishes the low-frequency structure and shape. The unnatural shadow directive is introduced in the second stage to apply the visual inconsistency once the base form is locked.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

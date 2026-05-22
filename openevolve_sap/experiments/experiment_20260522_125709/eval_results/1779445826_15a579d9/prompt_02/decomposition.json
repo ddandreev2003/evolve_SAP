@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are a lighting attribute determined after object geometry. By starting with the basic scene, the model establishes the cat's structure before overriding lighting expectations in the second stage to create the visual contradiction.",
+  "prompts_list": [
+    "A cat on the ground",
+    "The shadow of the cat faces the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

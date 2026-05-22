@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Floral arrangements typically follow gravity with stems entering a vase from above. An inverted bouquet contradicts standard spatial priors for objects and liquids. Starting with a descriptive proxy that explicitly forces the inverted geometry ('stems sticking up', 'heads stuffed down') ensures the model locks the unusual layout before applying the final semantic label at the end of the denoising process.",
+  "prompts_list": [
+    "A vase with thick green stems sticking straight up into the air, and flower heads stuffed down inside the bottom of the vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

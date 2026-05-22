@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A standard bouquet in a vase relies on gravity where stems enter the bottom and flowers face up. Starting with \"upside down\" immediately conflicts with physical priors. Strategy B is applied: first establishing the inverted geometry (stems pointing up) ensures the layout is stable, then introducing the object identity (flowers/vase), and finally the explicit contradiction.",
+  "prompts_list": [
+    "A glass vase held upside down with stems protruding upwards",
+    "A vase containing flowers hanging upside down",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

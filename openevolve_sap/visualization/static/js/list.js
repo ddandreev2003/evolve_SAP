@@ -1,5 +1,6 @@
 import { allNodeData, archiveProgramIds, formatMetrics, renderMetricBar, getHighlightNodes, getSelectedMetric, setAllNodeData, selectedProgramId, setSelectedProgramId } from './main.js';
 import { showSidebar, setSidebarSticky, showSidebarContent } from './sidebar.js';
+import { getEvalImagesForNode } from './evalImages.js';
 import { selectProgram, scrollAndSelectNodeById } from './graph.js';
 import { selectPerformanceNodeById } from './performance.js';
 
@@ -139,6 +140,25 @@ export function renderNodeList(nodes) {
         row.appendChild(openDiv);
 
         row.appendChild(metricsBlock);
+
+        const evalImages = getEvalImagesForNode(node);
+        if (evalImages.length) {
+            const thumbsRow = document.createElement('div');
+            thumbsRow.className = 'list-eval-thumbs';
+            thumbsRow.style.flex = '0 0 auto';
+            thumbsRow.style.display = 'flex';
+            thumbsRow.style.gap = '6px';
+            thumbsRow.style.alignItems = 'center';
+            evalImages.slice(0, 3).forEach(img => {
+                const im = document.createElement('img');
+                im.src = img.url;
+                im.alt = `prompt ${img.prompt_index}`;
+                im.loading = 'lazy';
+                im.title = (img.original_prompt || '').slice(0, 80);
+                thumbsRow.appendChild(im);
+            });
+            row.appendChild(thumbsRow);
+        }
 
         row.onclick = (e) => {
             if (e.target.tagName === 'A') return;

@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows a bouquet of yellow flowers in a white vase, but the bouquet is oriented **right-side up** (stems down, blooms up), directly contradicting the prompt's requirement of being \"upside down.\" While the correct objects (bouquet, vase) are present, the critical action specified by the prompt—flowers inverted with blooms pointing downward and stems extending upward from the vase—is entirely absent. The scene depicts a standard floral arrangement, failing to illustrate the intended scenario in any concrete or functional way.",
+  "quality score": 5,
+  "quality explanation": "The image is clean, realistic, and visually coherent with no discernible artifacts. The flowers, stems, and vase exhibit consistent lighting, natural textures, and accurate perspective. Complex elements like the clustered blooms, delicate petals, and cylindrical vase shape are well-formed and physically plausible. There is no distortion, warping, or implausible blending; all components connect naturally without floating or clipped geometry. The rendering is sharp and intentional."
+}

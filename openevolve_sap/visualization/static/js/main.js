@@ -3,6 +3,7 @@
 import { sidebarSticky, showSidebarContent } from './sidebar.js';
 import { updateListSidebarLayout, renderNodeList } from './list.js';
 import { renderGraph, g, getNodeRadius, animateGraphNodeAttributes } from './graph.js';
+import { updateDimensions } from './state.js';
 
 export let allNodeData = [];
 let metricMinMax = {};
@@ -79,10 +80,22 @@ function renderMetricBar(value, min, max, opts={}) {
 function loadAndRenderData(data) {
     archiveProgramIds = Array.isArray(data.archive) ? data.archive : [];
     lastDataStr = JSON.stringify(data);
+    setAllNodeData(data.nodes || []);
+    updateDimensions();
     renderGraph(data);
-    renderNodeList(data.nodes);
+    renderNodeList(data.nodes || []);
+    const src = data.data_source || 'unknown';
+    const ckpt = data.checkpoint_dir || 'static export';
     document.getElementById('checkpoint-label').textContent =
-        "Checkpoint: " + (data.checkpoint_dir || 'static export');
+        `Source: ${src} | ${ckpt}`;
+    const statusEl = document.getElementById('data-status-label');
+    if (statusEl) {
+        statusEl.textContent = data.message || (data.nodes?.length ? `${data.nodes.length} programs` : '');
+    }
+    if (data.eval_runs) {
+        window._cachedEvalRuns = data.eval_runs;
+        if (window.refreshEvalGallery) window.refreshEvalGallery();
+    }
     const metricSelect = document.getElementById('metric-select');
     const prevMetric = metricSelect.value || localStorage.getItem('selectedMetric') || null;
     metricSelect.innerHTML = '';

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Gloves and human hands have a strong visual prior for exactly five fingers. To bypass this anatomical constraint, we start with an \"alien hand,\" which shares the base geometry (a palm with radiating appendages) but is less strictly bound to human anatomy, allowing the model to generate the unnatural number of fingers. Once the six-finger structure is stabilized, we transition to the \"white glove\" to apply the correct fabric material and object identity.",
+  "prompts_list": [
+    "A white alien hand with 6 fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

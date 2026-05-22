@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Bouquets are strongly biased to appear upright in vases. Starting with bare stems pointing upward establishes the inverted layout and prevents the model from generating flowers at the top. Flowers are then introduced inside the bottom of the vase before resolving to the final upside-down concept.",
+  "prompts_list": [
+    "A vase with bare stems sticking out",
+    "Flowers inside a vase with bare stems sticking out",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

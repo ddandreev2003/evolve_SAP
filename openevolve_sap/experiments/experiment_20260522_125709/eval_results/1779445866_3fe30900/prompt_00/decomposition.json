@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural contradiction where the floral arrangement violates expected orientation (upright growth vs inverted gravity). Following Strategy B, avoid locking normal flower geometry by starting with a proxy object that enforces the inverted shape (broom/stems) before transitioning to the final identity.",
+  "prompts_list": [
+    "An upside-down broom inside a vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

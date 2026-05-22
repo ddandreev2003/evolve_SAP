@@ -28,7 +28,7 @@ if (!document.getElementById('custom-dark-toggle')) {
 }
 
 // Tab switching logic
-const tabs = ["branching", "performance", "list"];
+const tabs = ["branching", "performance", "list", "evals"];
 tabs.forEach(tab => {
     document.getElementById(`tab-${tab}`).addEventListener('click', function() {
         tabs.forEach(t => {
@@ -45,6 +45,9 @@ tabs.forEach(tab => {
                 selectProgram(selectedProgramId);
                 showSidebarContent(window._lastSelectedNodeData || null);
             }
+        }
+        if (tab === 'evals' && window.refreshEvalGallery) {
+            window.refreshEvalGallery();
         }
         // Disable page scroll for graph tabs
         if (tab === 'branching' || tab === 'performance') {
@@ -74,18 +77,3 @@ function getSystemTheme() {
 document.getElementById('darkmode-toggle').addEventListener('change', function() {
     setTheme(this.checked ? 'dark' : 'light');
 });
-
-// Canvas size and zoom setup
-let toolbarHeight = document.getElementById('toolbar').offsetHeight;
-
-const svg = d3.select("#graph").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-    .call(d3.zoom()
-        .scaleExtent([0.1, 10])
-        .on("zoom", (event) => {
-            g.attr("transform", event.transform);
-        }))
-    .on("dblclick.zoom", null);
-
-const g = svg.append("g");

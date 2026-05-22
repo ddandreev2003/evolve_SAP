@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves are trained primarily on five-fingered anatomy, making a six-fingered glove a structural contradiction that the model tends to correct during early denoising. To preserve the impossible geometry, the initial sub-prompt describes the shape explicitly using generic fabric terms to lock the 6-digit layout before applying the specific \"glove\" label which might otherwise trigger a 5-finger prior.",
+  "prompts_list": [
+    "A white fabric with six distinct finger protrusions",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

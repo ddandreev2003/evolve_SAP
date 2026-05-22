@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This prompt contains a structural contradiction (human anatomy typically has 5 fingers). Following Strategy B for spatial inconsistencies, we avoid a normal glove template which would lock in 5-finger geometry. Instead, we begin with a concrete proxy establishing the correct digit count immediately, then transition to the specific glove identity once the shape is stable.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

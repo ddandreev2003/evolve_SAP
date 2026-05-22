@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upward; depicting them inverted creates a structural spatial contradiction. Following Strategy B, we avoid starting with 'a beautiful bouquet' which would lock in normal geometry. Instead, we use a proxy of bare stems to establish the vase structure before introducing the impossible floral identity.",
+  "prompts_list": [
+    "A vase containing a bunch of bare green stems pointing straight up into the air, no flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

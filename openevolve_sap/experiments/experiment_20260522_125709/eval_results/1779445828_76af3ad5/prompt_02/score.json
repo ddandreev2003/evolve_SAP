@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows a cat and its shadow, but the shadow is cast to the side of the cat (perpendicular to its facing direction), not *opposite* to it. For the shadow to face the opposite direction, it should extend directly behind the cat relative to its orientation (e.g., if the cat faces north, the shadow should point south). Here, the shadow’s lateral placement misrepresents the core requirement of the prompt, making the key spatial relationship incorrect.",
+  "quality score": 5,
+  "quality explanation": "The image is visually flawless. The cat’s anatomy is precise, with no distortions in fur, limbs, or posture. Lighting and shadows are natural, textures (ground, fur) are consistent, and perspective is coherent. No artifacts, warping, or broken elements are present."
+}

@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows naturally mirror the orientation of the object casting them. To force the shadow to face the opposite direction, the model first establishes the structural geometry by generating two cats facing opposite directions. One cat is then transitioned into a black cat to act as a dark visual proxy, and finally into a shadow, preserving the contradictory pose without breaking the scene's composition.",
+  "prompts_list": [
+    "Two cats facing opposite directions",
+    "A cat and a black cat facing opposite directions",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

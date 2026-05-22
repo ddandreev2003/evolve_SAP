@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Human gloves typically have five fingers, so six fingers creates a structural contradiction. Starting with 'a hand with 6 fingers' establishes the correct anatomy and geometry early. Switching to the glove material after step 4 preserves the impossible count while adding the final object identity, preventing the model from defaulting to standard 5-finger gloves during refinement.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

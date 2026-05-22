@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are governed by strict lighting physics that diffusion models assume by default during the early denoising stages. By starting with a standard representation of the cat and its immediate vicinity, the model locks in the correct body structure and pose. The impossible shadow direction is introduced at step 4, allowing the texture and lighting details to override the physical constraints without distorting the animal's form.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradictions like impossible shadows require establishing the object's geometry first to prevent structural warping. Starting with a neutral scene allows the model to render the cat correctly without forcing immediate physics enforcement. The switch occurs around step 5 when coarse geometry is locked, allowing the contradictory shadow direction to be applied to surfaces and shadows without breaking the underlying form.",
+  "prompts_list": [
+    "A realistic cat sitting on the ground",
+    "A realistic cat sitting on the ground with the shadow of the cat facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

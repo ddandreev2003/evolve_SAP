@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves follow five-finger anatomy based on training data priors. To prevent the model from defaulting to five fingers, the scene starts with the generic glove shape and material, transitioning to the specific count once the base geometry is stable.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

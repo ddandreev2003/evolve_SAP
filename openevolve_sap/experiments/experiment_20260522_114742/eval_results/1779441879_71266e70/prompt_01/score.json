@@ -1,0 +1,6 @@
+{
+  "alignment score": 3,
+  "alignment explanation": "The image shows a white glove, satisfying the color and object requirement. However, it depicts only 5 fingers (including the thumb), directly contradicting the prompt’s specification of \"6 fingers.\" The core attribute (finger count) is fundamentally incorrect, though the glove itself is clearly present and functional in form. This qualifies as \"main subjects present but important attributes wrong.\"",
+  "quality score": 5,
+  "quality explanation": "The rendering is clean and realistic. The glove exhibits smooth, uniform texture with consistent lighting and subtle shading that enhances its 3D form. Fingers and the wrist are anatomically coherent, with no visible distortions, merged shapes, or rendering artifacts. Perspective and proportions are natural, and all elements connect seamlessly without physical implausibilities. The image is visually flawless."
+}

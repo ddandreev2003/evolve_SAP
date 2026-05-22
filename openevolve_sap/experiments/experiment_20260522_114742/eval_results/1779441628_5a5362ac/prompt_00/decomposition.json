@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in a vase have a very strong visual prior of blooms at the top and stems at the bottom. Starting with bare green stems sticking upwards establishes the inverted structural layout. Once this coarse geometry is stable, transitioning to the upside-down bouquet allows the model to render the petals at the bottom without reverting to a standard right-side-up arrangement.",
+  "prompts_list": [
+    "Bare green stems sticking upwards out of a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

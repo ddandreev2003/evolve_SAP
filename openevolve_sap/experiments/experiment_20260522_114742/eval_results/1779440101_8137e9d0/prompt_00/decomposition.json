@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet is strongly associated with flowers blooming at the top and stems inside the vase. Explicitly describing the inverted layout—with bare stems sticking out the top and colorful blooms inside the vase—forces the model to establish the correct structural geometry early on, preventing its strong prior from overriding the \"upside down\" concept.",
+  "prompts_list": [
+    "Bare green stems sticking out of a vase, with colorful flowers inside the vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

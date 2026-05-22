@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a structural/specialized contradiction (Strategy B) that dictates coarse geometry (Steps 0–4). A standard glove prior favors 5 fingers; injecting the 6-finger geometry early via a generic hand ensures the topology is preserved before applying the specific material (leather/fabric) and color (white) in the subsequent prompt.",
+  "prompts_list": [
+    "A hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

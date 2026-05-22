@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The standard five-finger layout of a glove is a very strong prior in diffusion models. Establishing a basic white glove first secures the overall shape and hand structure, delaying the unusual six-finger requirement to the later denoising steps where fine details are resolved.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

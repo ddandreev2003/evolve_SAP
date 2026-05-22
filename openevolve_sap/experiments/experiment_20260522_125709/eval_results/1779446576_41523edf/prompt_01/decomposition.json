@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This prompt contains a structural contradiction regarding finger count. Diffusion models have strong priors for hands/gloves having five fingers; introducing the glove identity too early locks this prior, preventing the addition of a sixth finger. Applying Strategy B, we begin with a structural proxy (\"bare hand with 6 distinct fingers\") to stabilize the unique geometry before transitioning to the target object (\"white glove with 6 fingers\") once the coarse shape is fixed.",
+  "prompts_list": [
+    "A bare hand with 6 distinct fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard bouquets have stems submerged pointing down; starting with normal flowers would lock the model into upright geometry. Using bare stems as a structural proxy establishes the inverted spatial layout before the floral identity is introduced.",
+  "prompts_list": [
+    "A vase with bare plant stems sticking upwards out of a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

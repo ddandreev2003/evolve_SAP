@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove implies five fingers, so six creates a structural contradiction. Using Strategy B, the first prompt establishes the impossible finger count on a raw hand (geometry lock) before switching to the glove concept, ensuring the model retains the extra digit rather than defaulting to realistic anatomy.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}
