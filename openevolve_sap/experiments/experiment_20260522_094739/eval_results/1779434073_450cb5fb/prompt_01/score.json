@@ -1,0 +1,6 @@
+{
+  "alignment score": 3,
+  "alignment explanation": "The image depicts a white glove, satisfying the \"white glove\" element of the prompt. However, it clearly shows only 5 fingers, directly contradicting the \"6 fingers\" requirement. While the main subject (glove) is present and functional in context, the critical attribute (finger count) is incorrect, making the representation inaccurate per the prompt’s specific description.",
+  "quality score": 5,
+  "quality explanation": "The image is visually clean, with no rendering artifacts, distortions, or broken elements. The glove’s anatomy (fingers, palm, wrist) is well-formed and coherent, with consistent lighting, texture, and perspective. All components connect naturally, and the minimalist style enhances visual clarity without compromising physical plausibility."
+}

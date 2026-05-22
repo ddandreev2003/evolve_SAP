@@ -1,0 +1,5 @@
+{"event": "start_loop", "run_id": "1775730104_3cb6f9ca", "num_prompts": 2, "timestamp": 1775730106.0813212}
+{"event": "image_saved", "run_id": "1775730104_3cb6f9ca", "prompt_index": 0, "prompt": "A turtle juggles fish in a forest", "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/evolution_eval_results/1775730104_3cb6f9ca/candidate_tmpu5et2416_0.png", "timestamp": 1775730261.3343024}
+{"event": "score_done", "run_id": "1775730104_3cb6f9ca", "prompt_index": 0, "alignment_score": 3.0, "timestamp": 1775730297.7018268}
+{"event": "sap_parse_exception", "run_id": "1775730104_3cb6f9ca", "prompt_index": 1, "prompt": "A allien hand with 6 fingers", "error": "expected string or bytes-like object, got 'NoneType'", "timestamp": 1775730325.3482945}
+{"event": "final_scores", "run_id": "1775730104_3cb6f9ca", "alignment_score": 3.0, "gemma_score": 1.0, "combined_score": 0.52, "timestamp": 1775730327.4533865}

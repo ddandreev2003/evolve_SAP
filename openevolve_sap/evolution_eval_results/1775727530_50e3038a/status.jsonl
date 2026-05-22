@@ -1,0 +1,1 @@
+{"event": "final_error", "run_id": "1775727530_50e3038a", "reason": "missing_api_key", "timestamp": 1775727530.3034215, "detail": "ROUTERAI_API_KEY is not set"}

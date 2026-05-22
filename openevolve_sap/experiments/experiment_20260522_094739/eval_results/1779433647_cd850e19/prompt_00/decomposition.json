@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Vases with flowers are conventionally upright due to gravity and aesthetic norms. An inverted orientation is a structural anomaly that may confuse the model into restoring the standard posture. The inverted geometry must be enforced in the initial prompt to stabilize the layout topology, allowing the floral contents to be generated within the non-standard frame without correction.",
+  "prompts_list": [
+    "An inverted vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

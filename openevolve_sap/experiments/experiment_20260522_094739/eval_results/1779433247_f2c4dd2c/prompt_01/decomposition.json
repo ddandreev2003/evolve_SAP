@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard five-fingered glove is the visual prior for the target object. To resolve the topological contradiction of six fingers, the generation begins with the standard shape to establish the leather texture and overall geometry. The specific count is introduced in the final step, allowing the model to maintain structural coherence while applying the unlikely detail once the base layout is stabilized.",
+  "prompts_list": [
+    "A white glove worn on a hand",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

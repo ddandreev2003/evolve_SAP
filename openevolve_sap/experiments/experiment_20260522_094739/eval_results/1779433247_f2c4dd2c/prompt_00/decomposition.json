@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Placing flowers upside down in a vase defies gravitational norms and typical object function (vases generally hold items upright). Starting with a standalone vase establishes the container's geometry early. Adding the flowers next grounds their presence and scale without fixing their orientation. The final step applies the contradictory upside-down orientation once the spatial relationship is stabilized, reducing the likelihood of the model auto-correcting to a natural upright position.",
+  "prompts_list": [
+    "A vase on a table",
+    "A vase with a bouquet of flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

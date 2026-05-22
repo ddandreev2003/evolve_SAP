@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet standing upright in a vase relies on physical stability provided by the container and gravity, whereas an upside-down arrangement defies these norms and risks visual confusion. By establishing the vase and the normal placement of flowers first, the model creates a stable geometric base. The final step introduces the impossible orientation only after the structure is fully resolved.",
+  "prompts_list": [
+    "A clear vase on a table",
+    "A bouquet of flowers placed upright in the vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

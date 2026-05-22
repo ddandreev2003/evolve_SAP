@@ -1,0 +1,30 @@
+2026-04-09 13:14:10,539 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260409_131410.log
+2026-04-09 13:14:10,571 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-04-09 13:14:10,637 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemma-4-31b-it
+2026-04-09 13:14:10,637 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemma-4-31b-it (weight: 1.00)
+2026-04-09 13:14:10,663 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-04-09 13:14:10,663 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-04-09 13:14:10,663 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-04-09 13:14:19,068 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 13:14:19,069 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 13:14:19,069 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-04-09 13:14:19,069 - openevolve.controller - INFO - Adding initial program to database
+2026-04-09 13:14:52,753 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 13:17:57,459 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 13:18:54,673 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 13:20:33,775 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 13:20:37,422 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-09 13:20:37,422 - openai._base_client - INFO - Retrying request to /chat/completions in 0.420072 seconds
+2026-04-09 13:20:55,117 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 13:20:55,120 - openevolve.evaluator - INFO - Evaluated program edbdfe3e-93ce-41ce-a5ea-aba9a5f8462c in 396.05s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 13:20:55,121 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-04-09 13:20:55,122 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-04-09 13:20:55,122 - openevolve.process_parallel - INFO - Set max 1 tasks per child
+2026-04-09 13:20:55,125 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-04-09 13:20:55,125 - openevolve.controller - INFO - Using island-based evolution with 3 islands
+2026-04-09 13:20:55,125 - openevolve.database - INFO - Island Status:
+2026-04-09 13:20:55,125 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0 (best: edbdfe3e-93ce-41ce-a5ea-aba9a5f8462c)
+2026-04-09 13:20:55,125 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-04-09 13:20:55,125 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-04-09 13:20:55,125 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 80 iterations (total: 81)
+2026-04-09 13:20:55,133 - openevolve.process_parallel - INFO - Early stopping disabled

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Diffusion models are typically trained on standard five-digit anatomy, making \"six fingers\" a structural contradiction that can distort the glove's shape if introduced prematurely. By first establishing the standard white glove structure and material, the layout becomes stable. The anomalous finger count is then introduced in the second stage when the base geometry is locked.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

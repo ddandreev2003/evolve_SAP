@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves are designed for five fingers, defining the baseline anatomy and fabric topology. Establishing this common structure first prevents the model from confusing the hand layout or merging segments when generating the extra digit early. The anomaly is introduced in the later stages when fine details are resolved.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

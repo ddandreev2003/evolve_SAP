@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows typically align with the light source relative to the object, so an opposite-facing shadow contradicts standard physics. Starting with \"A cat casting a normal shadow\" establishes the geometric presence of both the animal and its projection before attempting the anomalous direction. Switching prompts allows the model to first lock in the layout and then apply the impossible lighting constraint without losing the shadow entirely.",
+  "prompts_list": [
+    "A cat casting a normal shadow on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

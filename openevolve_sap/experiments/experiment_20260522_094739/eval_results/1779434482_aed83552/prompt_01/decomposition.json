@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard white glove typically conforms to human anatomy with five fingers. Because digit count is a structural geometric feature, introducing the \"six fingers\" constraint immediately prevents the diffusion model from defaulting to the common five-finger template during the initial layout phase. The first prompt enforces the abnormal count to lock the geometry, followed by the original prompt for stylistic refinement.",
+  "prompts_list": [
+    "A white glove with six fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

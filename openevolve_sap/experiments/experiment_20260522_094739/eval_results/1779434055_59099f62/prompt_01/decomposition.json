@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove strongly biases toward five fingers due to training data distribution. Starting with \"A glove\" risks the model correcting the anatomy back to five fingers during the structure lock phase. Per Strategy 2 for Structural/Spatial Contradictions, we must enforce the unusual 6-finger geometry early using a proximate object (\"hand\") before transitioning to the target object (\"glove\") and color in a later stage.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

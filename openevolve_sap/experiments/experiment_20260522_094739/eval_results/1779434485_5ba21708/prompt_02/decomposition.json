@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "",
+  "prompts_list": [
+    "A cat with a mirror-image shadow",
+    "A cat casting a shadow facing the wrong way",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    5
+  ]
+}

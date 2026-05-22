@@ -1,0 +1,2 @@
+2026-04-09 12:38:18,901 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/smoke_run/logs/openevolve_20260409_123818.log
+2026-04-09 12:38:18,916 - openevolve.controller - INFO - Set random seed to 42 for reproducibility

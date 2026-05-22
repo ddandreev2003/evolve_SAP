@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove carries a strong anatomical prior for five fingers. Starting with a geometric description of six prongs overrides this prior before defining the object. This ensures the digit count is established in the early noise stages before the identity label \"glove\" is introduced.",
+  "prompts_list": [
+    "A white object with six distinct thick prongs",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

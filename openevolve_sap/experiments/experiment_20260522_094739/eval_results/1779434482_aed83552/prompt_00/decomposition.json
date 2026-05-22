@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upward, creating a conflict with the \"upside down\" instruction which represents a structural anomaly. Starting with \"stems pointing downward\" enforces the inverted gravity structure immediately as a structural placeholder, ensuring the model does not lock into the standard upright vase geometry before transitioning to the specific \"bouquet\" prompt.",
+  "prompts_list": [
+    "A vase with stems pointing downward",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

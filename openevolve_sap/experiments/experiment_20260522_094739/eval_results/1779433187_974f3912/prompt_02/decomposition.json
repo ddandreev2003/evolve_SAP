@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows depend on consistent lighting physics; directing them against the object creates a logical paradox that can destabilize the cat's form if forced too early. By first establishing the cat's pose, then introducing a standard shadow, the model anchors the geometry before applying the contradictory directional constraint in the final refinement stage.",
+  "prompts_list": [
+    "A realistic cat sitting on the floor",
+    "A realistic cat sitting on the floor with a shadow",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

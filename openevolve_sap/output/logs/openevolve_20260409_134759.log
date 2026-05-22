@@ -1,0 +1,26 @@
+2026-04-09 13:47:59,809 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260409_134759.log
+2026-04-09 13:47:59,824 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-04-09 13:47:59,893 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemma-4-31b-it
+2026-04-09 13:47:59,893 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemma-4-31b-it (weight: 1.00)
+2026-04-09 13:47:59,919 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-04-09 13:47:59,920 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-04-09 13:47:59,920 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-04-09 13:48:11,010 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 13:48:11,010 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 13:48:11,010 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-04-09 13:48:11,010 - openevolve.controller - INFO - Adding initial program to database
+2026-04-09 13:48:40,726 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 13:50:16,959 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 13:51:05,643 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 13:52:07,832 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 13:52:24,919 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 13:52:24,921 - openevolve.evaluator - INFO - Evaluated program 98042c77-66b3-41c5-b707-059af1d1dccf in 253.91s: alignment_score=1.5000, gemma_score=1.0000, combined_score=0.2800, num_eval_prompts=2.0000
+2026-04-09 13:52:24,922 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-04-09 13:52:24,922 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-04-09 13:52:24,923 - openevolve.process_parallel - INFO - Set max 1 tasks per child
+2026-04-09 13:52:24,923 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-04-09 13:52:24,924 - openevolve.controller - INFO - Using island-based evolution with 1 islands
+2026-04-09 13:52:24,924 - openevolve.database - INFO - Island Status:
+2026-04-09 13:52:24,924 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.2800, avg=0.2800, diversity=0.00, gen=0 (best: 98042c77-66b3-41c5-b707-059af1d1dccf)
+2026-04-09 13:52:24,924 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 80 iterations (total: 81)
+2026-04-09 13:52:24,929 - openevolve.process_parallel - INFO - Early stopping disabled

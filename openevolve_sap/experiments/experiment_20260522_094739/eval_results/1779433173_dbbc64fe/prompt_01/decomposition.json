@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves typically feature five fingers based on human anatomy, making a six-finger configuration a structural contradiction. Starting with a basic white glove establishes the material, shape, and topology. Transitioning to the six-finger version later ensures the model can resolve the anatomical anomaly without destabilizing the fundamental structure of the object.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

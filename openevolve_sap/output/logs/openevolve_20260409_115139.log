@@ -1,0 +1,103 @@
+2026-04-09 11:51:39,839 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260409_115139.log
+2026-04-09 11:51:39,843 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-04-09 11:51:39,881 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemma-4-31b-it
+2026-04-09 11:51:39,881 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemma-4-31b-it (weight: 1.00)
+2026-04-09 11:51:39,904 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-04-09 11:51:39,905 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-04-09 11:51:39,905 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-04-09 11:51:44,861 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 11:51:44,861 - openevolve.evaluator - WARNING - Configuration has 'cascade_evaluation: true' but evaluator '/home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py' does not define 'evaluate_stage1' function. This will fall back to direct evaluation, making the cascade setting useless. Consider setting 'cascade_evaluation: false' or implementing cascade functions.
+2026-04-09 11:51:44,861 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 11:51:44,862 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-04-09 11:51:44,862 - openevolve.controller - INFO - Adding initial program to database
+2026-04-09 11:52:36,006 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 11:54:11,439 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 11:54:59,818 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 11:56:33,150 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 11:56:37,627 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 11:56:37,628 - openevolve.evaluator - INFO - Evaluated program 04a11763-f137-4b9b-8df4-2cf488c6c56f in 292.77s: alignment_score=3.0000, gemma_score=1.0000, combined_score=0.5200, num_eval_prompts=2.0000
+2026-04-09 11:56:37,629 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-04-09 11:56:37,629 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-04-09 11:56:37,629 - openevolve.process_parallel - INFO - Set max None tasks per child
+2026-04-09 11:56:37,630 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-04-09 11:56:37,630 - openevolve.controller - INFO - Using island-based evolution with 3 islands
+2026-04-09 11:56:37,630 - openevolve.database - INFO - Island Status:
+2026-04-09 11:56:37,630 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.5200, avg=0.5200, diversity=0.00, gen=0 (best: 04a11763-f137-4b9b-8df4-2cf488c6c56f)
+2026-04-09 11:56:37,630 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-04-09 11:56:37,630 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-04-09 11:56:37,630 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 80 iterations (total: 81)
+2026-04-09 11:56:37,969 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-04-09 11:56:38,047 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-04-09 11:56:38,049 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 11:56:38,049 - openevolve.evaluator - WARNING - Configuration has 'cascade_evaluation: true' but evaluator '/home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py' does not define 'evaluate_stage1' function. This will fall back to direct evaluation, making the cascade setting useless. Consider setting 'cascade_evaluation: false' or implementing cascade functions.
+2026-04-09 11:56:38,049 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 11:56:38,050 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 11:57:18,786 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 11:58:07,525 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 11:58:07,671 - openevolve.evaluator - INFO - Evaluated program be0fc840-75d4-4544-8e76-48bfba279238 in 48.87s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 11:58:07,709 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 11:58:07,719 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 5}
+2026-04-09 11:58:07,723 - openevolve.process_parallel - INFO - Iteration 1: Program be0fc840-75d4-4544-8e76-48bfba279238 (parent: 04a11763-f137-4b9b-8df4-2cf488c6c56f) completed in 89.64s
+2026-04-09 11:58:07,723 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 11:58:54,445 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 11:59:36,240 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 11:59:36,323 - openevolve.evaluator - INFO - Evaluated program ab1ce070-7610-48b2-9cfb-23968f5b696d in 41.85s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 11:59:36,334 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 11:59:36,339 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 0, 'diversity': 9}
+2026-04-09 11:59:36,341 - openevolve.process_parallel - INFO - Iteration 2: Program ab1ce070-7610-48b2-9cfb-23968f5b696d (parent: 04a11763-f137-4b9b-8df4-2cf488c6c56f) completed in 88.62s
+2026-04-09 11:59:36,341 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:00:24,706 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:00:56,846 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:00:56,968 - openevolve.evaluator - INFO - Evaluated program ec12e7ee-2634-4821-8b35-2496ebb85ac0 in 32.25s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:00:56,977 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 12:00:56,982 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 9, 'diversity': 6}
+2026-04-09 12:00:56,983 - openevolve.process_parallel - INFO - Iteration 3: Program ec12e7ee-2634-4821-8b35-2496ebb85ac0 (parent: 04a11763-f137-4b9b-8df4-2cf488c6c56f) completed in 80.64s
+2026-04-09 12:00:56,983 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:02:33,588 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:02:58,776 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:02:58,782 - openevolve.evaluator - INFO - Evaluated program ece81e44-ce91-4f09-ac53-ae613a951f93 in 25.16s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:02:58,785 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 12:02:58,795 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 7, 'diversity': 3}
+2026-04-09 12:02:58,796 - openevolve.process_parallel - INFO - Iteration 4: Program ece81e44-ce91-4f09-ac53-ae613a951f93 (parent: 04a11763-f137-4b9b-8df4-2cf488c6c56f) completed in 121.81s
+2026-04-09 12:02:58,796 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:03:32,849 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:04:24,766 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:04:24,774 - openevolve.evaluator - INFO - Evaluated program 05b0efdb-2150-4863-903c-e887a080f29f in 51.92s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:04:24,776 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 12:04:24,784 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 4, 'diversity': 7}
+2026-04-09 12:04:24,785 - openevolve.process_parallel - INFO - Iteration 5: Program 05b0efdb-2150-4863-903c-e887a080f29f (parent: ab1ce070-7610-48b2-9cfb-23968f5b696d) completed in 85.99s
+2026-04-09 12:04:24,786 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:06:24,849 - openevolve.llm.openai - WARNING - Timeout on attempt 1/4. Retrying...
+2026-04-09 12:06:24,861 - openai._base_client - INFO - Retrying request to /chat/completions in 0.472476 seconds
+2026-04-09 12:06:49,142 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:07:40,679 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:08:51,045 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:08:51,057 - openevolve.evaluator - INFO - Evaluated program 9844b216-b323-4189-b20b-64d87788af68 in 70.38s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:08:51,060 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 12:08:51,069 - openevolve.process_parallel - INFO - Iteration 6: Program 9844b216-b323-4189-b20b-64d87788af68 (parent: ec12e7ee-2634-4821-8b35-2496ebb85ac0) completed in 266.28s
+2026-04-09 12:08:51,069 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:09:43,392 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:10:15,663 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:10:15,668 - openevolve.evaluator - INFO - Evaluated program 9dec31bb-0e2c-4155-a154-72ed7e2ad89b in 32.27s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:10:15,670 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 12:10:15,675 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 6, 'diversity': 3}
+2026-04-09 12:10:15,676 - openevolve.process_parallel - INFO - Iteration 7: Program 9dec31bb-0e2c-4155-a154-72ed7e2ad89b (parent: ece81e44-ce91-4f09-ac53-ae613a951f93) completed in 84.61s
+2026-04-09 12:10:15,676 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:11:19,547 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:11:52,906 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:11:52,913 - openevolve.evaluator - INFO - Evaluated program e85257ed-5468-403a-a79a-6a3324dc800e in 33.36s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:11:52,915 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 12:11:52,924 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 5, 'diversity': 6}
+2026-04-09 12:11:52,925 - openevolve.process_parallel - INFO - Iteration 8: Program e85257ed-5468-403a-a79a-6a3324dc800e (parent: 05b0efdb-2150-4863-903c-e887a080f29f) completed in 97.24s
+2026-04-09 12:11:52,925 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:13:53,017 - openevolve.llm.openai - WARNING - Timeout on attempt 1/4. Retrying...
+2026-04-09 12:13:53,018 - openai._base_client - INFO - Retrying request to /chat/completions in 0.425747 seconds
+2026-04-09 12:15:17,405 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:15:22,751 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:15:52,529 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:15:52,539 - openevolve.evaluator - INFO - Evaluated program def66d28-ec9e-49de-9aaf-b22a33f0b345 in 29.79s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:15:52,541 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 12:15:52,548 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 9, 'diversity': 4}
+2026-04-09 12:15:52,548 - openevolve.process_parallel - INFO - Iteration 9: Program def66d28-ec9e-49de-9aaf-b22a33f0b345 (parent: ec12e7ee-2634-4821-8b35-2496ebb85ac0) completed in 239.63s
+2026-04-09 12:15:52,548 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:17:38,330 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"

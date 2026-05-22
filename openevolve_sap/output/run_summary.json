@@ -1,0 +1,6 @@
+{
+  "iterations": 2,
+  "output_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/output",
+  "best_program_path": "/home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program.py",
+  "export_path": "/home/ubuntu/evolve_SAP/openevolve_sap/best_evolved_system_prompt.txt"
+}

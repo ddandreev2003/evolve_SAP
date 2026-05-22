@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove strongly implies five fingers due to common training data priors. To prevent the model from correcting the count back to five during the initial layout phase (steps 0-5), we begin with a neutral geometric description that forces the six-protrusion structure without triggering the \"glove\" identity. Once the unusual topology is established, the specific label is introduced to refine the texture and object recognition.",
+  "prompts_list": [
+    "A white padded fabric with six distinct protrusions",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

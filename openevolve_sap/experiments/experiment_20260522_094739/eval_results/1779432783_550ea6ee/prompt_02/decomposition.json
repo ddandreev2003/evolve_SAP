@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "A shadow naturally follows the light source relative to the object, so a shadow facing the opposite direction violates physical laws and standard priors. To maintain the structural integrity of the scene (cat + shadow relationship) without confusing the model's physics understanding, the prompt first establishes the base geometry of a cat with a shadow (steps 0-4). Once the shape and lighting basics are resolved, the second step introduces the specific, contradictory directional constraint.",
+  "prompts_list": [
+    "A cat standing with a shadow on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

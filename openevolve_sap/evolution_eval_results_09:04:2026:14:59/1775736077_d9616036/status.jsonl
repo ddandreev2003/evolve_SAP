@@ -1,0 +1,18 @@
+{"event": "start_loop", "run_id": "1775736077_d9616036", "num_prompts": 2, "timestamp": 1775736081.2170324}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "start_loop", "rss_bytes": 1157472256, "limit_bytes": 17179869184, "timestamp": 1775736081.2173166}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "prompt_0_before_decompose", "rss_bytes": 1157472256, "limit_bytes": 17179869184, "timestamp": 1775736081.2174213}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "prompt_0_before_render", "rss_bytes": 1157472256, "limit_bytes": 17179869184, "timestamp": 1775736107.9828737}
+{"event": "image_saved", "run_id": "1775736077_d9616036", "prompt_index": 0, "image_index": 0, "prompt": "A turtle juggles fish in a forest", "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/evolution_eval_results_09:04:2026:14:59/1775736077_d9616036/candidate_tmpj83kla7r_0_0.png", "timestamp": 1775736116.5273201}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "prompt_0_after_render", "rss_bytes": 1903509504, "limit_bytes": 17179869184, "timestamp": 1775736116.7316759}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "prompt_0_before_score", "rss_bytes": 1903509504, "limit_bytes": 17179869184, "timestamp": 1775736116.7319005}
+{"event": "score_done", "run_id": "1775736077_d9616036", "prompt_index": 0, "alignment_score": 3.0, "timestamp": 1775736139.4431078}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "prompt_0_after_score", "rss_bytes": 1903509504, "limit_bytes": 17179869184, "timestamp": 1775736139.6358626}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "prompt_1_before_decompose", "rss_bytes": 1903509504, "limit_bytes": 17179869184, "timestamp": 1775736139.636056}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "prompt_1_before_render", "rss_bytes": 1903509504, "limit_bytes": 17179869184, "timestamp": 1775736181.565946}
+{"event": "image_saved", "run_id": "1775736077_d9616036", "prompt_index": 1, "image_index": 0, "prompt": "A allien hand with 6 fingers", "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/evolution_eval_results_09:04:2026:14:59/1775736077_d9616036/candidate_tmpj83kla7r_1_0.png", "timestamp": 1775736189.2803395}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "prompt_1_after_render", "rss_bytes": 1904558080, "limit_bytes": 17179869184, "timestamp": 1775736189.4852147}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "prompt_1_before_score", "rss_bytes": 1904558080, "limit_bytes": 17179869184, "timestamp": 1775736189.4854429}
+{"event": "score_done", "run_id": "1775736077_d9616036", "prompt_index": 1, "alignment_score": 2.0, "timestamp": 1775736200.0994751}
+{"event": "ram_check", "run_id": "1775736077_d9616036", "stage": "prompt_1_after_score", "rss_bytes": 1904558080, "limit_bytes": 17179869184, "timestamp": 1775736200.2893827}
+{"event": "gemma_judge_fallback", "run_id": "1775736077_d9616036", "reason": "invalid_json_content", "score": 1.0, "raw_preview": "```json\n{\"score\": 5}\n```", "timestamp": 1775736206.9114602}
+{"event": "final_scores", "run_id": "1775736077_d9616036", "alignment_score": 2.5, "gemma_score": 1.0, "combined_score": 0.44000000000000006, "timestamp": 1775736206.9115732}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A glove typically implies five digits due to human anatomical priors. Starting with a neutral hand-shaped object focusing on geometry ('prongs') avoids the strong 'five fingers' bias while maintaining the structural intent. The identity switches to 'glove' in the second stage to apply the correct semantic texture once the six-digit configuration is established.",
+  "prompts_list": [
+    "A white hand-shaped object with exactly six distinct thick prongs",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

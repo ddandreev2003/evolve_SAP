@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Gloves typically enforce a five-finger anatomical prior. To maintain the requested six-finger anomaly without structural collapse, the prompt begins with a geometric proxy ('hand-shaped silhouette') that emphasizes finger count. Once the geometry is established, the identity shifts to 'white glove' in the final stage.",
+  "prompts_list": [
+    "A white hand-shaped silhouette with exactly six distinct fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

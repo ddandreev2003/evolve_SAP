@@ -1,0 +1,180 @@
+/home/ubuntu/venv/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+2026-05-22 09:13:44,182 - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260522_091344.log
+2026-05-22 09:13:44,187 - INFO - Set random seed to 42 for reproducibility
+2026-05-22 09:13:44,237 - INFO - Initialized OpenAI LLM with model: google/gemma-4-31b-it
+2026-05-22 09:13:44,237 - INFO - Initialized LLM ensemble with models: google/gemma-4-31b-it (weight: 1.00)
+2026-05-22 09:13:44,269 - INFO - Initialized prompt sampler
+2026-05-22 09:13:44,269 - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-05-22 09:13:44,269 - INFO - Initialized program database with 0 programs
+2026-05-22 09:13:48,418 - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-05-22 09:13:48,418 - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-05-22 09:13:48,419 - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-05-22 09:13:48,419 - INFO - Adding initial program to database
+[openevolve_sap][1779430428_953f59c2] evaluation started
+[SAP] Loading FLUX from /home/ubuntu/.cache/sap_flux_models/FLUX.2-klein-base-4B -> device cuda:0 (physical GPU ?, low_vram=True)
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00, 16.81it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 31.50it/s]
+Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 17.18it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.27it/s]
+[SAP] FLUX using CPU offload on GPU 0
+[openevolve_sap][1779430428_953f59c2] prompt 1/2: decompose
+2026-05-22 09:14:35,822 - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: Juggling is a human action not associated with turtles. Starting with a man stabilizes pose and motion, while a humanoid turtle bridges the identity shift. Fish are introduced last, as they are small visual elements resolved later in the denoising process.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A man skilfully juggles balls in a forest",
+    "A human turtle juggles balls",
+    "A turtle juggles balls",
+    "A turtle juggles fish"
+  ],
+  "switch_prompts_steps": [3, 5, 7]
+}
+original_prompts: ['A turtle juggles fish in a forest']
+[openevolve_sap][1779430428_953f59c2] prompt 1/2: render start
+  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:09<04:26,  9.20s/it]  7%|▋         | 2/30 [00:09<01:52,  4.03s/it] 10%|█         | 3/30 [00:10<01:04,  2.38s/it] 13%|█▎        | 4/30 [00:10<00:41,  1.61s/it] 17%|█▋        | 5/30 [00:10<00:29,  1.19s/it] 20%|██        | 6/30 [00:11<00:22,  1.07it/s] 23%|██▎       | 7/30 [00:11<00:17,  1.30it/s] 27%|██▋       | 8/30 [00:12<00:14,  1.51it/s] 30%|███       | 9/30 [00:12<00:12,  1.69it/s] 33%|███▎      | 10/30 [00:13<00:10,  1.84it/s] 37%|███▋      | 11/30 [00:13<00:09,  1.97it/s] 40%|████      | 12/30 [00:13<00:08,  2.06it/s] 43%|████▎     | 13/30 [00:14<00:07,  2.13it/s] 47%|████▋     | 14/30 [00:14<00:07,  2.18it/s] 50%|█████     | 15/30 [00:15<00:06,  2.22it/s] 53%|█████▎    | 16/30 [00:15<00:06,  2.24it/s] 57%|█████▋    | 17/30 [00:16<00:05,  2.26it/s] 60%|██████    | 18/30 [00:16<00:05,  2.28it/s] 63%|██████▎   | 19/30 [00:16<00:04,  2.28it/s] 67%|██████▋   | 20/30 [00:17<00:04,  2.29it/s] 70%|███████   | 21/30 [00:17<00:03,  2.29it/s] 73%|███████▎  | 22/30 [00:18<00:03,  2.30it/s] 77%|███████▋  | 23/30 [00:18<00:03,  2.30it/s] 80%|████████  | 24/30 [00:19<00:02,  2.30it/s] 83%|████████▎ | 25/30 [00:19<00:02,  2.31it/s] 87%|████████▋ | 26/30 [00:19<00:01,  2.31it/s] 90%|█████████ | 27/30 [00:20<00:01,  2.31it/s] 93%|█████████▎| 28/30 [00:20<00:00,  2.31it/s] 97%|█████████▋| 29/30 [00:21<00:00,  2.31it/s]100%|██████████| 30/30 [00:21<00:00,  2.31it/s]100%|██████████| 30/30 [00:21<00:00,  1.38it/s]
+2026-05-22 09:15:13,201 - INFO - Evaluated program d1d83ada-e24d-468d-963f-055ecd5d4c4d in 84.78s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-05-22 09:15:13,203 - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-05-22 09:15:13,204 - INFO - Initialized process parallel controller with 4 workers
+2026-05-22 09:15:13,472 - INFO - Set max 1000 tasks per child
+2026-05-22 09:15:13,473 - INFO - Started process pool with 4 processes
+2026-05-22 09:15:13,473 - INFO - Using island-based evolution with 4 islands
+2026-05-22 09:15:13,474 - INFO - Island Status:
+2026-05-22 09:15:13,474 - INFO -  * Island 0: 1 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0 (best: d1d83ada-e24d-468d-963f-055ecd5d4c4d)
+2026-05-22 09:15:13,474 - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-22 09:15:13,474 - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-22 09:15:13,474 - INFO -    Island 3: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-22 09:15:13,474 - INFO - Starting process-based evolution from iteration 1 for 4 iterations (total: 5)
+2026-05-22 09:15:13,480 - INFO - Early stopping disabled
+/home/ubuntu/venv/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/ubuntu/venv/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/ubuntu/venv/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/home/ubuntu/venv/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[openevolve_sap][1779430550_1658e115] evaluation started
+[SAP] Loading FLUX from /home/ubuntu/.cache/sap_flux_models/FLUX.2-klein-base-4B -> device cuda:0 (physical GPU 1, low_vram=True)
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s][openevolve_sap][1779430550_66c409dc] evaluation started
+[SAP] Loading FLUX from /home/ubuntu/.cache/sap_flux_models/FLUX.2-klein-base-4B -> device cuda:0 (physical GPU 0, low_vram=True)
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|██        | 1/5 [00:00<00:01,  2.18it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 28.12it/s]
+Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  3.80it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.64it/s]
+[SAP] FLUX using CPU offload on GPU 0
+[openevolve_sap][1779430550_1658e115] prompt 1/2: decompose
+Loading pipeline components...:  20%|██        | 1/5 [00:00<00:01,  2.23it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 28.21it/s]
+Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00,  7.31it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.79it/s]
+[SAP] FLUX using CPU offload on GPU 0
+[openevolve_sap][1779430550_66c409dc] prompt 1/2: decompose
+[openevolve_sap][1779430595_d9e31135] evaluation started
+[SAP] Loading FLUX from /home/ubuntu/.cache/sap_flux_models/FLUX.2-klein-base-4B -> device cuda:0 (physical GPU 3, low_vram=True)
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 31.15it/s]
+Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00, 11.19it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.20it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.52it/s]
+[SAP] FLUX using CPU offload on GPU 0
+[openevolve_sap][1779430595_d9e31135] prompt 1/2: decompose
+[openevolve_sap][1779430597_a1f04054] evaluation started
+[SAP] Loading FLUX from /home/ubuntu/.cache/sap_flux_models/FLUX.2-klein-base-4B -> device cuda:0 (physical GPU 2, low_vram=True)
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|██        | 1/5 [00:00<00:01,  2.18it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 30.10it/s]
+Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  6.07it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.76it/s]
+[SAP] FLUX using CPU offload on GPU 0
+[openevolve_sap][1779430597_a1f04054] prompt 1/2: decompose
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: Juggling is a human action not associated with turtles. Starting with a man stabilizes pose and motion, while a humanoid turtle bridges the identity shift. Balls are introduced as a neutral proxy before transitioning to fish, ensuring the contradictory animals are resolved late in the denoising process without destabilizing the scene layout.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A man skilfully juggles balls in a forest",
+    "A human turtle juggles balls",
+    "A turtle juggles balls",
+    "A turtle juggles fish"
+  ],
+  "switch_prompts_steps": [3, 5, 7]
+}
+original_prompts: ['A turtle juggles fish in a forest']
+[openevolve_sap][1779430550_1658e115] prompt 1/2: render start
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: A turtle juggling fish presents two contradictions: biological impossibility of manual dexterity and semantic conflict between predator/prey and object. We use a "Geometric Proxy" strategy: a man establishing the stable juggling geometry in coarser steps, transitioning to a turtle identity in medium steps while retaining the ball structure, finally introducing fish as fine-grained details. This respects the low-to-high frequency progression, stabilizing the scene before resolving the paradoxical elements.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A man skillfully juggling balls in a forest",
+    "A turtle juggling balls in a forest",
+    "A turtle juggles fish in a forest"
+  ],
+  "switch_prompts_steps": [4, 8]
+}
+original_prompts: ['A turtle juggles fish in a forest']
+[openevolve_sap][1779430550_66c409dc] prompt 1/2: render start
+  0%|          | 0/30 [00:00<?, ?it/s]  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:10<05:18, 10.99s/it]  7%|▋         | 2/30 [00:11<02:13,  4.76s/it] 10%|█         | 3/30 [00:11<01:15,  2.78s/it] 13%|█▎        | 4/30 [00:12<00:48,  1.85s/it] 17%|█▋        | 5/30 [00:12<00:33,  1.34s/it] 20%|██        | 6/30 [00:13<00:24,  1.03s/it] 23%|██▎       | 7/30 [00:13<00:19,  1.20it/s] 27%|██▋       | 8/30 [00:13<00:15,  1.43it/s] 30%|███       | 9/30 [00:14<00:12,  1.63it/s]  3%|▎         | 1/30 [00:12<06:15, 12.96s/it] 33%|███▎      | 10/30 [00:14<00:11,  1.80it/s]  7%|▋         | 2/30 [00:13<02:36,  5.58s/it] 37%|███▋      | 11/30 [00:15<00:09,  1.93it/s] 10%|█         | 3/30 [00:13<01:27,  3.23s/it] 40%|████      | 12/30 [00:15<00:08,  2.04it/s] 13%|█▎        | 4/30 [00:14<00:55,  2.12s/it] 43%|████▎     | 13/30 [00:16<00:08,  2.12it/s] 17%|█▋        | 5/30 [00:14<00:37,  1.51s/it] 47%|████▋     | 14/30 [00:16<00:07,  2.19it/s] 20%|██        | 6/30 [00:15<00:27,  1.15s/it] 50%|█████     | 15/30 [00:16<00:06,  2.23it/s] 23%|██▎       | 7/30 [00:15<00:21,  1.10it/s] 53%|█████▎    | 16/30 [00:17<00:06,  2.26it/s] 27%|██▋       | 8/30 [00:15<00:16,  1.32it/s] 57%|█████▋    | 17/30 [00:17<00:05,  2.29it/s] 30%|███       | 9/30 [00:16<00:13,  1.52it/s] 60%|██████    | 18/30 [00:18<00:05,  2.30it/s] 33%|███▎      | 10/30 [00:16<00:11,  1.70it/s] 63%|██████▎   | 19/30 [00:18<00:04,  2.31it/s] 37%|███▋      | 11/30 [00:17<00:10,  1.85it/s] 67%|██████▋   | 20/30 [00:19<00:04,  2.32it/s] 40%|████      | 12/30 [00:17<00:09,  1.97it/s] 70%|███████   | 21/30 [00:19<00:03,  2.33it/s] 43%|████▎     | 13/30 [00:18<00:08,  2.06it/s] 73%|███████▎  | 22/30 [00:19<00:03,  2.33it/s] 47%|████▋     | 14/30 [00:18<00:07,  2.13it/s] 77%|███████▋  | 23/30 [00:20<00:02,  2.33it/s] 50%|█████     | 15/30 [00:18<00:06,  2.18it/s] 80%|████████  | 24/30 [00:20<00:02,  2.34it/s] 53%|█████▎    | 16/30 [00:19<00:06,  2.22it/s] 83%|████████▎ | 25/30 [00:21<00:02,  2.34it/s] 57%|█████▋    | 17/30 [00:19<00:05,  2.24it/s] 87%|████████▋ | 26/30 [00:21<00:01,  2.34it/s] 60%|██████    | 18/30 [00:20<00:05,  2.26it/s] 90%|█████████ | 27/30 [00:22<00:01,  2.34it/s] 63%|██████▎   | 19/30 [00:20<00:04,  2.27it/s] 93%|█████████▎| 28/30 [00:22<00:00,  2.34it/s] 67%|██████▋   | 20/30 [00:21<00:04,  2.28it/s] 97%|█████████▋| 29/30 [00:22<00:00,  2.34it/s] 70%|███████   | 21/30 [00:21<00:03,  2.29it/s]100%|██████████| 30/30 [00:23<00:00,  2.34it/s]100%|██████████| 30/30 [00:23<00:00,  1.29it/s]
+ 73%|███████▎  | 22/30 [00:22<00:03,  2.30it/s] 77%|███████▋  | 23/30 [00:22<00:03,  2.30it/s] 80%|████████  | 24/30 [00:22<00:02,  2.30it/s] 83%|████████▎ | 25/30 [00:23<00:02,  2.30it/s] 87%|████████▋ | 26/30 [00:23<00:01,  2.30it/s] 90%|█████████ | 27/30 [00:24<00:01,  2.31it/s] 93%|█████████▎| 28/30 [00:24<00:00,  2.31it/s] 97%|█████████▋| 29/30 [00:25<00:00,  2.31it/s]100%|██████████| 30/30 [00:25<00:00,  2.31it/s]100%|██████████| 30/30 [00:25<00:00,  1.18it/s]
+2026-05-22 09:17:21,634 - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 5}
+2026-05-22 09:17:21,635 - INFO - Iteration 1: Program 8178c7cc-e845-4f87-8970-873c37af564e (parent: d1d83ada-e24d-468d-963f-055ecd5d4c4d) completed in 121.07s
+2026-05-22 09:17:21,635 - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-05-22 09:17:25,447 - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 5, 'diversity': 0}
+2026-05-22 09:17:25,447 - INFO - Iteration 3: Program 79e9f9ab-0349-401e-a7f0-0b78a7219c98 (parent: d1d83ada-e24d-468d-963f-055ecd5d4c4d) completed in 125.33s
+2026-05-22 09:17:25,447 - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: Juggling is a human action not associated with turtles, so starting with a man establishes the motion; a humanoid turtle bridges the identity shift; fish are introduced last as fine details after structure is stable.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A man skilfully juggles balls in a forest",
+    "A human turtle juggles balls",
+    "A turtle juggles balls",
+    "A turtle juggles fish"
+  ],
+  "switch_prompts_steps": [3, 5, 7]
+}
+original_prompts: ['A turtle juggles fish in a forest']
+[openevolve_sap][1779430597_a1f04054] prompt 1/2: render start
+  0%|          | 0/30 [00:00<?, ?it/s]### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: Explanation: Juggling is a human-specific action, creating a semantic mismatch with a turtle's anatomy. Starting with a man establishes the complex motor pose and scene layout. Transitioning to a turtle maintains the structure while correcting the identity. Finally, swapping balls for fish resolves the small, detailed object requirement once the subject is stable.
+a. Explanation: Juggling is a human-specific action, creating a semantic mismatch with a turtle's anatomy. Starting with a man establishes the complex motor pose and scene layout. Transitioning to a turtle maintains the structure while correcting the identity. Finally, swapping balls for fish resolves the small, detailed object requirement once the subject is stable.
+JSON:
+{
+  "prompts_list": [
+    "A man skillfully juggling balls in a forest",
+    "A turtle juggling balls in a forest",
+    "A turtle juggling fish in a forest"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}
+original_prompts: ['A turtle juggles fish in a forest']
+Parsing failed: unterminated string literal (detected at line 1) (<unknown>, line 1)
+[openevolve_sap][1779430595_d9e31135] prompt 2/2: decompose
+  3%|▎         | 1/30 [00:15<07:16, 15.05s/it]  7%|▋         | 2/30 [00:15<03:00,  6.44s/it] 10%|█         | 3/30 [00:15<01:39,  3.70s/it] 13%|█▎        | 4/30 [00:16<01:02,  2.41s/it] 17%|█▋        | 5/30 [00:16<00:42,  1.70s/it] 20%|██        | 6/30 [00:17<00:30,  1.27s/it] 23%|██▎       | 7/30 [00:17<00:22,  1.00it/s] 27%|██▋       | 8/30 [00:18<00:17,  1.22it/s] 30%|███       | 9/30 [00:18<00:14,  1.43it/s] 33%|███▎      | 10/30 [00:18<00:12,  1.62it/s] 37%|███▋      | 11/30 [00:19<00:10,  1.78it/s] 40%|████      | 12/30 [00:19<00:09,  1.91it/s] 43%|████▎     | 13/30 [00:20<00:08,  2.01it/s] 47%|████▋     | 14/30 [00:20<00:07,  2.09it/s] 50%|█████     | 15/30 [00:21<00:06,  2.15it/s] 53%|█████▎    | 16/30 [00:21<00:06,  2.19it/s] 57%|█████▋    | 17/30 [00:21<00:05,  2.22it/s] 60%|██████    | 18/30 [00:22<00:05,  2.24it/s] 63%|██████▎   | 19/30 [00:22<00:04,  2.25it/s] 67%|██████▋   | 20/30 [00:23<00:04,  2.26it/s] 70%|███████   | 21/30 [00:23<00:03,  2.27it/s] 73%|███████▎  | 22/30 [00:24<00:03,  2.28it/s] 77%|███████▋  | 23/30 [00:24<00:03,  2.28it/s] 80%|████████  | 24/30 [00:25<00:02,  2.28it/s] 83%|████████▎ | 25/30 [00:25<00:02,  2.28it/s] 87%|████████▋ | 26/30 [00:25<00:01,  2.29it/s] 90%|█████████ | 27/30 [00:26<00:01,  2.29it/s] 93%|█████████▎| 28/30 [00:26<00:00,  2.29it/s] 97%|█████████▋| 29/30 [00:27<00:00,  2.28it/s]100%|██████████| 30/30 [00:27<00:00,  2.29it/s]100%|██████████| 30/30 [00:27<00:00,  1.08it/s]
+2026-05-22 09:18:16,737 - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 5, 'diversity': 0}
+2026-05-22 09:18:16,737 - INFO - Iteration 2: Program 8185371c-b35c-4e76-8d16-4cf6a74c2b4f (parent: d1d83ada-e24d-468d-963f-055ecd5d4c4d) completed in 176.46s
+2026-05-22 09:18:16,737 - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: Standard diffusion models have a strong prior for human hands having five fingers. To ensure the correct count (six) is preserved during the denoising process, we begin with a robotic hand—a category that commonly accepts non-standard finger geometries—before transitioning to the organic alien identity.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A robotic hand",
+    "A robotic hand with 6 fingers",
+    "An alien hand with 6 fingers"
+  ],
+  "switch_prompts_steps": [4, 8]
+}
+original_prompts: ['A allien hand with 6 fingers']
+[openevolve_sap][1779430595_d9e31135] prompt 2/2: render start
+  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:15<07:31, 15.57s/it]  7%|▋         | 2/30 [00:15<03:06,  6.65s/it] 10%|█         | 3/30 [00:16<01:42,  3.81s/it] 13%|█▎        | 4/30 [00:16<01:04,  2.48s/it] 17%|█▋        | 5/30 [00:17<00:43,  1.74s/it] 20%|██        | 6/30 [00:17<00:31,  1.29s/it] 23%|██▎       | 7/30 [00:18<00:23,  1.01s/it] 27%|██▋       | 8/30 [00:18<00:18,  1.21it/s] 30%|███       | 9/30 [00:18<00:14,  1.42it/s] 33%|███▎      | 10/30 [00:19<00:12,  1.62it/s] 37%|███▋      | 11/30 [00:19<00:10,  1.78it/s] 40%|████      | 12/30 [00:20<00:09,  1.92it/s] 43%|████▎     | 13/30 [00:20<00:08,  2.02it/s] 47%|████▋     | 14/30 [00:21<00:07,  2.10it/s] 50%|█████     | 15/30 [00:21<00:06,  2.16it/s] 53%|█████▎    | 16/30 [00:22<00:06,  2.21it/s] 57%|█████▋    | 17/30 [00:22<00:05,  2.24it/s] 60%|██████    | 18/30 [00:22<00:05,  2.26it/s] 63%|██████▎   | 19/30 [00:23<00:04,  2.28it/s] 67%|██████▋   | 20/30 [00:23<00:04,  2.29it/s] 70%|███████   | 21/30 [00:24<00:03,  2.30it/s] 73%|███████▎  | 22/30 [00:24<00:03,  2.30it/s] 77%|███████▋  | 23/30 [00:25<00:03,  2.31it/s] 80%|████████  | 24/30 [00:25<00:02,  2.31it/s] 83%|████████▎ | 25/30 [00:25<00:02,  2.31it/s] 87%|████████▋ | 26/30 [00:26<00:01,  2.31it/s] 90%|█████████ | 27/30 [00:26<00:01,  2.31it/s] 93%|█████████▎| 28/30 [00:27<00:00,  2.31it/s] 97%|█████████▋| 29/30 [00:27<00:00,  2.31it/s]100%|██████████| 30/30 [00:28<00:00,  2.31it/s]100%|██████████| 30/30 [00:28<00:00,  1.07it/s]
+2026-05-22 09:20:12,682 - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 4, 'diversity': 0}
+2026-05-22 09:20:12,683 - INFO - Iteration 4: Program 2f2c76bd-6302-401d-a52b-a8d2c117e55e (parent: d1d83ada-e24d-468d-963f-055ecd5d4c4d) completed in 291.62s
+2026-05-22 09:20:12,683 - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-05-22 09:20:12,683 - INFO - ✅ Evolution completed - Maximum iterations reached
+2026-05-22 09:20:15,766 - INFO - Stopped process pool
+2026-05-22 09:20:15,767 - INFO - Using tracked best program: d1d83ada-e24d-468d-963f-055ecd5d4c4d
+2026-05-22 09:20:15,767 - INFO - Evolution complete. Best program has metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-05-22 09:20:15,767 - INFO - Saved best program to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program.py with program info to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program_info.json
+Exported best prompt: /home/ubuntu/evolve_SAP/openevolve_sap/best_evolved_system_prompt.txt
+Experiment dir: /home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_091343

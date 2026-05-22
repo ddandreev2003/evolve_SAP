@@ -1,0 +1,8 @@
+2026-04-09 11:51:03,654 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260409_115103.log
+2026-04-09 11:51:03,661 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-04-09 11:51:03,700 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemma-4-31b-it
+2026-04-09 11:51:03,700 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemma-4-31b-it (weight: 1.00)
+2026-04-09 11:51:03,725 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-04-09 11:51:03,725 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-04-09 11:51:03,726 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-04-09 11:51:05,014 - openevolve.evaluator - ERROR - Error loading evaluation function: No module named 'benchmarks'

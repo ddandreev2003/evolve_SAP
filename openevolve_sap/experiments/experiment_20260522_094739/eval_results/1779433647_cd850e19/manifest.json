@@ -1,0 +1,74 @@
+{
+  "run_id": "1779433647_cd850e19",
+  "program_path": "/tmp/tmpf_58yz_i.py",
+  "program_id": "tmpf_58yz_i",
+  "timestamp": 1779434024.3744776,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers, but it is **not** in a vase and is **not** upside down. The bouquet rests directly on a wooden surface in a conventional upright orientation, with stems bundled but not inserted into a vase. The core elements of the prompt—*a vase* and the *upside-down* positioning—are entirely absent. While flowers are present, the scene fundamentally misrepresents the prompt’s key requirements (vase containment and inverted orientation), rendering the depicted situation non-functional and conceptually misaligned.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity photograph with no visible artifacts. Lighting is soft and natural, textures (petals, wood grain, stems) are crisp and realistic, and perspective is consistent. All elements are anatomically coherent: roses have well-defined layers, baby’s breath flowers are distinct, and stems show natural bundling. There are no distortions, floating objects, or implausible blends—every component appears physically grounded and deliberately composed."
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_00/score.json"
+    },
+    {
+      "prompt_index": 1,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_01",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_01/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_01/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image perfectly conveys the prompt's meaning by depicting a white glove with exactly six distinct fingers. The glove is clearly visible, and the count of six fingers is unambiguous and central to the composition. There are no symbolic or metaphorical elements; the representation is concrete, functional, and directly illustrates the described attribute without missing or misrepresenting any key details from the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is rendered with high visual coherence and no detectable flaws. The glove exhibits smooth, consistent shading and clean edges, with all fingers clearly defined and anatomically plausible for a stylized glove (e.g., no distortion, warping, or fused geometry). Lighting and texture are uniform, and the object appears physically grounded with no floating elements or artifacts. The simple black background enhances readability, and the overall execution is deliberate and polished."
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_01/score.json"
+    },
+    {
+      "prompt_index": 2,
+      "original_prompt": "The shadow of a cat is facing the opposite direction",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_02",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_02/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_02/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image perfectly illustrates the prompt \"The shadow of a cat is facing the opposite direction.\" The cat is facing away from the camera (toward the top of the image), while its shadow extends toward the camera (bottom of the image), clearly showing the shadow facing the opposite direction from the cat. Both required elements (the cat and its shadow) are present and correctly depicted in a concrete, non-metaphorical way. The spatial relationship between the cat and its shadow directly demonstrates the intended scenario without ambiguity.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless with excellent rendering quality. The cat has proper anatomical proportions with well-defined limbs, tail, and body. The texture of the cat's fur and the asphalt surface are realistic and consistent. Lighting is natural with a properly cast shadow that has appropriate softness and shape. There are no visible artifacts, distortions, or rendering issues - the perspective is consistent throughout, and all elements appear physically coherent and realistic."
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779433647_cd850e19/prompt_02/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 4.0,
+    "gemma_score": 1.0,
+    "combined_score": 0.6800000000000002
+  }
+}

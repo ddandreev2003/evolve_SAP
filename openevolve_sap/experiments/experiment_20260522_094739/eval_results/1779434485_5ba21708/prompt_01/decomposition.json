@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "",
+  "prompts_list": [
+    "A white glove with an extra digit",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

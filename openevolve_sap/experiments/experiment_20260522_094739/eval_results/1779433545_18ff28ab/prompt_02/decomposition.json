@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows typically align with physical lighting physics (pointing away from the light source). To achieve the contradiction (\"opposite direction\"), the prompt sequence first establishes the base scene and cat anatomy (Step 0-3) to ensure a coherent subject. The second prompt explicitly introduces the unnatural physics by describing the shadow's position relative to the light (Step 3-6), acting as a proxy for the final contradiction. The third prompt refines this with the exact target description once the layout supports the anomaly.",
+  "prompts_list": [
+    "A cat standing on pavement in daylight",
+    "A cat standing on pavement casting a shadow against the sun",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

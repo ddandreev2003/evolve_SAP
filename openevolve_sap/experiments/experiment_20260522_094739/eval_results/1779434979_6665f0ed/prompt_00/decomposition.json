@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upright vase is the standard schema for flowers; starting with this would lock the model into an upward orientation (stems up, blooms up), violating the spatial constraint. Following Rule 1 for Structural contradictions, the prompt begins with a proxy enforcing the inverted geometry (a hanging plant/pot setup) before transitioning to the target phrase \"upside down in a vase\" to maintain coherence.",
+  "prompts_list": [
+    "A plant hanging from a white pot",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

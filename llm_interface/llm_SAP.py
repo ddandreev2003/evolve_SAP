@@ -124,6 +124,13 @@ def parse_batched_llm_output(llm_output_text, original_prompts):
     llm_output_text: raw string returned by the llm for multiple prompts
     original_prompts: list of the multiple original input strings
     """
+    if llm_output_text is None:
+        return [None for _ in original_prompts]
+    if not isinstance(llm_output_text, str):
+        llm_output_text = str(llm_output_text)
+    if not llm_output_text.strip():
+        return [None for _ in original_prompts]
+
     results = []
 
     # Preferred format: model echoes batched sections "### Input N:"
@@ -169,23 +176,45 @@ def get_params_dict_SAP(response):
     Cleans up Markdown-style code fences and returns a dict.
     """
     try:
-        # Extract explanation
-        explanation = response.split("a. Explanation:")[1].split("b. Final dictionary:")[0].strip()
+        if response is None:
+            return None
+        if not isinstance(response, str):
+            response = str(response)
+        text = response.strip()
+        if not text:
+            return None
 
-        # Extract and clean dictionary string
-        dict_block = response.split("b. Final dictionary:")[1].strip()
+        explanation = ""
+        dict_block = text
 
-        # Remove ```python and ``` if present
-        # dict_str = re.sub(r"```(?:python)?", "", dict_block).replace("```", "").strip()
+        if "a. Explanation:" in text and "b. Final dictionary:" in text:
+            explanation = text.split("a. Explanation:", 1)[1].split("b. Final dictionary:", 1)[0].strip()
+            dict_block = text.split("b. Final dictionary:", 1)[1].strip()
+        elif "Explanation:" in text and "Final dictionary:" in text:
+            explanation = text.split("Explanation:", 1)[1].split("Final dictionary:", 1)[0].strip()
+            dict_block = text.split("Final dictionary:", 1)[1].strip()
+
         dict_str = re.sub(r"```[^\n]*\n?", "", dict_block).replace("```", "").strip()
 
-        # Parse dictionary safely
+        if "prompts_list" not in dict_str and "switch_prompts_steps" not in dict_str:
+            brace_match = re.search(r"\{.*\}", text, flags=re.DOTALL)
+            if not brace_match:
+                return None
+            dict_str = brace_match.group(0).strip()
+
         final_dict = ast.literal_eval(dict_str)
+        if not isinstance(final_dict, dict):
+            return None
+
+        prompts = final_dict.get("prompts_list")
+        switches = final_dict.get("switch_prompts_steps")
+        if not isinstance(prompts, list) or not isinstance(switches, list):
+            return None
 
         return {
             "explanation": explanation,
-            "prompts_list": final_dict["prompts_list"],
-            "switch_prompts_steps": final_dict["switch_prompts_steps"]
+            "prompts_list": prompts,
+            "switch_prompts_steps": switches,
         }
 
     except Exception as e:

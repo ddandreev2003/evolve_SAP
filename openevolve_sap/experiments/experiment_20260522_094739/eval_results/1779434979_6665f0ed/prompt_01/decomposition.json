@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Diffusion models typically associate gloves with five digits due to training data priors. Starting with a standard glove description risks reverting to five fingers. By introducing a robotic or synthetic variant first, the model accepts a non-standard digit count as structural fact rather than error. Once the geometry is locked, the prompt switches to the final target description to maintain the unusual count while refining the identity.",
+  "prompts_list": [
+    "A white robotic glove with six fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

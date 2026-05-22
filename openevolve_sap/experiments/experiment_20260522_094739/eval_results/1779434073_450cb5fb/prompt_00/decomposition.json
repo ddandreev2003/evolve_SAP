@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A standard \"flowers in a vase\" configuration implies an upright arrangement where stems extend upwards from the vessel. This geometric prior conflicts with the requested inverted pose. By starting with a structural description of \"stems pointing downwards,\" the model establishes the unusual geometry before being told \"flowers,\" preventing it from snapping the layout to the standard upright orientation.",
+  "prompts_list": [
+    "A vase with stems pointing downwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

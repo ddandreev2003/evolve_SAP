@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows a bouquet of flowers, but it is **not** in a vase and is **not** upside down. The bouquet rests directly on a wooden surface in a conventional upright orientation, with stems bundled but not inserted into a vase. The core elements of the prompt—*a vase* and the *upside-down* positioning—are entirely absent. While flowers are present, the scene fundamentally misrepresents the prompt’s key requirements (vase containment and inverted orientation), rendering the depicted situation non-functional and conceptually misaligned.",
+  "quality score": 5,
+  "quality explanation": "The image is a high-fidelity photograph with no visible artifacts. Lighting is soft and natural, textures (petals, wood grain, stems) are crisp and realistic, and perspective is consistent. All elements are anatomically coherent: roses have well-defined layers, baby’s breath flowers are distinct, and stems show natural bundling. There are no distortions, floating objects, or implausible blends—every component appears physically grounded and deliberately composed."
+}

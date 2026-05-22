@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A vase holding flowers strongly biases toward upright growth due to biological and contextual priors. Starting with the container geometry alone establishes the vessel structure. Introducing a visual proxy of \"petals facing the bottom\" forces the inverted orientation during the layout phase before replacing it with the semantic term \"bouquet\" at the detail phase to lock the contradiction.",
+  "prompts_list": [
+    "A clear vase on a table",
+    "A vase with clusters of petals facing the bottom",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

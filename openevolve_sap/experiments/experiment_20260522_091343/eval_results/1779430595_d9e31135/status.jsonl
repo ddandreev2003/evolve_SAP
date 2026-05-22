@@ -1,0 +1,12 @@
+{"event": "mem_snapshot", "run_id": "1779430595_d9e31135", "stage": "after_model_load", "rss_bytes": 1204707328, "cuda": {"cuda_available": true, "device": 0, "allocated_bytes": 0, "reserved_bytes": 0, "max_allocated_bytes": 0, "max_reserved_bytes": 0}, "timestamp": 1779430595.9323204}
+{"event": "start_loop", "run_id": "1779430595_d9e31135", "num_prompts": 2, "timestamp": 1779430595.9327517}
+{"event": "ram_check", "run_id": "1779430595_d9e31135", "stage": "start_loop", "rss_bytes": 1204707328, "limit_bytes": 12884901888, "timestamp": 1779430595.93292}
+{"event": "ram_check", "run_id": "1779430595_d9e31135", "stage": "prompt_0_before_decompose", "rss_bytes": 1204707328, "limit_bytes": 12884901888, "timestamp": 1779430595.9330516}
+{"event": "sap_parse_failed", "run_id": "1779430595_d9e31135", "prompt_index": 0, "prompt": "A turtle juggles fish in a forest", "timestamp": 1779430667.181056}
+{"event": "ram_check", "run_id": "1779430595_d9e31135", "stage": "prompt_1_before_decompose", "rss_bytes": 1204707328, "limit_bytes": 12884901888, "timestamp": 1779430667.1814303}
+{"event": "ram_check", "run_id": "1779430595_d9e31135", "stage": "prompt_1_before_render", "rss_bytes": 1204707328, "limit_bytes": 12884901888, "timestamp": 1779430763.370147}
+{"event": "mem_snapshot", "run_id": "1779430595_d9e31135", "stage": "prompt_1_before_render", "rss_bytes": 1204707328, "cuda": {"cuda_available": true, "device": 0, "allocated_bytes": 0, "reserved_bytes": 0, "max_allocated_bytes": 0, "max_reserved_bytes": 0}, "timestamp": 1779430763.3763866}
+{"event": "image_saved", "run_id": "1779430595_d9e31135", "prompt_index": 1, "image_index": 0, "prompt": "A allien hand with 6 fingers", "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_091343/eval_results/1779430595_d9e31135/candidate_tmp4iresgu8_1_0.png", "timestamp": 1779430811.6019716}
+{"event": "ram_check", "run_id": "1779430595_d9e31135", "stage": "prompt_1_after_render", "rss_bytes": 17862430720, "limit_bytes": 12884901888, "timestamp": 1779430811.8739777}
+{"event": "ram_limit_exceeded", "run_id": "1779430595_d9e31135", "stage": "prompt_1_after_render", "rss_bytes": 17862430720, "limit_bytes": 12884901888, "timestamp": 1779430811.8741293}
+{"event": "final_error", "run_id": "1779430595_d9e31135", "reason": "evaluation_failed", "timestamp": 1779430811.8742294, "detail": "RAM limit exceeded at prompt_1_after_render: rss=17862430720, limit=12884901888"}

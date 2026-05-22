@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Models tend to generate vases and flowers in their standard upright orientation due to training biases. By establishing the vase geometry first, then introducing the flower mass neutrally, we stabilize the structure. The \"upside down\" constraint is applied in the final stage when high-frequency details dominate, ensuring the inversion does not collapse the object identity.",
+  "prompts_list": [
+    "A clear vase sitting on a table",
+    "A vase filled with a bunch of flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

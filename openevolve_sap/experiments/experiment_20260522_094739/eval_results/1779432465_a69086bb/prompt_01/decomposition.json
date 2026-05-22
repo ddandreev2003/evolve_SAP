@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove typically has five fingers, making six fingers a structural contradiction that conflicts with standard anatomical priors. Starting with a standard glove stabilizes the coarse geometry and silhouette before introducing the anomalous finger count during the fine-detail denoising phase.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

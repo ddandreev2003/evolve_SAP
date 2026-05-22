@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows a bouquet of flowers in a vase, but the arrangement is upright (stems in water, blooms facing upward), directly contradicting the prompt's requirement of \"upside down.\" While the core objects (bouquet, vase) are present, the critical attribute of inverted orientation is entirely misrepresented—the blooms should be submerged with stems pointing skyward, but here the functional relationship is normal. This constitutes a significant deviation from the prompt's intent, as the upside-down scenario is central to the description.",
+  "quality score": 5,
+  "quality explanation": "The image is a high-resolution photograph with no rendering artifacts. Lighting is natural and consistent, textures (e.g., petal details, glass transparency, wood grain) are realistic, and perspective is coherent. All elements—flowers, stems, vase, and table—exhibit precise anatomical and physical accuracy with no distortions, clipping, or surreal blending. The composition is clean, realistic, and fully coherent."
+}

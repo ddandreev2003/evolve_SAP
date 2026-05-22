@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are governed by strict light physics, meaning standard prompts lock the correct alignment in early steps. To enforce the impossible geometry, we initialize the scene with the anomalous shadow shape first, stabilizing the conflicting direction before integrating the cat's identity.",
+  "prompts_list": [
+    "A shadow on the ground pointing opposite to the light source",
+    "A cat casting a shadow on the ground pointing opposite to the light source"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Vases are culturally and physically expected to hold flowers upright due to gravity and design. An inverted bouquet introduces a spatial contradiction to this prior knowledge. Starting with the standard vase shape and an upright arrangement establishes the object geometry reliably before transitioning to the unnatural inverted state to prevent structural artifacts.",
+  "prompts_list": [
+    "A vase sitting on a wooden table",
+    "A vase filled with a bouquet of fresh flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

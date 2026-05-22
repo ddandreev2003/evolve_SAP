@@ -1,0 +1,58 @@
+/home/ubuntu/venv/lib/python3.12/site-packages/torch/cuda/__init__.py:63: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+[openevolve_sap][1779431016_231eda32] evaluation started
+[SAP] Loading FLUX from /home/ubuntu/.cache/sap_flux_models/FLUX.2-klein-base-4B -> device cuda:0 (physical GPU ?, low_vram=True)
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  20%|██        | 1/5 [00:00<00:01,  2.39it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 29.12it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  9.76it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  8.24it/s]
+[SAP] FLUX using CPU offload on GPU 0
+[openevolve_sap][1779431016_231eda32] prompt 1/2: decompose
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: Juggling requires manual dexterity typical of humans, not reptiles, creating an identity-action contradiction. A human starter stabilizes the complex pose. A humanoid turtle provides an anatomical bridge for the creature type. Finally, replacing generic balls with fish addresses the semantic detail once the structure and identity are solidified.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A man skilfully juggles balls in a forest",
+    "A human turtle juggles balls",
+    "A turtle juggles balls",
+    "A turtle juggles fish"
+  ],
+  "switch_prompts_steps": [3, 5, 7]
+}
+original_prompts: ['A turtle juggles fish in a forest']
+[openevolve_sap][1779431016_231eda32] prompt 1/2: render start
+  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:08<04:17,  8.87s/it]  7%|▋         | 2/30 [00:09<01:48,  3.89s/it] 10%|█         | 3/30 [00:09<01:02,  2.31s/it] 13%|█▎        | 4/30 [00:10<00:40,  1.57s/it] 17%|█▋        | 5/30 [00:10<00:28,  1.16s/it] 20%|██        | 6/30 [00:10<00:21,  1.10it/s] 23%|██▎       | 7/30 [00:11<00:17,  1.33it/s] 27%|██▋       | 8/30 [00:11<00:14,  1.54it/s] 30%|███       | 9/30 [00:12<00:12,  1.72it/s] 33%|███▎      | 10/30 [00:12<00:10,  1.87it/s] 37%|███▋      | 11/30 [00:13<00:09,  1.98it/s] 40%|████      | 12/30 [00:13<00:08,  2.07it/s] 43%|████▎     | 13/30 [00:14<00:07,  2.14it/s] 47%|████▋     | 14/30 [00:14<00:07,  2.19it/s] 50%|█████     | 15/30 [00:14<00:06,  2.22it/s] 53%|█████▎    | 16/30 [00:15<00:06,  2.25it/s] 57%|█████▋    | 17/30 [00:15<00:05,  2.26it/s] 60%|██████    | 18/30 [00:16<00:05,  2.28it/s] 63%|██████▎   | 19/30 [00:16<00:04,  2.29it/s] 67%|██████▋   | 20/30 [00:17<00:04,  2.29it/s] 70%|███████   | 21/30 [00:17<00:03,  2.30it/s] 73%|███████▎  | 22/30 [00:17<00:03,  2.30it/s] 77%|███████▋  | 23/30 [00:18<00:03,  2.30it/s] 80%|████████  | 24/30 [00:18<00:02,  2.30it/s] 83%|████████▎ | 25/30 [00:19<00:02,  2.30it/s] 87%|████████▋ | 26/30 [00:19<00:01,  2.31it/s] 90%|█████████ | 27/30 [00:20<00:01,  2.31it/s] 93%|█████████▎| 28/30 [00:20<00:00,  2.31it/s] 97%|█████████▋| 29/30 [00:20<00:00,  2.31it/s]100%|██████████| 30/30 [00:21<00:00,  2.31it/s]100%|██████████| 30/30 [00:21<00:00,  1.40it/s]
+[openevolve_sap][1779431016_231eda32] prompt 1/2: score start
+waiting for qwen/qwen3-vl-235b-a22b-thinking response
+### ALIGNMENT SCORE: 5  
+### ALIGNMENT EXPLANATION: The image fully conveys the prompt’s meaning. A turtle is present in a dense forest setting, and multiple fish are depicted mid-air in a manner consistent with juggling. The turtle’s posture and the fish’s arrangement clearly illustrate the action of juggling without metaphorical or symbolic representation. All key elements (turtle, fish, forest) are correctly identified, functionally interact as described, and the scene is concrete and contextually accurate.  
+
+### QUALITY SCORE: 5  
+### QUALITY EXPLANATION: The image is visually flawless. The turtle, fish, and forest environment are rendered with realistic textures, consistent lighting, and precise anatomical detail (e.g., the turtle’s limbs and shell structure, the fish’s scales). Perspective and proportions are coherent, with no artifacts, distortions, or implausible blending. The airborne elements (turtle and fish) connect naturally to the scene, and complex areas like the turtle’s limbs and the fish’s forms are well-defined and physically plausible.
+[openevolve_sap][1779431016_231eda32] prompt 1/2: alignment=5.000
+[openevolve_sap][1779431016_231eda32] prompt 2/2: decompose
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: Diffusion models typically render human hands with five fingers by default. To ensure the anomalous sixth digit appears, the prompt starts with a standard anatomical structure ("human hand"), shifts the identity to "alien" to break the 5-finger prior, and finally enforces the specific count ("6 fingers") when fine details are resolved.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A human hand",
+    "An alien hand",
+    "An alien hand with 6 fingers"
+  ],
+  "switch_prompts_steps": [4, 7]
+}
+original_prompts: ['A allien hand with 6 fingers']
+[openevolve_sap][1779431016_231eda32] prompt 2/2: render start
+  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:08<04:02,  8.35s/it]  7%|▋         | 2/30 [00:08<01:43,  3.69s/it] 10%|█         | 3/30 [00:09<00:59,  2.20s/it] 13%|█▎        | 4/30 [00:09<00:39,  1.50s/it] 17%|█▋        | 5/30 [00:10<00:27,  1.12s/it] 20%|██        | 6/30 [00:10<00:21,  1.13it/s] 23%|██▎       | 7/30 [00:10<00:16,  1.36it/s] 27%|██▋       | 8/30 [00:11<00:14,  1.56it/s] 30%|███       | 9/30 [00:11<00:12,  1.74it/s] 33%|███▎      | 10/30 [00:12<00:10,  1.88it/s] 37%|███▋      | 11/30 [00:12<00:09,  1.99it/s] 40%|████      | 12/30 [00:13<00:08,  2.08it/s] 43%|████▎     | 13/30 [00:13<00:07,  2.14it/s] 47%|████▋     | 14/30 [00:13<00:07,  2.19it/s] 50%|█████     | 15/30 [00:14<00:06,  2.22it/s] 53%|█████▎    | 16/30 [00:14<00:06,  2.25it/s] 57%|█████▋    | 17/30 [00:15<00:05,  2.27it/s] 60%|██████    | 18/30 [00:15<00:05,  2.28it/s] 63%|██████▎   | 19/30 [00:16<00:04,  2.29it/s] 67%|██████▋   | 20/30 [00:16<00:04,  2.29it/s] 70%|███████   | 21/30 [00:17<00:03,  2.30it/s] 73%|███████▎  | 22/30 [00:17<00:03,  2.30it/s] 77%|███████▋  | 23/30 [00:17<00:03,  2.30it/s] 80%|████████  | 24/30 [00:18<00:02,  2.30it/s] 83%|████████▎ | 25/30 [00:18<00:02,  2.30it/s] 87%|████████▋ | 26/30 [00:19<00:01,  2.30it/s] 90%|█████████ | 27/30 [00:19<00:01,  2.31it/s] 93%|█████████▎| 28/30 [00:20<00:00,  2.31it/s] 97%|█████████▋| 29/30 [00:20<00:00,  2.30it/s]100%|██████████| 30/30 [00:20<00:00,  2.31it/s]100%|██████████| 30/30 [00:20<00:00,  1.43it/s]
+[openevolve_sap][1779431016_231eda32] prompt 2/2: score start
+waiting for qwen/qwen3-vl-235b-a22b-thinking response
+### ALIGNMENT SCORE: 1  
+### ALIGNMENT EXPLANATION: The image depicts a human hand with exactly 5 fingers, not 6 as specified in the prompt. There are no alien characteristics (e.g., unusual skin texture, non-human anatomy, or extraterrestrial elements) present. The scene shows a typical human hand gesture without any contextual indicators of "alien" origin or the required sixth digit. Key elements of the prompt (6 fingers, alien nature) are entirely missing, making it a complete misrepresentation of the intended meaning.  
+
+### QUALITY SCORE: 5  
+### QUALITY EXPLANATION: The image is a high-fidelity photograph with no visible rendering artifacts. The hand exhibits anatomically correct proportions, natural skin texture, and realistic lighting with consistent shadows. Fingers, nails, and the wrist connect cohesively without distortion, clipping, or unnatural blending. The background is clean and unobtrusive, and the focus is sharp, making all details visually coherent and physically plausible. No technical flaws are present.
+[openevolve_sap][1779431016_231eda32] prompt 2/2: alignment=1.000
+[openevolve_sap][1779431016_231eda32] running gemma judge
+[openevolve_sap][1779431016_231eda32] done alignment=3.000 gemma=1.000 combined=0.520
+METRICS {'alignment_score': 3.0, 'gemma_score': 1.0, 'combined_score': 0.52, 'num_eval_prompts': 2.0}

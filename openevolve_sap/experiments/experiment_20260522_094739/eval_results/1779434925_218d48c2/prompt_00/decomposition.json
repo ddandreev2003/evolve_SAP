@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in vases are strongly associated with upright growth due to gravity. Starting with an overturned container establishes the unusual inverted geometry without the semantic pull of 'flowers', ensuring the downward-hanging stems render correctly before the final object identity is applied.",
+  "prompts_list": [
+    "An overturned container with long stems hanging from the opening",
+    "A vase with plant stems hanging downwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

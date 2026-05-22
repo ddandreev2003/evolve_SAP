@@ -1,0 +1,6 @@
+{
+  "alignment score": 5,
+  "alignment explanation": "The image precisely depicts a cat with its shadow cast *forward* (toward the light source), while the cat itself faces *away* from the viewer. The shadow clearly shows a feline silhouette with distinct ears, confirming it is the cat’s shadow. The cat’s orientation (back to viewer) and the shadow’s direction (facing the viewer) are explicitly opposite, fulfilling the prompt’s requirement literally and concretely. No symbolic or metaphorical interpretation is needed—the physical relationship between the cat and its shadow is unambiguous and functionally accurate.",
+  "quality score": 5,
+  "quality explanation": "The image is visually pristine with no rendering artifacts. The cat’s fur shows realistic texture and lighting gradients, the shadow has sharp, consistent edges, and the carpet texture is uniform. Lighting is coherent (sunlight creates a natural gradient and crisp shadow), and all elements (cat’s anatomy, shadow shape, surface) are physically plausible with no distortion, warping, or broken geometry. The composition is sharp, well-lit, and free of artifacts."
+}

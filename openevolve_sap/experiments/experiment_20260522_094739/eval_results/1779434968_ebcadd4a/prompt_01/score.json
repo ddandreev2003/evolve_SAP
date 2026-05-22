@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows a white glove, but it has 5 fingers instead of the 6 specified in the prompt. While the object (glove) and color (white) align with the prompt, the critical attribute of \"6 fingers\" is entirely misrepresented, which is a key element of the prompt’s intent. This constitutes a significant misrepresentation of the core requirement.",
+  "quality score": 5,
+  "quality explanation": "The image is a clean, minimalist 3D render with no visible artifacts. The glove’s shape is anatomically coherent (for a standard 5-fingered glove), with smooth surfaces, consistent lighting, and properly connected elements. There are no distortions, broken geometry, or implausible blending, making it visually flawless."
+}

@@ -1,0 +1,4 @@
+{"event": "start_loop", "run_id": "1775729630_092fe273", "num_prompts": 2, "timestamp": 1775729630.285678}
+{"event": "sap_parse_failed", "run_id": "1775729630_092fe273", "prompt_index": 0, "prompt": "A turtle juggles fish in a forest", "timestamp": 1775729668.1574187}
+{"event": "sap_parse_failed", "run_id": "1775729630_092fe273", "prompt_index": 1, "prompt": "A allien hand with 6 fingers", "timestamp": 1775729718.7946157}
+{"event": "final_error", "run_id": "1775729630_092fe273", "reason": "no_valid_alignments", "timestamp": 1775729718.8122814, "detail": "No valid alignments produced"}

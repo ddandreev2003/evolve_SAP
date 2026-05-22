@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The input presents a physics contradiction (shadow direction vs. light source). Starting with the cat establishes the main structure. Introducing a shadow creates the object necessary for the contradiction. Finally, specifying the opposite direction forces the model to defy standard lighting priors after geometry is fixed.",
+  "prompts_list": [
+    "A cat standing on the ground",
+    "A cat standing on the ground with a shadow",
+    "A cat standing on the ground with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

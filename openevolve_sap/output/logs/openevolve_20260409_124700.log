@@ -1,0 +1,47 @@
+2026-04-09 12:47:00,579 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260409_124700.log
+2026-04-09 12:47:00,584 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-04-09 12:47:00,631 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemma-4-31b-it
+2026-04-09 12:47:00,631 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemma-4-31b-it (weight: 1.00)
+2026-04-09 12:47:00,658 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-04-09 12:47:00,658 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-04-09 12:47:00,658 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-04-09 12:47:06,228 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 12:47:06,228 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 12:47:06,228 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-04-09 12:47:06,229 - openevolve.controller - INFO - Adding initial program to database
+2026-04-09 12:47:07,212 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1~/chat/completions "HTTP/1.1 404 Not Found"
+2026-04-09 12:47:07,337 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1~/chat/completions "HTTP/1.1 404 Not Found"
+2026-04-09 12:47:07,339 - openevolve.evaluator - INFO - Evaluated program 2c02b55d-dbe1-4be2-a6ca-c22f0ef9da37 in 1.11s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:47:07,339 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-04-09 12:47:07,340 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-04-09 12:47:07,340 - openevolve.process_parallel - INFO - Set max None tasks per child
+2026-04-09 12:47:07,340 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-04-09 12:47:07,340 - openevolve.controller - INFO - Using island-based evolution with 3 islands
+2026-04-09 12:47:07,341 - openevolve.database - INFO - Island Status:
+2026-04-09 12:47:07,341 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0 (best: 2c02b55d-dbe1-4be2-a6ca-c22f0ef9da37)
+2026-04-09 12:47:07,341 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-04-09 12:47:07,341 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-04-09 12:47:07,341 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 80 iterations (total: 81)
+2026-04-09 12:47:07,357 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-04-09 12:47:07,423 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-04-09 12:47:07,425 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 12:47:07,425 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 12:47:07,426 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 12:47:29,569 - openevolve.controller - INFO - Received signal 2, initiating graceful shutdown...
+2026-04-09 12:47:29,570 - openevolve.process_parallel - INFO - Graceful shutdown requested...
+2026-04-09 12:47:29,569 - openevolve.controller - INFO - Received signal 2, initiating graceful shutdown...
+2026-04-09 12:47:29,572 - openevolve.process_parallel - INFO - Graceful shutdown requested...
+2026-04-09 12:47:29,577 - openevolve.process_parallel - INFO - Shutdown requested, canceling remaining evaluations...
+2026-04-09 12:47:29,577 - openevolve.process_parallel - INFO - ✅ Evolution completed - Shutdown requested
+2026-04-09 12:47:29,577 - openevolve.controller - INFO - Evolution stopped due to shutdown request
+2026-04-09 12:48:12,863 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:48:13,846 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1~/chat/completions "HTTP/1.1 404 Not Found"
+2026-04-09 12:48:13,931 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1~/chat/completions "HTTP/1.1 404 Not Found"
+2026-04-09 12:48:13,932 - openevolve.evaluator - INFO - Evaluated program f1416415-862b-44e0-8719-82c16779dc04 in 1.05s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 12:48:13,934 - openevolve.llm.ensemble - INFO - Sampled model: google/gemma-4-31b-it
+2026-04-09 12:48:53,752 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-09 12:48:53,846 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1~/chat/completions "HTTP/1.1 404 Not Found"
+2026-04-09 12:48:53,939 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1~/chat/completions "HTTP/1.1 404 Not Found"
+2026-04-09 12:48:53,940 - openevolve.evaluator - INFO - Evaluated program 0dacb70c-60a5-4ceb-a099-80dced10a4fb in 0.18s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 15:28:32,094 - openevolve.controller - INFO - Received signal 15, initiating graceful shutdown...
+2026-04-09 15:28:32,096 - openevolve.process_parallel - INFO - Graceful shutdown requested...

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows typically align with the light source relative to the object. A shadow facing the opposite direction contradicts standard optical physics. Starting with a cat casting a natural shadow establishes the lighting geometry and pose before switching to the surreal requirement, preventing structure collapse.",
+  "prompts_list": [
+    "A cat sitting in sunlight casting a natural shadow",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

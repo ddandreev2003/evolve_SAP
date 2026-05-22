@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows typically align with light sources, so a reverse-facing shadow creates a physical contradiction that confuses geometric priors. Starting with a \"dark shape\" instead of a shadow establishes the layout without triggering the expectation of standard shadow physics. Once the form is stable, the term \"shadow\" is introduced with normal orientation, before the final step forces the opposing direction.",
+  "prompts_list": [
+    "A cat sitting in a sunny field with a dark shape on the grass",
+    "A cat sitting in a sunny field casting a shadow on the grass",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "run_id": "1779434502_d8883cdc",
+  "program_path": "/tmp/tmplav6nr9z.py",
+  "program_id": "tmplav6nr9z",
+  "timestamp": 1779434917.7618334,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the arrangement is upright (stems in water, blooms facing upward), directly contradicting the prompt's requirement of \"upside down.\" While the core objects (bouquet, vase) are present, the critical attribute of inverted orientation is entirely misrepresented—the blooms should be submerged with stems pointing skyward, but here the functional relationship is normal. This constitutes a significant deviation from the prompt's intent, as the upside-down scenario is central to the description.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with no rendering artifacts. Lighting is natural and consistent, textures (e.g., petal details, glass transparency, wood grain) are realistic, and perspective is coherent. All elements—flowers, stems, vase, and table—exhibit precise anatomical and physical accuracy with no distortions, clipping, or surreal blending. The composition is clean, realistic, and fully coherent."
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_00/score.json"
+    },
+    {
+      "prompt_index": 1,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_01",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_01/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_01/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a white glove, which matches the object described in the prompt. However, the glove has only 5 fingers (including the thumb), whereas the prompt explicitly specifies \"6 fingers.\" This key element—the number of fingers—is fundamentally misrepresented, as the scene shows a standard five-fingered glove rather than one with the required six. Since the core intent of the prompt (a glove with an atypical six-finger configuration) is not illustrated, and the attribute is significantly wrong, the alignment is penalized. The image does not convey the intended situation in a concrete or functional way, as it relies on a common, five-fingered design instead of the specified six.",
+        "quality score": 5,
+        "quality explanation": "The image is rendered with high visual fidelity, showing no artifacts, distortions, or coherence issues. The glove is smoothly modeled with consistent lighting and texture, and the fingers are well-formed, anatomically plausible, and distinct (no melting, fusing, or warping). Perspective and physical connections are natural, with no floating elements or clipping. The simplicity of the black background enhances clarity, and the overall presentation is clean, realistic, and free of flaws, making it fully coherent and visually deliberate."
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_01/score.json"
+    },
+    {
+      "prompt_index": 2,
+      "original_prompt": "The shadow of a cat is facing the opposite direction",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_02",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_02/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_02/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a cat's shadow on grass, but the critical element of the prompt—\"facing the opposite direction\"—lacks context to be verified. The shadow alone cannot demonstrate \"opposite direction\" without the actual cat present for comparison. The prompt implies a spatial relationship between the cat and its shadow (e.g., the shadow oriented contrary to the cat’s posture), but the cat itself is absent. While the shadow is clearly of a cat, the absence of the cat renders the \"opposite direction\" claim unverifiable and conceptually incomplete. Key intent (demonstrating directional opposition) is misrepresented due to missing context.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent with no rendering flaws. The shadow is sharply defined against the grass, with consistent lighting and natural perspective. Grass texture is uniform, and the silhouette of the cat’s shadow (including head, body, and limbs) is anatomically plausible. No distortions, artifacts, or physical inconsistencies (e.g., floating elements, merged shapes) are present. The composition is clean and realistic, maintaining full visual integrity."
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_094739/eval_results/1779434502_d8883cdc/prompt_02/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 2.0,
+    "gemma_score": 1.0,
+    "combined_score": 0.3600000000000001
+  }
+}

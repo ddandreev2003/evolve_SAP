@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove prior strongly dictates five fingers, making \"6 fingers\" a high-contradiction geometric anomaly. Following Rule 1, the generation begins with a structural placeholder (\"six-pronged white shape\") to enforce the unusual geometry during the initial stable denoising phases (Steps 0-4). An intermediate prompt introduces the object \"glove\" paired with neutral count descriptors (\"protrusions\") to stabilize the identity without triggering the 5-finger correction. Finally, the model resolves to the specific contradictory semantics (\"6 fingers\") in the latter stages.",
+  "prompts_list": [
+    "A six-pronged white shape",
+    "A white glove with six protrusions",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

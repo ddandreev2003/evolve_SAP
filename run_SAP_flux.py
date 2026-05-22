@@ -7,6 +7,10 @@ from SAP_pipeline_flux import SapFlux
 from llm_interface.llm_SAP import LLM_SAP
 from benchmarks.gpt_eval import evaluate_image_with_gpt
 BASE_FOLDER = os.getcwd()
+DEFAULT_FLUX_MODEL_ID = "black-forest-labs/FLUX.2-klein-base-4B"
+DEFAULT_FLUX_CACHE_DIR = Path.home() / ".cache" / "sap_flux_models"
+_LOADED_MODEL = None
+_LOADED_FROM = None
 
 
 def str2bool(v):
@@ -32,10 +36,71 @@ def parse_input_arguments():
     args = parser.parse_args()
     return args
 
+def _resolve_local_model_path() -> Path:
+    local_model_path = os.getenv("SAP_FLUX_MODEL_PATH", "").strip()
+    if not local_model_path:
+        raise RuntimeError(
+            "SAP_FLUX_MODEL_PATH is required in strict local mode. "
+            "Set it to a local FLUX model directory."
+        )
+    local_path = Path(local_model_path).expanduser().resolve()
+    if not local_path.exists():
+        raise FileNotFoundError(f"SAP_FLUX_MODEL_PATH does not exist: {local_path}")
+    return local_path
+
+
+def _get_cuda_device() -> torch.device:
+    if not torch.cuda.is_available():
+        raise RuntimeError("CUDA is required in strict mode, but no GPU is available.")
+    local_idx = int(os.getenv("SAP_CUDA_DEVICE", "0").strip() or "0")
+    device = torch.device(f"cuda:{local_idx}")
+    torch.cuda.set_device(device)
+    return device
+
+
+def release_model() -> None:
+    """Unload FLUX and free GPU memory (needed before spawning worker processes)."""
+    global _LOADED_MODEL, _LOADED_FROM
+    import gc
+
+    _LOADED_MODEL = None
+    _LOADED_FROM = None
+    gc.collect()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+        torch.cuda.ipc_collect()
+
+
 def load_model():
-    model = SapFlux.from_pretrained("black-forest-labs/FLUX.2-klein-base-4B", torch_dtype=torch.bfloat16)
-    model.enable_model_cpu_offload()
-    return model
+    global _LOADED_MODEL, _LOADED_FROM
+    if _LOADED_MODEL is not None:
+        return _LOADED_MODEL
+
+    local_path = _resolve_local_model_path()
+    device = _get_cuda_device()
+    local_idx = int(os.getenv("SAP_CUDA_DEVICE", "0").strip() or "0")
+    physical = os.getenv("SAP_PHYSICAL_GPU_ID", os.getenv("CUDA_VISIBLE_DEVICES", "?"))
+    low_vram = os.getenv("SAP_LOW_VRAM", "1").strip().lower() not in {"0", "false", "no"}
+    print(
+        f"[SAP] Loading FLUX from {local_path} -> device {device} "
+        f"(physical GPU {physical}, low_vram={low_vram})"
+    )
+    model = SapFlux.from_pretrained(
+        str(local_path),
+        torch_dtype=torch.bfloat16,
+        local_files_only=True,
+    )
+
+    if low_vram and hasattr(model, "enable_model_cpu_offload"):
+        model.enable_model_cpu_offload(gpu_id=local_idx)
+        print(f"[SAP] FLUX using CPU offload on GPU {local_idx}")
+    else:
+        model.to(device)
+        print(f"[SAP] FLUX model ready on {device}")
+
+    _LOADED_MODEL = model
+    _LOADED_FROM = str(local_path)
+    return _LOADED_MODEL
 
 def save_results(images, prompt, seeds_list):
     prompt_model_path = os.path.join(BASE_FOLDER, "results", prompt)

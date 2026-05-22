@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A glove carries a strong visual prior for 5 fingers. Starting with a \"6-pronged shape\" establishes the unusual geometry using a structural placeholder before introducing the human-anatomy-related term \"hand\" in the second step. The final step applies the \"glove\" identity once the six-digit layout is stabilized in the latent space, preventing the model from collapsing back to the standard five-finger configuration.",
+  "prompts_list": [
+    "A white 6-pronged shape.",
+    "A white hand with six fingers.",
+    "A white glove with six fingers."
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

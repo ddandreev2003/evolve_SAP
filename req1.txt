@@ -15,7 +15,6 @@ certifi==2025.10.5
 charset-normalizer==3.4.4
 clearml==2.0.2
 click==8.3.0
-clip @ git+https://github.com/openai/CLIP.git@dcba3cb2e2827b402d2701e7e1c7d9fed8a20ef1
 cloudpathlib==0.23.0
 coloredlogs==15.0.1
 confection==0.1.5

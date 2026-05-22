@@ -1,0 +1,4 @@
+{"event": "start_loop", "run_id": "1775729316_53dc902b", "num_prompts": 2, "timestamp": 1775729316.9892092}
+{"event": "sap_parse_failed", "run_id": "1775729316_53dc902b", "prompt_index": 0, "prompt": "A turtle juggles fish in a forest", "timestamp": 1775729411.075603}
+{"event": "generation_failed", "run_id": "1775729316_53dc902b", "prompt_index": 1, "prompt": "A allien hand with 6 fingers", "error": "Cannot re-initialize CUDA in forked subprocess. To use CUDA with multiprocessing, you must use the 'spawn' start method", "timestamp": 1775729521.5307314}
+{"event": "final_error", "run_id": "1775729316_53dc902b", "reason": "no_valid_alignments", "timestamp": 1775729521.5310571, "detail": "No valid alignments produced"}

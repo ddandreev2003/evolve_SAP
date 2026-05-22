@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove is a standard object typically generated with five fingers. Using the basic object description first stabilizes the material, texture, and hand silhouette geometry. Switching to the target prompt later allows the diffusion process to impose the topological constraint of six fingers once the coarse structure is defined, reducing distortion.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

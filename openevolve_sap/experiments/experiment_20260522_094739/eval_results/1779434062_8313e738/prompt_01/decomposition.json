@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Human hands and gloves have a strong five-digit prior, which conflicts with the request for six fingers. Starting with a robotic gripper—which naturally accommodates multiple digits—enforces the correct geometry during the layout phase. The final prompt transitions to the glove identity once the six-finger structure is stable.",
+  "prompts_list": [
+    "A six-fingered robotic gripper",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

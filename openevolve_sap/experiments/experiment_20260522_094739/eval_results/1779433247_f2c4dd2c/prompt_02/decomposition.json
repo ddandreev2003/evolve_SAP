@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The prompt describes a physically impossible lighting scenario where a shadow opposes the standard projection of the object. To prevent geometric collapse or confusion during the initial denoising steps, the prompt begins with a natural shadow placement (compatible placeholder) to anchor the cat's shape and the shadow's presence. Once the layout is stabilized (steps 0-4), the contradictory directional constraint is introduced to force the surreal outcome in later stages without disrupting the primary forms.",
+  "prompts_list": [
+    "A cat casting a shadow on the ground",
+    "A cat casting a shadow on the ground facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

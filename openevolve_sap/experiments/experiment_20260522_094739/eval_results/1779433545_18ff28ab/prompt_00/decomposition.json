@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet is typically understood as flowers growing upright from a vase. Standard priors often force objects to align naturally (roots down, blooms up). To counteract this, the first prompt uses a literal geometric description (\"stems pointing up with petals hanging downwards\") to establish the inverted physics before introducing the semantic label \"bouquet,\" which would otherwise trigger an upright layout. The second prompt refines the identity while maintaining the established inverted geometry.",
+  "prompts_list": [
+    "A vase with stems pointing up and petals hanging downwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

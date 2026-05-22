@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Vases are structurally associated with upright growth and stable baselines due to physical gravity. Inverting the vase creates a spatial contradiction that diffusion models often auto-correct to maintain realism. The solution starts by establishing the inverted geometry in isolation before introducing the floral content which would otherwise reinforce the standard upright prior.",
+  "prompts_list": [
+    "A vase held upside down",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

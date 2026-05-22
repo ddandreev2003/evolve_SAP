@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Physical consistency dictates shadows align with light sources relative to the object. Directly generating an opposite-facing shadow in early steps can distort the cat's anatomy due to conflicting physics priors. Starting with a neutral cat stabilizes the core shape, adding a standard shadow establishes the lighting context, and finally switching to the contradictory shadow direction refines the anomaly without collapsing the structure.",
+  "prompts_list": [
+    "A cat standing on the ground",
+    "A cat casting a shadow on the ground",
+    "A cat casting a shadow facing the opposite direction on the ground"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

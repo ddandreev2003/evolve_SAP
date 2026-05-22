@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in a vase are typically arranged to grow upward due to gravity. Having them upside down creates a physical contradiction that may confuse the model's structure generation. Starting with a standard upright arrangement establishes the vase and flower shapes, allowing the model to learn the object relationships before applying the inverted orientation constraint.",
+  "prompts_list": [
+    "A glass vase holding fresh flowers upright",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

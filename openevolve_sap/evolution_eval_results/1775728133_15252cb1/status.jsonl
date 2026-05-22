@@ -1,0 +1,4 @@
+{"event": "start_loop", "run_id": "1775728133_15252cb1", "num_prompts": 2, "timestamp": 1775728133.7571616}
+{"event": "sap_parse_exception", "run_id": "1775728133_15252cb1", "prompt_index": 0, "prompt": "A turtle juggles fish in a forest", "error": "Error code: 404 - {'error': 'Not Found'}", "timestamp": 1775728133.8474312}
+{"event": "sap_parse_exception", "run_id": "1775728133_15252cb1", "prompt_index": 1, "prompt": "A allien hand with 6 fingers", "error": "Error code: 404 - {'error': 'Not Found'}", "timestamp": 1775728133.9398136}
+{"event": "final_error", "run_id": "1775728133_15252cb1", "reason": "no_valid_alignments", "timestamp": 1775728133.9400532, "detail": "No valid alignments produced"}

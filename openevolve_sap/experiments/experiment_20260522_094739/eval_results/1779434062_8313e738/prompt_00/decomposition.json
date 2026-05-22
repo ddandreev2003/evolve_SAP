@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Models strongly associate vases and flowers with upright growth orientation due to heavy training bias. Starting with just the inverted vase geometry forces the spatial layout before the flowers are introduced, preventing the model from automatically correcting the gravity-based contradiction during generation.",
+  "prompts_list": [
+    "An inverted vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A vase has a strong prior for being upright due to gravity and function. Following Rule 1, we must enforce unusual geometry first using a structural placeholder ('inverted cone') rather than the object name. This allows the model to establish the reversed orientation before assigning semantic identity (vase) and content (flowers), ensuring physical plausibility is managed before resolving the contradiction.",
+  "prompts_list": [
+    "An inverted cone shape in a room",
+    "An inverted vase containing stems",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

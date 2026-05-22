@@ -1,0 +1,42 @@
+2026-05-22 09:13:44,182 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260522_091344.log
+2026-05-22 09:13:44,187 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-05-22 09:13:44,237 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemma-4-31b-it
+2026-05-22 09:13:44,237 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemma-4-31b-it (weight: 1.00)
+2026-05-22 09:13:44,269 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-05-22 09:13:44,269 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-05-22 09:13:44,269 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-05-22 09:13:48,418 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-05-22 09:13:48,418 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-05-22 09:13:48,419 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-05-22 09:13:48,419 - openevolve.controller - INFO - Adding initial program to database
+2026-05-22 09:14:35,822 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 09:15:13,201 - openevolve.evaluator - INFO - Evaluated program d1d83ada-e24d-468d-963f-055ecd5d4c4d in 84.78s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-05-22 09:15:13,203 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-05-22 09:15:13,204 - openevolve.process_parallel - INFO - Initialized process parallel controller with 4 workers
+2026-05-22 09:15:13,472 - openevolve.process_parallel - INFO - Set max 1000 tasks per child
+2026-05-22 09:15:13,473 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-05-22 09:15:13,473 - openevolve.controller - INFO - Using island-based evolution with 4 islands
+2026-05-22 09:15:13,474 - openevolve.database - INFO - Island Status:
+2026-05-22 09:15:13,474 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0 (best: d1d83ada-e24d-468d-963f-055ecd5d4c4d)
+2026-05-22 09:15:13,474 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-22 09:15:13,474 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-22 09:15:13,474 - openevolve.database - INFO -    Island 3: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-22 09:15:13,474 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 4 iterations (total: 5)
+2026-05-22 09:15:13,480 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-05-22 09:17:21,634 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 5}
+2026-05-22 09:17:21,635 - openevolve.process_parallel - INFO - Iteration 1: Program 8178c7cc-e845-4f87-8970-873c37af564e (parent: d1d83ada-e24d-468d-963f-055ecd5d4c4d) completed in 121.07s
+2026-05-22 09:17:21,635 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-05-22 09:17:25,447 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 5, 'diversity': 0}
+2026-05-22 09:17:25,447 - openevolve.process_parallel - INFO - Iteration 3: Program 79e9f9ab-0349-401e-a7f0-0b78a7219c98 (parent: d1d83ada-e24d-468d-963f-055ecd5d4c4d) completed in 125.33s
+2026-05-22 09:17:25,447 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-05-22 09:18:16,737 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 5, 'diversity': 0}
+2026-05-22 09:18:16,737 - openevolve.process_parallel - INFO - Iteration 2: Program 8185371c-b35c-4e76-8d16-4cf6a74c2b4f (parent: d1d83ada-e24d-468d-963f-055ecd5d4c4d) completed in 176.46s
+2026-05-22 09:18:16,737 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-05-22 09:20:12,682 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 4, 'diversity': 0}
+2026-05-22 09:20:12,683 - openevolve.process_parallel - INFO - Iteration 4: Program 2f2c76bd-6302-401d-a52b-a8d2c117e55e (parent: d1d83ada-e24d-468d-963f-055ecd5d4c4d) completed in 291.62s
+2026-05-22 09:20:12,683 - openevolve.process_parallel - INFO - Metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-05-22 09:20:12,683 - openevolve.process_parallel - INFO - ✅ Evolution completed - Maximum iterations reached
+2026-05-22 09:20:15,766 - openevolve.process_parallel - INFO - Stopped process pool
+2026-05-22 09:20:15,767 - openevolve.controller - INFO - Using tracked best program: d1d83ada-e24d-468d-963f-055ecd5d4c4d
+2026-05-22 09:20:15,767 - openevolve.controller - INFO - Evolution complete. Best program has metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-05-22 09:20:15,767 - openevolve.controller - INFO - Saved best program to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program.py with program info to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program_info.json

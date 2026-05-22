@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows rely on consistent lighting physics, so an opposite direction creates a rendering contradiction. Following Strategy 1, the first prompt establishes the cat's standard geometry and silhouette (Steps 0-4) without conflicting lighting cues. The second prompt introduces the contradictory shadow direction (Steps 5+) once the layout is locked to maintain structural coherence.",
+  "prompts_list": [
+    "A realistic cat standing on the ground",
+    "A realistic cat standing on the ground with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

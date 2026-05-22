@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A vase typically functions to hold flowers upright with stems submerged for stability. An upside-down orientation contradicts this structural expectation and flow. Starting with a standard upright arrangement establishes the vase-flower geometry and semantic relationship. Once the object coherence is secured, the prompt transitions to the inverted orientation to resolve the unusual pose without breaking the underlying structure.",
+  "prompts_list": [
+    "A clear vase with a normal upright bouquet of flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

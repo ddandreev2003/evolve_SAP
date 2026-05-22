@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in vases typically grow upward due to biological priors, creating a contradiction with the requested upside-down orientation. The proxy prompt enforces the inverted geometry using structural descriptions (\"hanging,\" \"downward\") to stabilize the pose before switching to the full identity prompt to apply the floral textures.",
+  "prompts_list": [
+    "A vase with flower stems hanging vertically downwards from the rim",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

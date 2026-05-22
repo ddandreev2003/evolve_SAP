@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves are anatomically designed with five fingers. To prevent the diffusion model from defaulting to normal anatomy during early denoising steps (0-4), the initial prompt establishes the anomaly using a structural placeholder (\"multiple/extra fingers\") rather than a normal glove. This enforces the unusual topology early. The final prompt then specifies the exact count \"6\" once the geometric structure is stable.",
+  "prompts_list": [
+    "A white glove with multiple elongated fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

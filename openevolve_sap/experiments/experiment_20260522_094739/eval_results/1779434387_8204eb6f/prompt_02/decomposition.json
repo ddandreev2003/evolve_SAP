@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Diffusion models inherently associate shadows with consistent lighting physics (casting away from the light source). To achieve a contradictory shadow direction, the model must first establish the cat's body and the ground plane without enforcing lighting consistency (layout phase). Next, a general shadow shape is introduced to occupy the pixels assigned for the shadow before the specific directional constraint conflicts with the established lighting priors. Finally, the explicit contradictory instruction is applied during the high-detail phase (steps 7-15) where semantic overrides are strongest.",
+  "prompts_list": [
+    "A cat standing on a flat surface",
+    "A cat standing on a flat surface with a dark shadow shape",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

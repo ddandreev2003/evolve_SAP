@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows naturally align with lighting physics (pointing away from the light source or cat's orientation). Enforcing a shadow facing the opposite direction contradicts these priors and risks structural blending. By first establishing the cat's form, then adding the shadow, and finally applying the directional contradiction, the model can resolve geometry before attempting the impossible spatial relationship.",
+  "prompts_list": [
+    "A cat standing on the ground",
+    "A cat standing on the ground casting a natural shadow",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

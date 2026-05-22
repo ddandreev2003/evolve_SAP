@@ -1,0 +1,7 @@
+2026-05-22 09:13:43,570 INFO [openevolve_sap.experiment] [scheduler] experiment_start {"gpu_ids": [0, 1, 2, 3], "output": "/home/ubuntu/evolve_SAP/openevolve_sap/output"}
+2026-05-22 09:13:48,421 INFO [openevolve_sap.experiment] [worker_unknown] evaluation_started {"run_id": "1779430428_953f59c2", "program_path": "/tmp/tmprhz3sv19.py", "mode": "evaluation"}
+2026-05-22 09:15:50,451 INFO [openevolve_sap.experiment] [worker_1] evaluation_started {"run_id": "1779430550_1658e115", "program_path": "/tmp/tmpnnh1rc6u.py", "mode": "evaluation"}
+2026-05-22 09:15:50,714 INFO [openevolve_sap.experiment] [worker_0] evaluation_started {"run_id": "1779430550_66c409dc", "program_path": "/tmp/tmppz4bsqdr.py", "mode": "evaluation"}
+2026-05-22 09:16:35,048 INFO [openevolve_sap.experiment] [worker_3] evaluation_started {"run_id": "1779430595_d9e31135", "program_path": "/tmp/tmp4iresgu8.py", "mode": "evaluation"}
+2026-05-22 09:16:37,748 INFO [openevolve_sap.experiment] [worker_2] evaluation_started {"run_id": "1779430597_a1f04054", "program_path": "/tmp/tmpbddxwb1g.py", "mode": "evaluation"}
+2026-05-22 09:20:15,768 INFO [openevolve_sap.experiment] [scheduler] experiment_complete {"metrics": {"alignment_score": 0.0, "gemma_score": 0.0, "combined_score": 0.0}}

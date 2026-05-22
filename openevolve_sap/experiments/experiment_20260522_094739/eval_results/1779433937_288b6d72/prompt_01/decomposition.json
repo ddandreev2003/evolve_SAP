@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard white glove triggers a five-finger prior that locks the hand layout in early steps. Using a proxy that describes the six-pronged geometry establishes the correct silhouette without triggering the semantic rejection of the \"glove\" category, before switching to the target identity once the structure is resolved.",
+  "prompts_list": [
+    "A white fabric form with six thick protruding prongs",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers placed in a vase are strongly biased towards an upright orientation in standard training data, making \"upside down\" a semantic contradiction. To stabilize the geometric relationship between the vase and the flower stems, the first prompt establishes the standard object placement. The second prompt enforces the inverted orientation once the coarse shapes of the vase and petals are defined, preventing the model from auto-correcting back to a vertical alignment.",
+  "prompts_list": [
+    "A vase with a bouquet of flowers",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

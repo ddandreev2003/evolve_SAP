@@ -1,0 +1,1 @@
+2026-05-22 08:39:35,322 INFO [openevolve_sap.experiment] [scheduler] experiment_start {"gpu_ids": [0, 1, 2, 3], "output": "/home/ubuntu/evolve_SAP/openevolve_sap/output"}

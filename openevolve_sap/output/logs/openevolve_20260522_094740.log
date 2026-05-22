@@ -1,0 +1,125 @@
+2026-05-22 09:47:40,612 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260522_094740.log
+2026-05-22 09:47:40,618 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-05-22 09:47:40,669 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemini-3.1-pro-preview
+2026-05-22 09:47:40,670 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemini-3.1-pro-preview (weight: 1.00)
+2026-05-22 09:47:40,701 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-05-22 09:47:40,702 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-05-22 09:47:40,702 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-05-22 09:47:45,039 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-05-22 09:47:45,039 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-05-22 09:47:45,039 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-05-22 09:47:45,039 - openevolve.controller - INFO - Adding initial program to database
+2026-05-22 09:48:33,980 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 09:49:20,462 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 09:49:49,071 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 09:50:38,601 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 09:51:31,575 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 09:52:20,782 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 09:52:22,259 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-22 09:52:22,261 - openevolve.evaluator - INFO - Evaluated program 840e29f3-3ece-4f94-81ec-ee0aa1d751aa in 277.22s: alignment_score=1.6667, gemma_score=1.0000, combined_score=0.3067, num_eval_prompts=3.0000
+2026-05-22 09:52:22,262 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-05-22 09:52:22,262 - openevolve.process_parallel - INFO - Initialized process parallel controller with 4 workers
+2026-05-22 09:52:22,500 - openevolve.process_parallel - INFO - Set max 1000 tasks per child
+2026-05-22 09:52:22,502 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-05-22 09:52:22,502 - openevolve.controller - INFO - Using island-based evolution with 4 islands
+2026-05-22 09:52:22,502 - openevolve.database - INFO - Island Status:
+2026-05-22 09:52:22,502 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.3067, avg=0.3067, diversity=0.00, gen=0 (best: 840e29f3-3ece-4f94-81ec-ee0aa1d751aa)
+2026-05-22 09:52:22,502 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-22 09:52:22,502 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-22 09:52:22,502 - openevolve.database - INFO -    Island 3: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-05-22 09:52:22,502 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 80 iterations (total: 81)
+2026-05-22 09:52:22,508 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-05-22 09:58:48,808 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 0, 'diversity': 5}
+2026-05-22 09:58:48,809 - openevolve.database - INFO - New best program 067146fd-786c-42a2-93d2-81eff05b19a0 replaces 840e29f3-3ece-4f94-81ec-ee0aa1d751aa (combined_score: 0.3067 → 0.5200, +0.2133)
+2026-05-22 09:58:48,816 - openevolve.process_parallel - INFO - Iteration 2: Program 067146fd-786c-42a2-93d2-81eff05b19a0 (parent: 840e29f3-3ece-4f94-81ec-ee0aa1d751aa) completed in 379.09s
+2026-05-22 09:58:48,816 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.0000, gemma_score=1.0000, combined_score=0.5200, num_eval_prompts=3.0000
+2026-05-22 09:58:48,816 - openevolve.process_parallel - INFO - 🌟 New best solution found at iteration 2: 067146fd-786c-42a2-93d2-81eff05b19a0
+2026-05-22 09:59:04,806 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 0, 'diversity': 0}
+2026-05-22 09:59:04,806 - openevolve.process_parallel - INFO - Iteration 4: Program fd429cbf-fca7-4298-b817-3c3959280c17 (parent: 840e29f3-3ece-4f94-81ec-ee0aa1d751aa) completed in 395.09s
+2026-05-22 09:59:04,806 - openevolve.process_parallel - INFO - Metrics: alignment_score=1.6667, gemma_score=1.0000, combined_score=0.3067, num_eval_prompts=3.0000
+2026-05-22 09:59:18,987 - openevolve.database - INFO - Island 1 MAP-Elites cell improved: {'complexity': 0, 'diversity': 0} (fitness: 0.307 -> 0.520)
+2026-05-22 09:59:18,988 - openevolve.process_parallel - INFO - Iteration 3: Program 8a0a4f7d-867a-45ca-8df1-0c59e2f4d7bf (parent: 840e29f3-3ece-4f94-81ec-ee0aa1d751aa) completed in 409.26s
+2026-05-22 09:59:18,988 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.0000, gemma_score=1.0000, combined_score=0.5200, num_eval_prompts=3.0000
+2026-05-22 10:00:08,644 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 0, 'diversity': 0}
+2026-05-22 10:00:08,644 - openevolve.process_parallel - INFO - Iteration 1: Program b3aed60a-2734-4bcb-b7ec-ddfe50e10e4b (parent: 840e29f3-3ece-4f94-81ec-ee0aa1d751aa) completed in 458.74s
+2026-05-22 10:00:08,644 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.3333, gemma_score=1.0000, combined_score=0.4133, num_eval_prompts=3.0000
+2026-05-22 10:05:01,858 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 2, 'diversity': 0}
+2026-05-22 10:05:01,860 - openevolve.process_parallel - INFO - Iteration 5: Program 25434b31-e3ba-43aa-bb9c-025e460304a6 (parent: 840e29f3-3ece-4f94-81ec-ee0aa1d751aa) completed in 373.05s
+2026-05-22 10:05:01,860 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.0000, gemma_score=1.0000, combined_score=0.3600, num_eval_prompts=3.0000
+2026-05-22 10:06:08,020 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 1, 'diversity': 0}
+2026-05-22 10:06:08,022 - openevolve.process_parallel - INFO - Iteration 7: Program fbe874ca-64e7-4b05-9976-18ffc7f754ed (parent: 840e29f3-3ece-4f94-81ec-ee0aa1d751aa) completed in 409.04s
+2026-05-22 10:06:08,022 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.6667, gemma_score=1.0000, combined_score=0.4667, num_eval_prompts=3.0000
+2026-05-22 10:06:31,799 - openevolve.process_parallel - INFO - Iteration 6: Program dc95da91-4a95-4c2c-999e-7bb11ba8be04 (parent: 840e29f3-3ece-4f94-81ec-ee0aa1d751aa) completed in 446.99s
+2026-05-22 10:06:31,800 - openevolve.process_parallel - INFO - Metrics: alignment_score=1.6667, gemma_score=1.0000, combined_score=0.3067, num_eval_prompts=3.0000
+2026-05-22 10:06:50,999 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 2, 'diversity': 0}
+2026-05-22 10:06:50,999 - openevolve.database - INFO - New best program 2e27f414-23b0-42cf-84ea-ef2ab92d120c replaces 067146fd-786c-42a2-93d2-81eff05b19a0 (combined_score: 0.5200 → 0.7333, +0.2133)
+2026-05-22 10:06:51,000 - openevolve.process_parallel - INFO - Iteration 8: Program 2e27f414-23b0-42cf-84ea-ef2ab92d120c (parent: 840e29f3-3ece-4f94-81ec-ee0aa1d751aa) completed in 402.36s
+2026-05-22 10:06:51,000 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.3333, gemma_score=5.0000, combined_score=0.7333, num_eval_prompts=3.0000
+2026-05-22 10:06:51,000 - openevolve.process_parallel - INFO - 🌟 New best solution found at iteration 8: 2e27f414-23b0-42cf-84ea-ef2ab92d120c
+2026-05-22 10:11:34,964 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 3, 'diversity': 0}
+2026-05-22 10:11:34,966 - openevolve.process_parallel - INFO - Iteration 9: Program 5044bc33-7401-4727-9b5d-0e7304738fcd (parent: 067146fd-786c-42a2-93d2-81eff05b19a0) completed in 393.10s
+2026-05-22 10:11:34,966 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.0000, gemma_score=1.0000, combined_score=0.3600, num_eval_prompts=3.0000
+2026-05-22 10:13:26,322 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 1, 'diversity': 0}
+2026-05-22 10:13:26,323 - openevolve.process_parallel - INFO - Iteration 10: Program adfb4163-fbb3-4006-a961-3f08c429c7ef (parent: fd429cbf-fca7-4298-b817-3c3959280c17) completed in 438.30s
+2026-05-22 10:13:26,324 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.3333, gemma_score=1.0000, combined_score=0.5733, num_eval_prompts=3.0000
+2026-05-22 10:13:44,388 - openevolve.database - INFO - Island 1 MAP-Elites cell improved: {'complexity': 1, 'diversity': 0} (fitness: 0.573 -> 0.680)
+2026-05-22 10:13:44,388 - openevolve.process_parallel - INFO - Iteration 11: Program 00d6968a-eaab-4909-8414-864d5f84f578 (parent: 8a0a4f7d-867a-45ca-8df1-0c59e2f4d7bf) completed in 432.58s
+2026-05-22 10:13:44,389 - openevolve.process_parallel - INFO - Metrics: alignment_score=4.0000, gemma_score=1.0000, combined_score=0.6800, num_eval_prompts=3.0000
+2026-05-22 10:14:00,596 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 2, 'diversity': 0}
+2026-05-22 10:14:00,597 - openevolve.process_parallel - INFO - Iteration 12: Program 75672390-7f50-4017-ab13-c9ca31560b14 (parent: 067146fd-786c-42a2-93d2-81eff05b19a0) completed in 429.59s
+2026-05-22 10:14:00,597 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.0000, gemma_score=1.0000, combined_score=0.3600, num_eval_prompts=3.0000
+2026-05-22 10:19:05,135 - openevolve.process_parallel - INFO - Iteration 13: Program 05e26fbc-4802-4a46-a3f6-ad19bc75f43a (parent: 25434b31-e3ba-43aa-bb9c-025e460304a6) completed in 450.17s
+2026-05-22 10:19:05,135 - openevolve.process_parallel - INFO - Metrics: alignment_score=1.6667, gemma_score=1.0000, combined_score=0.3067, num_eval_prompts=3.0000
+2026-05-22 10:20:50,048 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 5, 'diversity': 1}
+2026-05-22 10:20:50,048 - openevolve.process_parallel - INFO - Iteration 15: Program 744fa195-c355-4fab-8270-88407df5748d (parent: 25434b31-e3ba-43aa-bb9c-025e460304a6) completed in 425.66s
+2026-05-22 10:20:50,048 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.0000, gemma_score=1.0000, combined_score=0.3600, num_eval_prompts=3.0000
+2026-05-22 10:20:54,614 - openevolve.process_parallel - INFO - Iteration 16: Program 44c0e515-93e8-4d64-a178-53a2e6c5bcd6 (parent: 2e27f414-23b0-42cf-84ea-ef2ab92d120c) completed in 414.01s
+2026-05-22 10:20:54,614 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.3333, gemma_score=1.0000, combined_score=0.5733, num_eval_prompts=3.0000
+2026-05-22 10:21:07,549 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 3, 'diversity': 0}
+2026-05-22 10:21:07,549 - openevolve.database - INFO - New best program c178c6bf-98bd-45a2-9f8b-e98a2b77d583 replaces 2e27f414-23b0-42cf-84ea-ef2ab92d120c (combined_score: 0.7333 → 0.8400, +0.1067)
+2026-05-22 10:21:07,549 - openevolve.process_parallel - INFO - Iteration 14: Program c178c6bf-98bd-45a2-9f8b-e98a2b77d583 (parent: fbe874ca-64e7-4b05-9976-18ffc7f754ed) completed in 461.21s
+2026-05-22 10:21:07,549 - openevolve.process_parallel - INFO - Metrics: alignment_score=4.0000, gemma_score=5.0000, combined_score=0.8400, num_eval_prompts=3.0000
+2026-05-22 10:21:07,550 - openevolve.process_parallel - INFO - 🌟 New best solution found at iteration 14: c178c6bf-98bd-45a2-9f8b-e98a2b77d583
+2026-05-22 10:28:04,815 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 1, 'diversity': 0}
+2026-05-22 10:28:04,817 - openevolve.process_parallel - INFO - Iteration 17: Program faa60323-1021-4a76-a543-95afa32acb24 (parent: 5044bc33-7401-4727-9b5d-0e7304738fcd) completed in 539.67s
+2026-05-22 10:28:04,818 - openevolve.process_parallel - INFO - Metrics: alignment_score=1.6667, gemma_score=1.0000, combined_score=0.3067, num_eval_prompts=3.0000
+2026-05-22 10:28:37,770 - openevolve.process_parallel - INFO - Iteration 20: Program 7f83a2e0-2a50-4175-a2aa-8f4c561f2f34 (parent: b3aed60a-2734-4bcb-b7ec-ddfe50e10e4b) completed in 450.22s
+2026-05-22 10:28:37,775 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.0000, gemma_score=1.0000, combined_score=0.3600, num_eval_prompts=3.0000
+2026-05-22 10:28:44,359 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 0, 'diversity': 1}
+2026-05-22 10:28:44,360 - openevolve.process_parallel - INFO - Iteration 18: Program 48ded677-51ef-4029-8444-d0d53949ed9a (parent: 8a0a4f7d-867a-45ca-8df1-0c59e2f4d7bf) completed in 474.32s
+2026-05-22 10:28:44,363 - openevolve.process_parallel - INFO - Metrics: alignment_score=4.0000, gemma_score=5.0000, combined_score=0.8400, num_eval_prompts=2.0000
+2026-05-22 10:29:00,318 - openevolve.process_parallel - INFO - Iteration 19: Program 72767911-570b-4681-8177-8d1eab00be00 (parent: 8a0a4f7d-867a-45ca-8df1-0c59e2f4d7bf) completed in 485.71s
+2026-05-22 10:29:00,318 - openevolve.process_parallel - INFO - Metrics: alignment_score=1.6667, gemma_score=1.0000, combined_score=0.3067, num_eval_prompts=3.0000
+2026-05-22 10:33:16,148 - openevolve.process_parallel - ERROR - Error processing result from iteration 21: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-05-22 10:33:19,138 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,138 - openevolve.process_parallel - ERROR - Error processing result from iteration 22: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-05-22 10:33:19,140 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,141 - openevolve.process_parallel - ERROR - Error processing result from iteration 23: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-05-22 10:33:19,142 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,143 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,144 - openevolve.process_parallel - ERROR - Error processing result from iteration 24: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-05-22 10:33:19,145 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,147 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,147 - openevolve.process_parallel - ERROR - Error processing result from iteration 25: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-05-22 10:33:19,148 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,150 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,151 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,151 - openevolve.process_parallel - ERROR - Error processing result from iteration 26: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-05-22 10:33:19,153 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,155 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,157 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,157 - openevolve.process_parallel - ERROR - Error processing result from iteration 27: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-05-22 10:33:19,158 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,160 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,161 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,163 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,163 - openevolve.process_parallel - ERROR - Error processing result from iteration 28: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-05-22 10:33:19,169 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,171 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,172 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,173 - openevolve.process_parallel - ERROR - Error submitting iteration 29: A child process terminated abruptly, the process pool is not usable anymore
+2026-05-22 10:33:19,174 - openevolve.process_parallel - INFO - ✅ Evolution completed - Maximum iterations reached
+2026-05-22 10:33:19,177 - openevolve.process_parallel - INFO - Stopped process pool
+2026-05-22 10:33:19,177 - openevolve.controller - INFO - Using tracked best program: c178c6bf-98bd-45a2-9f8b-e98a2b77d583
+2026-05-22 10:33:19,177 - openevolve.controller - INFO - Evolution complete. Best program has metrics: alignment_score=4.0000, gemma_score=5.0000, combined_score=0.8400, num_eval_prompts=3.0000
+2026-05-22 10:33:19,181 - openevolve.controller - INFO - Saved best program to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program.py with program info to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program_info.json

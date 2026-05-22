@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are physically determined by the light source direction, meaning a shadow facing the \"opposite direction\" defies standard physics and coherence. Starting with a normal shadow establishes the scene's geometry and lighting foundation before transitioning to the contradictory spatial relationship in the final stage.",
+  "prompts_list": [
+    "A cat casting a shadow",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

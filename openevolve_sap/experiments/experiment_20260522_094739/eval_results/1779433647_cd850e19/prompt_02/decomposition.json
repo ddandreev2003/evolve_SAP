@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows in diffusion models are strongly correlated with the object's orientation and lighting physics, making the instruction for an \"opposite direction\" difficult to adhere to directly. Starting with a standard cat-shadow relationship establishes the structural integrity of the animal and shadow placement. The contradictory directional constraint is then introduced in the final prompt to override the learned physical prior without disrupting the object's form.",
+  "prompts_list": [
+    "A cat casting a shadow on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

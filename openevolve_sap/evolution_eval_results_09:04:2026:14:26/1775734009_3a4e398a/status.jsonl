@@ -1,0 +1,7 @@
+{"event": "start_loop", "run_id": "1775734009_3a4e398a", "num_prompts": 2, "timestamp": 1775734011.1054392}
+{"event": "image_saved", "run_id": "1775734009_3a4e398a", "prompt_index": 0, "prompt": "A turtle juggles fish in a forest", "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/evolution_eval_results_09:04:2026:14:26/1775734009_3a4e398a/candidate_tmp3ulkfr3q_0.png", "timestamp": 1775734104.3333666}
+{"event": "score_done", "run_id": "1775734009_3a4e398a", "prompt_index": 0, "alignment_score": 3.0, "timestamp": 1775734144.7989795}
+{"event": "image_saved", "run_id": "1775734009_3a4e398a", "prompt_index": 1, "prompt": "A allien hand with 6 fingers", "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/evolution_eval_results_09:04:2026:14:26/1775734009_3a4e398a/candidate_tmp3ulkfr3q_1.png", "timestamp": 1775734203.1976495}
+{"event": "score_done", "run_id": "1775734009_3a4e398a", "prompt_index": 1, "alignment_score": 1.0, "timestamp": 1775734216.021842}
+{"event": "gemma_judge_fallback", "run_id": "1775734009_3a4e398a", "reason": "invalid_json_content", "score": 1.0, "raw_preview": "```json\n{\"score\": 5}\n```", "timestamp": 1775734235.4564745}
+{"event": "final_scores", "run_id": "1775734009_3a4e398a", "alignment_score": 2.0, "gemma_score": 1.0, "combined_score": 0.3600000000000001, "timestamp": 1775734235.4566445}

@@ -1,0 +1,10 @@
+{"event": "mem_snapshot", "run_id": "1779429777_818a2046", "stage": "after_model_load", "rss_bytes": 1129324544, "cuda": {"cuda_available": true, "device": 0, "allocated_bytes": 0, "reserved_bytes": 0, "max_allocated_bytes": 0, "max_reserved_bytes": 0}, "timestamp": 1779429778.8044124}
+{"event": "start_loop", "run_id": "1779429777_818a2046", "num_prompts": 2, "timestamp": 1779429778.8048193}
+{"event": "ram_check", "run_id": "1779429777_818a2046", "stage": "start_loop", "rss_bytes": 1129324544, "limit_bytes": 12884901888, "timestamp": 1779429778.8049884}
+{"event": "ram_check", "run_id": "1779429777_818a2046", "stage": "prompt_0_before_decompose", "rss_bytes": 1129324544, "limit_bytes": 12884901888, "timestamp": 1779429778.8051097}
+{"event": "ram_check", "run_id": "1779429777_818a2046", "stage": "prompt_0_before_render", "rss_bytes": 1135603712, "limit_bytes": 12884901888, "timestamp": 1779429811.0786438}
+{"event": "mem_snapshot", "run_id": "1779429777_818a2046", "stage": "prompt_0_before_render", "rss_bytes": 1135603712, "cuda": {"cuda_available": true, "device": 0, "allocated_bytes": 0, "reserved_bytes": 0, "max_allocated_bytes": 0, "max_reserved_bytes": 0}, "timestamp": 1779429811.0793576}
+{"event": "image_saved", "run_id": "1779429777_818a2046", "prompt_index": 0, "image_index": 0, "prompt": "A turtle juggles fish in a forest", "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260522_090253/eval_results/1779429777_818a2046/candidate_tmpxi4q76gj_0_0.png", "timestamp": 1779430083.9379115}
+{"event": "ram_check", "run_id": "1779429777_818a2046", "stage": "prompt_0_after_render", "rss_bytes": 17836290048, "limit_bytes": 12884901888, "timestamp": 1779430084.171181}
+{"event": "ram_limit_exceeded", "run_id": "1779429777_818a2046", "stage": "prompt_0_after_render", "rss_bytes": 17836290048, "limit_bytes": 12884901888, "timestamp": 1779430084.1713483}
+{"event": "final_error", "run_id": "1779429777_818a2046", "reason": "evaluation_failed", "timestamp": 1779430084.171414, "detail": "RAM limit exceeded at prompt_0_after_render: rss=17836290048, limit=12884901888"}

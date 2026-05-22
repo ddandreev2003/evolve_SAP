@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Diffusion models are strongly biased toward standard human anatomy, typically rendering gloves or hands with five fingers. To counteract this prior and enforce the unnatural six-finger configuration, the generation begins with the base object (\"A white glove\") to establish the macro shape and texture without triggering anatomical corrections. Once the structure is defined, switching to the specific instruction (\"A white glove has 6 fingers\") allows the model to modify the topology during the later denoising stages.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

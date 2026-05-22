@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A \"bouquet\" inherently implies an upright arrangement bound by gravity and function. Standard vocabulary triggers priors of stems-in-water. By starting with a literal geometric proxy (\"petals... stems sticking up\"), the model resolves the impossible orientation first. Only once the inverse geometry is stable does the prompt introduce the semantic label \"bouquet,\" ensuring the contradictory pose is maintained rather than corrected by the model's training data.",
+  "prompts_list": [
+    "Downward-pointing petals with stems sticking up out of a glass vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

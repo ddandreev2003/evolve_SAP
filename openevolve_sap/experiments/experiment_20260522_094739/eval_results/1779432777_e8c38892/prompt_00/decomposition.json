@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet of flowers is typically oriented vertically with stems anchored in water, making an \"upside down\" arrangement a violation of physical expectations and plant stability. To maintain visual coherence, the sequence starts with the basic vessel to establish the container structure, adds the flowers in a natural orientation to define the object layout, and finally introduces the inverted state during the fine-detail refinement stage to guide the diffusion model through the contradictory orientation without disrupting the underlying scene geometry.",
+  "prompts_list": [
+    "A vase on a table",
+    "A bouquet of flowers in the vase",
+    "An upside down bouquet of flowers in the vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

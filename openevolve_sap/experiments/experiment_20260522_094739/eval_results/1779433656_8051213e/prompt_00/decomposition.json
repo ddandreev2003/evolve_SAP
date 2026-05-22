@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Bouquets are biologically expected to stand upright in a vase due to gravity and growth patterns. A generated image may struggle to reconcile an inverted floral arrangement with the physical support of the container. Starting with a standard upright vase setup establishes the rigid geometry of the vase and the volumetric distribution of the flowers. Once the structure is anchored, transitioning to the \"upside down\" orientation allows the model to apply the contradictory pose to the coherent geometry without collapsing the vase or scattering the flowers.",
+  "prompts_list": [
+    "A vase with a bouquet of flowers standing upright",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

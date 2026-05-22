@@ -1,0 +1,28 @@
+2026-04-09 15:09:57,024 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260409_150957.log
+2026-04-09 15:09:57,029 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-04-09 15:09:57,070 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemma-4-31b-it
+2026-04-09 15:09:57,071 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemma-4-31b-it (weight: 1.00)
+2026-04-09 15:09:57,095 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-04-09 15:09:57,096 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-04-09 15:09:57,096 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-04-09 15:10:02,266 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 15:10:02,266 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-04-09 15:10:02,266 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-04-09 15:10:02,266 - openevolve.controller - INFO - Adding initial program to database
+2026-04-09 15:10:04,937 - openevolve.evaluator - INFO - Evaluated program 9f535945-457f-44e2-b7c0-6aeafdcced8d in 2.67s: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 15:10:04,938 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-04-09 15:10:04,938 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-04-09 15:10:04,939 - openevolve.process_parallel - INFO - Set max 100000 tasks per child
+2026-04-09 15:10:04,940 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-04-09 15:10:04,940 - openevolve.controller - INFO - Using island-based evolution with 1 islands
+2026-04-09 15:10:04,940 - openevolve.database - INFO - Island Status:
+2026-04-09 15:10:04,941 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0 (best: 9f535945-457f-44e2-b7c0-6aeafdcced8d)
+2026-04-09 15:10:04,941 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 2 iterations (total: 3)
+2026-04-09 15:10:04,943 - openevolve.process_parallel - INFO - Early stopping disabled
+2026-04-09 15:10:49,020 - openevolve.process_parallel - WARNING - Iteration 1 error: LLM generation failed: Error code: 503 - {'error': 'Provider error (status: 402): Insufficient credits.'}
+2026-04-09 15:11:19,746 - openevolve.process_parallel - WARNING - Iteration 2 error: LLM generation failed: Error code: 503 - {'error': 'Provider error (status: 402): Insufficient credits.'}
+2026-04-09 15:11:19,746 - openevolve.process_parallel - INFO - ✅ Evolution completed - Maximum iterations reached
+2026-04-09 15:11:20,947 - openevolve.process_parallel - INFO - Stopped process pool
+2026-04-09 15:11:20,947 - openevolve.controller - INFO - Using tracked best program: 9f535945-457f-44e2-b7c0-6aeafdcced8d
+2026-04-09 15:11:20,948 - openevolve.controller - INFO - Evolution complete. Best program has metrics: alignment_score=0.0000, gemma_score=0.0000, combined_score=0.0000
+2026-04-09 15:11:20,949 - openevolve.controller - INFO - Saved best program to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program.py with program info to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program_info.json

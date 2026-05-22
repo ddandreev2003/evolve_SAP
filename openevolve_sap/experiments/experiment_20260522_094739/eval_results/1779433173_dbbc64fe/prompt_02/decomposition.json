@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "A cat casting a shadow naturally aligns with the light source, making the 'opposite direction' instruction physically contradictory. Starting with the cat alone establishes the subject and ground plane. Introducing a standard shadow allows the model to resolve lighting geometry before overwriting the physics to achieve the unnatural direction.",
+  "prompts_list": [
+    "A cat on the ground",
+    "A cat casting a shadow",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

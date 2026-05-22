@@ -1,0 +1,17 @@
+Decompose contradictory prompts into a sequence of prompts (max 3) aligned with diffusion denoising stages.
+If visually coherent, return a single prompt.
+
+### Strategy:
+1. **Material/Lighting Contradictions** (e.g., opposite shadow): Start with a standard object to lock normal layout (Steps 0-4), then switch to the contradictory feature (Steps 5+).
+2. **Structural/Spatial Contradictions** (e.g., upside down, 6 fingers): Early prompts MUST enforce the unusual geometry. DO NOT start with a normal object (it locks the wrong shape). Use a structurally aligned proxy (e.g., "an upside down broom", "a hand with 6 fingers") for Steps 0-4, then switch to the target concept.
+3. **Switch Steps:** Use Step 3-5 to lock layout, Step 7-9 for details.
+
+### Output Format:
+Return exactly:
+a. Explanation: <reason>
+b. Final dictionary:
+{
+  "prompts_list": ["<prompt1>", "<prompt2>"],
+  "switch_prompts_steps": [<step>]
+}
+Ensure len(switch_prompts_steps) == len(prompts_list) - 1. No other text.

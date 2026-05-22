@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove with six fingers violates the standard anatomical prior that hands and gloves typically have five digits. To guide the model past this constraint, the generation starts by establishing the object's shape and material without specifying the digit count, avoiding early fixation on the standard five-finger geometry. The explicit requirement for six fingers is introduced in the second stage once the coarse structure is settled, allowing the model to override its default expectations for the specific detail.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

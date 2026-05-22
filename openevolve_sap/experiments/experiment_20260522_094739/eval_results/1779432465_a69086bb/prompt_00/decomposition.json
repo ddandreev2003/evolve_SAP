@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Vases and flowers carry a strong prior for upright positioning due to gravity and biological context. Displaying them upside down creates a spatial contradiction that may destabilize object geometry if introduced immediately. We begin with the stable, upright configuration to lock in shapes and layout, then transition to the inverted orientation once the structure is established.",
+  "prompts_list": [
+    "A bouquet of flowers in a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "",
+  "prompts_list": [
+    "A ceramic vase suspended upside down from a ceiling hook",
+    "A vase suspended upside down with long green and colorful tendrils extending outward",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

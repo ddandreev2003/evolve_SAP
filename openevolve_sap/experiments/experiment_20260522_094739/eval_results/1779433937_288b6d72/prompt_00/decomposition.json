@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers are typically oriented upwards in vases, creating a strong prior against inverted growth during the layout-locking phase (steps 0-5). A hanging plant proxy establishes the necessary downward geometry, ensuring the model resolves the position correctly before applying the specific floral identity.",
+  "prompts_list": [
+    "A hanging plant drooping downwards into a vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

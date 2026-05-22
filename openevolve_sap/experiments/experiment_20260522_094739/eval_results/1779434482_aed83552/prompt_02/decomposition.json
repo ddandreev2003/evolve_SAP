@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "A shadow facing the opposite direction violates standard lighting physics, creating a geometric contradiction that can destabilize early denoising. Starting with the cat and environment establishes the primary object geometry. Introducing the shadow element neutrally allows the model to accept the presence of the shadow without committing to a specific direction. The final prompt enforces the impossible directional attribute once the core structure is stable, preventing collapse.",
+  "prompts_list": [
+    "A cat sitting in bright sunlight",
+    "A cat casting a shadow in bright sunlight",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

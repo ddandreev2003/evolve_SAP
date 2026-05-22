@@ -2,7 +2,7 @@ max_iterations: 80
 checkpoint_interval: 10
 
 llm:
-  primary_model: "google/gemma-4-31b-it"
+  primary_model: "google/gemini-3.1-pro-preview"
   primary_model_weight: 1.0
   api_base: "https://routerai.ru/api/v1"
   temperature: 0.7
@@ -20,7 +20,7 @@ prompt:
 database:
   population_size: 40
   archive_size: 20
-  num_islands: 3
+  num_islands: 1
   elite_selection_ratio: 0.2
   exploitation_ratio: 0.7
   similarity_threshold: 0.995
@@ -28,6 +28,8 @@ database:
 evaluator:
   timeout: 3600
   parallel_evaluations: 1
+  cascade_evaluation: false
 
 diff_based_evolution: true
 max_code_length: 60000
+max_tasks_per_child: 1

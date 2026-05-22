@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Diffusion models strongly prioritize standard anatomical counts, typically associating gloves or hands with five fingers. To generate six fingers without distorting the object, the pipeline starts with a stable geometric baseline, introduces volume-based proxies for additional mass (\"thick fingers\"), and finally resolves the specific count once the material and pose are established.",
+  "prompts_list": [
+    "A white glove on a table",
+    "A white glove with thick fingers on a table",
+    "A white glove with 6 fingers on a table"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}
