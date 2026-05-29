@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Contradiction is lighting/shadow (Strategy A). Geometry remains normal. Introduce impossible shadow once structure is stable.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow faces the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

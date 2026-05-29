@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomy contradiction (finger count). Strategy B requires starting with the structural anomaly ('six fingers') before applying the semantic overlay ('white glove'), preventing the model from correcting the finger count during early denoising.",
+  "prompts_list": [
+    "A hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

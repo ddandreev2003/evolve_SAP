@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Upside-down objects often default to upright geometry during early diffusion. Using a structurally aligned proxy (\"vase held upside down\") locks the inverted pose immediately, preventing the model from reorienting the bouquet.",
+  "prompts_list": [
+    "A vase held upside down with stems pointing upward",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

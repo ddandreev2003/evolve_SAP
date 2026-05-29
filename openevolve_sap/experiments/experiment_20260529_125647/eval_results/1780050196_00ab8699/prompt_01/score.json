@@ -1,0 +1,6 @@
+{
+  "alignment score": 1,
+  "alignment explanation": "The image depicts a bare human hand with 5 fingers against a black background. It contains no glove (white or otherwise) and shows only 5 fingers, not 6. The core elements of the prompt—\"white glove\" and \"6 fingers\"—are entirely absent. The image fails to represent any aspect of the described scenario (a glove with extra fingers), making it completely misaligned with the prompt's meaning.",
+  "quality score": 5,
+  "quality explanation": "The image is rendered with exceptional clarity and realism. The hand exhibits anatomically correct proportions, natural skin texture, consistent lighting, and precise details (e.g., fingernails, wrinkles). There are no distortions, artifacts, or incoherent elements—fingers, palm, and wrist connect naturally with no floating/merged geometry. The composition is clean and visually coherent."
+}

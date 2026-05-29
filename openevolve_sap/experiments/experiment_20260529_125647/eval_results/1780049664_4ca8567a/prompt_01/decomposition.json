@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a structural/anatomical impossibility. Following Strategy B, we prioritize establishing the correct geometry (six fingers) on a neutral subject (hand) before introducing the target identity (glove), preventing the model from locking standard anatomy.",
+  "prompts_list": [
+    "A hand with six fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

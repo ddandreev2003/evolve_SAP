@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A typical vase holds flowers upright; an upside-down configuration contradicts physical norms for liquid and stem support. According to Strategy B, we establish the inverted geometry using a proxy description (stems pointing up) in the early steps (0–3) before introducing the specific concept of a \"bouquet\" and \"flower\" identity. This prevents the model from locking a normal vase layout at steps 0–4, ensuring the impossible shape is retained during refinement.",
+  "prompts_list": [
+    "A vase held upside down with stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

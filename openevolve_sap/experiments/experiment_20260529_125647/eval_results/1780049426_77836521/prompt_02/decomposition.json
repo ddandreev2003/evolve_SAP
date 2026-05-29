@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are governed by physics, so an opposite-facing shadow violates typical lighting semantics. Strategy A (Material/Lighting) is used: the scene is initialized with normal shadow placement to lock object structure, then the impossible shadow direction is introduced as a semantic override in the final stage.",
+  "prompts_list": [
+    "A cat sitting next to its natural shadow",
+    "A cat with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

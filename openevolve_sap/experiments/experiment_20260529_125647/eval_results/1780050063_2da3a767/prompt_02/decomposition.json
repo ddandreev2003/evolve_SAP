@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "",
+  "prompts_list": [
+    "A realistic photo of a cat sitting outside in bright sunlight",
+    "A realistic photo of a cat sitting outside with its shadow facing the opposite direction of the light source"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

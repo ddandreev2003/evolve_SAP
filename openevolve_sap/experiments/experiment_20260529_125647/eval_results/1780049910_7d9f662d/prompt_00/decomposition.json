@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural/spatial contradiction where the object's geometry defies gravity and biological norms. Per Strategy B, the proxy describes the inverted stems and submerged heads directly to lock the impossible shape before naming the object.",
+  "prompts_list": [
+    "A glass vase with flower heads stuffed down inside it, and bare green stems sticking straight up into the air",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

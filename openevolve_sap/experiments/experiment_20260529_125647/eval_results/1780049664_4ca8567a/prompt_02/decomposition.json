@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting contradiction. Using Strategy A, we establish the normal physical scene and pose first to stabilize structure, then switch to the impossible lighting rule once the coarse geometry is resolved.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

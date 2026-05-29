@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt presents a Material & Lighting Contradiction. The shadow direction defies physics relative to the subject. Following the strategy for lighting impossibilities, the normal geometric structure of the cat is established first to lock the pose and anatomy. The impossible shadow physics is introduced in the second stage once the scene structure is stable to avoid distorting the animal's form.",
+  "prompts_list": [
+    "A realistic cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

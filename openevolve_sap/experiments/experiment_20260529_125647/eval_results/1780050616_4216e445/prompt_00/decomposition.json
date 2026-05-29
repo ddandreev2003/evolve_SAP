@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural/spatial contradiction (Strategy B). Flowers and vases have strong upright priors; starting with them normally locks the wrong geometry. We use the geometric proxy (inverted vase/stems) in steps 0-4 to force the model to render the upside-down form before assigning the semantic label of \"bouquet\".",
+  "prompts_list": [
+    "An inverted vase turned completely upside down, with bare flower stems sticking straight up into the air",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

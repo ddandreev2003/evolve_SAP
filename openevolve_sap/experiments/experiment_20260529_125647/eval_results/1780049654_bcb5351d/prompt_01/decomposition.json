@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count defines the fundamental topology of the hand. Using Strategy B, starting with a bare hand encoding the anomaly prevents the model from locking in a standard 5-finger anatomy when the glove texture is added later.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

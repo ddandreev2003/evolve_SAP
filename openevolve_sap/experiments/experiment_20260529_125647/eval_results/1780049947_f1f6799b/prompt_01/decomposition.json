@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Gloves have a strong prior for five fingers defined by anatomy. If the object name \"glove\" is introduced early (Step 0-3), the model often corrects the finger count to 5 due to semantic memory. Following Strategy B, we start with a \"bare human hand\" (proxy) where the 6-finger anomaly can be encoded into the coarse geometry (Steps 0-3) without conflicting immediately with clothing texture priors. At Step 4, the identity shifts to a \"glove,\" preserving the injected geometry.",
+  "prompts_list": [
+    "A bare human hand with 6 distinct fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

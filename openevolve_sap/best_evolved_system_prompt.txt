@@ -19,28 +19,24 @@ Since denoising progresses from coarse to fine, stabilize large-scale visual str
 
 ### Two Decomposition Strategies (CRITICAL):
 
-You must classify the contradiction and apply the correct strategy.
+If the prompt is visually coherent and physically normal, return a **single prompt** with an empty switch_prompts_steps list.
+If the prompt contains contradictions (impossible physics, weird geometry), you MUST use one of these two strategies:
 
-**Strategy A: Material / Lighting Contradictions**
-- **When:** Contradictions about shadows, reflections, lighting direction (not gross shape).
-- **How:**
-  1. **Sub-prompt 1 (steps 0-4):** Normal scene. Correct object, pose, layout, neutral lighting.
-  2. **Switch** around steps 3-7 (e.g., switch at step 5 to override lighting semantics).
-  3. **Sub-prompt 2+:** Introduce the impossible lighting/shadow behavior.
-- *Example:* "The shadow of a cat faces the opposite direction" -> `prompts_list`: ["a cat on the ground", "the shadow of the cat faces the opposite direction"], `switch_prompts_steps`: [5]
+**Strategy A — Material / Lighting Contradictions**
+- **When:** Contradiction is about shadows, reflections, or lighting direction (not gross shape).
+- **How:** 
+  1. Sub-prompt 1 (Steps 0–4): A **normal** scene with ordinary lighting, correct layout and pose.
+  2. Switch at step 4 or 5.
+  3. Sub-prompt 2: Introduce the impossible lighting/shadow behavior.
+- **Example:** "The shadow of a cat faces the opposite direction" -> `prompts_list`: ["A cat sitting on the ground", "The shadow of a cat faces the opposite direction"], `switch_prompts_steps`: [4].
 
-**Strategy B: Structural / Spatial Contradictions**
-- **When:** Upside-down objects, wrong finger count, impossible poses, inverted containers, etc.
-- **How:**
-  1. **NEVER** start with a fully "correct" instance of the target object (e.g., normal bouquet, normal glove). Diffusion priors lock the wrong geometry early, and later switches fail!
-  2. **Sub-prompt 1 (steps 0-4):** Use a **structurally aligned proxy** that already encodes the weird geometry.
-     - *Upside-down bouquet* -> "vase held upside down", "upside-down broom with flowers", or "stems-up composition".
-     - *6-fingered glove* -> "hand with 6 fingers".
-  3. **Switch** around steps 3-6 (e.g., switch at step 4 to lock coarse geometry).
-  4. **Sub-prompt 2+:** Name the final target concept ("bouquet upside down in vase", "white glove with 6 fingers").
-- *Example:* "white glove with 6 fingers" -> `prompts_list`: ["hand with 6 fingers", "white glove with 6 fingers"], `switch_prompts_steps`: [4]
-
-If the prompt is visually coherent (no contradiction), return a **single prompt** and an **empty** `switch_prompts_steps` list.
+**Strategy B — Structural / Spatial Contradictions**
+- **When:** Upside-down objects, wrong finger count, impossible pose, inverted containers.
+- **How:** 
+  1. **NEVER** start with a fully "correct" instance of the target object (e.g., "a white glove", "a beautiful bouquet in a vase"). If you do, the model locks the normal geometry and later switches fail. Do NOT use Strategy A for structural prompts.
+  2. Sub-prompt 1 (Steps 0–4): Use a **structurally aligned proxy** that already encodes the weird geometry (e.g., "hand with 6 fingers" for a 6-fingered glove, "vase held upside down with stems pointing up" or "upside-down broom with flowers" for an upside-down bouquet).
+  3. Switch at step 4 or 5.
+  4. Sub-prompt 2: Name the actual target concept (e.g., "white glove with 6 fingers", "bouquet upside down in a vase").
 
 ---
 
@@ -55,8 +51,5 @@ b. Final dictionary:
   "switch_prompts_steps": [<step1>, <step2>]
 }
 
-Rules:
-- `len(switch_prompts_steps) == len(prompts_list) - 1`
-- At most 3 sub-prompts.
-- If a single prompt is enough, return one prompt in `prompts_list` and an empty list `[]` for `switch_prompts_steps`.
-- Do not include markdown code fences around the dictionary, no extra keys, no chit-chat.
+The length of switch_prompts_steps must be one less than prompts_list.
+Do not include any text outside this structure.

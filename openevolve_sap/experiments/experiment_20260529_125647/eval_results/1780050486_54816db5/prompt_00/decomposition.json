@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Upside-down bouquets violate typical plant growth orientation. Strategy B is used; starting with a normal bouquet would lock incorrect geometry. An inverted vase proxy enforces the upside-down shape before adding the floral details.",
+  "prompts_list": [
+    "A vase turned upside down",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

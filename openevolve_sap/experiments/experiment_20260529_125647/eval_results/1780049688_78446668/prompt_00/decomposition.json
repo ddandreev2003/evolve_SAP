@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upward in vases, creating a structural contradiction when described as upside down. Following Strategy B for Spatial Contradictions, we avoid starting with a standard upright vase to prevent the model from locking vertical geometry. Instead, we begin with a proxy establishing the inverted orientation (`vase held upside down`) before transitioning to the full concept with the floral content.",
+  "prompts_list": [
+    "A vase held upside down",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

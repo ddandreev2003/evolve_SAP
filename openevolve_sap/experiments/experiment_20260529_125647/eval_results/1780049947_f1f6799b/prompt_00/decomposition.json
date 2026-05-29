@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Gravity priors are extremely strong for vases and flowers. Starting with the specific object name \"bouquet\" risks reverting to an upright arrangement during low-step denoising. We begin with a proxy focusing on the physical orientation and container geometry to lock the inverted structure (Steps 0–4). At Step 4, we introduce the semantic concept of \"flowers\" to fill the established form without overriding the geometry.",
+  "prompts_list": [
+    "A vase held upside down with stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

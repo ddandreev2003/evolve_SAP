@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt presents a lighting contradiction where the shadow physics violate normal spatial orientation (Strategy A). Stable object geometry must be established before introducing physically impossible lighting cues to avoid structural collapse during early denoising.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

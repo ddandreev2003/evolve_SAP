@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers is an anatomical impossibility for standard gloves. Strategy B requires encoding the extra finger geometry early before applying the material texture. Starting with a \"hand\" establishes the correct number of digits without triggering the \"glove = 5 fingers\" prior knowledge too strongly.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

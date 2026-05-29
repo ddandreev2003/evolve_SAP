@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An inverted vase contradicts gravity priors. Using Strategy B, the prompt starts with the structurally inverted object to lock geometry early, preventing the model from correcting it to a standard upright vase.",
+  "prompts_list": [
+    "A vase turned completely upside down",
+    "A bouquet of flowers arranged inside an upside-down vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

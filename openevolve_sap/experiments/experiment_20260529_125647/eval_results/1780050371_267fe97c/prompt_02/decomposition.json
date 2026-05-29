@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Impossible shadow physics conflict with natural lighting. Applying Strategy A, initialize with a normal scene (cat and shadow) to stabilize structure, then switch to the contradictory shadow direction once large-scale forms are established.",
+  "prompts_list": [
+    "A cat sitting on the ground with a shadow behind it",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

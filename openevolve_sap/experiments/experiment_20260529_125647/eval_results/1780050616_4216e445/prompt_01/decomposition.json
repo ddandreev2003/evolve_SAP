@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural contradiction involving anatomy (Strategy B). If we start with \"white glove\", the model assumes 5 fingers. We begin with a bare hand explicitly described with 6 fingers in steps 0-4 to lock the geometry. At step 4, we switch to the target identity (glove) to apply texture without losing the anomalous structure.",
+  "prompts_list": [
+    "A bare human hand with 6 distinct fingers extended",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

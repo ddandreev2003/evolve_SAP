@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove with 6 fingers presents a structural contradiction regarding anatomy; standard models expect 5 digits and will lock this topology early if prompted normally. To prevent the model from collapsing back to a standard 5-finger glove, we employ Strategy B: Structural/Spatial Contradictions. We start with a bare hand having exactly six fingers to force the unusual geometry in the low-frequency stages (Steps 0–6). Once the anatomical structure is locked, we switch to the target material (white glove) at Step 6, ensuring the six-finger topology is preserved through the identity transition.",
+  "prompts_list": [
+    "A bare human hand with exactly six fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

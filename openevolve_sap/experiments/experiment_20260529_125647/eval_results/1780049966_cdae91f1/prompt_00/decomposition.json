@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Vases typically hold flowers upright due to gravity, creating a strong geometric prior against inverted arrangements. Starting with a proxy establishing the inverted vase geometry stabilizes the impossible shape before the model attempts to render the specific flower identity.",
+  "prompts_list": [
+    "A vase held upside down with stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Light casting shadows in the direction of the source violates physics. We first establish the standard lighting setup to define the scene structure. At the mid-denoising stage, we override the shadow direction explicitly to create the visual contradiction without destabilizing the initial pose.",
+  "prompts_list": [
+    "A cat sitting on the ground, lit from the left",
+    "A cat sitting on the ground, lit from the left, but its prominent shadow is cast to the left, pointing directly towards the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

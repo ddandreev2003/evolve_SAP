@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting physics contradiction rather than a structural one. Strategy A applies here: establish the cat and scene normally during coarse generation (Steps 0-4), then override the shadow direction in the final prompt to avoid conflicting with the established light source inference earlier.",
+  "prompts_list": [
+    "A cat sitting on a sunny lawn",
+    "A cat sitting on a sunny lawn, its shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a contradiction involving lighting physics rather than gross shape. Per Strategy A, the model must first resolve the scene layout and dominant light source in the early critical steps (0–4). The background and cat pose are fixed first. Only after the geometry is stable (Switch at Step 5) do we explicitly describe the impossible shadow direction relative to the light source, preventing the model from correcting the shadow to obey physical laws.",
+  "prompts_list": [
+    "A cat standing on grass with sunlight from the left",
+    "A cat standing on grass with sunlight from the left, casting a shadow towards the light source (left)"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

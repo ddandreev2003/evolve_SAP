@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical accuracy suggests five fingers, making six a structural contradiction. Using Strategy B, begin with a \"hand\" proxy explicitly describing six digits to prevent the model from locking onto standard human proportions before naming the glove.",
+  "prompts_list": [
+    "A hand with six fingers wearing a glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

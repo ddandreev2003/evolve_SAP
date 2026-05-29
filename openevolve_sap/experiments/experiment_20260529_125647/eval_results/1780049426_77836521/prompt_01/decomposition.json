@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard hand anatomy defaults to five fingers, making finger count a hard geometric prior conflict. Following Strategy B, we define the anomalous hand structure first before applying the texture/material of the glove to ensure the extra digit is retained during identity mapping.",
+  "prompts_list": [
+    "A human hand with six fingers extended",
+    "A white glove covering a hand with six fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

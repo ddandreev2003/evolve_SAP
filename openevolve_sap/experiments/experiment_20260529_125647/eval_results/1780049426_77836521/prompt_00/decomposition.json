@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upright, creating a structural contradiction with an inverted vase. Using Strategy B (Structural/Spatial), we establish the inverted container geometry first as a proxy, then introduce the floral elements to prevent the model from enforcing standard upright gravity priors.",
+  "prompts_list": [
+    "An inverted vase with stems protruding downwards",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

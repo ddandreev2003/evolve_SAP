@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting/material contradiction handled by Strategy A. The initial prompt establishes the correct subject and scene layout neutrally, while the second prompt introduces the impossible shadow behavior once structure is stable.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow explicitly faces the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

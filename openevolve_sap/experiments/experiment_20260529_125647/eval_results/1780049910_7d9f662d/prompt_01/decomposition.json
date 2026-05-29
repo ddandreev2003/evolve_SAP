@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical impossibility requiring structural correction. Using Strategy B, a bare hand with 6 fingers establishes the unique geometry first, preventing the model from reverting to standard 5-digit anatomy once the glove material is introduced.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct fingers spread out",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet being upside down is a spatial contradiction. Starting with the normal geometric configuration locks the wrong orientation. Instead, we describe the physical arrangement of stems and blooms in reverse order to establish the inverted structure before naming the concept.",
+  "prompts_list": [
+    "A glass vase with bare green stems sticking out of the top, and colorful flower blooms crammed inside the bottom of the vase",
+    "A bouquet of flowers is upside down in a vase, with stems pointing up and blooms inside"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

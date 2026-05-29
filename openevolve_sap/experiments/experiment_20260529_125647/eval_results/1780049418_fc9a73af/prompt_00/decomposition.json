@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This violates gravity conventions (Strategy B). Standard vase bouquets are stable. Starting with the target object upright locks the geometry. Must begin with the inverted structure itself.",
+  "prompts_list": [
+    "A vase held upside down with stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

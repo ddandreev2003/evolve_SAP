@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting and shadow physics create conflicts if introduced while building the object's coarse structure. This requires Strategy A (Material/Lighting). We first stabilize the cat's pose and scale, then introduce the impossible shadow direction once the form is locked.",
+  "prompts_list": [
+    "A cat standing on pavement",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

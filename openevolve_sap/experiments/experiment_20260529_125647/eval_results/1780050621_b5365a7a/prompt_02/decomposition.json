@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows rely on consistent lighting physics, making opposite-facing shadows a high-frequency contradiction best handled via Strategy A. We establish the scene layout and primary light source direction in the first stage (steps 0–4) to define the global composition. At step 5, we inject the contradiction explicitly describing the shadow's impossible visual direction relative to the light, allowing the geometry to settle before attempting to render the paradoxical reflection.",
+  "prompts_list": [
+    "A cat sitting on the ground, brightly lit from the left",
+    "A cat sitting on the ground, brightly lit from the left, but casting a prominent dark shadow to the left (towards the light source)"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

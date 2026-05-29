@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are physically tied to light sources, making opposing directions a contradiction. Strategy A (Material/Lighting) is used here: stabilize the object and its standard light/shadow relationship during coarse generation (steps 0-4), then introduce the impossible shadow vector once the global structure is locked.",
+  "prompts_list": [
+    "A cat sitting on the ground with natural lighting",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

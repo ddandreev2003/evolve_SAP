@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates standard gravity expectations for flower arrangements. Following Strategy B, start with a proxy emphasizing the inverted stem geometry to lock the unusual pose before introducing the specific object identity.",
+  "prompts_list": [
+    "A vase with stems pointing outwards through the base",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

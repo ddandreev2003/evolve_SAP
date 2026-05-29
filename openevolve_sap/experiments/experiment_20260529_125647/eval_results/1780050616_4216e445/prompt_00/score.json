@@ -1,0 +1,6 @@
+{
+  "alignment score": 2,
+  "alignment explanation": "The image shows a standard upright bouquet in a vase, with flowers facing upward and stems submerged in water. The critical element of the prompt—\"upside down\"—is entirely absent; the bouquet is not inverted, and no visual cues suggest the intended orientation (e.g., flowers hanging downward from the vase). While the correct objects (bouquet, vase) are present, the core action/attribute (being upside down) is misrepresented, violating the prompt's functional requirement.",
+  "quality score": 5,
+  "quality explanation": "The image is visually flawless. The flowers, vase, and surface exhibit realistic textures, consistent lighting, and natural perspective. Stems are properly submerged, the vase transparency is coherent, and no artifacts, distortions, or anatomical errors (e.g., melted petals or floating elements) are present. All components connect naturally, and the composition is physically plausible."
+}

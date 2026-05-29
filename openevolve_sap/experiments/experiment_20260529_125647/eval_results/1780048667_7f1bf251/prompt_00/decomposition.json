@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard floral arrangements assume an upright orientation supported by gravity. Introducing the inverted state immediately may conflict with structural priors. By first establishing the vase layout, then the natural flower-vase relationship, we stabilize the coarse geometry before transitioning to the contradictory upside-down configuration in the final stage.",
+  "prompts_list": [
+    "A vase on a table",
+    "A bouquet of flowers in a vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

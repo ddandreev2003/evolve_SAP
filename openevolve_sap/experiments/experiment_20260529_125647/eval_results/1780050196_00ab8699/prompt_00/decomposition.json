@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural/spatial contradiction (Strategy B). Normal vase geometry dictates stems extend upward from the base; here they invert. Starting with a realistic vase would lock incorrect plant anatomy. We begin with a proxy establishing the inverted topology (stems up, flowers inside bottom), then introduce the semantic target \"bouquet\" after the spatial layout is locked.",
+  "prompts_list": [
+    "A clear vase with bare green stems sticking straight up out of the top, and flower blossoms inside the bottom of the vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

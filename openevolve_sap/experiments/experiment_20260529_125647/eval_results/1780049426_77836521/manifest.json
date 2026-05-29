@@ -1,0 +1,74 @@
+{
+  "run_id": "1780049426_77836521",
+  "program_path": "/tmp/tmpjxtqx353.py",
+  "program_id": "tmpjxtqx353",
+  "timestamp": 1780049648.833222,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but it is arranged normally with blooms facing upward and stems in the water. The prompt specifically requires the bouquet to be \"upside down,\" meaning the flowers should be inverted with blooms submerged in water and stems pointing upward. While the correct objects (bouquet, flowers, vase) are present, the key conceptual element—the upside down orientation—is completely missing and misrepresented. This significantly alters the intended scenario described in the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, high-quality photograph with no visible rendering artifacts. The flowers, vase, and table are well-formed and visually coherent. Lighting is natural and consistent across all elements, with proper perspective and texture details. There are no distortions, floating elements, or anatomical issues (no people present). The composition appears physically plausible and professionally executed, showing no signs of corruption or visual flaws."
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_00/score.json"
+    },
+    {
+      "prompt_index": 1,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_01",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_01/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_01/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image shows a white glove, which correctly matches the primary subject from the prompt. However, the glove has only 5 fingers (1 thumb + 4 fingers), while the prompt specifically requires 6 fingers. The key attribute of finger count is fundamentally wrong, making the core specification of the prompt unfulfilled. The glove is depicted in a concrete, functional manner (showing the hand in a natural pose), but the critical numerical requirement is missing, which significantly impacts semantic fidelity.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts. The glove is anatomically coherent for a standard 5-finger design, with consistent lighting, realistic fabric texture, and proper perspective. All elements (fingers, palm, wrist) connect naturally without distortion, clipping, or unnatural blending. The black background provides clean contrast, and the image maintains physical coherence throughout. There are no visual flaws or inconsistencies that affect readability."
+      },
+      "alignment_score": 3.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_01/score.json"
+    },
+    {
+      "prompt_index": 2,
+      "original_prompt": "The shadow of a cat is facing the opposite direction",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_02",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_02/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_02/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly shows a cat with its shadow cast on a surface. The cat is facing right (from the viewer’s perspective), while the shadow’s orientation—particularly the direction of its \"head\" and body—faces left, demonstrating the shadow is oriented opposite to the cat. All key elements (cat, shadow, directional opposition) are present and functionally depicted without ambiguity or symbolic interpretation.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. The cat’s anatomy (fur, paws, posture) is realistic and well-defined, with consistent lighting and texture across the surface and shadow. There are no rendering artifacts, distortions, or broken elements; perspective and physical coherence are maintained throughout."
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260529_125647/eval_results/1780049426_77836521/prompt_02/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 3.3333333333333335,
+    "gemma_score": 5.0,
+    "combined_score": 0.7333333333333334
+  }
+}

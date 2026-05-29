@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Hand anatomy relies on a 5-finger norm. Strategy B (Structural/Counting) dictates avoiding the target identity initially, as the model will lock onto 5 fingers early. Instead, establish the incorrect finger count on a bare hand proxy first, then apply the glove texture to preserve the impossible count through the high-frequency stages.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

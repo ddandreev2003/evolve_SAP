@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a high-frequency lighting detail. Following Strategy A, establishing the cat and general scene with neutral lighting first stabilizes the object form before introducing the physically impossible shadow vector.",
+  "prompts_list": [
+    "A cat sitting on the ground in sunlight",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

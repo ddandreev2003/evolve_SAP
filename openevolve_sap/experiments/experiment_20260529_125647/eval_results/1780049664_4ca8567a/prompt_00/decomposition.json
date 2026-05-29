@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The inverted orientation is a structural contradiction where flowers typically grow upward. Using Strategy B, we start with the inverted vase geometry itself as a proxy to lock the unusual pose before assigning the target concept.",
+  "prompts_list": [
+    "A vase held upside down with stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

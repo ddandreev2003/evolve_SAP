@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt contains a lighting contradiction where the shadow direction defies standard physics. Following Strategy A, the base geometry (cat and ground) is established first to stabilize the large-scale structure. Once the shape is coherent, the contradictory lighting condition is introduced in the second sub-prompt to prevent visual instability during early denoising.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard diffusion priors strongly enforce five-digit anatomy for hands and gloves. Starting with a bare hand allows the model to construct the specific six-digit geometry without immediate material constraints overriding the count. Switching to \"white glove\" late in the process preserves the anomalous finger structure while applying the correct texture.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

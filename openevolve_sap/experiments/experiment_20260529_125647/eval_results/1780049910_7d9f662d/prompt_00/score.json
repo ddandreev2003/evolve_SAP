@@ -1,0 +1,6 @@
+{
+  "alignment score": 1,
+  "alignment explanation": "The image depicts a standard bouquet of flowers arranged upright in a vase, with stems submerged in water and blooms facing upward. The prompt explicitly requires an *upside-down* bouquet (where blooms would be submerged and stems pointing downward), but this key spatial relationship is entirely absent. No elements suggest inversion, and the scene illustrates a conventional floral arrangement rather than the specified scenario.",
+  "quality score": 5,
+  "quality explanation": "The image is a clean, high-resolution photograph with no visible artifacts. Lighting is soft and even, textures (petals, glass, wood) are realistic, and perspective is consistent. Stems are properly aligned in the vase, flowers show natural anatomy, and there are no distortions, floating elements, or fused geometry. The composition is visually coherent and professionally rendered."
+}

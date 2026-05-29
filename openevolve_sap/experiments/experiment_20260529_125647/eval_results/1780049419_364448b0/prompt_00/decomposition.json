@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down vase violates standard spatial expectations of how objects rest. Using Strategy B (Structural/Spatial), we start with the inverted geometry (proxy) to prevent the model from locking into a \"normal vase\" shape, then introduce the floral identity.",
+  "prompts_list": [
+    "An inverted vase with stems pointing upwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

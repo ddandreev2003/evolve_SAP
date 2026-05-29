@@ -1,0 +1,6 @@
+{
+  "alignment score": 1,
+  "alignment explanation": "The image does not reflect the prompt’s meaning. The prompt specifies a bouquet “upside down in a vase,” but the bouquet is placed on a table (not inside the vase), and there is no indication of it being upside down. The vase is empty and positioned next to the bouquet, so the core action and spatial relationship described in the prompt are entirely absent.",
+  "quality score": 5,
+  "quality explanation": "The image is visually clean, realistic, and fully coherent. Lighting, texture, and perspective are consistent across all elements (flowers, vase, table). There are no rendering artifacts, distortions, or broken connections between objects. The details of the flowers, stems, and glass vase are sharp and natural, with no implausible blending or warping."
+}

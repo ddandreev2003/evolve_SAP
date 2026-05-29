@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural/anatomical contradiction. Strategy B is applied to start with the specific finger count on the hand itself, ensuring the geometry is established before applying the glove texture and final identity.",
+  "prompts_list": [
+    "A human hand with 6 fingers extended",
+    "A white glove on a hand with 6 fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

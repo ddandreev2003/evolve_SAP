@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Human hands typically have 5 fingers, which creates a strong structural prior that locks early in the denoising process (steps 0–3). Using Strategy B, we begin with a proxy description of a bare hand featuring 6 distinct fingers to force the unusual geometry without the clothing mask. Once the structure is stable (step 4), we switch to the \"white glove\" prompt to apply the identity and material constraints to the previously generated incorrect digit count.",
+  "prompts_list": [
+    "A bare human hand with 6 distinct fingers extended",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

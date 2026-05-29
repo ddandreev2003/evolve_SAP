@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Wrong finger count is a structural anomaly (Strategy B). Starting with a normal glove locks 5-finger topology. Must start with a hand/glove that already defines the extra digit count before assigning color.",
+  "prompts_list": [
+    "A hand wearing a glove with six fingers",
+    "A white glove has six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

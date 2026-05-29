@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down vase contradicts natural gravity and object function. Following Strategy B, starting with a structurally aligned proxy ensures the model locks the inverted geometry before adding flowers to avoid correcting the orientation later.",
+  "prompts_list": [
+    "A vase held upside down",
+    "A vase held upside down filled with flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The prompt describes a structural contradiction (six fingers instead of five) which conflicts with standard anatomical priors. Using Strategy B, we must prevent the model from locking the default five-finger geometry early. Starting with the specific anatomical anomaly (\"hand with 6 fingers\") establishes the coarse structure before transitioning to the final identity and material (\"white glove\") once the shape is stabilized.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

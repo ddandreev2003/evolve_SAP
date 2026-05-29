@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "GLOVE generation typically enforces a 5-finger standard anatomy early. By starting with the specific count on bare hands (\"hand with six fingers\"), the topological structure is established before the texture (glove) is applied, avoiding a reversion to 5 fingers.",
+  "prompts_list": [
+    "A hand with six fingers extended",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}
