@@ -8,6 +8,7 @@ import time
 import traceback
 import uuid
 import fcntl
+from concurrent.futures import Future, ThreadPoolExecutor
 from pathlib import Path
 
 import torch
@@ -22,12 +23,17 @@ from benchmarks.gpt_eval import evaluate_image_with_gpt
 from llm_interface.llm_SAP import LLM_SAP
 from openevolve_sap.exp_logging.experiment_logger import log_event
 from openevolve_sap.sap_eval_settings import (
+    get_cleanup_every_n_prompts,
     get_image_height,
     get_image_width,
     get_num_inference_steps,
     get_physical_gpu_id,
     get_ram_limit_gb,
+    get_cascade_stage1_threshold,
+    get_vl_max_concurrent,
     get_worker_id,
+    use_batch_sap,
+    use_eval_pipeline_overlap,
 )
 from run_SAP_flux import load_model, release_model
 
@@ -143,15 +149,44 @@ def _write_run_manifest(
     return path
 
 
-def _final_error(run_id: str, status_path: Path, reason: str, detail: str | None = None):
+def _failure_extra(exc: BaseException | None = None) -> dict:
+    """Worker/GPU context and OOM hints for status.jsonl (pool crash triage)."""
+    extra: dict = {
+        "worker_id": get_worker_id(),
+        "physical_gpu": get_physical_gpu_id(),
+    }
+    if exc is None:
+        return extra
+    msg = str(exc).lower()
+    cuda_oom_type = getattr(torch.cuda, "OutOfMemoryError", None)
+    if (cuda_oom_type is not None and isinstance(exc, cuda_oom_type)) or "out of memory" in msg:
+        extra["cuda_oom"] = True
+        extra["cuda"] = _cuda_mem_stats()
+    if isinstance(exc, MemoryError) or "ram limit exceeded" in msg:
+        extra["ram_limit"] = True
+        extra["rss_bytes"] = _current_rss_bytes()
+    return extra
+
+
+def _final_error(
+    run_id: str,
+    status_path: Path,
+    reason: str,
+    detail: str | None = None,
+    exc: BaseException | None = None,
+):
     payload = {
         "event": "final_error",
         "run_id": run_id,
         "reason": reason,
         "timestamp": time.time(),
+        **_failure_extra(exc),
     }
     if detail:
         payload["detail"] = detail
+        if exc is None and "out of memory" in detail.lower():
+            payload["cuda_oom"] = True
+            payload["cuda"] = _cuda_mem_stats()
     _append_jsonl(status_path, payload)
 
 
@@ -160,6 +195,12 @@ def _cleanup_memory():
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
         torch.cuda.ipc_collect()
+
+
+def _maybe_cleanup_after_prompt(prompt_count: int, idx: int) -> None:
+    every = get_cleanup_every_n_prompts()
+    if every == 0 or (idx + 1) % every == 0 or idx >= prompt_count - 1:
+        _cleanup_memory()
 
 
 def _get_ram_limit_bytes() -> int:
@@ -205,6 +246,8 @@ def _check_ram_limit(run_id: str, status_path: Path, stage: str):
                 "stage": stage,
                 "rss_bytes": rss,
                 "limit_bytes": limit,
+                "worker_id": get_worker_id(),
+                "physical_gpu": get_physical_gpu_id(),
                 "timestamp": time.time(),
             },
         )
@@ -331,26 +374,281 @@ def _gemma_judge(
     return max(1.0, min(5.0, score))
 
 
-def find_latest_checkpoint_program(output_dir: Path | None = None) -> Path:
-    """Return best_program.py from the latest OpenEvolve checkpoint, or output/best."""
-    root_output = output_dir or (PROJECT_ROOT / "openevolve_sap" / "output")
-    checkpoints_dir = root_output / "checkpoints"
-    if checkpoints_dir.is_dir():
-        checkpoint_dirs = sorted(
-            (p for p in checkpoints_dir.iterdir() if p.is_dir() and p.name.startswith("checkpoint_")),
-            key=lambda p: int(p.name.rsplit("_", 1)[-1]) if p.name.rsplit("_", 1)[-1].isdigit() else -1,
+def _decompose_prompts(
+    prompts: list[str],
+    api_key: str,
+    run_id: str,
+    status_path: Path,
+) -> dict[int, dict | None]:
+    """SAP decomposition for all prompts; batch API with per-prompt fallback."""
+    out: dict[int, dict | None] = {i: None for i in range(len(prompts))}
+    if not prompts:
+        return out
+
+    if use_batch_sap() and len(prompts) > 1:
+        _status_print(run_id, f"batch SAP decompose ({len(prompts)} prompts)")
+        try:
+            batch_results = LLM_SAP(list(prompts), llm="GPT", key=api_key)
+            if batch_results and len(batch_results) >= len(prompts):
+                ok = True
+                for i, sap in enumerate(batch_results[: len(prompts)]):
+                    if sap is None:
+                        ok = False
+                        break
+                    out[i] = sap
+                if ok:
+                    _append_jsonl(
+                        status_path,
+                        {
+                            "event": "sap_batch_ok",
+                            "run_id": run_id,
+                            "num_prompts": len(prompts),
+                            "timestamp": time.time(),
+                        },
+                    )
+                    return out
+        except Exception as e:
+            _append_jsonl(
+                status_path,
+                {
+                    "event": "sap_batch_failed",
+                    "run_id": run_id,
+                    "error": str(e),
+                    "timestamp": time.time(),
+                },
+            )
+
+    for i, prompt in enumerate(prompts):
+        _status_print(run_id, f"prompt {i + 1}/{len(prompts)}: decompose (fallback)")
+        try:
+            sap = LLM_SAP(prompt, llm="GPT", key=api_key)[0]
+            out[i] = sap
+        except Exception as e:
+            _append_jsonl(
+                status_path,
+                {
+                    "event": "sap_parse_exception",
+                    "run_id": run_id,
+                    "prompt_index": i,
+                    "prompt": prompt,
+                    "error": str(e),
+                    "timestamp": time.time(),
+                },
+            )
+    return out
+
+
+def _render_flux_image(
+    model,
+    idx: int,
+    prompt: str,
+    sap_out: dict,
+    prompt_dir: Path,
+    run_id: str,
+    status_path: Path,
+    record: dict,
+) -> Path | None:
+    """Run FLUX for one prompt; return path to first image or None."""
+    generator = [torch.Generator().manual_seed(DEFAULT_SEED)]
+    params = {
+        "height": get_image_height(),
+        "width": get_image_width(),
+        "num_inference_steps": get_num_inference_steps(),
+        "generator": generator,
+        "num_images_per_prompt": 1,
+        "guidance_scale": 3.5,
+        "sap_prompts": sap_out,
+    }
+    _status_print(run_id, f"prompt {idx + 1}: render start")
+    _check_ram_limit(run_id, status_path, f"prompt_{idx}_before_render")
+    _log_mem_snapshot(run_id, status_path, f"prompt_{idx}_before_render")
+    try:
+        lock_path = _generation_lock_path()
+        lock_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(lock_path, "w", encoding="utf-8") as lock_file:
+            fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX)
+            generation_output = model(**params)
+    except Exception as e:
+        _append_jsonl(
+            status_path,
+            {
+                "event": "generation_failed",
+                "run_id": run_id,
+                "prompt_index": idx,
+                "prompt": prompt,
+                "error": str(e),
+                "timestamp": time.time(),
+                **_failure_extra(e),
+            },
         )
-        for checkpoint_dir in reversed(checkpoint_dirs):
-            program_path = checkpoint_dir / "best_program.py"
-            if program_path.is_file():
-                return program_path
-    best_program = root_output / "best" / "best_program.py"
-    if best_program.is_file():
-        return best_program
-    raise FileNotFoundError(f"No checkpoint program found under {root_output}")
+        return None
+
+    generated_images = list(generation_output.images or [])
+    if not generated_images:
+        _append_jsonl(
+            status_path,
+            {
+                "event": "generation_failed",
+                "run_id": run_id,
+                "prompt_index": idx,
+                "prompt": prompt,
+                "error": "generation produced no images",
+                "timestamp": time.time(),
+            },
+        )
+        return None
+
+    first_image_path = None
+    for image_idx, image in enumerate(generated_images):
+        image_path = prompt_dir / f"image_{image_idx:02d}.png"
+        try:
+            image.save(image_path)
+        except Exception as e:
+            _append_jsonl(
+                status_path,
+                {
+                    "event": "image_save_failed",
+                    "run_id": run_id,
+                    "prompt_index": idx,
+                    "image_index": image_idx,
+                    "error": str(e),
+                    "timestamp": time.time(),
+                },
+            )
+            continue
+        record["images"].append(
+            {"image_index": image_idx, "image_path": str(image_path)}
+        )
+        _append_jsonl(
+            status_path,
+            {
+                "event": "image_saved",
+                "run_id": run_id,
+                "prompt_index": idx,
+                "image_index": image_idx,
+                "image_path": str(image_path),
+                "timestamp": time.time(),
+            },
+        )
+        if first_image_path is None:
+            first_image_path = image_path
+    del generated_images
+    _check_ram_limit(run_id, status_path, f"prompt_{idx}_after_render")
+    _log_mem_snapshot(run_id, status_path, f"prompt_{idx}_after_render")
+    return first_image_path
 
 
-def evaluate(program_path: str, visualization_only: bool = False):
+def _apply_vl_score(
+    idx: int,
+    prompt: str,
+    first_image_path: Path,
+    prompt_dir: Path,
+    decomp_path: Path,
+    api_key: str,
+    run_id: str,
+    status_path: Path,
+    record: dict,
+) -> float | None:
+    """VL alignment judge for one image; updates record. Returns alignment or None."""
+    if not first_image_path.exists():
+        _append_jsonl(
+            status_path,
+            {
+                "event": "image_file_missing",
+                "run_id": run_id,
+                "prompt_index": idx,
+                "image_path": str(first_image_path),
+                "timestamp": time.time(),
+            },
+        )
+        return None
+    _status_print(run_id, f"prompt {idx + 1}: score start")
+    _check_ram_limit(run_id, status_path, f"prompt_{idx}_before_score")
+    try:
+        score = evaluate_image_with_gpt(str(first_image_path), prompt, api_key)
+    except Exception as e:
+        _append_jsonl(
+            status_path,
+            {
+                "event": "score_failed",
+                "run_id": run_id,
+                "prompt_index": idx,
+                "prompt": prompt,
+                "error": str(e),
+                "timestamp": time.time(),
+            },
+        )
+        return None
+    alignment_value = float(score.get("alignment score", 0.0))
+    score_path = _save_score(prompt_dir, score)
+    record["score"] = score
+    record["score_path"] = str(score_path)
+    record["alignment_score"] = alignment_value
+    _append_jsonl(
+        status_path,
+        {
+            "event": "score_done",
+            "run_id": run_id,
+            "prompt_index": idx,
+            "alignment_score": alignment_value,
+            "timestamp": time.time(),
+        },
+    )
+    _status_print(run_id, f"prompt {idx + 1}: alignment={alignment_value:.3f}")
+    _check_ram_limit(run_id, status_path, f"prompt_{idx}_after_score")
+    return alignment_value
+
+
+def _collect_vl_future(
+    future: Future,
+    idx: int,
+    prompt: str,
+    prompt_dir: Path,
+    decomp_path: Path,
+    run_id: str,
+    status_path: Path,
+    record: dict,
+    alignments: list[float],
+    score_records: list[dict],
+) -> None:
+    try:
+        alignment_value = future.result()
+    except Exception as e:
+        _append_jsonl(
+            status_path,
+            {
+                "event": "score_failed",
+                "run_id": run_id,
+                "prompt_index": idx,
+                "error": str(e),
+                "timestamp": time.time(),
+            },
+        )
+        return
+    if alignment_value is None:
+        return
+    alignments.append(alignment_value)
+    score_records.append(
+        {
+            "prompt_index": idx,
+            "prompt": prompt,
+            "prompt_dir": str(prompt_dir),
+            "decomposition_path": str(decomp_path),
+            "image_path": str(prompt_dir / "image_00.png"),
+            "score_path": record.get("score_path"),
+            "score": record.get("score"),
+        }
+    )
+
+
+def _run_evaluation_core(
+    program_path: str,
+    *,
+    visualization_only: bool = False,
+    prompt_indices: list[int] | None = None,
+    enable_gemma: bool = True,
+) -> EvaluationResult:
+    """Shared eval loop: batch SAP, pipeline VL overlap, optional subset of prompts."""
     api_key = os.getenv("ROUTERAI_API_KEY", "")
     run_id = f"{int(time.time())}_{uuid.uuid4().hex[:8]}"
     run_dir = RESULTS_DIR / run_id
@@ -362,7 +660,12 @@ def evaluate(program_path: str, visualization_only: bool = False):
         "INFO",
         get_worker_id(),
         "evaluation_started",
-        {"run_id": run_id, "program_path": program_path, "mode": mode_label},
+        {
+            "run_id": run_id,
+            "program_path": program_path,
+            "mode": mode_label,
+            "prompt_indices": prompt_indices,
+        },
     )
     if not api_key:
         _final_error(run_id, status_path, "missing_api_key", "ROUTERAI_API_KEY is not set")
@@ -380,14 +683,21 @@ def evaluate(program_path: str, visualization_only: bool = False):
             artifacts={"error": f"extract_system_prompt_failed: {e}", "traceback": traceback.format_exc()},
         )
 
-    prompts = _load_prompt_set()
-    template_context = _load_template_context()
+    all_prompts = _load_prompt_set()
+    if prompt_indices is not None:
+        prompts = [all_prompts[i] for i in prompt_indices]
+        index_map = {local_i: prompt_indices[local_i] for local_i in range(len(prompt_indices))}
+    else:
+        prompts = all_prompts
+        index_map = {i: i for i in range(len(prompts))}
 
-    sampled_outputs = []
-    alignments = []
-    score_records = []
-    saved_images = []
+    template_context = _load_template_context()
+    sampled_outputs: list[dict] = []
+    alignments: list[float] = []
+    score_records: list[dict] = []
+    saved_images: list[dict] = []
     prompt_records: list[dict] = []
+
     try:
         model = _get_model()
     except Exception as e:
@@ -397,14 +707,13 @@ def evaluate(program_path: str, visualization_only: bool = False):
             metrics={"alignment_score": 0.0, "gemma_score": 0.0, "combined_score": 0.0},
             artifacts={"error": f"model_load_failed: {e}", "traceback": traceback.format_exc()},
         )
-    temp_system_prompt_path = None
 
+    temp_system_prompt_path = None
     try:
         _log_mem_snapshot(run_id, status_path, "after_model_load")
         with tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False, encoding="utf-8") as tmp:
             tmp.write(system_prompt)
             temp_system_prompt_path = tmp.name
-
         original_path = os.getenv("SAP_SYSTEM_PROMPT_PATH")
         os.environ["SAP_SYSTEM_PROMPT_PATH"] = temp_system_prompt_path
 
@@ -414,238 +723,211 @@ def evaluate(program_path: str, visualization_only: bool = False):
                 "event": "start_loop",
                 "run_id": run_id,
                 "num_prompts": len(prompts),
+                "batch_sap": use_batch_sap(),
+                "pipeline_overlap": use_eval_pipeline_overlap(),
                 "timestamp": time.time(),
             },
         )
         _check_ram_limit(run_id, status_path, "start_loop")
 
-        for idx, prompt in enumerate(prompts):
-            _check_ram_limit(run_id, status_path, f"prompt_{idx}_before_decompose")
-            _status_print(run_id, f"prompt {idx + 1}/{len(prompts)}: decompose")
-            try:
-                sap_out = LLM_SAP(prompt, llm="GPT", key=api_key)[0]
-            except Exception as e:
-                _append_jsonl(
-                    status_path,
-                    {
-                        "event": "sap_parse_exception",
-                        "run_id": run_id,
-                        "prompt_index": idx,
-                        "prompt": prompt,
-                        "error": str(e),
-                        "timestamp": time.time(),
-                    },
-                )
-                continue
-            if sap_out is None:
-                _append_jsonl(
-                    status_path,
-                    {
-                        "event": "sap_parse_failed",
-                        "run_id": run_id,
-                        "prompt_index": idx,
-                        "prompt": prompt,
-                        "timestamp": time.time(),
-                    },
-                )
-                continue
-            sampled_outputs.append(sap_out)
-            prompt_dir = _prompt_dir(run_dir, idx)
-            decomp_path = _save_decomposition(prompt_dir, prompt, sap_out)
-            record = {
-                "prompt_index": idx,
-                "original_prompt": prompt,
-                "prompt_dir": str(prompt_dir),
-                "decomposition_path": str(decomp_path),
-                "images": [],
-                "score": None,
-                "alignment_score": None,
-            }
-            prompt_records.append(record)
-            _append_jsonl(
-                status_path,
-                {
-                    "event": "decomposition_saved",
-                    "run_id": run_id,
-                    "prompt_index": idx,
-                    "prompt": prompt,
-                    "decomposition_path": str(decomp_path),
-                    "prompts_list": sap_out.get("prompts_list", []),
-                    "switch_prompts_steps": sap_out.get("switch_prompts_steps", []),
-                    "timestamp": time.time(),
-                },
-            )
+        sap_by_local = _decompose_prompts(prompts, api_key, run_id, status_path)
+        pending_vl: Future | None = None
+        pending_vl_ctx: dict | None = None
+        vl_workers = get_vl_max_concurrent()
+        pipeline = use_eval_pipeline_overlap() and not visualization_only
+        gemma_future: Future | None = None
+        deferred_vl: list[dict] = []
 
-            generator = [torch.Generator().manual_seed(DEFAULT_SEED)]
-            params = {
-                "height": get_image_height(),
-                "width": get_image_width(),
-                "num_inference_steps": get_num_inference_steps(),
-                "generator": generator,
-                "num_images_per_prompt": 1,
-                "guidance_scale": 3.5,
-                "sap_prompts": sap_out,
-            }
-            _status_print(run_id, f"prompt {idx + 1}/{len(prompts)}: render start")
-            _check_ram_limit(run_id, status_path, f"prompt_{idx}_before_render")
-            _log_mem_snapshot(run_id, status_path, f"prompt_{idx}_before_render")
-            try:
-                lock_path = _generation_lock_path()
-                lock_path.parent.mkdir(parents=True, exist_ok=True)
-                with open(lock_path, "w", encoding="utf-8") as lock_file:
-                    fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX)
-                    generation_output = model(**params)
-            except Exception as e:
-                _append_jsonl(
-                    status_path,
-                    {
-                        "event": "generation_failed",
-                        "run_id": run_id,
-                        "prompt_index": idx,
-                        "prompt": prompt,
-                        "error": str(e),
-                        "timestamp": time.time(),
-                    },
-                )
-                continue
-            generated_images = list(generation_output.images or [])
-            if not generated_images:
-                _append_jsonl(
-                    status_path,
-                    {
-                        "event": "generation_failed",
-                        "run_id": run_id,
-                        "prompt_index": idx,
-                        "prompt": prompt,
-                        "error": "generation produced no images",
-                        "timestamp": time.time(),
-                    },
-                )
-                continue
-            first_image_path = None
-            for image_idx, image in enumerate(generated_images):
-                image_path = prompt_dir / f"image_{image_idx:02d}.png"
-                try:
-                    image.save(image_path)
-                except Exception as e:
+        with ThreadPoolExecutor(max_workers=max(vl_workers, 1)) as vl_pool:
+            for local_i, prompt in enumerate(prompts):
+                global_idx = index_map[local_i]
+                sap_out = sap_by_local.get(local_i)
+                if sap_out is None:
                     _append_jsonl(
                         status_path,
                         {
-                            "event": "image_save_failed",
+                            "event": "sap_parse_failed",
                             "run_id": run_id,
-                            "prompt_index": idx,
-                            "image_index": image_idx,
+                            "prompt_index": global_idx,
                             "prompt": prompt,
-                            "image_path": str(image_path),
-                            "error": str(e),
                             "timestamp": time.time(),
                         },
                     )
                     continue
-                img_entry = {
-                    "image_index": image_idx,
-                    "image_path": str(image_path),
+
+                sampled_outputs.append(sap_out)
+                prompt_dir = _prompt_dir(run_dir, global_idx)
+                decomp_path = _save_decomposition(prompt_dir, prompt, sap_out)
+                record = {
+                    "prompt_index": global_idx,
+                    "original_prompt": prompt,
+                    "prompt_dir": str(prompt_dir),
+                    "decomposition_path": str(decomp_path),
+                    "images": [],
+                    "score": None,
+                    "alignment_score": None,
                 }
-                record["images"].append(img_entry)
+                prompt_records.append(record)
                 _append_jsonl(
                     status_path,
                     {
-                        "event": "image_saved",
+                        "event": "decomposition_saved",
                         "run_id": run_id,
-                        "prompt_index": idx,
-                        "image_index": image_idx,
+                        "prompt_index": global_idx,
                         "prompt": prompt,
-                        "image_path": str(image_path),
                         "decomposition_path": str(decomp_path),
+                        "prompts_list": sap_out.get("prompts_list", []),
+                        "switch_prompts_steps": sap_out.get("switch_prompts_steps", []),
                         "timestamp": time.time(),
                     },
                 )
+
+                if pipeline and pending_vl is not None and pending_vl_ctx is not None:
+                    _collect_vl_future(
+                        pending_vl,
+                        pending_vl_ctx["idx"],
+                        pending_vl_ctx["prompt"],
+                        pending_vl_ctx["prompt_dir"],
+                        pending_vl_ctx["decomp_path"],
+                        run_id,
+                        status_path,
+                        pending_vl_ctx["record"],
+                        alignments,
+                        score_records,
+                    )
+                    pending_vl = None
+                    pending_vl_ctx = None
+
+                first_image_path = _render_flux_image(
+                    model, global_idx, prompt, sap_out, prompt_dir, run_id, status_path, record
+                )
+                _maybe_cleanup_after_prompt(len(prompts), local_i)
+
                 if first_image_path is None:
-                    first_image_path = image_path
-            if first_image_path is None:
-                continue
-            saved_images.append(
-                {
-                    "prompt_index": idx,
-                    "prompt": prompt,
-                    "prompt_dir": str(prompt_dir),
-                    "decomposition_path": str(decomp_path),
-                    "image_path": str(first_image_path),
-                    "images": list(record["images"]),
-                }
-            )
-            del generated_images
-            _cleanup_memory()
-            _check_ram_limit(run_id, status_path, f"prompt_{idx}_after_render")
-            _log_mem_snapshot(run_id, status_path, f"prompt_{idx}_after_render")
-            if visualization_only:
-                _status_print(run_id, f"prompt {idx + 1}/{len(prompts)}: image saved")
-                continue
-            if not first_image_path.exists():
-                _append_jsonl(
-                    status_path,
+                    continue
+
+                saved_images.append(
                     {
-                        "event": "image_file_missing",
-                        "run_id": run_id,
-                        "prompt_index": idx,
+                        "prompt_index": global_idx,
                         "prompt": prompt,
+                        "prompt_dir": str(prompt_dir),
+                        "decomposition_path": str(decomp_path),
                         "image_path": str(first_image_path),
-                        "timestamp": time.time(),
-                    },
+                        "images": list(record["images"]),
+                    }
                 )
-                continue
-            _status_print(run_id, f"prompt {idx + 1}/{len(prompts)}: score start")
-            _check_ram_limit(run_id, status_path, f"prompt_{idx}_before_score")
-            _log_mem_snapshot(run_id, status_path, f"prompt_{idx}_before_score")
-            try:
-                score = evaluate_image_with_gpt(str(first_image_path), prompt, api_key)
-            except Exception as e:
-                _append_jsonl(
-                    status_path,
-                    {
-                        "event": "score_failed",
-                        "run_id": run_id,
-                        "prompt_index": idx,
-                        "prompt": prompt,
-                        "image_path": str(first_image_path),
-                        "error": str(e),
-                        "timestamp": time.time(),
-                    },
-                )
-                continue
-            alignment_value = float(score.get("alignment score", 0.0))
-            alignments.append(alignment_value)
-            score_path = _save_score(prompt_dir, score)
-            record["score"] = score
-            record["score_path"] = str(score_path)
-            record["alignment_score"] = alignment_value
-            score_records.append(
-                {
-                    "prompt_index": idx,
+
+                if visualization_only:
+                    _status_print(run_id, f"prompt {local_i + 1}/{len(prompts)}: image saved")
+                    continue
+
+                vl_ctx = {
+                    "idx": global_idx,
                     "prompt": prompt,
-                    "prompt_dir": str(prompt_dir),
-                    "decomposition_path": str(decomp_path),
-                    "image_path": str(first_image_path),
-                    "score_path": str(score_path),
-                    "score": score,
+                    "prompt_dir": prompt_dir,
+                    "decomp_path": decomp_path,
+                    "record": record,
+                    "image_path": first_image_path,
                 }
-            )
-            _append_jsonl(
-                status_path,
-                {
-                    "event": "score_done",
-                    "run_id": run_id,
-                    "prompt_index": idx,
-                    "alignment_score": alignment_value,
-                    "timestamp": time.time(),
-                },
-            )
-            _status_print(run_id, f"prompt {idx + 1}/{len(prompts)}: alignment={alignment_value:.3f}")
-            _cleanup_memory()
-            _check_ram_limit(run_id, status_path, f"prompt_{idx}_after_score")
-            _log_mem_snapshot(run_id, status_path, f"prompt_{idx}_after_score")
+
+                if pipeline:
+                    pending_vl = vl_pool.submit(
+                        _apply_vl_score,
+                        global_idx,
+                        prompt,
+                        first_image_path,
+                        prompt_dir,
+                        decomp_path,
+                        api_key,
+                        run_id,
+                        status_path,
+                        record,
+                    )
+                    pending_vl_ctx = vl_ctx
+                else:
+                    deferred_vl.append(vl_ctx)
+
+                if (
+                    enable_gemma
+                    and not visualization_only
+                    and local_i == len(prompts) - 1
+                    and sampled_outputs
+                ):
+                    gemma_future = vl_pool.submit(
+                        _gemma_judge,
+                        system_prompt,
+                        sampled_outputs,
+                        template_context,
+                        api_key,
+                        run_id,
+                        status_path,
+                    )
+
+            if pipeline and pending_vl is not None and pending_vl_ctx is not None:
+                _collect_vl_future(
+                    pending_vl,
+                    pending_vl_ctx["idx"],
+                    pending_vl_ctx["prompt"],
+                    pending_vl_ctx["prompt_dir"],
+                    pending_vl_ctx["decomp_path"],
+                    run_id,
+                    status_path,
+                    pending_vl_ctx["record"],
+                    alignments,
+                    score_records,
+                )
+
+            if not pipeline and not visualization_only and deferred_vl:
+                futures = []
+                for ctx in deferred_vl:
+                    futures.append(
+                        (
+                            ctx,
+                            vl_pool.submit(
+                                _apply_vl_score,
+                                ctx["idx"],
+                                ctx["prompt"],
+                                ctx["image_path"],
+                                ctx["prompt_dir"],
+                                ctx["decomp_path"],
+                                api_key,
+                                run_id,
+                                status_path,
+                                ctx["record"],
+                            ),
+                        )
+                    )
+                for ctx, fut in futures:
+                    try:
+                        alignment_value = fut.result()
+                    except Exception as e:
+                        _append_jsonl(
+                            status_path,
+                            {
+                                "event": "score_failed",
+                                "run_id": run_id,
+                                "prompt_index": ctx["idx"],
+                                "error": str(e),
+                                "timestamp": time.time(),
+                            },
+                        )
+                        continue
+                    if alignment_value is not None:
+                        alignments.append(alignment_value)
+                        score_records.append(
+                            {
+                                "prompt_index": ctx["idx"],
+                                "prompt": ctx["prompt"],
+                                "prompt_dir": str(ctx["prompt_dir"]),
+                                "decomposition_path": str(ctx["decomp_path"]),
+                                "image_path": str(ctx["image_path"]),
+                                "score_path": ctx["record"].get("score_path"),
+                                "score": ctx["record"].get("score"),
+                            }
+                        )
+
     except Exception as e:
-        _final_error(run_id, status_path, "evaluation_failed", str(e))
+        _final_error(run_id, status_path, "evaluation_failed", str(e), exc=e)
         if prompt_records:
             _write_run_manifest(run_dir, run_id, program_path, prompt_records)
         _maybe_release_model_after_eval()
@@ -694,19 +976,16 @@ def evaluate(program_path: str, visualization_only: bool = False):
                 "event": "visualization_complete",
                 "run_id": run_id,
                 "num_images": len(saved_images),
-                "images": saved_images,
                 "manifest_path": str(manifest_path),
                 "timestamp": time.time(),
             },
         )
-        _status_print(run_id, f"visualization done images={len(saved_images)}")
         return EvaluationResult(
             metrics={"num_images": float(len(saved_images))},
             artifacts={
                 "images": saved_images,
                 "sampled_outputs": sampled_outputs,
                 "prompt_records": prompt_records,
-                "status_path": str(status_path),
                 "manifest_path": str(manifest_path),
             },
         )
@@ -726,22 +1005,30 @@ def evaluate(program_path: str, visualization_only: bool = False):
         )
 
     alignment_score = sum(alignments) / len(alignments)
-    _status_print(run_id, "running gemma judge")
-    try:
-        gemma_score = _gemma_judge(
-            system_prompt,
-            sampled_outputs,
-            template_context,
-            api_key,
-            run_id,
-            status_path,
-        )
-    except Exception as e:
-        _final_error(run_id, status_path, "gemma_judge_failed", str(e))
-        return EvaluationResult(
-            metrics={"alignment_score": 0.0, "gemma_score": 0.0, "combined_score": 0.0},
-            artifacts={"error": f"gemma_judge_failed: {e}", "traceback": traceback.format_exc()},
-        )
+    gemma_score = 1.0
+    if enable_gemma:
+        _status_print(run_id, "running gemma judge")
+        try:
+            if gemma_future is not None:
+                gemma_score = gemma_future.result()
+            else:
+                gemma_score = _gemma_judge(
+                    system_prompt,
+                    sampled_outputs,
+                    template_context,
+                    api_key,
+                    run_id,
+                    status_path,
+                )
+        except Exception as e:
+            _final_error(run_id, status_path, "gemma_judge_failed", str(e))
+            return EvaluationResult(
+                metrics={"alignment_score": 0.0, "gemma_score": 0.0, "combined_score": 0.0},
+                artifacts={"error": f"gemma_judge_failed: {e}", "traceback": traceback.format_exc()},
+            )
+    else:
+        gemma_score = 5.0
+
     combined_score = 0.8 * (alignment_score / 5.0) + 0.2 * (gemma_score / 5.0)
     manifest_path = _write_run_manifest(
         run_dir,
@@ -783,7 +1070,6 @@ def evaluate(program_path: str, visualization_only: bool = False):
             "num_eval_prompts": len(alignments),
         },
     )
-
     return EvaluationResult(
         metrics={
             "alignment_score": float(alignment_score),
@@ -796,11 +1082,70 @@ def evaluate(program_path: str, visualization_only: bool = False):
             "sampled_outputs": sampled_outputs,
             "prompt_records": prompt_records,
             "score_records": score_records,
-            "score_records_path": str(run_dir / "status.jsonl"),
+            "score_records_path": str(status_path),
             "manifest_path": str(manifest_path),
-            "template_context_files": sorted(list(template_context.keys())),
+            "template_context_files": sorted(template_context.keys()),
         },
     )
+
+
+def find_latest_checkpoint_program(output_dir: Path | None = None) -> Path:
+    """Return best_program.py from the latest OpenEvolve checkpoint, or output/best."""
+    root_output = output_dir or (PROJECT_ROOT / "openevolve_sap" / "output")
+    checkpoints_dir = root_output / "checkpoints"
+    if checkpoints_dir.is_dir():
+        checkpoint_dirs = sorted(
+            (p for p in checkpoints_dir.iterdir() if p.is_dir() and p.name.startswith("checkpoint_")),
+            key=lambda p: int(p.name.rsplit("_", 1)[-1]) if p.name.rsplit("_", 1)[-1].isdigit() else -1,
+        )
+        for checkpoint_dir in reversed(checkpoint_dirs):
+            program_path = checkpoint_dir / "best_program.py"
+            if program_path.is_file():
+                return program_path
+    best_program = root_output / "best" / "best_program.py"
+    if best_program.is_file():
+        return best_program
+    raise FileNotFoundError(f"No checkpoint program found under {root_output}")
+
+
+def evaluate(program_path: str, visualization_only: bool = False):
+    return _run_evaluation_core(
+        program_path,
+        visualization_only=visualization_only,
+        prompt_indices=None,
+        enable_gemma=True,
+    )
+
+
+def evaluate_stage1(program_path: str):
+    """Cascade stage 1: full SAP+FLUX+VL on first benchmark prompt only."""
+    result = _run_evaluation_core(
+        program_path,
+        visualization_only=False,
+        prompt_indices=[0],
+        enable_gemma=False,
+    )
+    metrics = dict(result.metrics or {})
+    metrics["eval_stage"] = 1.0
+    metrics["stage1_passed"] = float(metrics.get("combined_score", 0.0) >= get_cascade_stage1_threshold())
+    artifacts = dict(result.artifacts or {})
+    artifacts["cascade_stage"] = "stage1"
+    return EvaluationResult(metrics=metrics, artifacts=artifacts)
+
+
+def evaluate_stage2(program_path: str):
+    """Cascade stage 2: full evaluation on all benchmark prompts."""
+    result = _run_evaluation_core(
+        program_path,
+        visualization_only=False,
+        prompt_indices=None,
+        enable_gemma=True,
+    )
+    metrics = dict(result.metrics or {})
+    metrics["eval_stage"] = 2.0
+    artifacts = dict(result.artifacts or {})
+    artifacts["cascade_stage"] = "stage2"
+    return EvaluationResult(metrics=metrics, artifacts=artifacts)
 
 
 def evaluate_visualization_only(program_path: str):

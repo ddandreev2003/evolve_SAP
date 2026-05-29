@@ -119,6 +119,28 @@ combined_score = 0.8 × (alignment_score / 5) + 0.2 × (gemma_score / 5)
 - Checkpoints every **50** iterations → `output/checkpoints/checkpoint_<N>/` with `metadata.json`, `programs/*.json`
 - Until the first checkpoint, use the visualizer **live mode** (`experiment.jsonl` + `eval_results/`)
 
+### Eval throughput vs `max_iterations`
+
+One **full eval** (3 prompts × SAP + FLUX + VL + gemma judge) takes about **5–8 minutes** on 10GB GPUs with CPU offload. With **4 GPUs** you get roughly:
+
+```
+completed_evals_per_hour ≈ (60 / T_eval_minutes) × num_gpus
+```
+
+Example: 6 min/eval × 4 GPUs → ~40 eval/hour. Setting `max_iterations: 100` does **not** mean 100 evals — OpenEvolve counts mutation cycles; most wall time is spent inside `evaluate()`.
+
+**Optimizations** (enabled by default in `evaluator.py`):
+
+| Env | Default | Effect |
+|-----|---------|--------|
+| `SAP_BATCH_SAP` | `1` | One RouterAI call for all 3 decompositions (fallback per prompt on parse error) |
+| `SAP_EVAL_PIPELINE` | `1` | VL scoring for prompt *i* overlaps FLUX render for prompt *i+1* |
+| `SAP_VL_MAX_CONCURRENT` | `3` | Parallel VL API calls when pipeline is off |
+| `SAP_CLEANUP_EVERY_N_PROMPTS` | `0` | `0` = gc/cuda cleanup after each prompt; set `3` to reduce overhead |
+| `SAP_CASCADE_EVAL` | off | Set `1` + `cascade_evaluation: true` to filter with `evaluate_stage1` (1 prompt) before full eval |
+
+**Stability:** `max_tasks_per_child: 30` in `multi_gpu.yaml` recycles pool workers to limit RAM growth. Use `early_stopping_patience: 20` to stop when `combined_score` plateaus.
+
 ### Naming note: `exp_logging/`
 
 The package `openevolve_sap/exp_logging/` exists because a folder named `logging/` shadowed Python’s stdlib `logging` when worker processes re-imported the project under `spawn`.
@@ -179,21 +201,18 @@ main()  [scripts/run_evolution.py, MainProcess only]
 **`evaluate(program_path)`** (OpenEvolve entry point):
 
 ```
-evaluate(program_path, visualization_only=False)
-  ├─ _extract_system_prompt(program_path)   # import SYSTEM_PROMPT from temp .py
-  ├─ _load_prompt_set()                     # openevolve_sap/prompt_set.json (3 prompts)
-  ├─ _get_model() → load_model()            # FLUX on worker GPU
-  ├─ os.environ["SAP_SYSTEM_PROMPT_PATH"] = temp file with evolved prompt
+_run_evaluation_core(program_path)
+  ├─ _extract_system_prompt(program_path)
+  ├─ _decompose_prompts() → batch LLM_SAP (3 prompts) with per-prompt fallback
+  ├─ _get_model() → load_model()
   └─ for each test prompt:
-       ├─ LLM_SAP(prompt) → decomposition
-       ├─ _save_decomposition() → eval_results/<run_id>/prompt_XX/
-       ├─ SapFlux(...) under generation lock
-       ├─ evaluate_image_with_gpt(image, prompt) → alignment 1–5
-       └─ _save_score(), images → prompt_XX/image_00.png
-  ├─ _gemma_judge(system_prompt, ...)       # gemini-3.1-pro-preview
-  ├─ combined_score
-  └─ _write_run_manifest() → manifest.json
+       ├─ _render_flux_image() under .generation.gpu{N}.lock
+       └─ _apply_vl_score() (pipeline: async while next FLUX runs)
+  ├─ _gemma_judge()  (may overlap last VL score)
+  └─ _write_run_manifest()
 ```
+
+**Cascade** (optional): `evaluate_stage1` = first prompt only; `evaluate_stage2` = full 3-prompt eval. Enable via `SAP_CASCADE_EVAL=1` or `cascade_evaluation: true` in YAML (`cascade_thresholds: [0.35, 0.0]`).
 
 **CLI (`scripts/run_evolution.py` / `openevolve_sap/run_openevolve_sap.py`):**
 
@@ -292,6 +311,14 @@ Model: `qwen/qwen3-vl-235b-a22b-thinking` via RouterAI.
 | `SAP_WORKER_ID` | Logs | e.g. `worker_0` |
 | `SAP_CHECKPOINT_INTERVAL` | OpenEvolve | Set from `--checkpoint-interval` |
 | `SAP_LOG_LEVEL` | experiment logger | e.g. `INFO` |
+| `SAP_BATCH_SAP` | evaluator | `1` = batch decomposition API (default on) |
+| `SAP_EVAL_PIPELINE` | evaluator | `1` = overlap VL with next FLUX (default on) |
+| `SAP_VL_MAX_CONCURRENT` | evaluator | Parallel VL judges when pipeline off (default `3`) |
+| `SAP_VL_MAX_TOKENS` | gpt_eval | VL response cap (default `4096`) |
+| `SAP_CLEANUP_EVERY_N_PROMPTS` | evaluator | gc/cuda frequency (`0` = every prompt) |
+| `SAP_CASCADE_EVAL` | scheduler | `1` forces `cascade_evaluation` in OpenEvolve config |
+| `SAP_CASCADE_THRESHOLDS` | scheduler | Comma-separated, e.g. `0.35,0.0` |
+| `SAP_CASCADE_STAGE1_THRESHOLD` | evaluator | Min combined to pass stage1 (default `0.35`) |
 | `PYTHONPATH` | visualizer, imports | Project root when running `visualization/visualizer.py` |
 
 ---
@@ -300,7 +327,7 @@ Model: `qwen/qwen3-vl-235b-a22b-thinking` via RouterAI.
 
 | File | Role |
 |------|------|
-| `openevolve_sap/configs/multi_gpu.yaml` | Production: 80 iter, 4 islands, 4 parallel evals, checkpoint 50 |
+| `openevolve_sap/configs/multi_gpu.yaml` | Production: 80 iter, 4 islands, 4 parallel evals, checkpoint 50, early stopping, `max_tasks_per_child: 30` |
 | `openevolve_sap/config.yaml` | Shorter defaults (1 island, 1 parallel eval) |
 | `openevolve_sap/prompt_set.json` | Fixed 3 contradictory test prompts for evolution |
 | `openevolve_sap/prompts/evolution_system_message.md` | Full meta-prompt for Gemini (loaded at runtime, not inlined in YAML) |

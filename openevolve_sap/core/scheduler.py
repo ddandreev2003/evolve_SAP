@@ -179,6 +179,13 @@ async def run_evolution_async(args: argparse.Namespace) -> int:
     if ckpt_int > 0:
         config.checkpoint_interval = ckpt_int
     config.evaluator.parallel_evaluations = len(gpu_ids)
+    if os.getenv("SAP_CASCADE_EVAL", "").strip().lower() in {"1", "true", "yes"}:
+        config.evaluator.cascade_evaluation = True
+    cascade_thresh = os.getenv("SAP_CASCADE_THRESHOLDS", "").strip()
+    if cascade_thresh:
+        config.evaluator.cascade_thresholds = [
+            float(x.strip()) for x in cascade_thresh.split(",") if x.strip()
+        ]
 
     openevolve = OpenEvolve(
         initial_program_path=str(initial_program),

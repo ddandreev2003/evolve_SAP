@@ -2,6 +2,17 @@ import base64
 import os
 from openai import OpenAI
 
+_VL_CLIENT: OpenAI | None = None
+
+
+def _get_vl_client(api_key: str) -> OpenAI:
+    global _VL_CLIENT
+    base_url = os.getenv("ROUTERAI_BASE_URL", "https://routerai.ru/api/v1")
+    if _VL_CLIENT is None:
+        _VL_CLIENT = OpenAI(api_key=api_key, base_url=base_url)
+    return _VL_CLIENT
+
+
 def encode_image(image_path):
   with open(image_path, "rb") as image_file:
     return base64.b64encode(image_file.read()).decode('utf-8')
@@ -9,10 +20,10 @@ def encode_image(image_path):
 
 def evaluate_image_with_gpt(image_path, prompt, key):
     api_key = key or os.getenv("ROUTERAI_API_KEY", "")
-    base_url = os.getenv("ROUTERAI_BASE_URL", "https://routerai.ru/api/v1")
     if not api_key:
         raise ValueError("Missing API key. Set ROUTERAI_API_KEY environment variable.")
-    client = OpenAI(api_key=api_key, base_url=base_url)
+    client = _get_vl_client(api_key)
+    max_tokens = int(os.getenv("SAP_VL_MAX_TOKENS", "4096"))
 
     # GPT PROMPT
 
@@ -85,7 +96,7 @@ Respond using this format:
                 ],
             }
         ],
-        max_tokens=4096,
+        max_tokens=max_tokens,
     )
     text = response.choices[0].message.content
     print(text)
