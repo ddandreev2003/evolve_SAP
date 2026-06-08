@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The prompt describes a structural impossibility (an upside-down bouquet typically defies plant growth and vase physics). Following Strategy B, we avoid identifying flowers early to prevent the model from locking in an upright geometry. We start with a structural proxy of bare stems sticking up, which establishes the inverted orientation and vertical mass. Once the geometry stabilizes in step 4, we introduce the full 'bouquet of flowers' concept onto the already fixed layout.",
+  "prompts_list": [
+    "A bundle of bare plant stems sticking straight up out of a vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The prompt contains a physical contradiction regarding lighting physics (shadow direction vs. light source). According to Strategy A, this is resolved by establishing the cat's structure with normal lighting first. Starting with a standard scene ensures the cat's geometry is locked before introducing the impossible shadow behavior, which occurs during the lighting refinement phase (after step 5).",
+  "prompts_list": [
+    "A realistic cat sitting on the ground in bright sunlight",
+    "A realistic cat sitting on the ground in bright sunlight with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

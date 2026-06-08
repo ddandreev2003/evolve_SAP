@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Five fingers is a strong prior that prevents anatomical deviation in structural stages. By starting with a bare hand definition, the model locks the digit count and limb geometry during the early denoising phases. Once the shape is fixed, applying the \"glove\" texture preserves the incorrect count rather than correcting it to five.",
+  "prompts_list": [
+    "A bare hand with six fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

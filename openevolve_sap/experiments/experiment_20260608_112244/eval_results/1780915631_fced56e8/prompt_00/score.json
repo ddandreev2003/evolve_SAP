@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780915631_fced56e8/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but it is oriented **right-side up** (blooms facing upward), directly contradicting the prompt’s requirement for an \"upside down\" arrangement. While the correct objects (bouquet, vase) are present, the core action—\"upside down\"—is entirely misrepresented. The scene depicts a standard, functional bouquet arrangement rather than the specified inverted orientation, failing to illustrate the intended situation concretely. This is a critical deviation from the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine. The bouquet and vase are rendered with realistic detail: petals, leaves, and stems exhibit natural textures and anatomical coherence; lighting is consistent with soft highlights on the glass vase and flowers; perspective is stable; and all elements connect logically (e.g., stems properly extend into the vase without floating or merging). No artifacts, distortions, or broken geometry are present—this is a clean, professional photograph with no visible flaws."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780915631_fced56e8/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a bouquet of flowers in a vase, but the arrangement is **right-side up** (stems in the vase, blooms facing upward), directly contradicting the prompt's requirement of being \"upside down.\" While the correct objects (bouquet, vase) are present, the core action and spatial relationship specified in the prompt are entirely misrepresented. The scene illustrates a conventional floral arrangement rather than the inverted scenario described, failing to convey the intended meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The flowers, vase, and background exhibit consistent lighting, realistic textures, and precise detailing (e.g., petal gradients, leaf veins, and vase ridges). No rendering artifacts, distortions, or anatomical inconsistencies are present. Elements connect naturally (stems correctly positioned in the vase), and complex areas like the flower clusters and vase curvature are rendered with high coherence and realism."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

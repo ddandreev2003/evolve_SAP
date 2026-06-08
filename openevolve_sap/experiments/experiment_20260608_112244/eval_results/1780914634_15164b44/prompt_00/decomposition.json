@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet contradicts typical gravity expectations. Strategy B is used to avoid locking the model into an upright geometry. Starting with long stems hanging down establishes the inverted orientation early before assigning the \"bouquet\" identity.",
+  "prompts_list": [
+    "Long green stems hanging downwards from a glass container rim",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This prompt describes a structural contradiction where flowers defy gravity. Strategy B is used to establish the impossible geometric orientation (stems up, blooms down) before introducing the semantic label 'bouquet', ensuring the visual layout isn't corrected to a natural state during later denoising stages.",
+  "prompts_list": [
+    "Green plant stems emerging upwards from the rim of a vase, with leaves hanging downwards below the base",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780902063_a1ddc0ad/prompt_01/image_00.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image depicts a white glove (correct object and color), but it has only 5 fingers (thumb + 4 digits), not 6 as specified in the prompt. The glove is shown functionally as a hand covering, but the critical attribute of finger count is incorrect. While the main subject (glove) is present and contextually appropriate, the missing finger represents a significant deviation from the prompt’s core requirement.",
+        "quality score": 5,
+        "quality explanation": "The image is photorealistic and flawlessly rendered. The glove’s texture, folds, and lighting are consistent and natural, with no distortions or artifacts. Fingers and thumb are anatomically coherent, with clean edges and realistic shading. The black background enhances focus without introducing visual noise, and all elements appear physically grounded with no floating or fused geometry."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780902063_a1ddc0ad/prompt_01/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a human hand with five fingers wearing individual white fingertip coverings (not a glove), and there is no sixth finger present. The prompt specifies a \"white glove\" with \"6 fingers,\" but the image shows neither a full glove nor six fingers. The object is misidentified (fingertip caps vs. a glove), the count is incorrect (5 vs. 6), and the functional context of a glove is entirely absent. The scene fails to represent the prompt’s core elements (glove structure, six-finger count) and instead shows a biologically standard hand with partial coverings, making it fundamentally misaligned.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with no visible rendering artifacts. The hand anatomy is realistic and undistorted, with consistent skin texture, natural lighting, and clean perspective. The white fingertip coverings are sharply defined, properly proportioned, and cohesively integrated with the fingers (no floating, clipping, or fusion issues). Lighting is even across the scene, and all elements exhibit physical coherence and deliberate composition. The image is technically flawless and visually realistic."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

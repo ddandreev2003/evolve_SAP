@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting/material contradiction violating physics laws. Using Strategy A, we begin with the object and environment under natural, coherent lighting. At step 4, we introduce the impossible shadow direction. Switching early would cause the model to struggle with the global composition, whereas late switching ensures the cat is recognized correctly before altering the lighting vector.",
+  "prompts_list": [
+    "A black cat sitting on the floor with natural lighting",
+    "A black cat sitting on the floor, its shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

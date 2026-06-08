@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780917268_10714dc7/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a normal bouquet of flowers in a vase with the flower heads positioned at the top and stems extending downward into the water. This directly contradicts the prompt's requirement of an \"upside down\" arrangement, where the flower heads should be at the bottom of the vase with stems pointing upward. While the main components (bouquet, flowers, vase) are present, the key attribute of being \"upside down\" is completely misrepresented, making the image show the exact opposite of what was requested.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts, distortions, or broken elements. The lighting is natural and consistent, textures are well-defined, and perspective is realistic. The flowers, vase, and table are all clearly rendered with natural connections between elements. There are no floating objects, clipped parts, or merged shapes - the composition is clean, realistic, and fully coherent throughout."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780917268_10714dc7/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains the correct objects (bouquet of flowers and a vase), but critically misrepresents the key element of the prompt. The prompt specifies \"a bouquet of flowers is upside down in a vase,\" which would require the flower heads to be positioned downward inside the vase with stems pointing upward. However, the image shows a normally arranged bouquet with flower heads facing upward and stems properly inserted into the vase. This is a fundamental misrepresentation of the intended scenario, as the upside-down orientation is the central concept that's completely missing from the image.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering flaws. The flowers, leaves, and vase are all clearly defined with natural textures and realistic details. Lighting is consistent and appropriate for the scene, with proper highlights and shadows on the vase and flowers. There are no distortions, artifacts, or coherence issues - all elements connect naturally with proper perspective and physical relationships. The composition is clean and professionally rendered."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

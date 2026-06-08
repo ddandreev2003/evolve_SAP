@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove inherently implies five digits to the diffusion model, creating a structural contradiction with the requested six fingers. Following Strategy B for spatial contradictions, we begin with a bare hand proxy to anchor the unusual anatomy before introducing the restrictive clothing category to prevent the model from reverting to a standard five-fingered glove geometry.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers spread apart",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

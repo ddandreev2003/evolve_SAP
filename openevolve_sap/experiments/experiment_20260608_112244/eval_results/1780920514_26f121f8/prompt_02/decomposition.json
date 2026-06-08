@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction depends on physics and lighting setup. Establishing the light source and object shape first allows the impossible shadow interaction (facing the light) to be injected during fine-detail rendering without collapsing the initial layout.",
+  "prompts_list": [
+    "A cat standing on the ground, illuminated from the right",
+    "A cat standing on the ground, illuminated from the right, casting a shadow to the right towards the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

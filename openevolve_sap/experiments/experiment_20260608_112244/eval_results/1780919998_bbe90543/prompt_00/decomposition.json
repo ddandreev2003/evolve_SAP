@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upwards from a vase. To prevent the model from generating a standard upright bouquet, Sub-prompt 1 forces the geometric contradiction early using a proxy description of stems and hanging blooms, ensuring the coarse structure is defined before identity materials like 'flowers' lock in. This follows Strategy B for structural contradictions by avoiding normal flower geometry initially.",
+  "prompts_list": [
+    "Bare flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

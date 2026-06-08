@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780924202_bd13e6f7/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet with flowers oriented upright in a vase, with stems extending upward and blooms facing outward. The prompt explicitly requires an \"upside down\" arrangement, meaning the flowers should be inverted (e.g., blooms pointing downward into the vase, stems protruding upward). No elements suggest inversion—the vase is upright, flowers face outward, and stems are positioned conventionally. The core action (\"upside down\") is entirely absent, rendering the image non-compliant with the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The vase, flowers, and background exhibit consistent lighting, natural textures, and coherent perspective. Stems, petals, and baby’s breath are sharply defined with no distortion, warping, or artifacts. All elements connect naturally (e.g., stems emerge from the vase without clipping), and the composition is physically plausible. The rendering is clean, realistic, and free of defects."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780924202_bd13e6f7/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of white roses in a white vase, but the arrangement is in a standard upright position rather than upside down as specified in the prompt. While the main components (bouquet, flowers, and vase) are present, the critical element of the bouquet being \"upside down\" is completely missing. The flowers are positioned with blooms facing upward and stems extending downward into the vase, which is the conventional arrangement, not the inverted orientation requested. This represents a significant misrepresentation of the key attribute in the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with excellent visual fidelity. The flowers, leaves, and vase are all rendered with natural textures and realistic details. Lighting is consistent and natural, creating appropriate shadows and highlights. The composition shows proper perspective with no distortion, artifacts, or visual inconsistencies. All elements connect naturally with no floating objects, clipped parts, or merged shapes. The image is clean, realistic, and fully coherent with no visible flaws in rendering."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

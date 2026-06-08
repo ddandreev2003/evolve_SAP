@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upright, creating a spatial contradiction when inverted. To prevent the model from defaulting to normal vase geometry, the first prompt explicitly describes the physical orientation of stems and blossoms without using the term 'bouquet'. The second prompt applies the full semantic label once the layout is established.",
+  "prompts_list": [
+    "Bare flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

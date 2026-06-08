@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Human hands and gloves typically have five digits. Mentioning \"glove\" immediately can lock the 5-finger geometry; describing the anatomical structure (hand) first ensures the extra digit is defined before applying the clothing layer.",
+  "prompts_list": [
+    "A human hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

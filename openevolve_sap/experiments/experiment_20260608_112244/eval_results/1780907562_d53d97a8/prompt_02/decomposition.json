@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting property rather than gross geometry. Starting with a standard cat image establishes the correct physical form and composition during the critical low-frequency steps (0–4). The contradiction regarding light physics is introduced in the second stage (after step 4) so the model retains the accurate anatomy while attempting to render the impossible shadow logic.",
+  "prompts_list": [
+    "A realistic grey cat sitting on concrete in sunlight",
+    "A realistic grey cat sitting on concrete with a shadow facing the opposite direction of the light source"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

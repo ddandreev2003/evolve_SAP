@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural spatial contradiction where gravity is inverted. Per Strategy B, we cannot start with a normal upright vase as the model will lock the geometry too early. Instead, the first prompt describes the inverted geometry (stems up, vase bottom up) so the object structure remains consistent during the transition to the full semantic target.",
+  "prompts_list": [
+    "Stems pointing upwards, inverted vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

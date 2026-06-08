@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a material/lighting contradiction rather than a structural one. The scene layout stabilizes first, and the impossible shadow orientation is introduced later (Step 5) once the coarse object shapes are settled to maintain visual coherence.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The prompt describes a physical impossibility where a shadow points contrary to the light source. Following Strategy A, the scene geometry and consistent lighting direction are established first to lock the low-frequency structure. The impossible shadow behavior is introduced in the second prompt after the layout stabilizes, with the abstract \"opposite\" translated to the concrete description of casting towards the light source.",
+  "prompts_list": [
+    "A realistic cat standing on pavement with sunlight illuminating it from the left",
+    "A realistic cat standing on pavement with sunlight illuminating it from the left, but its shadow is cast towards the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical counts are low-frequency features resolved early. Starting with a standard glove would lock five fingers permanently. Strategy B requires establishing the anomalous digit count on a naked hand before mapping the glove material over it.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

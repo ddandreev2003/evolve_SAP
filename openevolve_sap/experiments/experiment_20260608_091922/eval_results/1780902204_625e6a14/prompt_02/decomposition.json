@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt contains a lighting contradiction where the shadow violates physics rules. According to Strategy A, large-scale subject geometry must be stabilized before conflicting lighting information is introduced. Starting with a cat in natural sunlight establishes the animal's form and implies standard lighting physics. The impossible shadow direction is swapped in at step 4, allowing the model to adjust the high-frequency shading details without deforming the underlying body shape.",
+  "prompts_list": [
+    "A cat standing in sunlight casting a natural shadow",
+    "A cat standing in sunlight with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

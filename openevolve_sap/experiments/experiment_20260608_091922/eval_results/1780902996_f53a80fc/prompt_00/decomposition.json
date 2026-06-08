@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates standard gravitational priors. Using a structural proxy describing stems pushing through and resting below forces the inverted geometry irreversibly before the final floral identity is assigned at step 6.",
+  "prompts_list": [
+    "A bundle of bare green stems sticking up out of a vase, with heavy flower heads resting on the table below.",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

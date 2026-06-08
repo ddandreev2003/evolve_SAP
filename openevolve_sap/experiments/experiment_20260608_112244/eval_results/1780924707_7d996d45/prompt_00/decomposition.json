@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upwards, so standard vases imply upright stems. Naming \"bouquet\" early biases the model toward natural geometry. Describing the physical inversion of stems (steps 0-4) establishes the impossible spatial structure during the geometry phase (3-6) before introducing the semantic label, preventing the model from auto-correcting to a normal arrangement.",
+  "prompts_list": [
+    "bare green flower stems pointing straight up into the air out of a clear container, with flower heads hanging down near the table",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upright with stems submerged in water, creating a spatial contradiction when placed upside down. Using bare stems first encodes the inverted geometry during the layout phase (steps 0-5). Once the structure is irreversible, renaming them as a bouquet preserves the impossible pose without reverting to natural growth.",
+  "prompts_list": [
+    "Bare green stems sticking straight up from a clear glass vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

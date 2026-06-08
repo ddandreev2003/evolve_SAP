@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The prompt violates botanical and physical priors, as flowers and stems naturally orient upwards in a vase. To prevent the model from defaulting to a standard upright arrangement during the critical geometry phase (Steps 0–4), the first sub-prompt uses a structural proxy (\"bare green stems\") to force the inverted position before introducing the semantic identity of \"flowers\". The switch occurs at Step 4 to finalize the inverted geometry before texture details are generated.",
+  "prompts_list": [
+    "Green stems arranged upside down in a vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

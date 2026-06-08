@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Models default gloves to five fingers based on common anatomy. Starting with \"hand with 6 fingers\" locks the skeletal geometry before the fabric material (glove) is applied to avoid the model erasing the extra digit during refinement.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

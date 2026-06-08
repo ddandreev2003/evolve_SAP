@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting contradiction rather than a structural one. Following Strategy A, the first prompt establishes the stable geometry and pose of the cat under neutral lighting (Steps 0–4). The second prompt introduces the impossible shadow behavior at Step 5, allowing the model to render the fine lighting details while violating physical priors without disrupting the object structure.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow faces the opposite direction of the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

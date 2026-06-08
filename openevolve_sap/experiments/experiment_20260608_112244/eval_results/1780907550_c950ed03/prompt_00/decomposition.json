@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet naturally grows upward; rendering it upside down inside a vase violates standard botany and gravity expectations. Starting with a normal vase would lock upright geometry, so we begin with the inverted structural proxy to establish the correct topology early.",
+  "prompts_list": [
+    "A vase held upside down containing flower stems",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

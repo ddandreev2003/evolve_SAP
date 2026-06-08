@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove has five fingers, making six a structural contradiction. Starting with a normal glove would lock the five-finger geometry incorrectly. Using Strategy B, we start with a bare hand explicitly defined with six digits to establish the unusual topology first, then transition to the white glove texture once the shape is stable.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

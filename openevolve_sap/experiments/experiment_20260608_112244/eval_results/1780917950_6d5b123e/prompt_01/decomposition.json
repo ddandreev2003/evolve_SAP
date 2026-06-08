@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove implies five fingers, creating a structural contradiction. Strategy B requires avoiding the \"glove\" label early to prevent the model from locking normal pentadactyl geometry. The first prompt establishes the impossible six-finger shape using a neutral \"hand\" proxy. The second prompt assigns the \"white glove\" identity once the coarse geometry is stable.",
+  "prompts_list": [
+    "A bare hand with exactly six fingers",
+    "A white glove with exactly six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

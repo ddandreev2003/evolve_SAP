@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This involves a structural/spatial contradiction (inverted gravity/vessel function). Strategy B is used: avoid naming \"bouquet\" initially to prevent upright vase geometry lock. Instead, establish the inverted container geometry and bare stems in Steps 0-5, then introduce the floral identity once the structure is fixed. Switching at step 5 ensures the odd orientation is locked before adding semantic details.",
+  "prompts_list": [
+    "A vase resting upside down on its rim, bare green stems sticking straight up into the air",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Upside-down bouquets defy gravity and typical object usage. Starting with a vase held upside down with bare stems establishes the inverted geometric structure early, ensuring the flower orientation remains consistent before defining the object identity.",
+  "prompts_list": [
+    "A vase held upside down with bare flower stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

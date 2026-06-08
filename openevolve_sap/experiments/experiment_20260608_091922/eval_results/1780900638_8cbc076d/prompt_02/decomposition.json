@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction depends on lighting physics. Strategy A establishes the coarse scene with consistent lighting first to stabilize the cat's structure. The impossible shadow vector is introduced in the second stage to prevent conflict with the initial spatial layout.",
+  "prompts_list": [
+    "A cat standing in sunlight casting a natural shadow",
+    "A cat with a shadow facing the opposite direction of the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

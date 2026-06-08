@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922508_c5ec1337/prompt_00/image_00.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, with the main subjects (bouquet and vase) correctly present. However, the bouquet is arranged in a normal upright position (blossoms facing upward, stems downward in water), directly contradicting the prompt's requirement that the bouquet be \"upside down.\" This critical attribute—where flowers should point downward while still contained in the vase—is entirely missing. The scene illustrates a standard floral arrangement rather than the specified inverted state, resulting in a misrepresentation of the core action and intent.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity photograph with no visible rendering artifacts, distortions, or inconsistencies. Lighting is natural and even, textures (e.g., petals, glass vase) are crisp and realistic, and perspective is coherent throughout. All elements—flowers, vase, and background—are physically plausible, well-formed, and seamlessly integrated, with no issues like floating objects, melted features, or anatomical errors. The composition is visually clean and professional."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922508_c5ec1337/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard upright bouquet of flowers in a vase, with blooms facing upward and stems inserted normally into the vase. The prompt explicitly requires an \"upside down\" arrangement, meaning the flowers should be inverted (e.g., blooms pointing downward into the vase or the vase itself inverted). No such inversion is present—neither the bouquet nor the vase is oriented upside down. The scene illustrates a conventional floral arrangement rather than the specified scenario, failing to convey the core requirement of the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with no visible rendering artifacts. Lighting is natural and consistent, textures (e.g., petals, vase ridges) are sharp and realistic, and perspective is coherent. All elements—flowers, leaves, and vase—are anatomically and structurally sound, with no distortion, warping, or implausible blending. The composition is visually clean and professionally rendered, meeting the highest standards of realism."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This prompt violates physical priors regarding gravity and container function (flowers typically point up in a vase). Starting with \"flowers in a vase\" would lock upright geometry that resists later inversion. Using Strategy B, the first prompt establishes the inverted structural proxy (vase orientation and stem direction) early to prevent the model from auto-correcting the pose, then introduces the specific floral identity in the second stage.",
+  "prompts_list": [
+    "An inverted vase with green stems hanging downwards",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

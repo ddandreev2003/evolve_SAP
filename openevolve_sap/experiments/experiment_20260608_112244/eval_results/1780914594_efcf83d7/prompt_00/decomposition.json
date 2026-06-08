@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The physical orientation of a bouquet contradicts gravity. To prevent the model from enforcing standard upright growth patterns, the structural geometry (upside-down vase) is forced early before refining the final object identity.",
+  "prompts_list": [
+    "A glass vase resting upside down on its rim, bare green stems pointing upwards",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves default to five digits, locking the geometry incorrectly if introduced early. Starting with a six-fingered hand establishes the anatomical error during the early layout phase, allowing the glove identity to overlay without conflict.",
+  "prompts_list": [
+    "A hand with six fingers",
+    "A white glove on a hand with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

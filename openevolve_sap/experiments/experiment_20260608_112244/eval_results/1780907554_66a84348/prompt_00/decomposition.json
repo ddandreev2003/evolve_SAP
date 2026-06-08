@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Upside-down arrangements violate normal gravity expectations. Starting with an explicit structural proxy ensures the inverted geometry is locked before adding semantic labels.",
+  "prompts_list": [
+    "stems pointing up, inverted vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

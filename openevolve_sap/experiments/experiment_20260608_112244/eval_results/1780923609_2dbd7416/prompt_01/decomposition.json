@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a geometric property locked in early denoising steps (0-4). If \"glove\" is mentioned first, the model defaults to standard anatomy (5 fingers). Strategy B applies here: start with a bare hand proxy to enforce the impossible 6-finger layout, then introduce the glove material after the structure is fixed.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

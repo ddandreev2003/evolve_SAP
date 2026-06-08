@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows rely on lighting direction established early but are often fine-tuned later. Using Strategy A, the initial prompt fixes the subject's pose and location. The switch introduces the physics violation at step 5; because the layout is locked, the model cannot adjust the light source to fix the shadow alignment, forcing the impossible rendering.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow explicitly facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

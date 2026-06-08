@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An inverted bouquet violates gravity and container logic. Using Strategy B, we define the impossible geometry (upright stems in an inverted vessel) with a proxy before naming the full object to ensure the model locks the unusual spatial layout during early denoising.",
+  "prompts_list": [
+    "An inverted vase held upside down, with bare flower stems pointing straight up into the air",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

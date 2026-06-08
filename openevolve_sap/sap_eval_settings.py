@@ -23,6 +23,14 @@ def get_num_inference_steps() -> int:
     return _env_int("SAP_NUM_INFERENCE_STEPS", 30)
 
 
+def get_seeds_list() -> list[int]:
+    """Comma-separated seeds for FLUX generation (e.g. SAP_SEEDS_LIST=30498,30499)."""
+    raw = os.getenv("SAP_SEEDS_LIST", "30498,30499").strip()
+    if not raw:
+        return [30498, 30499]
+    return [int(x.strip()) for x in raw.split(",") if x.strip()]
+
+
 def system_ram_gb() -> float:
     """Total system RAM from /proc/meminfo (GiB)."""
     with open("/proc/meminfo", "r", encoding="utf-8") as f:

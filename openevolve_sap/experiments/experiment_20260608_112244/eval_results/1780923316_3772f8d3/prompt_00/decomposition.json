@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural contradiction where floral stems defy typical growth orientation within a container. Following Strategy B, we start with bare stems enforcing the inverted geometry to prevent the model from defaulting to a standard upright arrangement. Once the shape is locked, we introduce the semantic label \"bouquet\".",
+  "prompts_list": [
+    "bare flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "a bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780900648_a086d258/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but it is **not upside down** as required by the prompt. The flowers are arranged in a standard upright position with blooms facing upward and stems extending downward into the vase. The critical element of \"upside down\" is entirely absent—there is no inversion of the bouquet or vase, and the scene depicts a normal floral arrangement. While the core objects (bouquet, flowers, vase) are present, the key action/condition specified in the prompt is misrepresented, violating the functional requirement of the described situation.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity photograph with no visible rendering flaws. Lighting is natural and consistent, textures (e.g., vase speckling, petal gradients) are realistic, and perspective is coherent. All elements—flowers, leaves, vase, and background—are sharply defined, anatomically correct, and free from distortions, warping, or artifacts. The composition is physically plausible, with no floating objects or merged shapes, resulting in a clean, realistic, and fully coherent visual."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780900648_a086d258/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bouquet of flowers arranged **normally** in a vase (stems down, blooms upright), directly contradicting the prompt's requirement for an \"upside down\" bouquet. No elements suggest inversion—flowers, vase, and composition all follow standard orientation. The core action (\"upside down\") is entirely absent, failing to convey the prompt's meaning even conceptually.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. Lighting is soft and consistent, textures (petals, leaves, vase ridges) are realistic, and perspective is natural. No artifacts, distortions, or broken elements exist—flowers, foliage, and the vase exhibit coherent anatomy, precise detailing, and seamless integration. The composition is professionally rendered with no physical inconsistencies."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet naturally grows upwards; forcing an inverted structure early prevents the model from correcting the pose later. Describing stems hanging down establishes the spatial contradiction before naming the object fully.",
+  "prompts_list": [
+    "Flower stems emerging from a vase, with petals hanging downwards towards the floor.",
+    "A bouquet of flowers is upside down in a vase."
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

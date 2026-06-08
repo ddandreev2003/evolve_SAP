@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical priors strongly associate gloves with five digits. Establishing the glove object first without specifying the count prevents early rejection of the anatomy, allowing the anomaly to be integrated during the fine-feature stage.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

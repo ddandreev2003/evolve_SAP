@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The request involves a structural anatomical contradiction (six fingers vs. the common five-finger glove prior). Strategy B requires avoiding the \"normal glove\" start, which would lock in five fingers during the early geometry phase. Starting with a \"bare hand\" explicitly encoding six fingers establishes the unique topology before applying the glove material and color identity.",
+  "prompts_list": [
+    "A bare hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

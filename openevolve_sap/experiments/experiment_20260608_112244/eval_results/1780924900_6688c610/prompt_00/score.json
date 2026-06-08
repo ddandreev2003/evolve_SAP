@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780924900_6688c610/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet of flowers arranged upright in a vase, with blooms facing upward and stems descending into the container. The prompt explicitly requires the bouquet to be *upside down*, meaning the flowers should be inverted (e.g., blooms pointing downward into the vase). This critical element is entirely absent; the scene shows a conventional, right-side-up arrangement. No conceptual or contextual interpretation could reconcile this with the prompt’s requirement for inversion, resulting in a complete failure of semantic fidelity.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine. The flowers, vase, and background exhibit consistent lighting, sharp detail, and natural textures. Petals, stems, and leaves are anatomically coherent with no distortion, warping, or fusion. The vase’s shape (including its handle) is physically plausible, and all elements connect naturally without floating or clipping artifacts. The composition maintains realistic perspective and color harmony, with no rendering flaws or surreal distortions."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780924900_6688c610/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet of flowers arranged upright in a vase, with blooms facing upward and stems inserted normally into the vase. The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be inverted (e.g., stems pointing upward, blooms toward the base of the vase). No elements in the image convey this inversion—there is no visual indication of the bouquet being flipped or defying typical orientation. While the correct objects (bouquet, vase, flowers) are present, the core action and situation described in the prompt are entirely absent, resulting in a complete failure of semantic fidelity.",
+        "quality score": 5,
+        "quality explanation": "The image is rendered with exceptional clarity and realism. Lighting is soft and consistent, highlighting natural textures in the petals, leaves, and vase. All elements are anatomically coherent: flowers show precise petal structure, leaves have realistic veining, and the vase exhibits smooth, uniform ridges without distortion. No artifacts, warping, or broken elements are present—edges are sharp, colors are vibrant yet natural, and perspective is physically plausible. The composition is visually harmonious and free of any rendering flaws."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

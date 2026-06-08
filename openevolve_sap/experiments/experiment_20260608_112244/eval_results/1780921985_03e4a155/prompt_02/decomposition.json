@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows usually align opposite to light sources, creating a physics contradiction here. We stabilize the scene with consistent lighting first, then introduce the shadow inversion at the final stage to avoid destabilizing the initial structure.",
+  "prompts_list": [
+    "A cat standing outside, illuminated from the right",
+    "A cat standing outside, illuminated from the right, casting its shadow to the same side as the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

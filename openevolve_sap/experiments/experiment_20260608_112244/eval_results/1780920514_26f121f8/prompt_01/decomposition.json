@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Fingers are anatomical features established early in the denoising process. Introducing the \"hand\" first with the correct count prevents the \"glove\" object from overriding the geometry with standard 5-finger training data.",
+  "prompts_list": [
+    "A realistic human hand with exactly six fingers",
+    "A white glove with exactly six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

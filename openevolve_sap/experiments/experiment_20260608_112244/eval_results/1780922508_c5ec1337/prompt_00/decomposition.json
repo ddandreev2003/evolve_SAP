@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet contradicts typical display norms where stems are submerged and heads point up. Using the term \"bouquet\" immediately biases the model toward upright geometry. Describing the stem and blossom positions physically first forces the correct layout before identifying the object.",
+  "prompts_list": [
+    "Flower stems pointing straight up out of a vase, with blossom heads hanging down",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

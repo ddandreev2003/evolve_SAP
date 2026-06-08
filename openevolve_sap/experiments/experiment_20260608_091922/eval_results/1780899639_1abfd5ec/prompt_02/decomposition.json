@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow alignment is governed by lighting physics, which conflicts with the object pose in this prompt. Establishing the cat and environment first ensures identity, then the contradictory lighting constraint is applied to the secondary element.",
+  "prompts_list": [
+    "A cat sitting in a bright room",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

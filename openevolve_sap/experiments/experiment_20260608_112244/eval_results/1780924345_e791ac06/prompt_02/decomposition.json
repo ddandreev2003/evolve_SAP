@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows contradicting light direction represent a physical impossibility best resolved using Strategy A (Lighting Contradiction). The first prompt establishes the cat's geometry and explicit lighting direction to lock the base structure. The second prompt introduces the impossible shadow physics once the scene layout is stable, ensuring the anomaly appears as a detail rather than distorting the overall form.",
+  "prompts_list": [
+    "A cat in a yard illuminated from the right",
+    "A cat in a yard illuminated from the right with a shadow cast to the right"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

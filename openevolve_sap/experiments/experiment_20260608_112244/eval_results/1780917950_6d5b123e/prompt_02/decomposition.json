@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows depend on consistent lighting physics. We must establish the light source and cat geometry in the early steps (0-4) before introducing the physically impossible shadow direction. By defining the light concretely first, the model anchors the scene structure, allowing the contradictory shadow to appear only during the mid-generation phase.",
+  "prompts_list": [
+    "A cat sitting on the ground, strongly illuminated from the left",
+    "A cat sitting on the ground, strongly illuminated from the left, with a shadow cast toward the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

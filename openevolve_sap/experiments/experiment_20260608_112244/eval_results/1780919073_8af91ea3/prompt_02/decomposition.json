@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This requires Strategy A to control lighting physics. We first establish the scene with consistent real-world lighting (shadow matches light source), then introduce the violation. Switching at step 5 allows the cat's shape to settle before the lighting rules are inverted, creating the impossible effect.",
+  "prompts_list": [
+    "A black cat sitting on the ground, illuminated by a light source coming from the right side",
+    "A black cat sitting on the ground, illuminated by a light source coming from the right side, casting a shadow towards the light source on the right"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

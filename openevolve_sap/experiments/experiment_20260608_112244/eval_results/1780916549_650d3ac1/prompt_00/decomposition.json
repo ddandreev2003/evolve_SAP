@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This violates standard botanical geometry where roots attach to the base. If prompted normally, the model draws stems exiting the top. A proxy describing stems attaching to the bottom rim encodes the inverted topology early, allowing the material definition of \"flowers\" to map onto the established upside-down mass in subsequent steps.",
+  "prompts_list": [
+    "A vase with green stems extending from the bottom opening",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

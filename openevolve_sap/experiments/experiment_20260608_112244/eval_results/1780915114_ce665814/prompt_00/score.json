@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780915114_ce665814/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet with flowers oriented upright in the vase (blooms facing upward, stems submerged in water). The prompt explicitly requires the bouquet to be *upside down*, meaning the blooms should face downward toward the table while stems extend upward out of the vase. This critical inversion is entirely absent. While the vase and flowers are present, the core action (inverted orientation) is misrepresented, failing to convey the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with no visible artifacts. Lighting is natural and consistent, textures (petals, leaves, glass, wood) are realistic, and perspective is coherent. All elements are sharply defined, with accurate anatomy (e.g., undistorted flower shapes, natural stem positioning) and no warping, clipping, or blending issues. The composition is visually clean and professional."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780915114_ce665814/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a bouquet of flowers in a vase, but the bouquet is oriented upright (with blooms facing upward and stems extending downward into the vase), contrary to the prompt's requirement that it be \"upside down.\" The key attribute of inversion is entirely missing, as the scene shows a standard, functional arrangement rather than the specified inverted state. While the core objects (bouquet and vase) are present, the absence of the upside-down orientation—a central and non-negotiable element of the prompt—constitutes a significant misrepresentation of the intended meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine, with no rendering artifacts or distortions. Lighting is soft and natural, textures (e.g., the smooth vase, delicate flower petals, and woven string) are realistic and consistent, and perspective is coherent throughout. All elements, including the complex floral arrangement and the vase's form, are well-defined, physically plausible, and free from warping, clipping, or unnatural blending. The composition is clean and fully coherent, with no visible flaws."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

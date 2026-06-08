@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A six-fingered glove violates standard anatomy which diffusion models learn as fixed geometric priors. Strategy B dictates starting with the anatomical anomaly (the hand structure) before applying the material identity (the glove), ensuring the extra digit persists through the generation process.",
+  "prompts_list": [
+    "A human hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

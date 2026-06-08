@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard floral arrangements naturally grow upward, contradicting the specified \"upside down\" state. If prompted normally, the model corrects the geometry to vertical growth. A structural proxy explicitly describing stems emerging from the bottom anchors the inverted orientation early, preventing automatic correction during refinement.",
+  "prompts_list": [
+    "A vase with green stems emerging from the bottom and flowers dangling below",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

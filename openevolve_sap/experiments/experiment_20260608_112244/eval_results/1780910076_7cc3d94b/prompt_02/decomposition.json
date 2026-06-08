@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Opposite shadows violate lighting physics. The first prompt establishes the cat's form and environment neutrally. Switching to the specific lighting contradiction later allows the model to maintain coherent object structure while overriding the default shadow alignment rules.",
+  "prompts_list": [
+    "A cat standing in bright sunlight with a natural shadow",
+    "A cat standing in bright sunlight with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

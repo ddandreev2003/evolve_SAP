@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet in a vase is typically oriented upright due to gravity. Directly prompting an inverted arrangement often conflicts with the vase’s default structure. Following Strategy B, the first sub-prompt establishes the geometry using a proxy (bare stems) to avoid locking in a normal \"flower arrangement\" layout. The switch occurs after coarse structure is fixed (step 5), allowing the second prompt to apply the contradictory \"upside down\" floral identity to the established vase-stem skeleton.",
+  "prompts_list": [
+    "A vase with bare green stems sticking straight up out of it",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

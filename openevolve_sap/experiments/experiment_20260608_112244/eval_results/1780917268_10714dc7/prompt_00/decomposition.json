@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Upside-down vases defy gravity and physical priors. Starting with a normal vase would lock the geometry upright. We must define the inverted structure immediately to ensure the stems remain pointing upwards during denoising.",
+  "prompts_list": [
+    "An inverted vase with stems pointing up",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

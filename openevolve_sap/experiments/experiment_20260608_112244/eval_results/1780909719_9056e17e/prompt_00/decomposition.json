@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Bouquets are conventionally arranged upright in vases. Using the \"upside down\" constraint creates a structural contradiction where the model might default to a normal orientation. Following Strategy B, Sub-prompt 1 establishes the inverted geometry (stems from bottom) without relying on the word \"bouquet\" initially to prevent the model from locking onto a normal floral prior. Sub-prompt 2 refines the concept to the target phrasing once the geometry is stable.",
+  "prompts_list": [
+    "A vase with flower stems protruding from the bottom",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

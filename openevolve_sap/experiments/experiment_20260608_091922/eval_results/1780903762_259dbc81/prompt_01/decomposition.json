@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Extra digits violate anatomical reality and cannot be easily interpolated late-stage. Following Strategy B for structural/skeletal contradictions, the first prompt describes the impossible hand geometry literally without the clothing, allowing the six-finger count to lock before adding the glove texture.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct spread fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

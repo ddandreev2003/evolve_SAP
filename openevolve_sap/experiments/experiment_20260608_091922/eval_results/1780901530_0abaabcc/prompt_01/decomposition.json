@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A glove inherently implies a 5-fingered human hand. By starting with a bare hand, the model prioritizes the non-standard topology (6 digits) before applying the glove material. This avoids the strong 'glove=5 fingers' prior locking the geometry too early.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

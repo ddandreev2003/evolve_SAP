@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers violate human anatomy norms. Defining the hand geometry with extra digits first prevents the model from correcting it to five fingers when applying the glove texture.",
+  "prompts_list": [
+    "A hand with six fingers visible",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

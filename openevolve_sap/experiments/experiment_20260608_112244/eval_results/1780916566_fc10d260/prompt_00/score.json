@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916566_fc10d260/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains a bouquet of flowers in a vase, but the bouquet is oriented normally (flowers facing upward, stems submerged in water). The prompt specifies the bouquet should be *upside down*, which would require the flowers to hang downward with stems protruding upward from the vase. This critical action/attribute is entirely missing, significantly misrepresenting the prompt’s intent. While the core objects (bouquet, vase) are present, the absence of the upside-down orientation makes the scene inconsistent with the described scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, realistic photograph with no visible rendering artifacts. The flowers, vase, and background are sharply defined, with natural lighting, consistent perspective, and coherent textures. Stems are properly submerged in water, and all elements (petals, leaves, vase shape) are anatomically and structurally accurate. The composition is visually polished and free of distortions or implausible blending."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916566_fc10d260/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the arrangement is in the standard upright position rather than being upside down as specified in the prompt. The correct objects (bouquet and vase) are present, but the critical element of the flowers being inverted is completely missing. The stems are properly inserted into the vase with blooms facing upward, which is the opposite of what the prompt requires. This represents a significant misrepresentation of the core concept in the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The flowers (blue and white blooms with green buds), leaves, and vase are all well-formed with natural textures. Lighting appears consistent and natural, with soft shadows that enhance the three-dimensional appearance. The perspective is logical, showing the vase properly positioned on a wooden surface. There are no rendering artifacts, distortions, or broken elements - all components connect naturally without any melting, fusing, or unnatural blending. The image appears to be a high-quality photograph with excellent detail throughout."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

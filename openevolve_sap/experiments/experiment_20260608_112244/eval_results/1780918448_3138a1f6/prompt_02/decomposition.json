@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt involves a physical lighting contradiction (shadows defying light source direction), which fits Strategy A. To ensure the cat's body shape remains coherent, we first establish the geometry and standard lighting physics without the impossible element. The second prompt introduces the conflicting shadow behavior only after the coarse layout is locked. The word \"opposite\" is translated into a concrete directional instruction (\"toward the light source\").",
+  "prompts_list": [
+    "A cat standing on ground with sunlight illuminating from the left side",
+    "A cat standing on ground with sunlight illuminating from the left side, but the shadow is cast toward the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

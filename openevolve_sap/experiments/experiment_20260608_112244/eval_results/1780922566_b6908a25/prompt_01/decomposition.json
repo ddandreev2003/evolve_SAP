@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Extra digits require anatomical topology changes. Strategy B dictates starting with a bare hand where finger count is visible before applying the glove texture, which might otherwise hide the anomaly or conflict with standard finger counts during denoising.",
+  "prompts_list": [
+    "a bare human hand with exactly 6 fingers",
+    "a white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The prompt contains a physical contradiction regarding shadow direction versus light source. Following Strategy A for lighting contradictions, the first sub-prompt establishes the cat's geometry and a standard light direction during the early low-frequency steps (0–5). The second sub-prompt introduces the impossible shadow direction once the coarse structure is locked, preventing geometry corruption.",
+  "prompts_list": [
+    "A cat sitting on the ground, illuminated from the front",
+    "A cat sitting on the ground, illuminated from the front, but its shadow explicitly faces the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

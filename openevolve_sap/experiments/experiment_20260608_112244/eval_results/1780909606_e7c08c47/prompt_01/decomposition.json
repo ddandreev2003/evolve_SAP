@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove with six fingers violates standard anatomical priors where gloves fit five-fingered hands. Per Strategy B for structural contradictions, the non-standard geometry must be established in the earliest steps (0–4) before shape lock occurs; starting with a \"normal glove\" would reinforce five fingers. Instead, we first define the six-finger topology using a basic hand, then switch to the target material (white glove) once the geometry is stable.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

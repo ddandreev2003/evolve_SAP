@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates botanical gravity and typical vase orientation. Starting with a proxy that encodes the inverted geometry ('vase held upside down') prevents the model from locking in the standard upright vase structure, which would conflict with the final inverted request.",
+  "prompts_list": [
+    "A vase held upside down with bare stems sticking up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows typically align with light source and object orientation. Introducing a normal shadow first ensures the shadow appears correctly before subverting the lighting physics to face the opposite direction, preserving the shadow's existence despite the contradiction.",
+  "prompts_list": [
+    "A cat standing with a shadow on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

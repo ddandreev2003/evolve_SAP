@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates plant growth physics. Strategy B dictates avoiding the target label \"bouquet\" in the first prompt to prevent locking upright geometry. Instead, we describe the physical arrangement of stems and blooms directly.",
+  "prompts_list": [
+    "Green plant stems extending downwards out of a glass vase opening, flower heads resting flat on the table surface below",
+    "An upside-down bouquet of colorful roses in a glass vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

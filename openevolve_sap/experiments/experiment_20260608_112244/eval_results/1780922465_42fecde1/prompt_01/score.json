@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922465_42fecde1/prompt_01/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which satisfies the \"white glove\" part of the prompt. However, it clearly has 5 fingers (including the thumb), not 6 as specified in the prompt. The key element of having 6 fingers is significantly misrepresented. While the main subject (a white glove) is present, the critical attribute described in the prompt is incorrect, making the image fail to convey the intended meaning. This constitutes a significant misrepresentation of the prompt's key requirement.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is rendered with consistent texture, proper lighting, and accurate perspective against the black background. All elements appear physically coherent - the fingers are well-formed, anatomically correct for a standard glove, and show no signs of distortion, warping, or broken geometry. There are no rendering artifacts, and the glove maintains visual consistency throughout the image. The image quality is high with excellent detail and clarity."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922465_42fecde1/prompt_01/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which matches the \"white glove\" element of the prompt. However, it clearly has only 5 digits (1 thumb and 4 fingers), not the 6 fingers specified in the prompt. This is a significant misrepresentation of a key element - the number of fingers. The glove is presented in a straightforward, literal manner rather than symbolically, but the core specification of \"6 fingers\" is fundamentally incorrect.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is rendered with smooth, consistent textures and proper lighting that creates natural shadows and highlights. The fingers and thumb are anatomically correct and well-formed, with natural proportions and connections. The perspective is consistent, and there are no rendering artifacts, distortions, or broken elements. The overall composition is visually polished and professional."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

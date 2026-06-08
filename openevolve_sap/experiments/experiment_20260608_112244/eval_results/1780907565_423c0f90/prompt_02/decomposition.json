@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is governed by lighting physics, making it a Material/Lighting contradiction suitable for Strategy A. Beginning with a physically consistent lighting setup fixes the cat's geometry and pose, allowing the impossible shadow orientation to be introduced later without breaking the object's identity.",
+  "prompts_list": [
+    "A cat sitting in sunlight casting a natural shadow",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

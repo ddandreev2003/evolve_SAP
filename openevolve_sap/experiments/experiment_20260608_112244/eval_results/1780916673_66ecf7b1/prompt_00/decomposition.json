@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural spatial contradiction requires establishing the inverted geometry immediately to prevent natural upright flower growth. Starting with bare stems defines the impossible base structure early enough to lock the pose before adding flower details.",
+  "prompts_list": [
+    "Green stems sticking straight up out of a clear vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

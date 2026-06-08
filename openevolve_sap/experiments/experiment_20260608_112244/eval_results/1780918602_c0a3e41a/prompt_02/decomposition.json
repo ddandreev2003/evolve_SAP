@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows normally follow light source direction, creating a physical contradiction. Strategy A applies here: establish standard lighting geometry first (Steps 0-4), then switch at Step 5 to inject the impossible shadow physics once the scene structure is stable.",
+  "prompts_list": [
+    "A cat sitting on the ground illuminated from the left",
+    "A cat sitting on the ground illuminated from the left, with its shadow cast to the left against the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

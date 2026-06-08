@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural contradiction regarding natural plant orientation. Normal bouquets anchor roots at the bottom and blooms at the top. Starting with \"bare stems hanging down\" forces the inverted geometry into the low-frequency structure phase before the model identifies the object as a bouquet, preventing it from reverting to a standard upward-facing arrangement.",
+  "prompts_list": [
+    "A vase with flower stems hanging down from the rim, blossoms pointing below the opening",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

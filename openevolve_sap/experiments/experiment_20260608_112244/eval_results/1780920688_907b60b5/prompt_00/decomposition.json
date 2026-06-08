@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard floral concepts imply stems point up; an invisible structural swap using \"stems pointing up with blossoms down\" prevents the model from defaulting to normal orientation. Transition occurs once the inverted mass is established.",
+  "prompts_list": [
+    "bare green flower stems pointing straight up into the air out of a clear vase, with heavy flower blossoms resting on the table at the base of the vase",
+    "a bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

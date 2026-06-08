@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet contradicts natural physics (flowers grow upwards). To prevent the model from defaulting to a normal upright arrangement, Strategy B is used. Sub-prompt 1 describes the impossible geometry visually (stems up, heads down) to lock the wrong orientation early. Sub-prompt 2 applies the semantic label once the structure is stable.",
+  "prompts_list": [
+    "A vase with bare flower stems pointing straight up into the air, with blossoms hanging down near the table",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

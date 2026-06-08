@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet typically grows upwards from a vase base. To prevent the model from locking an upright organic structure early, I use Strategy B (Structural/Spatial). Starting with an inverted proxy forces the geometry of stems pointing up, ensuring the \"upside down\" constraint is respected during generation.",
+  "prompts_list": [
+    "A vase held upside down with stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The prompt describes a structural impossibility (6 fingers) which contradicts standard anatomy priors associated with the word \"glove\". Introducing \"glove\" early would lock a 5-finger geometry that cannot be easily corrected in later steps (Steps 0-5 are critical for shape). Following Strategy B, we use a geometric proxy (\"sculpted hand\") in the first sub-prompt to explicitly enforce the six-digit structure before switching to the semantic label \"glove\" once the geometry is stable. The switch is placed at step 5 to ensure the unusual topology is fixed before applying fine material details.",
+  "prompts_list": [
+    "A white sculpted hand with exactly six fingers",
+    "A white glove with exactly six fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

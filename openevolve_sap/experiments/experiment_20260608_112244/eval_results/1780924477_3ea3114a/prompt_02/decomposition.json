@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction regarding shadow direction. Strategy A isolates object structure in the early steps (`cat standing in daylight`) before introducing the physically impossible shadow alignment in the second stage to preserve visual coherence.",
+  "prompts_list": [
+    "A cat standing on grass in bright sunlight",
+    "A cat with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

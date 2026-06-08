@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers violate standard human anatomy priors. Following Strategy B, the first prompt establishes the impossible geometry using a 'bare hand' proxy to avoid locking the model into a five-finger configuration associated with the 'glove' object name. Switching at step 4 ensures the six-digit structure is resolved before the glove material is applied.",
+  "prompts_list": [
+    "A bare human hand with exactly six fingers",
+    "A white glove with exactly six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

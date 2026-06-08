@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The prompt presents a structural contradiction (six fingers instead of five). To prevent the model from locking onto standard anatomy during early low-frequency steps, we follow Strategy B. We initialize with a topological proxy that already encodes the six-finger structure (\"bare hand\"), ensuring the shape is fixed before introducing the glove material and color in the final stage.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical impossibilities require immediate geometric fixation. Starting with a naked hand ensures the 6-finger topology is locked before applying the material layer of the glove, avoiding default 5-finger bias.",
+  "prompts_list": [
+    "A bare human hand with exactly six distinct fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural/spatial contradiction where the flower orientation defies typical gravity. Starting with a normal vase locks upright geometry; therefore, the first prompt explicitly encodes the inverted physical arrangement as a proxy. Once the coarse structure is established, the second prompt introduces the target concept identity.",
+  "prompts_list": [
+    "A vase with bare green stems sticking straight up out of the top and flowers resting at the bottom",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

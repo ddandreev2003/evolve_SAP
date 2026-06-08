@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Hands typically have five fingers, so requesting six is a structural contradiction (Strategy B). Directly prompting a \"glove\" might revert to anatomical norms. By starting with a \"bare human hand\" explicitly defined as having six fingers, we bypass the glove's typical shape prior to establishing the geometry. Once the coarse 6-digit structure is locked at step 5, we introduce the \"white glove\" descriptor to apply the material without undoing the finger count.",
+  "prompts_list": [
+    "A bare human hand with exactly six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

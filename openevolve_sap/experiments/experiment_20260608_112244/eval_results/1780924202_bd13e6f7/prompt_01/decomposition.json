@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural contradiction (finger count) paired with an object definition. According to Strategy B, mentioning the target object ('glove') early locks normal geometry. By starting with a 'bare human hand', the model establishes the anomalous 6-finger skeletal layout first. Switching to 'white glove' later applies the material texture without undoing the established structure.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

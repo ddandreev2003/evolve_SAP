@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780907554_66a84348/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image shows a standard bouquet of flowers arranged upright in a vase, with stems submerged in water and blooms facing upward. The prompt explicitly requires an \"upside down\" bouquet, meaning the flowers should be inverted (e.g., blooms pointing downward, stems upward). No element of the image depicts this inversion; the arrangement is conventional and functional for typical display, not the specified upside-down scenario. Key intent (inverted orientation) is entirely absent.",
+        "quality score": 5,
+        "quality explanation": "The photograph is clean, realistic, and fully coherent. Lighting is natural and consistent, with soft shadows enhancing depth. Textures (petals, leaves, glass, wood) are sharp and detailed. Perspective is logical, with no warping, floating elements, or anatomical errors (e.g., stems align naturally in water, blooms are structurally sound). No artifacts, distortions, or implausible blending are present—everything appears physically grounded and professionally rendered."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780907554_66a84348/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a standard bouquet of flowers upright in a vase, with blooms facing upward and stems inserted normally. The prompt explicitly requires the bouquet to be \"upside down,\" which would necessitate the flowers hanging downward (e.g., stems protruding from the vase’s base or the vase inverted). While the correct objects (bouquet, vase) are present, the critical action of being \"upside down\" is entirely absent and contradicted by the upright arrangement. This represents a significant misrepresentation of the prompt’s core intent, warranting a score of 2.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no discernible artifacts. Lighting is soft and consistent, textures (petals, leaves, vase ridges) are realistic, and perspective is natural. All elements are coherently rendered—flowers and foliage connect logically to the vase without floating, clipping, or distortion. The composition is clean, realistic, and free of technical flaws, meeting the criteria for a score of 5."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

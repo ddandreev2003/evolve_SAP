@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a rigid structural prior that models lock early (Steps 0-4). Strategy B requires avoiding the \"glove\" label initially to prevent a default 5-finger geometry. We introduce the 6-protrusion shape with a generic proxy material first, then apply the specific identity in the second stage.",
+  "prompts_list": [
+    "A white fabric object with six distinct protrusions",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

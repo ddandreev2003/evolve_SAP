@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction (Strategy A). Shadows naturally move opposite the light source. To resolve this physically impossible state, the first prompt establishes a fixed light source geometry (lighting from one side), while the second prompt introduces the contradictory shadow direction (shadow moving with light) once the base structure is stable.",
+  "prompts_list": [
+    "A black cat sitting on grass, sunlight illuminating from the left",
+    "A black cat sitting on grass, sunlight illuminating from the left, shadow cast towards the left"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

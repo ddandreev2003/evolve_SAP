@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical contradiction requiring geometric override. Describing a bare hand with 6 fingers first forces the correct topology before wrapping it in the material layer of a glove, which would otherwise default to five fingers.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers extended flat",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

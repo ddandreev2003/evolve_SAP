@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting/physics contradiction. Strategy A applies: establish the plausible scene (cat, ground, light source) first to lock layout and masses. Introduce the impossible shadow behavior in the second prompt once the coarse geometry is secure, preventing the model from correcting the physics entirely.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, the shadow of the cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

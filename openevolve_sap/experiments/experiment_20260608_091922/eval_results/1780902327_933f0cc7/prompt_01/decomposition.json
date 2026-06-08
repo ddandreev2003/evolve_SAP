@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This prompt involves a structural contradiction (extra digit) which falls under Strategy B. Starting directly with a \"glove\" may trigger the model's prior for standard 5-finger anatomy. To force the impossible geometry, the first sub-prompt establishes a bare hand with six distinct digits during the early shape-locking phase (Steps 0-4). The second sub-prompt then updates the material and object identity to a \"white glove\" once the structural anomaly is secured.",
+  "prompts_list": [
+    "A bare human hand with exactly six distinct fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

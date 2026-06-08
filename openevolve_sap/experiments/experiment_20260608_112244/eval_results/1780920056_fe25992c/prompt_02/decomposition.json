@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt contains a lighting contradiction where the shadow defies physical laws (Strategy A). Early steps (0–5) lock scene layout and dominant light sources. We must establish a clear, normal lighting setup first so the model understands the base geometry before forcing the impossible shadow direction. Switching at step 5 ensures the cat's pose and initial illumination vector are stable, preventing the generator from ignoring the contradiction entirely or creating inconsistent artifacts.",
+  "prompts_list": [
+    "A cat sitting on the ground, strongly illuminated from the left, casting a shadow to the right",
+    "A cat sitting on the ground, strongly illuminated from the left, casting its shadow to the left towards the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

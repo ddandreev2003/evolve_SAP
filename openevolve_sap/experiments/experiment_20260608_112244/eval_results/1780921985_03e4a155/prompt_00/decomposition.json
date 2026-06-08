@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet upside down defies standard plant orientation constraints. To prevent the model from auto-correcting stems upward, the first prompt establishes a bare stem geometry allowing downward flow before specifying the formal bouquet object.",
+  "prompts_list": [
+    "A vase containing bare flower stems with blossoms hanging down near the table",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780915531_bbc13231/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a standard upright bouquet in a vase, with stems submerged in water and flowers facing upward. The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should hang downward with stems pointing upward. This critical orientation is entirely missing, and the scene depicts the opposite configuration. While the core elements (bouquet, flowers, vase) are present, the key attribute of being upside down—a central requirement of the prompt—is significantly misrepresented, failing to illustrate the intended scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity photograph with no visible rendering artifacts. Lighting, textures, and perspective are consistent and realistic. The vase, flowers, and background are sharply defined with natural proportions and coherent physical relationships (e.g., stems properly submerged in water, no floating or fused elements). The composition is clean, well-lit, and visually cohesive, meeting all criteria for a flawless rendering."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780915531_bbc13231/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the arrangement is in the standard upright position with blooms facing upward and stems extending down into the water. The prompt specifically requests an \"upside down\" bouquet, which would require the flower blooms to be positioned at the bottom (inside the vase) with stems pointing upward. While the basic components (bouquet, vase) are present, the critical attribute of being upside down is completely missing, significantly misrepresenting the core intent of the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, realistic photograph with no visible flaws. The flowers, leaves, and vase are all well-formed and detailed. Lighting is consistent with natural highlights and shadows, and the perspective is coherent throughout. The stems are properly positioned in the water, the flowers are arranged naturally, and there are no rendering artifacts, distortions, or broken elements. The image appears to be a high-quality, professional photograph with excellent clarity and composition."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

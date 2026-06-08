@@ -1,0 +1,200 @@
+2026-06-08 09:19:23,533 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260608_091923.log
+2026-06-08 09:19:24,303 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-06-08 09:19:25,428 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemini-3.1-pro-preview
+2026-06-08 09:19:25,428 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemini-3.1-pro-preview (weight: 1.00)
+2026-06-08 09:19:25,731 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-06-08 09:19:25,732 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-06-08 09:19:25,732 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-06-08 09:20:39,937 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-06-08 09:20:39,937 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-06-08 09:20:39,937 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-06-08 09:20:39,937 - openevolve.controller - INFO - Adding initial program to database
+2026-06-08 09:21:33,428 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 09:31:55,424 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 09:32:07,612 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 09:33:25,122 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 09:33:45,946 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 09:34:47,477 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 09:35:33,952 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 09:36:43,768 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 09:36:44,180 - openevolve.evaluator - INFO - Evaluated program e9ea27a7-68f1-413c-8247-a01fd2b2f240 in 964.24s: alignment_score=1.6667, gemma_score=1.0000, combined_score=0.3067, num_eval_prompts=3.0000
+2026-06-08 09:36:44,180 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-06-08 09:36:44,181 - openevolve.process_parallel - INFO - Initialized process parallel controller with 4 workers
+2026-06-08 09:36:44,379 - openevolve.process_parallel - INFO - Set max 30 tasks per child
+2026-06-08 09:36:44,380 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-06-08 09:36:44,380 - openevolve.controller - INFO - Using island-based evolution with 4 islands
+2026-06-08 09:36:44,380 - openevolve.database - INFO - Island Status:
+2026-06-08 09:36:44,381 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.3067, avg=0.3067, diversity=0.00, gen=0 (best: e9ea27a7-68f1-413c-8247-a01fd2b2f240)
+2026-06-08 09:36:44,381 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 09:36:44,381 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 09:36:44,381 - openevolve.database - INFO -    Island 3: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 09:36:44,381 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 120 iterations (total: 121)
+2026-06-08 09:36:44,407 - openevolve.process_parallel - INFO - Early stopping enabled: patience=20, threshold=0.01, metric=combined_score
+2026-06-08 09:43:14,884 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 9, 'diversity': 5}
+2026-06-08 09:43:14,884 - openevolve.database - INFO - New best program 23523e47-61f3-4447-bdad-ebbe4d2b7acc replaces e9ea27a7-68f1-413c-8247-a01fd2b2f240 (combined_score: 0.3067 → 0.4133, +0.1067)
+2026-06-08 09:43:14,885 - openevolve.process_parallel - INFO - Iteration 4: Program 23523e47-61f3-4447-bdad-ebbe4d2b7acc (parent: e9ea27a7-68f1-413c-8247-a01fd2b2f240) completed in 383.58s
+2026-06-08 09:43:14,885 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.3333, gemma_score=1.0000, combined_score=0.4133, num_eval_prompts=3.0000
+2026-06-08 09:43:14,885 - openevolve.process_parallel - INFO - 🌟 New best solution found at iteration 4: 23523e47-61f3-4447-bdad-ebbe4d2b7acc
+2026-06-08 09:43:31,075 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 7, 'diversity': 0}
+2026-06-08 09:43:31,076 - openevolve.process_parallel - INFO - Iteration 2: Program eaa951fb-203b-4d59-a0c1-d81c93ac5be5 (parent: e9ea27a7-68f1-413c-8247-a01fd2b2f240) completed in 399.84s
+2026-06-08 09:43:31,076 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.3333, gemma_score=1.0000, combined_score=0.4133, num_eval_prompts=3.0000
+2026-06-08 09:44:24,925 - openevolve.database - INFO - Island 0 MAP-Elites cell improved: {'complexity': 7, 'diversity': 0} (fitness: 0.413 -> 0.573)
+2026-06-08 09:44:24,926 - openevolve.database - INFO - New best program fd490df7-0311-4318-bc14-093637b44ed8 replaces 23523e47-61f3-4447-bdad-ebbe4d2b7acc (combined_score: 0.4133 → 0.5733, +0.1600)
+2026-06-08 09:44:24,926 - openevolve.process_parallel - INFO - Iteration 1: Program fd490df7-0311-4318-bc14-093637b44ed8 (parent: e9ea27a7-68f1-413c-8247-a01fd2b2f240) completed in 453.83s
+2026-06-08 09:44:24,926 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.3333, gemma_score=1.0000, combined_score=0.5733, num_eval_prompts=3.0000
+2026-06-08 09:44:24,926 - openevolve.process_parallel - INFO - 🌟 New best solution found at iteration 1: fd490df7-0311-4318-bc14-093637b44ed8
+2026-06-08 09:44:44,904 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 0, 'diversity': 7}
+2026-06-08 09:44:44,905 - openevolve.process_parallel - INFO - Iteration 3: Program 7471fa91-dc7f-4dcc-9471-9be2e4c4baed (parent: e9ea27a7-68f1-413c-8247-a01fd2b2f240) completed in 473.80s
+2026-06-08 09:44:44,905 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.5000, gemma_score=1.0000, combined_score=0.4400, num_eval_prompts=3.0000
+2026-06-08 09:51:17,940 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 4, 'diversity': 1}
+2026-06-08 09:51:17,941 - openevolve.process_parallel - INFO - Iteration 6: Program 05dceee7-ab0f-44ea-ab1f-89764c5f4a0b (parent: e9ea27a7-68f1-413c-8247-a01fd2b2f240) completed in 466.87s
+2026-06-08 09:51:17,941 - openevolve.process_parallel - INFO - Metrics: alignment_score=1.8333, gemma_score=1.0000, combined_score=0.3333, num_eval_prompts=3.0000
+2026-06-08 09:51:38,640 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 9, 'diversity': 5}
+2026-06-08 09:51:38,641 - openevolve.process_parallel - INFO - Iteration 5: Program 53b2fdc6-0b0d-4702-acf1-87e58736fab3 (parent: e9ea27a7-68f1-413c-8247-a01fd2b2f240) completed in 503.75s
+2026-06-08 09:51:38,641 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.3333, gemma_score=1.0000, combined_score=0.5733, num_eval_prompts=3.0000
+2026-06-08 09:51:38,642 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 5
+2026-06-08 09:51:38,642 - openevolve.database - INFO - Island Status:
+2026-06-08 09:51:38,642 - openevolve.database - INFO -  * Island 0: 2 programs, best=0.5733, avg=0.4400, diversity=214.30, gen=2 (best: fd490df7-0311-4318-bc14-093637b44ed8)
+2026-06-08 09:51:38,642 - openevolve.database - INFO -    Island 1: 2 programs, best=0.4400, avg=0.4267, diversity=298.30, gen=2 (best: 7471fa91-dc7f-4dcc-9471-9be2e4c4baed)
+2026-06-08 09:51:38,642 - openevolve.database - INFO -    Island 2: 2 programs, best=0.5733, avg=0.4533, diversity=278.20, gen=2 (best: 53b2fdc6-0b0d-4702-acf1-87e58736fab3)
+2026-06-08 09:51:38,642 - openevolve.database - INFO -    Island 3: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 09:51:38,646 - openevolve.database - INFO - Saved database with 7 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_5
+2026-06-08 09:51:38,646 - openevolve.controller - INFO - Saved best program at checkpoint 5 with metrics: alignment_score=3.3333, gemma_score=1.0000, combined_score=0.5733, num_eval_prompts=3.0000
+2026-06-08 09:51:38,646 - openevolve.controller - INFO - Saved checkpoint at iteration 5 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_5
+2026-06-08 09:51:56,183 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 6, 'diversity': 1}
+2026-06-08 09:51:56,184 - openevolve.process_parallel - INFO - Iteration 7: Program 345e5ca3-6800-45e7-82c8-2348af25558c (parent: e9ea27a7-68f1-413c-8247-a01fd2b2f240) completed in 451.26s
+2026-06-08 09:51:56,184 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.3333, gemma_score=1.0000, combined_score=0.4133, num_eval_prompts=3.0000
+2026-06-08 09:53:23,325 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 3, 'diversity': 2}
+2026-06-08 09:53:23,326 - openevolve.process_parallel - INFO - Iteration 8: Program de70058c-ddb0-4e64-ad22-7196eef31ade (parent: e9ea27a7-68f1-413c-8247-a01fd2b2f240) completed in 518.42s
+2026-06-08 09:53:23,326 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.0000, gemma_score=1.0000, combined_score=0.3600, num_eval_prompts=3.0000
+2026-06-08 09:58:31,949 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 8, 'diversity': 2}
+2026-06-08 09:58:31,950 - openevolve.process_parallel - INFO - Iteration 10: Program 46ec42da-48a0-4a19-a511-c2aca2bcdfcc (parent: e9ea27a7-68f1-413c-8247-a01fd2b2f240) completed in 413.31s
+2026-06-08 09:58:31,950 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.8333, gemma_score=1.0000, combined_score=0.4933, num_eval_prompts=3.0000
+2026-06-08 09:58:31,950 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 10
+2026-06-08 09:58:31,951 - openevolve.database - INFO - Island Status:
+2026-06-08 09:58:31,951 - openevolve.database - INFO -  * Island 0: 3 programs, best=0.5733, avg=0.4578, diversity=212.07, gen=3 (best: fd490df7-0311-4318-bc14-093637b44ed8)
+2026-06-08 09:58:31,951 - openevolve.database - INFO -    Island 1: 2 programs, best=0.4400, avg=0.4267, diversity=298.30, gen=2 (best: 7471fa91-dc7f-4dcc-9471-9be2e4c4baed)
+2026-06-08 09:58:31,951 - openevolve.database - INFO -    Island 2: 2 programs, best=0.5733, avg=0.4533, diversity=278.20, gen=2 (best: 53b2fdc6-0b0d-4702-acf1-87e58736fab3)
+2026-06-08 09:58:31,951 - openevolve.database - INFO -    Island 3: 2 programs, best=0.4133, avg=0.3867, diversity=203.00, gen=2 (best: 345e5ca3-6800-45e7-82c8-2348af25558c)
+2026-06-08 09:58:31,958 - openevolve.database - INFO - Saved database with 10 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_10
+2026-06-08 09:58:31,958 - openevolve.controller - INFO - Saved best program at checkpoint 10 with metrics: alignment_score=3.3333, gemma_score=1.0000, combined_score=0.5733, num_eval_prompts=3.0000
+2026-06-08 09:58:31,959 - openevolve.controller - INFO - Saved checkpoint at iteration 10 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_10
+2026-06-08 10:00:19,411 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 9, 'diversity': 2}
+2026-06-08 10:00:19,412 - openevolve.process_parallel - INFO - Iteration 9: Program c53e3ca2-3a48-4008-8c11-3a8eadc2c822 (parent: 23523e47-61f3-4447-bdad-ebbe4d2b7acc) completed in 541.47s
+2026-06-08 10:00:19,412 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.1667, gemma_score=1.0000, combined_score=0.5467, num_eval_prompts=3.0000
+2026-06-08 10:00:38,020 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 6, 'diversity': 0}
+2026-06-08 10:00:38,021 - openevolve.process_parallel - INFO - Iteration 11: Program bbee8afc-e806-46a3-bf70-a31c805a5660 (parent: e9ea27a7-68f1-413c-8247-a01fd2b2f240) completed in 521.84s
+2026-06-08 10:00:38,021 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.3333, gemma_score=1.0000, combined_score=0.4133, num_eval_prompts=3.0000
+2026-06-08 10:02:22,304 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 6, 'diversity': 0}
+2026-06-08 10:02:22,305 - openevolve.process_parallel - INFO - Iteration 12: Program 5ccdf908-a7ef-45c8-872f-77b6a74024cf (parent: 7471fa91-dc7f-4dcc-9471-9be2e4c4baed) completed in 538.97s
+2026-06-08 10:02:22,306 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.3333, gemma_score=1.0000, combined_score=0.4133, num_eval_prompts=3.0000
+2026-06-08 10:04:49,882 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 5, 'diversity': 1}
+2026-06-08 10:04:49,883 - openevolve.process_parallel - INFO - Iteration 13: Program 625b9858-a57e-4ef3-bc6a-dbf0c107e849 (parent: 05dceee7-ab0f-44ea-ab1f-89764c5f4a0b) completed in 377.92s
+2026-06-08 10:04:49,883 - openevolve.process_parallel - INFO - Metrics: alignment_score=1.6667, gemma_score=1.0000, combined_score=0.3067, num_eval_prompts=3.0000
+2026-06-08 10:06:53,695 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 6, 'diversity': 0}
+2026-06-08 10:06:53,696 - openevolve.database - INFO - New best program b67905f8-8007-4d8f-ba24-841582aff1bc replaces fd490df7-0311-4318-bc14-093637b44ed8 (combined_score: 0.5733 → 0.6267, +0.0533)
+2026-06-08 10:06:53,696 - openevolve.process_parallel - INFO - Iteration 14: Program b67905f8-8007-4d8f-ba24-841582aff1bc (parent: 05dceee7-ab0f-44ea-ab1f-89764c5f4a0b) completed in 394.28s
+2026-06-08 10:06:53,696 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.6667, gemma_score=5.0000, combined_score=0.6267, num_eval_prompts=3.0000
+2026-06-08 10:06:53,696 - openevolve.process_parallel - INFO - 🌟 New best solution found at iteration 14: b67905f8-8007-4d8f-ba24-841582aff1bc
+2026-06-08 10:07:39,763 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 9, 'diversity': 1}
+2026-06-08 10:07:39,764 - openevolve.process_parallel - INFO - Iteration 15: Program e3af8b70-f03d-4175-8293-802f8b554fae (parent: 345e5ca3-6800-45e7-82c8-2348af25558c) completed in 421.73s
+2026-06-08 10:07:39,764 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.8333, gemma_score=1.0000, combined_score=0.4933, num_eval_prompts=3.0000
+2026-06-08 10:07:39,764 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 15
+2026-06-08 10:07:39,766 - openevolve.database - INFO - Island Status:
+2026-06-08 10:07:39,766 - openevolve.database - INFO -  * Island 0: 4 programs, best=0.5733, avg=0.4467, diversity=161.28, gen=4 (best: fd490df7-0311-4318-bc14-093637b44ed8)
+2026-06-08 10:07:39,766 - openevolve.database - INFO -    Island 1: 4 programs, best=0.5467, avg=0.4533, diversity=176.30, gen=4 (best: c53e3ca2-3a48-4008-8c11-3a8eadc2c822)
+2026-06-08 10:07:39,766 - openevolve.database - INFO -    Island 2: 4 programs, best=0.6267, avg=0.4600, diversity=143.30, gen=4 (best: b67905f8-8007-4d8f-ba24-841582aff1bc)
+2026-06-08 10:07:39,766 - openevolve.database - INFO -    Island 3: 3 programs, best=0.4933, avg=0.4222, diversity=170.80, gen=3 (best: e3af8b70-f03d-4175-8293-802f8b554fae)
+2026-06-08 10:07:39,776 - openevolve.database - INFO - Saved database with 16 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_15
+2026-06-08 10:07:39,776 - openevolve.controller - INFO - Saved best program at checkpoint 15 with metrics: alignment_score=2.6667, gemma_score=5.0000, combined_score=0.6267, num_eval_prompts=3.0000
+2026-06-08 10:07:39,777 - openevolve.controller - INFO - Saved checkpoint at iteration 15 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_15
+2026-06-08 10:11:23,107 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 6, 'diversity': 0}
+2026-06-08 10:11:23,110 - openevolve.process_parallel - INFO - Iteration 16: Program 810ae8fb-17ab-4053-a5ee-afebf8115caf (parent: 345e5ca3-6800-45e7-82c8-2348af25558c) completed in 540.68s
+2026-06-08 10:11:23,110 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.6667, gemma_score=1.0000, combined_score=0.6267, num_eval_prompts=3.0000
+2026-06-08 10:13:30,579 - openevolve.process_parallel - INFO - Iteration 17: Program 94fce7c1-2704-43cf-af60-eb8ec84a7fba (parent: fd490df7-0311-4318-bc14-093637b44ed8) completed in 520.69s
+2026-06-08 10:13:30,579 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.0000, gemma_score=1.0000, combined_score=0.3600, num_eval_prompts=3.0000
+2026-06-08 10:15:42,659 - openevolve.database - INFO - Island 0 MAP-Elites cell improved: {'complexity': 6, 'diversity': 0} (fitness: 0.413 -> 0.627)
+2026-06-08 10:15:42,660 - openevolve.process_parallel - INFO - Iteration 19: Program a12469a3-5a44-4d1c-8170-2c75263d3f0b (parent: bbee8afc-e806-46a3-bf70-a31c805a5660) completed in 482.89s
+2026-06-08 10:15:42,660 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.6667, gemma_score=1.0000, combined_score=0.6267, num_eval_prompts=3.0000
+2026-06-08 10:15:43,872 - openevolve.database - INFO - New MAP-Elites cell occupied in island 1: {'complexity': 9, 'diversity': 1}
+2026-06-08 10:15:43,872 - openevolve.process_parallel - INFO - Iteration 18: Program d71063a8-710a-43c1-9940-11f17e49a571 (parent: 7471fa91-dc7f-4dcc-9471-9be2e4c4baed) completed in 530.18s
+2026-06-08 10:15:43,872 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.8333, gemma_score=1.0000, combined_score=0.4933, num_eval_prompts=3.0000
+2026-06-08 10:20:23,163 - openevolve.process_parallel - INFO - Iteration 20: Program b993c66f-c905-4f42-81c5-6147c3e4cf9b (parent: c53e3ca2-3a48-4008-8c11-3a8eadc2c822) completed in 540.05s
+2026-06-08 10:20:23,164 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.5000, gemma_score=1.0000, combined_score=0.4400, num_eval_prompts=3.0000
+2026-06-08 10:20:23,164 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 20
+2026-06-08 10:20:23,166 - openevolve.database - INFO - Island Status:
+2026-06-08 10:20:23,167 - openevolve.database - INFO -  * Island 0: 5 programs, best=0.6267, avg=0.4720, diversity=143.95, gen=6 (best: a12469a3-5a44-4d1c-8170-2c75263d3f0b)
+2026-06-08 10:20:23,167 - openevolve.database - INFO -    Island 1: 6 programs, best=0.5467, avg=0.4578, diversity=128.88, gen=6 (best: c53e3ca2-3a48-4008-8c11-3a8eadc2c822)
+2026-06-08 10:20:23,167 - openevolve.database - INFO -    Island 2: 4 programs, best=0.6267, avg=0.4600, diversity=143.30, gen=4 (best: b67905f8-8007-4d8f-ba24-841582aff1bc)
+2026-06-08 10:20:23,167 - openevolve.database - INFO -    Island 3: 4 programs, best=0.6267, avg=0.4733, diversity=128.35, gen=4 (best: 810ae8fb-17ab-4053-a5ee-afebf8115caf)
+2026-06-08 10:20:23,178 - openevolve.database - INFO - Saved database with 21 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_20
+2026-06-08 10:20:23,178 - openevolve.controller - INFO - Saved best program at checkpoint 20 with metrics: alignment_score=2.6667, gemma_score=5.0000, combined_score=0.6267, num_eval_prompts=3.0000
+2026-06-08 10:20:23,178 - openevolve.controller - INFO - Saved checkpoint at iteration 20 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_20
+2026-06-08 10:21:15,550 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 4, 'diversity': 2}
+2026-06-08 10:21:15,551 - openevolve.process_parallel - INFO - Iteration 21: Program 727d1e45-94f6-41ab-afc2-eed03fa90705 (parent: 625b9858-a57e-4ef3-bc6a-dbf0c107e849) completed in 464.97s
+2026-06-08 10:21:15,551 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.3333, gemma_score=1.0000, combined_score=0.5733, num_eval_prompts=3.0000
+2026-06-08 10:22:31,106 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 6, 'diversity': 1}
+2026-06-08 10:22:31,106 - openevolve.process_parallel - INFO - Iteration 22: Program 6b20abdb-b006-45c2-9d36-a768e6f126d7 (parent: 05dceee7-ab0f-44ea-ab1f-89764c5f4a0b) completed in 408.44s
+2026-06-08 10:22:31,106 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.1667, gemma_score=5.0000, combined_score=0.5467, num_eval_prompts=3.0000
+2026-06-08 10:26:08,727 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 8, 'diversity': 1}
+2026-06-08 10:26:08,728 - openevolve.process_parallel - INFO - Iteration 23: Program 79571432-cb79-4293-b328-703b3aadb912 (parent: 345e5ca3-6800-45e7-82c8-2348af25558c) completed in 624.85s
+2026-06-08 10:26:08,728 - openevolve.process_parallel - INFO - Metrics: alignment_score=1.6667, gemma_score=1.0000, combined_score=0.3067, num_eval_prompts=3.0000
+2026-06-08 10:27:46,874 - openevolve.database - INFO - Island 3 MAP-Elites cell improved: {'complexity': 9, 'diversity': 1} (fitness: 0.493 -> 0.520)
+2026-06-08 10:27:46,875 - openevolve.process_parallel - INFO - Iteration 24: Program 9bf4504f-6223-4e9b-b24d-e35c63836074 (parent: e3af8b70-f03d-4175-8293-802f8b554fae) completed in 443.71s
+2026-06-08 10:27:46,875 - openevolve.process_parallel - INFO - Metrics: alignment_score=3.0000, gemma_score=1.0000, combined_score=0.5200, num_eval_prompts=3.0000
+2026-06-08 10:28:31,839 - openevolve.process_parallel - INFO - Iteration 25: Program 73f2ad36-2d3b-4f66-b1fc-82d83a11f418 (parent: fd490df7-0311-4318-bc14-093637b44ed8) completed in 436.29s
+2026-06-08 10:28:31,841 - openevolve.process_parallel - INFO - Metrics: alignment_score=1.8333, gemma_score=1.0000, combined_score=0.3333, num_eval_prompts=3.0000
+2026-06-08 10:28:31,841 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 25
+2026-06-08 10:28:31,843 - openevolve.database - INFO - Island Status:
+2026-06-08 10:28:31,843 - openevolve.database - INFO -  * Island 0: 6 programs, best=0.6267, avg=0.4489, diversity=104.35, gen=7 (best: a12469a3-5a44-4d1c-8170-2c75263d3f0b)
+2026-06-08 10:28:31,843 - openevolve.database - INFO -    Island 1: 6 programs, best=0.5467, avg=0.4578, diversity=128.88, gen=6 (best: c53e3ca2-3a48-4008-8c11-3a8eadc2c822)
+2026-06-08 10:28:31,843 - openevolve.database - INFO -    Island 2: 6 programs, best=0.6267, avg=0.4933, diversity=142.72, gen=6 (best: b67905f8-8007-4d8f-ba24-841582aff1bc)
+2026-06-08 10:28:31,843 - openevolve.database - INFO -    Island 3: 5 programs, best=0.6267, avg=0.4453, diversity=61.32, gen=6 (best: 810ae8fb-17ab-4053-a5ee-afebf8115caf)
+2026-06-08 10:28:31,859 - openevolve.database - INFO - Saved database with 26 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_25
+2026-06-08 10:28:31,859 - openevolve.controller - INFO - Saved best program at checkpoint 25 with metrics: alignment_score=2.6667, gemma_score=5.0000, combined_score=0.6267, num_eval_prompts=3.0000
+2026-06-08 10:28:31,859 - openevolve.controller - INFO - Saved checkpoint at iteration 25 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_25
+2026-06-08 10:28:50,620 - openevolve.process_parallel - WARNING - Iteration 28 error: No valid diffs found in response
+2026-06-08 10:29:34,947 - openevolve.process_parallel - WARNING - Iteration 29 error: No valid diffs found in response
+2026-06-08 10:29:35,279 - openevolve.process_parallel - INFO - Iteration 26: Program 3db90e46-ef65-4eb1-b036-8c2b9ff87983 (parent: a12469a3-5a44-4d1c-8170-2c75263d3f0b) completed in 424.17s
+2026-06-08 10:29:35,281 - openevolve.process_parallel - INFO - Metrics: alignment_score=2.5000, gemma_score=1.0000, combined_score=0.4400, num_eval_prompts=3.0000
+2026-06-08 10:34:43,272 - openevolve.process_parallel - ERROR - Error processing result from iteration 27: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 10:34:45,965 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,965 - openevolve.process_parallel - ERROR - Error processing result from iteration 30: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 10:34:45,968 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,971 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,971 - openevolve.process_parallel - ERROR - Error processing result from iteration 31: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 10:34:45,974 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,976 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,979 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,979 - openevolve.process_parallel - ERROR - Error processing result from iteration 32: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 10:34:45,982 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,984 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,987 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,987 - openevolve.process_parallel - ERROR - Error processing result from iteration 33: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 10:34:45,989 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,992 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,995 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,997 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:45,997 - openevolve.process_parallel - ERROR - Error processing result from iteration 34: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 10:34:46,000 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,002 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,005 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,007 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,008 - openevolve.process_parallel - ERROR - Error processing result from iteration 35: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 10:34:46,010 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,013 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,015 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,018 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,018 - openevolve.process_parallel - ERROR - Error processing result from iteration 36: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 10:34:46,020 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,023 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,025 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,028 - openevolve.process_parallel - ERROR - Error submitting iteration 37: A child process terminated abruptly, the process pool is not usable anymore
+2026-06-08 10:34:46,028 - openevolve.process_parallel - INFO - ✅ Evolution completed - Maximum iterations reached
+2026-06-08 10:34:46,050 - openevolve.database - INFO - Saved database with 27 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_120
+2026-06-08 10:34:46,050 - openevolve.controller - INFO - Saved best program at checkpoint 120 with metrics: alignment_score=2.6667, gemma_score=5.0000, combined_score=0.6267, num_eval_prompts=3.0000
+2026-06-08 10:34:46,050 - openevolve.controller - INFO - Saved checkpoint at iteration 120 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_120
+2026-06-08 10:34:46,164 - openevolve.process_parallel - INFO - Stopped process pool
+2026-06-08 10:34:46,164 - openevolve.controller - INFO - Using tracked best program: b67905f8-8007-4d8f-ba24-841582aff1bc
+2026-06-08 10:34:46,164 - openevolve.controller - INFO - Evolution complete. Best program has metrics: alignment_score=2.6667, gemma_score=5.0000, combined_score=0.6267, num_eval_prompts=3.0000
+2026-06-08 10:34:46,168 - openevolve.controller - INFO - Saved best program to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program.py with program info to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program_info.json

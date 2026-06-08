@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A standard vase implies upright gravity and stem positioning. Starting with a normal vase setup would cause the model to render flowers facing upwards, violating the spatial requirement. Following Strategy B, we begin with a proxy that explicitly encodes the inverted geometry (\"upside-down vase\") during the structural phase before refining the object identity to a \"bouquet\" once the unstable spatial configuration is locked in.",
+  "prompts_list": [
+    "An upside-down vase holding flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

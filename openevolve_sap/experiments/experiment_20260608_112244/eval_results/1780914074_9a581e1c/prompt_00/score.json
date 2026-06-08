@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914074_9a581e1c/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is **not upside down**—it is arranged in the standard upright position with blooms facing upward and stems inside the vase. The key attribute specified in the prompt (upside-down orientation) is entirely absent, meaning the core action/intent of the prompt is misrepresented. While the main objects (bouquet, vase) are present, the critical spatial relationship (inversion) is missing, resulting in a significant misalignment with the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and realistic. Lighting, texture, and perspective are consistent; the flowers, vase, and background exhibit natural coherence with no visible distortions, artifacts, or broken elements. The composition is well-defined, with sharp details and balanced lighting, meeting the criteria for a flawless rendering."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914074_9a581e1c/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, which correctly identifies the main objects from the prompt. However, the critical element of the bouquet being \"upside down\" is completely misrepresented. The flowers are arranged in a normal upright position with blooms facing upward, rather than hanging downward from the vase with stems pointing up as the prompt specifies. This significant error in the core concept means the image fails to convey the intended situation described in the prompt, though it does contain the basic elements (bouquet and vase).",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The flowers, leaves, and vase are rendered with excellent detail, proper proportions, and natural textures. Lighting is consistent across the scene, creating realistic shadows and highlights. The arrangement shows proper physical coherence with flowers naturally positioned in the vase, and there are no distortions, artifacts, or broken elements. The composition demonstrates high visual quality throughout."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

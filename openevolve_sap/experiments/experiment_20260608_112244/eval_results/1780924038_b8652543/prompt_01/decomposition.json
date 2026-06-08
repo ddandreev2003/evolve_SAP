@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count affects coarse geometry (steps 3-6). Directly asking for a \"white glove with 6 fingers\" risks the model correcting to 5 fingers during identity assignment. Strategy B uses a bare hand proxy to lock the 6-finger topology in step 0-4 before switching to the glove material and identity in step 5+.",
+  "prompts_list": [
+    "A bare hand with exactly six distinct fingers spread apart",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

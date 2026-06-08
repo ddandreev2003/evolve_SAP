@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The contradiction involves gravity and spatial orientation, as flowers naturally grow upward in vases. Diffusion models rely on priors that link \"flowers\" and \"vases\" to upright arrangements. To preserve the inverted geometry, the first prompt establishes the unusual physical structure (downward stems) using neutral terms (\"green stems\") before the model applies semantic knowledge about flowers. The transition occurs once the layout is secured.",
+  "prompts_list": [
+    "A vase with long green stems protruding downwards out of it",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

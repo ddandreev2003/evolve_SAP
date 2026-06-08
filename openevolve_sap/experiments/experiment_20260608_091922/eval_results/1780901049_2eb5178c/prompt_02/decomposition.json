@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting contradiction. Shadows are dependent on physics that FLUX tends to correct toward realism. Strategy A requires establishing the scene layout neutrally first, then introducing the impossible shadow direction in the second stage to prevent the model from fixing the light source to match the object.",
+  "prompts_list": [
+    "A cat sitting on the ground, neutral lighting",
+    "A cat sitting on the ground, its shadow explicitly faces the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

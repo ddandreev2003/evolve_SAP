@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780903625_f20639a8/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bouquet of flowers arranged **right-side up** in a vase (stems inserted downward into the vase, blooms facing upward). The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be inverted with blooms pointing downward and stems protruding from the vase opening. No element of the scene demonstrates this orientation—the arrangement is conventional and contradicts the core requirement of the prompt. The objects (bouquet, vase) are present, but the critical spatial relationship (inversion) is entirely absent, making the meaning fundamentally misaligned.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The vase, flowers, and table exhibit consistent lighting, realistic textures, and natural perspective. There are no rendering artifacts, distortions, or broken elements; the roses, baby’s breath, and vase maintain coherent shapes and proportions. Objects connect naturally (e.g., flowers anchored in the vase, vase resting on the table), and complex details like petal layers and surface textures are rendered with high fidelity. The composition is clean, realistic, and free of warping or implausible blending."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780903625_f20639a8/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet of flowers placed right-side up in a vase, with stems inserted downward and blooms facing upward. The prompt explicitly requires an \"upside down\" arrangement, meaning the flowers should be inverted (stems pointing upward, blooms facing downward). No elements in the image suggest inversion—the vase orientation, flower positioning, and natural growth direction all contradict the prompt's core requirement. The scene represents a conventional bouquet, failing to convey the intended situation.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The vase has smooth, consistent texture and realistic ceramic shading. Flowers exhibit natural details (petal layers, leaf veins) with no distortion. Lighting is soft and even, creating coherent shadows and depth. All elements are physically plausible: stems connect naturally to blooms, leaves are distinct, and the composition maintains realistic perspective. No artifacts, warping, or blending errors are present; the rendering is professional and fully coherent."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

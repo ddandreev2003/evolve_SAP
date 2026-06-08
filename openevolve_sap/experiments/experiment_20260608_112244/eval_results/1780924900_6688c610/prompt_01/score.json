@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780924900_6688c610/prompt_01/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which matches the color requirement from the prompt. However, it clearly displays only 5 fingers (4 fingers plus a thumb), while the prompt specifically requires 6 fingers. The core attribute of the prompt (the number of fingers) is significantly misrepresented. While the main subject (a white glove) is present, the key element of having 6 fingers is entirely missing, which is central to the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is rendered with excellent detail showing realistic texture and fabric folds. Lighting is consistent across the entire surface, creating natural shadows that give the glove depth and dimension. The fingers and thumb are anatomically correct for a standard glove, with smooth transitions between all parts. There are no distortions, artifacts, or visual inconsistencies - the image appears to be a high-quality photograph of a physical object."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780924900_6688c610/prompt_01/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bare human hand with five fingers, not a white glove with six fingers. The core elements of the prompt—specifically the presence of a glove and the count of six fingers—are entirely absent. The scene shows no glove whatsoever, and the hand's anatomy (five fingers) directly contradicts the prompt's requirement. Thus, it fails to convey the intended meaning in any way, as the object, its attributes, and the functional situation described are misrepresented.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible rendering flaws. The hand is anatomically well-formed, with distinct fingers, natural skin texture, and consistent lighting and perspective. Complex areas like the fingers and palm show no distortion, warping, or physical incoherence (e.g., no floating elements or merged shapes), resulting in a high-fidelity, visually plausible depiction."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

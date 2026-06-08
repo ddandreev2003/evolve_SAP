@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting property derived from global composition. Beginning with a standard sunlight setup establishes the cat's form and illumination source correctly. Introducing the contradictory shadow direction in the final prompt ensures the high-frequency contrast does not warp the initial low-frequency object geometry.",
+  "prompts_list": [
+    "A cat standing in bright sunlight",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

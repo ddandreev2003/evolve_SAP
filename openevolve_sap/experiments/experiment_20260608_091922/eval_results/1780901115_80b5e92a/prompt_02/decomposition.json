@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are lighting attributes handled in the mid-to-late denoising stages (Steps 5+). Establishing the cat's anatomy and pose first ensures structural stability, preventing the model from corrupting the geometry when introducing the physically impossible shadow direction.",
+  "prompts_list": [
+    "A cat sitting on the ground, normal lighting",
+    "A cat sitting on the ground, its shadow explicitly faces the opposite direction of the light"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

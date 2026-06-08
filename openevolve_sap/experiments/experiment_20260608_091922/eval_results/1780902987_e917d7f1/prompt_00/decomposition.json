@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet in an upside-down vase creates a structural contradiction regarding gravity and fluid dynamics. A proxy describing the inverted geometric pose without flowers ensures the model locks the unusual orientation early before adding the botanical elements.",
+  "prompts_list": [
+    "A glass vase turned completely upside down, resting on its opening, with a bundle of bare green stems sticking straight up into the air",
+    "A bouquet of flowers arranged upside down in a glass vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

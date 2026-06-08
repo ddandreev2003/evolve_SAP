@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a Structural / Spatial Contradiction (Strategy B) because gloves are expected to match human hand anatomy (5 fingers). To prevent the model from reverting to a standard 5-finger geometry once \"glove\" is recognized, we first establish the 6-finger structure using a bare hand proxy. This locks the anomalous geometry during the coarse layout phase before applying the \"glove\" material and identity in the final stage.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

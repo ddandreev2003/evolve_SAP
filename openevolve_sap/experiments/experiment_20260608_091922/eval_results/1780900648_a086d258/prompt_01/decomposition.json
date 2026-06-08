@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical norms bias models toward five-digit structures. Deferring the specific digit count allows the glove’s fabric and form to stabilize first, ensuring the extra finger appears as a detail rather than distorting the whole shape.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

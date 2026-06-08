@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction involving anomalous anatomy. Strategy B dictates starting with a bare hand proxy possessing the wrong digit count immediately; starting with a \"glove\" would risk locking in normal 5-finger geometry that is difficult to override later.",
+  "prompts_list": [
+    "A bare hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

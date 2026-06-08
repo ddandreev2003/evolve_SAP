@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This requires Strategy B (Structural/Spatial Contradiction). Diffusion models heavily prioritize 5-finger anatomy when generating gloves. By introducing the bare hand with the correct unnatural geometry first, we lock the high-frequency finger topology before switching to the specific material and object identity (white glove), preventing the model from reverting to standard anatomy.",
+  "prompts_list": [
+    "A bare hand with exactly six fingers",
+    "A white glove with exactly six fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

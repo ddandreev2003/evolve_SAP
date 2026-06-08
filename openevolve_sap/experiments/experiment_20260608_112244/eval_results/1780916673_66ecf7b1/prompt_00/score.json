@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916673_66ecf7b1/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet with flowers arranged upright in a vase (stems down, blooms facing upward). The prompt explicitly requires the bouquet to be *upside down*, meaning the blooms should face downward with stems protruding from the top of the vase. This critical directional attribute is entirely absent; the scene shows the conventional orientation. While flowers and a vase are present, the core action (\"upside down\") is misrepresented, failing to convey the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The vase, flowers, and wooden surface are rendered with realistic texture, consistent lighting, and coherent perspective. Stems are clearly submerged in water without distortion, petals and leaves show natural detail, and no artifacts (e.g., clipping, melting, or warped geometry) are present. The composition is physically plausible and aesthetically clean."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916673_66ecf7b1/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image shows a bouquet of flowers arranged **right-side up** in a vase, with blooms at the top and stems extending downward into the vase. The prompt explicitly requires the bouquet to be **upside down**, which would mean the blooms should be at the bottom (inside the vase) and stems extending upward. Since the orientation of the bouquet contradicts the prompt’s core requirement, the image does not reflect the prompt at all.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and realistic. The flowers, vase, and background exhibit consistent lighting, sharp details, and natural textures. There are no rendering artifacts, distortions, or incoherent elements—the bouquet’s structure, leaf placement, and vase geometry are all physically plausible and well-formed. The composition is coherent and free of visual flaws."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

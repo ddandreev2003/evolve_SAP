@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet defies standard floral arrangements where stems naturally point upward. To prevent the model from normalizing the vase contents to a vertical orientation, the prompt begins by defining the specific geometric arrangement of the stems. The semantic term \"bouquet\" is introduced only after the inverted spatial structure is locked in.",
+  "prompts_list": [
+    "Green stems hanging downwards from the rim of a transparent vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

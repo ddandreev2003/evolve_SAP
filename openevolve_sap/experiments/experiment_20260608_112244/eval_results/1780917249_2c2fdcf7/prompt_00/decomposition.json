@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates natural structural norms (flowers grow up). Using bare stems first forces the strange geometry (roots/stems configuration) before assigning the floral identity, preventing the model from enforcing a standard upright vase layout.",
+  "prompts_list": [
+    "Bare green stems sticking straight up out of a vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

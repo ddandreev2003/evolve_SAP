@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A six-fingered hand violates anatomical norms. Strategy B dictates avoiding the target object ('glove') in the first prompt to prevent normal geometry locking. We start with a bare hand to fix the finger count, then transition to the glove identity while preserving the six-finger structure.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct fingers spread apart",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

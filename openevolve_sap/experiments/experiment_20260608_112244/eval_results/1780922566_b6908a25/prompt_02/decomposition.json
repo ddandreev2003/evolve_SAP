@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow physics contradicts standard lighting (Strategy A). Steps 0-4 establish a consistent light source. Switching at step 5 allows the base geometry to settle before introducing the impossible shadow vector, translating \"opposite\" into concrete directional language (\"towards the light source\").",
+  "prompts_list": [
+    "A cat sitting in sunlight, illuminated from the left",
+    "A cat sitting in sunlight, illuminated from the left, casting its shadow towards the light source on the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

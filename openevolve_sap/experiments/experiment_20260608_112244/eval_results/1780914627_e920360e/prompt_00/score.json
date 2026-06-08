@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914627_e920360e/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented normally (stems down, blooms up) rather than upside down as specified in the prompt. While the core elements (bouquet, vase) are present, the critical action of being \"upside down\" is entirely missing, fundamentally misrepresenting the prompt’s intent.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. The flowers, vase, and background exhibit consistent lighting, sharp detail, and natural textures. There are no rendering artifacts, distortions, or anatomical/structural inconsistencies; all elements appear physically plausible and well-formed."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914627_e920360e/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bouquet of flowers in a vase with the stems inserted downward into the vase and the blooms facing upward, which is the standard, upright orientation. The prompt explicitly requires the bouquet to be \"upside down,\" meaning the blooms should face downward and the stems upward. No element in the image conveys an inverted arrangement—there are no visual cues (e.g., flowers hanging below the vase rim, stems protruding from the top) to suggest the intended scenario. The scene is a conventional floral display, failing to represent the core requirement of the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The vase has smooth, consistent lighting and realistic texture with no distortion. The flowers exhibit natural details (petal layers, leaf veins) and coherent structure—stems connect cleanly to blooms, with no warping, melting, or anatomical errors. Lighting is even, perspective is stable, and all elements (vase, flowers, background) are physically plausible and sharply defined. There are no rendering artifacts, clipped geometry, or inconsistencies."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

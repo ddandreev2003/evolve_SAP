@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical anomalies like six fingers conflict with training data standards (Strategy B). Starting with a bare hand ensures the digit count is established in low-frequency steps, preventing the glove texture from erasing the extra fingers.",
+  "prompts_list": [
+    "a bare human hand with exactly 6 fingers",
+    "a white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

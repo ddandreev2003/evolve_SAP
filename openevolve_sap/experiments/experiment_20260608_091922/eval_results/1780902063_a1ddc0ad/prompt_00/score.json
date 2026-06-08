@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780902063_a1ddc0ad/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains a bouquet of flowers and a vase, which are the correct objects from the prompt. However, the bouquet is arranged in a **normal upright orientation** (blooms above the vase, stems submerged in water), directly contradicting the prompt’s requirement that the bouquet be \"upside down.\" The critical action/attribute (inversion) is entirely missing, rendering the scene inconsistent with the described scenario. While the core elements (flowers, vase) are present, the fundamental intent of the prompt is misrepresented.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. Lighting, textures, and perspective are consistent; the vase, flowers, and table exhibit realistic details without distortions, artifacts, or anatomical errors. The arrangement of stems, petals, and water appears natural and physically plausible, with no signs of warping, fusion, or rendering flaws. The composition is sharp and well-defined, meeting the highest standard for visual fidelity."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780902063_a1ddc0ad/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains a bouquet of flowers in a vase, but the bouquet is oriented *right-side up* rather than upside down as specified in the prompt. While the core elements (bouquet, vase) are present, the critical action of being \"upside down\" is entirely missing, fundamentally misrepresenting the intended scenario. This violates the requirement for concrete functional depiction of the described situation.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no rendering artifacts. The vase, flowers, and background exhibit consistent lighting, sharp focus, and natural textures. All elements are anatomically and structurally coherent, with no distortions, warping, or implausible blending. The composition is clean and realistic."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

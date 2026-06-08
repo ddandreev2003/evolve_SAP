@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural anomaly regarding finger count. Strategy B mandates avoiding a standard glove shape in early steps to prevent locking five-finger geometry. A `hand with 6 fingers` proxy sets the topology before adding the glove material.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

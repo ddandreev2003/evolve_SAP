@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows follow strict physical laws; forcing them against the light source creates a contradiction that confuses early denoising stages. Establishing a clear light vector first ensures the cat's shape is stable. Switching at step 5 allows the geometry to lock before introducing the impossible shadow behavior.",
+  "prompts_list": [
+    "A black cat sitting on the floor illuminated by bright sunlight from the right",
+    "A black cat sitting on the floor illuminated by bright sunlight from the right, casting a shadow that points toward the light source on the right instead of away"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

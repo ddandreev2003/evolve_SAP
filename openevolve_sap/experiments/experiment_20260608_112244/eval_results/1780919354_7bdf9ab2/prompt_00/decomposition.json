@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A standard bouquet is oriented upward due to natural growth physics. To prevent the model from correcting the orientation, the first prompt describes the physical arrangement of the stems and vase without using the semantic term \"bouquet,\" which would bias the geometry upright. The contradiction is introduced once the spatial layout is locked.",
+  "prompts_list": [
+    "Green flower stems extending downwards from a clear glass vase, with petals hanging near the table",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

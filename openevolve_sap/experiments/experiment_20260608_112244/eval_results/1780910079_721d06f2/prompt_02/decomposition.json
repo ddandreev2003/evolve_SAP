@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction violates physics. Starting with a normally lit cat establishes correct anatomy. Switching at step 5 introduces the impossible lighting contrast after geometry is locked.",
+  "prompts_list": [
+    "A realistic cat sitting on the ground in sunlight",
+    "A realistic cat sitting on the ground in sunlight with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

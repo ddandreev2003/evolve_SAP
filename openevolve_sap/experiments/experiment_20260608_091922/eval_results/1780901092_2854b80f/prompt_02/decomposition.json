@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This involves a physics/lighting contradiction (Strategy A). A normal light/shadow relationship is established first to stabilize the scene geometry. The impossible shadow direction is introduced later to avoid rendering artifacts.",
+  "prompts_list": [
+    "A cat standing in daylight with a shadow",
+    "A cat casting a realistic shadow in sunlight",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

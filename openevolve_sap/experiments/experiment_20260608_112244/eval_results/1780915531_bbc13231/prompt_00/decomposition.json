@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Botanical conventions typically orient flowers upward. Starting with a neutral vase-stem configuration prevents early fixation of upright petal positions, allowing the inverted bloom to be applied once structure is stable.",
+  "prompts_list": [
+    "Green stems inside a clear glass vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

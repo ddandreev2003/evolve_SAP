@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A standard flower arrangement implies stems downward into a vessel. Describing the exact physical inversion early (stems up, blooms down) prevents the model from locking onto upright vase geometry during low-frequency stages. The transition occurs after structure establishment, allowing the final prompt to confirm the semantic label without disrupting the surreal topology.",
+  "prompts_list": [
+    "thick green flower stems pointing straight up into the air out of a vase, blossoms pushed down inside the vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

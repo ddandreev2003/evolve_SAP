@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates standard visual expectations of plant growth and gravity within a container. Following Strategy B for spatial contradictions, we avoid starting with a 'normal' bouquet to prevent locking the upright geometry. Instead, we begin with the physical state of the container ('held upside down') to define the inverted structure, then introduce the floral content, and finally specify the target concept once the spatial layout is stable.",
+  "prompts_list": [
+    "A vase held upside down",
+    "A vase held upside down with flowers inside",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

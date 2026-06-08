@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers is a structural violation that contradicts the model's strong prior for 5-digit hands. Starting with a \"bare human hand\" proxy allows the geometry to be established during the layout phase without the \"glove\" prior forcing a standard 5-finger shape. Once the 6-finger topology is locked around step 4, the prompt switches to \"white glove\" to define the material and identity without disrupting the structure.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

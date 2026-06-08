@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural contradiction involving gravity and object orientation (Strategy B). Introducing \"flower stems\" without specifying the full \"bouquet\" identity in the first prompt prevents the model from locking into standard upright growth patterns during the crucial 0-4 layout stage. Transitioning at step 5 ensures the inverted geometry is established before materials and fine details are rendered.",
+  "prompts_list": [
+    "Green flower stems pointing straight up out of a clear vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet contradicts plant biology and gravity expectations. Strategy B (Structural) applies here; starting with a \"vase\" might default to flowers growing up. By describing the literal, inverted geometry (stems pointing up, blooms resting down) in the first prompt, the structure locks correctly before the concept name changes.",
+  "prompts_list": [
+    "Green flower stems pointing up from a vase opening with blooms resting at the bottom",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

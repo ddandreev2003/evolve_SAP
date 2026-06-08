@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet of flowers naturally grows upward; inverting them creates a spatial contradiction regarding gravity. Starting with neutral stems avoids the model bias toward upright flowers, allowing the inverted pose to take effect during the shape phase.",
+  "prompts_list": [
+    "A vase with long green stems protruding from the opening",
+    "A bouquet of flowers hanging upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

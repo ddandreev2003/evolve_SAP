@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting contradiction requiring Strategy A. Establishing the light source first (\"illuminated from the left\") ensures consistent shadows initially. Switching mid-generation to \"shadow cast to the left\" creates the physically impossible behavior once structure is stable.",
+  "prompts_list": [
+    "A cat illuminated from the left side",
+    "A cat illuminated from the left side, but its shadow is cast towards the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Bouquets naturally hang downward in a vase. An inverted setup contradicts gravity and biology. Strategy B avoids locking the 'upright' concept by describing the physical inversion (stems up, heads down) first. Once the strange geometry stabilizes (step 5), the semantic label 'bouquet' is introduced without conflicting shapes.",
+  "prompts_list": [
+    "A vase turned upside down, stems sticking up into the air, flower heads resting on the table",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

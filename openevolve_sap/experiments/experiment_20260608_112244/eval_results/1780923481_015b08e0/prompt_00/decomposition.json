@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural contradiction (flowers growing down vs up) requiring Strategy B. The initial prompt avoids the term \"bouquet\" which locks standard vertical vase geometry, instead describing the specific inverted physical configuration (stems up, heads down) to establish the coarse layout. The second prompt introduces the target concept label once the structure is resolved. Switching at step 4 ensures the spatial inversion is fixed before high-frequency details finalize.",
+  "prompts_list": [
+    "Bare green stems sticking straight up out of a glass vase, with flower heads stuffed down inside the bottom of the vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

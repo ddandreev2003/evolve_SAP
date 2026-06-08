@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780910079_721d06f2/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains the correct objects (bouquet, vase) but fundamentally misrepresents the prompt's core requirement: the bouquet is upright, not upside down. The stems are submerged in water in a standard orientation, contradicting the explicit \"upside down\" instruction. While the components are present, the critical action/attribute (inverted positioning) is entirely missing, resulting in a significant conceptual misalignment.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. Lighting is natural and consistent, textures (petals, glass, wood) are realistic, and all elements are cohesively rendered. The bouquet shows detailed, anatomically correct flowers with no distortion, warping, or artifacts. The vase, stems, and background exhibit perfect physical coherence and rendering fidelity."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780910079_721d06f2/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains a bouquet of flowers in a vase, but the bouquet is arranged *normally* (blooms facing upward, stems extending downward into the vase). The prompt specifies the bouquet should be \"upside down,\" which would require the flowers to hang downward with stems pointing upward. Since the critical spatial orientation described in the prompt is entirely misrepresented, the image fails to convey the intended scenario despite including the correct objects (bouquet, vase).",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, realistic photograph with no visible rendering artifacts. The flowers, vase, and background exhibit consistent lighting, sharp detail, and natural textures. All elements are anatomically and structurally coherent (e.g., petals, stems, and vase geometry appear physically plausible and well-defined), with no signs of distortion, warping, or incoherent blending."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

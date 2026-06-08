@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural contradiction (anatomical impossibility). Starting with \"A white glove\" risks the model defaulting to standard 5-finger geometry during early low-frequency steps (0–4). We must force the unusual finger count early using a proxy that establishes the wrong shape without the object-specific bias. Step 1 uses \"bare hand\" to lock the 6-digit layout strictly. Step 2 applies the final \"glove\" material and color identity on top of the stable geometry.",
+  "prompts_list": [
+    "A bare hand with exactly 6 fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

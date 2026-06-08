@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upward. To enforce the upside-down geometry without the model defaulting to a normal vase shape, we start with bare stems defining the incorrect angle, then resolve to the full bouquet concept.",
+  "prompts_list": [
+    "bare flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A vase typically holds flowers in an upright orientation due to gravity and plant growth norms. Starting with the explicit geometric description of stems pointing up and heads resting down prevents the model from locking in the standard \"floral\" layout too early. Once the unusual structure is established, the semantic label \"bouquet\" can be applied safely.",
+  "prompts_list": [
+    "A vase with bare green stems sticking straight up out of the top and flowers resting at the bottom",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers arranged in a vase typically orient upright due to gravity and design conventions. An upside-down bouquet violates standard spatial priors regarding object orientation. To prevent the model from locking in an upright geometry during early steps (where composition is established), we begin with a structurally aligned proxy that forces the inverted shape immediately before refining the floral identity.",
+  "prompts_list": [
+    "An inverted vase with plant stems sticking up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

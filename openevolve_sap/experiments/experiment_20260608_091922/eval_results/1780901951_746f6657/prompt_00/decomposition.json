@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates physical priors associated with vases and growth. Starting with \"flowers\" triggers strong upright defaults. Using a proxy of \"wooden sticks\" in an \"upside-down cup\" establishes the inverted geometry early (Steps 0-5) before introducing the semantic concept of flowers.",
+  "prompts_list": [
+    "A bunch of bare wooden sticks pointing straight up out of an upside-down cup",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

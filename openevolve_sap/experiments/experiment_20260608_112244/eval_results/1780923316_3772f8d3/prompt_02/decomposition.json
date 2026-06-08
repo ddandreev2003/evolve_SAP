@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a material/lighting contradiction (Strategy A). To maintain the cat's solid identity and pose, we establish the scene lighting first. In the second phase, we introduce the impossible shadow behavior, translating \"opposite\" into concrete directionality (casting towards the light source) to override standard physics.",
+  "prompts_list": [
+    "A cat sitting on the ground, illuminated from the left",
+    "A cat sitting on the ground, illuminated from the left, but its shadow is impossible and is also cast to the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

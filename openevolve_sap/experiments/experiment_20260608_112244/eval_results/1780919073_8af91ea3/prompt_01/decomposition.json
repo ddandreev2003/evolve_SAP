@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves are modeled with five digits. Strategy B is required to override the training prior for hand anatomy. We begin with a description of the hand itself having six digits before applying the glove texture and color in the second stage to ensure the extra finger persists.",
+  "prompts_list": [
+    "A hand with exactly six fingers fully extended",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

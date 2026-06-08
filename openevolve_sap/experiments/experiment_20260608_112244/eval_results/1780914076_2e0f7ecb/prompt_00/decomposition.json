@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard bouquets are depicted upright (flowers at the top), so starting with the full prompt risks locking correct geometry. Strategy B requires establishing the inverted spatial arrangement early using a structural proxy (bare stems) before applying the floral identity. Switching at step 5 ensures the coarse geometry (stem direction) is locked before detailed petals resolve.",
+  "prompts_list": [
+    "Bare green stems sticking up out of a vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

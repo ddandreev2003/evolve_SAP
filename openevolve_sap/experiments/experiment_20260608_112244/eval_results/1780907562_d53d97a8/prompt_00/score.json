@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780907562_d53d97a8/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a small glass container (vase), but the bouquet is oriented **upright**—with blooms facing upward and stems extending downward into the vase. The prompt explicitly requires the bouquet to be \"upside down,\" meaning the blooms should face downward while stems point upward. This critical inversion is entirely absent, misrepresenting the core action and spatial relationship described in the prompt. While flowers and a vase are present, the intended scenario (functional upside-down arrangement) is not depicted.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, high-resolution photograph with no visible artifacts. Lighting is natural and consistent, highlighting the texture of the petals and wood surface. The flowers, vase, and background are sharply focused, with realistic colors and coherent perspective. No distortions, warping, or broken elements exist; all components appear physically plausible and well-rendered."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780907562_d53d97a8/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet of flowers arranged upright in a vase, with blooms facing upward and stems extending downward into the vase. The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be inverted (e.g., stems pointing upward, blooms hanging downward into the vase). This critical element is entirely absent—the arrangement is conventional and contradicts the prompt’s core requirement. No visual cues suggest inversion, symbolic representation, or intentional misdirection. Thus, the image fails to reflect the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent. The bouquet, vase, and table exhibit consistent lighting, natural textures (e.g., petal details, ribbed vase surface), and logical perspective. All elements are well-formed: flowers show distinct petals and stems, leaves connect organically to blooms, and the vase rests stably on the table without floating or clipping. No artifacts, distortions, or anatomical inconsistencies are present. The composition is sharp and visually deliberate, meeting all criteria for a flawless rendering."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

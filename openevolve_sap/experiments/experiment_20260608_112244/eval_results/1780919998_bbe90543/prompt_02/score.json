@@ -1,0 +1,28 @@
+{
+  "alignment score": 3.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780919998_bbe90543/prompt_02/image_00.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image shows a cat with a shadow cast behind it. The cat faces forward (toward the viewer), while the shadow extends in the opposite direction (away from the viewer), clearly demonstrating the prompt’s requirement that \"the shadow of a cat is facing the opposite direction.\" The objects (cat and shadow) are present, their roles are unambiguous, and the spatial relationship directly conveys the intended meaning without symbolic or metaphorical interpretation.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent with no rendering artifacts. The cat’s anatomy (fur, limbs, facial features) is well-defined, lighting and shadows are consistent with a natural light source, and the ground texture is realistic. There are no distortions, floating elements, or implausible blending; the scene appears photographically realistic and technically flawless."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780919998_bbe90543/prompt_02/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a cat with a shadow, but fails to convey the specific meaning of \"the shadow of a cat is facing the opposite direction.\" While the cat and its shadow are present, the shadow behaves according to normal physical principles - it extends away from the light source (appearing to the left of the cat), which is the expected orientation. The prompt implies an unusual or physically impossible scenario where the shadow would be oriented in a way that contradicts standard lighting physics (e.g., facing toward the light source or appearing inverted relative to the cat's position). Since the image displays a normal, physically accurate shadow without any indication of the shadow \"facing\" an opposite direction (which is itself a somewhat ambiguous concept for a 2D projection), the key conceptual element of the prompt is significantly misrepresented.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with excellent visual coherence. The cat is sharply defined with realistic fur texture and anatomical accuracy. Lighting is consistent throughout the scene, with natural shadows that follow physical principles. The ground texture is detailed and uniform, and there are no visible artifacts, distortions, or rendering issues. The contrast between light and shadow is well-balanced, creating a professional-looking image with no broken elements, unnatural blending, or coherence problems. The photograph appears technically proficient with no visible flaws in composition, focus, or lighting."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

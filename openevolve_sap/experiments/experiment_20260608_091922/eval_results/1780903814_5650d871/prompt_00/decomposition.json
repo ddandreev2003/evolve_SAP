@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural contradiction involving gravity and orientation. Per Strategy B, we must avoid starting with a normal bouquet. We begin with a proxy of bare stems oriented upwards to lock the inverted geometry before refining it into a floral subject.",
+  "prompts_list": [
+    "A bundle of bare green stems sticking straight up out of a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

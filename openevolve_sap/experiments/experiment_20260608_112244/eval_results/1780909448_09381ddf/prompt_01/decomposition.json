@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves and hands have 5 fingers, creating a strong prior against 6. A \"mannequin\" serves as a structural proxy that accepts modified geometry better than biological skin. Starting with a white mannequin hand with 6 fingers locks the 6-finger layout in the early steps (0-5) without the biological constraints. Switching to \"glove\" at step 5 overlays the material and identity while preserving the impossible shape established previously.",
+  "prompts_list": [
+    "A white mannequin hand with exactly 6 distinct fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

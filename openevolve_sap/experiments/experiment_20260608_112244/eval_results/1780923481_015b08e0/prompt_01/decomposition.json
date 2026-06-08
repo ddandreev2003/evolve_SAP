@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A glove strongly implies standard human anatomy (five fingers), creating a geometric conflict with the requested six digits. Following Strategy B, we introduce the anomalous finger count on a bare hand first to lock the coarse geometry. Once the structure is established, we swap the subject to a \"white glove\" which retains the shape without fighting the model's prior for a realistic hand.",
+  "prompts_list": [
+    "A bare human hand with exactly six distinct fingers",
+    "A white glove with exactly six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

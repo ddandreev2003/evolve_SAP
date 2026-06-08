@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Human anatomy typically dictates five fingers per glove. Beginning with a standard glove description locks the five-digit geometry. Introducing the six-finger constraint immediately in the first prompt ensures the latent space encodes the correct anomaly during the critical layout phase.",
+  "prompts_list": [
+    "A white glove worn on a hand with six fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

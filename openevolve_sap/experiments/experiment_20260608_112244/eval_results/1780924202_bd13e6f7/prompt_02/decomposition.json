@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The prompt describes an impossible lighting physics contradiction (shadow defying light source direction). Standard diffusion models learn consistent shadow geometry early (steps 0-4). By introducing the correct lighting first, we lock the environment and object pose. We then switch at step 5 to inject the impossible shadow logic once the coarse structure is stable, preventing the model from hallucinating the cat's shape to fit a different shadow.",
+  "prompts_list": [
+    "A grey tabby cat sitting on a clean white floor, brightly lit from the right side of the room",
+    "A grey tabby cat sitting on a clean white floor, brightly lit from the right side of the room, but the cat's shadow is physically impossible and is cast directly to the right, overlapping the cat's paws"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

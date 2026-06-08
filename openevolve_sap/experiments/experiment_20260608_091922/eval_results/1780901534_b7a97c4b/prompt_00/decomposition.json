@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural contradiction regarding object orientation and gravity. Standard diffusers lock upright vase shapes early. Following Strategy B, we use the inverted geometry as a proxy first to avoid locking normal vase semantics.",
+  "prompts_list": [
+    "Stems sticking up from an inverted vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

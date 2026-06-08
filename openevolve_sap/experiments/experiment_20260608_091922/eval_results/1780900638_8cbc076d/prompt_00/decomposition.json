@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down floral arrangement violates standard physical expectations for vases. Applying Strategy B avoids the trap of stabilizing a normal upright vase geometry. Beginning with the inverted stem structure allows the model to establish the anomaly early before refining the semantic label.",
+  "prompts_list": [
+    "Stems pointing upward, flowers hanging down inside an inverted container",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

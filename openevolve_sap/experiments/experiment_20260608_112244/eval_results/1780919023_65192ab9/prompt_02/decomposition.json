@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt describes a physically impossible lighting condition where the shadow contradicts the light source direction. According to Strategy A for Material/Lighting contradictions, the first prompt must establish the scene layout and consistent light direction to stabilize geometry (Steps 0-4) before introducing the impossible shadow alignment at Step 5, ensuring the model does not fail to resolve the conflict between light and shadow vectors.",
+  "prompts_list": [
+    "A cat standing on grass illuminated from the left with a shadow on the right",
+    "A cat standing on grass illuminated from the left with a shadow on the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

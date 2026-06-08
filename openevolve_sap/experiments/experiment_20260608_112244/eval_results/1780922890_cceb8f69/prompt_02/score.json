@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922890_cceb8f69/prompt_02/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a cat with a shadow, but the shadow is cast behind the cat in the same direction the cat is facing, not facing the opposite direction as required by the prompt. While the main subject (a cat) is present, the key element of the shadow facing the opposite direction is completely missing, significantly misrepresenting the intended concept. The shadow's orientation is natural and expected for a single light source, not demonstrating the specific spatial relationship described in the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with excellent visual fidelity. The cat is rendered with clear, detailed fur texture, natural lighting, and consistent perspective. All anatomical features (eyes, whiskers, paws, body structure) are well-formed and realistic. The lighting, shadow, and ground texture are coherent and natural throughout the scene, with no visible artifacts, distortions, or rendering issues. The image appears professional and fully realistic."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922890_cceb8f69/prompt_02/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image shows a cat with a shadow cast to its left side, but the shadow does not \"face the opposite direction\" relative to the cat. The cat is oriented toward the camera, and the shadow extends laterally (to the left), not in a direction opposing the cat’s forward-facing orientation. The prompt requires the shadow to be oriented *opposite* to the cat’s direction (e.g., if the cat faces forward, the shadow should appear to face backward), which is not depicted here. The shadow’s placement is a natural side projection, not a deliberate reversal of direction, so the core semantic requirement is entirely unmet.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with no visible rendering artifacts. The cat’s anatomy (fur, limbs, facial features) is sharp and coherent, lighting is natural and consistent, and the ground texture and shadow gradients are realistic. There are no distortions, clipped elements, or implausible blending—every component appears physically plausible and visually polished."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

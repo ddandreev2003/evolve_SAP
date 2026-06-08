@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove inherently contains five fingers, creating a direct structural conflict with the request for six. To prevent the model from overriding the digit count due to its strong \"5-finger glove\" prior, we follow Strategy B. We establish the impossible geometry using a raw anatomical proxy (\"bare hand\") first, ensuring the 6-finger topology is locked in the coarse structure before switching to the specific material identity (\"white glove\").",
+  "prompts_list": [
+    "A bare hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

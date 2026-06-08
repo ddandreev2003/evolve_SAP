@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Upside-down vases defy typical gravity expectations. Starting with the inverted container geometry ensures the model builds the scene around the impossible orientation before assigning the floral elements, avoiding a locked upright layout.",
+  "prompts_list": [
+    "A vase held upside down",
+    "A bouquet of flowers inside the upside down vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

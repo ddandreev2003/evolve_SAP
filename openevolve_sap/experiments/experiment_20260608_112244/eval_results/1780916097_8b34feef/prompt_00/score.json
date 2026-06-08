@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916097_8b34feef/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the flowers are arranged **right-side up** (blooms at the top, stems in the vase), directly contradicting the prompt’s requirement of being \"upside down.\" While the core elements (bouquet, vase) are present, the critical action/attribute (inverted orientation) is entirely missing, rendering the scene inconsistent with the prompt’s intent.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, realistic photograph with no visible rendering artifacts. Lighting, texture, and perspective are consistent; flowers and vase are sharply defined, anatomically coherent, and naturally connected. The composition is visually balanced and free of distortions or surreal blending."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916097_8b34feef/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bouquet of flowers in a vase with the blooms oriented upright (facing upward) and stems submerged in water, which is the standard/normal orientation. The prompt explicitly requires the bouquet to be \"upside down,\" meaning the blooms should be positioned downward (toward the vase's base) and stems extending upward. This critical spatial relationship is entirely absent—the scene shows no inversion of the bouquet or vase. Consequently, the image fails to represent the core action and scenario described in the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no detectable artifacts, distortions, or inconsistencies. The flowers, stems, and glass vase exhibit realistic textures, natural lighting, and coherent perspective. All elements (petals, leaves, water) are sharply defined and anatomically/structurally sound, with no signs of warping, merging, or physical implausibility. The composition is clean and professionally rendered."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914627_e920360e/prompt_01/image_00.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image shows a white glove, which correctly matches the primary object described in the prompt. However, the glove has only 5 fingers (including the thumb), not the 6 fingers specified in the prompt. The main subject (a white glove) is present, but a critical attribute (the number of fingers) is incorrect, making this a case where \"Main subjects are present but important attributes or actions are missing or wrong.\"",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is well-formed with proper anatomical structure for a standard glove, showing realistic texture, folds, and creases. Lighting is consistent, creating appropriate shadows that enhance the three-dimensional appearance. The perspective is accurate, and there are no rendering artifacts, distortions, or broken elements. The black background provides clear contrast that makes the white glove stand out sharply."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914627_e920360e/prompt_01/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which matches the color specification in the prompt. However, the glove clearly has 5 fingers (1 thumb and 4 digits), not the 6 fingers specified in the prompt. The key element of the prompt - the number of fingers - is significantly misrepresented. While the object (a white glove) is present, the critical attribute (6 fingers) is missing, which fundamentally alters the intended meaning of the prompt. This represents a major conceptual error since the number of fingers is the central specification in the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The white glove has smooth, consistent textures with natural lighting and shadows. The fingers and thumb are well-formed, anatomically correct, and properly proportioned. There are no rendering artifacts, distortions, or broken elements. The perspective is consistent, and the glove appears to fit naturally on a hand without any floating, clipped, or merged geometry. The solid background provides clean contrast without interfering with the main subject."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural/spatial contradiction where standard diffusion priors enforce upright vase geometry. To avoid locked-in correct stems, the initial prompt must explicitly define the inverted structure before refining the flower identity.",
+  "prompts_list": [
+    "an inverted vase with stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

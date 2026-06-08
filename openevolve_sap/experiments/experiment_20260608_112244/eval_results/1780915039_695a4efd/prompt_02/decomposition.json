@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are a lighting attribute resolved after scene structure. This follows Strategy A for material/lighting contradictions: first establish the cat's physical form with neutral lighting, then introduce the impossible shadow direction once geometry is locked.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow explicitly faces the opposite direction of the cat's body"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

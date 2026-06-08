@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction contradicts light physics. Starting with a standard cat scene establishes the object form, while introducing the impossible shadow behavior later leverages lighting-specific refinements.",
+  "prompts_list": [
+    "A cat sitting on grass in daylight",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

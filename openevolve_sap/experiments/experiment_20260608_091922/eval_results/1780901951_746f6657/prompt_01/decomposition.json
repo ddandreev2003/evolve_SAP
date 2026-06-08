@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Gloves strongly imply five fingers due to anatomical priors. Strategy B is used to prevent the model from defaulting to 5 fingers immediately. The first prompt describes the hand geometry explicitly without using the word \"glove,\" locking the finger count before applying the clothing identity in the second prompt.",
+  "prompts_list": [
+    "A bare human hand with exactly six distinct fingers spread apart",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

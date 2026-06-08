@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "A lighting contradiction violating physics. Shadows must oppose light sources. Strategy A is used here: establish the correct scene and lighting geometry first (Steps 0-5), then override the shadow direction in the second prompt. Explicitly describing the light and shadow vectors prevents the abstract word \"opposite\" from being ignored or interpreted loosely.",
+  "prompts_list": [
+    "A cat standing in sunlight, illuminated from the left casting a shadow to the right",
+    "A cat standing in sunlight, illuminated from the left casting a shadow to the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

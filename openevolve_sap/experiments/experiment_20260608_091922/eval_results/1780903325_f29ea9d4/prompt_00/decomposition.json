@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural contradiction involving inverted containers. Flower blooms typically imply upward growth; using flowers early would lock the wrong spatial orientation (upright) in steps 0-4. We use wooden sticks as a neutral proxy to force the inverted geometry immediately.",
+  "prompts_list": [
+    "A bundle of bare wooden sticks pointing straight up out of an inverted vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

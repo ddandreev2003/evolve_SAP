@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove is anatomically designed for five fingers. To prevent the model from defaulting to a normal hand shape, we first establish the impossible 6-finger geometry using a bare hand proxy in the early noise steps. Once the structure is locked, the final prompt applies the glove material without altering the digit count.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

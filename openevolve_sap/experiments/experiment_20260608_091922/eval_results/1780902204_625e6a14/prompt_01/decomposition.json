@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A glove normally fits a 5-fingered hand. Introducing a 'standard' glove early locks the model into 5-finger anatomy. Using Strategy B, we start with the structural anomaly ('hand with 6 fingers') to define the irregular geometry first. Once the shape is stabilized, we switch to the target object ('white glove') to apply the correct material overlay without regressing the finger count.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

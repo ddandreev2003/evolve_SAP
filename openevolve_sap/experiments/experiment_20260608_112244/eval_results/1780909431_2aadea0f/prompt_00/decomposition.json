@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The prompt presents a structural contradiction (flowers inverted in a vase). Standard priors would orient stems upwards towards light. Following Strategy B, the first prompt explicitly describes the inverted geometry (\"stems sticking straight up\") early in the process to lock the unconventional shape before switching to the semantic label.",
+  "prompts_list": [
+    "A vase with flower heads stuffed inside and bare green stems sticking straight up out of the top",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

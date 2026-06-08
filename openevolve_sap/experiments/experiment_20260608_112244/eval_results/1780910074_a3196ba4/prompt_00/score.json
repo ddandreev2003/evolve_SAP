@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780910074_a3196ba4/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented **normally** (stems down, blooms up), not upside down as specified in the prompt. The key action described in the prompt—“upside down”—is entirely absent, and the scene does not depict the intended unconventional arrangement. While the core elements (bouquet, vase) are present, the critical contextual detail (orientation) is fundamentally misrepresented, resulting in significant misalignment with the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts. The flowers, vase, and wooden surface are sharply defined, with consistent lighting, natural textures, and coherent perspective. All elements (stems, blooms, glass) are anatomically and physically plausible, and there are no distortions, warping, or broken connections. The composition is clean and realistic, meeting the highest standard for visual coherence."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780910074_a3196ba4/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented upright (stems at the bottom, blooms at the top), not upside down as specified in the prompt. While the correct objects (bouquet, vase) are present, the critical action of being \"upside down\" is entirely missing, fundamentally misrepresenting the prompt’s intended scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. The vase, flowers, glass, and wooden surface are rendered with consistent lighting, sharp detail, and realistic textures. There are no visible artifacts, distortions, or anatomical errors (e.g., the flowers and glass are well-formed, and all elements connect naturally). The composition is realistic and free of rendering flaws."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting constraint involving physics consistency. Strategy A applies here. Start with neutral lighting to fix the object identity and posture, then switch to specify the impossible shadow vector once the shape is locked.",
+  "prompts_list": [
+    "A cat sitting on the ground facing forward, flat neutral lighting, no shadows",
+    "A cat sitting on the ground facing forward, casting a dark shadow that explicitly extends forward toward the viewer, in the physically impossible direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

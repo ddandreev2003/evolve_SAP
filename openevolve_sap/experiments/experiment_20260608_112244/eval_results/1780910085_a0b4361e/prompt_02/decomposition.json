@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt describes a lighting physics contradiction (impossible shadow alignment). Following Strategy A, the scene begins with neutral, flat lighting to lock the cat's geometry and pose without enforcing a specific shadow vector. Once the structure stabilizes at step 5, the contradictory shadow direction is applied.",
+  "prompts_list": [
+    "A cat sitting on the ground, flat ambient lighting",
+    "A cat sitting on the ground, its shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

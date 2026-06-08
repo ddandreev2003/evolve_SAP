@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flower arrangements inherently trigger biological priors of upward growth. Following Strategy B, starting with a fully correct 'bouquet' would lock upright geometry. We instead use a structural proxy ('stems in inverted vase') during steps 0–4 to force the canvas into the impossible downward orientation. Once the spatial contradiction is resolved, the second prompt refines the identity to 'flowers' and adds texture details.",
+  "prompts_list": [
+    "Green stems sticking out of an inverted glass vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction managed via Strategy A. The cat's pose and environment are established normally in early stages. The impossible shadow direction is introduced later when the model focuses on surface properties and lighting cues, minimizing conflicts with the object's base geometry.",
+  "prompts_list": [
+    "A realistic cat standing in daylight",
+    "A realistic cat standing in daylight with its shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet naturally grows upright, making an upside-down arrangement a structural contradiction violating physical priors. Following Strategy B, we avoid naming the object \"bouquet\" in the first prompt to prevent the model from locking standard upright geometry during the critical layout phase. Instead, we use a structural proxy (\"inverted vase,\" \"stalks pointing down\") to establish the unusual geometry early, then transition to the specific semantic concept in the final prompt once the shape is resolved.",
+  "prompts_list": [
+    "An inverted glass vase with green stalks extending toward the floor",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

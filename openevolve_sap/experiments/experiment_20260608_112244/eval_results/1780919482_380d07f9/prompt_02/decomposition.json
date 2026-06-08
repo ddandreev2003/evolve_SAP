@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows depend on consistent lighting physics, but the prompt requires an impossible shadow direction relative to the light source. Following Strategy A, the scene starts with stable geometry and explicit normal lighting to fix the cat's structure and ground plane. The impossible shadow direction is introduced at step 5 once the coarse layout is locked, ensuring the cat shape doesn't collapse while enforcing the contradictory lighting behavior.",
+  "prompts_list": [
+    "A cat sitting on the ground illuminated from the right",
+    "A cat sitting on the ground illuminated from the right, with the shadow cast to the right"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

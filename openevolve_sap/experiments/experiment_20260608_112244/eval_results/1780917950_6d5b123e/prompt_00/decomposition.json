@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates physical priors where stems must be submerged in a vase. Per Strategy B, the first prompt describes the inverted geometry using stems and blossoms without locking the \"bouquet\" semantics, establishing the weird shape before naming the object.",
+  "prompts_list": [
+    "A glass vase with flower stems pointing straight up and blossoms hanging down near the table",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

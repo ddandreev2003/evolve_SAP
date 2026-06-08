@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The prompt describes a physical impossibility where flowers are upside down in a vase (violating gravity and object utility). During diffusion Steps 0–5, the model locks global composition and geometry based on semantic priors (vases hold water at the bottom). To prevent the model from auto-correcting the vase to upright, the first prompt establishes the inverted container geometry explicitly using a structural proxy (\"resting on its rim\", \"stems sticking up\") without invoking the semantic weight of a standard bouquet. The second prompt introduces the \"bouquet\" semantics once the inverted shape is stabilized.",
+  "prompts_list": [
+    "An inverted glass vase resting on its rim, with bare stems sticking straight up into the air",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

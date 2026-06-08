@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural anatomical contradiction. Strategy B dictates we must start with a proxy object that allows the extra finger geometry to lock in (a hand) rather than the final object (a glove), which might enforce a standard 5-finger pattern during initial denoising. We shift to the glove material only after the 6-finger count is established.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

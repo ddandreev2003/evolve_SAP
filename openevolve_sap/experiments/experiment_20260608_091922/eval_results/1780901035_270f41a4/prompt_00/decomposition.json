@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A standard bouquet implies upright growth, creating a structural contradiction with the inverted configuration. According to Strategy B, starting with a normal flower image would lock incorrect geometry. The first prompt explicitly defines the inverted structure (vase upside down/stems up) to stabilize the spatial layout, ensuring the model respects the odd orientation before finalizing the object identity.",
+  "prompts_list": [
+    "An inverted vase with flower stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

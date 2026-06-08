@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Floral bouquets rely on gravity to hang naturally downward; describing them as \"upside down\" contradicts standard physical expectations. Mentioning \"bouquet\" in the initial low-frequency stage (steps 0–4) locks the model into a standard upright composition. We instead begin with a geometrically descriptive proxy (\"stems up, heavy masses down\") to force the correct structure, then introduce the semantic concept once the shape is established.",
+  "prompts_list": [
+    "Green plant stems extending vertically upwards from a glass vase, with heavy colorful floral masses dangling downwards toward the floor",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

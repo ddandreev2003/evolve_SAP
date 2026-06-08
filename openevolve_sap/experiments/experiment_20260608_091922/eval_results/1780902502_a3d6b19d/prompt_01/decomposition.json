@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a structural contradiction. Strategy B applies: do not start with \"A white glove\" (5 fingers) as the anatomy will be fixed too early. Instead, start with a direct proxy specifying the anomaly (\"hand with 6 fingers\"), then transition to the target identity (\"white glove\") to transfer texture over the valid geometric anomaly.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

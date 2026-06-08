@@ -1,0 +1,28 @@
+{
+  "alignment score": 4.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780917249_2c2fdcf7/prompt_01/image_00.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image shows a white glove, which matches the color specification in the prompt. However, the glove has only 5 fingers (4 fingers plus a thumb), not 6 as specified in the prompt. The main subject (a white glove) is present and correctly depicted, but the key attribute (having 6 fingers) is missing. This aligns with the description for score 3: \"Main subjects are present but important attributes or actions are missing or wrong.\"",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts or distortions. The glove is well-formed with consistent lighting, texture, and perspective. The fingers are anatomically correct for a standard glove, and all elements connect naturally without floating, clipping, or merged shapes. The image is clean, realistic, and fully coherent with no visible flaws, warranting a score of 5."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780917249_2c2fdcf7/prompt_01/image_01.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image precisely depicts a white glove with exactly six functional fingers (including the thumb), matching the prompt's requirement. The glove is shown as a concrete, wearable object against a neutral background, with all fingers clearly defined and serving their intended anatomical role. There is no symbolic or metaphorical representation—only a direct, functional illustration of the described scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is photorealistic and free of artifacts. The glove exhibits consistent lighting, smooth texture, and natural creases. All fingers are anatomically coherent with precise spacing and proportions, and the wrist connection appears physically plausible. The background is uniform, and no distortions, melting, or fused geometry are present. The rendering is clean, deliberate, and fully coherent."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

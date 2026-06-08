@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural contradiction regarding anatomical count. Models default to 5 fingers; starting with a standard glove description will fail. Using a hand-only proxy establishes the 6-finger topology first, ensuring the glove conforms to the correct underlying hand shape before being finalized.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

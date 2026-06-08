@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt contains a physics contradiction regarding lighting and shadows (Strategy A). Shadows must extend away from the light source; if they face \"the opposite direction,\" they defy physics. We first establish the cat's geometry and a fixed light source (Steps 0-4). Then, at Step 4, we switch to enforcing the impossible shadow direction (casting toward the light) to create the required contradiction without destabilizing the initial structure.",
+  "prompts_list": [
+    "A realistic cat sitting on a paved surface, illuminated strongly from the right side",
+    "A realistic cat sitting on a paved surface, illuminated strongly from the right side, casting a shadow towards the light source on the right"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

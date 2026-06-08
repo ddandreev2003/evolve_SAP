@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet contradicts gravity-based growth structures. Starting with a normal flower locks upright orientation. Using bare stems pointing upwards mimics the inverted root/floral geometry early to prevent model correction.",
+  "prompts_list": [
+    "Bare green stems sticking straight up out of a clear vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

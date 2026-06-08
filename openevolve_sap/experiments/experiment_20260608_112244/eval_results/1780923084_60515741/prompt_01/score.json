@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780923084_60515741/prompt_01/image_00.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image shows a white glove, which matches the color specification in the prompt. However, it displays only 5 fingers (thumb plus four fingers) rather than the 6 fingers specified in the prompt. While the main subject (a white glove) is present and correctly depicted as a functional glove, the critical attribute of having 6 fingers is missing. This is a significant attribute error since the finger count is central to the prompt's meaning, making the image misrepresent the key requirement.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is rendered with consistent lighting, texture, and perspective against the black background. The fingers and hand are well-formed with anatomically correct proportions for a standard glove. There are no artifacts, distortions, broken elements, or physical incoherence - the glove appears natural with proper connections between all parts. The rendering is high-quality and visually precise."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780923084_60515741/prompt_01/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a white glove, which aligns with the \"white glove\" element of the prompt. However, it clearly shows **5 fingers** (including the thumb), not the 6 fingers specified in the prompt. The core requirement of the finger count is fundamentally misrepresented, making the key functional attribute incorrect. While the object type (glove) and color (white) are accurate, the absence of the sixth finger critically undermines the prompt's intended meaning, as the entire premise hinges on this specific numerical detail.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The glove exhibits clean, realistic rendering with consistent lighting, smooth texture, and precise perspective. All elements (fingers, thumb, wrist) are anatomically coherent and free of distortion, artifacts, or blending issues. The solid green background is uniform, and there are no visible defects in the glove's form (e.g., no melted features, floating parts, or implausible geometry). The rendering is sharp, professional, and fully coherent."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction violations are lighting contradictions, not structural ones. Strategy A applies: build the cat's geometry neutrally first, then override the lighting physics once the shape is stable to prevent structural confusion.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow facing the opposite direction of the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

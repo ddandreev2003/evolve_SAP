@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Diffusion models prioritize upright growth patterns for flora. Starting with a standard vase-and-flower configuration stabilizes the object geometry before introducing the spatial contradiction of an inverted orientation.",
+  "prompts_list": [
+    "A vase with flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

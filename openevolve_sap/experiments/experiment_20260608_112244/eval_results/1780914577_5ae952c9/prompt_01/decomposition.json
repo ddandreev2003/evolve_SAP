@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove with 6 fingers presents a structural contradiction as models default to standard five-digit anatomy. Following Strategy B, starting with a bare hand explicitly defined with six fingers forces the anomalous topology in the low-frequency stages (0-4). Once the digit count is geometrically locked, the prompt shifts to the target identity (white glove) to apply the material texture without correcting the finger count.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

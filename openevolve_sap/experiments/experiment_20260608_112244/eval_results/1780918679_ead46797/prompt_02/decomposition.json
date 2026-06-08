@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting contradiction (Strategy A). The cat's physical geometry must be established with standard physics first to prevent structural instability. We define a fixed light source in the first prompt, then switch to the impossible shadow direction in the second prompt once the coarse layout locks at step 5.",
+  "prompts_list": [
+    "A cat sitting on the ground, illuminated from the left",
+    "A cat sitting on the ground, illuminated from the left, but its shadow is cast towards the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

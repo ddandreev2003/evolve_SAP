@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting condition that conflicts with physical consistency. Following Strategy A, the object structure stabilizes first before applying the physically inconsistent lighting rule.",
+  "prompts_list": [
+    "A cat sitting normally in natural light",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in a vase typically grow upward, making an upside-down arrangement a structural contradiction. Following Strategy B, we avoid the term \"bouquet\" initially to prevent locking normal growth orientation. Instead, we use a geometric proxy describing stems hanging downwards with blooms at the bottom to force the inverted layout during Steps 0–4. Once the shape is established, the second prompt reintroduces the full concept.",
+  "prompts_list": [
+    "A vase with bare green stems hanging downwards, flower heads pointing to the floor",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

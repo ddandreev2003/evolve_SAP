@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove typically implies five fingers. To prevent the model from defaulting to standard anatomy, we first establish the impossible geometry using a bare hand proxy, then add the glove identity once the finger count is structurally locked.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

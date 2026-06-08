@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet contradicts natural physics (gravity) and common object functions (vases hold stems down). Following Strategy B, we avoid using the word \"bouquet\" in the initial stage to prevent the model from defaulting to a standard upright vase configuration. Instead, we describe the specific geometric anomaly (stems up, flowers down) during the low-frequency layout phase (steps 0-4). Once the impossible spatial arrangement is anchored, we introduce the full semantic label \"bouquet\" to finalize the image without reverting to realism.",
+  "prompts_list": [
+    "Bare flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

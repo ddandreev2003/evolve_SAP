@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916673_66ecf7b1/prompt_01/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which matches the color specification in the prompt. However, it clearly displays only 5 fingers (including the thumb) rather than the 6 fingers explicitly requested in the prompt. While the main subject (a white glove) is present, the key attribute of finger count is fundamentally incorrect and significantly misrepresents the core requirement of the prompt. The scene is concrete and functional, but the critical detail specified in the prompt is missing.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible rendering flaws. The glove has smooth, well-formed surfaces with consistent lighting and texture. The fingers and hand anatomy are properly rendered and anatomically correct for a standard glove. There are no distortions, artifacts, or broken elements - the contrast between the white glove and black background enhances clarity. The image appears professionally photographed with excellent visual coherence throughout."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916673_66ecf7b1/prompt_01/image_01.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image shows a white glove, which matches the primary subject of the prompt. However, the glove has only 5 fingers (thumb plus four fingers) rather than the 6 fingers specified in the prompt. This is a significant attribute error since the number of fingers is the central distinguishing feature requested. The main subject is present but the key numerical specification is incorrect, making the image conceptually misaligned with the prompt's requirements.",
+        "quality score": 5,
+        "quality explanation": "The image is rendered with excellent visual quality. The white glove appears clean and realistic with consistent lighting, proper texture detail, and natural shadows. The fingers are well-formed with anatomically correct proportions and smooth transitions. There are no visible artifacts, distortions, or broken elements. The perspective is consistent and the glove connects naturally to the wrist area, creating a fully coherent and professional-looking image."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

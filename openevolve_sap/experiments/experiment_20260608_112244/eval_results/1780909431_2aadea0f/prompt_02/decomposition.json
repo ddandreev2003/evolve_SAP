@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows depend on lighting physics which standard diffusion priors render consistently with the light source direction. Starting with the cat and sunlight establishes the object geometry and scene layout without forcing conflicting physics early on. The contradictory shadow direction is introduced in the final stage to overwrite the default lighting model without distorting the cat’s shape.",
+  "prompts_list": [
+    "A cat sitting in sunlight",
+    "A cat sitting in sunlight with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

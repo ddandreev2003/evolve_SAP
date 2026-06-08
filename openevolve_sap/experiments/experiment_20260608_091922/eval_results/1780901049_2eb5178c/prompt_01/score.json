@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780901049_2eb5178c/prompt_01/image_00.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image shows a white glove, which correctly identifies the main subject and color as specified in the prompt. However, it depicts a standard 5-fingered glove rather than the 6 fingers explicitly required by the prompt. The main subject is present but an important attribute (the number of fingers) is fundamentally incorrect, making the core meaning of the prompt unfulfilled. The scene illustrates a functional glove but with the wrong number of digits, which is a significant attribute error.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is well-rendered with consistent lighting, texture, and perspective. The fingers are anatomically correct for a standard glove, with smooth surfaces and natural contours. There are no rendering artifacts, distortions, or broken elements - the glove appears physically coherent with proper form and structure. The black background provides clear contrast that enhances the visual clarity of the white glove."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780901049_2eb5178c/prompt_01/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which matches the color specification in the prompt. However, the glove has only 5 fingers (1 thumb + 4 fingers), while the prompt specifically states \"6 fingers.\" The key attribute of having 6 fingers is significantly misrepresented, as the glove displays the standard human hand configuration rather than the specified 6-fingered design. While the main subject (a white glove) is present, the critical element of the finger count is incorrect, which substantially misrepresents the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is well-rendered with consistent lighting, texture, and perspective. The fingers and thumb are anatomically correct for a 5-fingered glove, with natural shadows and realistic surface texture. There are no rendering artifacts, distortions, or broken elements, and the green background provides a clear contrast that enhances the visual clarity of the glove."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates typical growth orientation. Following Strategy B, we avoid the \"normal\" flower expectation entirely. Prompt 1 establishes the specific inverted geometry using descriptive phrases about stems and blossoms rather than the word \"bouquet.\" Prompt 2 labels the concept once the strange shape is locked.",
+  "prompts_list": [
+    "A vase with long stems pointing out of the top and flowers hanging downwards below the rim",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

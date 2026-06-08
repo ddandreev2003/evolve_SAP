@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916130_9f8e1339/prompt_02/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a cat with a visible shadow, but the shadow does not face the opposite direction from the cat as required by the prompt. The cat is facing slightly left toward the camera, and its shadow extends to the left side of the image - in the same general direction the cat is facing. For proper alignment, if the cat were facing left, the shadow should extend to the right (opposite direction). While relevant components (cat and shadow) are present, the key element of the shadow facing the opposite direction is missing, significantly misrepresenting the prompt's specific requirement.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with excellent visual characteristics. The cat is sharply defined with clear details in its fur pattern, facial features, and body structure. The grass texture appears natural and well-rendered. Lighting is consistent with natural sunlight, creating a realistic shadow with proper intensity and direction. There are no visible artifacts, distortions, or anatomical inconsistencies - the cat's posture and the shadow's placement appear physically coherent and realistic. The composition is clean with no rendering flaws."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916130_9f8e1339/prompt_02/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a cat with a visible shadow on grass, but the shadow is cast to the left side of the cat (relative to the cat's forward-facing orientation), not in the *opposite direction* from the cat's gaze. For the shadow to \"face the opposite direction,\" it should extend directly behind the cat (e.g., if the cat faces forward, the shadow should point backward). Here, the shadow is lateral and does not demonstrate the required directional opposition. While the core elements (cat, shadow, grass) are present, the key spatial relationship specified in the prompt is misrepresented, significantly undermining semantic fidelity.",
+        "quality score": 5,
+        "quality explanation": "The image is rendered with exceptional clarity and realism. Lighting is consistent (sunlight creates natural, soft shadows), textures (grass blades, cat fur) are sharp and detailed, and perspective is coherent. The cat’s anatomy (facial features, limbs, posture) is anatomically correct with no distortion, and all elements (grass, shadow, cat) integrate physically plausibly. No artifacts, warping, or coherence issues are present."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This involves a lighting/physics contradiction. Strategy A applies. Generating the correct object structure first prevents geometry conflicts. The shadow direction (physical impossibility) is treated as a material/lighting feature introduced later to avoid destabilizing the primary form.",
+  "prompts_list": [
+    "A cat standing in bright light",
+    "A cat standing in bright light with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

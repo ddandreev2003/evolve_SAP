@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780923792_3199d09c/prompt_01/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which matches the primary subject of the prompt. However, the glove clearly has only 5 fingers (including the thumb), not the 6 fingers specified in the prompt. The key attribute of \"6 fingers\" is fundamentally misrepresented, which significantly alters the intended meaning. While the main object (a white glove) is present, the specific and critical detail about the number of fingers is incorrect, making the representation inaccurate rather than just having minor conceptual issues.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is well-formed with consistent lighting, texture, and perspective. The fingers and thumb connect naturally to the hand without any distortion, warping, or implausible blending. The black background provides clear contrast, and there are no rendering artifacts, broken elements, or anatomical inconsistencies in the glove's structure. The image appears to be a high-quality photograph with professional rendering."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780923792_3199d09c/prompt_01/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a bare human hand with five fingers, not a white glove as specified in the prompt. While fingers are present (a relevant component), the key element— a glove—is entirely missing, and the hand has only five fingers instead of the required six. This significantly misrepresents the prompt's core meaning, as the scene fails to illustrate a glove (an object) with the described attribute (six fingers), instead showing a biological hand in a non-functional context for the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible rendering artifacts. The hand is well-formed with anatomically correct fingers, consistent lighting, smooth texture, and natural perspective. There are no distortions, warping, or physical inconsistencies (e.g., fingers are properly connected and distinct), resulting in a high-quality, visually plausible representation."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

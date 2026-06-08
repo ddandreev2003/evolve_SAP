@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical impossibilities like finger count require immediate structural encoding (Strategy B). Starting with a standard glove would cause the model to hallucinate 5 fingers and ignore late prompts. We begin with the anatomical proxy \"hand with 6 fingers\" to force the geometry, then layer the glove material and identity.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural contradiction regarding gravity and plant growth. Establishing the inverted geometry via bare stems before defining the object as a \"bouquet\" prevents the model from locking into standard vertical floral arrangements.",
+  "prompts_list": [
+    "Bare flower stems protruding from a vase, with heavy petal heads drooping downwards below the rim",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

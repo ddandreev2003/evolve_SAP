@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a physical inconsistency resolved through lighting parameters. Strategy A dictates establishing the object's geometry first without the impossible light source behavior, then applying the contradictory shadow in the final stage.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow explicitly faces the opposite direction of the light"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

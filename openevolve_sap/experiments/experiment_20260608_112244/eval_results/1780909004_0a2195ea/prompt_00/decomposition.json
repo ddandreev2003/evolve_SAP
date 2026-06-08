@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates natural gravity (stems should point into the vase). Starting with the correct floral orientation would lock the geometry against inversion. Instead, the proxy describes the physical structure of an inverted container with stems reaching upward immediately.",
+  "prompts_list": [
+    "A vase suspended with flower stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

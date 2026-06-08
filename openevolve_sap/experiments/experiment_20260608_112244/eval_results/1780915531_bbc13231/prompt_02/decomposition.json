@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow physics depend on established lighting direction. Generating the object silhouette in standard light conditions ensures proper shape before inverting the shadow vector in the second stage.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow is cast opposite to the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

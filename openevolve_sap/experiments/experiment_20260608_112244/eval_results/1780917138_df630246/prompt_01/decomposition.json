@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Gloves conform tightly to hand shapes, often forcing 5 fingers even if text implies otherwise. By starting with bare anatomy, the geometry is locked in before draping the material over it.",
+  "prompts_list": [
+    "A bare human hand with exactly six fingers",
+    "A white glove on a hand with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

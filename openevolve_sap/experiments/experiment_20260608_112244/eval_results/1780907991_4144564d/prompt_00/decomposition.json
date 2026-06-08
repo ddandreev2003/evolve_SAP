@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet is naturally structured to stand upright with stems in water; starting with this assumption locks incorrect geometry. By introducing the inverted vase orientation first, the model establishes the spatial anomaly early. This structural proxy prevents the model from defaulting to normal physics before refining the floral identity in the second stage.",
+  "prompts_list": [
+    "A vase held upside down with flowers inside",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

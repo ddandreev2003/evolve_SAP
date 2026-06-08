@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Extra fingers alter topology significantly. Strategy B prevents the model from locking realistic anatomy by starting with a structural proxy (hand) that accepts the finger count before assigning the final material (glove).",
+  "prompts_list": [
+    "a bare human hand with exactly 6 fingers",
+    "a white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

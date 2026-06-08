@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916549_650d3ac1/prompt_01/image_00.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image shows a white glove, which matches the main subject of the prompt. However, the glove has 5 fingers (4 fingers plus a thumb), not the 6 fingers specified in the prompt. The main subject is present and correctly identified as a white glove, but a key attribute (the number of fingers) is fundamentally incorrect. The image depicts a standard glove rather than fulfilling the specific requirement of having 6 fingers, which is a significant attribute mismatch.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove appears well-formed with natural texture and consistent lighting. The fingers are anatomically correct for a standard glove, with smooth surfaces and clear definition against the black background. There are no rendering artifacts, distortions, or broken elements. The perspective is consistent and the glove appears physically coherent with natural connections between all parts. The image quality is excellent and appears to be a high-resolution photograph."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916549_650d3ac1/prompt_01/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a white glove, but it clearly shows only 5 fingers (thumb + 4 digits), directly contradicting the prompt's requirement of \"6 fingers.\" The core attribute specified in the prompt (number of fingers) is fundamentally misrepresented, though the object (a white glove) and its functional role as a hand covering are present. This constitutes a significant misrepresentation of the prompt's key detail.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The glove exhibits smooth, consistent texture and realistic lighting with no artifacts. Fingers are anatomically coherent (for a standard 5-fingered hand), proportions are natural, and the background is uniformly rendered. No distortions, merged geometry, or physical inconsistencies are present—the image is clean, realistic, and fully coherent."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

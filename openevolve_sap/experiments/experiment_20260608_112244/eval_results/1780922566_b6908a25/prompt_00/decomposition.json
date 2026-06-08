@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet defies natural growth gravity. Starting with the physical description of stems and blossoms establishes the inverted geometry early (Strategy B) before labeling the surreal state, preventing the model from correcting it to a normal upright orientation.",
+  "prompts_list": [
+    "flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "a bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

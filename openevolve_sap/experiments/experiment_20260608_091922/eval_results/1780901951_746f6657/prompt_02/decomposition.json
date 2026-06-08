@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are subject to strict lighting physics. Strategy A is applied here to resolve the lighting contradiction. First, a normal scene with neutral lighting (no shadows) establishes the cat's geometry. Then, at the switch point, the impossible shadow direction is introduced once the structure is stable.",
+  "prompts_list": [
+    "A cat sitting on the ground facing forward, flat lighting, no shadows",
+    "A cat sitting on the ground facing forward, but its shadow is cast extending forward toward the viewer"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

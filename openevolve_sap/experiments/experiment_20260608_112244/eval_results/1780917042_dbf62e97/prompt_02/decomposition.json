@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting physics violation. Shadow direction depends on late-stage illumination calculation. Define the cat geometry first, then inject the contradictory shadow vector once spatial identity is fixed.",
+  "prompts_list": [
+    "A realistic gray cat standing in bright sunlight",
+    "A realistic gray cat standing in bright sunlight with shadow cast opposite the sun"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

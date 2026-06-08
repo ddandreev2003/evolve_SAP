@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780901035_270f41a4/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a bouquet of flowers in a vase, but the arrangement is conventional (blooms upright, stems downward). The prompt explicitly requires an \"upside down\" orientation, meaning the flowers should be inverted with blooms inside the vase and stems protruding upward. This critical attribute is entirely missing—the scene shows a standard upright bouquet with no visual indication of inversion. While the correct objects (bouquet, flowers, vase) are present, the core action (being upside down) is misrepresented, failing to illustrate the intended situation.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no rendering artifacts. The flowers, leaves, and vase exhibit realistic textures, consistent lighting, and sharp detail. Complex elements like the delicate petals, glass vase transparency, and natural stem/leaf connections are anatomically coherent and free from distortion. Perspective and composition are logical, with no floating objects, warped shapes, or blending issues. The scene appears professionally photographed and fully realistic."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780901035_270f41a4/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains a bouquet of flowers in a vase, but the bouquet is oriented upright (with blooms at the top and stems extending downward into the vase), directly contradicting the prompt’s requirement for the bouquet to be \"upside down.\" While the core elements (bouquet, vase) are present, the key functional detail—the inverted orientation—is entirely absent, resulting in a significant misrepresentation of the prompt’s intent.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine, with realistic rendering of the vase, flowers, and foliage. Lighting, texture, and perspective are consistent, and all elements (petals, leaves, vase surface) exhibit natural coherence without artifacts, distortion, or anatomical inconsistencies. The composition is sharp and professionally executed."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

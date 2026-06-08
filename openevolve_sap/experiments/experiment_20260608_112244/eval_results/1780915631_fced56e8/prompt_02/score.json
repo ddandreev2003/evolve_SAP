@@ -1,0 +1,28 @@
+{
+  "alignment score": 3.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780915631_fced56e8/prompt_02/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a cat and its shadow, but the shadow is cast to the side of the cat (left side of the frame) rather than facing the opposite direction of the cat’s orientation. The cat is facing the camera (toward the viewer), so the shadow should extend directly behind it (away from the viewer) to satisfy \"facing the opposite direction.\" The shadow’s lateral placement misrepresents the key spatial relationship required by the prompt, though the presence of a cat and its shadow partially aligns with the prompt’s basic components.",
+        "quality score": 5,
+        "quality explanation": "The image is a clear, high-resolution photograph with no visible rendering artifacts. The cat’s anatomy, textures, and lighting are natural and coherent. The ground, foliage, and shadow exhibit consistent perspective and realistic detail. There are no distorted elements, floating objects, or implausible blending—everything appears physically grounded and visually polished."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780915631_fced56e8/prompt_02/image_01.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image precisely depicts a cat walking away from the viewer while its shadow extends toward the viewer, meaning the shadow faces the opposite direction of the cat. Both key elements (cat and shadow) are present, correctly positioned, and functionally demonstrate the prompt’s literal requirement without ambiguity or symbolic interpretation. The scene is concrete and fully aligns with the described scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity photograph with no visible rendering artifacts. Lighting, texture, and perspective are consistent and realistic, with sharp details in the cat’s fur, tail, and shadow. The ground texture, natural shadows, and anatomical coherence of the cat (limbs, posture) are all visually accurate and free of distortions, warping, or implausible blending. The composition is clean and physically coherent."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

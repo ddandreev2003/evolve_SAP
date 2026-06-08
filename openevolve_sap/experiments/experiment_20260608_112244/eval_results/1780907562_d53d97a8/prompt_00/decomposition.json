@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This prompt describes a physically impossible spatial arrangement (an inverted bouquet). Standard floral generation assumes upright positioning, which the model prioritizes for early geometry. To counteract this, we first establish the inverted vase-and-stem structure using a specific proxy, introduce the color and density in the middle stage, and finally resolve the 'flower' identity once the unusual geometry is locked in the latent space.",
+  "prompts_list": [
+    "A vase held upside down with green stems pointing up",
+    "A vase held upside down with colorful flowers inside",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

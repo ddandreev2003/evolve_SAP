@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow-casting depends on consistent light-source logic often enforced early. Establishing the cat and shadow connection first ensures geometry is correct before resolving the paradoxical directional conflict at a higher frequency.",
+  "prompts_list": [
+    "A cat casting a shadow",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

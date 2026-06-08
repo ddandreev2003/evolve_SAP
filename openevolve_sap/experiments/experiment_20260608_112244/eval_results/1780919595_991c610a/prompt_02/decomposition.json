@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Physically impossible lighting requires explicit stage separation (Strategy A). Defining the light source first allows the model to render the cat correctly, introducing the contradictory shadow vector only once spatial coherence is locked.",
+  "prompts_list": [
+    "a cat sitting on grass illuminated by strong sunlight from the left",
+    "a cat sitting on grass illuminated by strong sunlight from the left, but the shadow is cast towards the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

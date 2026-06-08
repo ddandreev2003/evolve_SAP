@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows rely on consistent lighting vectors established in stages 0-2. Strategy A (Lighting/Material) is required. We first define the light source direction clearly (e.g., from the left) to ground the scene physics, then introduce the impossible shadow vector (pointing back toward the light) after the initial geometry is settled.",
+  "prompts_list": [
+    "A black cat sitting in sunlight coming from the left",
+    "A black cat with its shadow stretching to the left towards the sun"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

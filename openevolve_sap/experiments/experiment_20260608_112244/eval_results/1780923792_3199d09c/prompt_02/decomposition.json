@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction depends on light physics. Establishing the correct light source early anchors the scene's illumination geometry, allowing the subsequent injection of the impossible shadow direction to act as a localized contradiction rather than confusing the global layout.",
+  "prompts_list": [
+    "A cat sitting on the ground, illuminated from the left",
+    "A cat sitting on the ground, illuminated from the left, but its shadow is cast to the left against the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

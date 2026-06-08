@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are physically constrained by light sources and object orientation. To preserve the cat's anatomical integrity during the initial low-frequency stages, the prompt starts with a standard scene. The impossible shadow direction is introduced in the second stage as a surface/lighting override once the structure is locked.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow explicitly faces the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

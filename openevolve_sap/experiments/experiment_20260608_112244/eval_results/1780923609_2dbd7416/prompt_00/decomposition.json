@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet naturally sits upright in a vase due to gravity and growth patterns. Standard diffusion priors would automatically orient stems downwards into the water. Following Strategy B for structural contradictions, the first prompt forces the impossible geometry (stems pointing up, blossoms hanging down) without naming the \"bouquet,\" ensuring the layout is locked correctly before semantic identity is applied in the second prompt.",
+  "prompts_list": [
+    "bare green flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "a bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

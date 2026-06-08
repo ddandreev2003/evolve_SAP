@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a Structural / Spatial Contradiction where finger count violates standard anatomy. Using Strategy B, we begin with a proxy that encodes the impossible geometry immediately (a bare hand with 6 fingers) to prevent the model from locking into a standard 5-finger structure. We then switch once the coarse shape is established to define the material and identity as a white glove.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

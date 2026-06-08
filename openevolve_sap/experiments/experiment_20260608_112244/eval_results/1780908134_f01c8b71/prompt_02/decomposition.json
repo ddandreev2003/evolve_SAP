@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting calculations occur early in denoising. A normal setup fixes the light source direction. Overriding the shadow direction later forces the contradiction without destabilizing the object geometry established in the first stage.",
+  "prompts_list": [
+    "A cat sitting in the sun",
+    "A cat sitting in the sun with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

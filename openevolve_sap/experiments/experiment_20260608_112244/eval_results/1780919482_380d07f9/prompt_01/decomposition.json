@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction (anatomically impossible finger count). Strategy B requires establishing the anomalous geometry first to prevent the model from locking standard five-finger layouts. We start with a bare hand proxy containing the six-finger shape, then switch to the white glove material once the geometry is stable.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

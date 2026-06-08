@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting and shadows fall into medium-frequency stages. We establish a concrete light source direction first, then overwrite the physics in the second prompt to force the impossible shadow direction once the scene layout is stable.",
+  "prompts_list": [
+    "A cat standing under a strong light coming from the left",
+    "A cat standing under a strong light coming from the left with a shadow cast to the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

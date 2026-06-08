@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally stand upright in vases. Since gravity defying poses require early geometric definition, the first prompt describes the physical mechanics of stems and heads instead of the object label \"bouquet,\" forcing the structure to lock before identifying the subject.",
+  "prompts_list": [
+    "A glass vase with bare stems pointing straight up and flower heads stuffed down inside the glass",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

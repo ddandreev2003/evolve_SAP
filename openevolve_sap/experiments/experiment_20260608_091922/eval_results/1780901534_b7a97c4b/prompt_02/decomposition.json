@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting/physics contradiction (Strategy A). A shadow’s direction is defined by light sources. We must first stabilize the cat and the existence of a shadow under neutral light before overriding the physics to force the impossible angle.",
+  "prompts_list": [
+    "A cat standing in sunlight casting a normal shadow",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Impossible shadow physics (light source inconsistency) conflicts with spatial realism. Strategy A is used to establish the subject and environment with correct physics first, then switch mid-denoise to enforce the contradictory lighting condition once the cat's shape is stable.",
+  "prompts_list": [
+    "A cat standing on the ground in daylight",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -30,6 +30,7 @@ from openevolve_sap.sap_eval_settings import (
     get_physical_gpu_id,
     get_ram_limit_gb,
     get_cascade_stage1_threshold,
+    get_seeds_list,
     get_vl_max_concurrent,
     get_worker_id,
     use_batch_sap,
@@ -45,7 +46,6 @@ RESULTS_DIR = Path(
     )
 )
 TEMPLATE_DIR = Path(__file__).resolve().parents[1] / "llm_interface" / "template"
-DEFAULT_SEED = 30498
 _MODEL = None
 
 
@@ -447,15 +447,16 @@ def _render_flux_image(
     run_id: str,
     status_path: Path,
     record: dict,
-) -> Path | None:
-    """Run FLUX for one prompt; return path to first image or None."""
-    generator = [torch.Generator().manual_seed(DEFAULT_SEED)]
+) -> list[Path]:
+    """Run FLUX for one prompt; return saved image paths (one per seed) or empty list."""
+    seeds = get_seeds_list()
+    generators = [torch.Generator().manual_seed(seed) for seed in seeds]
     params = {
         "height": get_image_height(),
         "width": get_image_width(),
         "num_inference_steps": get_num_inference_steps(),
-        "generator": generator,
-        "num_images_per_prompt": 1,
+        "generator": generators,
+        "num_images_per_prompt": len(seeds),
         "guidance_scale": 3.5,
         "sap_prompts": sap_out,
     }
@@ -481,7 +482,7 @@ def _render_flux_image(
                 **_failure_extra(e),
             },
         )
-        return None
+        return []
 
     generated_images = list(generation_output.images or [])
     if not generated_images:
@@ -496,10 +497,10 @@ def _render_flux_image(
                 "timestamp": time.time(),
             },
         )
-        return None
+        return []
 
-    first_image_path = None
-    for image_idx, image in enumerate(generated_images):
+    image_paths: list[Path] = []
+    for image_idx, (image, seed) in enumerate(zip(generated_images, seeds)):
         image_path = prompt_dir / f"image_{image_idx:02d}.png"
         try:
             image.save(image_path)
@@ -511,13 +512,14 @@ def _render_flux_image(
                     "run_id": run_id,
                     "prompt_index": idx,
                     "image_index": image_idx,
+                    "seed": seed,
                     "error": str(e),
                     "timestamp": time.time(),
                 },
             )
             continue
         record["images"].append(
-            {"image_index": image_idx, "image_path": str(image_path)}
+            {"image_index": image_idx, "seed": seed, "image_path": str(image_path)}
         )
         _append_jsonl(
             status_path,
@@ -526,22 +528,22 @@ def _render_flux_image(
                 "run_id": run_id,
                 "prompt_index": idx,
                 "image_index": image_idx,
+                "seed": seed,
                 "image_path": str(image_path),
                 "timestamp": time.time(),
             },
         )
-        if first_image_path is None:
-            first_image_path = image_path
+        image_paths.append(image_path)
     del generated_images
     _check_ram_limit(run_id, status_path, f"prompt_{idx}_after_render")
     _log_mem_snapshot(run_id, status_path, f"prompt_{idx}_after_render")
-    return first_image_path
+    return image_paths
 
 
 def _apply_vl_score(
     idx: int,
     prompt: str,
-    first_image_path: Path,
+    image_paths: list[Path],
     prompt_dir: Path,
     decomp_path: Path,
     api_key: str,
@@ -549,39 +551,74 @@ def _apply_vl_score(
     status_path: Path,
     record: dict,
 ) -> float | None:
-    """VL alignment judge for one image; updates record. Returns alignment or None."""
-    if not first_image_path.exists():
-        _append_jsonl(
-            status_path,
-            {
-                "event": "image_file_missing",
-                "run_id": run_id,
-                "prompt_index": idx,
-                "image_path": str(first_image_path),
-                "timestamp": time.time(),
-            },
-        )
+    """VL alignment judge for all seed images; updates record. Returns mean alignment or None."""
+    if not image_paths:
         return None
-    _status_print(run_id, f"prompt {idx + 1}: score start")
+    _status_print(run_id, f"prompt {idx + 1}: score start ({len(image_paths)} seeds)")
     _check_ram_limit(run_id, status_path, f"prompt_{idx}_before_score")
-    try:
-        score = evaluate_image_with_gpt(str(first_image_path), prompt, api_key)
-    except Exception as e:
+    per_seed_scores: list[dict] = []
+    alignments: list[float] = []
+    for image_idx, image_path in enumerate(image_paths):
+        if not image_path.exists():
+            _append_jsonl(
+                status_path,
+                {
+                    "event": "image_file_missing",
+                    "run_id": run_id,
+                    "prompt_index": idx,
+                    "image_index": image_idx,
+                    "image_path": str(image_path),
+                    "timestamp": time.time(),
+                },
+            )
+            continue
+        try:
+            score = evaluate_image_with_gpt(str(image_path), prompt, api_key)
+        except Exception as e:
+            _append_jsonl(
+                status_path,
+                {
+                    "event": "score_failed",
+                    "run_id": run_id,
+                    "prompt_index": idx,
+                    "image_index": image_idx,
+                    "prompt": prompt,
+                    "error": str(e),
+                    "timestamp": time.time(),
+                },
+            )
+            continue
+        alignment_value = float(score.get("alignment score", 0.0))
+        per_seed_scores.append(
+            {
+                "image_index": image_idx,
+                "image_path": str(image_path),
+                "alignment score": alignment_value,
+                "score": score,
+            }
+        )
+        alignments.append(alignment_value)
         _append_jsonl(
             status_path,
             {
-                "event": "score_failed",
+                "event": "score_seed_done",
                 "run_id": run_id,
                 "prompt_index": idx,
-                "prompt": prompt,
-                "error": str(e),
+                "image_index": image_idx,
+                "alignment_score": alignment_value,
                 "timestamp": time.time(),
             },
         )
+    if not alignments:
         return None
-    alignment_value = float(score.get("alignment score", 0.0))
-    score_path = _save_score(prompt_dir, score)
-    record["score"] = score
+    alignment_value = sum(alignments) / len(alignments)
+    aggregate_score = {
+        "alignment score": alignment_value,
+        "per_seed": per_seed_scores,
+        "num_seeds_scored": len(alignments),
+    }
+    score_path = _save_score(prompt_dir, aggregate_score)
+    record["score"] = aggregate_score
     record["score_path"] = str(score_path)
     record["alignment_score"] = alignment_value
     _append_jsonl(
@@ -591,10 +628,11 @@ def _apply_vl_score(
             "run_id": run_id,
             "prompt_index": idx,
             "alignment_score": alignment_value,
+            "num_seeds_scored": len(alignments),
             "timestamp": time.time(),
         },
     )
-    _status_print(run_id, f"prompt {idx + 1}: alignment={alignment_value:.3f}")
+    _status_print(run_id, f"prompt {idx + 1}: alignment={alignment_value:.3f} ({len(alignments)} seeds)")
     _check_ram_limit(run_id, status_path, f"prompt_{idx}_after_score")
     return alignment_value
 
@@ -725,6 +763,8 @@ def _run_evaluation_core(
                 "num_prompts": len(prompts),
                 "batch_sap": use_batch_sap(),
                 "pipeline_overlap": use_eval_pipeline_overlap(),
+                "seeds": get_seeds_list(),
+                "num_inference_steps": get_num_inference_steps(),
                 "timestamp": time.time(),
             },
         )
@@ -798,12 +838,12 @@ def _run_evaluation_core(
                     pending_vl = None
                     pending_vl_ctx = None
 
-                first_image_path = _render_flux_image(
+                image_paths = _render_flux_image(
                     model, global_idx, prompt, sap_out, prompt_dir, run_id, status_path, record
                 )
                 _maybe_cleanup_after_prompt(len(prompts), local_i)
 
-                if first_image_path is None:
+                if not image_paths:
                     continue
 
                 saved_images.append(
@@ -812,7 +852,8 @@ def _run_evaluation_core(
                         "prompt": prompt,
                         "prompt_dir": str(prompt_dir),
                         "decomposition_path": str(decomp_path),
-                        "image_path": str(first_image_path),
+                        "image_path": str(image_paths[0]),
+                        "image_paths": [str(p) for p in image_paths],
                         "images": list(record["images"]),
                     }
                 )
@@ -827,7 +868,7 @@ def _run_evaluation_core(
                     "prompt_dir": prompt_dir,
                     "decomp_path": decomp_path,
                     "record": record,
-                    "image_path": first_image_path,
+                    "image_paths": image_paths,
                 }
 
                 if pipeline:
@@ -835,7 +876,7 @@ def _run_evaluation_core(
                         _apply_vl_score,
                         global_idx,
                         prompt,
-                        first_image_path,
+                        image_paths,
                         prompt_dir,
                         decomp_path,
                         api_key,
@@ -887,7 +928,7 @@ def _run_evaluation_core(
                                 _apply_vl_score,
                                 ctx["idx"],
                                 ctx["prompt"],
-                                ctx["image_path"],
+                                ctx["image_paths"],
                                 ctx["prompt_dir"],
                                 ctx["decomp_path"],
                                 api_key,
@@ -920,7 +961,8 @@ def _run_evaluation_core(
                                 "prompt": ctx["prompt"],
                                 "prompt_dir": str(ctx["prompt_dir"]),
                                 "decomposition_path": str(ctx["decomp_path"]),
-                                "image_path": str(ctx["image_path"]),
+                                "image_path": str(ctx["image_paths"][0]),
+                                "image_paths": [str(p) for p in ctx["image_paths"]],
                                 "score_path": ctx["record"].get("score_path"),
                                 "score": ctx["record"].get("score"),
                             }

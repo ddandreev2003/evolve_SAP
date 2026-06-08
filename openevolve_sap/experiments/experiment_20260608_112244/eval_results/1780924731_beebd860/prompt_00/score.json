@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780924731_beebd860/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, with the correct objects present (bouquet, flowers, vase). However, the crucial element of being \"upside down\" is completely absent. The flowers are arranged normally with blooms at the top and stems in the water, rather than inverted as specified in the prompt. This represents a significant misrepresentation of the key attribute and intended situation described in the prompt, as the upside-down orientation is the central concept that defines the requested scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, realistic photograph with no visible rendering artifacts or distortions. The flowers, leaves, and glass vase are all well-formed and visually coherent. Lighting is consistent and natural, with proper transparency and reflection in the glass. Perspective is accurate, and all elements connect naturally without any floating objects, clipped areas, or merged shapes. The textures and details throughout the image are sharp and realistic, demonstrating high visual fidelity."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780924731_beebd860/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the arrangement is **right-side up** (blooms above water, stems submerged), directly contradicting the prompt's requirement for an *upside-down* bouquet. While the correct objects (flowers, vase, water) are present, the critical action—being inverted—is entirely missing. This represents a significant misrepresentation of the prompt's core intent, as the scene depicts a standard, functional bouquet rather than the specified unconventional orientation.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The vase, water, stems, and flowers exhibit realistic textures, consistent lighting, and natural perspective. There are no rendering artifacts, distortions, or anatomical inconsistencies (e.g., stems are properly submerged, petals/leaves are well-defined, and the glass vase shows accurate refraction). The composition is coherent, with all elements physically plausible and cleanly rendered."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

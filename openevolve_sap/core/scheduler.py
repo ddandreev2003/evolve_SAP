@@ -18,6 +18,7 @@ os.chdir(PROJECT_ROOT)
 import torch
 
 from openevolve_sap.core.checkpoint import patch_controller_checkpoints
+from openevolve_sap.core.evolution_patch import install_evolution_patch
 from openevolve_sap.core.gpu_worker import install_gpu_worker_patch
 from openevolve_sap.exp_logging.experiment_logger import ExperimentLogger
 from openevolve_sap.exp_logging.gpu_monitor import GPUMonitor
@@ -91,6 +92,7 @@ def prepare_env(
     env["SAP_EVOLUTION_RESULTS_DIR"] = str(experiment_dir / "eval_results")
     env["SAP_RAM_LIMIT_GB"] = str(ram_limit_gb)
     env["SAP_NUM_INFERENCE_STEPS"] = env.get("SAP_NUM_INFERENCE_STEPS", "30")
+    env["SAP_SEEDS_LIST"] = env.get("SAP_SEEDS_LIST", "30498,30499")
     env["SAP_IMAGE_HEIGHT"] = env.get("SAP_IMAGE_HEIGHT", "512")
     env["SAP_IMAGE_WIDTH"] = env.get("SAP_IMAGE_WIDTH", "512")
     env["SAP_LOG_LEVEL"] = log_level
@@ -147,6 +149,7 @@ async def run_evolution_async(args: argparse.Namespace) -> int:
         os.environ[key] = value
 
     logger = ExperimentLogger(experiment_dir, level=args.log_level)
+    meta_prompt = load_evolution_system_message()
     logger.log(
         "INFO",
         "scheduler",
@@ -156,6 +159,8 @@ async def run_evolution_async(args: argparse.Namespace) -> int:
             "output": str(output_dir),
             "ram_limit_gb": ram_limit_gb,
             "system_ram_gb": system_ram_gb(),
+            "meta_prompt_chars": len(meta_prompt),
+            "meta_prompt_path": str(EVOLUTION_META_PROMPT_PATH),
         },
     )
 
@@ -163,6 +168,7 @@ async def run_evolution_async(args: argparse.Namespace) -> int:
     monitor.start()
 
     install_gpu_worker_patch()
+    install_evolution_patch()
     patch_controller_checkpoints()
 
     initial_program = root / "openevolve_sap/initial_program.py"

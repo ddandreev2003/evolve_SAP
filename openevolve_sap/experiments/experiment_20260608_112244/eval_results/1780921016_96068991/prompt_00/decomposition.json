@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Bouquets naturally bloom upward. To force the impossible inverted structure, we begin with bare stems oriented correctly for an upside-down flow before applying the object identity \"bouquet,\" preventing the model from locking normal upright geometry.",
+  "prompts_list": [
+    "bare green flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "a bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

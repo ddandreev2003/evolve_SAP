@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting contradiction (Strategy A). Building the cat’s geometry first prevents the model from warping the animal’s pose to fit the impossible shadow. The shadow instruction is applied later during the lighting refinement phase.",
+  "prompts_list": [
+    "A realistic cat standing on grass in natural daylight",
+    "A realistic cat standing on grass in natural daylight with its shadow facing the opposite direction of the sun"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

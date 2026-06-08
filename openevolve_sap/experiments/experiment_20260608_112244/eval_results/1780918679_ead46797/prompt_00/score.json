@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780918679_ead46797/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a bouquet of flowers in a vase, but it is arranged *upright* (stems down, blooms up), directly contradicting the prompt's requirement for an \"upside down\" orientation (which would require blooms pointing downward toward the vase base). While the core objects (bouquet, vase) are present, the critical action/attribute specified in the prompt is entirely misrepresented. The scene illustrates a conventional floral arrangement rather than the intended inverted scenario, failing to convey the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no rendering artifacts. Lighting is natural and consistent, textures (petals, glass, wood) are realistic, and perspective is coherent. The bouquet, vase, and surface are sharply defined with no distortions, warping, or broken elements. All components appear physically plausible and well-composed, meeting the highest standard for visual fidelity."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780918679_ead46797/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bouquet of flowers arranged *normally* in an upright vase, with blooms facing upward and stems inside the vase. The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be inverted (e.g., blooms pointing downward into the vase while stems extend upward). This critical action and spatial relationship are entirely absent, as the arrangement matches a conventional, upright presentation. No elements suggest inversion, misalignment, or intentional subversion of the expected orientation.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no rendering artifacts. The bouquet’s textures (petals, leaves, stems) and the vase’s ribbed surface are sharply defined and realistic. Lighting is soft and consistent, creating natural shadows and highlights. All elements connect coherently: flowers nestle organically in the vase, and there are no distortions, melted features, or anatomical errors. The composition is balanced, with clear depth and perspective."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

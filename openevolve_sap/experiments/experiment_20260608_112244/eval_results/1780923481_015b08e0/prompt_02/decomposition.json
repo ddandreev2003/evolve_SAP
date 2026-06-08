@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows rely on consistent lighting physics established during the geometric phase. To visualize a physically impossible shadow direction, the cat and light source must first stabilize in the initial stage (Steps 0-4). The contradiction is then injected at Step 5 when the shape is locked but surface lighting can still be overridden without breaking coherence.",
+  "prompts_list": [
+    "A black cat sitting on green grass illuminated from the right",
+    "A black cat sitting on green grass illuminated from the right, but casting an impossible shadow that also points to the right towards the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

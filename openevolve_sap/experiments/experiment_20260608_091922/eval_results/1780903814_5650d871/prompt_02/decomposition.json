@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows depend on global lighting physics, making them a potential source of coherence break. Following Strategy A, we first establish the object and standard environment layout (Step 0-4), then introduce the contradictory shadow physics (Step 4-5) after the shape is stabilized.",
+  "prompts_list": [
+    "A cat standing on the ground in daylight",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

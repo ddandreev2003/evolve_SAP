@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This prompt describes an impossible lighting configuration (shadow direction defying physics). According to Strategy A, we must prevent the model from locking in standard shadow geometry early. Sub-prompt 1 establishes the cat and layout with neutral lighting to avoid pre-baking realistic shadows. At step 3, Sub-prompt 2 introduces the contradictory shadow behavior once the coarse structure is stable.",
+  "prompts_list": [
+    "A cat standing on the ground, flat ambient lighting, no shadows",
+    "A cat standing on the ground, its dark shadow is prominently cast in front of it, facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

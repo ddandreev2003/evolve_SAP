@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradictions require establishing valid geometry before introducing physics violations. Prompt 1 sets the standard scene with consistent light and shadow logic to lock the cat's form. Prompt 2 overrides the shadow direction at step 5 to maintain structural integrity while enforcing the impossible visual effect.",
+  "prompts_list": [
+    "A realistic cat sitting, illuminated from the right casting a shadow to the left",
+    "A realistic cat sitting, illuminated from the right, but its shadow is impossibly cast to the right towards the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

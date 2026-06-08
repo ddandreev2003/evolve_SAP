@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction regarding directional physics. Following Strategy A, the prompt starts with the correct scene layout and cat pose to lock structure, then switches to the final stage to inject the physically impossible shadow direction before fine details are rendered.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, the shadow of the cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

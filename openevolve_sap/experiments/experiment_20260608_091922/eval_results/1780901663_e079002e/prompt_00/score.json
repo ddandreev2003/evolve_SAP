@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780901663_e079002e/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a bouquet of flowers in a vase, but it is oriented upright with the blooms facing upward and the stems downward, contradicting the prompt's requirement for the bouquet to be \"upside down.\" The key attribute of the scene—being inverted—is entirely missing, as the arrangement functions normally and does not illustrate the intended upside-down scenario. While the core elements (bouquet and vase) are present, the misrepresentation of the fundamental action (upside-down placement) significantly undermines semantic fidelity.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts, distortions, or broken elements. The flowers and vase are well-formed, with natural textures, consistent lighting, and coherent perspective. All components connect physically plausibly (e.g., stems are properly contained in the vase, blooms are intact), and the overall composition is realistic and free of flaws."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780901663_e079002e/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bouquet of flowers arranged *normally* in a vase (stems down, blooms upright), directly contradicting the prompt's requirement for an \"upside down\" bouquet. No elements suggest inversion—flowers, leaves, and the vase orientation all align with a standard floral arrangement. The core action (upside-down positioning) is entirely absent, failing to convey the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. Lighting is soft and consistent, textures (petals, leaves, vase) are smooth and realistic, and all elements are coherently rendered. There are no artifacts, distortions, or anatomical errors (e.g., leaves connect naturally to stems, flowers maintain distinct shapes). The composition is physically plausible with no floating objects or merged geometry."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

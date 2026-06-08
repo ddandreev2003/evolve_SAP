@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are governed by consistent lighting physics. Strategy A suggests setting a coherent light source and scene in early steps (0–4) before introducing the localized contradiction in the late steps (around 5–6) to avoid confusing the global geometry with impossible local physics.",
+  "prompts_list": [
+    "A cat sitting on the ground illuminated by strong sunlight from the right side.",
+    "A cat sitting on the ground illuminated by strong sunlight from the right side, casting its shadow towards the right."
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

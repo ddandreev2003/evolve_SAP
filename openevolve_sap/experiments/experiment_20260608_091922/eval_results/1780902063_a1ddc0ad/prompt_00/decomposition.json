@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down vase violates standard gravity and object orientation expectations. Following Strategy B, the prompt starts with a geometric proxy describing the inverted container and stems to lock the unusual pose early, preventing the model from auto-correcting the vase to upright before introducing the flowers.",
+  "prompts_list": [
+    "A glass vase turned completely upside down, resting on its opening, with a bundle of bare green stems sticking straight up into the air",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

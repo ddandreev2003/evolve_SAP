@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction depends on the lighting physics established early in diffusion. We define the light source explicitly in the first prompt, then override the resulting shadow direction in the second prompt to force the impossibility once structure is stable.",
+  "prompts_list": [
+    "A cat illuminated from the left",
+    "A cat illuminated from the left, casting a shadow to the right"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet is naturally upright, so standard prompts lock flowers downwards. Starting with a structural proxy describing stems pointing up prevents the model from locking normal flower geometry before the inverted state is defined.",
+  "prompts_list": [
+    "A vase with bare flower stems pointing straight up into the air",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

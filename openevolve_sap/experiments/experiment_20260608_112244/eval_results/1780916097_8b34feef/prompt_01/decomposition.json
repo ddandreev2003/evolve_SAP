@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical contradictions require Strategy B to lock shape before material. Starting with a bare hand prevents the glove texture prior from enforcing a standard 5-finger count, ensuring the extra finger is encoded in the initial geometric phase.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

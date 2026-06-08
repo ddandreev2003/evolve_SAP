@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet growing or placed upside down violates natural growth directions and gravity physics. Strategy B requires establishing the inverted stem geometry first with bare structural descriptions before assigning the semantic label of \"bouquet,\" ensuring the model doesn't revert to a standard vase configuration.",
+  "prompts_list": [
+    "flower stems pointing straight up out of a vase opening with blossoms hanging down toward the table",
+    "an upside down bouquet of flowers in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

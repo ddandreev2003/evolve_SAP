@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates gravitational priors regarding how vases hold objects. Following Strategy B for structural contradictions, the prompt begins with a proxy that enforces the inverted stem geometry immediately, ensuring the model locks the unusual shape before refining the semantic label.",
+  "prompts_list": [
+    "A bunch of flowers with bare stems pointing up out of a vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

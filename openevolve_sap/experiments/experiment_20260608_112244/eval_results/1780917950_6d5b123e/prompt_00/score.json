@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780917950_6d5b123e/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented **right-side up**, not upside down as specified in the prompt. While the correct objects (bouquet, vase) are present, the critical action (\"upside down\") is entirely absent, fundamentally misrepresenting the prompt’s intent. The scene illustrates a standard floral arrangement rather than the requested inverted configuration, failing to convey the core requirement of the description.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. Lighting, textures, and perspective are consistent, with no visible artifacts, distortions, or broken elements. The flowers, vase, and background are sharply defined, anatomically plausible (e.g., natural stem placement, realistic petal shapes), and physically coherent (e.g., stems properly submerged in water, no floating or fused objects). The rendering is realistic and free of flaws."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780917950_6d5b123e/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard upright bouquet with flowers arranged normally in the vase (stems downward, blooms upward). The prompt explicitly requires an *upside-down* bouquet, meaning the flowers should be inverted with blooms pointing toward the vase base and stems extending upward. This critical spatial relationship is entirely absent. The scene shows a conventional floral arrangement with no indication of inversion, failing to represent the described situation functionally or concretely.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless with realistic rendering. The flowers, leaves, and vase exhibit consistent textures, natural lighting, and precise details (e.g., petal gradients, leaf veins, and vase ridges). All elements connect coherently—stems merge naturally into the vase, no distorted anatomy or floating objects, and perspective is physically plausible. There are no artifacts, warping, or blending issues; the composition is clean and fully coherent."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

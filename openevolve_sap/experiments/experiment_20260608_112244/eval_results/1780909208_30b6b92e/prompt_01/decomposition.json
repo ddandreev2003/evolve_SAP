@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers contradicts standard anatomical priors for hands and gloves. Starting directly with \"glove\" often defaults to five fingers due to training data. By using \"hand\" first, we lock the six-finger geometry early (steps 0-4) before applying the \"glove\" identity and color in the second stage.",
+  "prompts_list": [
+    "A hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

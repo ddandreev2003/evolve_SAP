@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting and shadow contradictions follow Strategy A. The cat's pose and basic form are established first. We wait until geometry is locked (Step 5) before enforcing the impossible shadow direction, translating \"opposite\" into \"same direction as light source\".",
+  "prompts_list": [
+    "A black cat sitting on the floor, illuminated from the left",
+    "A black cat sitting on the floor, illuminated from the left, casting a shadow towards the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

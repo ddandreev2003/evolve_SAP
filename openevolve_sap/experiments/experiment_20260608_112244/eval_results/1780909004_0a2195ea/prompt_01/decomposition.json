@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical anomalies like six fingers require early geometric establishment to prevent the model from generating a standard five-fingered hand wrapped in fabric. Using a human hand with six fingers first establishes the skeletal count, allowing the glove texture to conform later.",
+  "prompts_list": [
+    "A human hand with six fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This scenario presents a lighting contradiction (Strategy A) where shadow physics defy gravity and illumination. Standard diffusion models learn that shadows align with light sources during early stages (0-4). By establishing a normal light-shadow alignment first, the model locks the cat's geometry and position on the surface. Switching at step 5 forces the impossible shadow vector once the coarse shape is stable, ensuring the cat remains physically coherent while the shadow renders incorrectly without collapsing the entire image.",
+  "prompts_list": [
+    "A black cat sitting on grass with the sun illuminating it from the left, casting a shadow to the right",
+    "A black cat sitting on grass with the sun illuminating it from the left, casting a shadow to the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

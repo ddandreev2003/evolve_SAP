@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is governed by lighting physics rather than object shape. Generating the cat first allows the model to stabilize the subject's geometry and pose. The impossible lighting condition is introduced later when fine details are resolved, preventing structural collapse.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow explicitly faces the opposite direction of the light"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a Structural/Spatial contradiction (Strategy B). A normal bouquet has stems down and flowers up; naming \"bouquet\" early locks this geometry. We first describe the inverted physical structure (stems up, blooms submerged) using descriptive terms instead of the label \"bouquet\" to allow the model to render the impossible shape. Once the coarse geometry is fixed at step 5, we switch to the target prompt to apply the semantic label.",
+  "prompts_list": [
+    "Green stems sticking straight up out of a vase, with flower blossoms submerged at the bottom inside the vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

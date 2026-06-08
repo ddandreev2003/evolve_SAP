@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Upside-down geometry conflicts with standard gravity expectations. Using an inverted vase setup first locks the unusual spatial orientation before naming it as a bouquet.",
+  "prompts_list": [
+    "An inverted vase with flower stems pointing upwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

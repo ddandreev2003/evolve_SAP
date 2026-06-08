@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Fingers are geometric structures defined in early denoising steps. Starting with a white glove may bias the model toward standard anatomy (5 fingers). Using a bare hand first allows the 6-finger skeletal structure to lock before the glove texture/material is applied.",
+  "prompts_list": [
+    "A bare hand with exactly 6 fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

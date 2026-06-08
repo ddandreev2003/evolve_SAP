@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in a vase are normally upright. An inverted vase breaks this physical prior. Using a proxy of a \"vase hanging upside down\" forces the geometry of the container to invert early (Strategy B), preventing the model from correcting the pose in later stages.",
+  "prompts_list": [
+    "A vase hanging upside down with flower stems pointing upward",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Upward-pointing stems in a reversed vase defy natural gravity and botanical growth patterns. Starting with the inverted geometry ensures the model locks the wrong orientation before identifying the scene as a standard bouquet.",
+  "prompts_list": [
+    "Bare green flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction involving digit count. Strategy B dictates using a proxy to enforce the wrong geometry before introducing the final object name. Starting with \"bare hand\" ensures the skeleton forms correctly with 6 digits, while \"glove\" is introduced later to cover the anomaly without breaking the underlying shape.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

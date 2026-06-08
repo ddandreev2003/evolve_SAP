@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a low-frequency geometric property. Strategy B requires establishing the anatomy early without relying on the final object name. A bare hand with specified fingers ensures the model renders the correct digit count before assigning the glove material.",
+  "prompts_list": [
+    "A bare human hand with exactly six fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

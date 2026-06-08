@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Human anatomy defaults to five digits. To prevent the model from correcting this to the standard five-finger geometry, we employ Strategy B. We start with a bare hand explicitly defining the six-digit skeleton, stabilizing the anomaly before adding the material property of a glove.",
+  "prompts_list": [
+    "A bare hand with exactly six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

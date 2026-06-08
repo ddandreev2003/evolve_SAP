@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard bouquets have stems inserted into a vase with blooms facing upward; an upside-down arrangement creates a structural contradiction where stems point up and heads hang down. Since this violates biological norms, Strategy B applies: we first describe the specific inverted geometry explicitly to lock the unusual topology during the early low-frequency steps, then introduce the semantic label once the structure is established.",
+  "prompts_list": [
+    "Flower stems emerging from a vase top with petals drooping downwards toward the ground",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

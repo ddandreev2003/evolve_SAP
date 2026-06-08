@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet naturally grows upward from a vase, making \"upside down\" a structural contradiction. Strategy B requires defining the inverted geometry using bare stems first to lock the shape before assigning the full \"bouquet\" identity.",
+  "prompts_list": [
+    "A glass vase containing bare stems with tips drooping downwards",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

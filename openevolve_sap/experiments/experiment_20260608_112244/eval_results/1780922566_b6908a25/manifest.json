@@ -1,0 +1,158 @@
+{
+  "run_id": "1780922566_b6908a25",
+  "program_path": "/tmp/tmp8rw4ub3n.py",
+  "program_id": "tmp8rw4ub3n",
+  "timestamp": 1780922947.9130015,
+  "results_dir": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_00",
+      "decomposition_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_00/image_00.png"
+        },
+        {
+          "image_index": 1,
+          "seed": 30499,
+          "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_00/image_01.png"
+        }
+      ],
+      "score": {
+        "alignment score": 1.5,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_00/image_00.png",
+            "alignment score": 2.0,
+            "score": {
+              "alignment score": 2,
+              "alignment explanation": "The image contains a bouquet of flowers in a vase, but the bouquet is oriented normally (stems down, blooms up) rather than upside down as specified in the prompt. The key action of being \"upside down\" is entirely missing, which fundamentally misrepresents the prompt’s intent. While the core objects (bouquet, vase) are present, the critical directional attribute required by the prompt is absent, resulting in significant misalignment.",
+              "quality score": 5,
+              "quality explanation": "The image is visually coherent and well-rendered. The flowers, vase, and background exhibit consistent lighting, natural textures, and realistic proportions. There are no visible artifacts, distortions, or anatomical inconsistencies (e.g., stems are properly placed in the vase, petals and leaves are intact, and perspective is logical). The composition is clean and professional, with no rendering flaws."
+            }
+          },
+          {
+            "image_index": 1,
+            "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_00/image_01.png",
+            "alignment score": 1.0,
+            "score": {
+              "alignment score": 1,
+              "alignment explanation": "The image shows a standard bouquet arrangement with flowers extending upward from the vase, which is the conventional way flowers are arranged. The prompt specifically requests an \"upside down\" bouquet, meaning the flowers should be hanging downward from the vase. Since the image displays a normal upright arrangement with no indication of being inverted, it completely fails to represent the requested scenario. The correct orientation (upside down) is entirely missing from the composition.",
+              "quality score": 5,
+              "quality explanation": "The image is a high-quality photograph with excellent visual clarity. The flowers, vase, and table are all sharply defined with natural lighting and consistent perspective. There are no rendering artifacts, distortions, or broken elements. The textures of the petals, glass vase, and wooden surface appear realistic and well-formed. All elements connect naturally without any floating, clipped, or fused geometry. The composition is visually coherent and demonstrates professional photographic quality."
+            }
+          }
+        ],
+        "num_seeds_scored": 2
+      },
+      "alignment_score": 1.5,
+      "score_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_00/score.json"
+    },
+    {
+      "prompt_index": 1,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_01",
+      "decomposition_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_01/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_01/image_00.png"
+        },
+        {
+          "image_index": 1,
+          "seed": 30499,
+          "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_01/image_01.png"
+        }
+      ],
+      "score": {
+        "alignment score": 3.5,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_01/image_00.png",
+            "alignment score": 5.0,
+            "score": {
+              "alignment score": 5,
+              "alignment explanation": "The image perfectly conveys the prompt's meaning by showing a white glove with exactly 6 distinct fingers. The glove is clearly white, and all six fingers (including the thumb) are fully visible and properly formed. The representation is literal and concrete, not symbolic or metaphorical, with no ambiguity about the count or nature of the fingers. The image directly illustrates the specific situation described in the prompt without any conceptual or contextual issues.",
+              "quality score": 5,
+              "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove has smooth, well-formed surfaces with consistent lighting and texture throughout. The fingers are anatomically plausible and properly shaped, with no distortions, warping, or artifacts. The perspective is consistent, and all elements connect naturally without floating, clipping, or merged geometry. The simple black background enhances the clarity of the white glove, resulting in a professional, high-quality rendering."
+            }
+          },
+          {
+            "image_index": 1,
+            "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_01/image_01.png",
+            "alignment score": 2.0,
+            "score": {
+              "alignment score": 2,
+              "alignment explanation": "The image shows a white glove, which is the correct object type, but it has only 5 fingers (thumb plus four fingers) rather than the 6 fingers specified in the prompt. The key element of \"6 fingers\" is fundamentally misrepresented, which is the central requirement of the prompt. While the glove is present and white as described, the specific number of fingers - the most critical attribute in the prompt - is incorrect, making this a significant misrepresentation of the intended concept.",
+              "quality score": 5,
+              "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is well-rendered with consistent lighting, smooth texture, and proper perspective. All anatomical elements (fingers, palm, wrist) are properly formed and connected without any distortion, warping, or broken elements. The green background is uniform and the glove appears as a physically plausible object with natural shadows and surface details. The rendering is professional quality with no artifacts or coherence issues."
+            }
+          }
+        ],
+        "num_seeds_scored": 2
+      },
+      "alignment_score": 3.5,
+      "score_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_01/score.json"
+    },
+    {
+      "prompt_index": 2,
+      "original_prompt": "The shadow of a cat is facing the opposite direction",
+      "prompt_dir": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_02",
+      "decomposition_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_02/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_02/image_00.png"
+        },
+        {
+          "image_index": 1,
+          "seed": 30499,
+          "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_02/image_01.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_02/image_00.png",
+            "alignment score": 2.0,
+            "score": {
+              "alignment score": 2,
+              "alignment explanation": "The image shows a cat with a shadow, but the shadow does not \"face the opposite direction\" as required. The shadow is a natural extension behind the cat (consistent with directional lighting), not a distinct entity oriented opposite to the cat's gaze. The prompt implies the shadow should have a directional orientation (e.g., shadow facing left while the cat faces right), but shadows lack intentional \"facing\" and are merely silhouettes. The scene depicts a standard shadow alignment, not the specific spatial relationship described in the prompt. Key conceptual intent is misrepresented.",
+              "quality score": 5,
+              "quality explanation": "The image is visually flawless. Lighting is consistent and natural, with realistic sunlit highlights on the cat’s fur and a smooth, coherent shadow gradient on the carpet. The cat’s anatomy (face, paws, posture) is sharp and anatomically correct, with no distortions, artifacts, or merged elements. Textures (fur, carpet) are well-defined, and perspective is physically plausible. No rendering issues are present."
+            }
+          },
+          {
+            "image_index": 1,
+            "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_02/image_01.png",
+            "alignment score": 2.0,
+            "score": {
+              "alignment score": 2,
+              "alignment explanation": "The image contains a cat and its shadow, which are relevant components. However, the shadow is cast in the *same direction* as the cat is facing (the cat faces left, and the shadow extends leftward), directly contradicting the prompt’s requirement that the shadow face the *opposite* direction. This misrepresentation of the core spatial relationship significantly undermines semantic fidelity, though the presence of a cat and shadow prevents a score of 1.",
+              "quality score": 5,
+              "quality explanation": "The image is visually pristine. The cat’s anatomy (e.g., fur texture, ears, paws) is rendered with high realism, lighting and shadows are consistent, and there are no artifacts, distortions, or coherence issues. The composition is sharp and natural, meeting all criteria for a flawless rendering."
+            }
+          }
+        ],
+        "num_seeds_scored": 2
+      },
+      "alignment_score": 2.0,
+      "score_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780922566_b6908a25/prompt_02/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 2.3333333333333335,
+    "gemma_score": 1.0,
+    "combined_score": 0.41333333333333333
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting and material contradiction (Strategy A). Light physics are established early; introducing conflicting shadow direction immediately causes noise or broken shapes. We first render the cat and its physical presence with a standard shadow to stabilize the silhouette and environment, then inject the contradictory shadow direction later when local features are refined.",
+  "prompts_list": [
+    "A cat casting a natural shadow",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "A shadow facing the opposite direction is a lighting contradiction, not a structural change. Starting with a normal cat ensures the physical body and posture are correctly modeled during the critical low-frequency steps (0-5). Once the geometry is stable, the impossible shadow logic is introduced to override the natural light physics without corrupting the object's form.",
+  "prompts_list": [
+    "A cat sitting on grass in sunlight",
+    "A cat sitting on grass in sunlight, its shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

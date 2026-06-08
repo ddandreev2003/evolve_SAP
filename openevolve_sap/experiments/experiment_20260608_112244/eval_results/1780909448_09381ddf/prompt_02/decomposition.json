@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting contradiction (Strategy A). The cat's geometry and pose must be established first to prevent structural errors. By keeping the shadow normal initially and switching at step 5, we lock the cat's form before introducing the physically impossible shadow direction during the material/lighting phase.",
+  "prompts_list": [
+    "A cat standing on the ground",
+    "A cat standing on the ground, its shadow explicitly faces the opposite direction to its body"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

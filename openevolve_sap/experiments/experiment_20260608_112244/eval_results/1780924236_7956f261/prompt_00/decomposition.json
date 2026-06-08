@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard vase geometry assumes upright flowers. Strategy B requires avoiding \"bouquet\" early to prevent normal structure lock. A proxy describing stem orientation forces the inverted layout before naming the object.",
+  "prompts_list": [
+    "Floral stems emerging from a vase with heads hanging down below the rim",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

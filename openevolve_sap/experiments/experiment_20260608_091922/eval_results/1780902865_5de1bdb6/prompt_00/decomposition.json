@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural contradiction involving inverted geometry. Strategy B applies: avoid rendering a normal upright vase first, which would lock standard orientation. Instead, use a prompt encoding the inverted shape immediately, then switch to the specific floral description once coarse geometry is established.",
+  "prompts_list": [
+    "A vase held upside down with stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

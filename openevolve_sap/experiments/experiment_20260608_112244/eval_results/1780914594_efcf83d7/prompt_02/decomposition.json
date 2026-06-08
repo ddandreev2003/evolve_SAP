@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting contradiction. Establishing the cat's shape and standard scene physics first allows the model to build structure. The impossible shadow direction is introduced later (Strategy A) so the model modifies the lighting layer without distorting the core object geometry.",
+  "prompts_list": [
+    "A cat sitting in a sunny field",
+    "The shadow of a cat facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

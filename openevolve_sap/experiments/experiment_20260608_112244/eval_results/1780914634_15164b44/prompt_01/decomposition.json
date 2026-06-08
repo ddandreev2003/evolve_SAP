@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers is a structural anatomical contradiction. Strategy B dictates starting with the anatomy (the hand) rather than the object (the glove) to prevent the model from generating a standard five-fingered hand under the glove skin first.",
+  "prompts_list": [
+    "A human hand extended with exactly six fingers visible",
+    "A white glove fitted onto a hand with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

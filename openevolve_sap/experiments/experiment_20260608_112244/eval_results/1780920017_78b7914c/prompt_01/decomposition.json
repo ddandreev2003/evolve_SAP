@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction involving limb count. Following Strategy B, using \"human hand\" allows defining the anomalous anatomy (6 fingers) before applying the texture/material \"glove\" which would otherwise enforce standard proportions via the word \"glove\" too early.",
+  "prompts_list": [
+    "A bare human hand with exactly six fingers",
+    "A white glove with exactly six fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

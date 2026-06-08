@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780910085_a0b4361e/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented **right-side up** (blooms above water, stems downward), directly contradicting the prompt’s requirement for it to be \"upside down.\" While the core elements (bouquet, vase) are present, the critical attribute of orientation is entirely misrepresented, failing to convey the intended scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is a clear, high-resolution photograph with no visible rendering artifacts. Lighting, textures, and perspective are consistent; the bouquet, vase, and background are sharply defined and physically coherent. There are no distortions, broken elements, or implausible blending."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780910085_a0b4361e/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bouquet of flowers in a vase in the standard upright orientation (flowers pointing upward, stems submerged in water). The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be positioned *below* the stems (e.g., flowers in the water with stems extending upward). This critical element is entirely absent—no inversion of the bouquet's structure is visible. The scene illustrates a conventional floral arrangement, not the specified scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with no rendering artifacts. The bouquet, vase, and background exhibit consistent lighting, sharp detail, and natural textures. The roses, leaves, and stems are anatomically coherent with realistic proportions and no distortion. The glass vase shows accurate transparency and refraction, and all elements connect physically plausibly (e.g., stems properly submerged in water). The composition is clean and realistic."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

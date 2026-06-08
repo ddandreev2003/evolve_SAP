@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural/spatial contradiction where the model typically enforces 5 fingers. Following Strategy B, I start with a bare hand geometry forced to 6 digits to lock the coarse layout, then switch to the 'white glove' object identity to apply the material without altering the established finger count.",
+  "prompts_list": [
+    "A bare human hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

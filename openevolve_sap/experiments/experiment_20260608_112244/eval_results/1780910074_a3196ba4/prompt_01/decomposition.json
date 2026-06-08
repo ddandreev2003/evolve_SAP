@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural contradiction involving finger count. Strategy B applies; starting with a normal glove would result in 5 fingers due to strong priors. We must define the anatomical geometry first (hand with 6 fingers) so the structure accepts the extra digits, then apply the material (glove) once the shape is locked.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers covered by a white glove",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting physics contradiction (Strategy A). Start with correct global lighting and scene layout (0-5), then introduce the impossible shadow direction once the geometry is stable, ensuring the cat remains coherent while breaking the physical rule of shadows.",
+  "prompts_list": [
+    "A cat sitting on the ground, illuminated from the front",
+    "A cat sitting on the ground, illuminated from the front, but its shadow explicitly faces forward towards the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

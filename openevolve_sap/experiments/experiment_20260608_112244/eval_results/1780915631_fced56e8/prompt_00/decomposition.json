@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This falls under structural contradiction. Standard flower geometry conflicts with inversion. Using green stems as a proxy establishes the 'inverted shape' topology before naming the flowers.",
+  "prompts_list": [
+    "Bare green stems sticking up out of an upright vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

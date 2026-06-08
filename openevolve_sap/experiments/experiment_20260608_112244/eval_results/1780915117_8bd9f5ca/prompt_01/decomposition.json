@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical contradiction demanding precise topology control. Starting with a bare hand explicitly defining the digit count ensures the mesh geometry is formed correctly before the material (leather/fabric) of the glove is overlaid, preventing digit loss or merging.",
+  "prompts_list": [
+    "a bare human hand with exactly 6 fingers",
+    "a white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

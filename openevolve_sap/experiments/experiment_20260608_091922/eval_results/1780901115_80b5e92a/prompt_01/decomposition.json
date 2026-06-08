@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural contradiction involving anatomical geometry. To prevent the model from locking a standard 5-finger glove shape, the first prompt establishes the unusual 6-finger hand geometry (layout phase) before the second prompt applies the glove material constraint (identity phase), ensuring the impossible shape persists.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

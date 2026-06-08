@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a material/lighting contradiction. Standard shadows follow the light source. We use Strategy A to establish a concrete lighting setup first, then switch mid-denoising to inject the impossible shadow behavior once the cat's silhouette is formed, preventing the model from correcting the shadow to match the light automatically.",
+  "prompts_list": [
+    "A cat sitting on the ground, illuminated from the left",
+    "A cat sitting on the ground, illuminated from the left, but its shadow is cast to the right opposite the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

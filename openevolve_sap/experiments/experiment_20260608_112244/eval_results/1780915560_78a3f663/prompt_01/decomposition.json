@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A 6-fingered glove violates anatomical norms, requiring early structural encoding. Using Strategy B, the prompt starts with a \"bare hand\" to establish the impossible 6-finger topology before adding the \"glove\" material. This prevents the model from defaulting to the standard 5-finger glove geometry during the initial denoising stages.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

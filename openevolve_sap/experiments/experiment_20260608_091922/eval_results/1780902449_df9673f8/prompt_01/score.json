@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780902449_df9673f8/prompt_01/image_00.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image depicts a white glove, satisfying the color and object requirement. However, it clearly shows only 5 fingers (thumb + 4 digits), while the prompt specifies 6 fingers. The core attribute of \"6 fingers\" is fundamentally misrepresented, as the glove lacks the sixth digit entirely. The scene is concrete and functional (a glove on a hand), but the critical numerical detail is incorrect, preventing full alignment.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no rendering artifacts. The glove exhibits consistent lighting, smooth textures, and anatomically coherent structure (well-formed fingers, natural creases, and proper perspective). There are no distortions, floating elements, or implausible blending—every detail is sharply defined and physically plausible, meeting the highest standard for visual coherence."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780902449_df9673f8/prompt_01/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, but it has only 5 fingers (4 fingers + 1 thumb), directly contradicting the prompt's requirement of \"6 fingers.\" The core element (finger count) is fundamentally misrepresented, as the glove lacks the specified sixth digit. While the glove is present and correctly colored, the critical attribute of having six fingers is missing, making the scene functionally inaccurate per the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The glove exhibits smooth, realistic texture with consistent lighting and subtle creases that follow natural hand anatomy. All fingers and the thumb are well-formed, with no distortion, warping, or merging. Perspective is coherent, and the solid green background has no artifacts. The rendering is clean, deliberate, and physically plausible."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural contradiction regarding object orientation. Flowers naturally grow upwards; upside-down violates expected gravity. According to Strategy B, start with a proxy describing the inverted geometry without naming the object \"bouquet\" to avoid locking normal flower orientation.",
+  "prompts_list": [
+    "Green flower stems sticking downwards from the rim of a glass vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

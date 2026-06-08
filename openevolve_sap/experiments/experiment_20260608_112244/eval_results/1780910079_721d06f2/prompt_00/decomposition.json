@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet creates a spatial contradiction where flowers naturally grow upwards. Following Strategy B, the first prompt explicitly defines the inverted geometry (\"stems pointing up, flowers down\") to prevent the model from defaulting to a standard upright vase configuration. Once the layout is locked at step 4, the second prompt introduces the specific object identity (\"bouquet of flowers\").",
+  "prompts_list": [
+    "stems pointing straight up out of a vase, inverted flowers hanging down",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

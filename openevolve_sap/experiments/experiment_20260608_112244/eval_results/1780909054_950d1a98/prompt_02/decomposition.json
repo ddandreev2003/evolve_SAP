@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows align with light sources. This scenario creates a physics contradiction. Strategy A establishes a coherent environment with correct lighting first, allowing the model to settle on composition. At step 5, the prompt forces the impossible shadow direction, prioritizing spatial relations over lighting consistency in the denoising process.",
+  "prompts_list": [
+    "A realistic black cat sitting on a sidewalk with consistent natural lighting",
+    "A realistic black cat sitting on a sidewalk with its shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

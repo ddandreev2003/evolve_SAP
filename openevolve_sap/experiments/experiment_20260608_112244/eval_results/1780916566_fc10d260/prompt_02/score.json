@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916566_fc10d260/prompt_02/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a cat with a visible shadow, but the shadow is cast to the side (left of the cat from the viewer's perspective) due to side lighting, not facing the opposite direction as specified in the prompt. The key requirement—that the shadow's orientation should directly oppose the cat's facing direction (e.g., if the cat faces forward, the shadow should extend backward)—is not met. Instead, the shadow is perpendicular to the cat's line of sight, misrepresenting the core intent of the prompt. While the cat and shadow are present, this critical misalignment significantly undermines the semantic fidelity.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts or distortions. Lighting is natural and consistent, highlighting the cat's fur texture and the gravel surface with realistic shadows. All elements, including the cat's facial features, limbs, and body proportions, are anatomically correct and well-defined. The perspective is coherent, with no floating or merged objects, and the scene maintains physical plausibility throughout. The image is clean, sharp, and visually compelling with no flaws."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780916566_fc10d260/prompt_02/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image shows a cat with a shadow cast to its left, but the shadow does not face the opposite direction of the cat. The cat is facing the viewer (forward), while the shadow extends laterally (to the left), not in the direction opposite to the cat’s orientation (e.g., backward). The prompt requires the shadow to face the *opposite direction* of the cat (e.g., if the cat faces forward, the shadow should face backward), which is not demonstrated here. The scene misrepresents the core spatial relationship specified in the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts. Lighting, texture, and perspective are consistent and realistic. The cat’s anatomy (fur, limbs, face) is well-defined and coherent, and the shadow blends naturally with the ground. There are no distortions, broken elements, or inconsistencies in physical coherence."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

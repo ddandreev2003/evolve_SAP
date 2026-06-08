@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural contradiction requiring early geometry definition. Standard bouquets imply upward stems; using a proxy description that forces the physical inversion (stems up, blossoms down) prevents the model from correcting the layout to a natural upright position in later steps.",
+  "prompts_list": [
+    "bare green flower stems pointing straight up out of a vase, blossoms hanging down",
+    "a bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

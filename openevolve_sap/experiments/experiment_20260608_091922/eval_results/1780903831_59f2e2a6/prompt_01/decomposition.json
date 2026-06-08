@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove inherently suggests a standard 5-finger human hand, creating a structural contradiction. According to Strategy B, starting with a normal glove locks the wrong geometry. Instead, we use a bare human hand proxy in the first sub-prompt to irreversibly establish the 6-finger layout during steps 0-5. At step 5, the model has locked the topology, allowing the second sub-prompt to apply the 'white glove' material without reverting to 5 fingers.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers visible",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

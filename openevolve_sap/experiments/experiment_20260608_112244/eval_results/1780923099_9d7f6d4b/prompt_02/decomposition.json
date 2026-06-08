@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction relies on physics that contradict the prompt. Strategy A anchors the primary lighting source early (Step 0-5). The impossible shadow behavior is introduced at Step 6, allowing the model to render the physical lighting correctly before enforcing the anomalous shadow direction.",
+  "prompts_list": [
+    "A cat sitting on the grass, brightly illuminated by sunlight from the left",
+    "A cat sitting on the grass, brightly illuminated by sunlight from the left, with its dark shadow cast towards the left light source"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

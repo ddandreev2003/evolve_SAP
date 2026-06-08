@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet typically implies an upright arrangement of stems radiating upwards. Mentioning 'bouquet' early in the denoising process strongly biases the model toward natural vertical growth. By describing only the physical orientation of the stems in the first prompt, we force the model to resolve the inverted geometry before attaching the semantic label 'bouquet' to the established shapes.",
+  "prompts_list": [
+    "A vase with flower stems pointing directly downwards",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

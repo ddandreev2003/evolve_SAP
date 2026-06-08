@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is determined by lighting physics. Starting with normal lighting ensures the cat's pose and the ground plane are stable, allowing the second stage to override the shadow vector without disturbing the object's form.",
+  "prompts_list": [
+    "A realistic cat standing outside with a natural shadow",
+    "A realistic cat standing outside with a shadow facing the opposite direction of the sun"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

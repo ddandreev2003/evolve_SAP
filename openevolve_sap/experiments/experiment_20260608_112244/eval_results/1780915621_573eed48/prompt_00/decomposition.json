@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This violates gravity and botanical structure. Following Strategy B for spatial contradictions, we define the inverted geometry (stems pointing up) using bare branches before naming the flowers. This prevents the model from defaulting to a normal vase-flower arrangement where stems go down.",
+  "prompts_list": [
+    "A vase on a table, with bare green stems pointing straight up into the air",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

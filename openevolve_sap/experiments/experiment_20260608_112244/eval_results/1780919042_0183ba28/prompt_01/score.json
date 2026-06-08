@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780919042_0183ba28/prompt_01/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which aligns with part of the prompt, but it has 5 fingers rather than the 6 fingers specified in the prompt. This is a significant misrepresentation of a key element of the prompt, as the number of fingers is the central feature described. The glove's anatomy follows standard human hand structure rather than the requested 6-finger configuration.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is well-rendered with consistent lighting, texture, and perspective. The anatomy appears correct and natural, with smooth transitions between fingers and proper creasing of the material. There are no artifacts, distortions, or visual inconsistencies in the rendering."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780919042_0183ba28/prompt_01/image_01.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image shows a white glove, satisfying the color and object requirement. However, the glove has only 5 fingers (4 digits + 1 thumb), while the prompt explicitly specifies 6 fingers. The critical attribute of finger count is incorrect, making the representation functionally inaccurate. The scene is concrete and non-metaphorical, but the missing finger violates a core prompt requirement.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The glove exhibits realistic texture, consistent lighting, and anatomically coherent finger structure with no distortions, artifacts, or physical inconsistencies. Edges are clean, perspective is natural, and all elements connect seamlessly without warping or fusion. The rendering is fully coherent and professional-grade."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

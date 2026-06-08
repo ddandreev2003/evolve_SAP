@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow logic depends on light consistency. Establish the cat and light direction normally first, then introduce the impossible shadow alignment only when the high-frequency emission is being resolved.",
+  "prompts_list": [
+    "A cat sitting, strongly illuminated from the left",
+    "A cat sitting, strongly illuminated from the left, but its shadow defies physics and is cast to the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

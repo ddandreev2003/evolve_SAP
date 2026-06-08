@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows rely on lighting consistency and geometric alignment which stabilize in the mid-denoising phases. To enforce the impossible physics without distorting the cat's anatomy, we first establish the cat's form and the physical light source in the early steps. At step 5, once the geometry is locked, we introduce the contradictory shadow direction to force the visual paradox.",
+  "prompts_list": [
+    "A domestic cat standing on a sidewalk, lit by bright sunlight from the right",
+    "A domestic cat standing on a sidewalk, lit by bright sunlight from the right, but the cat's shadow extends towards the right towards the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

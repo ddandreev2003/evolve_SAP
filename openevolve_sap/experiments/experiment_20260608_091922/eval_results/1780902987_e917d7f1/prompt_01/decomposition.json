@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a hard structural prior. Starting with a naked hand displaying the specific topology prevents the model from defaulting to five fingers during initial shape generation. Once the geometry is established, the glove material can be applied.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct spread fingers",
+    "A white glove covering a hand with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914076_2e0f7ecb/prompt_01/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a white glove, satisfying the color and object requirement. However, the glove has only 5 fingers (including the thumb), directly contradicting the prompt’s specific requirement of \"6 fingers.\" This misrepresentation of a core attribute—finger count—constitutes a significant failure to convey the prompt’s meaning. While the glove is present and functional in appearance, the absence of the sixth finger renders the key element of the prompt unfulfilled, aligning with the \"key elements or intent significantly misrepresented\" criterion for score 2.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The glove exhibits smooth, consistent texture and lighting with no artifacts, distortions, or anatomical inconsistencies. Fingers are well-formed, proportions are natural, and the glove connects coherently to the wrist without clipping or merging. The high-contrast black background enhances clarity, and all elements appear physically plausible and deliberately rendered. This meets the \"clean, realistic, and fully coherent\" standard for score 5."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914076_2e0f7ecb/prompt_01/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image shows a bare human hand with 5 fingers against a green background, not a white glove with 6 fingers as specified in the prompt. There is no glove present at all—neither white nor any other color—and the hand displays the standard human anatomy of 5 digits rather than the requested 6. The image fundamentally misrepresents the core elements of the prompt (object type, color, and count), failing to depict the described scenario in any way.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts. The hand is anatomically correct and well-formed, with natural skin texture, consistent lighting, and realistic perspective. Fingers and the palm connect naturally without distortion, clipping, or blending issues. The background is uniform and free of visual flaws, and the overall composition is clean and coherent."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

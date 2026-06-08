@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down flower arrangement defies gravity-based structural norms. We apply Strategy B (Structural/Spatial) by first defining the inverted stem positions with a proxy ('bare stems') to lock the pose before naming the object ('bouquet'), preventing the model from correcting the geometry to a natural upright position.",
+  "prompts_list": [
+    "Bare flower stems hanging down from a vase rim",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

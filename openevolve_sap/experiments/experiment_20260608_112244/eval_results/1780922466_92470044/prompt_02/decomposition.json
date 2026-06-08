@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting direction dictates shadow placement. We apply Strategy A (Material/Lighting) by establishing a physically consistent light/shadow pair first. Switching to a contradictory shadow direction late (Step 5) allows the object identity to stabilize before the impossible illumination overrides physics.",
+  "prompts_list": [
+    "A cat illuminated from the left with a shadow cast to the right",
+    "A cat illuminated from the left with a shadow cast to the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

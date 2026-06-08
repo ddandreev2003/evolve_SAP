@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction depends on light source; an opposite shadow violates physics. Using Strategy A, the scene is first established with a concrete light source (Steps 0-4). The switch introduces the impossible shadow direction (matching the light source) once the layout and subject are fixed, ensuring the anomaly appears as a lighting effect rather than a shape error.",
+  "prompts_list": [
+    "A cat sitting on the ground, illuminated from the right",
+    "A cat sitting on the ground, illuminated from the right, casting its shadow toward the right"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

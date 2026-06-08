@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The prompt describes a spatial contradiction where flowers grow downwards in a vase. Strategy B is applied. Starting with a normal vase/bouquet would lock correct gravity geometry. An inverted vase proxy establishes the topological structure before the floral identity is added.",
+  "prompts_list": [
+    "An inverted vase",
+    "Flower stems hanging from an inverted vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

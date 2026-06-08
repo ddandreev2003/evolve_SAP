@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard vases imply upright blooms. To force the geometric inversion without fighting a prior structure, the prompt starts with stems hanging down, establishing the topology before naming the object class as a bouquet.",
+  "prompts_list": [
+    "Green flower stems hanging downwards from a glass vase opening",
+    "An upside down bouquet of flowers in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

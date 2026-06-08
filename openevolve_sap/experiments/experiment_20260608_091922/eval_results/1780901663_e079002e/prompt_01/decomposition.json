@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Digit count is a structural contradiction that cannot be overridden after early geometry is set. Following Strategy B, the prompt must begin with a hand structure that explicitly demands six fingers to stabilize the count before adding the glove identity.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers normally grow upward from soil; an upside-down state creates a structural inversion. Starting with stems pointing up encodes the inverted geometry early (low frequency) before switching to the specific identity of the flowers and vase, preventing the model from correcting the layout to natural growth.",
+  "prompts_list": [
+    "A vase with flower stems pointing upwards out of it",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

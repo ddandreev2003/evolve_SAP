@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows physically depend on light sources, so a shadow facing the \"opposite direction\" contradicts typical scene lighting (usually implying a shadow against the light). Directly prompting this often leads the model to revert to a physically correct shadow. Following Strategy A, we first establish the cat and scene with standard lighting to lock the geometry and composition, then switch to the contradictory instruction once the structure is stable.",
+  "prompts_list": [
+    "A realistic cat sitting on grass in bright sunlight",
+    "A realistic cat sitting on grass in bright sunlight with a shadow facing the opposite direction of the sun"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

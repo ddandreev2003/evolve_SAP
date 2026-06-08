@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a Material / Lighting Contradiction requiring Strategy A. Steps 0–4 focus on locking the cat's geometric structure and general surface presence without enforcing impossible physics immediately. At step 5, the specific lighting logic is overridden to inject the physically impossible shadow direction once the form is stable.",
+  "prompts_list": [
+    "A cat sitting on grass illuminated from the right",
+    "A cat sitting on grass illuminated from the right, casting a shadow to the right"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

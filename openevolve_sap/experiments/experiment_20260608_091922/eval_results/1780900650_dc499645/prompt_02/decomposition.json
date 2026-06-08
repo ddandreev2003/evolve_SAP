@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Cats and shadows obey physics in training data. Opposing shadows require specific lighting cues that conflict with general structure learning. We establish the cat's form first, then impose the impossible lighting condition.",
+  "prompts_list": [
+    "A cat standing normally",
+    "A cat standing normally, its shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

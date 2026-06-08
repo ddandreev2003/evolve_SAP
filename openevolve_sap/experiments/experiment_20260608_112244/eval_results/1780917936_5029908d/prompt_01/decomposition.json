@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves typically have five fingers, so introducing \"glove\" early would lock the geometry to a normal 5-finger shape. Following Strategy B for Structural Contradictions, we begin with a bare hand proxy to force the unusual 6-finger anatomy during low-frequency construction (Steps 0-4). After the geometry is stabilized, we switch to the \"white glove\" description to apply the material and identity without altering the established finger count.",
+  "prompts_list": [
+    "A bare hand with exactly 6 fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

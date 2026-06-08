@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting/shadow contradiction (Strategy A). Shadows cannot naturally face the opposite direction of the light source. We must first establish the cat's geometry and the correct lighting direction in the early steps so the model locks the pose. Then, around the mid-stage (step 5), we introduce the impossible shadow direction explicitly as a deviation from the established lighting. Concrete directional language (\"left\") replaces abstract words like \"opposite\" for better adherence.",
+  "prompts_list": [
+    "A cat sitting on the ground, strongly illuminated from the left",
+    "A cat sitting on the ground, strongly illuminated from the left, but its shadow is impossible and is also cast to the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves have five fingers. Mentioning \"glove\" early biases the model toward the common anatomy. Starting with a bare hand establishes the impossible 6-finger geometry first. Once the structure is locked, switching to \"glove\" applies the material and color without fighting the shape prior.",
+  "prompts_list": [
+    "A bare human hand with exactly six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

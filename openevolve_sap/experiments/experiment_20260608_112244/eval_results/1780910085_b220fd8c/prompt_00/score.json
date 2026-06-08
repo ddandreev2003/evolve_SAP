@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780910085_b220fd8c/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers arranged in a vase with the flower heads upright and stems submerged in water—this is a standard, right-side-up orientation. The prompt explicitly requires the bouquet to be \"upside down\" (i.e., flower heads inside the vase, stems pointing upward), which is entirely absent. While the core objects (bouquet and vase) are present, the critical action and orientation described in the prompt are completely misrepresented, failing to illustrate the intended scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with no visible artifacts, distortions, or rendering flaws. Lighting is natural and consistent, textures (e.g., petals, leaves, glass) are realistic, and perspective is coherent. All elements—including delicate flowers, stems, and the vase—are sharply defined, anatomically correct, and physically plausible with no floating objects, clipped geometry, or blending issues. The composition is clean and visually professional."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780910085_b220fd8c/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains a bouquet of flowers in a vase, but the bouquet is oriented normally (stems down, blooms up) rather than upside down as specified in the prompt. While the core elements (bouquet, vase) are present, the critical action of being \"upside down\" is entirely missing, fundamentally misrepresenting the prompt’s intent. This constitutes a significant misalignment with the described scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no rendering artifacts. The flowers, leaves, and vase exhibit realistic textures, consistent lighting, and natural perspective. All elements are well-formed, coherent, and free of distortions, warping, or anatomical inconsistencies. The composition is clean and physically plausible."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

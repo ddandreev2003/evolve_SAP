@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers violates anatomical priors (Strategy B). Mentioning \"glove\" early might trigger standard 5-finger shapes. Starting with a bare hand allows the model to establish the 6-finger topology before applying the glove texture and identity.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

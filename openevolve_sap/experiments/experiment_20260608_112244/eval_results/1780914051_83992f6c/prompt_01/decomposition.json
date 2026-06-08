@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "An anatomical impossibility where the glove conforms to the hand. If the prompt starts with \"glove,\" the model may default to standard five-fingered hand geometry within the glove. Using a \"bare hand with exactly 6 fingers\" first ensures the underlying skeletal structure is locked into the unusual configuration before the fabric texture is applied.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The finger count violates anatomical norms. Strategy B is used. Starting with a standard glove would lock five fingers. The prompt initializes with the anomalous hand geometry first to enforce the digit count before the glove is applied.",
+  "prompts_list": [
+    "A human hand with 6 fingers",
+    "A white glove covering a 6-fingered hand",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

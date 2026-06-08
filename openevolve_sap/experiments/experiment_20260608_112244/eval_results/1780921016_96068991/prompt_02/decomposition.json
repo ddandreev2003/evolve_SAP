@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows must align with light physics. We first establish a concrete light direction to resolve the coarse scene layout, then introduce the physically impossible shadow direction at step 5, ensuring the base geometry does not collapse under contradictory shading cues.",
+  "prompts_list": [
+    "A cat illuminated from the left",
+    "A cat illuminated from the left, but its shadow is impossible and is also cast to the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting attribute that contradicts natural physics relative to the primary light source. Starting with a normal cat scene stabilizes the geometry and layout before introducing the impossible shadow behavior in the later denoising stage.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow explicitly faces the opposite direction of the light"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

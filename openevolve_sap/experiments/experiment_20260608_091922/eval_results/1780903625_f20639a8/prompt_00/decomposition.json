@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Spatial contradiction exists between natural floral growth and the inverted vase configuration. To prevent the model from locking into a standard vase geometry (Strategy B), the first prompt establishes the inverted structural proxy immediately with bare stems. This ensures the coarse geometry is resolved as upside-down before introducing the material details of a full bouquet.",
+  "prompts_list": [
+    "An inverted vase held upside down, with bare flower stems pointing upwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

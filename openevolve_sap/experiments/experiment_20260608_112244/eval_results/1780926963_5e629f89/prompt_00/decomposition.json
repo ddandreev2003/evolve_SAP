@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates natural botanical growth direction. Strategy B is applied here: avoiding the term \"bouquet\" in the first prompt prevents the model from locking into standard upright geometry, allowing the unusual stem-blossom relationship to form structurally before the object identity is confirmed.",
+  "prompts_list": [
+    "bare green flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "a bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

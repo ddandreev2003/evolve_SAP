@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structure B applies here because an upside-down bouquet violates typical gravity expectations. Starting with a descriptive proxy ('stems sticking up') forces the geometry early, preventing the model from defaulting to an upright layout before introducing the final concept.",
+  "prompts_list": [
+    "Bare green stems sticking straight up out of a vase, flowers at the bottom",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

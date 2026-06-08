@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780923084_60515741/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains the correct objects (a bouquet and a vase), but the critical detail of the bouquet being \"upside down\" is entirely missing. The flowers are arranged in the standard upright orientation, with blooms at the top and stems submerged in water. This misrepresents the core action and intent of the prompt, as the upside-down positioning is a defining requirement, not a minor detail.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent, with no rendering artifacts or distortions. The flowers, vase, and table are well-formed, with consistent lighting, natural textures, and realistic perspective. All elements connect logically (e.g., stems in water, leaves positioned naturally), and there are no broken or implausible features."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780923084_60515741/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is arranged in a normal upright position rather than being upside down as specified in the prompt. While the main components (bouquet, flowers, and vase) are present, the critical orientation element of being \"upside down\" is completely missing. This significantly misrepresents the core intent of the prompt, as the flowers are pointing upward with stems extending downward into the vase, rather than the required arrangement where blooms would point downward and stems would extend upward.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The flowers, vase, and background are well-rendered with consistent lighting and natural perspective. The blooms and leaves show clear detail with proper textures, and the vase has smooth, realistic surfaces. Elements connect naturally - the flowers are properly positioned within the vase without any floating, clipping, or merging issues. The soft lighting creates gentle shadows that enhance the three-dimensionality, and there are no distortions, artifacts, or visual inconsistencies throughout the composition."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

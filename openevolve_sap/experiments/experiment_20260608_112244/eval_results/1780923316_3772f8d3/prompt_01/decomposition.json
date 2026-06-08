@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural anatomical contradiction (extra digit). Per Strategy B, starting directly with a glove often locks the visual prior for 5 fingers. We begin with a bare human hand possessing 6 fingers to force the geometry, then transition to the glove material once the skeleton is established.",
+  "prompts_list": [
+    "a bare human hand with exactly 6 fingers",
+    "a white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

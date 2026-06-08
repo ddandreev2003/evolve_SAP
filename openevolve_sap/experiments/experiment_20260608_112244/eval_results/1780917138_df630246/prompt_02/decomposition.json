@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are low-frequency visual elements determined by lighting. Establishing the animal and environment first ensures solid form before introducing the contradictory physical rule that flips the light logic.",
+  "prompts_list": [
+    "A realistic cat sitting on pavement in bright sunlight",
+    "A realistic cat sitting on pavement in bright sunlight, with its shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

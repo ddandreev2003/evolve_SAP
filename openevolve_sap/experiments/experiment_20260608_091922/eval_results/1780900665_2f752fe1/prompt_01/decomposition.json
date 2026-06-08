@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Gloves usually imply 5 fingers. Starting with a glove locks the hand shape to 5 digits. Strategy B dictates starting with a proxy that enforces the incorrect count immediately (\"hand with six fingers\") before covering it with the glove texture.",
+  "prompts_list": [
+    "A human hand with six fingers extended",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

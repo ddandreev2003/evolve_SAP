@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet naturally grows upwards due to gravity and plant biology, creating a spatial contradiction. Following Strategy B, we start with bare flower stems defining the inverted geometry to prevent the model from locking into standard upright floral structures before introducing the full concept.",
+  "prompts_list": [
+    "Bare flower stems sticking up out of a vase with blossoms hanging down near the table",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

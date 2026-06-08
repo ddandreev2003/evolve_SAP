@@ -1,0 +1,130 @@
+2026-06-08 11:22:44,017 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260608_112244.log
+2026-06-08 11:22:44,036 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-06-08 11:22:44,118 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: google/gemini-3.1-pro-preview
+2026-06-08 11:22:44,118 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: google/gemini-3.1-pro-preview (weight: 1.00)
+2026-06-08 11:22:44,156 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-06-08 11:22:44,157 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-06-08 11:22:44,157 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-06-08 11:22:53,784 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-06-08 11:22:53,784 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-06-08 11:22:53,784 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-06-08 11:22:53,784 - openevolve.controller - INFO - Adding initial program to database
+2026-06-08 11:23:44,348 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 11:26:43,791 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 11:27:03,141 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 11:28:44,439 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 11:29:03,022 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 11:30:07,845 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 11:30:39,815 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 11:31:51,852 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 11:31:52,435 - openevolve.evaluator - INFO - Evaluated program cafd73aa-3674-47bb-a15c-e80e6f93c542 in 538.65s: alignment_score=2.3333, gemma_score=1.0000, combined_score=0.4133, num_eval_prompts=3.0000
+2026-06-08 11:31:52,435 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-06-08 11:31:52,435 - openevolve.process_parallel - INFO - Initialized process parallel controller with 4 workers
+2026-06-08 11:31:52,718 - openevolve.process_parallel - INFO - Set max 30 tasks per child
+2026-06-08 11:31:52,720 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-06-08 11:31:52,720 - openevolve.controller - INFO - Using island-based evolution with 1 islands
+2026-06-08 11:31:52,720 - openevolve.database - INFO - Island Status:
+2026-06-08 11:31:52,720 - openevolve.database - INFO -  * Island 0: 1 programs, best=0.4133, avg=0.4133, diversity=0.00, gen=0 (best: cafd73aa-3674-47bb-a15c-e80e6f93c542)
+2026-06-08 11:31:52,720 - openevolve_sap.core.evolution_patch - INFO - SAP: evolution target = 120 successful eval cycles (attempt cap 960, start id 1)
+2026-06-08 11:31:52,728 - openevolve_sap.core.evolution_patch - INFO - Early stopping disabled
+2026-06-08 11:39:21,574 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 5}
+2026-06-08 11:39:21,575 - openevolve.database - INFO - New best program 236f27b4-854f-4c72-bc4d-16bc2d04b084 replaces cafd73aa-3674-47bb-a15c-e80e6f93c542 (combined_score: 0.4133 → 0.5467, +0.1333)
+2026-06-08 11:39:21,575 - openevolve_sap.core.evolution_patch - INFO - Iteration 4: Program 236f27b4-854f-4c72-bc4d-16bc2d04b084 (parent: cafd73aa-3674-47bb-a15c-e80e6f93c542) completed in 442.09s [successful 1/120]
+2026-06-08 11:39:21,576 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=3.1667, gemma_score=1.0000, combined_score=0.5467, num_eval_prompts=3.0000
+2026-06-08 11:39:21,576 - openevolve_sap.core.evolution_patch - INFO - 🌟 New best solution at iteration 4: 236f27b4-854f-4c72-bc4d-16bc2d04b084
+2026-06-08 11:40:25,746 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 0}
+2026-06-08 11:40:25,747 - openevolve_sap.core.evolution_patch - INFO - Iteration 3: Program 877d9ba0-1973-4655-8dda-f78ad999a5d8 (parent: cafd73aa-3674-47bb-a15c-e80e6f93c542) completed in 506.42s [successful 2/120]
+2026-06-08 11:40:25,747 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.1667, gemma_score=1.0000, combined_score=0.3867, num_eval_prompts=3.0000
+2026-06-08 11:41:03,896 - openevolve.database - INFO - Island 0 MAP-Elites cell improved: {'complexity': 9, 'diversity': 0} (fitness: 0.387 -> 0.547)
+2026-06-08 11:41:03,897 - openevolve_sap.core.evolution_patch - INFO - Iteration 2: Program 7de5b25b-e4d6-4f60-a6c9-7feefd8e731e (parent: cafd73aa-3674-47bb-a15c-e80e6f93c542) completed in 544.75s [successful 3/120]
+2026-06-08 11:41:03,898 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.1667, gemma_score=5.0000, combined_score=0.5467, num_eval_prompts=3.0000
+2026-06-08 11:41:26,582 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 6, 'diversity': 0}
+2026-06-08 11:41:26,583 - openevolve_sap.core.evolution_patch - INFO - Iteration 1: Program 7851502f-85c3-4618-94ce-33dee3dcd9ed (parent: cafd73aa-3674-47bb-a15c-e80e6f93c542) completed in 567.11s [successful 4/120]
+2026-06-08 11:41:26,583 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.8333, gemma_score=1.0000, combined_score=0.4933, num_eval_prompts=3.0000
+2026-06-08 11:48:25,622 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 3}
+2026-06-08 11:48:25,623 - openevolve_sap.core.evolution_patch - INFO - Iteration 5: Program 60585cf6-6c15-4c42-857a-637fd199c33a (parent: cafd73aa-3674-47bb-a15c-e80e6f93c542) completed in 544.04s [successful 5/120]
+2026-06-08 11:48:25,623 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.8333, gemma_score=1.0000, combined_score=0.4933, num_eval_prompts=3.0000
+2026-06-08 11:48:25,623 - openevolve_sap.core.evolution_patch - INFO - Checkpoint interval reached at successful iteration 5 (attempt 5)
+2026-06-08 11:48:25,624 - openevolve.database - INFO - Island Status:
+2026-06-08 11:48:25,624 - openevolve.database - INFO -  * Island 0: 5 programs, best=0.5467, avg=0.4987, diversity=98.13, gen=5 (best: 236f27b4-854f-4c72-bc4d-16bc2d04b084)
+2026-06-08 11:48:25,627 - openevolve.database - INFO - Saved database with 6 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_5
+2026-06-08 11:48:25,628 - openevolve.controller - INFO - Saved best program at checkpoint 5 with metrics: alignment_score=3.1667, gemma_score=1.0000, combined_score=0.5467, num_eval_prompts=3.0000
+2026-06-08 11:48:25,628 - openevolve.controller - INFO - Saved checkpoint at iteration 5 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_5
+2026-06-08 11:48:55,137 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 1}
+2026-06-08 11:48:55,137 - openevolve_sap.core.evolution_patch - INFO - Iteration 8: Program 373917e1-537b-4a0b-96c5-7cce24a28877 (parent: cafd73aa-3674-47bb-a15c-e80e6f93c542) completed in 448.55s [successful 6/120]
+2026-06-08 11:48:55,138 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.8333, gemma_score=1.0000, combined_score=0.4933, num_eval_prompts=3.0000
+2026-06-08 11:49:58,031 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 4}
+2026-06-08 11:49:58,033 - openevolve_sap.core.evolution_patch - INFO - Iteration 6: Program f733cabb-195b-4e2a-be06-321129c5aea9 (parent: cafd73aa-3674-47bb-a15c-e80e6f93c542) completed in 572.29s [successful 7/120]
+2026-06-08 11:49:58,033 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.3333, gemma_score=1.0000, combined_score=0.4133, num_eval_prompts=3.0000
+2026-06-08 11:50:31,415 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 1}
+2026-06-08 11:50:31,416 - openevolve_sap.core.evolution_patch - INFO - Iteration 7: Program 5bb35c58-be82-4b42-a824-83481e86825c (parent: cafd73aa-3674-47bb-a15c-e80e6f93c542) completed in 567.51s [successful 8/120]
+2026-06-08 11:50:31,416 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.5000, gemma_score=1.0000, combined_score=0.4400, num_eval_prompts=3.0000
+2026-06-08 11:56:02,633 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 7, 'diversity': 0}
+2026-06-08 11:56:02,635 - openevolve_sap.core.evolution_patch - INFO - Iteration 10: Program 804ab806-b81c-46aa-a7d4-2c29403bf2a2 (parent: 877d9ba0-1973-4655-8dda-f78ad999a5d8) completed in 427.49s [successful 9/120]
+2026-06-08 11:56:02,635 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.5000, gemma_score=1.0000, combined_score=0.4400, num_eval_prompts=3.0000
+2026-06-08 11:56:52,134 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 8, 'diversity': 0}
+2026-06-08 11:56:52,134 - openevolve.database - INFO - Island 0 MAP-Elites coverage reached 10.0% (10/100 cells)
+2026-06-08 11:56:52,135 - openevolve_sap.core.evolution_patch - INFO - Iteration 9: Program 74358944-420f-4c8d-9e0e-d044b98a5aac (parent: 236f27b4-854f-4c72-bc4d-16bc2d04b084) completed in 506.51s [successful 10/120]
+2026-06-08 11:56:52,135 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.5000, gemma_score=1.0000, combined_score=0.4400, num_eval_prompts=3.0000
+2026-06-08 11:56:52,135 - openevolve_sap.core.evolution_patch - INFO - Checkpoint interval reached at successful iteration 10 (attempt 9)
+2026-06-08 11:56:52,136 - openevolve.database - INFO - Island Status:
+2026-06-08 11:56:52,136 - openevolve.database - INFO -  * Island 0: 10 programs, best=0.5467, avg=0.4720, diversity=102.77, gen=10 (best: 236f27b4-854f-4c72-bc4d-16bc2d04b084)
+2026-06-08 11:56:52,141 - openevolve.database - INFO - Saved database with 11 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_9
+2026-06-08 11:56:52,141 - openevolve.controller - INFO - Saved best program at checkpoint 9 with metrics: alignment_score=3.1667, gemma_score=1.0000, combined_score=0.5467, num_eval_prompts=3.0000
+2026-06-08 11:56:52,141 - openevolve.controller - INFO - Saved checkpoint at iteration 9 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_9
+2026-06-08 11:58:14,249 - openevolve_sap.core.evolution_patch - INFO - Iteration 11: Program 464bf254-8422-45ae-8ff7-9572c9db00c5 (parent: 7de5b25b-e4d6-4f60-a6c9-7feefd8e731e) completed in 496.21s [successful 11/120]
+2026-06-08 11:58:14,249 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.5000, gemma_score=1.0000, combined_score=0.4400, num_eval_prompts=3.0000
+2026-06-08 11:59:13,230 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 6, 'diversity': 9}
+2026-06-08 11:59:13,231 - openevolve_sap.core.evolution_patch - INFO - Iteration 12: Program c9252ebe-1ead-42fc-b80f-5c40dc8ba8e8 (parent: cafd73aa-3674-47bb-a15c-e80e6f93c542) completed in 521.81s [successful 12/120]
+2026-06-08 11:59:13,231 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.6667, gemma_score=1.0000, combined_score=0.4667, num_eval_prompts=3.0000
+2026-06-08 12:02:58,800 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 4, 'diversity': 1}
+2026-06-08 12:02:58,800 - openevolve.database - INFO - New best program 70dfbd26-d242-4767-a61d-c39a05205575 replaces 236f27b4-854f-4c72-bc4d-16bc2d04b084 (combined_score: 0.5467 → 0.5733, +0.0267)
+2026-06-08 12:02:58,800 - openevolve_sap.core.evolution_patch - INFO - Iteration 13: Program 70dfbd26-d242-4767-a61d-c39a05205575 (parent: 7851502f-85c3-4618-94ce-33dee3dcd9ed) completed in 416.17s [successful 13/120]
+2026-06-08 12:02:58,800 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.3333, gemma_score=5.0000, combined_score=0.5733, num_eval_prompts=3.0000
+2026-06-08 12:02:58,801 - openevolve_sap.core.evolution_patch - INFO - 🌟 New best solution at iteration 13: 70dfbd26-d242-4767-a61d-c39a05205575
+2026-06-08 12:03:29,446 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 0, 'diversity': 9}
+2026-06-08 12:03:29,447 - openevolve_sap.core.evolution_patch - INFO - Iteration 14: Program e4782632-f9e5-4696-8cec-fa85b84cc370 (parent: 236f27b4-854f-4c72-bc4d-16bc2d04b084) completed in 397.31s [successful 14/120]
+2026-06-08 12:03:29,447 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.3333, gemma_score=1.0000, combined_score=0.4133, num_eval_prompts=3.0000
+2026-06-08 12:05:47,884 - openevolve_sap.core.evolution_patch - INFO - Iteration 15: Program 385c6275-67e0-4a70-baf8-feb7958e5cb7 (parent: 7de5b25b-e4d6-4f60-a6c9-7feefd8e731e) completed in 453.63s [successful 15/120]
+2026-06-08 12:05:47,884 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.1667, gemma_score=1.0000, combined_score=0.3867, num_eval_prompts=3.0000
+2026-06-08 12:05:47,884 - openevolve_sap.core.evolution_patch - INFO - Checkpoint interval reached at successful iteration 15 (attempt 15)
+2026-06-08 12:05:47,885 - openevolve.database - INFO - Island Status:
+2026-06-08 12:05:47,885 - openevolve.database - INFO -  * Island 0: 15 programs, best=0.5733, avg=0.4667, diversity=86.07, gen=15 (best: 70dfbd26-d242-4767-a61d-c39a05205575)
+2026-06-08 12:05:47,894 - openevolve.database - INFO - Saved database with 16 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_15
+2026-06-08 12:05:47,895 - openevolve.controller - INFO - Saved best program at checkpoint 15 with metrics: alignment_score=2.3333, gemma_score=5.0000, combined_score=0.5733, num_eval_prompts=3.0000
+2026-06-08 12:05:47,895 - openevolve.controller - INFO - Saved checkpoint at iteration 15 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_15
+2026-06-08 12:08:08,074 - openevolve_sap.core.evolution_patch - INFO - Iteration 16: Program 892bad25-eaa7-4f0b-84d9-4d0879892f01 (parent: 7de5b25b-e4d6-4f60-a6c9-7feefd8e731e) completed in 534.85s [successful 16/120]
+2026-06-08 12:08:08,075 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.8333, gemma_score=1.0000, combined_score=0.4933, num_eval_prompts=3.0000
+2026-06-08 12:13:27,463 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 17: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 12:13:27,467 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 12:13:30,512 - openevolve.process_parallel - INFO - Set max 30 tasks per child
+2026-06-08 12:13:30,513 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-06-08 12:13:30,520 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 18: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 12:13:30,524 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 12:13:30,785 - openevolve.process_parallel - INFO - Set max 30 tasks per child
+2026-06-08 12:13:30,786 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-06-08 12:13:30,789 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 19: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 12:13:30,790 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 12:13:31,059 - openevolve.process_parallel - INFO - Set max 30 tasks per child
+2026-06-08 12:13:31,060 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-06-08 12:13:31,063 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 20: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 12:13:31,063 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 12:13:31,348 - openevolve.process_parallel - INFO - Set max 30 tasks per child
+2026-06-08 12:13:31,351 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-06-08 12:13:31,355 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 21: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 12:13:31,357 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 12:13:31,667 - openevolve.process_parallel - INFO - Set max 30 tasks per child
+2026-06-08 12:13:31,688 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-06-08 12:13:31,692 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 22: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 12:13:31,692 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 12:13:31,986 - openevolve.process_parallel - INFO - Set max 30 tasks per child
+2026-06-08 12:13:31,987 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-06-08 12:13:31,990 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 23: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 12:13:31,993 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 12:13:32,279 - openevolve.process_parallel - INFO - Set max 30 tasks per child
+2026-06-08 12:13:32,280 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-06-08 12:13:32,284 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 24: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 12:13:32,284 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 12:13:32,560 - openevolve.process_parallel - INFO - Set max 30 tasks per child
+2026-06-08 12:13:32,560 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2026-06-08 12:14:56,356 - openevolve_sap.core.evolution_patch - WARNING - Iteration 30 error: No valid diffs found in response

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This involves a structural anomaly (extra finger) rather than a simple scene contradiction. Strategy B requires separating geometry construction from object identity to prevent the model from defaulting to a standard 5-fingered glove shape. We first establish the specific finger count with a proxy hand, then apply the glove material once the shape is locked.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct fingers spread apart",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

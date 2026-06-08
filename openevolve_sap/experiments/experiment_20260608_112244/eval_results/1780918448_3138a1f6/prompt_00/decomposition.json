@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard bouquets grow vertically upwards out of vases due to gravity and plant biology. Explicitly mentioning a 'bouquet' early forces the model to render this normal orientation. To enforce the impossible inverted geometry, the first prompt describes only the structural arrangement of the stems (hanging down) without using the target noun. Once the layout is fixed, the final prompt specifies the floral identity.",
+  "prompts_list": [
+    "A glass vase on a table with green stems emerging from the rim and drooping downward toward the surface",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves imply a five-digit anatomical norm. Using a \"hand with six fingers\" establishes the necessary irregular topology early (Steps 0-4) before introducing the specific \"white glove\" material in the second stage. This prevents the model from auto-correcting the digit count based on prior training data and ensures the structural anomaly persists during the refinement of textures and lighting.",
+  "prompts_list": [
+    "A hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

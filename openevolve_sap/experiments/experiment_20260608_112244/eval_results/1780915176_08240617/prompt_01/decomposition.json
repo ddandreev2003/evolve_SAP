@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Gloves imply human anatomy which defaults to 5 fingers. Strategy B requires establishing the anomalous anatomy using a \"bare hand\" proxy before applying the clothing layer to avoid correction during the denoising process.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white leather glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

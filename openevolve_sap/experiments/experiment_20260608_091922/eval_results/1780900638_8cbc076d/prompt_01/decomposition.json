@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count constitutes a structural geometry contradiction. Strategy B requires introducing the non-standard anatomy immediately rather than refining a standard glove. Starting with the hand definition ensures the extra digit count persists through the denoising stages.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a high-frequency topological detail. Defining the general glove shape first ensures stable anatomy, allowing the unusual extra digit to be rendered as a specific modification rather than a distorted artifact.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

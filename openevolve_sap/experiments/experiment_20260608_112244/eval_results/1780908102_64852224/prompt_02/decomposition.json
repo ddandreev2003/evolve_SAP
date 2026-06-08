@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction contradicts physical light laws in a realistic context. The model requires a geometrically stable subject before attempting complex, impossible lighting interactions. We start with a normally lit cat to secure shape and pose during low-frequency denoising. The impossible shadow condition is introduced only after the coarse structure stabilizes, preventing the model from resolving inconsistent geometry early on.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

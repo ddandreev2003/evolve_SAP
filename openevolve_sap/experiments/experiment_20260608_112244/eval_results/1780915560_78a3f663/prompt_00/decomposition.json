@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet contradicts standard vase mechanics where stems grow up and blooms extend out. To prevent the model from defaulting to a normal flower arrangement, the inverted geometry is described explicitly in the first prompt (proxying the impossible layout), before refining to the target concept in the second stage.",
+  "prompts_list": [
+    "Stems sticking straight up out of an upright vase, with blossom heads inside the vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914634_15164b44/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the flowers are oriented **right side up** (blooms above the vase, stems inside), not upside down as required by the prompt. The critical action of being \"upside down\" is entirely missing, as the bouquet’s orientation contradicts the prompt’s core requirement. While the main subjects (bouquet, vase) are present, the key conceptual element (inverted arrangement) is misrepresented, significantly altering the intended scene.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. The flowers, vase, and stems are well-formed with consistent lighting, texture, and perspective. There are no rendering artifacts, distortions, or broken elements; all components appear physically plausible and naturally connected. The composition is realistic and free of visual flaws."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914634_15164b44/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet of flowers arranged upright in a vase, with stems pointing downward into the vase and blooms facing upward. The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be inverted (e.g., blooms pointing downward into the vase, stems protruding upward). This critical element is entirely absent, and the scene illustrates the conventional, expected orientation of a bouquet. No conceptual or contextual interpretation supports an \"upside-down\" reading; thus, the image fails to reflect the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity photograph with no visible rendering artifacts. Lighting is natural and consistent, highlighting realistic textures in the petals, leaves, and vase. All elements (roses, hydrangeas, foliage, vase) are anatomically and structurally coherent, with no distortion, warping, or fused geometry. The composition is sharp, well-balanced, and physically plausible, demonstrating professional-level visual coherence."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

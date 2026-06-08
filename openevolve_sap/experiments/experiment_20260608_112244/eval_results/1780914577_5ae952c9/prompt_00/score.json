@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914577_5ae952c9/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image shows a bouquet of flowers arranged in a normal upright position with blooms facing upward and stems extending down into the vase. This directly contradicts the prompt \"A bouquet of flowers is upside down in a vase,\" which requires the flowers to be inverted with blooms inside the vase and stems pointing upward. The critical orientation described in the prompt is completely missing and actually reversed, making the image fail to reflect the prompt's meaning at all.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts or distortions. The flowers, leaves, stems, and vase are all well-formed and visually coherent. Lighting, texture, and perspective are consistent throughout the scene, and all elements appear physically realistic and properly connected. The composition is sharp and natural with no signs of warping, melting, or other visual flaws."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780914577_5ae952c9/prompt_00/image_01.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image contains the correct objects (bouquet of flowers and vase), but the critical attribute \"upside down\" is missing. The bouquet is arranged in a normal upright position with flowers pointing upward and stems extending downward into the vase. The prompt specifically requires the bouquet to be inverted, which would mean flowers pointing downward and stems extending upward from the vase. While the main subjects are present, this important directional attribute is completely misrepresented, preventing the image from illustrating the intended situation.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with excellent visual coherence. There are no rendering artifacts, distortions, or broken elements. The flowers, leaves, and vase are sharply defined with natural textures and consistent lighting. Perspective and depth are realistic, with proper shadows and highlights. All elements connect naturally without floating objects, clipped parts, or merged shapes. The composition is clean, well-focused, and visually pleasing with no visible flaws."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

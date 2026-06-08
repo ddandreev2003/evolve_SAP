@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural contradiction where flowers violate natural gravity/orientation. Strategy B is required. Starting with normal flowers would lock upright geometry. We must introduce the physical proxy of stems going up/heads on table early to establish the weird pose, then switch to the named concept once shape is locked.",
+  "prompts_list": [
+    "A vase with bare stems pointing up and flower heads resting on the table",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

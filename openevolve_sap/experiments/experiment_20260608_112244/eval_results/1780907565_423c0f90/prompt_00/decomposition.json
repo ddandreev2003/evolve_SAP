@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet normally grows upwards from soil, conflicting with the vase structure. Following Strategy B for spatial contradictions, the initial prompt establishes the inverted geometry immediately using a proxy that encodes the upside-down orientation, preventing the model from locking in standard vertical growth.",
+  "prompts_list": [
+    "A vase held upside down with flowers inside",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

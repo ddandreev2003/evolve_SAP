@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates the strong geometric prior of plants growing upward. Starting with a structural proxy describing stems extending upwards but flower heads resting downward forces the impossible weight distribution and geometry into the latents before introducing the \"flower\" semantics fully.",
+  "prompts_list": [
+    "A bundle of bare green stems sticking straight up out of a vase, with heavy flower heads resting on the table below.",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

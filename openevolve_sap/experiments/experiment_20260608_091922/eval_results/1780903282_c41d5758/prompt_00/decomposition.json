@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A normal bouquet implies stems pointing upward. Since \"bouquet\" carries a strong prior for upright growth, the first prompt uses a structural description of stems to define the inverted geometry before applying the semantic label. Switching at step 4 ensures the vase and stem positions stabilize before the name introduces expectations.",
+  "prompts_list": [
+    "A vase with flower stems extending downwards",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

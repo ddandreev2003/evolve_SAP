@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting contradiction (Strategy A). Shadows define the light source, and an impossible direction conflicts with standard lighting assumptions. Starting with flat lighting removes early shadow constraints, preventing geometric locks, before introducing the impossible shadow direction at step 3.",
+  "prompts_list": [
+    "A cat standing on the ground, flat ambient lighting, no shadows",
+    "A cat standing on the ground, its dark shadow is prominently cast in front of it, facing the exact opposite direction (180 degrees)"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting constraint dependent on the solid body layout. Establishing the cat's physical pose correctly first prevents the model from warping the animal itself to fit a strange shadow. The contradiction is introduced only after the structure is stable.",
+  "prompts_list": [
+    "A realistic cat standing in sunlight",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

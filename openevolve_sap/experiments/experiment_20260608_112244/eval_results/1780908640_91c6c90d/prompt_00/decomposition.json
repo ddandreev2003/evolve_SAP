@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates standard vase mechanics and gravity priors. Using Strategy B, we avoid the term \"bouquet\" initially to prevent locking normal vertical geometry. The first prompt describes the inverted physical arrangement (stems hanging) to force the unusual structure early.",
+  "prompts_list": [
+    "Flower stems hanging downwards out of a glass vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

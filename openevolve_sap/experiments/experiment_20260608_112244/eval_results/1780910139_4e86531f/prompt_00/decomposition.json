@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An inverted vase violates physical stability priors. Strategy B requires establishing the impossible geometry (inverted vase) before introducing the specific objects to prevent layout correction.",
+  "prompts_list": [
+    "bare green stems sticking straight up out of an inverted vase",
+    "a bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

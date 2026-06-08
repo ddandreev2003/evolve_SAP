@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting physics must be established to create the baseline reality before introducing the contradiction. Explicitly setting the light source direction early ensures the model renders the shadow correctly initially, allowing the impossible \"backwards\" shadow to take effect later without breaking the overall light coherence.",
+  "prompts_list": [
+    "A cat sitting outside illuminated from the left.",
+    "A cat sitting outside illuminated from the left, casting a shadow towards the light."
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

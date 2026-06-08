@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780924236_7956f261/prompt_01/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which matches the color specification in the prompt. However, the glove has only 5 fingers (including the thumb), not the 6 fingers specified in the prompt. While the main subject (a white glove) is present, the key attribute of having 6 fingers is significantly misrepresented, which is a critical element of the prompt's meaning. The image depicts a standard anatomically correct 5-finger glove rather than the unconventional 6-finger configuration requested.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove is rendered with consistent lighting, smooth texture, and natural perspective. The fingers and hand anatomy appear well-formed and physically coherent, with proper separation between digits and realistic creasing in the material. There are no rendering artifacts, distortions, or broken elements - the image is sharp, detailed, and visually consistent throughout."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780924236_7956f261/prompt_01/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which satisfies the \"white glove\" portion of the prompt. However, it clearly displays a standard 5-finger glove (including thumb), not the required 6 fingers. The core attribute specified in the prompt - having 6 fingers - is fundamentally misrepresented, which is a key element of the description. While the object type (glove) is present, the critical numerical specification is incorrect, making this a significant misrepresentation of the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and realistic with no apparent rendering flaws. The glove is well-formed with anatomically correct proportions for a standard glove. Lighting, texture, and perspective are consistent throughout the image. There are no visible artifacts, distortions, or broken elements - the glove fits naturally on the hand with proper creasing and form. The rendering is fully coherent and professionally executed."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

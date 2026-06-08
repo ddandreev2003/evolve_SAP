@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction violating physical causality. Defining the light source first stabilizes the scene geometry, allowing the impossible shadow direction to be introduced later as a localized detail conflict.",
+  "prompts_list": [
+    "A domestic cat sitting outside illuminated by sunlight coming from the right",
+    "A domestic cat sitting outside illuminated by sunlight coming from the right, casting a shadow towards the right against the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

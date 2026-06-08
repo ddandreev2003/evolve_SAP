@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a global lighting attribute violating physical laws. A normal cat setup stabilizes the body first, preventing the model from auto-correcting the shadow physics when fine-tuning surfaces and materials later.",
+  "prompts_list": [
+    "A realistic cat sitting in bright sun",
+    "A cat casting a shadow in the opposite direction of the light"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

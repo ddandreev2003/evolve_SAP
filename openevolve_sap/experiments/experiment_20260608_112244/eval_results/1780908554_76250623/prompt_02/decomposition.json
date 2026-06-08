@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Contradictory shadow direction violates physics but does not alter the cat's silhouette. Following Strategy A for lighting contradictions, we first establish the cat and ground plane to lock shape. We then switch to the impossible lighting condition once the object geometry is secure, allowing the shadow logic to override light source priors late in the process.",
+  "prompts_list": [
+    "A cat sitting under a consistent light source",
+    "A cat casting a shadow in the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

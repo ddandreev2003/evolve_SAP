@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting/material contradiction. Strategy A is required: establish the scene and standard lighting direction in Steps 0-5 to build the object correctly. Then, switch at step 5 to explicitly override the shadow physics with the impossible behavior, ensuring the model resolves the base structure before handling the contradictory light interaction.",
+  "prompts_list": [
+    "A cat standing illuminated from the left side",
+    "A cat standing illuminated from the left side, casting a shadow to the left towards the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting physics contradiction where the shadow defies standard light source rules. According to Strategy A, we should stabilize the object layout and geometry first before introducing the impossible lighting behavior to avoid structural distortion.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow faces the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

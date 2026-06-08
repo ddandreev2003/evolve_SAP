@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet is a structural contradiction where plant matter grows against gravity. Generating a normal vase and bouquet first locks the model into upright geometry which later steps struggle to fix. We start by explicitly describing the impossible orientation ('stems sticking up, flowers at the bottom') to force the structure early. After the layout stabilizes, we switch to the labeled concept to refine the identity.",
+  "prompts_list": [
+    "A vase with green stems sticking straight up, flowers at the bottom",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

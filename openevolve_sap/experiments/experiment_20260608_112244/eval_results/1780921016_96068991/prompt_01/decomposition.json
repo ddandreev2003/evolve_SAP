@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Human anatomy typically defaults to five fingers. We begin with a bare hand to lock the six-finger topology into the low-frequency structure before adding the glove material, avoiding the model correcting the digit count during shape formation.",
+  "prompts_list": [
+    "a bare human hand with exactly 6 fingers",
+    "a white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

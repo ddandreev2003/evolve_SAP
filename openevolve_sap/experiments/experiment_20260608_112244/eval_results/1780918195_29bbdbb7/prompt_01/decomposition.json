@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Extra anatomical digits conflict with learned priors about hand proportions. Strategy B dictates creating a proxy (the bare hand) first to lock the 6-finger skeletal geometry, preventing the model from distorting the glove texture to fit a standard 5-finger hand.",
+  "prompts_list": [
+    "a bare human hand with exactly 6 fingers visible",
+    "a white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

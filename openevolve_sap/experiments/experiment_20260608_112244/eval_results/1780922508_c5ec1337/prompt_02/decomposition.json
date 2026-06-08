@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows inherently follow physical light paths, creating a contradiction when defying them. Using Strategy A, we first establish the cat and correct lighting geometry in the early diffusion steps. Once the coarse structure is locked, we switch to the impossible lighting configuration at step 5 to inject the visual anomaly without breaking the object's form.",
+  "prompts_list": [
+    "A cat standing on grass illuminated from the left",
+    "A cat standing on grass illuminated from the left with its shadow cast to the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

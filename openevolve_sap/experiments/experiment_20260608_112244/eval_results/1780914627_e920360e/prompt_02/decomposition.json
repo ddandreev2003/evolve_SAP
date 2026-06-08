@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Contradictory shadow direction is a lighting attribute rather than a structural one. Building the cat and scene normally first prevents geometry warping, allowing the shadow inversion to be applied mid-generation once the object form is stable.",
+  "prompts_list": [
+    "A realistic cat sitting on the ground in natural lighting",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

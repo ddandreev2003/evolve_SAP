@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Five fingers is the dominant training signal for hands/gloves. Starting with 'glove' biases the geometry toward 5. Strategy B uses a bare hand to define the structural anomaly (6 fingers) before applying the skin-contracting texture of a glove. The switch occurs late enough (step 6) that the hand shape is fixed.",
+  "prompts_list": [
+    "A bare hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove with 6 fingers presents a structural contradiction where standard anatomical priors favor 5 digits. To prevent the model from automatically correcting the finger count to a realistic five, we must establish the impossible geometry first. Starting with a bare hand allows the model to lock the six-finger topology before introducing the material properties of a white glove.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural contradiction where the spatial orientation conflicts with common sense. Using Strategy B, we begin with the bare geometric proxy of stems pointing up from the container to lock the unusual configuration before applying the semantically inverted label of an \"upside down bouquet\".",
+  "prompts_list": [
+    "Flower stems sticking straight up out of a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

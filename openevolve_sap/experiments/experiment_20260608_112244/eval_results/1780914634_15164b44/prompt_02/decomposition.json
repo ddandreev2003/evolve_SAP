@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Contradictory lighting physics require Strategy A. The initial phase establishes the cat and environment normally, ensuring stable shape. The impossible shadow direction is introduced later during the lighting/material refinement stage where such geometric inconsistencies are more flexible to handle.",
+  "prompts_list": [
+    "A cat sitting in a sunny field casting a shadow",
+    "A cat sitting in a sunny field with its shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

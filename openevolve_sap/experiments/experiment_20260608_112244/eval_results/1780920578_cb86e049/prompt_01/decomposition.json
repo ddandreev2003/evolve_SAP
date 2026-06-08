@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Digital anatomy anomalies often collapse during high-frequency generation. Defining the hand structure first with a bare hand ensures the geometry is locked, before applying the glove material which might otherwise force standard 5-finger topology.",
+  "prompts_list": [
+    "A bare human hand with exactly six fingers.",
+    "A white glove with exactly six fingers."
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

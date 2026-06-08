@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a Structural/Spatial Contradiction involving impossible anatomy. Starting with \"white glove\" triggers a standard 5-finger prior that locks too early in the denoising process. To enforce the 6-finger geometry, we begin with a \"hand with 6 fingers\" proxy that establishes the unusual shape during the layout phase, then transition to the full object definition where the model applies the material properties.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting direction is a lower-frequency attribute than object shape. Establishing the cat's presence and posture first ensures correct anatomy. The contradictory lighting physics are introduced at the mid-stage switch where surface details and shadows are resolved.",
+  "prompts_list": [
+    "A cat sitting in bright sunlight",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

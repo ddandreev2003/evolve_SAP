@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers violate anatomical priors. Strategy B dictates starting with a naked hand to establish the geometry (six fingers) before applying the material layer (glove), ensuring the digit count persists through texture generation.",
+  "prompts_list": [
+    "A bare human hand with six fingers",
+    "A white glove has six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

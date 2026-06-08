@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upward, so starting with \"upright\" cues locks the geometry against the desired inversion. We begin with neutral \"green stems\" to establish the vase-stem connection without triggering the standard flower orientation. Once the spatial layout is fixed (around step 5), we introduce the \"upside down bouquet\" identity to override the directionality.",
+  "prompts_list": [
+    "Green stems inside a glass vase",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

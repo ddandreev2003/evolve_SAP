@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting physics contradiction (Strategy A). The model first builds the scene geometry and establishes a consistent light source direction. Then, once the structure is locked, the prompt switches to enforce the impossible shadow direction, translating the abstract \"opposite\" into a concrete physical description (shadow cast toward the light) to maximize the visual conflict without breaking the underlying shape.",
+  "prompts_list": [
+    "A realistic cat illuminated from the left side",
+    "A realistic cat illuminated from the left side, but its shadow is cast to the left towards the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

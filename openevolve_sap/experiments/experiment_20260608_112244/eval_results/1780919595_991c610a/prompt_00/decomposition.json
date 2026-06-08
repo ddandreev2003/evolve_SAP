@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates natural growth physics (Strategy B). A proxy describing stems pointing up prevents the model from locking a normal flower orientation before the impossible state is defined.",
+  "prompts_list": [
+    "flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "an upside down bouquet of flowers in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

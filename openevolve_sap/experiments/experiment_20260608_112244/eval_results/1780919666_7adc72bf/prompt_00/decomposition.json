@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard bouquets grow upward, making the inverted geometry a structural contradiction. Using Strategy B, the prompt begins with bare stems to force the incorrect spatial arrangement (blossoms hanging down) before naming the object \"bouquet\" to stabilize the visual identity on the wrong pose.",
+  "prompts_list": [
+    "Bare flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

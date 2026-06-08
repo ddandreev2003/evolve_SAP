@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates natural biological growth, requiring structural override. Strategy B is used: a proxy object (paintbrushes) establishes the \"sticking up\" geometry in the vase first without plant priors. Switching at step 4 locks the inverted orientation, and step 7 introduces floral identity.",
+  "prompts_list": [
+    "A vase filled with white paintbrushes sticking straight up",
+    "A vase filled with green flower stems sticking straight up",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical finger count is structural geometry. Starting with a bare hand allows the model to define the limb shape with six digits. Adding the glove texture and color later preserves the impossible count without reverting to a five-finger standard.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

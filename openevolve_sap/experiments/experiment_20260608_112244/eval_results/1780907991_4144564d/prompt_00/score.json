@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780907991_4144564d/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, which correctly identifies the main objects from the prompt. However, the critical element of the bouquet being \"upside down\" is completely missing. The flowers are arranged in a normal upright position with blooms facing upward, rather than inverted with blooms pointing downward into the vase and stems extending upward. This represents a significant misrepresentation of the prompt's key requirement, as the arrangement demonstrates the exact opposite orientation of what was requested.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with excellent visual coherence. The flowers show realistic texture and detail, the vase has consistent coloring and form, and the composition maintains natural lighting throughout. There are no visible artifacts, distortions, or broken elements. The perspective is consistent, objects connect naturally without floating or clipping issues, and complex details like the delicate flower petals and vase texture are rendered with precision. The image appears clean, realistic, and fully coherent with no flaws."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780907991_4144564d/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image shows a standard bouquet of flowers arranged upright in a vase, with blooms facing upward. The prompt specifically requires an \"upside down\" arrangement, meaning the flowers should be positioned with stems at the top and blooms pointing downward into the vase. This key element is completely missing from the image, which depicts a conventional right-side-up floral arrangement. The image does not reflect the prompt's meaning at all.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with excellent visual characteristics. The flowers, leaves, and vase are rendered with clear detail, natural textures, and realistic lighting. There are no visible artifacts, distortions, or broken elements. The perspective is consistent, the composition is coherent, and all elements appear physically plausible and well-formed. The image demonstrates professional-level photographic quality with no flaws."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

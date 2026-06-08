@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical features like fingers are locked early. Starting with a bare hand ensures the six-finger geometry is generated before the glove mask obscures the structure or forces a default five-finger hand prior to texture application.",
+  "prompts_list": [
+    "A bare hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

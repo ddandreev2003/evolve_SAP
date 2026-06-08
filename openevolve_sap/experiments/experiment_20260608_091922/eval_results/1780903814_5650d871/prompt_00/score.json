@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780903814_5650d871/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet of flowers arranged upright in a vase, with blooms facing upward and stems extending downward into the vase. The prompt explicitly requires the bouquet to be *upside down*, meaning the flowers should be inverted (blooms pointing downward, stems protruding upward from the vase). No elements in the image reflect this orientation—there is no visual indication of inversion, symbolic or otherwise. The scene represents a conventional floral arrangement, failing to convey the core requirement of the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The bouquet and vase are rendered with realistic textures, natural lighting, and consistent perspective. Stems are properly anchored in the vase with no floating or clipped elements, and flowers exhibit coherent shapes and colors. There are no distortions, artifacts, or anatomical inconsistencies (e.g., no melted features or fused geometry). The soft background complements the subject without disrupting visual coherence, resulting in a clean, professional photograph."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780903814_5650d871/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet of flowers arranged right-side up in a vase, with stems submerged in water and blooms facing upward. The prompt explicitly requires an *upside-down* arrangement (e.g., flowers hanging downward from the vase opening or stems protruding from the base). No elements in the image suggest inversion—the bouquet’s orientation, vase positioning, and natural gravity alignment contradict the prompt entirely. Key intent (inverted functionality) is absent.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity photograph with no visible artifacts. Lighting is soft and consistent, highlighting natural textures of petals, leaves, and glass. The vase shows realistic water refraction, stems are anatomically coherent, and background gradients are smooth. All elements (flowers, vase, water) connect physically plausibly with no warping, clipping, or distortion. The composition is sharp, well-lit, and visually cohesive."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

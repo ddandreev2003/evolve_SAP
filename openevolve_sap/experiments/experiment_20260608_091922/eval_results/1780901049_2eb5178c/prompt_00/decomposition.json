@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural contradiction involving gravity and orientation. A normal vase setup would lock the stems pointing upward by step 4. We must enforce the inverted geometry early using a proxy that describes the open-bottomed container, then refine the final description.",
+  "prompts_list": [
+    "An inverted vase with flower stems pointing upwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

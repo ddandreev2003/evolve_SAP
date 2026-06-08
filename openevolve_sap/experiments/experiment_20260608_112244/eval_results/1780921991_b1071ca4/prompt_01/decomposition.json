@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove is typically depicted with five fingers, creating a spatial contradiction with six. To preserve the unusual anatomy during early denoising, the prompt starts with a bare hand to establish the six-finger geometry without the \"glove\" category locking standard five-finger expectations. The target object is introduced only after the coarse layout stabilizes.",
+  "prompts_list": [
+    "A human hand with exactly 6 fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

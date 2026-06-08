@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural/spatial contradiction (inverted flora) requiring Strategy B. Starting with a normal growing direction would lock incorrect geometry. Instead, a descriptive proxy forces the unusual stem-bloom orientation early. Once the coarse spatial relationship is established (Step 5), the specific semantic concept is introduced.",
+  "prompts_list": [
+    "A transparent vase with colorful flower blooms stuffed down inside the bottom, and bare green stems sticking straight up into the air",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

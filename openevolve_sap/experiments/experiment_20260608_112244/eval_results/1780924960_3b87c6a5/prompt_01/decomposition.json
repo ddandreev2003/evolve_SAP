@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Gloves typically imply standard five-finger anatomy. To enforce the impossible geometry, the prompt begins with a structural proxy ('white padded hand shape') to establish the digit count before introducing the specific garment identity. This prevents the model from correcting the finger count based on the 'glove' prior.",
+  "prompts_list": [
+    "A white padded hand shape with exactly six fingers",
+    "A white glove with exactly six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

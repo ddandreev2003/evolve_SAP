@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upwards from vases. To prevent the model from enforcing a standard upright geometry, the first prompt describes abstract shapes and rims without naming the object or function. Intermediate steps gradually introduce the inverted orientation and specific materials before revealing the final conceptual label.",
+  "prompts_list": [
+    "Abstract organic shapes extending from a curved rim on a surface",
+    "Flowers hanging downwards from a glass container",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

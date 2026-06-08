@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down vase violates physical priors regarding how containers work. According to Strategy B, the structural proxy must establish the inverted geometry early without naming the final target concept (\"bouquet\") to prevent locking a normal upright shape.",
+  "prompts_list": [
+    "A vase resting upside down on its rim, with bare plant stems sticking straight up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

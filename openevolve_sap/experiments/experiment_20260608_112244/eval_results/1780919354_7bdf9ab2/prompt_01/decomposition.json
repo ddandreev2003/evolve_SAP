@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This prompt presents a structural contradiction where a glove typically conforms to human anatomy (5 fingers). As per Strategy B, mentioning \"glove\" early locks standard geometry. The solution starts with a bare hand to establish the unique finger count and pose at the structural stage, then switches to the glove identity once the layout is stable.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows obey lighting rules normally. Strategy A requires establishing the light source geometry first (steps 0-4) to ensure object integrity, then introducing the physically inconsistent shadow direction in the refinement phase (step 5+) to override the default physics.",
+  "prompts_list": [
+    "A cat illuminated by a strong light from the left",
+    "A cat illuminated by a strong light from the left with its shadow cast to the left"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

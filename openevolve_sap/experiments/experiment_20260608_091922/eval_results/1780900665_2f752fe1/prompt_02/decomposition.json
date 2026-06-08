@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows obey light physics. Violating this requires Strategy A (Lighting Contradictions). We first lock the plausible layout and cat identity (Steps 0-4) with normal lighting, then inject the impossible shadow direction at Step 5+ to override the global illumination prior.",
+  "prompts_list": [
+    "A cat sitting on the ground with sunlight casting a shadow",
+    "A cat sitting on the ground, its shadow faces the opposite direction of the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

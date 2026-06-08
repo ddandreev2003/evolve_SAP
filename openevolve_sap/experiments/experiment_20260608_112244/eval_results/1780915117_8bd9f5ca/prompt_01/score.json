@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780915117_8bd9f5ca/prompt_01/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a white glove, which satisfies the \"white glove\" component of the prompt. However, it clearly displays only 5 fingers (including the thumb), while the prompt specifically requires 6 fingers. This is a significant misrepresentation of a key element in the prompt—the exact number of fingers—which is central to the meaning. The glove is present and white, but the critical specification of 6 fingers is entirely missing, making the image not align with the intended meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with clean, realistic rendering. The glove has smooth textures, consistent lighting, and natural perspective that accurately shows the form and shape of the glove. There are no visible artifacts, distortions, or broken elements—fingers are well-formed, anatomically coherent for a 5-fingered glove, and the black background provides clear contrast. The image is fully coherent and visually flawless."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780915117_8bd9f5ca/prompt_01/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a white glove, satisfying the \"white glove\" element of the prompt. However, it clearly shows only 5 fingers, directly contradicting the explicit requirement of \"6 fingers.\" The core attribute (finger count) is fundamentally misrepresented, making the key intent of the prompt unfulfilled. While the glove’s role and context are otherwise concrete and functional, the absence of the sixth finger—a critical, non-negotiable detail—constitutes a significant misalignment.",
+        "quality score": 5,
+        "quality explanation": "The image is rendered flawlessly. The glove exhibits smooth, consistent textures with realistic lighting and shadows. All fingers are anatomically coherent, well-formed, and free of distortions, warping, or fused geometry. Perspective is natural, and the glove connects seamlessly to the wrist without floating elements or visual artifacts. The solid background enhances clarity, and no rendering flaws disrupt the visual integrity."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

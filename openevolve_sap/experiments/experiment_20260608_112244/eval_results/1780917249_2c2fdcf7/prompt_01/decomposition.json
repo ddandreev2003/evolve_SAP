@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical contradictions require structural anchoring. Following Strategy B, using a bare hand explicitly ensures the 6-finger geometry is locked in the coarse stages (0-5) before adding the glove material, preventing the model from auto-correcting to a normal 5-finger hand shape.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

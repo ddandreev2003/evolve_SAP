@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting physics contradictions rely on the low-frequency illumination pass being established before violating physical laws. Defining the primary light source first ensures the impossible shadow appears as a distinct localized error rather than causing a layout collapse.",
+  "prompts_list": [
+    "A cat sitting near a wall, illuminated from the right",
+    "A cat sitting near a wall, illuminated from the right, casting a shadow to the right"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

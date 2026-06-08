@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A six-fingered glove contradicts anatomical norms. Using Strategy B, the sequence begins with a bare hand having 6 fingers as a structural proxy. This secures the anomalous finger geometry during the critical setup phase before applying the glove identity, which would otherwise force the model to conform to 5-finger anatomy.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct spread fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

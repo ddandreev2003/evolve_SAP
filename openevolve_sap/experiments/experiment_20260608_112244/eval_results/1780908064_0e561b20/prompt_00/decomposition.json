@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This involves a structural spatial contradiction where the floral arrangement defies gravity within the container. To prevent FLUX from locking in standard upright vase geometry, the inverted layout must be forced in the early denoising stage (Steps 0-4) using a proxy description, before refining the final object identity.",
+  "prompts_list": [
+    "A vase held upside down with flower stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

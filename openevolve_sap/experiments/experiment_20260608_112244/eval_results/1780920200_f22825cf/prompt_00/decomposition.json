@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Upside-down bouquets violate planting norms and gravity expectations for vases. Using a proxy focusing on stems pointing down prevents the model from defaulting to upright floral geometry early in the process.",
+  "prompts_list": [
+    "Flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The prompt contains a lighting physics contradiction (shadow direction) rather than a structural geometry issue. Applying Strategy A, the initial prompt establishes the cat's shape and scene layout neutrally. The second prompt introduces the impossible shadow behavior only after the low-frequency structure is secured (step 5), preventing the model from prioritizing incorrect lighting over object geometry.",
+  "prompts_list": [
+    "A realistic cat sitting on a sunny sidewalk",
+    "A realistic cat sitting on a sunny sidewalk, its shadow explicitly cast in the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This falls under material/lighting contradiction. Geometry must be established first. The lighting contradiction cannot override the spatial layout, so the scene is locked before introducing the impossible shadow physics.",
+  "prompts_list": [
+    "A cat on the ground",
+    "A cat on the ground, its shadow explicitly faces the opposite direction to its body"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

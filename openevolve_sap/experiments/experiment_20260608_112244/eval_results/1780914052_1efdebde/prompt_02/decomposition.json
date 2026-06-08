@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "The prompt involves a lighting contradiction (shadow direction) rather than structural geometry. Following Strategy A, the scene establishes the cat and layout first to lock the physical form, then introduces the impossible shadow behavior once the model transitions from geometric shapes to surface details and lighting.",
+  "prompts_list": [
+    "A cat sitting on the ground with natural sunlight",
+    "A cat sitting on the ground with natural sunlight, its shadow explicitly facing the opposite direction of the sun"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

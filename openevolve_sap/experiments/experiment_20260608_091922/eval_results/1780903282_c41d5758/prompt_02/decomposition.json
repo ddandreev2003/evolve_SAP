@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a high-frequency detail often determined early by lighting setup. Strategy A requires establishing a physically coherent scene first to lock the object's pose. A neutral \"cat in daylight\" prompt stabilizes the subject, allowing the contradictory shadow physics to override the environment at a later stage without distorting the animal itself.",
+  "prompts_list": [
+    "A cat standing on the ground in daylight",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

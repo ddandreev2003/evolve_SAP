@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting and physics contradiction handled by Strategy A. Early steps (0–4) establish the cat’s geometry and pose neutrally to prevent structural errors. The switch at step 5 introduces the impossible shadow direction, forcing the model to apply conflicting visual data onto the already-locked shape without distorting the object identity.",
+  "prompts_list": [
+    "A cat sitting on the ground",
+    "A cat sitting on the ground, its shadow faces the opposite direction of the light"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

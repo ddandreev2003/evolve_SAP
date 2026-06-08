@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet defies natural growth priors (flowers grow up), which causes diffusion models to revert to upright orientations if introduced too late. Using Strategy B (Structural Contradictions), we first establish the inverted container geometry using a proxy (\"stems\" instead of \"flowers\") to force the model to accept the incorrect spatial arrangement early. This prevents the model from locking into standard upright flower shapes during the initial low-frequency generation.",
+  "prompts_list": [
+    "A vase turned upside down with stems sticking out",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

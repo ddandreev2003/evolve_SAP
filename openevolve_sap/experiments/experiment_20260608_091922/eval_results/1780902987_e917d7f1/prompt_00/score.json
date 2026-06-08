@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780902987_e917d7f1/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bouquet in a vase with flowers oriented upright (blooms facing upward, stems submerged in water), which directly contradicts the prompt's requirement of an \"upside down\" arrangement. In an upside-down bouquet, the blooms would face downward while stems extend upward out of the vase, but this key action and spatial relationship is entirely absent. The scene illustrates a standard floral arrangement, not the specified scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with no visible rendering artifacts. Lighting is natural and consistent, highlighting textures of petals, leaves, and the glass vase. Stems are clearly defined in water, and all elements (flowers, vase, surface) exhibit realistic proportions, sharp focus, and coherent physical connections without distortion or surreal blending. The composition is visually polished and lifelike."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_091922/eval_results/1780902987_e917d7f1/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but it is arranged in the standard, right-side-up orientation with blooms at the top and stems submerged in water at the bottom. The prompt specifically requires the bouquet to be \"upside down,\" meaning the flowers should be at the bottom of the vase with stems pointing upward. While the main components (bouquet and vase) are present, the critical element of the upside-down orientation is completely misrepresented. The image depicts the exact opposite of what was requested, significantly altering the intended scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, high-quality photograph with no visible rendering artifacts. The glass vase is transparent and realistically rendered with proper water level and refraction. The flowers have detailed petals and natural coloring, with clear distinction between white and blue blooms. The stems are properly formed and arranged within the water. Lighting is consistent, with soft shadows that enhance the three-dimensional appearance. The composition is sharp, well-lit, and visually coherent throughout, showing no distortion, warping, or physical inconsistencies."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

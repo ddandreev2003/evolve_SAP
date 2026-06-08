@@ -1,0 +1,28 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780920200_f22825cf/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but they are oriented normally (upright) rather than being upside down as specified in the prompt. The critical element of the flowers being upside down is completely missing, representing a significant misrepresentation of the prompt's intent. While the main components (bouquet, flowers, vase) are present, the key attribute of being inverted is fundamentally wrong, making the scene depict the exact opposite of what was requested.",
+        "quality score": 5,
+        "quality explanation": "The image is a clear, high-quality photograph with no visible rendering artifacts. The flowers, vase, and table are all well-formed with consistent lighting, natural perspective, and realistic textures. There are no distortions, broken elements, or visual inconsistencies. The composition is coherent with properly rendered details throughout, showing no signs of warping, blending issues, or structural problems."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "openevolve_sap/experiments/experiment_20260608_112244/eval_results/1780920200_f22825cf/prompt_00/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, which satisfies the basic elements mentioned in the prompt. However, the critical aspect of the flowers being \"upside down\" is completely absent. The bouquet is arranged in a normal upright position with flowers facing upward, rather than inverted as specified in the prompt. Since the key conceptual element (the upside down orientation) is missing, this represents a significant misrepresentation of the prompt's intent. The image depicts a standard floral arrangement rather than the unusual scenario described.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with excellent visual characteristics. The flowers and vase are rendered with clear detail, natural textures, and realistic colors. The lighting is consistent and natural, creating appropriate shadows and highlights. The composition shows no visible artifacts, distortions, or rendering errors. The various flower types (roses, hydrangeas, and greenery) are well-defined with natural forms, and the ribbed vase texture appears realistic. The image has appropriate depth of field and color balance, resulting in a clean, professional-looking photograph with no visual flaws."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}
