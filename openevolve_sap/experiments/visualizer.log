@@ -1931,3 +1931,15 @@ INFO:werkzeug:127.0.0.1 - - [08/Jun/2026 16:45:06] "GET /api/eval_runs HTTP/1.1"
 INFO:werkzeug:127.0.0.1 - - [08/Jun/2026 16:45:06] "GET /api/data HTTP/1.1" 200 -
 INFO:werkzeug:185.224.3.71 - - [08/Jun/2026 16:45:06] "GET /api/data HTTP/1.1" 200 -
 INFO:werkzeug:185.224.3.71 - - [08/Jun/2026 16:45:06] "GET /api/eval_runs HTTP/1.1" 200 -
+INFO:__main__:Checkpoint: /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_317
+INFO:__main__:Experiment dir: /home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_112244
+INFO:__main__:Data source: checkpoint, nodes: 27, eval_runs: 106
+ * Tip: There are .env files present. Install python-dotenv to use them.
+ * Serving Flask app 'visualizer'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8050
+ * Running on http://195.209.214.113:8050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Jun/2026 16:57:44] "GET / HTTP/1.1" 200 -

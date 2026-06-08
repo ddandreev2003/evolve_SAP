@@ -15675,3 +15675,180 @@ original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glo
 original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
 original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
 [openevolve_sap][1780926963_5e629f89] prompt 1: render start
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: ### Output:
+a. Explanation: Structural contradiction where flowers defy gravity by hanging down in the vase. Strategy B used: avoid "bouquet" early to prevent upright geometry lock. Describe the inverted stem structure first as a proxy, then introduce the full "upside down bouquet" semantic once the shape is fixed.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "Green flower stems extending downward from a vase rim, petals resting on the table surface",
+    "An upside down bouquet of flowers in a vase"
+  ],
+  "switch_prompts_steps": [4]
+}
+
+### Output:
+a. Explanation: Anatomical impossibility of 6 fingers on a glove. Strategy B used: "Glove" mentioned only in final prompt to avoid locking 5-finger anatomy. First prompt defines the skeletal structure (hand/fingers) without the skin layer (glove) constraint, allowing the model to accept the extra digit before refining texture.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A hand with six distinct fingers resting on a table",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [4]
+}
+
+### Output:
+a. Explanation: Physics contradiction regarding light direction vs shadow position. Strategy A used: Establish concrete lighting source (sun from right) in first prompt to define global illumination. Second prompt introduces the impossible shadow physics (shadow moving towards the light source) once coarse geometry is stable.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A black cat sitting in sunlight coming from the right side",
+    "A black cat sitting in sunlight from the right, casting a shadow towards the right against the sun"
+  ],
+  "switch_prompts_steps": [5]
+}
+original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
+Parsing failed: invalid syntax (<unknown>, line 10)
+original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
+original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
+[openevolve_sap][1780926973_b68459f7] prompt 1/3: decompose (fallback)
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: ### Output:
+a. Explanation: This is a structural contradiction involving orientation. Following Strategy B, we establish the vase and stem geometry first to force the inverted layout before applying the semantic label of a bouquet.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A glass vase with long green stems emerging from the top, where flower heads hang downwards below the rim towards the table surface",
+    "A bouquet of flowers arranged upside down in a vase"
+  ],
+  "switch_prompts_steps": [4]
+}
+
+### Output:
+a. Explanation: This is a structural/anatomical contradiction involving digit count. Strategy B requires avoiding the 'glove' label in the initial steps to prevent normal 5-finger geometry locking. We start with a bare hand definition, then add the glove material.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A bare human hand resting flat with exactly 6 distinct fingers visible against a neutral background",
+    "A white leather glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [4]
+}
+
+### Output:
+a. Explanation: This is a material/lighting contradiction. Using Strategy A, we first fix the lighting source direction (light left, shadow right) to establish baseline physics. At step 5, we introduce the impossible shadow direction while keeping the subject constant.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A realistic black cat sitting on pavement, illuminated by sunlight from the left casting a shadow to the right",
+    "A realistic black cat sitting on pavement, illuminated by sunlight from the left, but casting a shadow to the left against the sun"
+  ],
+  "switch_prompts_steps": [5]
+}
+original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
+Parsing failed: invalid syntax (<unknown>, line 10)
+original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
+original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
+[openevolve_sap][1780926968_c217c84e] prompt 1/3: decompose (fallback)
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: An upside-down bouquet contradicts natural physics where flower stems support the blossoms upwards from water. Following Strategy B, we avoid locking the model with the word "bouquet" immediately. Instead, Step 0-4 establishes the structural contradiction using bare stems and hanging blossoms to define the inverted geometry before introducing the specific floral identity in the final stage.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "bare green flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [4]
+}
+original_prompts: ['A bouquet of flowers is upside down in a vase']
+[openevolve_sap][1780926968_c217c84e] prompt 2/3: decompose (fallback)
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: An upside-down bouquet creates a structural contradiction regarding gravity and typical flower geometry. Strategy B is applied here: early mentioning of "bouquet" would lock normal upright stem growth. The first prompt describes only the inverted physical arrangement (hanging stems/blossoms) without naming the object category, forcing the geometry. The second prompt names the "bouquet" after the layout is locked at step 4.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "bare green flower stems protruding from a vase opening with blossoms hanging down towards the table",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}
+original_prompts: ['A bouquet of flowers is upside down in a vase']
+[openevolve_sap][1780926973_b68459f7] prompt 2/3: decompose (fallback)
+  0%|          | 0/50 [00:00<?, ?it/s]### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: ### Output:
+a. Explanation: An upside-down bouquet defies natural growth patterns (flowers typically grow upward from water). Starting with the specific stem geometry forces the model to build the impossible spatial relationship early, preventing it from snapping to a standard upright arrangement.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "green flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "a bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [4]
+}
+
+### Output:
+a. Explanation: Six fingers are anatomically impossible for humans and gloves. Using a bare hand forces the unusual digit count structure and coarse geometry before applying the glove material texture, ensuring the shape isn't corrected by a prior memory of normal gloves.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [4]
+}
+
+### Output:
+a. Explanation: Impossible shadow direction contradicts light physics. Establishing an explicit light source first locks the scene's illumination geometry, then the conflicting shadow behavior is introduced during detail refinement (Strategy A) to allow the model to render the violation without breaking the overall composition.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A cat illuminated from the left",
+    "A cat illuminated from the left, but its shadow is cast to the left"
+  ],
+  "switch_prompts_steps": [5]
+}
+original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
+Parsing failed: unterminated string literal (detected at line 10) (<unknown>, line 10)
+original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
+original_prompts: ['A bouquet of flowers is upside down in a vase', 'A white glove has 6 fingers', 'The shadow of a cat is facing the opposite direction']
+[openevolve_sap][1780926996_d6c33bf3] prompt 1/3: decompose (fallback)
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: A white glove is typically associated with five fingers. To prevent the model from defaulting to standard hand anatomy, the prompt starts with a geometric proxy (bare hand) establishing the six-finger structure before introducing the material (glove).
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [4]
+}
+original_prompts: ['A white glove has 6 fingers']
+[openevolve_sap][1780926968_c217c84e] prompt 3/3: decompose (fallback)
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: This is a structural contradiction involving impossible anatomy. Strategy B is used: never mentioning "glove" in the first prompt prevents the model from locking onto a standard 5-finger hand shape too early. Instead, a bare hand with 6 fingers establishes the weird geometry first (Steps 0-4), followed by the glove material in the second prompt once the shape is fixed.
+b. Final dictionary:
+{
+  "prompts_list": [
+    "A bare human hand with exactly 6 distinct fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [4]
+}
+original_prompts: ['A white glove has 6 fingers']
+[openevolve_sap][1780926973_b68459f7] prompt 3/3: decompose (fallback)
+### run LLM_SAP_batch with qwen/qwen3.5-35b-a3b ###
+text: a. Explanation: This prompt presents a structural contradiction where the expected object orientation (flowers up, stems down) is inverted. Following Strategy B, the first sub-prompt avoids the semantic bias of the word "bouquet" by explicitly describing the anomalous physical geometry (stems up, heads down) during the critical structural phase (Steps 0-4). This ensures the rare layout is locked before the second prompt refines the identity and texture without reverting to standard priors.
+
+b. Final dictionary:
+{
+  "prompts_list": [
+    "Green flower stems extending straight up into the air out of a vase, with blossoms hanging down near the rim",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [4]
+}
+original_prompts: ['A bouquet of flowers is upside down in a vase']
+[openevolve_sap][1780926996_d6c33bf3] prompt 2/3: decompose (fallback)
