@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a structural attribute fixed during the early geometry lock phase (0-2 steps). Starting with \"white glove\" triggers strong priors for 5 fingers. To ensure the anatomical anomaly persists, we must define the 6-digit hand structure before applying the glove material.",
+  "prompts_list": [
+    "A bare hand with 6 fingers, hexadactyly, 6 distinct digits spread out",
+    "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

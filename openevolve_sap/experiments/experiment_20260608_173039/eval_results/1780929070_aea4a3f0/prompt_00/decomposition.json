@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Vases typically imply holding liquid and supporting stems upright. Starting with a standard arrangement stabilizes the object geometry and relationships before introducing the physically unusual upside-down orientation to prevent structural confusion like leaking water.",
+  "prompts_list": [
+    "A bouquet of flowers in a vase",
+    "An upside down bouquet of flowers in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

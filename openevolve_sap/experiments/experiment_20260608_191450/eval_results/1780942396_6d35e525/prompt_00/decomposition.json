@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upward from soil or vessels. To avoid conflicting priors about gravity and growth direction, describing the inverted physical geometry (stems sticking up) first establishes the structure. Once the layout is fixed, the final prompt introduces the flowers without forcing natural orientation.",
+  "prompts_list": [
+    "A glass vase on a table. Inside, thick green stems stick straight UP out of the vase opening while colorful flower heads hang DOWN inside the vase.",
+    "A bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -10,7 +10,7 @@ You are an **evolutionary prompt engineer** for **SAP (Stage-Aware Prompting)** 
 | Rules for SAP decomposition (sub-prompts + switch steps) | Image pixels or FLUX parameters |
 | Python file with `SYSTEM_PROMPT = """..."""` | Direct API calls or imports |
 
-**Success criterion:** images generated via your `SYSTEM_PROMPT` score higher on `combined_score` (VL alignment + Gemini judge). A good meta-prompt makes Qwen produce sub-prompts that FLUX can actually render — especially for physically contradictory scenes.
+**Success criterion:** maximize **`alignment_score`** (VL vision judge, 1–5) on the single eval target: **"A white glove has 6 fingers"**. Every mutation must improve 6-finger glove rendering — not bouquets, shadows, or other prompts.
 
 ---
 
@@ -21,7 +21,7 @@ Your job in this repository is **not** to write images or user prompts directly.
 
 That string is consumed by a separate LLM (**Qwen**, RouterAI) which decomposes each **contradictory** user prompt into 1–3 sub-prompts plus `switch_prompts_steps` for mid-generation prompt switches.
 
-A vision judge (**Google Gemini**) and a VL alignment model score how well your `SYSTEM_PROMPT` performs. **Maximize `combined_score`.**
+A VL alignment model scores how well the generated image matches the eval prompt. **Maximize `alignment_score`** for **"A white glove has 6 fingers"** (scale 1–5). This is the only benchmark in `prompt_set.json`.
 
 ---
 
@@ -141,12 +141,13 @@ Rules:
 
 ## What to improve across iterations
 
-Prioritize changes that increase **alignment** on the eval set (contradictory prompts in `prompt_set.json`), especially:
+**Single target:** `"A white glove has 6 fingers"`. Prioritize changes that increase alignment on this prompt only:
 
-1. **Structural prompts** — enforce Strategy B with named proxies.
-2. **Switch timing** — tie switches to denoising stages, not arbitrary numbers.
-3. **Anti-patterns** — list forbidden first sub-prompts (normal glove, upright bouquet, generic cat with natural shadow only).
-4. **Bouquet-in-vase upside-down** — still weak even in best runs; suggest stem-up / inverted vase proxies, not “beautiful bouquet” first.
+1. **Strategy B (structural)** — NEVER start with a normal 5-finger glove; lock 6-finger geometry in steps 0–2.
+2. **Proxies** — `hand with 6 fingers`, `hexadactyly`, `6 distinct digits` before adding glove material/white color.
+3. **Switch timing** — switch at step 2 (before the 5-finger prior locks in).
+4. **Anti-patterns** — forbid first sub-prompts: `white glove`, `glove on hand`, `5 fingers`, generic hand without explicit digit count.
+5. **Failure mode** — model renders 5 fingers (4+thumb); alignment drops to ~2. Fix decomposition, not FLUX steps.
 
 Avoid:
 - Long essays Qwen will ignore.
@@ -157,8 +158,11 @@ Avoid:
 
 ## Fitness signal
 
-- `combined_score = 0.8 * (alignment / 5) + 0.2 * (gemma / 5)`
-- Higher is better. Programs with parse errors or evaluator crashes score 0.
+- **Primary fitness:** `alignment_score` — VL alignment for **"A white glove has 6 fingers"** (1–5, higher is better).
+- **3 seeds per eval** (30498, 30499, 30500); per-seed scores are combined with **harmonic mean** — one bad seed heavily penalizes fitness.
+- **Strict finger-count judge:** VL must count digits; 5 fingers → alignment ≤ 2; only exactly 6 digits can score 5.
+- Gemma judge is **disabled**; evolution selects by `alignment_score` only.
+- Programs with parse errors or evaluator crashes score 0.
 
 When proposing diffs, think like a prompt engineer for **another** LLM (Qwen) that must steer **FLUX** — not like a chat assistant for end users.
 

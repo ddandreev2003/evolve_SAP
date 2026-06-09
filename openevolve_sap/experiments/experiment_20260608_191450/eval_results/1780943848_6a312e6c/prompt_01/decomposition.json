@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Hexadactyly introduces a structural anomaly incompatible with standard human anatomy models found in general training data. A direct prompt may cause the model to default to five fingers due to bias. By starting with a bare hand possessing the extra digit to lock geometry, then introducing the glove layer in the second stage, the model preserves the unconventional count without distorting the form.",
+  "prompts_list": [
+    "A hand with 6 fingers, hexadactyly, 6 distinct digits spread out",
+    "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

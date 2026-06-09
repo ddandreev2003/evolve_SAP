@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction. Standard anatomy enforces 5 fingers. Geometry locks at steps 0-2, so we must force the unnatural 6-finger layout early using a mutant hand proxy before transitioning to the glove material without correcting the digit count.",
+  "prompts_list": [
+    "A mutant bare hand with palm facing forward, six parallel fingers pointing straight up, absolutely no thumb. The hand has exactly 6 identical fingers side-by-side in a single row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate cylindrical digits, polydactyly, hexadactyly, strictly 6 fingers, no thumb",
+    "A white glove with palm facing forward, six parallel finger stalls pointing straight up, absolutely no thumb. The glove has exactly 6 identical fabric tubes side-by-side in a single row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate white tubes, hexadactyly, strictly 6 fingers, no thumb"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

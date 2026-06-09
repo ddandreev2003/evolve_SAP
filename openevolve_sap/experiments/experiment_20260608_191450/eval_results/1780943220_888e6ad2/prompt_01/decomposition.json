@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove with 6 fingers contradicts anatomical priors. Establishing the finger count via a bare hand creates a stable structural base before adding the glove material, ensuring the 6th digit persists during denoising.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers, hexadactyly, palm facing forward",
+    "A white leather glove with exactly 6 fingers, hexadactyly"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

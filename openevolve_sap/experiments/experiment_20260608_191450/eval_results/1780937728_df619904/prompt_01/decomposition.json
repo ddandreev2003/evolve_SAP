@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count locks at steps 0-2. Using polydactyly early breaks the five-digit geometric prior before defining the glove material.",
+  "prompts_list": [
+    "A hand with polydactyly, exactly 6 fingers, 6 distinct digits spread out, an extra sixth finger",
+    "A white leather glove with exactly 6 fingers, 6 distinct digits, polydactyly, an extra sixth finger"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

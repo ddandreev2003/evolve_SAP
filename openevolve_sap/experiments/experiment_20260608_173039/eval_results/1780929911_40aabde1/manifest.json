@@ -1,0 +1,46 @@
+{
+  "run_id": "1780929911_40aabde1",
+  "program_path": "/tmp/tmp8wutfu2b.py",
+  "program_id": "tmp8wutfu2b",
+  "timestamp": 1780929998.9368536,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929911_40aabde1",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929911_40aabde1/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929911_40aabde1/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929911_40aabde1/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929911_40aabde1/prompt_00/image_00.png",
+            "alignment score": 5.0,
+            "score": {
+              "alignment score": 5,
+              "alignment explanation": "The image fully conveys the prompt's meaning. A bouquet of flowers (multiple white blooms with visible stems) is clearly present and positioned upside down in a vase, with the flower heads oriented downward toward the vase base and the stems extending upward. This directly illustrates the intended situation—flowers inverted in a functional, concrete manner—without symbolic or metaphorical representation. All key elements (bouquet, vase, and upside-down orientation) are correctly depicted, with no missing or misrepresented attributes.",
+              "quality score": 5,
+              "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The vase and flowers exhibit consistent lighting, natural textures, and accurate perspective. Complex elements like the flower petals and stems are well-formed, distinct, and anatomically plausible (e.g., no melted features, fused geometry, or distortions). The composition is physically coherent, with the bouquet securely placed in the vase and no floating or clipped elements. The overall rendering is sharp, balanced, and free of artifacts, demonstrating high visual fidelity."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929911_40aabde1/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 5.0,
+    "gemma_score": 0.0,
+    "combined_score": 5.0
+  }
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Entry point: multi-GPU SAP evolution via openevolve_sap.core.scheduler."""
+"""Entry point: SAP evolution via openevolve_sap.core.scheduler (default: single GPU)."""
 from __future__ import annotations
 
 import multiprocessing as mp

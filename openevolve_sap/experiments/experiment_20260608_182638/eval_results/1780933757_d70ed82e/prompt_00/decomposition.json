@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This is a structural/spatial contradiction. A standard bouquet has stems pointing up; generating a normal vase first locks this geometry. Using Strategy B, the first prompt establishes the inverted vase geometry as a proxy before applying the final label.",
+  "prompts_list": [
+    "A vase held upside down with flower stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

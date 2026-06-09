@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The strong 5-finger prior locks geometry early. Starting with a bare hand defines the digit count explicitly before switching to the glove identity.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 fingers: one thumb and five additional fingers. Six distinct separate digits, polydactyly, hexadactyly, 6 fingers clearly visible, strictly six fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 fingers: one thumb and five additional fingers. Six distinct separate finger stalls, hexadactyly, 6 fingers, strictly six fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

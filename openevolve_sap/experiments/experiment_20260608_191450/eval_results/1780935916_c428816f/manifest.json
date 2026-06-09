@@ -1,0 +1,46 @@
+{
+  "run_id": "1780935916_c428816f",
+  "program_path": "/tmp/tmp9or9i1mg.py",
+  "program_id": "tmp9or9i1mg",
+  "timestamp": 1780936066.5620246,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935916_c428816f",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935916_c428816f/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935916_c428816f/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935916_c428816f/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935916_c428816f/prompt_00/image_00.png",
+            "alignment score": 2.0,
+            "score": {
+              "alignment score": 2,
+              "alignment explanation": "The image shows a bouquet of yellow flowers in a vase, but the arrangement is not \"upside down\" as required by the prompt. The stems are submerged in water (as in a standard upright arrangement), and the flowers droop naturally due to gravity rather than being intentionally inverted. The prompt specifies the bouquet itself should be upside down (e.g., stems pointing upward with blooms near the vase base), which is not depicted. While the core elements (bouquet, vase) are present, the critical attribute of the bouquet’s orientation is entirely misrepresented, failing to convey the intended scenario.",
+              "quality score": 5,
+              "quality explanation": "The image is visually pristine with no rendering artifacts. The vase, water, stems, and flowers are sharply defined, with consistent lighting, natural textures, and coherent perspective. There are no distortions, warped elements, or anatomical inaccuracies (e.g., stems are properly submerged, petals and leaves are well-formed). The composition is realistic and free of visual flaws, demonstrating high rendering fidelity."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935916_c428816f/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 2.0,
+    "gemma_score": 0.0,
+    "combined_score": 2.0
+  }
+}

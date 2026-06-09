@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers violate typical human anatomy. Starting with a \"bare hand with 6 fingers\" establishes the topological error during the geometry phase, so the glove texture layer can be added later without the model auto-correcting the count back to five.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting contradiction where physics are defied. Standard diffusion priors link shadows to object orientation. Describing the shadow as a separate physical shape first establishes the opposing geometry before the model attempts to unify the scene, preventing the automatic correction of the shadow direction.",
+  "prompts_list": [
+    "A cat facing left. On the ground next to it, a distinct solid black cat-shaped shadow is facing right, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

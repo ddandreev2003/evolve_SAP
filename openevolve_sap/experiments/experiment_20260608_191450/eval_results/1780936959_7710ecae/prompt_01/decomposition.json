@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove is typically modeled with standard 5-digit anatomy, conflicting with the target 6 fingers. The model locks geometry in the first few steps, so the extra finger must be established before applying the glove material. We start with a bare hand showing the anomaly to bypass the anatomical prior, then overlay the glove texture once the digit count is stable.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers, showing 6 distinct digits spread out clearly",
+    "A white leather glove with exactly 6 fingers, 6 distinct digits, highly detailed"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

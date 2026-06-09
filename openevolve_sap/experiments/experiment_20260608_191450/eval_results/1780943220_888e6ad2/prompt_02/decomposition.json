@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting. Diffusion models have strong priors for consistent light direction and shadow alignment. To enforce impossible shadow orientation, the shadow is introduced as a separate physical silhouette in the first stage to bypass lighting physics, allowing the correct geometry to lock before applying the contradictory lighting rule.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a separate black cat-shaped silhouette painted on the floor is facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

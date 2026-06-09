@@ -1,0 +1,46 @@
+{
+  "run_id": "1780989651_2883112f",
+  "program_path": "/tmp/tmpwum881b9.py",
+  "program_id": "tmpwum881b9",
+  "timestamp": 1780989751.53944,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989651_2883112f",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989651_2883112f/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989651_2883112f/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989651_2883112f/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 3.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989651_2883112f/prompt_00/image_00.png",
+            "alignment score": 3.0,
+            "score": {
+              "alignment score": 3,
+              "alignment explanation": "The image shows a white glove, which matches the primary object described in the prompt. However, it only has 5 fingers (including the thumb) rather than the 6 fingers specified in the prompt. The main subject (a white glove) is present and correctly identified, but a critical attribute (the number of fingers) is incorrect. The scene demonstrates a functional glove but fails to illustrate the specific requirement of having 6 fingers, which is central to the prompt's meaning.",
+              "quality score": 5,
+              "quality explanation": "The image is clean, realistic, and fully coherent with no visible rendering flaws. The glove is well-formed with smooth, consistent texture and appropriate lighting that creates natural shadows and dimensionality. The fingers are proportionate and anatomically plausible for a glove, with clean edges and proper perspective. There are no artifacts, distortions, or physical inconsistencies—everything connects naturally and appears professionally rendered."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 3.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989651_2883112f/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 3.0,
+    "gemma_score": 0.0,
+    "combined_score": 3.0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is strong. Explicitly define anatomy as 1 thumb + 5 fingers = 6 digits to break the prior, switch at step 2.",
+  "prompts_list": [
+    "A bare hand with exactly six fingers. The hand has one thumb and five additional fingers, making a total of six distinct digits spread out, hexadactyly, polydactyly",
+    "A white glove with exactly six fingers. The glove has one thumb and five additional fingers, making a total of six distinct digits, hexadactyly, polydactyly"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

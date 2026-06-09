@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are physically determined by light sources and usually align with the object's orientation, violating natural physics here. To stabilize the generation, the model first builds the cat's structure, then introduces a standard shadow relationship, and finally applies the contradictory directional constraint at a later stage when fine details are processed.",
+  "prompts_list": [
+    "A cat standing on the ground",
+    "A cat with a shadow on the ground",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

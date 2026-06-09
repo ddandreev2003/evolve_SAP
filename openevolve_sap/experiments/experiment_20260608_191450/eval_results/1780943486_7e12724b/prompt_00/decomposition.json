@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upward from stems, so an inverted bouquet contradicts typical biological behavior and gravitational expectations. By first establishing the vase and the specific geometric anomaly of stems pointing up, the model anchors the impossible layout before refining the floral identity.",
+  "prompts_list": [
+    "A glass vase on a table with flower stems sticking straight up out of the opening",
+    "A bouquet of flowers placed completely upside down in a vase with stems pointing up"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

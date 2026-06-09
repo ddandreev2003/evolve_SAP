@@ -1,0 +1,46 @@
+{
+  "run_id": "1780939713_a821c0ab",
+  "program_path": "/tmp/tmp194xfpe1.py",
+  "program_id": "tmp194xfpe1",
+  "timestamp": 1780939856.8438478,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780939713_a821c0ab",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780939713_a821c0ab/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780939713_a821c0ab/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780939713_a821c0ab/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780939713_a821c0ab/prompt_00/image_00.png",
+            "alignment score": 5.0,
+            "score": {
+              "alignment score": 5,
+              "alignment explanation": "The image clearly depicts a bouquet of flowers positioned upside down in a vase, with the flower heads hanging downward and stems extending upward. The key elements (bouquet, flowers, vase) are present and arranged to concretely illustrate the prompt’s intended scenario without symbolic or metaphorical interpretation. The functional relationship between the objects (flowers inverted in the vase) is unambiguous and fully aligns with the prompt’s meaning.",
+              "quality score": 5,
+              "quality explanation": "The image is visually coherent with no rendering artifacts. The flowers, stems, and vase exhibit consistent lighting, texture, and perspective. All elements are anatomically and structurally sound (e.g., no distorted stems, merged shapes, or floating components), and the composition appears realistic and polished. There are no visible flaws in complex areas or overall rendering."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780939713_a821c0ab/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 5.0,
+    "gemma_score": 0.0,
+    "combined_score": 5.0
+  }
+}

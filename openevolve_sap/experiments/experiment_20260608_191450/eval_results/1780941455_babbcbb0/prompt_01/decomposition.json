@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove is designed for a five-fingered human hand. Generating a sixth finger creates a topological contradiction that can cause the glove to warp or disconnect from the anatomy. The prompt starts with a standard five-fingered hand and white glove to establish the garment's fit and shape, then transitions to a six-fingered configuration (hexadactyly) as the model refines the geometry.",
+  "prompts_list": [
+    "A hand wearing a white glove",
+    "A hand with 6 fingers wearing a white glove"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

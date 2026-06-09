@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers is a structural impossibility for standard anatomy and objects designed for hands. A \"mutant hand\" proxy forces the model to establish the six-digit geometry and layout before introducing the texture of a white glove. Explicit counting in the prompt stabilizes the digit count against the model's default training data.",
+  "prompts_list": [
+    "Mutant hand palm forward, fingers spread. Exactly 6 identical fingers in a row, count them: 1, 2, 3, 4, 5, 6. Polydactyly, hexadactyly, strictly 6 fingers",
+    "White glove palm forward, fingers spread. Exactly 6 identical finger stalls, count them: 1, 2, 3, 4, 5, 6. Hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

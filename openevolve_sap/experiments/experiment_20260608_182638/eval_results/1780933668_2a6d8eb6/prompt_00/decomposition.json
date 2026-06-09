@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flvers are physically bound to grow upright; an inverted bouquet violates standard spatial expectations. Initializing with a standard vase setup locks the model to vertical geometry. Using a proxy with rigid sticks establishes the inverted stem orientation early, allowing the floral identity to integrate correctly once the pose is resolved.",
+  "prompts_list": [
+    "A vase with long sticks pointing upwards inside",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

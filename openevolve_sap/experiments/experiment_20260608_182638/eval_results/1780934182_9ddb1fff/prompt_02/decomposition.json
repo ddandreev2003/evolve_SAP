@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting property governed by physics rather than structural geometry. Starting with a normally lit cat ensures the model stabilizes the animal's anatomy and pose during the critical layout phase. The impossible shadow orientation is introduced at step 4 when the structure is locked, allowing the model to apply the contradictory lighting without distorting the cat's body shape.",
+  "prompts_list": [
+    "A realistic photo of a cat sitting on the floor",
+    "A realistic photo of a cat sitting on the floor with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

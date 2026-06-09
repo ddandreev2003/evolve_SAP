@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down flower arrangement contradicts natural gravitational expectations, as plants typically orient upwards from a vessel. Starting with the vase and flower bodies stabilizes the structural geometry, allowing the final stage to introduce the conflicting spatial orientation without the model auto-correcting to a standard upright pose.",
+  "prompts_list": [
+    "A clear vase on a table",
+    "A vase with a bouquet of flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

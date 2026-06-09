@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves and hands are implicitly trained with five digits. Introducing the sixth finger directly can cause geometric fusion or default back to five. Starting with the base object establishes the correct silhouette and material texture before the model resolves the anomalous digit count during the high-frequency detailing phase.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Hexadactyly contradicts the strong anatomical prior of five digits. Since the model locks geometry in the initial denoising stages, the prompt starts with a bare hand to enforce the 6-finger structure before transitioning to the glove material.",
+  "prompts_list": [
+    "A hand with 6 fingers, hexadactyly, 6 distinct digits spread out",
+    "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are dictated by light-source physics which begin resolving around steps 3-6. To enforce a physically impossible shadow direction, the prompt starts with the standard scene to lock the cat's geometry and position. At step 4, the contradictory lighting rule is introduced to override the model's internal physics assumptions without distorting the animal's identity.",
+  "prompts_list": [
+    "A realistic cat sitting on pavement in bright daylight",
+    "A realistic cat sitting on pavement in bright daylight with a shadow facing towards the light source"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural contradiction. Flowers naturally grow upright with stems submerged in the vase and heads pointing up. To overcome this strong biological and gravity prior, we explicitly describe the inverted geometry (stems protruding from the top) during the initial layout phase to lock the shape before rendering the full details.",
+  "prompts_list": [
+    "A glass vase on a table. Inside the vase, a bouquet of flowers is stuffed completely upside down. The thick green stems stick straight UP into the air out of the vase opening. The colorful flower heads are buried inside the vase, pointing down.",
+    "A bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

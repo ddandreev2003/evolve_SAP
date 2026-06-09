@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The prompt contains a spatial contradiction (flowers upside down in a vase), which defies the learned prior of upright arrangements. According to Strategy B for structural contradictions, the layout phase (Steps 0-4) must establish the inverted geometry explicitly to prevent the model from defaulting to a standard vertical composition. The first prompt acts as a geometric proxy by defining the orientation directly, followed by the refined identity prompt in the final stage.",
+  "prompts_list": [
+    "A vase turned upside down with floral elements sticking out",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

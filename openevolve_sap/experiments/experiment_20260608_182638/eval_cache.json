@@ -1,0 +1,787 @@
+{
+  "09af06577096ef834ef52a996303407059c85c42c5035aded3ccbfdc6c761715": {
+    "metrics": {
+      "alignment_score": 2.0,
+      "gemma_score": 0.0,
+      "combined_score": 2.0,
+      "num_eval_prompts": 1.0
+    },
+    "artifacts": {
+      "alignment_values": [
+        2.0
+      ],
+      "sampled_outputs": [
+        {
+          "explanation": "Flowers in a vase are structurally constrained to upright positions by gravity and physical design. Generating an inverted bouquet requires overriding strong spatial priors regarding how vases hold liquids and stems. Establishing the standard configuration first allows the model to anchor the object identities and textures before destabilizing the pose with the final inverted constraint.",
+          "prompts_list": [
+            "A bouquet of flowers in a vase",
+            "A bouquet of flowers is upside down in a vase"
+          ],
+          "switch_prompts_steps": [
+            3
+          ]
+        }
+      ],
+      "prompt_records": [
+        {
+          "prompt_index": 0,
+          "original_prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/prompt_00/decomposition.json",
+          "images": [
+            {
+              "image_index": 0,
+              "seed": 30498,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/prompt_00/image_00.png"
+            }
+          ],
+          "score": {
+            "alignment score": 2.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/prompt_00/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image shows a bouquet of flowers in a vase, but the arrangement is positioned normally with flowers facing upward and stems in the water. The critical element \"upside down\" from the prompt is completely missing - in an upside down arrangement, the flowers would be pointing downward into the vase with stems extending upward. While the basic components (bouquet, flowers, vase) are present, the key descriptive element of the orientation is significantly misrepresented, making the image demonstrate the opposite of what was requested.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a high-quality photograph with excellent visual coherence. There are no rendering artifacts, distortions, or broken elements. The flowers, leaves, and vase are all well-formed with realistic textures and natural lighting. Perspective is consistent throughout the scene, and elements connect naturally (stems properly positioned in the vase, flowers arranged organically). The image shows professional-level photography with no visible flaws in composition, lighting, or detail."
+                }
+              }
+            ],
+            "num_seeds_scored": 1
+          },
+          "alignment_score": 2.0,
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/prompt_00/score.json"
+        }
+      ],
+      "score_records": [
+        {
+          "prompt_index": 0,
+          "prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/prompt_00/decomposition.json",
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/prompt_00/image_00.png",
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/prompt_00/score.json",
+          "score": {
+            "alignment score": 2.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/prompt_00/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image shows a bouquet of flowers in a vase, but the arrangement is positioned normally with flowers facing upward and stems in the water. The critical element \"upside down\" from the prompt is completely missing - in an upside down arrangement, the flowers would be pointing downward into the vase with stems extending upward. While the basic components (bouquet, flowers, vase) are present, the key descriptive element of the orientation is significantly misrepresented, making the image demonstrate the opposite of what was requested.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a high-quality photograph with excellent visual coherence. There are no rendering artifacts, distortions, or broken elements. The flowers, leaves, and vase are all well-formed with realistic textures and natural lighting. Perspective is consistent throughout the scene, and elements connect naturally (stems properly positioned in the vase, flowers arranged organically). The image shows professional-level photography with no visible flaws in composition, lighting, or detail."
+                }
+              }
+            ],
+            "num_seeds_scored": 1
+          }
+        }
+      ],
+      "score_records_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/status.jsonl",
+      "manifest_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932418_2ff428d5/manifest.json",
+      "template_context_files": [
+        "template_SAP_system.txt",
+        "template_SAP_system_short.txt",
+        "template_SAP_user.txt"
+      ],
+      "eval_profile": "stage1"
+    }
+  },
+  "424640b18c7e8a5689a2a51ac4d835f52ab9b791655aa47a555f1529af610a17": {
+    "metrics": {
+      "alignment_score": 2.1666666666666665,
+      "gemma_score": 0.0,
+      "combined_score": 2.1666666666666665,
+      "num_eval_prompts": 3.0
+    },
+    "artifacts": {
+      "alignment_values": [
+        2.5,
+        2.0,
+        2.0
+      ],
+      "sampled_outputs": [
+        {
+          "explanation": "Vases are designed to hold flowers upright, so an inverted arrangement conflicts with learned object physics. To prevent geometric errors, the process begins by establishing the container (vase) at the lowest frequency, adding the content (flowers) at mid-frequency to define volume, and finally introducing the inverted orientation as a high-frequency detail override.",
+          "prompts_list": [
+            "A decorative vase",
+            "A decorative vase with flowers",
+            "A bouquet of flowers is upside down in a vase"
+          ],
+          "switch_prompts_steps": [
+            3,
+            7
+          ]
+        },
+        {
+          "explanation": "Standard gloves imply five fingers due to training biases. Starting with the base glove stabilizes the structure before introducing the anomalous digit count during shape refinement.",
+          "prompts_list": [
+            "A white glove",
+            "A white glove with six fingers"
+          ],
+          "switch_prompts_steps": [
+            3
+          ]
+        },
+        {
+          "explanation": "Shadows are physically determined by light sources and usually align with the object's orientation, violating natural physics here. To stabilize the generation, the model first builds the cat's structure, then introduces a standard shadow relationship, and finally applies the contradictory directional constraint at a later stage when fine details are processed.",
+          "prompts_list": [
+            "A cat standing on the ground",
+            "A cat with a shadow on the ground",
+            "The shadow of a cat is facing the opposite direction"
+          ],
+          "switch_prompts_steps": [
+            3,
+            7
+          ]
+        }
+      ],
+      "prompt_records": [
+        {
+          "prompt_index": 0,
+          "original_prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/decomposition.json",
+          "images": [
+            {
+              "image_index": 0,
+              "seed": 30498,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/image_00.png"
+            },
+            {
+              "image_index": 1,
+              "seed": 30499,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/image_01.png"
+            }
+          ],
+          "score": {
+            "alignment score": 2.5,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image depicts a bouquet of flowers in a vase, but the bouquet is arranged in a standard upright position with flowers facing upward. The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be oriented downward (e.g., blooms pointing toward the table, stems extending upward from the vase). This critical element is entirely missing, resulting in a significant misrepresentation of the prompt's core intent. While the main subjects (bouquet and vase) are present, the absence of the upside-down orientation—central to the prompt's meaning—constitutes a major conceptual failure.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a high-fidelity photograph with no visible rendering artifacts. Lighting is soft and consistent, highlighting natural textures in the flowers, leaves, and vase. The composition is physically coherent: flowers are arranged organically within the vase, with no distorted anatomy, floating elements, or merged shapes. The background and table exhibit realistic depth and perspective, and all details (e.g., delicate petals, vase texture) are sharp and well-defined. The image is visually clean and fully coherent."
+                }
+              },
+              {
+                "image_index": 1,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/image_01.png",
+                "alignment score": 3.0,
+                "score": {
+                  "alignment score": 3,
+                  "alignment explanation": "The image contains the correct objects (a bouquet of flowers and a vase), but it fails to depict the bouquet as upside down. The prompt specifies that the bouquet should be inverted, with blooms pointing downward and stems extending upward from the vase. Instead, the image shows a standard upright arrangement where blooms are at the top and stems are submerged in the vase. This misrepresents the key action and intent of the prompt, as the upside-down aspect is a critical and concrete requirement, not a minor detail. While the main subjects are present, the absence of the specified orientation significantly undermines semantic fidelity.",
+                  "quality score": 5,
+                  "quality explanation": "The image is visually flawless, with no rendering artifacts, distortions, or broken elements. The flowers, leaves, and vase exhibit consistent lighting, realistic textures, and coherent perspective throughout. Complex details like petal shapes, leaf veins, and the ridged pattern on the vase are well-formed and anatomically plausible for their subjects. Objects connect naturally (e.g., stems are properly anchored in the vase, blooms emerge organically), and there are no issues with blending, warping, or physical implausibility. The overall rendering is clean, realistic, and fully coherent."
+                }
+              }
+            ],
+            "num_seeds_scored": 2
+          },
+          "alignment_score": 2.5,
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/score.json"
+        },
+        {
+          "prompt_index": 1,
+          "original_prompt": "A white glove has 6 fingers",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/decomposition.json",
+          "images": [
+            {
+              "image_index": 0,
+              "seed": 30498,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/image_00.png"
+            },
+            {
+              "image_index": 1,
+              "seed": 30499,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/image_01.png"
+            }
+          ],
+          "score": {
+            "alignment score": 2.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image shows a white glove, satisfying the \"white glove\" aspect of the prompt. However, it clearly depicts 5 fingers (including the thumb), not the 6 specified in the prompt. The key element—the number of fingers—is fundamentally misrepresented, as the glove lacks the required sixth finger. While the glove itself is present and recognizable, this critical discrepancy in the core attribute (finger count) significantly undermines the prompt's intent.",
+                  "quality score": 5,
+                  "quality explanation": "The image is visually flawless. The glove is rendered with smooth, consistent textures and realistic lighting, with no artifacts, distortions, or anatomical inconsistencies. Fingers are well-formed and naturally separated, the wrist cuff is cleanly defined, and the overall composition is coherent and physically plausible. The simplicity of the subject (a single glove on a plain background) enhances its clarity, with no visual flaws to detract from its quality."
+                }
+              },
+              {
+                "image_index": 1,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/image_01.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image depicts a white glove, satisfying the color and object requirement. However, it clearly shows only 5 fingers (1 thumb + 4 fingers), directly contradicting the prompt's specification of \"6 fingers.\" The core attribute (finger count) is fundamentally misrepresented, and no sixth finger is present or implied. While the glove is functionally depicted (worn on a hand), the critical numerical discrepancy means the image fails to convey the prompt's intended meaning.",
+                  "quality score": 5,
+                  "quality explanation": "The image is rendered with exceptional clarity and realism. The glove exhibits smooth, consistent texture and natural lighting with subtle shadows. All fingers are anatomically coherent, with no distortions, artifacts, or blending issues. The perspective is logical, and the material (e.g., creases near the wrist) appears physically plausible. No visual flaws are present—this is a clean, professional-grade render."
+                }
+              }
+            ],
+            "num_seeds_scored": 2
+          },
+          "alignment_score": 2.0,
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/score.json"
+        },
+        {
+          "prompt_index": 2,
+          "original_prompt": "The shadow of a cat is facing the opposite direction",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/decomposition.json",
+          "images": [
+            {
+              "image_index": 0,
+              "seed": 30498,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/image_00.png"
+            },
+            {
+              "image_index": 1,
+              "seed": 30499,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/image_01.png"
+            }
+          ],
+          "score": {
+            "alignment score": 2.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image contains a cat and its shadow, but the shadow does not face the opposite direction of the cat. The cat is oriented away from the camera, while the shadow extends laterally (to the right) rather than in the opposite direction of the cat’s orientation. This misrepresents the core requirement of the prompt, as the shadow’s direction is neither clearly opposite nor functionally aligned with the described scenario.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts. Lighting, texture, and perspective are consistent, and the cat, ground, and shadow are visually coherent. There are no distortions, broken elements, or implausible blending, resulting in a clean and realistic depiction."
+                }
+              },
+              {
+                "image_index": 1,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/image_01.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image shows a cat and its shadow, but the shadow is not facing the opposite direction of the cat. The cat is positioned with its back to the viewer (facing away), while the shadow extends to the left of the cat. For the shadow to face the opposite direction, it should align with the cat’s rearward direction (toward the viewer), but the shadow’s orientation is lateral (leftward) rather than directly opposing the cat’s forward-facing direction. The core elements (cat and shadow) are present, but the critical directional relationship specified in the prompt is misrepresented.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts. The cat’s fur, body structure, and shadow are sharply defined and anatomically coherent. Lighting, texture, and perspective are consistent, with natural shadows and realistic surface details. All elements connect logically (e.g., the shadow aligns with the light source), and there are no distortions, broken shapes, or implausible blending. The scene is visually clean and fully coherent."
+                }
+              }
+            ],
+            "num_seeds_scored": 2
+          },
+          "alignment_score": 2.0,
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/score.json"
+        }
+      ],
+      "score_records": [
+        {
+          "prompt_index": 0,
+          "prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/decomposition.json",
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/image_00.png",
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/score.json",
+          "score": {
+            "alignment score": 2.5,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image depicts a bouquet of flowers in a vase, but the bouquet is arranged in a standard upright position with flowers facing upward. The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be oriented downward (e.g., blooms pointing toward the table, stems extending upward from the vase). This critical element is entirely missing, resulting in a significant misrepresentation of the prompt's core intent. While the main subjects (bouquet and vase) are present, the absence of the upside-down orientation—central to the prompt's meaning—constitutes a major conceptual failure.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a high-fidelity photograph with no visible rendering artifacts. Lighting is soft and consistent, highlighting natural textures in the flowers, leaves, and vase. The composition is physically coherent: flowers are arranged organically within the vase, with no distorted anatomy, floating elements, or merged shapes. The background and table exhibit realistic depth and perspective, and all details (e.g., delicate petals, vase texture) are sharp and well-defined. The image is visually clean and fully coherent."
+                }
+              },
+              {
+                "image_index": 1,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_00/image_01.png",
+                "alignment score": 3.0,
+                "score": {
+                  "alignment score": 3,
+                  "alignment explanation": "The image contains the correct objects (a bouquet of flowers and a vase), but it fails to depict the bouquet as upside down. The prompt specifies that the bouquet should be inverted, with blooms pointing downward and stems extending upward from the vase. Instead, the image shows a standard upright arrangement where blooms are at the top and stems are submerged in the vase. This misrepresents the key action and intent of the prompt, as the upside-down aspect is a critical and concrete requirement, not a minor detail. While the main subjects are present, the absence of the specified orientation significantly undermines semantic fidelity.",
+                  "quality score": 5,
+                  "quality explanation": "The image is visually flawless, with no rendering artifacts, distortions, or broken elements. The flowers, leaves, and vase exhibit consistent lighting, realistic textures, and coherent perspective throughout. Complex details like petal shapes, leaf veins, and the ridged pattern on the vase are well-formed and anatomically plausible for their subjects. Objects connect naturally (e.g., stems are properly anchored in the vase, blooms emerge organically), and there are no issues with blending, warping, or physical implausibility. The overall rendering is clean, realistic, and fully coherent."
+                }
+              }
+            ],
+            "num_seeds_scored": 2
+          }
+        },
+        {
+          "prompt_index": 1,
+          "prompt": "A white glove has 6 fingers",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/decomposition.json",
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/image_00.png",
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/score.json",
+          "score": {
+            "alignment score": 2.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image shows a white glove, satisfying the \"white glove\" aspect of the prompt. However, it clearly depicts 5 fingers (including the thumb), not the 6 specified in the prompt. The key element—the number of fingers—is fundamentally misrepresented, as the glove lacks the required sixth finger. While the glove itself is present and recognizable, this critical discrepancy in the core attribute (finger count) significantly undermines the prompt's intent.",
+                  "quality score": 5,
+                  "quality explanation": "The image is visually flawless. The glove is rendered with smooth, consistent textures and realistic lighting, with no artifacts, distortions, or anatomical inconsistencies. Fingers are well-formed and naturally separated, the wrist cuff is cleanly defined, and the overall composition is coherent and physically plausible. The simplicity of the subject (a single glove on a plain background) enhances its clarity, with no visual flaws to detract from its quality."
+                }
+              },
+              {
+                "image_index": 1,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_01/image_01.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image depicts a white glove, satisfying the color and object requirement. However, it clearly shows only 5 fingers (1 thumb + 4 fingers), directly contradicting the prompt's specification of \"6 fingers.\" The core attribute (finger count) is fundamentally misrepresented, and no sixth finger is present or implied. While the glove is functionally depicted (worn on a hand), the critical numerical discrepancy means the image fails to convey the prompt's intended meaning.",
+                  "quality score": 5,
+                  "quality explanation": "The image is rendered with exceptional clarity and realism. The glove exhibits smooth, consistent texture and natural lighting with subtle shadows. All fingers are anatomically coherent, with no distortions, artifacts, or blending issues. The perspective is logical, and the material (e.g., creases near the wrist) appears physically plausible. No visual flaws are present—this is a clean, professional-grade render."
+                }
+              }
+            ],
+            "num_seeds_scored": 2
+          }
+        },
+        {
+          "prompt_index": 2,
+          "prompt": "The shadow of a cat is facing the opposite direction",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/decomposition.json",
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/image_00.png",
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/score.json",
+          "score": {
+            "alignment score": 2.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image contains a cat and its shadow, but the shadow does not face the opposite direction of the cat. The cat is oriented away from the camera, while the shadow extends laterally (to the right) rather than in the opposite direction of the cat’s orientation. This misrepresents the core requirement of the prompt, as the shadow’s direction is neither clearly opposite nor functionally aligned with the described scenario.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts. Lighting, texture, and perspective are consistent, and the cat, ground, and shadow are visually coherent. There are no distortions, broken elements, or implausible blending, resulting in a clean and realistic depiction."
+                }
+              },
+              {
+                "image_index": 1,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/prompt_02/image_01.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image shows a cat and its shadow, but the shadow is not facing the opposite direction of the cat. The cat is positioned with its back to the viewer (facing away), while the shadow extends to the left of the cat. For the shadow to face the opposite direction, it should align with the cat’s rearward direction (toward the viewer), but the shadow’s orientation is lateral (leftward) rather than directly opposing the cat’s forward-facing direction. The core elements (cat and shadow) are present, but the critical directional relationship specified in the prompt is misrepresented.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts. The cat’s fur, body structure, and shadow are sharply defined and anatomically coherent. Lighting, texture, and perspective are consistent, with natural shadows and realistic surface details. All elements connect logically (e.g., the shadow aligns with the light source), and there are no distortions, broken shapes, or implausible blending. The scene is visually clean and fully coherent."
+                }
+              }
+            ],
+            "num_seeds_scored": 2
+          }
+        }
+      ],
+      "score_records_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/status.jsonl",
+      "manifest_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780932508_dd872a14/manifest.json",
+      "template_context_files": [
+        "template_SAP_system.txt",
+        "template_SAP_system_short.txt",
+        "template_SAP_user.txt"
+      ],
+      "eval_profile": "stage2"
+    }
+  },
+  "8c820a020f7573bca725450ba5d0fad8e2a33661847fc6b13d8a8d7a2b2f3177": {
+    "metrics": {
+      "alignment_score": 5.0,
+      "gemma_score": 0.0,
+      "combined_score": 5.0,
+      "num_eval_prompts": 1.0
+    },
+    "artifacts": {
+      "alignment_values": [
+        5.0
+      ],
+      "sampled_outputs": [
+        {
+          "explanation": "An upside-down bouquet violates standard structural expectations where flowers grow upright. Following Strategy B, we avoid starting with a \"normal vase with flowers\" to prevent the model from locking incorrect geometry during Steps 0-4. Instead, we begin with a proxy object that physically matches the inverted arrangement (dangling stems/herbs), ensuring the spatial configuration is established before introducing the contradictory botanical subject.",
+          "prompts_list": [
+            "A bundle of dried herbs hanging vertically from the rim of a glass bowl",
+            "A bouquet of flowers is upside down in a vase"
+          ],
+          "switch_prompts_steps": [
+            4
+          ]
+        }
+      ],
+      "prompt_records": [
+        {
+          "prompt_index": 0,
+          "original_prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/decomposition.json",
+          "images": [
+            {
+              "image_index": 0,
+              "seed": 30498,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/image_00.png"
+            }
+          ],
+          "score": {
+            "alignment score": 5.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/image_00.png",
+                "alignment score": 5.0,
+                "score": {
+                  "alignment score": 5,
+                  "alignment explanation": "The image perfectly conveys the prompt's meaning. A bouquet of flowers is clearly positioned upside down in a glass container that functions as a vase, with the flower blooms facing downward into the container and the stems extending upward. All key elements from the prompt are present and correctly depicted: the bouquet, the vase-like container, and the upside-down orientation. The scene illustrates the intended situation in a concrete, functional manner without symbolic or metaphorical interpretation.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a clean, realistic photograph with no visible flaws. The glass container shows proper transparency and reflections, the flowers have natural textures and details, and the wooden surface displays consistent grain. Lighting is natural and consistent across the scene, perspective is accurate, and all elements connect physically coherently without floating, clipping, or merging issues. The image demonstrates full rendering fidelity with no artifacts or distortions."
+                }
+              }
+            ],
+            "num_seeds_scored": 1
+          },
+          "alignment_score": 5.0,
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/score.json"
+        }
+      ],
+      "score_records": [
+        {
+          "prompt_index": 0,
+          "prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/decomposition.json",
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/image_00.png",
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/score.json",
+          "score": {
+            "alignment score": 5.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/image_00.png",
+                "alignment score": 5.0,
+                "score": {
+                  "alignment score": 5,
+                  "alignment explanation": "The image perfectly conveys the prompt's meaning. A bouquet of flowers is clearly positioned upside down in a glass container that functions as a vase, with the flower blooms facing downward into the container and the stems extending upward. All key elements from the prompt are present and correctly depicted: the bouquet, the vase-like container, and the upside-down orientation. The scene illustrates the intended situation in a concrete, functional manner without symbolic or metaphorical interpretation.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a clean, realistic photograph with no visible flaws. The glass container shows proper transparency and reflections, the flowers have natural textures and details, and the wooden surface displays consistent grain. Lighting is natural and consistent across the scene, perspective is accurate, and all elements connect physically coherently without floating, clipping, or merging issues. The image demonstrates full rendering fidelity with no artifacts or distortions."
+                }
+              }
+            ],
+            "num_seeds_scored": 1
+          }
+        }
+      ],
+      "score_records_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/status.jsonl",
+      "manifest_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/manifest.json",
+      "template_context_files": [
+        "template_SAP_system.txt",
+        "template_SAP_system_short.txt",
+        "template_SAP_user.txt"
+      ],
+      "eval_profile": "stage1"
+    }
+  },
+  "11d7c21066eb19a9d5ca169d54b411ec0a30462acc0c87a81b36ec6133bade91": {
+    "metrics": {
+      "alignment_score": 2.0,
+      "gemma_score": 0.0,
+      "combined_score": 2.0,
+      "num_eval_prompts": 1.0
+    },
+    "artifacts": {
+      "alignment_values": [
+        2.0
+      ],
+      "sampled_outputs": [
+        {
+          "explanation": "Flvers are physically bound to grow upright; an inverted bouquet violates standard spatial expectations. Initializing with a standard vase setup locks the model to vertical geometry. Using a proxy with rigid sticks establishes the inverted stem orientation early, allowing the floral identity to integrate correctly once the pose is resolved.",
+          "prompts_list": [
+            "A vase with long sticks pointing upwards inside",
+            "A bouquet of flowers upside down in a vase"
+          ],
+          "switch_prompts_steps": [
+            4
+          ]
+        }
+      ],
+      "prompt_records": [
+        {
+          "prompt_index": 0,
+          "original_prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/prompt_00/decomposition.json",
+          "images": [
+            {
+              "image_index": 0,
+              "seed": 30498,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/prompt_00/image_00.png"
+            }
+          ],
+          "score": {
+            "alignment score": 2.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/prompt_00/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image contains a vase with green stems, but it lacks the essential element of \"flowers\" required by the prompt; the stems appear to be grass or reeds with no blooms or petals, so it does not represent a \"bouquet of flowers.\" Additionally, the stems are oriented upright (with tips pointing up), not \"upside down,\" as the prompt specifies. While the vase is present, the absence of flowers and the incorrect orientation mean key elements of the prompt are significantly misrepresented, reducing alignment to a minor level of relevance.",
+                  "quality score": 5,
+                  "quality explanation": "The image is clean, realistic, and fully coherent with no visible rendering artifacts. Lighting, texture, and perspective are consistent throughout; the glass vase shows natural reflections and transparency, the wooden surface has realistic grain, and the stems are well-formed with clear separation and plausible physical connections. There is no distortion, warping, or implausible blending, resulting in a high-fidelity, professional-quality render."
+                }
+              }
+            ],
+            "num_seeds_scored": 1
+          },
+          "alignment_score": 2.0,
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/prompt_00/score.json"
+        }
+      ],
+      "score_records": [
+        {
+          "prompt_index": 0,
+          "prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/prompt_00/decomposition.json",
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/prompt_00/image_00.png",
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/prompt_00/score.json",
+          "score": {
+            "alignment score": 2.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/prompt_00/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image contains a vase with green stems, but it lacks the essential element of \"flowers\" required by the prompt; the stems appear to be grass or reeds with no blooms or petals, so it does not represent a \"bouquet of flowers.\" Additionally, the stems are oriented upright (with tips pointing up), not \"upside down,\" as the prompt specifies. While the vase is present, the absence of flowers and the incorrect orientation mean key elements of the prompt are significantly misrepresented, reducing alignment to a minor level of relevance.",
+                  "quality score": 5,
+                  "quality explanation": "The image is clean, realistic, and fully coherent with no visible rendering artifacts. Lighting, texture, and perspective are consistent throughout; the glass vase shows natural reflections and transparency, the wooden surface has realistic grain, and the stems are well-formed with clear separation and plausible physical connections. There is no distortion, warping, or implausible blending, resulting in a high-fidelity, professional-quality render."
+                }
+              }
+            ],
+            "num_seeds_scored": 1
+          }
+        }
+      ],
+      "score_records_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/status.jsonl",
+      "manifest_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933668_2a6d8eb6/manifest.json",
+      "template_context_files": [
+        "template_SAP_system.txt",
+        "template_SAP_system_short.txt",
+        "template_SAP_user.txt"
+      ],
+      "eval_profile": "stage1"
+    }
+  },
+  "6e3dba500c6fa495fa834a22253a564dc27b80fa1ac3f5262643bf9dc78c9741": {
+    "metrics": {
+      "alignment_score": 3.0,
+      "gemma_score": 0.0,
+      "combined_score": 3.0,
+      "num_eval_prompts": 1.0
+    },
+    "artifacts": {
+      "alignment_values": [
+        3.0
+      ],
+      "sampled_outputs": [
+        {
+          "explanation": "A bouquet typically sits upright in a vase due to gravity and biology. Since the model locks geometry early (steps 0-4), starting with a normal vase would force a correct orientation. By using a structural proxy that defines the inverted geometry first (\"inverted vase with stems\"), the unusual spatial constraint is preserved while introducing the floral details in the second stage.",
+          "prompts_list": [
+            "An inverted glass vase with long green stems hanging downward",
+            "A colorful bouquet of flowers arranged upside down in a vase"
+          ],
+          "switch_prompts_steps": [
+            4
+          ]
+        }
+      ],
+      "prompt_records": [
+        {
+          "prompt_index": 0,
+          "original_prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/prompt_00/decomposition.json",
+          "images": [
+            {
+              "image_index": 0,
+              "seed": 30498,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/prompt_00/image_00.png"
+            }
+          ],
+          "score": {
+            "alignment score": 3.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/prompt_00/image_00.png",
+                "alignment score": 3.0,
+                "score": {
+                  "alignment score": 3,
+                  "alignment explanation": "The image shows a bouquet of tulips arranged upside down, which matches the \"upside down\" aspect of the prompt. However, the vase mentioned in the prompt is entirely absent. Since the prompt explicitly requires the bouquet to be *in a vase*, the missing vase constitutes a significant omission of a key element, reducing the score to 3. The main subjects (bouquet, upside-down orientation) are present, but the critical contextual element (vase) is missing, making the scene incomplete.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a clear, high-resolution photograph with no visible rendering artifacts. The flowers, stems, and leaves are sharply defined, with natural lighting, consistent perspective, and realistic textures. There are no distortions, broken elements, or anatomical inconsistencies (e.g., petals, stems, and leaves appear physically coherent and well-formed). The composition is clean and visually plausible, meeting the criteria for a score of 5."
+                }
+              }
+            ],
+            "num_seeds_scored": 1
+          },
+          "alignment_score": 3.0,
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/prompt_00/score.json"
+        }
+      ],
+      "score_records": [
+        {
+          "prompt_index": 0,
+          "prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/prompt_00/decomposition.json",
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/prompt_00/image_00.png",
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/prompt_00/score.json",
+          "score": {
+            "alignment score": 3.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/prompt_00/image_00.png",
+                "alignment score": 3.0,
+                "score": {
+                  "alignment score": 3,
+                  "alignment explanation": "The image shows a bouquet of tulips arranged upside down, which matches the \"upside down\" aspect of the prompt. However, the vase mentioned in the prompt is entirely absent. Since the prompt explicitly requires the bouquet to be *in a vase*, the missing vase constitutes a significant omission of a key element, reducing the score to 3. The main subjects (bouquet, upside-down orientation) are present, but the critical contextual element (vase) is missing, making the scene incomplete.",
+                  "quality score": 5,
+                  "quality explanation": "The image is a clear, high-resolution photograph with no visible rendering artifacts. The flowers, stems, and leaves are sharply defined, with natural lighting, consistent perspective, and realistic textures. There are no distortions, broken elements, or anatomical inconsistencies (e.g., petals, stems, and leaves appear physically coherent and well-formed). The composition is clean and visually plausible, meeting the criteria for a score of 5."
+                }
+              }
+            ],
+            "num_seeds_scored": 1
+          }
+        }
+      ],
+      "score_records_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/status.jsonl",
+      "manifest_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934113_6b700a9a/manifest.json",
+      "template_context_files": [
+        "template_SAP_system.txt",
+        "template_SAP_system_short.txt",
+        "template_SAP_user.txt"
+      ],
+      "eval_profile": "stage1"
+    }
+  },
+  "e63972c07e13b25c7c9ba35c86298cd24baef74546f56bef6949ce1870cc5785": {
+    "metrics": {
+      "alignment_score": 2.0,
+      "gemma_score": 0.0,
+      "combined_score": 2.0,
+      "num_eval_prompts": 1.0
+    },
+    "artifacts": {
+      "alignment_values": [
+        2.0
+      ],
+      "sampled_outputs": [
+        {
+          "explanation": "The core contradiction is the structural orientation of the bouquet. Standard FLUX priors assume flowers grow upward from a vase. Following Strategy B, we cannot start with a \"vase of flowers\" as the model would lock the normal geometry (stems down). Instead, the first prompt describes the inverted visual geometry (stems up/blooms down) to enforce the unusual shape, allowing the final prompt to confirm the semantic label without fighting the established structure.",
+          "prompts_list": [
+            "Colorful flowers hanging upside down with stems pointing up from the base of a vase",
+            "A bouquet of flowers is upside down in a vase"
+          ],
+          "switch_prompts_steps": [
+            3
+          ]
+        }
+      ],
+      "prompt_records": [
+        {
+          "prompt_index": 0,
+          "original_prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/prompt_00/decomposition.json",
+          "images": [
+            {
+              "image_index": 0,
+              "seed": 30498,
+              "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/prompt_00/image_00.png"
+            }
+          ],
+          "score": {
+            "alignment score": 2.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/prompt_00/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented **right-side up** (stems inserted into the vase, blooms facing upward). The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be inverted (e.g., blooms pointing downward or the vase flipped). While the core elements (bouquet, vase) are present, the critical action of being upside down is entirely missing, fundamentally misrepresenting the prompt’s intent.",
+                  "quality score": 5,
+                  "quality explanation": "The image is visually pristine. The flowers and vase exhibit sharp detail, natural textures, and consistent lighting. There are no rendering artifacts, distortions, or anatomical inconsistencies (e.g., petals, leaves, and the vase’s shape are coherent and well-defined). The composition is realistic, with smooth gradients and no signs of warping, clipping, or fused geometry."
+                }
+              }
+            ],
+            "num_seeds_scored": 1
+          },
+          "alignment_score": 2.0,
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/prompt_00/score.json"
+        }
+      ],
+      "score_records": [
+        {
+          "prompt_index": 0,
+          "prompt": "A bouquet of flowers is upside down in a vase",
+          "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/prompt_00",
+          "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/prompt_00/decomposition.json",
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/prompt_00/image_00.png",
+          "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/prompt_00/score.json",
+          "score": {
+            "alignment score": 2.0,
+            "per_seed": [
+              {
+                "image_index": 0,
+                "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/prompt_00/image_00.png",
+                "alignment score": 2.0,
+                "score": {
+                  "alignment score": 2,
+                  "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented **right-side up** (stems inserted into the vase, blooms facing upward). The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be inverted (e.g., blooms pointing downward or the vase flipped). While the core elements (bouquet, vase) are present, the critical action of being upside down is entirely missing, fundamentally misrepresenting the prompt’s intent.",
+                  "quality score": 5,
+                  "quality explanation": "The image is visually pristine. The flowers and vase exhibit sharp detail, natural textures, and consistent lighting. There are no rendering artifacts, distortions, or anatomical inconsistencies (e.g., petals, leaves, and the vase’s shape are coherent and well-defined). The composition is realistic, with smooth gradients and no signs of warping, clipping, or fused geometry."
+                }
+              }
+            ],
+            "num_seeds_scored": 1
+          }
+        }
+      ],
+      "score_records_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/status.jsonl",
+      "manifest_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934566_480094aa/manifest.json",
+      "template_context_files": [
+        "template_SAP_system.txt",
+        "template_SAP_system_short.txt",
+        "template_SAP_user.txt"
+      ],
+      "eval_profile": "stage1"
+    }
+  }
+}

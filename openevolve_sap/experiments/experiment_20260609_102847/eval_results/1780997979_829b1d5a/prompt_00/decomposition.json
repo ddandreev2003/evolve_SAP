@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The 5-digit hand prior is extremely strong and geometry locks at steps 0-2. Using words like \"thumb\" triggers the standard schema. We must describe 6 identical fingers in a row with no thumb in the first prompt to force the wrong shape before introducing the glove identity.",
+  "prompts_list": [
+    "A bare hand facing the camera, fingers spread wide apart. The hand has exactly 6 identical fingers in a row, no thumb, six distinct separate digits, hexadactyly, strictly six fingers",
+    "A white glove facing the camera, fingers spread wide apart. The glove has exactly 6 identical finger stalls in a row, no thumb, six distinct separate tubes, hexadactyly, strictly six fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are typically locked into correct alignment with objects during the early geometry phase (0-2). To force a contradiction, the first prompt establishes the shadow as a separate physical silhouette oriented oppositely to the cat. The second prompt then renders this silhouette as a cast shadow once the layout is stable, preserving the incorrect direction.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a separate black cat-shaped silhouette painted on the floor is facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

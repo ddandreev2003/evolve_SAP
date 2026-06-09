@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting detail resolved in the late diffusion steps, whereas the cat's geometry is locked early in steps 0-4. Starting with a normal cat establishes the scene structure and base lighting before introducing the physically contradictory shadow direction.",
+  "prompts_list": [
+    "A cat walking on a sidewalk under midday sun",
+    "A cat walking on a sidewalk under midday sun, shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

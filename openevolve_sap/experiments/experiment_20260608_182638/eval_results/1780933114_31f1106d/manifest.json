@@ -1,0 +1,46 @@
+{
+  "run_id": "1780933114_31f1106d",
+  "program_path": "/tmp/tmp627d9b3x.py",
+  "program_id": "tmp627d9b3x",
+  "timestamp": 1780933225.1635642,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/image_00.png",
+            "alignment score": 5.0,
+            "score": {
+              "alignment score": 5,
+              "alignment explanation": "The image perfectly conveys the prompt's meaning. A bouquet of flowers is clearly positioned upside down in a glass container that functions as a vase, with the flower blooms facing downward into the container and the stems extending upward. All key elements from the prompt are present and correctly depicted: the bouquet, the vase-like container, and the upside-down orientation. The scene illustrates the intended situation in a concrete, functional manner without symbolic or metaphorical interpretation.",
+              "quality score": 5,
+              "quality explanation": "The image is a clean, realistic photograph with no visible flaws. The glass container shows proper transparency and reflections, the flowers have natural textures and details, and the wooden surface displays consistent grain. Lighting is natural and consistent across the scene, perspective is accurate, and all elements connect physically coherently without floating, clipping, or merging issues. The image demonstrates full rendering fidelity with no artifacts or distortions."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780933114_31f1106d/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 5.0,
+    "gemma_score": 0.0,
+    "combined_score": 5.0
+  }
+}

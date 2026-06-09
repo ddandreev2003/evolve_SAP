@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. Must establish 6 digits before adding glove material. The model locks correct geometry at steps 0-2 and will ignore later corrections. Starting with a bare hand forces the anomalous shape before texture application.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers, showing 6 distinct digits spread out clearly",
+    "A white leather glove with exactly 6 fingers, 6 distinct digits, highly detailed"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flower bouquets in vases naturally orient head-up; reversing this contradicts physical gravity and plant biology. Establishing a static vase container first locks the geometry and volume, allowing the unusual upside-down orientation to be applied without the model correcting the stems to face downward in subsequent steps.",
+  "prompts_list": [
+    "A clear glass vase sitting on a flat surface.",
+    "A bouquet of flowers arranged upside down in a vase, with the stems pointing up out of the opening."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

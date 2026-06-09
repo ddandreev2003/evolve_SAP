@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural contradiction. Normal floral arrangements place stems down and blooms up. Starting with an explicit spatial proxy ensures the geometry locks with stems pointing up before the final semantic target is resolved.",
+  "prompts_list": [
+    "A glass vase on a table. Bare green flower stems stick straight UP into the air out of the vase. The colorful flower blooms are inverted, hanging down over the rim towards the table.",
+    "A bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

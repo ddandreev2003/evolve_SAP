@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Flowers naturally grow upward. Explicitly defining the inverted stem direction and gravity-defying layout at steps 0-2 breaks the normalcy prior before refining the scene in the second stage.",
+  "prompts_list": [
+    "A glass vase on a table. A bouquet of flowers is inverted inside the vase. The thick green stems stick straight UP into the air, pointing at the ceiling. The colorful flower heads are pointing DOWN.",
+    "A beautiful bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

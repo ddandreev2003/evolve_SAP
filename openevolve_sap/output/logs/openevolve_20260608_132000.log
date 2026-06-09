@@ -1237,3 +1237,20 @@
 2026-06-08 16:55:15,762 - openevolve_sap.core.evolution_patch - WARNING - Iteration 712 error: LLM generation failed: Error code: 402 - {'error': 'Недостаточно средств на балансе: -16,95 руб.. Пожалуйста, пополните счет для продолжения использования сервиса.'}
 2026-06-08 16:55:20,857 - openevolve_sap.core.evolution_patch - WARNING - Iteration 713 error: LLM generation failed: Error code: 402 - {'error': 'Недостаточно средств на балансе: -16,95 руб.. Пожалуйста, пополните счет для продолжения использования сервиса.'}
 2026-06-08 16:55:26,562 - openevolve_sap.core.evolution_patch - WARNING - Iteration 714 error: LLM generation failed: Error code: 402 - {'error': 'Недостаточно средств на балансе: -16,95 руб.. Пожалуйста, пополните счет для продолжения использования сервиса.'}
+2026-06-08 16:58:50,015 - openevolve.controller - INFO - Received signal 15, initiating graceful shutdown...
+2026-06-08 16:58:50,016 - openevolve.process_parallel - INFO - Graceful shutdown requested...
+2026-06-08 16:58:50,025 - openevolve_sap.core.evolution_patch - INFO - SAP: draining 8 in-flight iteration(s) before shutdown
+2026-06-08 16:58:50,058 - openevolve_sap.core.evolution_patch - WARNING - SAP: drained iteration 715 with error: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 16:58:50,059 - openevolve_sap.core.evolution_patch - WARNING - SAP: drained iteration 716 with error: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 16:58:50,059 - openevolve_sap.core.evolution_patch - WARNING - SAP: drained iteration 717 with error: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 16:58:50,059 - openevolve_sap.core.evolution_patch - WARNING - SAP: drained iteration 718 with error: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 16:58:50,059 - openevolve_sap.core.evolution_patch - WARNING - SAP: drained iteration 719 with error: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 16:58:50,059 - openevolve_sap.core.evolution_patch - WARNING - SAP: drained iteration 720 with error: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 16:58:50,059 - openevolve_sap.core.evolution_patch - WARNING - SAP: drained iteration 721 with error: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 16:58:50,059 - openevolve_sap.core.evolution_patch - WARNING - SAP: drained iteration 722 with error: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 16:58:50,059 - openevolve_sap.core.evolution_patch - INFO - ✅ Evolution completed - Shutdown requested
+2026-06-08 16:58:50,059 - openevolve.controller - INFO - Evolution stopped due to shutdown request
+2026-06-08 16:58:51,200 - openevolve.process_parallel - INFO - Stopped process pool
+2026-06-08 16:58:51,200 - openevolve.controller - INFO - Using tracked best program: 1aee7203-a691-4ce7-ab2d-244484bb9cbf
+2026-06-08 16:58:51,200 - openevolve.controller - INFO - Evolution complete. Best program has metrics: alignment_score=3.1667, gemma_score=5.0000, combined_score=0.7067, num_eval_prompts=3.0000
+2026-06-08 16:58:51,201 - openevolve.controller - INFO - Saved best program to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program.py with program info to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program_info.json

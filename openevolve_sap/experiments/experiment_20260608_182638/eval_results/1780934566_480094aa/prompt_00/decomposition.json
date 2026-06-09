@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "The core contradiction is the structural orientation of the bouquet. Standard FLUX priors assume flowers grow upward from a vase. Following Strategy B, we cannot start with a \"vase of flowers\" as the model would lock the normal geometry (stems down). Instead, the first prompt describes the inverted visual geometry (stems up/blooms down) to enforce the unusual shape, allowing the final prompt to confirm the semantic label without fighting the established structure.",
+  "prompts_list": [
+    "Colorful flowers hanging upside down with stems pointing up from the base of a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

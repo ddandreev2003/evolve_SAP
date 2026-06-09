@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A typical bouquet grows upright with stems in the vase and blooms above. An upside-down orientation reverses the expected geometry, which risks structural collapse during the critical shape-locking phase. Prompt 1 establishes the \"inverted bundle\" geometry using a generic \"sticks with soft heads\" proxy to define the hanging direction. Prompt 2 applies the specific floral identity once the inverted structure is stable.",
+  "prompts_list": [
+    "A bundle of sticks with soft heads hanging down from a rim in a cup",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

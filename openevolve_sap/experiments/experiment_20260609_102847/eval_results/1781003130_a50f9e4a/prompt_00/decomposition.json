@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural/Spatial Contradiction. The 5-finger prior is extremely strong and locks geometry during the critical denoising phase (steps 0-2). We cannot describe a hand or glove directly initially; we must use an extreme structural proxy (fan of fingers) with explicit numerical counting to force the model to draw 6 distinct digits before identifying the material as a glove.",
+  "prompts_list": [
+    "A fan of exactly 6 identical bare fingers extending from a base, count them: 1, 2, 3, 4, 5, 6. No thumb, just 6 parallel digits side-by-side, polydactyly, hexadactyly, strictly 6 fingers",
+    "A white glove with exactly 6 identical finger stalls extending from a base, count them: 1, 2, 3, 4, 5, 6. No thumb, just 6 parallel tubes side-by-side, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

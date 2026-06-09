@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a rigid constraint often overridden by the human-hand prior. To enforce the anomaly, the sequence begins with a mutant hand emphasizing the digit count explicitly. The final step transitions this form into the specific object material (white glove) once the geometry is established.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical fingers in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, hexadactyly, strictly 6 fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical finger stalls in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard hand has five fingers, creating a strong prior that conflicts with the six-finger request. To resolve this, the prompt starts by establishing the basic object (the glove) without defining the digit count, allowing the structure to initialize normally. The switch happens at step 2 (layout/shapes) to force the topology change to six digits before texture and lighting stabilize the image.",
+  "prompts_list": [
+    "A white leather glove lying flat on a surface",
+    "A white leather glove with exactly six fingers visible"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

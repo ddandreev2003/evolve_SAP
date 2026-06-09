@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are physically bound to light sources, making a reversed direction impossible. Starting with a basic scene ensures layout stability, then enforcing the incorrect direction at step 3 overrides the physics prior without distorting the cat's geometry.",
+  "prompts_list": [
+    "A realistic cat sitting on the ground with a visible shadow",
+    "A realistic cat sitting on the ground with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

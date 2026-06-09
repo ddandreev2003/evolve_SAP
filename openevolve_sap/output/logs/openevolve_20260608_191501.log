@@ -1,0 +1,169 @@
+2026-06-08 19:15:01,257 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260608_191501.log
+2026-06-08 19:15:01,262 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-06-08 19:15:01,283 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: qwen/qwen3.7-max
+2026-06-08 19:15:01,283 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: qwen/qwen3.7-max (weight: 1.00)
+2026-06-08 19:15:01,310 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-06-08 19:15:01,311 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-06-08 19:15:01,311 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-06-08 19:15:04,543 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-06-08 19:15:04,543 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-06-08 19:15:04,543 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-06-08 19:15:04,543 - openevolve.controller - INFO - Adding initial program to database
+2026-06-08 19:15:54,401 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 19:16:26,208 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 19:16:37,491 - openevolve.evaluator - INFO - Evaluated program 3dd18a3a-6fc5-4409-8916-9c71b103caf8 in 92.95s: alignment_score=1.0000, gemma_score=0.0000, combined_score=1.0000, num_eval_prompts=1.0000, eval_stage=1.0000, stage1_passed=0.0000
+2026-06-08 19:16:37,491 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-06-08 19:16:37,492 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-06-08 19:16:38,246 - openevolve_sap.core.gpu_worker - INFO - SAP: released FLUX from parent before worker pool start
+2026-06-08 19:16:38,247 - openevolve.process_parallel - INFO - Set max 1000 tasks per child
+2026-06-08 19:16:38,248 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-06-08 19:16:38,248 - openevolve.controller - INFO - Using island-based evolution with 4 islands
+2026-06-08 19:16:38,248 - openevolve.database - INFO - Island Status:
+2026-06-08 19:16:38,248 - openevolve.database - INFO -  * Island 0: 1 programs, best=1.0000, avg=1.0000, diversity=0.00, gen=0 (best: 3dd18a3a-6fc5-4409-8916-9c71b103caf8)
+2026-06-08 19:16:38,248 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 19:16:38,248 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 19:16:38,248 - openevolve.database - INFO -    Island 3: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 19:16:38,248 - openevolve_sap.core.evolution_patch - INFO - SAP: evolution target = 80 successful eval cycles (attempt cap 640, start id 1)
+2026-06-08 19:16:38,253 - openevolve_sap.core.evolution_patch - INFO - Early stopping enabled: patience=30, threshold=0.05, metric=alignment_score
+2026-06-08 19:22:58,162 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 0, 'diversity': 5}
+2026-06-08 19:22:58,188 - openevolve.database - INFO - New best program 44355b2d-b2cf-413b-abed-d37aa43ee014 replaces 3dd18a3a-6fc5-4409-8916-9c71b103caf8 (combined_score: 1.0000 → 3.0000, +2.0000)
+2026-06-08 19:22:58,212 - openevolve_sap.core.evolution_patch - INFO - Iteration 1: Program 44355b2d-b2cf-413b-abed-d37aa43ee014 (parent: 3dd18a3a-6fc5-4409-8916-9c71b103caf8) completed in 356.54s [successful 1/80]
+2026-06-08 19:22:58,212 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=3.0000, gemma_score=0.0000, combined_score=3.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 19:22:58,217 - openevolve_sap.core.evolution_patch - INFO - 🌟 New best solution at iteration 1: 44355b2d-b2cf-413b-abed-d37aa43ee014
+2026-06-08 19:23:42,421 - openevolve_sap.core.evolution_patch - INFO - Iteration 2: Program a084551e-6e7a-4b98-be6a-557223cbee9a (parent: 3dd18a3a-6fc5-4409-8916-9c71b103caf8) completed in 44.16s [successful 2/80]
+2026-06-08 19:23:42,422 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=3.0000, gemma_score=0.0000, combined_score=3.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 19:29:52,032 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 9}
+2026-06-08 19:29:52,091 - openevolve_sap.core.evolution_patch - INFO - Iteration 3: Program 3b789f77-186d-4ecf-9de1-1cea5b3fbbc2 (parent: a084551e-6e7a-4b98-be6a-557223cbee9a) completed in 369.48s [successful 3/80]
+2026-06-08 19:29:52,091 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=3.0000, gemma_score=0.0000, combined_score=3.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 19:30:44,123 - openevolve_sap.core.evolution_patch - INFO - Iteration 4: Program 60cc9f38-bc6b-4532-9ea2-df6c6b7dbe82 (parent: 3dd18a3a-6fc5-4409-8916-9c71b103caf8) completed in 51.97s [successful 4/80]
+2026-06-08 19:30:44,123 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=3.0000, gemma_score=0.0000, combined_score=3.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 19:36:03,277 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 3}
+2026-06-08 19:36:03,307 - openevolve.database - INFO - New best program f8390e9a-4dcf-4f10-ad7a-83cac864a7fb replaces 44355b2d-b2cf-413b-abed-d37aa43ee014 (combined_score: 3.0000 → 4.0000, +1.0000)
+2026-06-08 19:36:03,330 - openevolve_sap.core.evolution_patch - INFO - Iteration 5: Program f8390e9a-4dcf-4f10-ad7a-83cac864a7fb (parent: a084551e-6e7a-4b98-be6a-557223cbee9a) completed in 319.04s [successful 5/80]
+2026-06-08 19:36:03,331 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 19:36:03,336 - openevolve_sap.core.evolution_patch - INFO - 🌟 New best solution at iteration 5: f8390e9a-4dcf-4f10-ad7a-83cac864a7fb
+2026-06-08 19:39:30,732 - openevolve_sap.core.evolution_patch - INFO - Iteration 6: Program 895b77a6-1137-41d0-a4a8-3617ba88ca17 (parent: 44355b2d-b2cf-413b-abed-d37aa43ee014) completed in 207.32s [successful 6/80]
+2026-06-08 19:39:30,732 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 19:44:54,520 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 0}
+2026-06-08 19:44:54,526 - openevolve_sap.core.evolution_patch - INFO - Iteration 7: Program c2fb3657-10fe-4527-825b-3759984f742a (parent: a084551e-6e7a-4b98-be6a-557223cbee9a) completed in 323.77s [successful 7/80]
+2026-06-08 19:44:54,526 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 19:50:59,182 - openevolve_sap.core.evolution_patch - INFO - Iteration 8: Program adce7e94-390d-4e7b-96de-a7b140b6e689 (parent: a084551e-6e7a-4b98-be6a-557223cbee9a) completed in 364.47s [successful 8/80]
+2026-06-08 19:50:59,202 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 19:52:11,643 - openevolve_sap.core.evolution_patch - INFO - Iteration 9: Program 9c56838d-6c98-499b-bd20-92e68285360c (parent: 3dd18a3a-6fc5-4409-8916-9c71b103caf8) completed in 72.36s [successful 9/80]
+2026-06-08 19:52:11,643 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 19:58:58,948 - openevolve_sap.core.evolution_patch - INFO - Iteration 10: Program fdbc17cc-e40d-46ed-9718-86e0e1017b1c (parent: adce7e94-390d-4e7b-96de-a7b140b6e689) completed in 407.28s [successful 10/80]
+2026-06-08 19:58:58,949 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=3.0000, gemma_score=0.0000, combined_score=3.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:05:04,732 - openevolve_sap.core.evolution_patch - INFO - Iteration 11: Program 29ee02e6-8979-454b-b82e-8f5cefca6757 (parent: 3b789f77-186d-4ecf-9de1-1cea5b3fbbc2) completed in 365.41s [successful 11/80]
+2026-06-08 20:05:04,777 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:10:16,154 - openevolve_sap.core.evolution_patch - INFO - Iteration 12: Program 0cbc9c1f-83d3-4f0a-881e-70e30e080757 (parent: adce7e94-390d-4e7b-96de-a7b140b6e689) completed in 311.17s [successful 12/80]
+2026-06-08 20:10:16,161 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:17:55,829 - openevolve.database - INFO - Island 0 MAP-Elites cell improved: {'complexity': 9, 'diversity': 0} (fitness: 4.000 -> 5.000)
+2026-06-08 20:17:55,847 - openevolve.database - INFO - New best program 0183c838-3e40-4e00-b883-1828e7f77914 replaces f8390e9a-4dcf-4f10-ad7a-83cac864a7fb (combined_score: 4.0000 → 5.0000, +1.0000)
+2026-06-08 20:17:55,863 - openevolve_sap.core.evolution_patch - INFO - Iteration 13: Program 0183c838-3e40-4e00-b883-1828e7f77914 (parent: 895b77a6-1137-41d0-a4a8-3617ba88ca17) completed in 459.52s [successful 13/80]
+2026-06-08 20:17:55,863 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:17:55,869 - openevolve_sap.core.evolution_patch - INFO - 🌟 New best solution at iteration 13: 0183c838-3e40-4e00-b883-1828e7f77914
+2026-06-08 20:19:23,378 - openevolve_sap.core.evolution_patch - INFO - Iteration 14: Program 5113728d-0d6e-414f-8e40-64ceca72ba61 (parent: a084551e-6e7a-4b98-be6a-557223cbee9a) completed in 87.44s [successful 14/80]
+2026-06-08 20:19:23,379 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:20:23,457 - openevolve_sap.core.evolution_patch - INFO - Iteration 15: Program c7eb3aec-9a7e-4300-b460-08babc66bd48 (parent: 0cbc9c1f-83d3-4f0a-881e-70e30e080757) completed in 60.06s [successful 15/80]
+2026-06-08 20:20:23,458 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:21:19,886 - openevolve_sap.core.evolution_patch - INFO - Iteration 16: Program 37003e96-534e-4e86-8d1f-849f66b18c63 (parent: 895b77a6-1137-41d0-a4a8-3617ba88ca17) completed in 56.40s [successful 16/80]
+2026-06-08 20:21:19,886 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:22:20,922 - openevolve_sap.core.evolution_patch - INFO - Iteration 17: Program fd0a3800-e86d-4ce7-9aa4-24628fc4c08e (parent: 60cc9f38-bc6b-4532-9ea2-df6c6b7dbe82) completed in 61.00s [successful 17/80]
+2026-06-08 20:22:20,922 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:27:43,594 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 6, 'diversity': 0}
+2026-06-08 20:27:43,598 - openevolve_sap.core.evolution_patch - INFO - Iteration 18: Program 40419dbd-61b3-4f70-98be-9f4de87b4afa (parent: 5113728d-0d6e-414f-8e40-64ceca72ba61) completed in 322.64s [successful 18/80]
+2026-06-08 20:27:43,598 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:33:38,011 - openevolve_sap.core.evolution_patch - INFO - Iteration 19: Program 2b9acf04-4760-45ab-9694-584698e2e81a (parent: 3b789f77-186d-4ecf-9de1-1cea5b3fbbc2) completed in 353.87s [successful 19/80]
+2026-06-08 20:33:38,040 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:34:32,752 - openevolve_sap.core.evolution_patch - INFO - Iteration 20: Program 6fc0ad0c-7b50-45b8-a021-b25c27cb5344 (parent: f8390e9a-4dcf-4f10-ad7a-83cac864a7fb) completed in 54.51s [successful 20/80]
+2026-06-08 20:34:32,752 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:35:27,426 - openevolve_sap.core.evolution_patch - INFO - Iteration 21: Program 7f1f67b1-d9ec-4e25-86a6-398a7a23ad51 (parent: adce7e94-390d-4e7b-96de-a7b140b6e689) completed in 54.63s [successful 21/80]
+2026-06-08 20:35:27,426 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:41:18,144 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 6, 'diversity': 1}
+2026-06-08 20:41:18,151 - openevolve_sap.core.evolution_patch - INFO - Iteration 22: Program d58d1dc2-e846-4602-b9c4-beb54269ef50 (parent: 40419dbd-61b3-4f70-98be-9f4de87b4afa) completed in 350.66s [successful 22/80]
+2026-06-08 20:41:18,151 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.6667, gemma_score=0.0000, combined_score=2.6667, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:42:00,669 - openevolve_sap.core.evolution_patch - INFO - Iteration 23: Program 22880a74-93a3-42a6-8679-506b9ab85fdc (parent: 44355b2d-b2cf-413b-abed-d37aa43ee014) completed in 42.46s [successful 23/80]
+2026-06-08 20:42:00,670 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:46:08,880 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 2}
+2026-06-08 20:46:08,885 - openevolve_sap.core.evolution_patch - INFO - Iteration 24: Program f165e4d4-0539-47a6-bf1c-18212f02bf53 (parent: 5113728d-0d6e-414f-8e40-64ceca72ba61) completed in 248.18s [successful 24/80]
+2026-06-08 20:46:08,885 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:47:19,167 - openevolve_sap.core.evolution_patch - INFO - Iteration 25: Program 10031c00-3ec3-4b09-ba84-b15af8c3baac (parent: fdbc17cc-e40d-46ed-9718-86e0e1017b1c) completed in 70.26s [successful 25/80]
+2026-06-08 20:47:19,167 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:47:19,168 - openevolve_sap.core.evolution_patch - INFO - Checkpoint interval reached at successful iteration 25 (attempt 25)
+2026-06-08 20:47:19,174 - openevolve.database - INFO - Island Status:
+2026-06-08 20:47:19,175 - openevolve.database - INFO -  * Island 0: 25 programs, best=5.0000, avg=4.0667, diversity=2.80, gen=25 (best: 0183c838-3e40-4e00-b883-1828e7f77914)
+2026-06-08 20:47:19,176 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 20:47:19,176 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 20:47:19,176 - openevolve.database - INFO -    Island 3: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 20:47:19,352 - openevolve.database - INFO - Saved database with 26 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_25
+2026-06-08 20:47:19,357 - openevolve.controller - INFO - Saved best program at checkpoint 25 with metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 20:47:19,358 - openevolve.controller - INFO - Saved checkpoint at iteration 25 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_25
+2026-06-08 20:53:51,489 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 4, 'diversity': 9}
+2026-06-08 20:53:51,492 - openevolve_sap.core.evolution_patch - INFO - Iteration 26: Program b1adb608-40cf-445a-8a07-562b261c0415 (parent: 10031c00-3ec3-4b09-ba84-b15af8c3baac) completed in 391.15s [successful 26/80]
+2026-06-08 20:53:51,492 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:00:43,499 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 2, 'diversity': 7}
+2026-06-08 21:00:43,599 - openevolve.database - INFO - Island 0 MAP-Elites coverage reached 10.0% (10/100 cells)
+2026-06-08 21:00:43,731 - openevolve_sap.core.evolution_patch - INFO - Iteration 27: Program 7cd60a27-addb-4f1e-92a2-fb34eabcd797 (parent: 6fc0ad0c-7b50-45b8-a021-b25c27cb5344) completed in 411.66s [successful 27/80]
+2026-06-08 21:00:43,732 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=2.3333, gemma_score=0.0000, combined_score=2.3333, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:01:51,528 - openevolve_sap.core.evolution_patch - INFO - Iteration 28: Program 6f009653-b56b-4f92-aa7e-41e324667625 (parent: 37003e96-534e-4e86-8d1f-849f66b18c63) completed in 67.67s [successful 28/80]
+2026-06-08 21:01:51,528 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:05:30,968 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 5}
+2026-06-08 21:05:30,969 - openevolve_sap.core.evolution_patch - INFO - Iteration 29: Program 6699a91a-2ac5-4768-9e71-fd7b6fec559c (parent: b1adb608-40cf-445a-8a07-562b261c0415) completed in 219.42s [successful 29/80]
+2026-06-08 21:05:30,970 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=3.0000, gemma_score=0.0000, combined_score=3.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:09:46,046 - openevolve_sap.core.evolution_patch - INFO - Iteration 30: Program 7fe84d98-615b-4708-a655-d2232dd15044 (parent: 29ee02e6-8979-454b-b82e-8f5cefca6757) completed in 255.03s [successful 30/80]
+2026-06-08 21:09:46,047 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=3.0000, gemma_score=0.0000, combined_score=3.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:16:04,288 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 7, 'diversity': 0}
+2026-06-08 21:16:04,293 - openevolve_sap.core.evolution_patch - INFO - Iteration 31: Program dfce4d35-92c9-44c0-8eb5-8dd18ac6425d (parent: 40419dbd-61b3-4f70-98be-9f4de87b4afa) completed in 378.15s [successful 31/80]
+2026-06-08 21:16:04,293 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=3.0000, gemma_score=0.0000, combined_score=3.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:22:15,443 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 4, 'diversity': 4}
+2026-06-08 21:22:15,447 - openevolve_sap.core.evolution_patch - INFO - Iteration 32: Program c83d1cd8-ec1b-4a05-85e4-ddfbab3d18c1 (parent: 40419dbd-61b3-4f70-98be-9f4de87b4afa) completed in 371.09s [successful 32/80]
+2026-06-08 21:22:15,447 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:23:22,047 - openevolve_sap.core.evolution_patch - INFO - Iteration 33: Program ea97bfff-4014-42db-a322-15305632f9da (parent: 0183c838-3e40-4e00-b883-1828e7f77914) completed in 66.57s [successful 33/80]
+2026-06-08 21:23:22,047 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:24:21,657 - openevolve_sap.core.evolution_patch - INFO - Iteration 34: Program 48f9ddf9-b9ed-4d07-a52b-1a61d78a2766 (parent: 7f1f67b1-d9ec-4e25-86a6-398a7a23ad51) completed in 59.57s [successful 34/80]
+2026-06-08 21:24:21,657 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:28:50,044 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 1}
+2026-06-08 21:28:50,062 - openevolve_sap.core.evolution_patch - INFO - Iteration 35: Program fa8b6d3b-4067-4fbc-ba5c-50ce32b8eb97 (parent: 2b9acf04-4760-45ab-9694-584698e2e81a) completed in 268.22s [successful 35/80]
+2026-06-08 21:28:50,062 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:33:13,316 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 4, 'diversity': 2}
+2026-06-08 21:33:13,318 - openevolve_sap.core.evolution_patch - INFO - Iteration 36: Program 458cafa1-e472-45a6-a81d-d4b892cafa70 (parent: 22880a74-93a3-42a6-8679-506b9ab85fdc) completed in 263.12s [successful 36/80]
+2026-06-08 21:33:13,318 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:34:01,540 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 8, 'diversity': 1}
+2026-06-08 21:34:01,541 - openevolve_sap.core.evolution_patch - INFO - Iteration 37: Program 1e55241a-bbfd-4489-9448-aa10d0b7b7d4 (parent: 60cc9f38-bc6b-4532-9ea2-df6c6b7dbe82) completed in 48.12s [successful 37/80]
+2026-06-08 21:34:01,541 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:39:48,228 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 0, 'diversity': 9}
+2026-06-08 21:39:48,231 - openevolve_sap.core.evolution_patch - INFO - Iteration 38: Program 95880cf3-fd8a-4a2d-b127-b617049d6d4f (parent: ea97bfff-4014-42db-a322-15305632f9da) completed in 346.64s [successful 38/80]
+2026-06-08 21:39:48,232 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.3333, gemma_score=0.0000, combined_score=4.3333, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:43:25,445 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 4, 'diversity': 1}
+2026-06-08 21:43:25,446 - openevolve_sap.core.evolution_patch - INFO - Iteration 39: Program ec8774ed-cfbb-4728-a857-2337bd7c9803 (parent: 95880cf3-fd8a-4a2d-b127-b617049d6d4f) completed in 217.10s [successful 39/80]
+2026-06-08 21:43:25,446 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=1.0000, gemma_score=0.0000, combined_score=1.0000, num_eval_prompts=1.0000, eval_stage=1.0000, stage1_passed=0.0000
+2026-06-08 21:47:52,342 - openevolve.database - INFO - Island 0 MAP-Elites cell improved: {'complexity': 4, 'diversity': 1} (fitness: 1.000 -> 4.000)
+2026-06-08 21:47:52,345 - openevolve.database - INFO - Population size (41) exceeds limit (40), removing 1 programs
+2026-06-08 21:47:52,349 - openevolve.database - INFO - Population size after cleanup: 40
+2026-06-08 21:47:52,355 - openevolve_sap.core.evolution_patch - INFO - Iteration 40: Program caf4180d-be63-41a5-9c3e-ba4c9a7d84c4 (parent: 37003e96-534e-4e86-8d1f-849f66b18c63) completed in 266.63s [successful 40/80]
+2026-06-08 21:47:52,355 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:48:47,033 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 8, 'diversity': 0}
+2026-06-08 21:48:47,034 - openevolve.database - INFO - Population size (41) exceeds limit (40), removing 1 programs
+2026-06-08 21:48:47,034 - openevolve.database - INFO - Population size after cleanup: 40
+2026-06-08 21:48:47,036 - openevolve_sap.core.evolution_patch - INFO - Iteration 41: Program b35889e6-1f40-44ec-8c6a-4661ff0a0544 (parent: adce7e94-390d-4e7b-96de-a7b140b6e689) completed in 54.41s [successful 41/80]
+2026-06-08 21:48:47,036 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 21:53:34,743 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 3, 'diversity': 2}
+2026-06-08 21:53:34,743 - openevolve.database - INFO - Population size (41) exceeds limit (40), removing 1 programs
+2026-06-08 21:53:34,743 - openevolve.database - INFO - Population size after cleanup: 40
+2026-06-08 21:53:34,746 - openevolve_sap.core.evolution_patch - INFO - Iteration 42: Program 4ab80048-3fac-482f-bff8-0b7615f092d8 (parent: 6f009653-b56b-4f92-aa7e-41e324667625) completed in 287.66s [successful 42/80]
+2026-06-08 21:53:34,746 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.3333, gemma_score=0.0000, combined_score=4.3333, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 22:00:40,572 - openevolve.database - INFO - Population size (41) exceeds limit (40), removing 1 programs
+2026-06-08 22:00:40,574 - openevolve.database - INFO - Population size after cleanup: 40
+2026-06-08 22:00:40,575 - openevolve_sap.core.evolution_patch - INFO - Iteration 43: Program 731ac5c1-8d85-4b83-ae85-4a1062f5b6ac (parent: c83d1cd8-ec1b-4a05-85e4-ddfbab3d18c1) completed in 425.78s [successful 43/80]
+2026-06-08 22:00:40,575 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=4.0000, gemma_score=0.0000, combined_score=4.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 22:00:40,577 - openevolve_sap.core.evolution_patch - INFO - 🛑 Early stopping at successful iteration 43
+2026-06-08 22:00:40,579 - openevolve_sap.core.evolution_patch - INFO - ✅ Evolution completed - Early stopping triggered
+2026-06-08 22:00:40,585 - openevolve.controller - INFO - Evolution stopped due to early stopping - saving final checkpoint
+2026-06-08 22:00:40,587 - openevolve_sap.core.evolution_patch - INFO - SAP: saving final checkpoint at attempt 43 (43 successful cycles)
+2026-06-08 22:00:40,858 - openevolve.database - INFO - Saved database with 40 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_43
+2026-06-08 22:00:40,863 - openevolve.controller - INFO - Saved best program at checkpoint 43 with metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 22:00:40,863 - openevolve.controller - INFO - Saved checkpoint at iteration 43 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_43
+2026-06-08 22:01:12,529 - openevolve.process_parallel - INFO - Stopped process pool
+2026-06-08 22:01:12,537 - openevolve.controller - INFO - Using tracked best program: 0183c838-3e40-4e00-b883-1828e7f77914
+2026-06-08 22:01:12,538 - openevolve.controller - INFO - Evolution complete. Best program has metrics: alignment_score=5.0000, gemma_score=0.0000, combined_score=5.0000, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 22:01:12,539 - openevolve.controller - INFO - Saved best program to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program.py with program info to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program_info.json

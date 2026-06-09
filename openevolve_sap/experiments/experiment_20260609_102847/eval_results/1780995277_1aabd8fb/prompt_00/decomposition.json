@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction. The 5-finger human prior is strong and locks during global layout steps (0-2). To override this, establish the impossible geometry first with a bare hand to define the limb count, then transition to the target material (glove) once the structure is resolved.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers: one thumb and five additional fingers side-by-side. polydactyly, hexadactyly, 6 fingers clearly visible",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 finger stalls, six distinct separate finger tubes, hexadactyly, 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

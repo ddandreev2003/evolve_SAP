@@ -22,19 +22,28 @@ if str(PROJECT_ROOT) not in sys.path:
 from benchmarks.gpt_eval import evaluate_image_with_gpt
 from llm_interface.llm_SAP import LLM_SAP
 from openevolve_sap.exp_logging.experiment_logger import log_event
+from openevolve_sap import eval_cache
+from openevolve_sap.exp_logging.live_logger import clear_live_logger, get_live_logger
+from openevolve_sap.pipeline.eval_pipeline import run_pipelined_eval
+from openevolve_sap.render_queue import get_render_queue, shutdown_render_queue
 from openevolve_sap.sap_eval_settings import (
+    aggregate_alignment_scores,
     get_cleanup_every_n_prompts,
+    get_eval_seeds_for_profile,
+    get_eval_steps_for_profile,
     get_image_height,
     get_image_width,
-    get_num_inference_steps,
     get_physical_gpu_id,
     get_ram_limit_gb,
     get_cascade_stage1_threshold,
-    get_seeds_list,
+    get_primary_fitness_metric,
     get_vl_max_concurrent,
     get_worker_id,
+    keep_model_loaded,
     use_batch_sap,
     use_eval_pipeline_overlap,
+    use_gemma_judge,
+    use_pipeline_parallel_sap,
 )
 from run_SAP_flux import load_model, release_model
 
@@ -54,11 +63,43 @@ def _generation_lock_path() -> Path:
     return PROJECT_ROOT / "openevolve_sap" / f".generation.gpu{gpu}.lock"
 
 
+def _unload_model_to_cpu(model) -> None:
+    try:
+        if hasattr(model, "to"):
+            model.to("cpu")
+        for attr in ("transformer", "vae", "text_encoder", "text_encoder_2"):
+            component = getattr(model, attr, None)
+            if component is not None and hasattr(component, "to"):
+                component.to("cpu")
+    except Exception:
+        pass
+
+
+def release_cached_model() -> None:
+    """Drop evaluator + run_SAP_flux FLUX caches and free GPU memory."""
+    global _MODEL
+    shutdown_render_queue()
+    model = _MODEL
+    _MODEL = None
+    if model is not None:
+        _unload_model_to_cpu(model)
+        del model
+    release_model()
+    _cleanup_memory()
+
+
 def _maybe_release_model_after_eval() -> None:
-    """Free GPU memory in parent process after initial OpenEvolve evaluation."""
+    """Free GPU memory after eval unless keep_model_loaded is enabled."""
+    if keep_model_loaded():
+        return
     if os.getenv("SAP_RELEASE_MODEL_AFTER_EVAL", "0").strip() == "1":
-        release_model()
-        _cleanup_memory()
+        release_cached_model()
+
+
+def warmup_flux_model() -> None:
+    """Load FLUX into GPU memory (called once per worker process)."""
+    model = _get_model()
+    _status_print("warmup", f"FLUX loaded on GPU {get_physical_gpu_id()} (id={id(model)})")
 
 
 def _load_prompt_set():
@@ -92,6 +133,7 @@ def _load_template_context() -> dict:
 
 def _status_print(run_id: str, message: str):
     print(f"[openevolve_sap][{run_id}] {message}", flush=True)
+    get_live_logger(run_id).info(message)
 
 
 def _append_jsonl(path: Path, payload: dict):
@@ -374,6 +416,76 @@ def _gemma_judge(
     return max(1.0, min(5.0, score))
 
 
+def _decompose_one_prompt(
+    prompt: str,
+    api_key: str,
+    run_id: str,
+    status_path: Path,
+    local_i: int,
+    total: int,
+) -> dict | None:
+    _status_print(run_id, f"prompt {local_i + 1}/{total}: decompose")
+    try:
+        return LLM_SAP(prompt, llm="GPT", key=api_key)[0]
+    except Exception as e:
+        _append_jsonl(
+            status_path,
+            {
+                "event": "sap_parse_exception",
+                "run_id": run_id,
+                "prompt_index": local_i,
+                "prompt": prompt,
+                "error": str(e),
+                "timestamp": time.time(),
+            },
+        )
+        return None
+
+
+def _decompose_prompts_batch(
+    prompts: list[str],
+    api_key: str,
+    run_id: str,
+    status_path: Path,
+) -> dict[int, dict | None] | None:
+    """Batch SAP API; returns None if batch should fall back to per-prompt."""
+    if not use_batch_sap() or len(prompts) <= 1:
+        return None
+    _status_print(run_id, f"batch SAP decompose ({len(prompts)} prompts)")
+    try:
+        batch_results = LLM_SAP(list(prompts), llm="GPT", key=api_key)
+        if batch_results and len(batch_results) >= len(prompts):
+            out: dict[int, dict | None] = {}
+            ok = True
+            for i, sap in enumerate(batch_results[: len(prompts)]):
+                if sap is None:
+                    ok = False
+                    break
+                out[i] = sap
+            if ok:
+                _append_jsonl(
+                    status_path,
+                    {
+                        "event": "sap_batch_ok",
+                        "run_id": run_id,
+                        "num_prompts": len(prompts),
+                        "timestamp": time.time(),
+                    },
+                )
+                return out
+    except Exception as e:
+        _append_jsonl(
+            status_path,
+            {
+                "event": "sap_batch_failed",
+                "run_id": run_id,
+                "error": str(e),
+                "timestamp": time.time(),
+            },
+        )
+    return None
+
+
 def _decompose_prompts(
     prompts: list[str],
     api_key: str,
@@ -385,57 +497,44 @@ def _decompose_prompts(
     if not prompts:
         return out
 
-    if use_batch_sap() and len(prompts) > 1:
-        _status_print(run_id, f"batch SAP decompose ({len(prompts)} prompts)")
-        try:
-            batch_results = LLM_SAP(list(prompts), llm="GPT", key=api_key)
-            if batch_results and len(batch_results) >= len(prompts):
-                ok = True
-                for i, sap in enumerate(batch_results[: len(prompts)]):
-                    if sap is None:
-                        ok = False
-                        break
-                    out[i] = sap
-                if ok:
-                    _append_jsonl(
-                        status_path,
-                        {
-                            "event": "sap_batch_ok",
-                            "run_id": run_id,
-                            "num_prompts": len(prompts),
-                            "timestamp": time.time(),
-                        },
-                    )
-                    return out
-        except Exception as e:
-            _append_jsonl(
-                status_path,
-                {
-                    "event": "sap_batch_failed",
-                    "run_id": run_id,
-                    "error": str(e),
-                    "timestamp": time.time(),
-                },
-            )
+    batch = _decompose_prompts_batch(prompts, api_key, run_id, status_path)
+    if batch is not None:
+        return batch
 
     for i, prompt in enumerate(prompts):
-        _status_print(run_id, f"prompt {i + 1}/{len(prompts)}: decompose (fallback)")
-        try:
-            sap = LLM_SAP(prompt, llm="GPT", key=api_key)[0]
-            out[i] = sap
-        except Exception as e:
-            _append_jsonl(
-                status_path,
-                {
-                    "event": "sap_parse_exception",
-                    "run_id": run_id,
-                    "prompt_index": i,
-                    "prompt": prompt,
-                    "error": str(e),
-                    "timestamp": time.time(),
-                },
-            )
+        out[i] = _decompose_one_prompt(prompt, api_key, run_id, status_path, i, len(prompts))
     return out
+
+
+def _make_render_fn(model):
+    """Bind FLUX model for serial render-queue worker."""
+
+    def _render(
+        idx: int,
+        prompt: str,
+        sap_out: dict,
+        prompt_dir: Path,
+        run_id: str,
+        status_path: Path,
+        record: dict,
+        *,
+        seeds: list[int] | None = None,
+        num_inference_steps: int | None = None,
+    ) -> list[Path]:
+        return _render_flux_image(
+            model,
+            idx,
+            prompt,
+            sap_out,
+            prompt_dir,
+            run_id,
+            status_path,
+            record,
+            seeds=seeds,
+            num_inference_steps=num_inference_steps,
+        )
+
+    return _render
 
 
 def _render_flux_image(
@@ -447,14 +546,18 @@ def _render_flux_image(
     run_id: str,
     status_path: Path,
     record: dict,
+    *,
+    seeds: list[int] | None = None,
+    num_inference_steps: int | None = None,
 ) -> list[Path]:
     """Run FLUX for one prompt; return saved image paths (one per seed) or empty list."""
-    seeds = get_seeds_list()
+    seeds = seeds if seeds is not None else get_eval_seeds_for_profile("full")
+    steps = num_inference_steps if num_inference_steps is not None else get_eval_steps_for_profile("full")
     generators = [torch.Generator().manual_seed(seed) for seed in seeds]
     params = {
         "height": get_image_height(),
         "width": get_image_width(),
-        "num_inference_steps": get_num_inference_steps(),
+        "num_inference_steps": steps,
         "generator": generators,
         "num_images_per_prompt": len(seeds),
         "guidance_scale": 3.5,
@@ -611,7 +714,7 @@ def _apply_vl_score(
         )
     if not alignments:
         return None
-    alignment_value = sum(alignments) / len(alignments)
+    alignment_value = aggregate_alignment_scores(alignments)
     aggregate_score = {
         "alignment score": alignment_value,
         "per_seed": per_seed_scores,
@@ -684,9 +787,12 @@ def _run_evaluation_core(
     *,
     visualization_only: bool = False,
     prompt_indices: list[int] | None = None,
-    enable_gemma: bool = True,
+    enable_gemma: bool | None = None,
+    eval_profile: str = "full",
 ) -> EvaluationResult:
     """Shared eval loop: batch SAP, pipeline VL overlap, optional subset of prompts."""
+    if enable_gemma is None:
+        enable_gemma = use_gemma_judge()
     api_key = os.getenv("ROUTERAI_API_KEY", "")
     run_id = f"{int(time.time())}_{uuid.uuid4().hex[:8]}"
     run_dir = RESULTS_DIR / run_id
@@ -720,6 +826,32 @@ def _run_evaluation_core(
             metrics={"alignment_score": 0.0, "gemma_score": 0.0, "combined_score": 0.0},
             artifacts={"error": f"extract_system_prompt_failed: {e}", "traceback": traceback.format_exc()},
         )
+
+    eval_seeds = get_eval_seeds_for_profile(eval_profile)
+    eval_steps = get_eval_steps_for_profile(eval_profile)
+    cached = eval_cache.lookup(
+        system_prompt,
+        eval_profile=eval_profile,
+        prompt_indices=prompt_indices,
+        enable_gemma=enable_gemma,
+        num_inference_steps=eval_steps,
+        seeds=eval_seeds,
+        image_height=get_image_height(),
+        image_width=get_image_width(),
+    )
+    if cached is not None:
+        _status_print(run_id, f"cache hit (profile={eval_profile})")
+        _append_jsonl(
+            status_path,
+            {
+                "event": "cache_hit",
+                "run_id": run_id,
+                "eval_profile": eval_profile,
+                "cache_key": cached.artifacts.get("cache_key"),
+                "timestamp": time.time(),
+            },
+        )
+        return cached
 
     all_prompts = _load_prompt_set()
     if prompt_indices is not None:
@@ -763,138 +895,87 @@ def _run_evaluation_core(
                 "num_prompts": len(prompts),
                 "batch_sap": use_batch_sap(),
                 "pipeline_overlap": use_eval_pipeline_overlap(),
-                "seeds": get_seeds_list(),
-                "num_inference_steps": get_num_inference_steps(),
+                "eval_profile": eval_profile,
+                "seeds": eval_seeds,
+                "num_inference_steps": eval_steps,
                 "timestamp": time.time(),
             },
         )
         _check_ram_limit(run_id, status_path, "start_loop")
 
-        sap_by_local = _decompose_prompts(prompts, api_key, run_id, status_path)
-        pending_vl: Future | None = None
-        pending_vl_ctx: dict | None = None
-        vl_workers = get_vl_max_concurrent()
-        pipeline = use_eval_pipeline_overlap() and not visualization_only
+        live = get_live_logger(run_id)
+        live.stage(
+            "eval",
+            f"{mode_label} started",
+            extra={
+                "prompts": len(prompts),
+                "pipeline": use_eval_pipeline_overlap(),
+                "parallel_sap": use_pipeline_parallel_sap(),
+            },
+        )
+        pipeline = use_eval_pipeline_overlap()
         gemma_future: Future | None = None
-        deferred_vl: list[dict] = []
+        render_queue = get_render_queue()
+        render_fn = _make_render_fn(model)
 
-        with ThreadPoolExecutor(max_workers=max(vl_workers, 1)) as vl_pool:
-            for local_i, prompt in enumerate(prompts):
-                global_idx = index_map[local_i]
-                sap_out = sap_by_local.get(local_i)
-                if sap_out is None:
-                    _append_jsonl(
-                        status_path,
-                        {
-                            "event": "sap_parse_failed",
-                            "run_id": run_id,
-                            "prompt_index": global_idx,
-                            "prompt": prompt,
-                            "timestamp": time.time(),
-                        },
-                    )
-                    continue
+        def _collect_vl_pipelined(
+            future: Future,
+            idx: int,
+            prompt: str,
+            prompt_dir: Path,
+            decomp_path: Path,
+            *,
+            record: dict,
+            alignments: list[float],
+            score_records: list[dict],
+        ) -> None:
+            _collect_vl_future(
+                future,
+                idx,
+                prompt,
+                prompt_dir,
+                decomp_path,
+                run_id,
+                status_path,
+                record,
+                alignments,
+                score_records,
+            )
 
-                sampled_outputs.append(sap_out)
-                prompt_dir = _prompt_dir(run_dir, global_idx)
-                decomp_path = _save_decomposition(prompt_dir, prompt, sap_out)
-                record = {
-                    "prompt_index": global_idx,
-                    "original_prompt": prompt,
-                    "prompt_dir": str(prompt_dir),
-                    "decomposition_path": str(decomp_path),
-                    "images": [],
-                    "score": None,
-                    "alignment_score": None,
-                }
-                prompt_records.append(record)
-                _append_jsonl(
-                    status_path,
-                    {
-                        "event": "decomposition_saved",
-                        "run_id": run_id,
-                        "prompt_index": global_idx,
-                        "prompt": prompt,
-                        "decomposition_path": str(decomp_path),
-                        "prompts_list": sap_out.get("prompts_list", []),
-                        "switch_prompts_steps": sap_out.get("switch_prompts_steps", []),
-                        "timestamp": time.time(),
-                    },
-                )
-
-                if pipeline and pending_vl is not None and pending_vl_ctx is not None:
-                    _collect_vl_future(
-                        pending_vl,
-                        pending_vl_ctx["idx"],
-                        pending_vl_ctx["prompt"],
-                        pending_vl_ctx["prompt_dir"],
-                        pending_vl_ctx["decomp_path"],
-                        run_id,
-                        status_path,
-                        pending_vl_ctx["record"],
-                        alignments,
-                        score_records,
-                    )
-                    pending_vl = None
-                    pending_vl_ctx = None
-
-                image_paths = _render_flux_image(
-                    model, global_idx, prompt, sap_out, prompt_dir, run_id, status_path, record
-                )
-                _maybe_cleanup_after_prompt(len(prompts), local_i)
-
-                if not image_paths:
-                    continue
-
-                saved_images.append(
-                    {
-                        "prompt_index": global_idx,
-                        "prompt": prompt,
-                        "prompt_dir": str(prompt_dir),
-                        "decomposition_path": str(decomp_path),
-                        "image_path": str(image_paths[0]),
-                        "image_paths": [str(p) for p in image_paths],
-                        "images": list(record["images"]),
-                    }
-                )
-
-                if visualization_only:
-                    _status_print(run_id, f"prompt {local_i + 1}/{len(prompts)}: image saved")
-                    continue
-
-                vl_ctx = {
-                    "idx": global_idx,
-                    "prompt": prompt,
-                    "prompt_dir": prompt_dir,
-                    "decomp_path": decomp_path,
-                    "record": record,
-                    "image_paths": image_paths,
-                }
-
-                if pipeline:
-                    pending_vl = vl_pool.submit(
-                        _apply_vl_score,
-                        global_idx,
-                        prompt,
-                        image_paths,
-                        prompt_dir,
-                        decomp_path,
-                        api_key,
-                        run_id,
-                        status_path,
-                        record,
-                    )
-                    pending_vl_ctx = vl_ctx
-                else:
-                    deferred_vl.append(vl_ctx)
-
-                if (
-                    enable_gemma
-                    and not visualization_only
-                    and local_i == len(prompts) - 1
-                    and sampled_outputs
-                ):
-                    gemma_future = vl_pool.submit(
+        if pipeline:
+            (
+                prompt_records,
+                sampled_outputs,
+                alignments,
+                score_records,
+                saved_images,
+            ) = run_pipelined_eval(
+                prompts=prompts,
+                index_map=index_map,
+                run_id=run_id,
+                status_path=status_path,
+                run_dir=run_dir,
+                api_key=api_key,
+                eval_seeds=eval_seeds,
+                eval_steps=eval_steps,
+                visualization_only=visualization_only,
+                live=live,
+                render_queue=render_queue,
+                decompose_one=lambda li, p: _decompose_one_prompt(
+                    p, api_key, run_id, status_path, li, len(prompts)
+                ),
+                decompose_batch=lambda ps: _decompose_prompts_batch(ps, api_key, run_id, status_path),
+                save_decomposition=_save_decomposition,
+                prompt_dir_fn=lambda rd, gi: _prompt_dir(rd, gi),
+                render_fn=render_fn,
+                score_fn=_apply_vl_score,
+                collect_vl=_collect_vl_pipelined,
+                append_jsonl=_append_jsonl,
+                maybe_cleanup=lambda total, li: _maybe_cleanup_after_prompt(total, li),
+            )
+            if enable_gemma and not visualization_only and sampled_outputs:
+                with ThreadPoolExecutor(max_workers=1) as gemma_pool:
+                    gemma_future = gemma_pool.submit(
                         _gemma_judge,
                         system_prompt,
                         sampled_outputs,
@@ -903,70 +984,150 @@ def _run_evaluation_core(
                         run_id,
                         status_path,
                     )
+        else:
+            sap_by_local = _decompose_prompts(prompts, api_key, run_id, status_path)
+            deferred_vl: list[dict] = []
+            vl_workers = get_vl_max_concurrent()
 
-            if pipeline and pending_vl is not None and pending_vl_ctx is not None:
-                _collect_vl_future(
-                    pending_vl,
-                    pending_vl_ctx["idx"],
-                    pending_vl_ctx["prompt"],
-                    pending_vl_ctx["prompt_dir"],
-                    pending_vl_ctx["decomp_path"],
-                    run_id,
-                    status_path,
-                    pending_vl_ctx["record"],
-                    alignments,
-                    score_records,
-                )
-
-            if not pipeline and not visualization_only and deferred_vl:
-                futures = []
-                for ctx in deferred_vl:
-                    futures.append(
-                        (
-                            ctx,
-                            vl_pool.submit(
-                                _apply_vl_score,
-                                ctx["idx"],
-                                ctx["prompt"],
-                                ctx["image_paths"],
-                                ctx["prompt_dir"],
-                                ctx["decomp_path"],
-                                api_key,
-                                run_id,
-                                status_path,
-                                ctx["record"],
-                            ),
-                        )
-                    )
-                for ctx, fut in futures:
-                    try:
-                        alignment_value = fut.result()
-                    except Exception as e:
+            with ThreadPoolExecutor(max_workers=max(vl_workers, 1)) as vl_pool:
+                for local_i, prompt in enumerate(prompts):
+                    global_idx = index_map[local_i]
+                    sap_out = sap_by_local.get(local_i)
+                    if sap_out is None:
                         _append_jsonl(
                             status_path,
                             {
-                                "event": "score_failed",
+                                "event": "sap_parse_failed",
                                 "run_id": run_id,
-                                "prompt_index": ctx["idx"],
-                                "error": str(e),
+                                "prompt_index": global_idx,
+                                "prompt": prompt,
                                 "timestamp": time.time(),
                             },
                         )
                         continue
-                    if alignment_value is not None:
-                        alignments.append(alignment_value)
-                        score_records.append(
-                            {
-                                "prompt_index": ctx["idx"],
-                                "prompt": ctx["prompt"],
-                                "prompt_dir": str(ctx["prompt_dir"]),
-                                "decomposition_path": str(ctx["decomp_path"]),
-                                "image_path": str(ctx["image_paths"][0]),
-                                "image_paths": [str(p) for p in ctx["image_paths"]],
-                                "score_path": ctx["record"].get("score_path"),
-                                "score": ctx["record"].get("score"),
-                            }
+
+                    sampled_outputs.append(sap_out)
+                    prompt_dir = _prompt_dir(run_dir, global_idx)
+                    decomp_path = _save_decomposition(prompt_dir, prompt, sap_out)
+                    record = {
+                        "prompt_index": global_idx,
+                        "original_prompt": prompt,
+                        "prompt_dir": str(prompt_dir),
+                        "decomposition_path": str(decomp_path),
+                        "images": [],
+                        "score": None,
+                        "alignment_score": None,
+                    }
+                    prompt_records.append(record)
+
+                    image_paths = render_fn(
+                        global_idx,
+                        prompt,
+                        sap_out,
+                        prompt_dir,
+                        run_id,
+                        status_path,
+                        record,
+                        seeds=eval_seeds,
+                        num_inference_steps=eval_steps,
+                    )
+                    _maybe_cleanup_after_prompt(len(prompts), local_i)
+
+                    if not image_paths:
+                        continue
+
+                    saved_images.append(
+                        {
+                            "prompt_index": global_idx,
+                            "prompt": prompt,
+                            "prompt_dir": str(prompt_dir),
+                            "decomposition_path": str(decomp_path),
+                            "image_path": str(image_paths[0]),
+                            "image_paths": [str(p) for p in image_paths],
+                            "images": list(record["images"]),
+                        }
+                    )
+
+                    if visualization_only:
+                        _status_print(run_id, f"prompt {local_i + 1}/{len(prompts)}: image saved")
+                        continue
+
+                    deferred_vl.append(
+                        {
+                            "idx": global_idx,
+                            "prompt": prompt,
+                            "prompt_dir": prompt_dir,
+                            "decomp_path": decomp_path,
+                            "record": record,
+                            "image_paths": image_paths,
+                        }
+                    )
+
+                    if (
+                        enable_gemma
+                        and not visualization_only
+                        and local_i == len(prompts) - 1
+                        and sampled_outputs
+                    ):
+                        gemma_future = vl_pool.submit(
+                            _gemma_judge,
+                            system_prompt,
+                            sampled_outputs,
+                            template_context,
+                            api_key,
+                            run_id,
+                            status_path,
                         )
+
+                if not visualization_only and deferred_vl:
+                    futures = []
+                    for ctx in deferred_vl:
+                        futures.append(
+                            (
+                                ctx,
+                                vl_pool.submit(
+                                    _apply_vl_score,
+                                    ctx["idx"],
+                                    ctx["prompt"],
+                                    ctx["image_paths"],
+                                    ctx["prompt_dir"],
+                                    ctx["decomp_path"],
+                                    api_key,
+                                    run_id,
+                                    status_path,
+                                    ctx["record"],
+                                ),
+                            )
+                        )
+                    for ctx, fut in futures:
+                        try:
+                            alignment_value = fut.result()
+                        except Exception as e:
+                            _append_jsonl(
+                                status_path,
+                                {
+                                    "event": "score_failed",
+                                    "run_id": run_id,
+                                    "prompt_index": ctx["idx"],
+                                    "error": str(e),
+                                    "timestamp": time.time(),
+                                },
+                            )
+                            continue
+                        if alignment_value is not None:
+                            alignments.append(alignment_value)
+                            score_records.append(
+                                {
+                                    "prompt_index": ctx["idx"],
+                                    "prompt": ctx["prompt"],
+                                    "prompt_dir": str(ctx["prompt_dir"]),
+                                    "decomposition_path": str(ctx["decomp_path"]),
+                                    "image_path": str(ctx["image_paths"][0]),
+                                    "image_paths": [str(p) for p in ctx["image_paths"]],
+                                    "score_path": ctx["record"].get("score_path"),
+                                    "score": ctx["record"].get("score"),
+                                }
+                            )
 
     except Exception as e:
         _final_error(run_id, status_path, "evaluation_failed", str(e), exc=e)
@@ -990,6 +1151,7 @@ def _run_evaluation_core(
                 os.environ.pop("SAP_SYSTEM_PROMPT_PATH", None)
         if temp_system_prompt_path and os.path.exists(temp_system_prompt_path):
             os.unlink(temp_system_prompt_path)
+        clear_live_logger(run_id)
         _maybe_release_model_after_eval()
 
     if visualization_only:
@@ -1046,8 +1208,8 @@ def _run_evaluation_core(
             },
         )
 
-    alignment_score = sum(alignments) / len(alignments)
-    gemma_score = 1.0
+    alignment_score = aggregate_alignment_scores(alignments)
+    gemma_score = 0.0
     if enable_gemma:
         _status_print(run_id, "running gemma judge")
         try:
@@ -1068,10 +1230,9 @@ def _run_evaluation_core(
                 metrics={"alignment_score": 0.0, "gemma_score": 0.0, "combined_score": 0.0},
                 artifacts={"error": f"gemma_judge_failed: {e}", "traceback": traceback.format_exc()},
             )
-    else:
-        gemma_score = 5.0
 
-    combined_score = 0.8 * (alignment_score / 5.0) + 0.2 * (gemma_score / 5.0)
+    # OpenEvolve ranks by combined_score; primary fitness is VL alignment (1–5).
+    combined_score = float(alignment_score)
     manifest_path = _write_run_manifest(
         run_dir,
         run_id,
@@ -1112,7 +1273,7 @@ def _run_evaluation_core(
             "num_eval_prompts": len(alignments),
         },
     )
-    return EvaluationResult(
+    result = EvaluationResult(
         metrics={
             "alignment_score": float(alignment_score),
             "gemma_score": float(gemma_score),
@@ -1121,14 +1282,27 @@ def _run_evaluation_core(
         },
         artifacts={
             "alignment_values": alignments,
-            "sampled_outputs": sampled_outputs,
-            "prompt_records": prompt_records,
             "score_records": score_records,
+            "num_sampled_outputs": len(sampled_outputs),
+            "num_prompt_records": len(prompt_records),
             "score_records_path": str(status_path),
             "manifest_path": str(manifest_path),
             "template_context_files": sorted(template_context.keys()),
+            "eval_profile": eval_profile,
         },
     )
+    eval_cache.store(
+        system_prompt,
+        result,
+        eval_profile=eval_profile,
+        prompt_indices=prompt_indices,
+        enable_gemma=enable_gemma,
+        num_inference_steps=eval_steps,
+        seeds=eval_seeds,
+        image_height=get_image_height(),
+        image_width=get_image_width(),
+    )
+    return result
 
 
 def find_latest_checkpoint_program(output_dir: Path | None = None) -> Path:
@@ -1155,21 +1329,25 @@ def evaluate(program_path: str, visualization_only: bool = False):
         program_path,
         visualization_only=visualization_only,
         prompt_indices=None,
-        enable_gemma=True,
+        eval_profile="full",
     )
 
 
 def evaluate_stage1(program_path: str):
-    """Cascade stage 1: full SAP+FLUX+VL on first benchmark prompt only."""
+    """Cascade stage 1: fast SAP+FLUX+VL on first benchmark prompt only."""
     result = _run_evaluation_core(
         program_path,
         visualization_only=False,
         prompt_indices=[0],
         enable_gemma=False,
+        eval_profile="stage1",
     )
     metrics = dict(result.metrics or {})
     metrics["eval_stage"] = 1.0
-    metrics["stage1_passed"] = float(metrics.get("combined_score", 0.0) >= get_cascade_stage1_threshold())
+    metrics["stage1_passed"] = float(
+        metrics.get(get_primary_fitness_metric(), metrics.get("alignment_score", 0.0))
+        >= get_cascade_stage1_threshold()
+    )
     artifacts = dict(result.artifacts or {})
     artifacts["cascade_stage"] = "stage1"
     return EvaluationResult(metrics=metrics, artifacts=artifacts)
@@ -1181,7 +1359,7 @@ def evaluate_stage2(program_path: str):
         program_path,
         visualization_only=False,
         prompt_indices=None,
-        enable_gemma=True,
+        eval_profile="stage2",
     )
     metrics = dict(result.metrics or {})
     metrics["eval_stage"] = 2.0

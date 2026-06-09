@@ -1,0 +1,17 @@
+{
+  "alignment score": 1.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929070_aea4a3f0/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a standard bouquet of flowers placed upright in a vase (stems submerged in water, blooms facing upward). The prompt explicitly requires the bouquet to be \"upside down,\" which would necessitate stems pointing upward and blooms submerged or inverted in the vase. This critical element of the prompt is entirely absent—the arrangement is conventional and directly contradicts the described scenario. No visual cues suggest inversion, symbolic or literal, making the semantic alignment completely non-existent.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity photograph with no visible rendering artifacts. Lighting is natural and consistent, textures (petals, leaves, glass, wood) are realistic and detailed, and perspective is coherent. The bouquet, vase, and background elements are sharply defined, with no distortions, warped geometry, or implausible blending. All components (stems, flowers, foliage) connect naturally, and the composition is visually balanced. The image is clean, realistic, and fully coherent."
+      }
+    }
+  ],
+  "num_seeds_scored": 1
+}

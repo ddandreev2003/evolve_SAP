@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A glove typically implies five fingers based on anatomical priors. Starting with the base object allows the model to stabilize the shape before altering the finger count. An intermediate step with a vague descriptor like 'extra digits' eases the topological transition before enforcing the specific count of six, preventing structural collapse.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with extra digits",
+    "A white glove has 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

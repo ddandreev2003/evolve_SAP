@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The prompt requires altering the fundamental geometry of the hand (hexadactyly). Since skeletal structure locks during the initial layout phase (steps 0-2), the extra digit count must be established in the first prompt before applying the glove material and texture in the second prompt.",
+  "prompts_list": [
+    "A human hand with six fingers, hexadactyly, six distinct digits spread out",
+    "A white glove covering a hand with six fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

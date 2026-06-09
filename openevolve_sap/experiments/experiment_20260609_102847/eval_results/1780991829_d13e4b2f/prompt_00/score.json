@@ -1,0 +1,42 @@
+{
+  "alignment score": 2.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780991829_d13e4b2f/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "[finger_count=5] The prompt specifies a white glove with 6 fingers, but the image shows a standard 5-fingered glove. Since the finger count is 5 (a standard hand), alignment must be 2 or lower per the rules. The glove is white and visible, but the critical attribute (6 fingers) is incorrect, so the score is 2.",
+        "quality score": 5,
+        "quality explanation": "The image is clean and realistic with no visible rendering artifacts. The glove’s anatomy is well-formed, lighting and texture are consistent, and all elements (fingers, palm, wrist) connect naturally without distortion or merging. The visual presentation is fully coherent and free of flaws.",
+        "finger count": 5
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780991829_d13e4b2f/prompt_00/image_01.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "[finger_count=6] The image clearly shows a white glove with exactly 6 extended digits (including the thumb), fulfilling the prompt's requirement. The glove is prominently displayed and its color and finger count are unambiguous, meeting the criteria for a score of 5.",
+        "quality score": 5,
+        "quality explanation": "The image is clean and realistic, with smooth textures, consistent lighting, and anatomically coherent fingers. There are no visible artifacts, distortions, or broken elements, making it fully visually coherent.",
+        "finger count": 6
+      }
+    },
+    {
+      "image_index": 2,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780991829_d13e4b2f/prompt_00/image_02.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "[finger_count=5] The image shows a white glove, satisfying the color requirement, but it has 5 fingers (including the thumb) instead of the required 6. Since the finger count does not match the prompt's specification, alignment cannot exceed 2 per the mandatory rules. The glove is clearly visible but fails the core numerical requirement, resulting in a score of 2 for significant misrepresentation of a key element.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove’s texture, lighting, and perspective are consistent, and all elements (fingers, thumb, wrist) are anatomically correct and well-formed without distortions or artifacts. The rendering is professional and visually flawless.",
+        "finger count": 5
+      }
+    }
+  ],
+  "num_seeds_scored": 3
+}

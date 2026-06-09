@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves inherently possess five fingers, creating a topological contradiction with the requested six. To prevent the model from reverting to the common pentadactyl template, the prompt starts with a neutral description of the glove's base structure before switching during the Shape phase to explicitly define the anomalous count and prevent auto-correction.",
+  "prompts_list": [
+    "A white leather glove resting on a smooth table surface",
+    "A white glove with six distinct fingers fully extended"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

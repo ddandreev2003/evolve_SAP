@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Starting with a normal vase locks upright geometry. An inverted vase proxy ensures the spatial orientation persists before adding flowers. Using three steps separates layout, structural inversion, and final identity filling.",
+  "prompts_list": [
+    "A clear glass vase sitting on a table",
+    "A clear glass vase turned upside down on a table",
+    "A bouquet of flowers inside the upside down vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

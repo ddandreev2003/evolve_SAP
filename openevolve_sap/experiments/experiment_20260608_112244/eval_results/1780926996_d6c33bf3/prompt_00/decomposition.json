@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "This prompt presents a structural contradiction where the expected object orientation (flowers up, stems down) is inverted. Following Strategy B, the first sub-prompt avoids the semantic bias of the word \"bouquet\" by explicitly describing the anomalous physical geometry (stems up, heads down) during the critical structural phase (Steps 0-4). This ensures the rare layout is locked before the second prompt refines the identity and texture without reverting to standard priors.",
+  "prompts_list": [
+    "Green flower stems extending straight up into the air out of a vase, with blossoms hanging down near the rim",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting strategy. Shadows physically align with light sources, creating a geometric contradiction here. To resolve this, treat the shadow as a flat, painted silhouette facing the opposite way initially to bypass physics constraints regarding light consistency. Switch at step 3 (end of layout lock, beginning of shapes) before lighting details reinforce the original light source alignment.",
+  "prompts_list": [
+    "A realistic image of a cat sitting on the pavement facing left, casting a standard shadow to the right.",
+    "A cat facing left, but its cast shadow is a black silhouette painted on the ground facing the opposite direction, pointing right."
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

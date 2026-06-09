@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction. The model's priors strongly link cats and their shadows. Strategy A is required: describing the shadow as a separate physical object (painted silhouette) initially forces the geometry, overriding the gravity/light assumption before resolving into the contradictory cast shadow in the second prompt.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground, a distinct, solid black cat-shaped silhouette is painted on the floor facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

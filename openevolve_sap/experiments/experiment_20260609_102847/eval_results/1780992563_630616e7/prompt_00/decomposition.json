@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction. The 5-finger prior is extremely strong for gloves and hands. We must explicitly enumerate the anatomy (1 thumb + 5 additional fingers = 6 digits) and force a wide spread to prevent the model from merging digits into the standard 5. Starting with a mutant hand forces the weird geometry before refining to the glove texture.",
+  "prompts_list": [
+    "A mutant bare hand with palm facing forward, fingers spread extremely wide apart. The hand has exactly 6 digits: one thumb and five additional fingers side-by-side. Polydactyly, hexadactyly, 6 distinct separate digits, 6 fingers clearly visible, not a normal hand",
+    "A white glove with palm facing forward, fingers spread extremely wide apart. The glove has exactly 6 digits: one thumb and five additional finger stalls side-by-side. Hexadactyly, 6 distinct separate finger stalls, 6 fingers, not a normal glove"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

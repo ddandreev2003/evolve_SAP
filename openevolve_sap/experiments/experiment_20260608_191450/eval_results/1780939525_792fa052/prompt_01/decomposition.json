@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. Finger count is a geometric constraint locked in the early stages (0-2). By establishing 6 digits on a bare hand first, the layout is fixed before applying the white glove material texture, preventing the model from reverting to 5 fingers.",
+  "prompts_list": [
+    "A hand with 6 fingers, hexadactyly, 6 distinct digits spread out",
+    "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a structural attribute locked during the early layout phase (steps 0-2). Starting with a normal glove would enforce five digits. Instead, establish the hexadactyl anatomy first without the material, then apply the glove appearance in the second stage to preserve the unusual digit count.",
+  "prompts_list": [
+    "A hand with 6 fingers, hexadactyly, 6 distinct digits spread out",
+    "A white glove covering a hand with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

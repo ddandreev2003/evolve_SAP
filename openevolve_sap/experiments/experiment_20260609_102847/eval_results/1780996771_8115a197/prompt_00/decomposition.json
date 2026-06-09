@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The 5-finger prior is extremely strong for gloves. To break it, start with a structural proxy that emphasizes the layout of 6 distinct digits, then transition to the glove material once geometry is locked early.",
+  "prompts_list": [
+    "A hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, six distinct separate digits, hexadactyly",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, six distinct separate finger stalls, hexadactyly"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

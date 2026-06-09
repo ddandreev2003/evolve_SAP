@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "This is a lighting contradiction. Strategy A applies here: establish the scene with neutral lighting rules first to fix the cat's layout and pose. Once geometry is solid, explicitly enforce the physically impossible shadow direction in the final step.",
+  "prompts_list": [
+    "A cat standing in bright sunlight",
+    "A cat standing in bright sunlight casting a shadow in the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

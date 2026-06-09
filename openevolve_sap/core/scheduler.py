@@ -17,13 +17,19 @@ os.chdir(PROJECT_ROOT)
 
 import torch
 
+from openevolve_sap.core.api_health import check_routerai_api
 from openevolve_sap.core.checkpoint import patch_controller_checkpoints
 from openevolve_sap.core.evolution_patch import install_evolution_patch
 from openevolve_sap.core.gpu_worker import install_gpu_worker_patch
 from openevolve_sap.exp_logging.experiment_logger import ExperimentLogger
 from openevolve_sap.exp_logging.gpu_monitor import GPUMonitor
 from openevolve_sap.export_utils import extract_system_prompt_from_program
-from openevolve_sap.sap_eval_settings import get_ram_limit_gb, system_ram_gb
+from openevolve_sap.sap_eval_settings import (
+    get_ram_limit_gb,
+    is_single_gpu_mode,
+    system_ram_gb,
+    use_cascade_eval,
+)
 
 EVOLUTION_META_PROMPT_PATH = PROJECT_ROOT / "openevolve_sap" / "prompts" / "evolution_system_message.md"
 
@@ -91,14 +97,32 @@ def prepare_env(
     env["SAP_CONFIG_PATH"] = str(config_path)
     env["SAP_EVOLUTION_RESULTS_DIR"] = str(experiment_dir / "eval_results")
     env["SAP_RAM_LIMIT_GB"] = str(ram_limit_gb)
-    env["SAP_NUM_INFERENCE_STEPS"] = env.get("SAP_NUM_INFERENCE_STEPS", "30")
-    env["SAP_SEEDS_LIST"] = env.get("SAP_SEEDS_LIST", "30498,30499")
+    env.setdefault("SAP_NUM_INFERENCE_STEPS", "20")
+    env.setdefault("SAP_STAGE1_NUM_INFERENCE_STEPS", "15")
+    env.setdefault("SAP_SEEDS_LIST", "30498")
+    env.setdefault("SAP_VL_MAX_TOKENS", "1024")
+    env.setdefault("SAP_CLEANUP_EVERY_N_PROMPTS", "3")
+    env.setdefault("SAP_CASCADE_EVAL", "1")
+    env.setdefault("SAP_EVAL_CACHE", "1")
+    env.setdefault("SAP_ENABLE_GEMMA_JUDGE", "0")
     env["SAP_IMAGE_HEIGHT"] = env.get("SAP_IMAGE_HEIGHT", "512")
     env["SAP_IMAGE_WIDTH"] = env.get("SAP_IMAGE_WIDTH", "512")
     env["SAP_LOG_LEVEL"] = log_level
     env["SAP_ENABLE_GPU_PATCH"] = "1"
-    env["SAP_RELEASE_MODEL_AFTER_EVAL"] = "1"
-    env["SAP_LOW_VRAM"] = "1"
+    if len(gpu_ids) == 1:
+        env["SAP_SINGLE_GPU"] = "1"
+        # Parent process: release FLUX after each eval so workers can own the GPU.
+        # Worker processes override these in assign_gpu_for_worker().
+        env["SAP_KEEP_MODEL_LOADED"] = "0"
+        env["SAP_RELEASE_MODEL_AFTER_EVAL"] = "1"
+        env["SAP_PRELOAD_FLUX"] = "1"
+        env["SAP_LOW_VRAM"] = "0"
+        env.setdefault("SAP_SAP_MAX_CONCURRENT", "4")
+        env.setdefault("SAP_VL_MAX_CONCURRENT", "3")
+        env.setdefault("SAP_PIPELINE_PARALLEL_SAP", "1")
+    else:
+        env["SAP_LOW_VRAM"] = "1"
+        env["SAP_RELEASE_MODEL_AFTER_EVAL"] = "1"
     env["OMP_NUM_THREADS"] = "1"
     env["MKL_NUM_THREADS"] = "1"
     env["PYTHONPATH"] = str(PROJECT_ROOT) + os.pathsep + env.get("PYTHONPATH", "")
@@ -161,11 +185,35 @@ async def run_evolution_async(args: argparse.Namespace) -> int:
             "system_ram_gb": system_ram_gb(),
             "meta_prompt_chars": len(meta_prompt),
             "meta_prompt_path": str(EVOLUTION_META_PROMPT_PATH),
+            "single_gpu": len(gpu_ids) == 1,
+            "keep_model_loaded": is_single_gpu_mode(),
+            "live_log": str(experiment_dir / "logs" / "live.log"),
         },
     )
 
     monitor = GPUMonitor(experiment_dir, gpu_ids, interval_sec=args.gpu_monitor_interval)
     monitor.start()
+
+    from openevolve import OpenEvolve
+    from openevolve.config import load_config
+
+    config = load_config(str(config_path))
+
+    api_key = os.getenv("ROUTERAI_API_KEY", "")
+    api_base = os.getenv("ROUTERAI_BASE_URL", "https://routerai.ru/api/v1")
+    preflight_model = os.getenv("SAP_PREFLIGHT_MODEL", config.llm.primary_model)
+    try:
+        check_routerai_api(api_key, api_base=api_base, model=preflight_model)
+        logger.log(
+            "INFO",
+            "scheduler",
+            "routerai_preflight_ok",
+            {"api_base": api_base, "model": preflight_model},
+        )
+    except RuntimeError as exc:
+        logger.log("ERROR", "scheduler", "routerai_preflight_failed", {"error": str(exc)})
+        monitor.stop()
+        raise
 
     install_gpu_worker_patch()
     install_evolution_patch()
@@ -173,11 +221,6 @@ async def run_evolution_async(args: argparse.Namespace) -> int:
 
     initial_program = root / "openevolve_sap/initial_program.py"
     evaluator_file = root / "openevolve_sap/evaluator.py"
-
-    from openevolve import OpenEvolve
-    from openevolve.config import load_config
-
-    config = load_config(str(config_path))
     config.prompt.system_message = load_evolution_system_message()
     if args.iterations is not None:
         config.max_iterations = args.iterations
@@ -185,7 +228,20 @@ async def run_evolution_async(args: argparse.Namespace) -> int:
     if ckpt_int > 0:
         config.checkpoint_interval = ckpt_int
     config.evaluator.parallel_evaluations = len(gpu_ids)
-    if os.getenv("SAP_CASCADE_EVAL", "").strip().lower() in {"1", "true", "yes"}:
+    if len(gpu_ids) == 1:
+        config.evaluator.parallel_evaluations = 1
+        if getattr(config, "max_tasks_per_child", None) is not None:
+            config.max_tasks_per_child = max(int(config.max_tasks_per_child), 1000)
+        logger.log(
+            "INFO",
+            "scheduler",
+            "single_gpu_config",
+            {
+                "num_islands": config.database.num_islands,
+                "parallel_evaluations": config.evaluator.parallel_evaluations,
+            },
+        )
+    if use_cascade_eval():
         config.evaluator.cascade_evaluation = True
     cascade_thresh = os.getenv("SAP_CASCADE_THRESHOLDS", "").strip()
     if cascade_thresh:
@@ -244,9 +300,18 @@ async def run_evolution_async(args: argparse.Namespace) -> int:
 
 
 def parse_args(argv: Optional[list[str]] = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run SAP OpenEvolve on multiple GPUs")
-    parser.add_argument("--config", default="openevolve_sap/configs/multi_gpu.yaml")
-    parser.add_argument("--gpus", nargs="+", default=["0", "1", "2", "3"])
+    parser = argparse.ArgumentParser(description="Run SAP OpenEvolve evolution")
+    parser.add_argument(
+        "--config",
+        default="openevolve_sap/configs/single_gpu.yaml",
+        help="Config YAML (default: single_gpu.yaml)",
+    )
+    parser.add_argument(
+        "--gpus",
+        nargs="+",
+        default=["0"],
+        help="Physical GPU indices (default: 0)",
+    )
     parser.add_argument("--iterations", "-i", type=int, default=None)
     parser.add_argument("--output", "-o", default="openevolve_sap/output")
     parser.add_argument("--experiment-dir", default=None)

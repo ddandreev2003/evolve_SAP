@@ -1,0 +1,17 @@
+{
+  "alignment score": 5.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780938355_06d7c708/prompt_00/image_00.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly shows a bouquet of yellow flowers positioned upside down (stems pointing upward, buds facing downward) inside a vase. All key elements from the prompt—bouquet, upside-down orientation, and vase—are present and depicted in a concrete, functional manner that directly illustrates the described scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. The flowers, stems, vase, and surface exhibit consistent lighting, texture, and perspective. There are no rendering artifacts, distortions, or broken elements; all components appear physically plausible and well-formed."
+      }
+    }
+  ],
+  "num_seeds_scored": 1
+}

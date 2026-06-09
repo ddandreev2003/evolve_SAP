@@ -1,0 +1,17 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780944376_6d0ba96d/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains a bouquet of flowers and a vase, which are relevant components. However, the flowers are arranged in the **normal upright orientation** (stems down, blooms up), directly contradicting the prompt’s requirement of being \"upside down.\" The critical attribute of orientation is misrepresented, failing to convey the intended scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent and free of rendering artifacts. Lighting, texture, and perspective are consistent. The bouquet, vase, and background elements are well-formed, with natural connections (e.g., stems properly placed in the vase) and no distortions or broken geometry. The composition is realistic and polished."
+      }
+    }
+  ],
+  "num_seeds_scored": 1
+}

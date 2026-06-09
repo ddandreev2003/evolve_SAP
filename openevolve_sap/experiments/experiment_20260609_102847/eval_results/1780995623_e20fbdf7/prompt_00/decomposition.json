@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is extremely strong. The model locks correct geometry at steps 0-2 and will ignore later corrections. Starting with a bare hand forces the wrong geometry and ensures the contradiction is visible. Switch at step 3 to give the 6-finger geometry more time to lock in before adding the glove material.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, six distinct separate digits, polydactyly, hexadactyly, 6 fingers clearly visible, an extra sixth finger, six fingers total",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, six distinct separate finger stalls, hexadactyly, 6 fingers, an extra sixth finger stall, six fingers total"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

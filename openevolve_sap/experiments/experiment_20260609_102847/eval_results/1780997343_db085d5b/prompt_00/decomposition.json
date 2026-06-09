@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is extremely strong in diffusion models. Standard anatomy locks at steps 0-2, so a structural proxy (bare hand) must be used first to define the weird geometry without reinforcing the standard glove shape. Focusing on distinct digits and a palm-forward view ensures the count is visible before applying the glove material.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, six distinct separate digits, hexadactyly, 6 fingers clearly visible",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, six distinct separate finger stalls, hexadactyly, 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

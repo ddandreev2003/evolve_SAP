@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction. Models have strong priors for shadow direction relative to objects. To break this, describe the shadow as a separate painted silhouette on the ground facing the wrong way in the first stage. Switch prompts to enforce the impossible lighting relationship once the shapes are locked.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a separate black cat-shaped silhouette painted on the floor is facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

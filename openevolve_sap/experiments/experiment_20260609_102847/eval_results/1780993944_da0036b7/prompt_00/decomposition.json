@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural contradiction where the anatomical prior for five fingers is stronger than the prompt. Starting with a bare hand forces the model to resolve the impossible geometry before applying the glove texture. Switching at step 2 ensures the extra digits are fixed in place before fine-tuning the object identity.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, six distinct separate digits, polydactyly, hexadactyly, 6 fingers clearly visible, flat hand pose",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, six distinct separate finger stalls, hexadactyly, 6 fingers, flat glove pose"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

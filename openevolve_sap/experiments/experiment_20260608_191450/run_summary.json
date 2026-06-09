@@ -1,0 +1,8 @@
+{
+  "experiment_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450",
+  "output_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/output",
+  "gpu_ids": [
+    0
+  ],
+  "iterations": 80
+}

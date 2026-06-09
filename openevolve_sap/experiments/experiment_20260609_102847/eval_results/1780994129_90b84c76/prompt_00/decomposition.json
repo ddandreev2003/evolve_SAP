@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The prior for human hands having five fingers is extremely strong and locks during initial geometry generation (steps 0-2). To override this, the process starts with a bare hand posed to maximize digit visibility, forcing the model to accept the hexadactyly structure before applying the glove material constraint which would otherwise hide the anomaly.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, six distinct separate digits, polydactyly, hexadactyly, 6 fingers clearly visible",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, six distinct separate finger stalls, hexadactyly, 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

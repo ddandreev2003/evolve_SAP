@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. The model has a strong prior that flowers grow vertically with stems pointing up. To prevent this geometric lock, the first prompt explicitly forces the inverted anatomy during the critical layout phase.",
+  "prompts_list": [
+    "A glass vase on a table. Inside the vase, a bouquet of flowers is stuffed completely upside down. The thick green stems stick straight UP into the air out of the vase opening. The colorful flower heads are buried inside the vase, pointing down.",
+    "A bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

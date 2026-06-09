@@ -63,8 +63,16 @@ def release_model() -> None:
     global _LOADED_MODEL, _LOADED_FROM
     import gc
 
+    model = _LOADED_MODEL
     _LOADED_MODEL = None
     _LOADED_FROM = None
+    if model is not None:
+        try:
+            if hasattr(model, "to"):
+                model.to("cpu")
+        except Exception:
+            pass
+        del model
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()

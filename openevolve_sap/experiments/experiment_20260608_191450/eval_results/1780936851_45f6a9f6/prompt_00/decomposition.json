@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet of flowers naturally grows upwards, defying gravity when inverted. To overcome this strong semantic prior, the first prompt must explicitly describe the structural inversion (stems pointing up) before attempting to render the scene normally, ensuring the model accepts the impossible pose early.",
+  "prompts_list": [
+    "A glass vase on a table. A bouquet of flowers is inverted inside the vase. The thick green stems stick straight UP into the air, pointing at the ceiling. The colorful flower heads are pointing DOWN, buried in the vase or hanging over the rim towards the table.",
+    "A beautiful bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

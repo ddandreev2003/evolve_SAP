@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers is a structural impossibility compared to standard human anatomy. Introducing the glove form first stabilizes the base geometry and material, followed by enforcing the hexadactyl count when the shape latent is locked to prevent the model from defaulting to five digits.",
+  "prompts_list": [
+    "A white leather glove resting on a surface, palm facing up",
+    "A white leather glove with exactly six fingers, counting them 1, 2, 3, 4, 5, 6"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

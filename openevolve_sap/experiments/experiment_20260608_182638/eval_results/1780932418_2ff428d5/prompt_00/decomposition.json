@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in a vase are structurally constrained to upright positions by gravity and physical design. Generating an inverted bouquet requires overriding strong spatial priors regarding how vases hold liquids and stems. Establishing the standard configuration first allows the model to anchor the object identities and textures before destabilizing the pose with the final inverted constraint.",
+  "prompts_list": [
+    "A bouquet of flowers in a vase",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

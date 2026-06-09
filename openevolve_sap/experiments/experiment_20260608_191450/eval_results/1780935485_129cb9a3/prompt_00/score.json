@@ -1,0 +1,17 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935485_129cb9a3/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains the correct objects (a vase with flowers), but completely misrepresents the key element of the prompt. The prompt specifies \"a bouquet of flowers is upside down,\" meaning the flowers should be inverted with blooms inside the vase and stems pointing upward. Instead, the image shows a normal, upright arrangement where flowers are positioned conventionally (stems in vase, blooms pointing up). This is a fundamental conceptual error as the orientation is the central defining characteristic of the prompt, not a minor detail. While relevant components (vase, flowers) are present, the key attribute (upside down orientation) is entirely misrepresented.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean, realistic, and fully coherent with no visible flaws. The vase has smooth, consistent surfaces with natural lighting and reflections. The wooden surface shows realistic texture and grain. The flower stems and delicate blooms are well-formed with clear detail. Perspective is natural and consistent throughout the scene. There are no rendering artifacts, distortions, or broken elements—everything appears physically coherent and photographically realistic. The composition is simple but professionally executed with balanced lighting and sharp focus."
+      }
+    }
+  ],
+  "num_seeds_scored": 1
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet upside down contradicts typical vase usage where flowers stand upright. To preserve geometry, the prompt begins by establishing the unusual stem orientation (pointing up) to lock the object structure early. The flower heads are then introduced with the inverted placement to maintain semantic coherence without distorting the vase shape.",
+  "prompts_list": [
+    "A vase on a table with thick stems sticking straight up out of the opening",
+    "A bouquet of flowers upside down in a vase, with stems pointing up and flower heads buried inside"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

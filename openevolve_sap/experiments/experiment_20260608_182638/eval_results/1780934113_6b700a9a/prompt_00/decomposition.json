@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet typically sits upright in a vase due to gravity and biology. Since the model locks geometry early (steps 0-4), starting with a normal vase would force a correct orientation. By using a structural proxy that defines the inverted geometry first (\"inverted vase with stems\"), the unusual spatial constraint is preserved while introducing the floral details in the second stage.",
+  "prompts_list": [
+    "An inverted glass vase with long green stems hanging downward",
+    "A colorful bouquet of flowers arranged upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

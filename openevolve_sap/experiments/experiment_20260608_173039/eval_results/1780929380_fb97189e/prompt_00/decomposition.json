@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upward, so starting with a standard bouquet locks the geometry incorrectly. By defining the stems hanging downwards first, the model establishes the inverted structural layout during the critical geometry phase (steps 0-4) before finalizing the concept as an upside-down bouquet.",
+  "prompts_list": [
+    "A vase with flowers hanging downwards",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

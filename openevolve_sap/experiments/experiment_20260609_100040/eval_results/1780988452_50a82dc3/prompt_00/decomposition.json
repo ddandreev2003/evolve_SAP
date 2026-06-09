@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The \"5-finger\" anatomical prior is strong and will overwrite impossible geometry during late-stage denoising. Must establish the hexadactyly with a bare hand proxy first to lock the topology before applying the glove material constraint.",
+  "prompts_list": [
+    "A hand with 6 fingers, hexadactyly, 6 distinct digits spread out",
+    "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

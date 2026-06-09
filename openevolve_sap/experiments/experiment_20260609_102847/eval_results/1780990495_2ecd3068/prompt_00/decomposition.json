@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. Finger count is geometry locked in the first stages. A bare hand allows the model to prioritize the 6-digit layout without the strong \"glove = 5 fingers\" material prior interfering. Switch at step 2 to apply the glove skin once the bones are fixed.",
+  "prompts_list": [
+    "A bare hand with exactly 6 fingers spread out, hexadactyly",
+    "A white glove with exactly 6 fingers, six distinct digits"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

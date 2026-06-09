@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet violates standard structural expectations where flowers grow upright. Following Strategy B, we avoid starting with a \"normal vase with flowers\" to prevent the model from locking incorrect geometry during Steps 0-4. Instead, we begin with a proxy object that physically matches the inverted arrangement (dangling stems/herbs), ensuring the spatial configuration is established before introducing the contradictory botanical subject.",
+  "prompts_list": [
+    "A bundle of dried herbs hanging vertically from the rim of a glass bowl",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

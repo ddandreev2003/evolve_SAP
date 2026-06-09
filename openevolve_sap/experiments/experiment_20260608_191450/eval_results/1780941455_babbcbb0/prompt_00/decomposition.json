@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers are biologically oriented with stems down in water and heads up toward light. Reversing this defies the expected physics and anatomy, requiring a stable container layout before introducing the inverted organic shapes to prevent the model from correcting the geometry.",
+  "prompts_list": [
+    "A clear glass vase filled with water on a table",
+    "A clear glass vase filled with water containing flowers upside down with stems pointing up"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

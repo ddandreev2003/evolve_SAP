@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Fingers are a common geometric feature that models strongly expect to number five. To override this prior, the six-digit structure must be defined before the glove material is applied. Starting with a bare hand establishes the anomalous count, allowing the white glove to drape over the correct underlying topology in the second stage.",
+  "prompts_list": [
+    "A hand with 6 fingers, hexadactyly, 6 distinct digits spread out",
+    "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The anatomical prior for gloves and human hands defaults to five digits, making six fingers structurally contradictory to the model's strong weightings. Starting with a mutant hand structure and explicit counting forces the generative geometry to accept the extra limb during the layout phase before applying the realistic material properties of a white glove.",
+  "prompts_list": [
+    "Mutant hand palm forward, fingers spread wide. Exactly 6 identical fingers in a row, count: 1, 2, 3, 4, 5, 6. Hexadactyly",
+    "White glove palm forward, fingers spread wide. Exactly 6 identical finger stalls, count: 1, 2, 3, 4, 5, 6. Hexadactyly"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

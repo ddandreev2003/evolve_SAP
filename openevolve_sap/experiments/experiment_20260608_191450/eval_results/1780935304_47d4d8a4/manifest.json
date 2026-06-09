@@ -1,0 +1,46 @@
+{
+  "run_id": "1780935304_47d4d8a4",
+  "program_path": "/tmp/tmpe2llyuxu.py",
+  "program_id": "tmpe2llyuxu",
+  "timestamp": 1780935397.415189,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935304_47d4d8a4",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935304_47d4d8a4/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935304_47d4d8a4/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935304_47d4d8a4/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 1.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935304_47d4d8a4/prompt_00/image_00.png",
+            "alignment score": 1.0,
+            "score": {
+              "alignment score": 1,
+              "alignment explanation": "The image depicts a standard upright bouquet of flowers in a vase, with blooms facing upward and stems inserted normally into the vase. The prompt explicitly requires an \"upside down\" arrangement, meaning the flowers should be inverted (e.g., blooms pointing downward toward the table, stems extending upward from the vase). No such inversion is present—the scene shows a conventional, right-side-up bouquet. Key elements (upside-down orientation) are entirely missing, failing to convey the prompt's intended meaning.",
+              "quality score": 5,
+              "quality explanation": "The image is a high-resolution photograph with no visible rendering artifacts. All elements (flowers, leaves, vase, and table) are sharply defined, with natural lighting, consistent perspective, and realistic textures. There are no distortions, broken shapes, or incoherent connections—e.g., the bouquet is properly anchored in the vase, petals/leaves show fine detail, and shadows align with ambient lighting. The composition is visually coherent and professionally executed."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 1.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780935304_47d4d8a4/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 1.0,
+    "gemma_score": 0.0,
+    "combined_score": 1.0
+  }
+}

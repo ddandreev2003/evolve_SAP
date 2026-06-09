@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction. The 5-finger prior is extremely strong. Starting with a bare hand forces the correct geometric layout and visibility of 6 digits before the glove material is introduced, preventing the model from reverting to the 5-finger default during denoising.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, six distinct separate digits, polydactyly, hexadactyly, 6 fingers clearly visible",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, six distinct separate finger stalls, hexadactyly, 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

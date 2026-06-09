@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Starting directly with \"a white glove\" would cause the model to lock onto the standard five-fingered anatomy during the early geometry-lock phase (steps 0-4). By starting with a hand explicitly defined with six fingers, the unusual topology is established first before applying the glove material in the second phase.",
+  "prompts_list": [
+    "A hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

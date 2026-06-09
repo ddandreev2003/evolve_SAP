@@ -1,0 +1,13 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Vases are designed to hold flowers upright, so an inverted arrangement conflicts with learned object physics. To prevent geometric errors, the process begins by establishing the container (vase) at the lowest frequency, adding the content (flowers) at mid-frequency to define volume, and finally introducing the inverted orientation as a high-frequency detail override.",
+  "prompts_list": [
+    "A decorative vase",
+    "A decorative vase with flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

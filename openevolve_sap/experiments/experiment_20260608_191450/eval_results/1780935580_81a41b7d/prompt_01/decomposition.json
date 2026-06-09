@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This falls under Strategy B (Structural/Spatial Contradictions). Starting with \"glove\" would lock standard 5-finger geometry, making 6 fingers impossible. By beginning with a \"bare hand,\" the model forms the unusual digit count early. The material (white glove) is introduced after the structure stabilizes. The switch occurs at step 4, ensuring the 6-finger geometry is established during the critical geometry locking phase (3-6) while transitioning to the target object.",
+  "prompts_list": [
+    "A bare hand with 6 fingers",
+    "A white glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

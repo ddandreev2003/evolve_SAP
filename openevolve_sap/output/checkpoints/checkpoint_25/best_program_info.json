@@ -1,15 +1,17 @@
 {
-  "id": "b67905f8-8007-4d8f-ba24-841582aff1bc",
-  "generation": 2,
-  "iteration": 14,
+  "id": "f45f995e-121d-43e3-a81a-dc63ac999517",
+  "generation": 5,
+  "iteration": 24,
   "current_iteration": 25,
   "metrics": {
-    "alignment_score": 2.6666666666666665,
-    "gemma_score": 5.0,
-    "combined_score": 0.6266666666666667,
-    "num_eval_prompts": 3.0
+    "alignment_score": 4.999999999999999,
+    "gemma_score": 0.0,
+    "combined_score": 4.999999999999999,
+    "num_eval_prompts": 1.0,
+    "eval_stage": 2.0,
+    "stage1_passed": 1.0
   },
   "language": "python",
-  "timestamp": 1780902413.6845376,
-  "saved_at": 1780903711.8593543
+  "timestamp": 1780999990.9968274,
+  "saved_at": 1781000055.8422966
 }

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is strong and difficult to override once identity locks in. To force the geometry correctly, the first prompt establishes the hexadactyl structure using a bare hand with spread fingers, ensuring the contradiction is fully visible, before switching to the target glove material where details resolve.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide. The hand has exactly 6 fingers, six distinct separate digits, hexadactyly.",
+    "A white glove with palm facing forward, fingers spread wide. The glove has exactly 6 fingers, six distinct separate finger stalls, hexadactyly."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

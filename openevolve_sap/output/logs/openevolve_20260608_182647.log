@@ -1,0 +1,56 @@
+2026-06-08 18:26:47,823 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260608_182647.log
+2026-06-08 18:26:47,849 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-06-08 18:26:47,869 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: qwen/qwen3.7-max
+2026-06-08 18:26:47,869 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: qwen/qwen3.7-max (weight: 1.00)
+2026-06-08 18:26:47,897 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-06-08 18:26:47,898 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-06-08 18:26:47,898 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-06-08 18:26:58,134 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-06-08 18:26:58,134 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-06-08 18:26:58,134 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-06-08 18:26:58,135 - openevolve.controller - INFO - Adding initial program to database
+2026-06-08 18:27:51,535 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:28:19,005 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:29:38,694 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:29:39,157 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:29:46,740 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:31:14,386 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:31:23,479 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:31:54,787 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:32:07,809 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:32:08,550 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:33:53,832 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 18:34:03,481 - openevolve.evaluator - INFO - Evaluated program fed84cbf-129e-476f-83b0-208d9b739106 in 425.35s: alignment_score=2.1667, gemma_score=0.0000, combined_score=2.1667, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 18:34:03,481 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-06-08 18:34:03,482 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-06-08 18:34:04,291 - openevolve_sap.core.gpu_worker - INFO - SAP: released FLUX from parent before worker pool start
+2026-06-08 18:34:04,292 - openevolve.process_parallel - INFO - Set max 1000 tasks per child
+2026-06-08 18:34:04,294 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-06-08 18:34:04,294 - openevolve.controller - INFO - Using island-based evolution with 4 islands
+2026-06-08 18:34:04,294 - openevolve.database - INFO - Island Status:
+2026-06-08 18:34:04,294 - openevolve.database - INFO -  * Island 0: 1 programs, best=2.1667, avg=2.1667, diversity=0.00, gen=0 (best: fed84cbf-129e-476f-83b0-208d9b739106)
+2026-06-08 18:34:04,294 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 18:34:04,294 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 18:34:04,294 - openevolve.database - INFO -    Island 3: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2026-06-08 18:34:04,294 - openevolve_sap.core.evolution_patch - INFO - SAP: evolution target = 80 successful eval cycles (attempt cap 640, start id 1)
+2026-06-08 18:34:04,299 - openevolve_sap.core.evolution_patch - INFO - Early stopping enabled: patience=30, threshold=0.05, metric=alignment_score
+2026-06-08 18:45:24,306 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 1: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 18:45:24,313 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 18:45:26,169 - openevolve_sap.core.gpu_worker - INFO - SAP: released FLUX from parent before worker pool start
+2026-06-08 18:45:26,169 - openevolve.process_parallel - INFO - Set max 1000 tasks per child
+2026-06-08 18:45:26,170 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-06-08 18:53:13,468 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 2: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 18:53:13,481 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 18:53:15,189 - openevolve_sap.core.gpu_worker - INFO - SAP: released FLUX from parent before worker pool start
+2026-06-08 18:53:15,189 - openevolve.process_parallel - INFO - Set max 1000 tasks per child
+2026-06-08 18:53:15,190 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-06-08 19:00:52,330 - openevolve_sap.core.evolution_patch - ERROR - Error processing result from iteration 3: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-08 19:00:52,335 - openevolve_sap.core.evolution_patch - WARNING - SAP: restarting process pool after worker failure
+2026-06-08 19:00:53,927 - openevolve_sap.core.gpu_worker - INFO - SAP: released FLUX from parent before worker pool start
+2026-06-08 19:00:53,928 - openevolve.process_parallel - INFO - Set max 1000 tasks per child
+2026-06-08 19:00:53,929 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-06-08 19:07:49,244 - openevolve.controller - INFO - Received signal 15, initiating graceful shutdown...
+2026-06-08 19:07:49,246 - openevolve.process_parallel - INFO - Graceful shutdown requested...
+2026-06-08 19:07:49,253 - openevolve_sap.core.evolution_patch - INFO - SAP: draining 1 in-flight iteration(s) before shutdown
+2026-06-08 19:08:07,539 - openevolve.controller - INFO - Received signal 15, initiating graceful shutdown...
+2026-06-08 19:08:07,539 - openevolve.process_parallel - INFO - Graceful shutdown requested...

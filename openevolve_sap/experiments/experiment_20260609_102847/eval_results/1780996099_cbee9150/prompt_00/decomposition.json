@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The 5-finger prior locks geometry quickly in diffusion stages. To override this, a naked hand with explicit digit counting establishes the incorrect shape early. A switch at step 2 allows the glove material to apply without correcting the anatomy back to five fingers.",
+  "prompts_list": [
+    "A hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, hexadactyly, 6 distinct separate digits clearly visible",
+    "A white leather glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, hexadactyly, 6 distinct separate finger stalls, white fabric texture"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

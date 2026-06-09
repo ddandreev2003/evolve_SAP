@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers typically grow with heads above stems due to gravity. Describing the stem direction first ('UP') overrides this bias during layout generation. Switching early ensures the inverted geometry is locked before the floral details are rendered.",
+  "prompts_list": [
+    "Vase on table with stems sticking straight UP out of the opening, flower heads buried inside",
+    "A bouquet of flowers upside down in a vase, stems pointing up, heads pointing down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

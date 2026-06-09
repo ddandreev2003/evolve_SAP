@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The human prior strongly enforces five fingers, causing geometry locking in early steps. Strategy B requires introducing the structural proxy (mutant hand/tubes) first to override the 5-digit expectation, then switching to the target concept before the final shape settles.",
+  "prompts_list": [
+    "A mutant bare hand with palm facing forward, six parallel fingers pointing straight up, absolutely no thumb. The hand has exactly 6 identical fingers side-by-side in a single row, count them: 1, 2, 3, 4, 5, 6.",
+    "A white glove with palm facing forward, six parallel finger stalls pointing straight up, absolutely no thumb. The glove has exactly 6 identical fabric tubes side-by-side in a single row, count them: 1, 2, 3, 4, 5, 6."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

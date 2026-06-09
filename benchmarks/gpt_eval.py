@@ -1,8 +1,14 @@
 import base64
 import os
+import re
 from openai import OpenAI
 
 _VL_CLIENT: OpenAI | None = None
+_JUDGE_VERSION = "finger_count_v1"
+
+
+def get_judge_version() -> str:
+    return _JUDGE_VERSION
 
 
 def _get_vl_client(api_key: str) -> OpenAI:
@@ -14,8 +20,46 @@ def _get_vl_client(api_key: str) -> OpenAI:
 
 
 def encode_image(image_path):
-  with open(image_path, "rb") as image_file:
-    return base64.b64encode(image_file.read()).decode('utf-8')
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
+
+
+def _requires_finger_count(prompt: str) -> bool:
+    return "6 finger" in prompt.lower()
+
+
+def _finger_count_rubric() -> str:
+    return """
+**FINGER COUNT RULE (mandatory for this prompt):**
+Before scoring alignment, count every extended digit on the hand/glove, including the thumb.
+Report the count in ### FINGER COUNT: N (integer).
+
+Alignment scoring for finger-count prompts:
+- FINGER COUNT = 6 → alignment may be 5 only if the glove is white and clearly visible
+- FINGER COUNT = 5 (standard hand) → alignment MUST be 2 or lower
+- FINGER COUNT any other value → alignment MUST be 2 or lower
+- If digits are unclear or merged → FINGER COUNT: -1, alignment MUST be 1
+
+Do NOT give alignment 4 or 5 unless you have explicitly counted exactly 6 digits.
+"""
+
+
+def _parse_finger_count(text: str) -> int | None:
+    if "### FINGER COUNT:" not in text:
+        return None
+    raw = text.split("### FINGER COUNT:")[1].split("\n")[0].strip()
+    match = re.search(r"-?\d+", raw)
+    if not match:
+        return None
+    return int(match.group())
+
+
+def _apply_finger_count_cap(alignment_score: int, finger_count: int | None) -> int:
+    if finger_count is None:
+        return min(alignment_score, 2)
+    if finger_count != 6:
+        return min(alignment_score, 2)
+    return alignment_score
 
 
 def evaluate_image_with_gpt(image_path, prompt, key):
@@ -23,16 +67,28 @@ def evaluate_image_with_gpt(image_path, prompt, key):
     if not api_key:
         raise ValueError("Missing API key. Set ROUTERAI_API_KEY environment variable.")
     client = _get_vl_client(api_key)
-    max_tokens = int(os.getenv("SAP_VL_MAX_TOKENS", "4096"))
+    max_tokens = int(os.getenv("SAP_VL_MAX_TOKENS", "1024"))
 
-    # GPT PROMPT
+    finger_rubric = _finger_count_rubric() if _requires_finger_count(prompt) else ""
+    response_format = (
+        "### FINGER COUNT: N\n"
+        "### ALIGNMENT SCORE: score\n"
+        "### ALIGNMENT EXPLANATION: explanation\n"
+        "### QUALITY SCORE: score\n"
+        "### QUALITY EXPLANATION: explanation"
+        if finger_rubric
+        else "### ALIGNMENT SCORE: score\n"
+        "### ALIGNMENT EXPLANATION: explanation\n"
+        "### QUALITY SCORE: score\n"
+        "### QUALITY EXPLANATION: explanation"
+    )
 
     eval_prompt = f"""You are an assistant evaluating an image on two **independent** aspects: \
 (1) how well it aligns with the meaning of a given text prompt, and \
 (2) its visual quality.
 
 The text prompt is: \"{prompt}\"
-
+{finger_rubric}
 ---
 
 **PART 1: PROMPT ALIGNMENT (Semantic Fidelity)**  
@@ -76,12 +132,8 @@ Score from 1 to 5:
 ---
 
 Respond using this format:
-### ALIGNMENT SCORE: score
-### ALIGNMENT EXPLANATION: explanation
-### QUALITY SCORE: score
-### QUALITY EXPLANATION: explanation"""
+{response_format}"""
 
-    # Getting the base64 string
     base64_image = encode_image(image_path)
 
     print("waiting for qwen/qwen3-vl-235b-a22b-thinking response")
@@ -100,14 +152,27 @@ Respond using this format:
     )
     text = response.choices[0].message.content
     print(text)
-    
+
     alignment_score = int(text.split("### ALIGNMENT SCORE:")[1].split("\n")[0].strip())
     alignment_explanation = text.split("### ALIGNMENT EXPLANATION:")[1].split("### QUALITY SCORE:")[0].strip()
     quality_score = int(text.split("### QUALITY SCORE:")[1].split("\n")[0].strip())
     quality_explanation = text.split("### QUALITY EXPLANATION:")[1].strip()
 
-    output_dict =  {'alignment score': alignment_score, 
-                    'alignment explanation': alignment_explanation,
-                    'quality score': quality_score,
-                    'quality explanation': quality_explanation}
+    finger_count = None
+    if _requires_finger_count(prompt):
+        finger_count = _parse_finger_count(text)
+        alignment_score = _apply_finger_count_cap(alignment_score, finger_count)
+        if finger_count is not None:
+            alignment_explanation = (
+                f"[finger_count={finger_count}] {alignment_explanation}"
+            )
+
+    output_dict = {
+        "alignment score": alignment_score,
+        "alignment explanation": alignment_explanation,
+        "quality score": quality_score,
+        "quality explanation": quality_explanation,
+    }
+    if finger_count is not None:
+        output_dict["finger count"] = finger_count
     return output_dict

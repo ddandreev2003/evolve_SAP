@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The prompt requests a geometric impossibility (six fingers) that contradicts the model's default five-digit hand prior. According to Strategy B, starting with a normal \"white glove\" would lock the five-finger structure during the layout stage (0-4). Instead, we introduce a proxy—\"a hand with six fingers\"—to establish the unusual geometry first. Once the structure is stable, the second prompt transitions the object identity to the desired \"white glove,\" preserving the extra fingers while applying the material texture.",
+  "prompts_list": [
+    "A hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

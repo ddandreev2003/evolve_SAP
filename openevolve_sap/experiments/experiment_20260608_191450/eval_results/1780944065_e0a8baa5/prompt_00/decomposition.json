@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers are biologically associated with upward growth against gravity. Since the layout stage (steps 0-2) locks geometry based on early tokens, starting with a normal vase would enforce an upright prior. To succeed, the first prompt must explicitly describe the inverted stem configuration as a structural fact rather than a label, forcing the model to reject the standard orientation before identifying the objects as a bouquet.",
+  "prompts_list": [
+    "A glass vase on a table with flower stems sticking straight UP out of the opening towards the ceiling.",
+    "A bouquet of flowers placed completely upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

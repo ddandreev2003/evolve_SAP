@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "A shadow facing the opposite direction defies physical lighting laws and geometry locks (0-2). To preserve composition integrity without triggering physics correction, the shadow is treated as a distinct, separate silhouette in the layout stage before attempting the impossible lighting interaction in the material/detail stage.",
+  "prompts_list": [
+    "A realistic cat sitting in bright sunlight. Beside the cat, a flat black silhouette of a cat is painted on the ground facing the opposite direction.",
+    "A realistic cat casting a cast shadow that physically faces the opposite direction, defying the light source."
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

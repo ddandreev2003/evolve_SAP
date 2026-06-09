@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in a vase typically grow upward, creating a structural conflict with the requested upside-down orientation. To prevent the model from locking onto standard gravity-based geometry during the early stages (0-4), we use a structurally aligned proxy that encodes the inverted flow before defining the flower identity.",
+  "prompts_list": [
+    "An inverted vase with stems pointing up",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

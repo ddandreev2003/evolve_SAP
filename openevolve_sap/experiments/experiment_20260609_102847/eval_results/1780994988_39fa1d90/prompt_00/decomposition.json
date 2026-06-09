@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction. Standard anatomy priors strongly favor 5 fingers. Defining a bare hand with explicitly 6 fingers first forces the latent space to accept the geometry (polydactyly) before transitioning to the white glove material.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers: one thumb and five additional fingers side-by-side. polydactyly, hexadactyly, 6 fingers clearly visible",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 finger stalls, six distinct separate finger tubes, hexadactyly, 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

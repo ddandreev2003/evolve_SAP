@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural anomaly where extra digits violate standard anatomy. Starting with a natural hand allows the model to resolve the incorrect geometry (hexadactyly) before locking in the material properties of the glove, preventing auto-correction to 5 fingers.",
+  "prompts_list": [
+    "A hand with 6 fingers, hexadactyly, 6 distinct digits spread out",
+    "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

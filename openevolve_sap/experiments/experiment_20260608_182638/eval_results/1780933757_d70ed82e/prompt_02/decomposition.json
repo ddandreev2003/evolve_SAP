@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is a lighting property managed in the middle stages of denoising. Strategy A dictates establishing the scene geometry first before introducing impossible lighting. The first prompt sets the context and solid cat shape. The second prompt introduces the contradictory shadow instruction after the object form is locked, ensuring the anatomy remains intact while the shadow renders incorrectly.",
+  "prompts_list": [
+    "A cat standing outside on a sunny day",
+    "A cat standing outside with a shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

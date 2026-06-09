@@ -387,7 +387,8 @@ def load_live_experiment_data(experiment_dir: str | Path) -> dict[str, Any]:
     best_id = None
     best_score = -1.0
     for n in nodes:
-        cs = n.get("metrics", {}).get("combined_score")
+        m = n.get("metrics", {})
+        cs = m.get("alignment_score", m.get("combined_score"))
         if cs is not None and float(cs) > best_score:
             best_score = float(cs)
             best_id = n["id"]
@@ -491,7 +492,8 @@ def aggregate_metrics(nodes: list[dict]) -> dict[str, Any]:
     by_gen: dict[int, list[float]] = {}
     for node in nodes:
         gen = node.get("generation", 0)
-        score = node.get("metrics", {}).get("combined_score")
+        m = node.get("metrics", {})
+        score = m.get("alignment_score", m.get("combined_score"))
         if score is None:
             continue
         by_gen.setdefault(gen, []).append(float(score))

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves typically conform to five-digit anatomy, creating a structural contradiction with six fingers. To prevent the model from defaulting to a standard hand shape, the prompt begins with a bare hand to lock the six-finger geometry in the layout phase. Once the skeletal structure is stable, the white glove material is overlaid to define the object texture without causing the extra fingers to merge or disappear.",
+  "prompts_list": [
+    "A bare hand with six distinct fingers spread out, anatomical structure",
+    "A white glove with six distinct fingers covering the hand"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A human hand is governed by a strong 5-finger anatomical prior. Introducing a normal glove immediately locks the geometry to five digits. By starting with an explicit 'mutant' proxy that counts six fingers, we break the anatomical prior before applying the specific glove material texture.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical fingers in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, polydactyly, hexadactyly, strictly 6 fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical finger stalls in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

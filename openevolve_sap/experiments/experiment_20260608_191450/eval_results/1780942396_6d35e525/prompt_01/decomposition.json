@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers violates standard anatomical geometry which locks into the model's structure during the earliest diffusion stages (0-2). To prevent the model from auto-correcting the digits to five, the prompt must establish the abnormal hand shape as the primary subject before introducing the glove material.",
+  "prompts_list": [
+    "A hand with 6 distinct fingers, hexadactyly, digits spread apart",
+    "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

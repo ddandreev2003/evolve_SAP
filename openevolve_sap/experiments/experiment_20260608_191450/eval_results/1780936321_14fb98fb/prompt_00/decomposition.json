@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet of flowers is structurally associated with growing upward, making the inverted vase a strong spatial contradiction. By establishing the stem direction explicitly first, the model overrides the botanical growth prior before finalizing the arrangement.",
+  "prompts_list": [
+    "A glass vase on a table. Inside the vase, a bouquet of flowers is stuffed completely upside down. The thick green stems stick straight UP into the air out of the vase opening.",
+    "A bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

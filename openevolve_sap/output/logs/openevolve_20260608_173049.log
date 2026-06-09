@@ -1,0 +1,37 @@
+2026-06-08 17:30:49,893 - openevolve.controller - INFO - Logging to /home/ubuntu/evolve_SAP/openevolve_sap/output/logs/openevolve_20260608_173049.log
+2026-06-08 17:30:50,117 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2026-06-08 17:30:50,136 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: qwen/qwen3.7-max
+2026-06-08 17:30:50,136 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: qwen/qwen3.7-max (weight: 1.00)
+2026-06-08 17:30:50,200 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2026-06-08 17:30:50,200 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2026-06-08 17:30:50,200 - openevolve.database - INFO - Initialized program database with 0 programs
+2026-06-08 17:31:10,318 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-06-08 17:31:10,318 - openevolve.evaluator - INFO - Initialized evaluator with /home/ubuntu/evolve_SAP/openevolve_sap/evaluator.py
+2026-06-08 17:31:10,318 - openevolve.controller - INFO - Initialized OpenEvolve with /home/ubuntu/evolve_SAP/openevolve_sap/initial_program.py
+2026-06-08 17:31:10,318 - openevolve.controller - INFO - Adding initial program to database
+2026-06-08 17:31:48,648 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 17:35:09,088 - httpx - INFO - HTTP Request: POST https://routerai.ru/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-08 17:35:09,154 - openevolve.evaluator - INFO - Evaluated program 62b15ca4-42a9-44ff-92b3-aa8f11690033 in 238.84s: alignment_score=1.0000, gemma_score=0.0000, combined_score=1.0000, num_eval_prompts=1.0000, eval_stage=1.0000, stage1_passed=0.0000
+2026-06-08 17:35:09,155 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2026-06-08 17:35:09,155 - openevolve.process_parallel - INFO - Initialized process parallel controller with 1 workers
+2026-06-08 17:35:10,081 - openevolve.process_parallel - INFO - Set max 1000 tasks per child
+2026-06-08 17:35:10,082 - openevolve.process_parallel - INFO - Started process pool with 1 processes
+2026-06-08 17:35:10,082 - openevolve.controller - INFO - Using island-based evolution with 1 islands
+2026-06-08 17:35:10,082 - openevolve.database - INFO - Island Status:
+2026-06-08 17:35:10,082 - openevolve.database - INFO -  * Island 0: 1 programs, best=1.0000, avg=1.0000, diversity=0.00, gen=0 (best: 62b15ca4-42a9-44ff-92b3-aa8f11690033)
+2026-06-08 17:35:10,082 - openevolve_sap.core.evolution_patch - INFO - SAP: evolution target = 80 successful eval cycles (attempt cap 640, start id 1)
+2026-06-08 17:35:10,093 - openevolve_sap.core.evolution_patch - INFO - Early stopping enabled: patience=30, threshold=0.05, metric=alignment_score
+2026-06-08 17:44:26,249 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 0, 'diversity': 5}
+2026-06-08 17:44:26,250 - openevolve.database - INFO - New best program 83af1aa7-31da-4f5e-a76f-f91fc0ca7510 replaces 62b15ca4-42a9-44ff-92b3-aa8f11690033 (combined_score: 1.0000 → 3.6667, +2.6667)
+2026-06-08 17:44:26,250 - openevolve_sap.core.evolution_patch - INFO - Iteration 1: Program 83af1aa7-31da-4f5e-a76f-f91fc0ca7510 (parent: 62b15ca4-42a9-44ff-92b3-aa8f11690033) completed in 543.17s [successful 1/80]
+2026-06-08 17:44:26,250 - openevolve_sap.core.evolution_patch - INFO - Metrics: alignment_score=3.6667, gemma_score=0.0000, combined_score=3.6667, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 17:44:26,250 - openevolve_sap.core.evolution_patch - INFO - 🌟 New best solution at iteration 1: 83af1aa7-31da-4f5e-a76f-f91fc0ca7510
+2026-06-08 17:48:14,452 - openevolve.controller - INFO - Received signal 15, initiating graceful shutdown...
+2026-06-08 17:48:14,452 - openevolve.process_parallel - INFO - Graceful shutdown requested...
+2026-06-08 17:48:14,453 - openevolve_sap.core.evolution_patch - INFO - SAP: draining 1 in-flight iteration(s) before shutdown
+2026-06-08 17:53:51,252 - openevolve_sap.core.evolution_patch - INFO - ✅ Evolution completed - Shutdown requested
+2026-06-08 17:53:51,252 - openevolve.controller - INFO - Evolution stopped due to shutdown request
+2026-06-08 17:53:55,308 - openevolve.process_parallel - INFO - Stopped process pool
+2026-06-08 17:53:55,308 - openevolve.controller - INFO - Using tracked best program: 83af1aa7-31da-4f5e-a76f-f91fc0ca7510
+2026-06-08 17:53:55,308 - openevolve.controller - INFO - Evolution complete. Best program has metrics: alignment_score=3.6667, gemma_score=0.0000, combined_score=3.6667, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-08 17:53:55,310 - openevolve.controller - INFO - Saved best program to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program.py with program info to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program_info.json

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction. Diffusion models have strong priors that shadows match the light source and object orientation. To enforce the impossible shadow direction, the shadow is introduced first as a separate physical shape on the ground to establish the geometry before assigning it to the cat.",
+  "prompts_list": [
+    "A cat sitting on the ground facing left. On the ground next to it, a distinct solid black cat-shaped shadow is facing right, opposite to the cat.",
+    "A realistic photo of a cat facing left, casting a shadow on the ground that faces the opposite direction pointing right"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,228 @@
+15:26:58 | INFO       | 1780932418_2ff42 | evaluation started
+15:27:09 | EVAL       | 1780932418_2ff42 | evaluation started | prompts=1 | pipeline=True | parallel_sap=True
+15:27:09 | PIPELINE   | 1780932418_2ff42 | start 1 prompts | sap_workers=4 | vl_workers=3
+15:27:09 | SAP        | 1780932418_2ff42 | parallel decompose x1
+15:27:09 | INFO       | 1780932418_2ff42 | prompt 1/1: decompose
+15:27:51 | SAP        | 1780932418_2ff42 | decompose done | p=1
+15:27:51 | RENDER     | 1780932418_2ff42 | queued | p=1 | queue=1
+15:27:51 | INFO       | 1780932418_2ff42 | prompt 1: render start
+15:27:56 | RENDER     | 1780932418_2ff42 | done 1 images | p=1
+15:27:56 | VL         | 1780932418_2ff42 | scoring | p=1
+15:27:56 | INFO       | 1780932418_2ff42 | prompt 1: score start (1 seeds)
+15:28:19 | INFO       | 1780932418_2ff42 | prompt 1: alignment=2.000 (1 seeds) | vl=1
+15:28:19 | VL         | 1780932418_2ff42 | score done | p=1 | vl=1
+15:28:28 | INFO       | 1780932418_2ff42 | done alignment=2.000 gemma=0.000 combined=2.000
+15:28:28 | INFO       | 1780932508_dd872 | evaluation started
+15:28:57 | EVAL       | 1780932508_dd872 | evaluation started | prompts=3 | pipeline=True | parallel_sap=True
+15:28:57 | PIPELINE   | 1780932508_dd872 | start 3 prompts | sap_workers=4 | vl_workers=3
+15:28:57 | SAP        | 1780932508_dd872 | parallel decompose x3
+15:28:57 | INFO       | 1780932508_dd872 | prompt 1/3: decompose | sap=3
+15:28:57 | INFO       | 1780932508_dd872 | prompt 2/3: decompose | sap=3
+15:28:57 | INFO       | 1780932508_dd872 | prompt 3/3: decompose | sap=2
+15:29:46 | SAP        | 1780932508_dd872 | decompose done | p=1 | sap=2
+15:29:46 | RENDER     | 1780932508_dd872 | queued | p=1 | sap=2 | queue=1
+15:29:46 | INFO       | 1780932508_dd872 | prompt 1: render start | sap=2
+15:29:46 | SAP        | 1780932508_dd872 | decompose done | p=2
+15:29:46 | RENDER     | 1780932508_dd872 | queued | p=2 | render_q=1 | queue=2
+15:30:03 | INFO       | 1780932508_dd872 | prompt 2: render start | render_q=1
+15:30:03 | RENDER     | 1780932508_dd872 | done 2 images | p=1 | render_q=1
+15:30:03 | VL         | 1780932508_dd872 | scoring | p=1 | render_q=1 vl=1
+15:30:03 | INFO       | 1780932508_dd872 | prompt 1: score start (2 seeds) | render_q=1 vl=1
+15:30:03 | SAP        | 1780932508_dd872 | decompose done | p=3 | render_q=1 vl=1
+15:30:03 | RENDER     | 1780932508_dd872 | queued | p=3 | render_q=1 vl=1 | queue=2
+15:30:20 | INFO       | 1780932508_dd872 | prompt 3: render start | render_q=1 vl=1
+15:30:20 | RENDER     | 1780932508_dd872 | done 2 images | p=2 | render_q=1 vl=1
+15:30:20 | VL         | 1780932508_dd872 | scoring | p=2 | render_q=1 vl=2
+15:30:20 | INFO       | 1780932508_dd872 | prompt 2: score start (2 seeds) | render_q=1 vl=2
+15:30:37 | RENDER     | 1780932508_dd872 | done 2 images | p=3 | render_q=1 vl=2
+15:30:37 | VL         | 1780932508_dd872 | scoring | p=3 | render_q=1 vl=2
+15:30:37 | INFO       | 1780932508_dd872 | prompt 3: score start (2 seeds) | render_q=1 vl=2
+15:31:54 | INFO       | 1780932508_dd872 | prompt 2: alignment=2.000 (2 seeds) | render_q=1 vl=3
+15:32:08 | INFO       | 1780932508_dd872 | prompt 1: alignment=2.500 (2 seeds) | render_q=1 vl=3
+15:32:08 | VL         | 1780932508_dd872 | score done | p=1 | render_q=1 vl=3
+15:32:08 | VL         | 1780932508_dd872 | score done | p=2 | render_q=1 vl=3
+15:33:53 | INFO       | 1780932508_dd872 | prompt 3: alignment=2.000 (2 seeds) | render_q=1 vl=3
+15:33:53 | VL         | 1780932508_dd872 | score done | p=3 | render_q=1 vl=3
+15:34:03 | INFO       | 1780932508_dd872 | done alignment=2.167 gemma=0.000 combined=2.167
+15:37:45 | INFO       | warmup | FLUX loaded on GPU 0 (id=124511012640368)
+15:38:34 | INFO       | 1780933114_31f11 | evaluation started
+15:38:34 | EVAL       | 1780933114_31f11 | evaluation started | prompts=1 | pipeline=True | parallel_sap=True
+15:38:34 | PIPELINE   | 1780933114_31f11 | start 1 prompts | sap_workers=4 | vl_workers=3
+15:38:34 | SAP        | 1780933114_31f11 | parallel decompose x1
+15:38:34 | INFO       | 1780933114_31f11 | prompt 1/1: decompose
+15:39:31 | SAP        | 1780933114_31f11 | decompose done | p=1
+15:39:31 | RENDER     | 1780933114_31f11 | queued | p=1 | queue=1
+15:39:31 | INFO       | 1780933114_31f11 | prompt 1: render start
+15:39:34 | RENDER     | 1780933114_31f11 | done 1 images | p=1
+15:39:35 | VL         | 1780933114_31f11 | scoring | p=1
+15:39:35 | INFO       | 1780933114_31f11 | prompt 1: score start (1 seeds)
+15:40:14 | INFO       | 1780933114_31f11 | prompt 1: alignment=5.000 (1 seeds) | vl=1
+15:40:14 | VL         | 1780933114_31f11 | score done | p=1 | vl=1
+15:40:25 | INFO       | 1780933114_31f11 | done alignment=5.000 gemma=0.000 combined=5.000
+15:40:25 | INFO       | 1780933225_4874e | evaluation started
+15:41:16 | EVAL       | 1780933225_4874e | evaluation started | prompts=3 | pipeline=True | parallel_sap=True
+15:41:16 | PIPELINE   | 1780933225_4874e | start 3 prompts | sap_workers=4 | vl_workers=3
+15:41:16 | SAP        | 1780933225_4874e | parallel decompose x3
+15:41:16 | INFO       | 1780933225_4874e | prompt 1/3: decompose | sap=3
+15:41:16 | INFO       | 1780933225_4874e | prompt 2/3: decompose | sap=2
+15:41:16 | INFO       | 1780933225_4874e | prompt 3/3: decompose | sap=2
+15:42:02 | SAP        | 1780933225_4874e | decompose done | p=1 | sap=2
+15:42:02 | RENDER     | 1780933225_4874e | queued | p=1 | sap=2 | queue=1
+15:42:02 | INFO       | 1780933225_4874e | prompt 1: render start
+15:42:02 | SAP        | 1780933225_4874e | decompose done | p=2
+15:42:02 | RENDER     | 1780933225_4874e | queued | p=2 | render_q=1 | queue=2
+15:42:19 | INFO       | 1780933225_4874e | prompt 2: render start | render_q=1
+15:42:19 | RENDER     | 1780933225_4874e | done 2 images | p=1 | render_q=1
+15:42:19 | VL         | 1780933225_4874e | scoring | p=1 | render_q=1 vl=1
+15:42:19 | INFO       | 1780933225_4874e | prompt 1: score start (2 seeds) | render_q=1 vl=1
+15:42:19 | SAP        | 1780933225_4874e | decompose done | p=3 | render_q=1 vl=1
+15:42:19 | RENDER     | 1780933225_4874e | queued | p=3 | render_q=1 vl=1 | queue=2
+15:42:35 | INFO       | 1780933225_4874e | prompt 3: render start | render_q=1 vl=1
+15:42:35 | RENDER     | 1780933225_4874e | done 2 images | p=2 | render_q=1 vl=1
+15:42:35 | INFO       | 1780933225_4874e | prompt 2: score start (2 seeds) | render_q=1 vl=1
+15:42:35 | VL         | 1780933225_4874e | scoring | p=2 | render_q=1 vl=2
+15:42:52 | RENDER     | 1780933225_4874e | done 2 images | p=3 | render_q=1 vl=2
+15:42:52 | VL         | 1780933225_4874e | scoring | p=3 | render_q=1 vl=2
+15:42:52 | INFO       | 1780933225_4874e | prompt 3: score start (2 seeds) | render_q=1 vl=2
+15:43:28 | INFO       | 1780933225_4874e | prompt 1: alignment=1.500 (2 seeds) | render_q=1 vl=3
+15:43:28 | VL         | 1780933225_4874e | score done | p=1 | render_q=1 vl=3
+15:43:30 | INFO       | 1780933225_4874e | prompt 2: alignment=3.500 (2 seeds) | render_q=1 vl=3
+15:43:30 | VL         | 1780933225_4874e | score done | p=2 | render_q=1 vl=3
+15:44:03 | INFO       | 1780933225_4874e | prompt 3: alignment=3.500 (2 seeds) | render_q=1 vl=3
+15:44:03 | VL         | 1780933225_4874e | score done | p=3 | render_q=1 vl=3
+15:46:51 | INFO       | warmup | FLUX loaded on GPU 0 (id=127515185078752)
+15:47:48 | INFO       | 1780933668_2a6d8 | evaluation started
+15:47:48 | EVAL       | 1780933668_2a6d8 | evaluation started | prompts=1 | pipeline=True | parallel_sap=True
+15:47:48 | PIPELINE   | 1780933668_2a6d8 | start 1 prompts | sap_workers=4 | vl_workers=3
+15:47:48 | SAP        | 1780933668_2a6d8 | parallel decompose x1
+15:47:48 | INFO       | 1780933668_2a6d8 | prompt 1/1: decompose
+15:48:26 | SAP        | 1780933668_2a6d8 | decompose done | p=1
+15:48:26 | RENDER     | 1780933668_2a6d8 | queued | p=1 | queue=1
+15:48:26 | INFO       | 1780933668_2a6d8 | prompt 1: render start
+15:48:31 | RENDER     | 1780933668_2a6d8 | done 1 images | p=1
+15:48:31 | VL         | 1780933668_2a6d8 | scoring | p=1
+15:48:31 | INFO       | 1780933668_2a6d8 | prompt 1: score start (1 seeds)
+15:49:06 | INFO       | 1780933668_2a6d8 | prompt 1: alignment=2.000 (1 seeds) | vl=1
+15:49:06 | VL         | 1780933668_2a6d8 | score done | p=1 | vl=1
+15:49:17 | INFO       | 1780933668_2a6d8 | done alignment=2.000 gemma=0.000 combined=2.000
+15:49:17 | INFO       | 1780933757_d70ed | evaluation started
+15:50:09 | EVAL       | 1780933757_d70ed | evaluation started | prompts=3 | pipeline=True | parallel_sap=True
+15:50:09 | PIPELINE   | 1780933757_d70ed | start 3 prompts | sap_workers=4 | vl_workers=3
+15:50:09 | SAP        | 1780933757_d70ed | parallel decompose x3
+15:50:09 | INFO       | 1780933757_d70ed | prompt 1/3: decompose | sap=3
+15:50:09 | INFO       | 1780933757_d70ed | prompt 2/3: decompose | sap=3
+15:50:09 | INFO       | 1780933757_d70ed | prompt 3/3: decompose | sap=2
+15:50:45 | SAP        | 1780933757_d70ed | decompose done | p=1 | sap=2
+15:50:45 | RENDER     | 1780933757_d70ed | queued | p=1 | sap=2 | queue=1
+15:50:45 | INFO       | 1780933757_d70ed | prompt 1: render start
+15:50:48 | SAP        | 1780933757_d70ed | decompose done | p=2
+15:50:48 | RENDER     | 1780933757_d70ed | queued | p=2 | render_q=1 | queue=2
+15:51:03 | INFO       | 1780933757_d70ed | prompt 2: render start | render_q=1
+15:51:03 | RENDER     | 1780933757_d70ed | done 2 images | p=1 | render_q=1
+15:51:03 | VL         | 1780933757_d70ed | scoring | p=1 | render_q=1 vl=1
+15:51:03 | INFO       | 1780933757_d70ed | prompt 1: score start (2 seeds) | render_q=1 vl=1
+15:51:03 | SAP        | 1780933757_d70ed | decompose done | p=3 | render_q=1 vl=1
+15:51:03 | RENDER     | 1780933757_d70ed | queued | p=3 | render_q=1 vl=1 | queue=2
+15:51:20 | INFO       | 1780933757_d70ed | prompt 3: render start | render_q=1 vl=1
+15:51:20 | RENDER     | 1780933757_d70ed | done 2 images | p=2 | render_q=1 vl=1
+15:51:20 | VL         | 1780933757_d70ed | scoring | p=2 | render_q=1 vl=2
+15:51:20 | INFO       | 1780933757_d70ed | prompt 2: score start (2 seeds) | render_q=1 vl=2
+15:51:36 | RENDER     | 1780933757_d70ed | done 2 images | p=3 | render_q=1 vl=2
+15:51:37 | VL         | 1780933757_d70ed | scoring | p=3 | render_q=1 vl=2
+15:51:37 | INFO       | 1780933757_d70ed | prompt 3: score start (2 seeds) | render_q=1 vl=2
+15:51:51 | INFO       | 1780933757_d70ed | prompt 1: alignment=1.500 (2 seeds) | render_q=1 vl=3
+15:51:51 | VL         | 1780933757_d70ed | score done | p=1 | render_q=1 vl=3
+15:52:12 | INFO       | 1780933757_d70ed | prompt 2: alignment=4.000 (2 seeds) | render_q=1 vl=3
+15:52:12 | VL         | 1780933757_d70ed | score done | p=2 | render_q=1 vl=3
+15:52:22 | INFO       | 1780933757_d70ed | prompt 3: alignment=3.000 (2 seeds) | render_q=1 vl=3
+15:52:22 | VL         | 1780933757_d70ed | score done | p=3 | render_q=1 vl=3
+15:54:26 | INFO       | warmup | FLUX loaded on GPU 0 (id=130683783028400)
+15:55:13 | INFO       | 1780934113_6b700 | evaluation started
+15:55:13 | EVAL       | 1780934113_6b700 | evaluation started | prompts=1 | pipeline=True | parallel_sap=True
+15:55:13 | PIPELINE   | 1780934113_6b700 | start 1 prompts | sap_workers=4 | vl_workers=3
+15:55:13 | SAP        | 1780934113_6b700 | parallel decompose x1
+15:55:13 | INFO       | 1780934113_6b700 | prompt 1/1: decompose
+15:55:42 | SAP        | 1780934113_6b700 | decompose done | p=1
+15:55:42 | RENDER     | 1780934113_6b700 | queued | p=1 | queue=1
+15:55:42 | INFO       | 1780934113_6b700 | prompt 1: render start
+15:55:46 | RENDER     | 1780934113_6b700 | done 1 images | p=1
+15:55:46 | VL         | 1780934113_6b700 | scoring | p=1
+15:55:46 | INFO       | 1780934113_6b700 | prompt 1: score start (1 seeds)
+15:56:11 | INFO       | 1780934113_6b700 | prompt 1: alignment=3.000 (1 seeds) | vl=1
+15:56:11 | VL         | 1780934113_6b700 | score done | p=1 | vl=1
+15:56:22 | INFO       | 1780934113_6b700 | done alignment=3.000 gemma=0.000 combined=3.000
+15:56:22 | INFO       | 1780934182_9ddb1 | evaluation started
+15:57:11 | EVAL       | 1780934182_9ddb1 | evaluation started | prompts=3 | pipeline=True | parallel_sap=True
+15:57:11 | PIPELINE   | 1780934182_9ddb1 | start 3 prompts | sap_workers=4 | vl_workers=3
+15:57:11 | SAP        | 1780934182_9ddb1 | parallel decompose x3
+15:57:11 | INFO       | 1780934182_9ddb1 | prompt 1/3: decompose | sap=3
+15:57:11 | INFO       | 1780934182_9ddb1 | prompt 2/3: decompose | sap=3
+15:57:11 | INFO       | 1780934182_9ddb1 | prompt 3/3: decompose | sap=2
+15:57:43 | SAP        | 1780934182_9ddb1 | decompose done | p=1 | sap=2
+15:57:43 | RENDER     | 1780934182_9ddb1 | queued | p=1 | sap=2 | queue=1
+15:57:43 | INFO       | 1780934182_9ddb1 | prompt 1: render start
+15:57:43 | SAP        | 1780934182_9ddb1 | decompose done | p=2
+15:57:43 | RENDER     | 1780934182_9ddb1 | queued | p=2 | render_q=1 | queue=2
+15:58:00 | INFO       | 1780934182_9ddb1 | prompt 2: render start | render_q=1
+15:58:00 | RENDER     | 1780934182_9ddb1 | done 2 images | p=1 | render_q=1
+15:58:00 | VL         | 1780934182_9ddb1 | scoring | p=1 | render_q=1 vl=1
+15:58:00 | INFO       | 1780934182_9ddb1 | prompt 1: score start (2 seeds) | render_q=1 vl=1
+15:58:00 | SAP        | 1780934182_9ddb1 | decompose done | p=3 | render_q=1 vl=1
+15:58:00 | RENDER     | 1780934182_9ddb1 | queued | p=3 | render_q=1 vl=1 | queue=2
+15:58:17 | INFO       | 1780934182_9ddb1 | prompt 3: render start | render_q=1 vl=1
+15:58:17 | RENDER     | 1780934182_9ddb1 | done 2 images | p=2 | render_q=1 vl=1
+15:58:17 | VL         | 1780934182_9ddb1 | scoring | p=2 | render_q=1 vl=2
+15:58:17 | INFO       | 1780934182_9ddb1 | prompt 2: score start (2 seeds) | render_q=1 vl=2
+15:58:33 | RENDER     | 1780934182_9ddb1 | done 2 images | p=3 | render_q=1 vl=2
+15:58:34 | VL         | 1780934182_9ddb1 | scoring | p=3 | render_q=1 vl=2
+15:58:34 | INFO       | 1780934182_9ddb1 | prompt 3: score start (2 seeds) | render_q=1 vl=2
+15:59:00 | INFO       | 1780934182_9ddb1 | prompt 1: alignment=1.000 (2 seeds) | render_q=1 vl=3
+15:59:00 | VL         | 1780934182_9ddb1 | score done | p=1 | render_q=1 vl=3
+15:59:41 | INFO       | 1780934182_9ddb1 | prompt 2: alignment=2.500 (2 seeds) | render_q=1 vl=3
+15:59:41 | VL         | 1780934182_9ddb1 | score done | p=2 | render_q=1 vl=3
+16:00:06 | INFO       | 1780934182_9ddb1 | prompt 3: alignment=3.000 (2 seeds) | render_q=1 vl=3
+16:00:06 | VL         | 1780934182_9ddb1 | score done | p=3 | render_q=1 vl=3
+16:02:01 | INFO       | warmup | FLUX loaded on GPU 0 (id=135843077285472)
+16:02:46 | INFO       | 1780934566_48009 | evaluation started
+16:02:46 | EVAL       | 1780934566_48009 | evaluation started | prompts=1 | pipeline=True | parallel_sap=True
+16:02:46 | PIPELINE   | 1780934566_48009 | start 1 prompts | sap_workers=4 | vl_workers=3
+16:02:46 | SAP        | 1780934566_48009 | parallel decompose x1
+16:02:46 | INFO       | 1780934566_48009 | prompt 1/1: decompose
+16:03:40 | SAP        | 1780934566_48009 | decompose done | p=1
+16:03:40 | RENDER     | 1780934566_48009 | queued | p=1 | queue=1
+16:03:40 | INFO       | 1780934566_48009 | prompt 1: render start
+16:03:44 | RENDER     | 1780934566_48009 | done 1 images | p=1
+16:03:44 | VL         | 1780934566_48009 | scoring | p=1
+16:03:44 | INFO       | 1780934566_48009 | prompt 1: score start (1 seeds)
+16:04:44 | INFO       | 1780934566_48009 | prompt 1: alignment=2.000 (1 seeds) | vl=1
+16:04:44 | VL         | 1780934566_48009 | score done | p=1 | vl=1
+16:04:54 | INFO       | 1780934566_48009 | done alignment=2.000 gemma=0.000 combined=2.000
+16:04:54 | INFO       | 1780934694_35d44 | evaluation started
+16:05:45 | EVAL       | 1780934694_35d44 | evaluation started | prompts=3 | pipeline=True | parallel_sap=True
+16:05:45 | PIPELINE   | 1780934694_35d44 | start 3 prompts | sap_workers=4 | vl_workers=3
+16:05:45 | SAP        | 1780934694_35d44 | parallel decompose x3
+16:05:45 | INFO       | 1780934694_35d44 | prompt 1/3: decompose | sap=3
+16:05:45 | INFO       | 1780934694_35d44 | prompt 2/3: decompose | sap=3
+16:05:45 | INFO       | 1780934694_35d44 | prompt 3/3: decompose | sap=2
+16:06:30 | SAP        | 1780934694_35d44 | decompose done | p=1 | sap=2
+16:06:30 | RENDER     | 1780934694_35d44 | queued | p=1 | sap=2 | queue=1
+16:06:30 | INFO       | 1780934694_35d44 | prompt 1: render start
+16:06:30 | SAP        | 1780934694_35d44 | decompose done | p=2
+16:06:30 | RENDER     | 1780934694_35d44 | queued | p=2 | render_q=1 | queue=2
+16:06:47 | INFO       | 1780934694_35d44 | prompt 2: render start | render_q=1
+16:06:47 | RENDER     | 1780934694_35d44 | done 2 images | p=1 | render_q=1
+16:06:47 | INFO       | 1780934694_35d44 | prompt 1: score start (2 seeds) | render_q=1
+16:06:47 | VL         | 1780934694_35d44 | scoring | p=1 | render_q=1 vl=1
+16:06:47 | SAP        | 1780934694_35d44 | decompose done | p=3 | render_q=1 vl=1
+16:06:47 | RENDER     | 1780934694_35d44 | queued | p=3 | render_q=1 vl=1 | queue=2
+16:07:04 | INFO       | 1780934694_35d44 | prompt 3: render start | render_q=1 vl=1
+16:07:04 | RENDER     | 1780934694_35d44 | done 2 images | p=2 | render_q=1 vl=1
+16:07:04 | INFO       | 1780934694_35d44 | prompt 2: score start (2 seeds) | render_q=1 vl=1
+16:07:04 | VL         | 1780934694_35d44 | scoring | p=2 | render_q=1 vl=2
+16:07:21 | RENDER     | 1780934694_35d44 | done 2 images | p=3 | render_q=1 vl=2
+16:07:21 | VL         | 1780934694_35d44 | scoring | p=3 | render_q=1 vl=2
+16:07:21 | INFO       | 1780934694_35d44 | prompt 3: score start (2 seeds) | render_q=1 vl=2
+16:07:50 | INFO       | 1780934694_35d44 | prompt 1: alignment=1.500 (2 seeds) | render_q=1 vl=3
+16:07:50 | VL         | 1780934694_35d44 | score done | p=1 | render_q=1 vl=3
+16:08:04 | INFO       | 1780934694_35d44 | prompt 2: alignment=2.000 (2 seeds) | render_q=1 vl=3
+16:08:04 | VL         | 1780934694_35d44 | score done | p=2 | render_q=1 vl=3

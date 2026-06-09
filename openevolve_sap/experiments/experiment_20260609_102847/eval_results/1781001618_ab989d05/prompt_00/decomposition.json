@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Five-finger anatomy is a strong prior for gloves. Starting with a mutant hand using explicit counting establishes the digit count early before introducing the white fabric texture.",
+  "prompts_list": [
+    "Mutant hand palm forward, fingers spread like fan. Exactly 6 identical fingers in a row, count: 1, 2, 3, 4, 5, 6. Polydactyly, hexadactyly, strictly 6 fingers",
+    "White glove palm forward, fingers spread like fan. Exactly 6 identical finger stalls in a row, count: 1, 2, 3, 4, 5, 6. Hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

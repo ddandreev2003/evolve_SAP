@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Human hands and gloves strongly default to five digits due to training data priors. Introducing a 'mutant' hand configuration first breaks the five-finger geometric lock, allowing the digit count to settle before transitioning to the specific white glove material and target count.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart. The hand has exactly six identical fingers in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, hexadactyly, strictly 6 fingers",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly six identical finger stalls in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

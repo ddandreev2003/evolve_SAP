@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upwards, making an upside-down configuration in a vase structurally inconsistent with common physical priors. The model risks correcting the orientation to upright during refinement. By starting with a standard vase layout, the object boundaries and scene composition are stabilized before enforcing the unconventional inverted position.",
+  "prompts_list": [
+    "A vase filled with fresh flowers",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

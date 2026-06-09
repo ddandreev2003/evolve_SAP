@@ -157,12 +157,14 @@ def patch_controller_checkpoints() -> None:
             return
         exp_dir = Path(os.getenv("SAP_EXPERIMENT_DIR", self.output_dir))
         cfg = os.getenv("SAP_CONFIG_PATH", "")
+        from openevolve_sap.sap_eval_settings import fitness_from_metrics
+
         best = self.database.get_best_program()
         best_score = 0.0
         if best and best.metrics:
-            best_score = float(best.metrics.get("combined_score", 0.0))
+            best_score = fitness_from_metrics(best.metrics)
         scores = [
-            float(p.metrics.get("combined_score", 0.0))
+            fitness_from_metrics(p.metrics)
             for p in self.database.programs.values()
             if p.metrics
         ]

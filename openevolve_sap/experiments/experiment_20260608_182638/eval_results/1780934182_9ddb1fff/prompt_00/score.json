@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934182_9ddb1fff/prompt_00/image_00.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image shows a bouquet of flowers in a normal upright position, with blooms at the top and stems submerged in water at the bottom. The prompt explicitly requires an \"upside down\" arrangement (where blooms would be near the water and stems pointing upward), which is entirely absent. The scene depicts a standard bouquet, failing to convey the core concept of inversion. No elements suggest the intended scenario, resulting in a complete misalignment.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with no visible artifacts, distortions, or rendering flaws. Lighting is natural and consistent, highlighting realistic textures of petals, leaves, and glass. The vase, flowers, and wooden surface are sharply defined, with coherent perspective and physical relationships (e.g., stems naturally extending into water). All elements are anatomically and structurally sound, creating a clean, realistic, and visually cohesive scene."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934182_9ddb1fff/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bouquet of flowers in a normal upright orientation within a vase, with blooms positioned at the top and stems extending downward into the vase. This directly contradicts the prompt's requirement that the bouquet be \"upside down\" (i.e., blooms oriented downward and stems upward). No elements in the image illustrate an inverted arrangement, making it entirely inconsistent with the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine, with realistic textures, natural lighting, and consistent perspective. The flowers, leaves, and vase exhibit sharp detail, coherent geometry, and no rendering artifacts (e.g., no distorted petals, fused elements, or implausible blending). The composition is balanced, and all elements appear physically plausible and well-formed."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

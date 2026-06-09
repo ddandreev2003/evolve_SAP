@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction requires spatial separation of subject and shadow direction. Starting with a structural proxy ensures the impossible geometry is locked before refining into the final defying-light description.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a dark shadow shaped like a cat is facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

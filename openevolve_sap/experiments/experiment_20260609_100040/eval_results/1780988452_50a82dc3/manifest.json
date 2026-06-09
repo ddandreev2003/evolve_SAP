@@ -1,0 +1,46 @@
+{
+  "run_id": "1780988452_50a82dc3",
+  "program_path": "/tmp/tmpqaei459i.py",
+  "program_id": "tmpqaei459i",
+  "timestamp": 1780988936.4452224,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780988452_50a82dc3",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780988452_50a82dc3/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780988452_50a82dc3/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780988452_50a82dc3/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780988452_50a82dc3/prompt_00/image_00.png",
+            "alignment score": 2.0,
+            "score": {
+              "alignment score": 2,
+              "alignment explanation": "The image depicts a hand with 6 fingers but fails to represent a *glove* as specified in the prompt. The prompt requires a white glove (an object worn on the hand) with 6 fingers, yet the image shows a realistic human hand (or a glove indistinguishable from a hand) without clear indicators of it being a glove (e.g., fabric texture, seam lines, or contextual clues like a wrist opening). While the 6-finger count aligns with the prompt, the critical element—the glove itself—is missing or misinterpreted as a biological hand, significantly misrepresenting the prompt’s intent.",
+              "quality score": 5,
+              "quality explanation": "The image is visually flawless. The hand/glove is rendered with smooth, consistent texture and lighting, and all fingers (including the 6th) are anatomically coherent with no distortions, merged shapes, or artifacts. The black background enhances clarity, and complex details like knuckles, nails, and skin texture are crisp and realistic. There are no visual inconsistencies or rendering errors."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 2.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780988452_50a82dc3/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 2.0,
+    "gemma_score": 0.0,
+    "combined_score": 2.0
+  }
+}

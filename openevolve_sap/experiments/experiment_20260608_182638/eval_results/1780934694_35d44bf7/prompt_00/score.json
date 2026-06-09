@@ -1,0 +1,28 @@
+{
+  "alignment score": 1.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934694_35d44bf7/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers, but it is not upside down as specified in the prompt. The flowers are oriented normally with blooms facing upward, not inverted. Additionally, there is no vase visible in the image—the bouquet appears to be resting directly on a wooden surface rather than contained in a vase. While the main subject (a bouquet of flowers) is present, the key elements of being \"upside down\" and \"in a vase\" are significantly misrepresented, which are essential to the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, realistic photograph with no visible rendering artifacts or distortions. The flowers, stems, and wooden surface are well-formed and visually coherent. Lighting, texture, and perspective are consistent throughout the scene, and all elements appear physically natural with proper connections and proportions. The composition shows clear detail in the roses and baby's breath flowers, with natural shadows and highlights that enhance the three-dimensional appearance of the bouquet."
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_182638/eval_results/1780934694_35d44bf7/prompt_00/image_01.png",
+      "alignment score": 1.0,
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a bouquet of flowers arranged **right-side up** in a vase, with blooms facing upward and stems extending downward into the vase. This directly contradicts the prompt's requirement of the bouquet being \"upside down,\" which would necessitate flowers hanging downward from the vase (e.g., stems protruding from the top, blooms pointing toward the table). No element of the scene reflects the inverted orientation described in the prompt, resulting in a complete failure of semantic fidelity.",
+        "quality score": 5,
+        "quality explanation": "The image exhibits high visual fidelity with no discernible flaws. Lighting is soft and natural, highlighting textures of the roses, hydrangeas, leaves, and ribbed vase consistently. All elements are anatomically and physically coherent: petals, leaves, and stems are sharply defined with realistic detail, no distorted anatomy or floating objects, and perspective is logically maintained. The composition is clean, realistic, and free of artifacts or warping."
+      }
+    }
+  ],
+  "num_seeds_scored": 2
+}

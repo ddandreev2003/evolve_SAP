@@ -1,0 +1,1 @@
+timestamp,worker_id,gpu_id,util_percent,memory_used_mb,memory_total_mb,temp_c,power_w

@@ -1,0 +1,46 @@
+{
+  "run_id": "1780989870_d26e422c",
+  "program_path": "/tmp/tmp6y3c1w95.py",
+  "program_id": "tmp6y3c1w95",
+  "timestamp": 1780989969.8580964,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989870_d26e422c",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989870_d26e422c/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989870_d26e422c/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989870_d26e422c/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 3.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989870_d26e422c/prompt_00/image_00.png",
+            "alignment score": 3.0,
+            "score": {
+              "alignment score": 3,
+              "alignment explanation": "The image depicts a white glove, which matches the primary object in the prompt. However, the glove has 5 fingers (including the thumb), not 6 as specified. The critical attribute of \"6 fingers\" is incorrect, which constitutes a significant mismatch in the prompt’s key detail. While the main subject (a white glove) is present, the incorrect number of fingers qualifies this as \"main subjects present but important attributes wrong.\"",
+              "quality score": 5,
+              "quality explanation": "The image is visually clean and realistic. The glove’s texture, lighting, and perspective are consistent. Fingers and the thumb are anatomically well-formed, with no visible distortions, merged shapes, or rendering artifacts. The black background enhances clarity, and all elements appear physically coherent and deliberately rendered."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 3.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989870_d26e422c/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 3.0,
+    "gemma_score": 0.0,
+    "combined_score": 3.0
+  }
+}

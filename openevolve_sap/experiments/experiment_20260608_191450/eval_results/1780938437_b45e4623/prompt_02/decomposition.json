@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are physically bound to light sources, creating strong priors that match the angle of illumination. To force an impossible orientation, the shadow is introduced as an independent solid shape facing the reverse direction first, preventing the model from auto-aligning it with the object during the critical early layout stages.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a distinct solid black cat-shaped shadow is facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

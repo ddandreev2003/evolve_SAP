@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Creating six fingers contradicts the strong anatomical prior of five digits found in training data. A bare hand serves as a structural proxy to force the geometry of six distinct digits early in the diffusion process, before the model locks shape priors. Transitioning to the glove material after step 2 preserves the impossible polydactyly structure without reverting to the standard five-finger default.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, six distinct separate digits clearly visible",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, six distinct separate finger stalls, hexadactyly"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

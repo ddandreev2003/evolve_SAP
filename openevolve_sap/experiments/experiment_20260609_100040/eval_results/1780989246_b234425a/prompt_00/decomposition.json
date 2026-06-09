@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction. Finger count is established in the geometry stage. Starting with a bare hand forces the model to resolve the digit count before applying the glove texture prevents correction to the standard 5 fingers.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers",
+    "A white glove with exactly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A structural spatial contradiction where flowers violate natural growth orientations. Standard priors assume stems grow upward, so the prompt forces the inverted geometry (stems out, heads in) immediately to prevent the model from reverting to normal flower placement during denoising.",
+  "prompts_list": [
+    "A glass vase on a table. Inside the vase, a bouquet of flowers is stuffed completely upside down. The thick green stems stick straight UP into the air out of the vase opening. The colorful flower heads are buried inside the vase, pointing down.",
+    "A bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

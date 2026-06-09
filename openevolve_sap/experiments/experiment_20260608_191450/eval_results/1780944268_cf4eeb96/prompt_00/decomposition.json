@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in vases typically orient upright with stems submerged and heads pointing up. Generating them upside down conflicts with gravity priors and vase semantics that lock during the early layout stages. By describing the inverted stem orientation and internal head placement in the first prompt, the model establishes the unusual geometry before applying floral textures.",
+  "prompts_list": [
+    "A glass vase on a table containing thick green flower stems sticking straight up out of the opening while flower heads hang down inside.",
+    "A bouquet of flowers placed completely upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

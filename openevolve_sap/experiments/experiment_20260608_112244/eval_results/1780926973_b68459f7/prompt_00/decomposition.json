@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet creates a structural contradiction regarding gravity and typical flower geometry. Strategy B is applied here: early mentioning of \"bouquet\" would lock normal upright stem growth. The first prompt describes only the inverted physical arrangement (hanging stems/blossoms) without naming the object category, forcing the geometry. The second prompt names the \"bouquet\" after the layout is locked at step 4.",
+  "prompts_list": [
+    "bare green flower stems protruding from a vase opening with blossoms hanging down towards the table",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

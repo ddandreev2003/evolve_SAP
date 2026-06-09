@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet typically grows upwards in a vase. Using an \"inverted vase with stems pointing up\" as a proxy locks the unusual geometry early, preventing the model from defaulting to a standard upright arrangement before defining the flowers.",
+  "prompts_list": [
+    "An inverted vase with flower stems pointing upwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

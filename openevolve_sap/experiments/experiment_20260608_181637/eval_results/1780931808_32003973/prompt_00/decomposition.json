@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet in a vase is typically arranged upright due to gravitational expectations and functional design. Starting with a standard upright configuration establishes the correct object relationships and volume before reversing the orientation, preventing the model from struggling to reconcile conflicting object priors early in the process.",
+  "prompts_list": [
+    "A vase with a bouquet of flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

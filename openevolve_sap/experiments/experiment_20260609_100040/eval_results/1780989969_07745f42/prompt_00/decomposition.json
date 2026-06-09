@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Finger count is a structural feature resolved in the layout stage (0-3). A standard glove assumes five digits. Starting with a bare hand showing hexadactyly locks the geometry before applying the glove material.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers, hexadactyly, 6 distinct digits spread out, an extra sixth finger",
+    "A white leather glove with exactly 6 fingers, hexadactyly, 6 distinct fingers, six fingered glove"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

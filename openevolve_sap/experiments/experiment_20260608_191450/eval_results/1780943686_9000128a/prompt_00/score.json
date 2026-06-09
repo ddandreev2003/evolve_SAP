@@ -1,0 +1,17 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780943686_9000128a/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers inside a glass vase, but the vase is lying horizontally on a table rather than being *upside down* (i.e., inverted vertically with the base pointing upward and flowers hanging downward). While the core elements (bouquet, vase) are present, the critical spatial relationship described in the prompt—flowers positioned *upside down* within the vase—is misinterpreted. The horizontal orientation does not fulfill the prompt’s requirement, as the flowers are not inverted in the intended functional/positional sense. This represents a significant deviation from the prompt’s core instruction.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, photorealistic photograph with no visible artifacts. The glass vase, flowers, stems, and wooden surface are sharply defined and anatomically coherent. Lighting is natural and consistent, with accurate reflections on the glass and realistic wood grain texture. Perspective is logical (e.g., the vase’s curvature aligns with its horizontal placement), and all elements connect naturally without warping, clipping, or implausible blending. The composition is visually deliberate and free of distortions."
+      }
+    }
+  ],
+  "num_seeds_scored": 1
+}

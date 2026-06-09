@@ -1,0 +1,46 @@
+{
+  "run_id": "1780940584_a4801c85",
+  "program_path": "/tmp/tmpi7zuhib8.py",
+  "program_id": "tmpi7zuhib8",
+  "timestamp": 1780940678.5459015,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780940584_a4801c85",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780940584_a4801c85/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780940584_a4801c85/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780940584_a4801c85/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780940584_a4801c85/prompt_00/image_00.png",
+            "alignment score": 5.0,
+            "score": {
+              "alignment score": 5,
+              "alignment explanation": "The image perfectly conveys the prompt’s meaning. The bouquet is explicitly upside down, with flower buds pointing downward and stems extending upward from the vase. The vase is present and functioning as the anchor for the inverted arrangement, and no symbolic or metaphorical interpretation is required—the scene directly depicts the described situation with all key elements (bouquet, flowers, vase) in their correct roles and relationships.",
+              "quality score": 5,
+              "quality explanation": "The image is visually flawless. Lighting, texture, and perspective are consistent; the flowers, stems, and vase exhibit natural coherence with no distortion, warping, or artifacts. Edges are sharp, materials (wooden surface, ceramic vase, flower petals) are realistically rendered, and complex elements like the clustered stems and buds maintain anatomical plausibility without melting, clipping, or implausible blending. The composition is clean and fully coherent."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780940584_a4801c85/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 5.0,
+    "gemma_score": 0.0,
+    "combined_score": 5.0
+  }
+}

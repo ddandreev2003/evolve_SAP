@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadow direction is governed by light physics. Starting with a neutrally lit scene avoids locking the shadow vector too early. Switching to the specific shadow contradiction later allows the model to overwrite lighting cues without destabilizing the core subject.",
+  "prompts_list": [
+    "A cat sitting on the floor in bright light",
+    "The shadow of a cat is facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

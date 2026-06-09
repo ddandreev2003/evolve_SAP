@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is too strong to override later. Start with a bare hand showing 6 fingers explicitly to lock the topology. Then apply the white glove material constraint in the second stage.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 fingers: one thumb and five additional fingers. Six distinct separate digits, hexadactyly, 6 fingers clearly visible.",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 fingers: one thumb and five additional fingers. Six distinct separate finger stalls, hexadactyly, 6 fingers clearly visible."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

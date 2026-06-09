@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet defies standard physics, risking geometry correction by FLUX. Using a structural proxy with downward stems first ensures the inverted orientation is locked in the layout phase (0-4) before refining the identity as a floral arrangement.",
+  "prompts_list": [
+    "A vase with stems hanging downward",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

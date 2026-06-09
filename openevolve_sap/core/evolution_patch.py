@@ -9,7 +9,12 @@ from typing import Dict, List, Optional
 from openevolve.database import Program
 from openevolve.utils.metrics_utils import safe_numeric_average
 
+from openevolve_sap.core.api_health import BillingCircuitBreaker, is_billing_error
+from openevolve_sap.sap_eval_settings import fitness_from_metrics, get_primary_fitness_metric
+
 logger = logging.getLogger(__name__)
+
+_BILLING_BREAKER = BillingCircuitBreaker()
 
 _POOL_FAILURE_MARKERS = (
     "process pool was terminated abruptly",
@@ -24,15 +29,36 @@ def _is_pool_failure(exc: BaseException | str) -> bool:
     return any(marker in text for marker in _POOL_FAILURE_MARKERS)
 
 
-async def _sap_restart_pool(controller) -> None:
-    """Recycle the process pool after a worker crash."""
+async def _sap_restart_pool(controller, stale_futures: Optional[Dict[int, Future]] = None,
+                            island_pending: Optional[Dict[int, List[int]]] = None) -> None:
+    """Recycle the process pool after a worker crash.
+
+    Fully serializes the restart so two FLUX processes never coexist:
+    1. cancel + drop any futures bound to the dead executor,
+    2. shut the dead pool down and wait for its workers to exit,
+    3. release the parent's FLUX cache and free GPU/host memory,
+    4. only then start a fresh pool.
+    """
+    from openevolve_sap.evaluator import release_cached_model
+
     logger.warning("SAP: restarting process pool after worker failure")
+    if stale_futures:
+        for fut in stale_futures.values():
+            try:
+                fut.cancel()
+            except Exception:
+                pass
+        stale_futures.clear()
+    if island_pending:
+        for iteration_list in island_pending.values():
+            iteration_list.clear()
     if controller.executor:
         try:
-            controller.executor.shutdown(wait=False, cancel_futures=True)
+            controller.executor.shutdown(wait=True, cancel_futures=True)
         except Exception as exc:
             logger.debug("Pool shutdown during restart: %s", exc)
     controller.executor = None
+    release_cached_model()
     controller.start()
 
 
@@ -92,16 +118,23 @@ async def sap_run_evolution(
 
     pending_futures: Dict[int, Future] = {}
     island_pending: Dict[int, List[int]] = {i: [] for i in range(self.num_islands)}
-    batch_size = min(self.num_workers * 2, max_iterations)
+    single_gpu = __import__("os").getenv("SAP_SINGLE_GPU", "").strip() == "1"
+    if single_gpu or self.num_workers <= 1:
+        batch_size = 1
+    else:
+        batch_size = min(self.num_workers * 2, max_iterations)
     batch_per_island = max(1, batch_size // self.num_islands) if batch_size > 0 else 0
 
     next_attempt_id = start_iteration
     successful_iterations = 0
     last_success_attempt_id = start_iteration - 1
     pool_broken = False
+    billing_breaker = _BILLING_BREAKER
 
     async def _fill_pipeline() -> None:
         nonlocal next_attempt_id, pool_broken
+        if billing_breaker.is_open:
+            return
         for island_id in range(self.num_islands):
             while (
                 len(island_pending[island_id]) < batch_per_island
@@ -119,6 +152,10 @@ async def sap_run_evolution(
                 next_attempt_id += 1
 
     await _fill_pipeline()
+
+    async def _maybe_wait_billing() -> None:
+        if billing_breaker.is_open:
+            await billing_breaker.wait_if_open()
 
     early_stopping_enabled = self.config.early_stopping_patience is not None
     if early_stopping_enabled:
@@ -141,11 +178,12 @@ async def sap_run_evolution(
         and not self.shutdown_event.is_set()
         and not getattr(self, "early_stopping_triggered", False)
     ):
+        await _maybe_wait_billing()
         await _fill_pipeline()
 
         if not pending_futures:
             if pool_broken:
-                await _sap_restart_pool(self)
+                await _sap_restart_pool(self, pending_futures, island_pending)
                 pool_broken = False
                 await _fill_pipeline()
             await asyncio.sleep(0.05)
@@ -169,6 +207,8 @@ async def sap_run_evolution(
 
             if result.error:
                 logger.warning("Iteration %d error: %s", completed_iteration, result.error)
+                if is_billing_error(result.error):
+                    billing_breaker.record_billing_failure(result.error)
             elif result.child_program_dict:
                 child_program = Program(**result.child_program_dict)
                 self.database.add(
@@ -250,6 +290,7 @@ async def sap_run_evolution(
                 successful_iterations += 1
                 last_success_attempt_id = completed_iteration
                 success = True
+                billing_breaker.record_success()
 
                 if (
                     successful_iterations > 0
@@ -265,10 +306,7 @@ async def sap_run_evolution(
                     checkpoint_callback(completed_iteration)
 
                 if target_score is not None and child_program.metrics:
-                    if (
-                        "combined_score" in child_program.metrics
-                        and child_program.metrics["combined_score"] >= target_score
-                    ):
+                    if fitness_from_metrics(child_program.metrics) >= target_score:
                         logger.info(
                             "Target score %s reached at iteration %d",
                             target_score,
@@ -317,9 +355,11 @@ async def sap_run_evolution(
                 completed_iteration,
                 exc,
             )
-            if _is_pool_failure(exc):
-                pool_broken = True
-                await _sap_restart_pool(self)
+            if is_billing_error(exc):
+                billing_breaker.record_billing_failure(str(exc))
+            elif _is_pool_failure(exc):
+                await _sap_restart_pool(self, pending_futures, island_pending)
+                pool_broken = False
 
         for island_id, iteration_list in island_pending.items():
             if completed_iteration in iteration_list:
@@ -371,25 +411,23 @@ def patch_controller_final_checkpoint() -> None:
 
         if self.parallel_controller is None:
             return
-        if self.parallel_controller.shutdown_event.is_set():
-            return
-        if self.parallel_controller.early_stopping_triggered:
-            pass
 
         ctrl = self.parallel_controller
         last_id = getattr(ctrl, "_sap_last_success_attempt_id", None)
         successful = getattr(ctrl, "_sap_successful_iterations", 0)
-        if last_id is None or last_id < start_iteration:
+        if last_id is None or last_id < start_iteration or successful <= 0:
             return
-        if successful > 0 and last_id % self.config.checkpoint_interval == 0:
+        if last_id % self.config.checkpoint_interval == 0:
             return
-        if successful > 0:
-            logger.info(
-                "SAP: saving final checkpoint at attempt %d (%d successful cycles)",
-                last_id,
-                successful,
-            )
-            self._save_checkpoint(last_id)
+
+        reason = "shutdown" if ctrl.shutdown_event.is_set() else "final"
+        logger.info(
+            "SAP: saving %s checkpoint at attempt %d (%d successful cycles)",
+            reason,
+            last_id,
+            successful,
+        )
+        self._save_checkpoint(last_id)
 
     OpenEvolve._run_evolution_with_checkpoints = _run_evolution_with_checkpoints
     OpenEvolve._sap_final_checkpoint_patched = True

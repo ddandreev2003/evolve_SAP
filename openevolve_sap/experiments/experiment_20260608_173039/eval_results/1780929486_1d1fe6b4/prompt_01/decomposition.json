@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Human anatomy locks at 5 fingers during early denoising. Starting with a \"hand with six fingers\" encodes the incorrect geometry directly before applying the glove material, preventing the model from reverting to standard five-fingered gloves.",
+  "prompts_list": [
+    "A hand with six fingers extended",
+    "A white glove worn on a hand with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows naturally align with physics relative to light sources. A shadow facing the opposite direction of the cat contradicts typical single-light geometry, risking distortion if introduced too early. The sequence establishes the cat's anatomy first, then introduces the shadow object, and finally enforces the directional contradiction during the detailed refinement stage.",
+  "prompts_list": [
+    "A cat standing on a flat ground",
+    "A cat standing on a flat ground with a visible shadow",
+    "A cat standing on a flat ground with its shadow facing the opposite direction"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

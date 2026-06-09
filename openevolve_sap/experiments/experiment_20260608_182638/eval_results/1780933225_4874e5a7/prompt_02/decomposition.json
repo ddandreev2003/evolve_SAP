@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows typically align with the position of the light source to maintain physical realism. Introducing the contradictory direction early could destabilize the cat's geometry or the scene's lighting coherence. Following Strategy A, the scene starts with standard lighting to lock the cat and environment, then switches to the impossible shadow direction once the structure is established.",
+  "prompts_list": [
+    "A cat standing in natural light",
+    "A cat with its shadow facing the opposite direction of the light"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

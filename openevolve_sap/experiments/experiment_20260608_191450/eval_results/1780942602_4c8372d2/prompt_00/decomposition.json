@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flower bouquets typically grow upright due to gravity. Since the vase's interior volume locks in the early geometry stages, describing the inversion after establishing the container prevents the model from defaulting to vertical stems.",
+  "prompts_list": [
+    "A clear glass vase sitting on a flat table",
+    "A bouquet of flowers placed completely upside down in the vase, with stems pointing up and flower heads hanging down inside"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

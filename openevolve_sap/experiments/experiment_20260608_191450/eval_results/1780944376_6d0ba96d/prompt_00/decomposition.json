@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Flowers naturally grow upwards, creating a strong geometric prior that conflicts with the requested inversion. Starting with the vase and explicitly describing the stem orientation ensures the model locks the inverted structure during the early geometry phase rather than correcting to a natural state later.",
+  "prompts_list": [
+    "A glass vase with flowers arranged upside down, stems pointing up out of the opening",
+    "A bouquet of flowers placed completely upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

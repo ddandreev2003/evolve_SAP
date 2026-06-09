@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove having 6 fingers is a structural contradiction where the standard 5-digit prior locks at steps 0-2. To prevent the model from reverting to normal anatomy, the first prompt forces the incorrect geometry using a mutant proxy and explicit counting before introducing the specific glove texture in the second stage.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical fingers in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, hexadactyly, strictly 6 fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical finger stalls in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

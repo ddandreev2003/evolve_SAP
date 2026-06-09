@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction. Diffusion models have strong priors for consistent lighting directions. Trick the model into drawing the shadow as a separate physical object first to break the standard light/shadow correlation before merging with the cat.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a distinct solid black cat-shaped shadow is facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows typically align with light physics, so the model must be guided to treat the shadow as an independent geometric layer. We define the shadow as a flat, painted silhouette on the ground in the first step to lock its directionality before lighting calculations integrate the scene physically.",
+  "prompts_list": [
+    "A cat facing LEFT. On the ground, a separate black cat-shaped silhouette painted on the floor faces RIGHT.",
+    "A cat facing left, cast shadow facing opposite direction, pointing right"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

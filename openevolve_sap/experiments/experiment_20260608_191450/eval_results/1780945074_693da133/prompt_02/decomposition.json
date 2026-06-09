@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradictions require breaking the model's inherent assumption that shadows align with object geometry. Strategy A applies here: treat the shadow as a separate painted shape in the first prompt to establish the contradictory orientation without conflicting with gravity/object placement priors, then resolve the full scene in the second.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a separate black cat-shaped silhouette painted on the floor is facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

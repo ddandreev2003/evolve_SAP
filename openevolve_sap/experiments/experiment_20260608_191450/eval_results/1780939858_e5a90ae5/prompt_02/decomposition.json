@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction. Diffusion models strongly prioritize physically consistent shadow directions relative to light sources. To override this, the prompt initially defines the shadow as a separate geometric silhouette facing the opposite way, bypassing the lighting prior during the critical geometry lock phase (steps 0-3) before merging the concepts.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a separate black cat-shaped silhouette painted on the floor is facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

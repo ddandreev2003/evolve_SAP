@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The diffusion model prioritizes standard anatomical priors for hands during early denoising steps. To force 6 fingers, the prompt introduces a bare hand first to lock the digit count structurally, then applies the glove texture and color in the second stage to avoid geometric correction rejection.",
+  "prompts_list": [
+    "A bare human hand with exactly 6 fingers, showing 6 distinct digits spread out",
+    "A white leather glove with exactly 6 fingers, 6 distinct digits"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

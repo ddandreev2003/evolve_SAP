@@ -1,0 +1,46 @@
+{
+  "run_id": "1780989159_f71bd1c5",
+  "program_path": "/tmp/tmp9omdspeg.py",
+  "program_id": "tmp9omdspeg",
+  "timestamp": 1780989246.644375,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989159_f71bd1c5",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989159_f71bd1c5/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989159_f71bd1c5/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989159_f71bd1c5/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 3.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989159_f71bd1c5/prompt_00/image_00.png",
+            "alignment score": 3.0,
+            "score": {
+              "alignment score": 3,
+              "alignment explanation": "The image shows a white glove, which correctly identifies the main subject from the prompt. However, it depicts a standard 5-finger glove (4 fingers plus a thumb) rather than the 6 fingers specified in the prompt. The key attribute of finger count is fundamentally incorrect, which represents a significant deviation from the prompt's core requirement. While the object type (glove) and color (white) are accurate, the misrepresentation of the number of fingers prevents full alignment with the intended meaning.",
+              "quality score": 5,
+              "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The glove's texture, stitching, and material are rendered with high fidelity. Lighting is consistent, creating natural shadows and highlights that enhance the three-dimensional appearance. The fingers and hand anatomy are well-formed and visually coherent, with no distortion, warping, or artifacts. The composition maintains physical plausibility throughout, with no floating elements or merged geometry. The black background provides strong contrast without interfering with the subject's clarity."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 3.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989159_f71bd1c5/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 3.0,
+    "gemma_score": 0.0,
+    "combined_score": 3.0
+  }
+}

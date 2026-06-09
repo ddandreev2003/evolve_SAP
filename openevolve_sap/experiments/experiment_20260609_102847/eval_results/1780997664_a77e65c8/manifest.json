@@ -1,0 +1,81 @@
+{
+  "run_id": "1780997664_a77e65c8",
+  "program_path": "/tmp/tmpntvsid9n.py",
+  "program_id": "tmpntvsid9n",
+  "timestamp": 1780997898.035175,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780997664_a77e65c8",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780997664_a77e65c8/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780997664_a77e65c8/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780997664_a77e65c8/prompt_00/image_00.png"
+        },
+        {
+          "image_index": 1,
+          "seed": 30499,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780997664_a77e65c8/prompt_00/image_01.png"
+        },
+        {
+          "image_index": 2,
+          "seed": 30500,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780997664_a77e65c8/prompt_00/image_02.png"
+        }
+      ],
+      "score": {
+        "alignment score": 2.5,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780997664_a77e65c8/prompt_00/image_00.png",
+            "alignment score": 5.0,
+            "score": {
+              "alignment score": 5,
+              "alignment explanation": "[finger_count=6] The image clearly shows a white glove with exactly 6 extended digits (including the thumb), matching the prompt's requirement. The glove is fully visible, and the count aligns precisely with the specified \"6 fingers\" condition. All elements (white color, 6 fingers) are concretely and functionally depicted without symbolic or ambiguous representation.",
+              "quality score": 5,
+              "quality explanation": "The image is visually clean and coherent, with no rendering artifacts or distortions. The glove’s texture, lighting, and perspective are consistent, and all six fingers are anatomically distinct and well-formed. There are no broken elements, floating features, or implausible blending, resulting in a realistic and flawless presentation.",
+              "finger count": 6
+            }
+          },
+          {
+            "image_index": 1,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780997664_a77e65c8/prompt_00/image_01.png",
+            "alignment score": 2.0,
+            "score": {
+              "alignment score": 2,
+              "alignment explanation": "[finger_count=5] The image shows a white glove that is clearly visible, satisfying the \"white glove\" aspect of the prompt. However, the finger count is 5 (including the thumb), which is a standard human hand configuration, not the required 6 fingers. Since the finger count is 5, the alignment must be 2 or lower per the mandatory rule. The key element of \"6 fingers\" is significantly misrepresented, as the glove has only five extended digits, making the core intent of the prompt unfulfilled despite the glove being present and correctly colored. Thus, the score is 2, reflecting that some relevant components (the white glove) are present but the critical attribute (6 fingers) is wrong.",
+              "quality score": 5,
+              "quality explanation": "The image is a high-quality 3D render with no visible artifacts, distortions, or flaws. The glove is well-formed, with smooth, coherent surfaces and anatomically consistent proportions for a standard hand. Lighting, texture, and perspective are uniform and realistic, with soft shadows enhancing the three-dimensional appearance. The fingers and thumb are distinct, with no merging, warping, or physical incoherence, and the overall composition is clean and professional. This meets the criteria for a score of 5, as there are no issues affecting visual coherence or realism.",
+              "finger count": 5
+            }
+          },
+          {
+            "image_index": 2,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780997664_a77e65c8/prompt_00/image_02.png",
+            "alignment score": 2.0,
+            "score": {
+              "alignment score": 2,
+              "alignment explanation": "[finger_count=5] The image depicts a white glove that is clearly visible, but it has only 5 fingers (including the thumb), which is the standard human hand count. The prompt explicitly requires \"6 fingers,\" so the key attribute (finger count) is fundamentally misrepresented. While the glove is present and white, the incorrect finger count means the image does not convey the intended meaning of the prompt, resulting in a score of 2 per the mandatory rule for a finger count of 5.",
+              "quality score": 5,
+              "quality explanation": "The image is clean and highly realistic with no visible rendering artifacts. The glove is well-formed, with consistent texture, lighting, and perspective; the hand anatomy (including fingers and thumb) appears natural and coherent. There are no distortions, warping, or physical inconsistencies, making the image fully coherent and professional.",
+              "finger count": 5
+            }
+          }
+        ],
+        "num_seeds_scored": 3
+      },
+      "alignment_score": 2.5,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_102847/eval_results/1780997664_a77e65c8/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 2.5,
+    "gemma_score": 0.0,
+    "combined_score": 2.5
+  }
+}

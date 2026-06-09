@@ -1,0 +1,46 @@
+{
+  "run_id": "1780944065_e0a8baa5",
+  "program_path": "/tmp/tmp791rdswk.py",
+  "program_id": "tmp791rdswk",
+  "timestamp": 1780944205.116378,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780944065_e0a8baa5",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780944065_e0a8baa5/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780944065_e0a8baa5/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780944065_e0a8baa5/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 1.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780944065_e0a8baa5/prompt_00/image_00.png",
+            "alignment score": 1.0,
+            "score": {
+              "alignment score": 1,
+              "alignment explanation": "The image depicts a bouquet of flowers in a vase with the flowers oriented upright (blossoms facing upward, stems in water at the base). The prompt explicitly requires the bouquet to be \"upside down,\" meaning the flowers should be inverted with blossoms pointing downward and stems upward. This critical action and orientation are entirely absent; the arrangement is conventional and contradicts the prompt's core requirement. No elements suggest inversion or deliberate subversion of typical bouquet placement, resulting in a complete failure to convey the intended scenario.",
+              "quality score": 5,
+              "quality explanation": "The image is a clean, high-fidelity photograph with no visible rendering artifacts. Lighting is natural and consistent, textures (e.g., petals, leaves, glass vase) are realistic, and perspective is coherent. All elements—flowers, stems, vase, and surface—are physically plausible, well-formed, and free from distortion, warping, or broken geometry. The composition is visually harmonious and professionally executed."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 1.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780944065_e0a8baa5/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 1.0,
+    "gemma_score": 0.0,
+    "combined_score": 1.0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction. The model prioritizes 5-digit human anatomy in early noise removal. By introducing 6 fingers as a raw geometric requirement in the first stage, we override the anatomical prior before applying the 'white glove' texture and identity in the second stage.",
+  "prompts_list": [
+    "A hand with 6 fingers, hexadactyly, 6 distinct digits, an extra finger, spread out",
+    "A white glove with exactly 6 fingers, hexadactyly, 6 distinct digits"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

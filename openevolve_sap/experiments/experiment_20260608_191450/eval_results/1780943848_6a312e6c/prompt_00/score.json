@@ -1,0 +1,17 @@
+{
+  "alignment score": 3.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780943848_6a312e6c/prompt_00/image_00.png",
+      "alignment score": 3.0,
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image contains the correct objects (bouquet, flowers, vase), but the critical attribute of the bouquet being \"upside down\" is missing. The flowers are oriented normally (blooms facing upward, stems in the vase), which directly contradicts the prompt’s requirement. While the main subjects are present, the absence of the specified orientation renders the scene conceptually inaccurate.",
+        "quality score": 5,
+        "quality explanation": "The image is a clear, well-composed photograph with no visible rendering artifacts. Lighting, texture, and perspective are consistent, and all elements (flowers, vase, table) are visually coherent and anatomically/structurally sound. There are no distortions, broken elements, or implausible blending."
+      }
+    }
+  ],
+  "num_seeds_scored": 1
+}

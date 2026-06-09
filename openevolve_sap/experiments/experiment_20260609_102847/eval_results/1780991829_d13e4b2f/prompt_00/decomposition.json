@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The 5-finger prior is deeply embedded in diffusion models. Since structural geometry locks during the earliest denoising steps (0-2), starting with the glove would enforce 5 digits instantly. The first prompt establishes the impossible anatomy using a bare hand to ensure 6 distinct digits are visible, before the second prompt applies the white glove texture without altering the underlying geometry.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, six distinct separate digits, polydactyly, hexadactyly, 6 fingers clearly visible",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, six distinct separate finger stalls, hexadactyly, 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

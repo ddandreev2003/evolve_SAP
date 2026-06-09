@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove typically implies a standard human hand anatomy with five fingers. Since structural geometry locks strongly during the early diffusion stages (0-2), the prompt begins by explicitly defining a bare hand with six digits to override the prior. Once the geometry is established, the second prompt applies the white glove material without reverting to the standard finger count.",
+  "prompts_list": [
+    "A bare hand with exactly six fingers. The hand has one thumb and five additional fingers, making a total of six distinct digits spread out, hexadactyly, polydactyly",
+    "A white glove with exactly six fingers. The glove has one thumb and five additional fingers, making a total of six distinct digits, hexadactyly, polydactyly"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

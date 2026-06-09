@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Hexadactyly (6 fingers) is a structural contradiction that conflicts with standard anatomical priors used during early generation. Since geometry is locked in steps 0-3, starting directly with a glove risks the model normalizing the digit count to five due to typical garment fitting patterns. Beginning with a bare hand establishes the anomalous geometry first, ensuring the extra digit is preserved before applying the white glove material in the later stages.",
+  "prompts_list": [
+    "A human hand with 6 distinct fingers, hexadactyly",
+    "A white glove with 6 fingers, hexadactyly"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Since flowers typically grow upright, starting with a normal vase triggers geometric locking against the intended inversion. A structural proxy of 'stems pointing up' establishes the unnatural geometry early, allowing the final prompt to assign the floral identity without correction.",
+  "prompts_list": [
+    "A vase with stems pointing upwards",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

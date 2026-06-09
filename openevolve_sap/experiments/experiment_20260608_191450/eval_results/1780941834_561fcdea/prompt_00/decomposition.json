@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upwards with heads facing out and stems in; an upside-down arrangement inverts this gravity. To prevent the model from generating a standard bouquet during the layout phase (0-2), the first prompt establishes the inverted stem geometry as a structural proxy. The switch occurs early to lock the unconventional shape before refining details.",
+  "prompts_list": [
+    "A glass vase on a table with long flower stems sticking straight up out of the opening",
+    "A bouquet of flowers placed completely upside down in a vase, with stems pointing up and heads inside"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

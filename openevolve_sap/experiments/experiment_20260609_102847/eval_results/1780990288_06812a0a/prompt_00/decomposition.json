@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction involving anatomy. Hands normally have 5 fingers, so the model's geometric priors lock to 5 digits in early steps. Describing the 6-finger structure first ensures the shape is established before the glove material is applied, preventing the model from auto-correcting the count.",
+  "prompts_list": [
+    "A hand with 6 fingers, hexadactyly, 6 distinct digits spread out",
+    "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

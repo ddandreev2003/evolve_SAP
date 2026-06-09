@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The model strongly priors 5 fingers on hands/gloves. Starting with a 'base' and 'counting' prevents the 5-digit schema lock. Explicit counting forces the extra digit early before the glove identity takes over.",
+  "prompts_list": [
+    "A fan of exactly 6 identical fingers extending from a base, count them: 1, 2, 3, 4, 5, 6. No thumb, just 6 parallel digits side-by-side, strictly 6 fingers",
+    "A white glove with exactly 6 identical finger stalls extending from a base, count them: 1, 2, 3, 4, 5, 6. Hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

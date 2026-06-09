@@ -1,0 +1,46 @@
+{
+  "run_id": "1780989246_b234425a",
+  "program_path": "/tmp/tmp9omdspeg.py",
+  "program_id": "tmp9omdspeg",
+  "timestamp": 1780989393.8236592,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989246_b234425a",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A white glove has 6 fingers",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989246_b234425a/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989246_b234425a/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989246_b234425a/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989246_b234425a/prompt_00/image_00.png",
+            "alignment score": 5.0,
+            "score": {
+              "alignment score": 5,
+              "alignment explanation": "The image clearly depicts a white glove with exactly 6 fingers, matching the prompt’s requirement. The glove is fully visible, the finger count is accurate, and the representation is concrete (a literal white glove with 6 functional fingers, not symbolic or metaphorical). All key elements (color, object, and finger count) are correctly and unambiguously presented.",
+              "quality score": 5,
+              "quality explanation": "The image is clean, realistic, and visually coherent. The glove’s texture, lighting, and perspective are consistent, with no artifacts, distortions, or anatomical errors. Fingers are well-formed, properly connected, and free of merging, floating, or warping. The simplicity of the composition (solid black background) enhances clarity without introducing visual flaws."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260609_100040/eval_results/1780989246_b234425a/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 5.0,
+    "gemma_score": 0.0,
+    "combined_score": 5.0
+  }
+}

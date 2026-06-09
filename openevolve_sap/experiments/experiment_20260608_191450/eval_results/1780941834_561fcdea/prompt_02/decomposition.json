@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows follow strict light physics relative to the object. By separating the cat's form from the shadow direction, we prevent the model from defaulting to standard lighting during layout. The contradiction is introduced at step 3 when shapes and shadows are detailed, allowing the base geometry to lock first.",
+  "prompts_list": [
+    "A cat sitting on the ground facing left.",
+    "A cat sitting on the ground facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source."
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

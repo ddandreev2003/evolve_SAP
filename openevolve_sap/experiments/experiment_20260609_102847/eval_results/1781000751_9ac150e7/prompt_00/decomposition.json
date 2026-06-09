@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction. Standard anatomical priors strongly enforce five fingers. Starting with a generic mutant hand using explicit counting forces the geometry lock at the critical 0-2 stage before transitioning to the specific white glove identity at higher resolution steps.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide. The hand has exactly 6 identical fingers in a row, count them: 1, 2, 3, 4, 5, 6.",
+    "A white glove with palm facing forward, fingers spread wide. The glove has exactly 6 identical finger stalls in a row, count them: 1, 2, 3, 4, 5, 6."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

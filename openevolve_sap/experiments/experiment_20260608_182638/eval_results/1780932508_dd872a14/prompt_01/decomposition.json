@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves imply five fingers due to training biases. Starting with the base glove stabilizes the structure before introducing the anomalous digit count during shape refinement.",
+  "prompts_list": [
+    "A white glove",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

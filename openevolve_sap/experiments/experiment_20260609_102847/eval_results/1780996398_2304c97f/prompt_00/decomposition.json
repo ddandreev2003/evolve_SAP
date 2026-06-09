@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The 5-finger prior is extremely strong in diffusion models. To enforce hexadactyly, the first prompt must describe a bare hand with exaggerated finger spread and explicit digit counts to override anatomical priors before geometry locks. Once the 6-finger structure is established, the second prompt applies the glove material to finalize the image without reverting the count.",
+  "prompts_list": [
+    "A bare hand with palm facing forward, fingers spread wide apart, flat hand pose. The hand has exactly 6 fingers, six distinct separate digits side-by-side, polydactyly, hexadactyly, 6 fingers clearly visible",
+    "A white glove with palm facing forward, fingers spread wide apart, flat glove pose. The glove has exactly 6 fingers, six distinct separate finger stalls, six finger tubes, hexadactyly, 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

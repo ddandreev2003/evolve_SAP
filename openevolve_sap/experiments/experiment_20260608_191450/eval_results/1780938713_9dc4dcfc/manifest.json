@@ -1,0 +1,46 @@
+{
+  "run_id": "1780938713_9dc4dcfc",
+  "program_path": "/tmp/tmpl3svd6mg.py",
+  "program_id": "tmpl3svd6mg",
+  "timestamp": 1780938893.4332008,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780938713_9dc4dcfc",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780938713_9dc4dcfc/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780938713_9dc4dcfc/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780938713_9dc4dcfc/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780938713_9dc4dcfc/prompt_00/image_00.png",
+            "alignment score": 5.0,
+            "score": {
+              "alignment score": 5,
+              "alignment explanation": "The image clearly depicts a bouquet of flowers with blooms oriented downward (upside down) in a small vase, fulfilling the prompt’s requirement. The flowers, stems, and vase are present, and the inverted arrangement is concrete and unambiguous—no symbolic or metaphorical interpretation is needed to understand the scene.",
+              "quality score": 5,
+              "quality explanation": "The image is visually clean and coherent. The flowers, stems, and vase are well-formed with consistent lighting, texture, and perspective. There are no rendering artifacts, distortions, or implausible blending (e.g., no melted features or floating elements), and the composition appears realistic and deliberate."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780938713_9dc4dcfc/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 5.0,
+    "gemma_score": 0.0,
+    "combined_score": 5.0
+  }
+}

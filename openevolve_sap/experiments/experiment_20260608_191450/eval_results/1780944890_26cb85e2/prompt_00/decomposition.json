@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural contradiction involving gravity. Models expect flowers to grow upwards out of a vase. Breaking this prior requires describing the inverted geometry (stems pointing up) explicitly in the first stage to prevent the model from enforcing correct orientation.",
+  "prompts_list": [
+    "A glass vase on a table. Inside the vase, a bouquet of flowers is stuffed completely upside down. The thick green stems stick straight UP into the air out of the vase opening. The colorful flower heads are buried inside the vase, pointing down.",
+    "A bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

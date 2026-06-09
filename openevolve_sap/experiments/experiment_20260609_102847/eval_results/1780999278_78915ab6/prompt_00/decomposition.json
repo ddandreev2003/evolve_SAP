@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The 5-finger prior is extremely strong for hands. Using words like \"thumb\" or \"palm\" triggers the standard 5-digit hand schema. We must describe 6 identical fingers in a row and explicitly say \"no thumb\" to break the prior at the critical geometry stage.",
+  "prompts_list": [
+    "A bare hand facing the camera, fingers spread wide. The hand has exactly 6 identical fingers in a row, no thumb, six distinct separate digits, hexadactyly, 6 fingers, strictly six fingers",
+    "A white glove facing the camera, fingers spread wide. The glove has exactly 6 identical finger stalls in a row, no thumb, six distinct separate tubes, hexadactyly, 6 fingers, strictly six fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

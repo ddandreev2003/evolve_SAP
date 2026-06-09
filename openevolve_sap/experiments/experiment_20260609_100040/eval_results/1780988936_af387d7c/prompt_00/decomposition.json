@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural/Appearance Contradiction. Anatomy priors lock at steps 0-2. Starting with a bare hand establishes the 6-finger geometry before the glove material applies, preventing the model from defaulting to 5 digits. Switch early at step 2 to lock the 6-finger geometry before the 5-finger prior takes over.",
+  "prompts_list": [
+    "A hand with 6 fingers, hexadactyly, 6 distinct digits spread out",
+    "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

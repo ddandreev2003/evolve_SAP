@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Flowers naturally grow upward, so the model tends to correct inverted arrangements. We define the contradictory geometry (stems up) first to override natural priors before stating the scene.",
+  "prompts_list": [
+    "Vase on table. Bouquet stuffed completely upside down inside. Stems stick straight UP out of vase. Flower heads buried inside, pointing down.",
+    "Bouquet upside down in vase, stems pointing up, flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

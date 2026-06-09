@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers is a structural contradiction to standard anatomy, which FLUX tends to normalize during the early layout phase (Steps 0-4). Starting with a \"white glove\" would lock in five fingers, making the change impossible later. We begin with the structural proxy—a bare hand with six fingers—to define the anomalous geometry first, then switch to the glove texture in the material phase.",
+  "prompts_list": [
+    "A bare hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

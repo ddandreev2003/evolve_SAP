@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An inverted bouquet in a vase violates standard gravity-based object interaction rules. Since the structure relies on the vase's stability, the model first needs to lock the vase geometry before accepting the contradictory orientation of the flowers.",
+  "prompts_list": [
+    "A clear glass vase resting on a wooden table.",
+    "A clear glass vase resting on a wooden table, containing a bouquet of flowers oriented upside down with stems protruding from the opening."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

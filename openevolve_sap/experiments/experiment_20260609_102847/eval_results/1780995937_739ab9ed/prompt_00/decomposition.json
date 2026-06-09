@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is extremely strong. Force 6 distinct digits early. Avoid \"bare hand\" to prevent skin texture from locking; use \"hand\" and switch at step 2 so the glove material can take over.",
+  "prompts_list": [
+    "A hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, hexadactyly, 6 distinct separate digits clearly visible",
+    "A white leather glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, hexadactyly, 6 distinct separate finger stalls, white fabric texture"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

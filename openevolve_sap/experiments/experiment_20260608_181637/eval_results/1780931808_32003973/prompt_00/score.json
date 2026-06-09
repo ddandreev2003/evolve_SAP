@@ -1,0 +1,17 @@
+{
+  "alignment score": 2.0,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_181637/eval_results/1780931808_32003973/prompt_00/image_00.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a bouquet of flowers in a vase, but the bouquet is oriented **right-side up** (stems down in the vase, blooms facing upward). The prompt explicitly requires the bouquet to be \"upside down,\" meaning the blooms should face downward toward the vase base while stems extend upward. This critical action/attribute is entirely missing, and the scene depicts the standard (non-inverted) arrangement. While the core objects (bouquet, vase) are present, the fundamental functional relationship described in the prompt is misrepresented, reducing coherence to a symbolic representation of \"flowers in a vase\" rather than the specified inverted scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with no visible rendering artifacts. Lighting is natural and consistent, textures (petals, leaves, vase surface) are crisp and realistic, and perspective is coherent. All elements are physically plausible: stems connect naturally to the vase, flowers/leaves show no distortion or fusion, and the composition maintains anatomical and spatial integrity. The image is clean, well-composed, and free of distortions or surreal blending."
+      }
+    }
+  ],
+  "num_seeds_scored": 1
+}

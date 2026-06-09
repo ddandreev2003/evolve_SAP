@@ -1,0 +1,46 @@
+{
+  "run_id": "1780936321_14fb98fb",
+  "program_path": "/tmp/tmpw4htgnrs.py",
+  "program_id": "tmpw4htgnrs",
+  "timestamp": 1780936400.077014,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780936321_14fb98fb",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780936321_14fb98fb/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780936321_14fb98fb/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780936321_14fb98fb/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780936321_14fb98fb/prompt_00/image_00.png",
+            "alignment score": 5.0,
+            "score": {
+              "alignment score": 5,
+              "alignment explanation": "The image precisely depicts a bouquet of flowers positioned upside down in a vase. The blooms hang downward while the stems extend upward, clearly illustrating the \"upside down\" orientation described in the prompt. All required elements (bouquet, flowers, vase) are present, with the flowers' inverted placement being functionally and concretely demonstrated. There is no ambiguity, symbolism, or misrepresentation—the scene directly embodies the prompt's literal meaning.",
+              "quality score": 5,
+              "quality explanation": "The image is visually flawless with no rendering artifacts. The glass vase exhibits realistic transparency and reflections, and the flowers display consistent lighting, texture, and natural perspective. Stems and blooms are sharply defined with anatomical coherence (no distorted shapes or melted features), and the wooden surface and background maintain physical plausibility. The composition is clean, well-lit, and fully coherent, meeting the highest standard for visual fidelity."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_191450/eval_results/1780936321_14fb98fb/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 5.0,
+    "gemma_score": 0.0,
+    "combined_score": 5.0
+  }
+}

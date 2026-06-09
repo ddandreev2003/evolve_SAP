@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove implies human anatomy, typically five fingers. Six fingers violates biological norms and confuses the model's geometric priors. By defining the extra digit on the bare hand first, the model establishes the correct topology during the critical layout phase (steps 0-2) before applying the glove texture which might otherwise default to standard proportions.",
+  "prompts_list": [
+    "A bare hand with six distinct fingers spread out",
+    "A white glove fitting a hand with six fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

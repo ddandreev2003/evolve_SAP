@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows follow physical laws of light, creating a conflict when described as facing the opposite direction. Stabilizing the cat and sunlight environment first allows the model to establish the object and shadow existence before rendering the paradoxical orientation.",
+  "prompts_list": [
+    "A cat standing in sunlight on grass.",
+    "A cat with a shadow facing the opposite direction."
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

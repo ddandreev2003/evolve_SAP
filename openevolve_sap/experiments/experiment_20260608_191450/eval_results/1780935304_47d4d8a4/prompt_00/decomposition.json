@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A vase typically holds flowers in an upright orientation consistent with gravity. Starting with a standard vase-flower setup establishes the correct object geometry and interaction before introducing the unnatural inverted direction, preventing structural ambiguity.",
+  "prompts_list": [
+    "A vase containing a bouquet of flowers",
+    "A vase containing an upside down bouquet of flowers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

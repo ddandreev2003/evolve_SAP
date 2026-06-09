@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers violates the common anatomical prior for five digits found in training data. Describing a bare hand first ensures the model generates the correct six-finger geometry before attempting to apply the garment, preventing the glove texture from defaulting to a standard five-digit shape.",
+  "prompts_list": [
+    "A human hand with six fingers",
+    "A white glove with six fingers"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

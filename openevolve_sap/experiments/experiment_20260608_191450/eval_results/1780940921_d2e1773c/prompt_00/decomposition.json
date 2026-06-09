@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers typically grow with stems upright, so displaying them upside-down contradicts biological and physical expectations. Since the geometry locks early, defining the inverted stem arrangement in the first prompt prevents the model from auto-correcting to a natural vase setting. The second prompt consolidates the description once the paradoxical structure is established.",
+  "prompts_list": [
+    "A glass vase on a table. Inside the vase, a bouquet of flowers is stuffed completely upside down. The thick green stems stick straight UP into the air out of the vase opening. The colorful flower heads are buried inside the vase, pointing down.",
+    "A bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

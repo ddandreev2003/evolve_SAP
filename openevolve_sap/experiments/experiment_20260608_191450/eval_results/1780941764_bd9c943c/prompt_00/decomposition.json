@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upward toward light, making an upside-down configuration a structural violation of expected physics. Strategy B dictates avoiding standard geometry initialization for spatial contradictions. By describing the stems pointing UP out of the vase and heads buried DOWN inside during the layout phase (steps 0-2), we force the model to lock this inverted geometry before the shape generation solidifies.",
+  "prompts_list": [
+    "A clear glass vase on a table. The thick green stems of the flowers stick straight UP into the air out of the vase opening. The colorful flower heads are buried inside the vase, pointing down.",
+    "A bouquet of flowers placed completely upside down in a vase, with stems pointing up and flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

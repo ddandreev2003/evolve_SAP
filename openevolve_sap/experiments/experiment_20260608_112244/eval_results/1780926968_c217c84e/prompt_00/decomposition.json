@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "An upside-down bouquet contradicts natural physics where flower stems support the blossoms upwards from water. Following Strategy B, we avoid locking the model with the word \"bouquet\" immediately. Instead, Step 0-4 establishes the structural contradiction using bare stems and hanging blossoms to define the inverted geometry before introducing the specific floral identity in the final stage.",
+  "prompts_list": [
+    "bare green flower stems pointing straight up into the air out of a vase, with blossoms hanging down near the table",
+    "A bouquet of flowers upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

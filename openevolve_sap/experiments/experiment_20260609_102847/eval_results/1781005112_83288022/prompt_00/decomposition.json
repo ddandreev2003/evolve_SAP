@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Six fingers contradicts the strong five-digit anatomical prior in images. Starting with a \"mutant hand\" explicitly defining the extra digits establishes the impossible geometry first. Once the layout accepts six shapes, the final prompt introduces the white glove texture without forcing a correction back to five.",
+  "prompts_list": [
+    "A mutant hand with six fingers clearly visible",
+    "A white glove with exactly six fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

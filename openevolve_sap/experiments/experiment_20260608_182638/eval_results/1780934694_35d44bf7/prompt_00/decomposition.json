@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Standard vases imply upright geometry due to gravity and growth patterns. To prevent the model from auto-correcting the inversion, the first prompt establishes the structural anomaly (an inverted container with stems) immediately. Once the impossible geometry is locked, the second prompt applies the specific semantic labels.",
+  "prompts_list": [
+    "A vase turned completely upside down, stems protruding from the base",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

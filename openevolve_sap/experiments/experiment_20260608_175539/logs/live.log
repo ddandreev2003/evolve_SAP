@@ -1,0 +1,64 @@
+14:55:55 | INFO       | 1780930555_ff9b4 | evaluation started
+14:56:45 | EVAL       | 1780930555_ff9b4 | evaluation started | prompts=1 | pipeline=True | parallel_sap=True
+14:56:45 | PIPELINE   | 1780930555_ff9b4 | start 1 prompts | sap_workers=4 | vl_workers=3
+14:56:45 | SAP        | 1780930555_ff9b4 | parallel decompose x1
+14:56:45 | INFO       | 1780930555_ff9b4 | prompt 1/1: decompose
+14:57:32 | SAP        | 1780930555_ff9b4 | decompose done | p=1
+14:57:32 | RENDER     | 1780930555_ff9b4 | queued | p=1 | queue=1
+14:57:32 | INFO       | 1780930555_ff9b4 | prompt 1: render start
+14:57:36 | RENDER     | 1780930555_ff9b4 | done 1 images | p=1
+14:57:36 | VL         | 1780930555_ff9b4 | scoring | p=1
+14:57:36 | INFO       | 1780930555_ff9b4 | prompt 1: score start (1 seeds)
+14:57:51 | INFO       | 1780930555_ff9b4 | prompt 1: alignment=2.000 (1 seeds) | vl=1
+14:57:51 | VL         | 1780930555_ff9b4 | score done | p=1 | vl=1
+14:57:51 | INFO       | 1780930555_ff9b4 | done alignment=2.000 gemma=0.000 combined=2.000
+14:57:51 | INFO       | 1780930671_17565 | evaluation started
+14:57:51 | EVAL       | 1780930671_17565 | evaluation started | prompts=3 | pipeline=True | parallel_sap=True
+14:57:51 | PIPELINE   | 1780930671_17565 | start 3 prompts | sap_workers=4 | vl_workers=3
+14:57:51 | SAP        | 1780930671_17565 | parallel decompose x3
+14:57:51 | INFO       | 1780930671_17565 | prompt 1/3: decompose | sap=3
+14:57:51 | INFO       | 1780930671_17565 | prompt 2/3: decompose | sap=3
+14:57:51 | INFO       | 1780930671_17565 | prompt 3/3: decompose | sap=3
+14:58:41 | SAP        | 1780930671_17565 | decompose done | p=1 | sap=2
+14:58:41 | RENDER     | 1780930671_17565 | queued | p=1 | sap=2 | queue=1
+14:58:41 | INFO       | 1780930671_17565 | prompt 1: render start | sap=2
+14:58:41 | SAP        | 1780930671_17565 | decompose done | p=2
+14:58:41 | RENDER     | 1780930671_17565 | queued | p=2 | render_q=1 | queue=2
+14:58:58 | INFO       | 1780930671_17565 | prompt 2: render start | render_q=1
+14:58:58 | RENDER     | 1780930671_17565 | done 2 images | p=1 | render_q=1
+14:58:58 | INFO       | 1780930671_17565 | prompt 1: score start (2 seeds) | render_q=1
+14:58:58 | VL         | 1780930671_17565 | scoring | p=1 | render_q=1 vl=1
+14:58:58 | SAP        | 1780930671_17565 | decompose done | p=3 | render_q=1 vl=1
+14:58:58 | RENDER     | 1780930671_17565 | queued | p=3 | render_q=1 vl=1 | queue=2
+14:59:15 | INFO       | 1780930671_17565 | prompt 3: render start | render_q=1 vl=1
+14:59:15 | RENDER     | 1780930671_17565 | done 2 images | p=2 | render_q=1 vl=1
+14:59:15 | VL         | 1780930671_17565 | scoring | p=2 | render_q=1 vl=2
+14:59:15 | INFO       | 1780930671_17565 | prompt 2: score start (2 seeds) | render_q=1 vl=2
+14:59:32 | RENDER     | 1780930671_17565 | done 2 images | p=3 | render_q=1 vl=2
+14:59:32 | VL         | 1780930671_17565 | scoring | p=3 | render_q=1 vl=2
+14:59:32 | INFO       | 1780930671_17565 | prompt 3: score start (2 seeds) | render_q=1 vl=2
+14:59:34 | INFO       | 1780930671_17565 | prompt 1: alignment=2.000 (2 seeds) | render_q=1 vl=3
+14:59:34 | VL         | 1780930671_17565 | score done | p=1 | render_q=1 vl=3
+15:00:13 | INFO       | 1780930671_17565 | prompt 2: alignment=3.500 (2 seeds) | render_q=1 vl=3
+15:00:13 | VL         | 1780930671_17565 | score done | p=2 | render_q=1 vl=3
+15:00:20 | INFO       | 1780930671_17565 | prompt 3: alignment=3.500 (2 seeds) | render_q=1 vl=3
+15:00:20 | VL         | 1780930671_17565 | score done | p=3 | render_q=1 vl=3
+15:00:20 | INFO       | 1780930671_17565 | done alignment=3.000 gemma=0.000 combined=3.000
+15:01:14 | INFO       | 1780930874_42546 | evaluation started
+15:02:17 | INFO       | 1780930937_5edc9 | evaluation started
+15:03:09 | INFO       | 1780930989_fd23c | evaluation started
+15:03:55 | INFO       | 1780931035_4f97b | evaluation started
+15:04:36 | INFO       | 1780931076_2b64f | evaluation started
+15:05:26 | INFO       | 1780931126_82321 | evaluation started
+15:06:25 | INFO       | 1780931185_ce87f | evaluation started
+15:07:04 | INFO       | 1780931224_2c4cc | evaluation started
+15:07:51 | INFO       | 1780931271_c0225 | evaluation started
+15:08:23 | INFO       | 1780931303_05776 | evaluation started
+15:09:05 | INFO       | 1780931345_8f882 | evaluation started
+15:10:06 | INFO       | 1780931406_f7d2a | evaluation started
+15:10:57 | INFO       | 1780931457_d2dc1 | evaluation started
+15:12:00 | INFO       | 1780931520_5cb94 | evaluation started
+15:12:48 | INFO       | 1780931568_65520 | evaluation started
+15:13:24 | INFO       | 1780931604_abee0 | evaluation started
+15:14:41 | INFO       | 1780931681_54e4a | evaluation started
+15:15:59 | INFO       | 1780931759_0f0a4 | evaluation started

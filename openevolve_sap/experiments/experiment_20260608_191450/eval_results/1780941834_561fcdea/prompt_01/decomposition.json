@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Anatomical digit count is geometric information typically locked early (stage 0-2/3-6), but gloves impose a strong prior for 5 fingers. Starting with a bare hand establishes the hexadactyl (6-finger) structure before the glove material introduces the conflicting 5-finger bias.",
+  "prompts_list": [
+    "A bare human hand with 6 distinct fingers",
+    "A white leather glove with 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

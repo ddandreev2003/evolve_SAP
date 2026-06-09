@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior locks geometry at steps 0-2. Starting with a bare hand explicitly enumerating six digits forces the model to accept the impossible shape before transitioning to the glove identity at Step 2.",
+  "prompts_list": [
+    "A hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers: a thumb, index, middle, ring, pinky, and a sixth extra finger next to the pinky. polydactyly, hexadactyly, 6 fingers clearly visible",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers: a thumb, index, middle, ring, pinky, and a sixth extra finger next to the pinky. hexadactyly, 6 fingers, 6 distinct finger stalls"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural/Spatial Contradiction. The 5-finger anatomy prior is extremely strong for gloves and hands. Geometry locks at steps 0-2, meaning a normal glove description will revert to 5 digits immediately. Strategy B requires forcing the unusual geometry early using explicit counting and structural descriptors (like \"mutant\" or \"hexadactyly\") to prevent regression. Switch at step 3 to lock the extra digit count before refining texture and lighting.",
+  "prompts_list": [
+    "A white glove with palm facing forward, displaying exactly 6 distinct fingers. Count them: 1, 2, 3, 4, 5, 6. Mutant anatomy, six separate digit tubes, hexadactyly, strictly 6 fingers",
+    "A white glove with exactly 6 fingers, palm facing forward. Count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, never 5 fingers"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

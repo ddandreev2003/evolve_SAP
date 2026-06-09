@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers in vases typically grow or are arranged upright, so an upside-down configuration conflicts with the model's geometric priors. Beginning with a standard arrangement stabilizes the vase and flower structures, allowing the inverted orientation to be applied later without causing structural collapse or unintended corrections.",
+  "prompts_list": [
+    "A vase with a bouquet of flowers",
+    "A bouquet of flowers is upside down in a vase"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

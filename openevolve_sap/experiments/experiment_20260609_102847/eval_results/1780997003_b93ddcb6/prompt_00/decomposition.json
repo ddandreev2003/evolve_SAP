@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is extremely strong. Do NOT list normal finger names, as this reinforces the count. Instead, focus purely on the visual count of 6 distinct digits and ensure maximum visibility (palm forward, spread wide). Switch early at step 2 to lock geometry before introducing the white glove identity.",
+  "prompts_list": [
+    "A hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 fingers, six distinct separate digits, polydactyly, hexadactyly, 6 fingers clearly visible",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 fingers, six distinct separate finger stalls, hexadactyly, 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

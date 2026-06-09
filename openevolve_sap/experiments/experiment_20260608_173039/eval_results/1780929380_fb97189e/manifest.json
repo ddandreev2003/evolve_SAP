@@ -1,0 +1,46 @@
+{
+  "run_id": "1780929380_fb97189e",
+  "program_path": "/tmp/tmpsdw_asjm.py",
+  "program_id": "tmpsdw_asjm",
+  "timestamp": 1780929486.5764427,
+  "results_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929380_fb97189e",
+  "prompts": [
+    {
+      "prompt_index": 0,
+      "original_prompt": "A bouquet of flowers is upside down in a vase",
+      "prompt_dir": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929380_fb97189e/prompt_00",
+      "decomposition_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929380_fb97189e/prompt_00/decomposition.json",
+      "images": [
+        {
+          "image_index": 0,
+          "seed": 30498,
+          "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929380_fb97189e/prompt_00/image_00.png"
+        }
+      ],
+      "score": {
+        "alignment score": 5.0,
+        "per_seed": [
+          {
+            "image_index": 0,
+            "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929380_fb97189e/prompt_00/image_00.png",
+            "alignment score": 5.0,
+            "score": {
+              "alignment score": 5,
+              "alignment explanation": "The image fully conveys the prompt's meaning. A bouquet of flowers is clearly present and depicted upside down in a vase, with the flowers and stems oriented downward (blooms hanging toward the bottom of the frame) while the vase supports them from below. The correct objects (bouquet and vase) are shown in their intended roles: the bouquet is inverted and functional within the vase, with no symbolic or metaphorical representation. The scene directly illustrates the concrete situation of an upside-down bouquet without ambiguity, as the flowers' downward orientation and the vase's positioning align precisely with the prompt's description.",
+              "quality score": 5,
+              "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. Lighting is consistent and natural, highlighting textures like the soft petals and smooth vase surface. Perspective is accurate, with the wooden surface and vase base grounding the scene. Elements connect logically—stems flow naturally into the vase, and flowers hang with organic positioning, showing no distortion, warping, or implausible blending. There are no rendering artifacts, broken details, or inconsistencies; the photograph appears well-composed and visually deliberate throughout."
+            }
+          }
+        ],
+        "num_seeds_scored": 1
+      },
+      "alignment_score": 5.0,
+      "score_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260608_173039/eval_results/1780929380_fb97189e/prompt_00/score.json"
+    }
+  ],
+  "metrics": {
+    "alignment_score": 5.0,
+    "gemma_score": 0.0,
+    "combined_score": 5.0
+  }
+}
