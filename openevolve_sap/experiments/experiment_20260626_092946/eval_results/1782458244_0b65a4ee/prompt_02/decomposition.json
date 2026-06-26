@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are physically anchored to the light source, so an opposite-facing shadow creates a logical conflict. By first defining the cat and a detached shadow shape, the model resolves the object structure. Introducing the impossible lighting relationship in the second stage allows the scene to remain geometrically stable while enforcing the contradiction.",
+  "prompts_list": [
+    "A cat sitting and facing left. On the ground next to it, a separate black cat-shaped silhouette painted on the floor is facing right.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying physics."
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

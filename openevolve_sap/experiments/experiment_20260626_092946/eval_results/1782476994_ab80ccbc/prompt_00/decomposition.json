@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior (4 fingers + 1 thumb) is extremely strong in the model. We explicitly replace the thumb with an extra finger and use counting to force 6 identical digits side-by-side first, establishing the geometry before applying the white glove texture to avoid reverting to a standard hand.",
+  "prompts_list": [
+    "A mutant hand palm facing forward with exactly 6 identical fingers side-by-side in a single row",
+    "A white glove with exactly 6 identical fingers visible, thumb replaced by an extra digit"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

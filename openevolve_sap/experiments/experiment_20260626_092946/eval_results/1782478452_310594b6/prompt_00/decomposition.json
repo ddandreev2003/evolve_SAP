@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction. The 5-finger prior is extremely strong, so starting with the normal object locks incorrect geometry. We use an extreme structural proxy with explicit counting (1, 2, 3, 4, 5, 6) and \"no thumb\" to force the six-digit shape early before introducing the glove material identity.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical fingers in a row, no thumb, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, polydactyly, hexadactyly, strictly 6 fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical finger stalls in a row, no thumb, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

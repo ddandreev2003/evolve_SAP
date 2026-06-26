@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "This is a structural contradiction where the standard 5-finger hand prior is dominant. Strategy B (Structural) dictates avoiding the normal object initially. Start with a mutant hand proxy to enforce 6 distinct digits during the layout phase, then switch to the specific white glove target once the geometry is locked.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical fingers in a row, no thumb, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, polydactyly, hexadactyly, strictly 6 fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical finger stalls in a row, no thumb, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

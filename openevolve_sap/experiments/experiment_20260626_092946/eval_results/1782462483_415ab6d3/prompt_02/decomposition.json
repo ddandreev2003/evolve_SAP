@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting. Diffusion models assume shadows follow physics (light source + object position). Reversing this violates strong priors that lock during early denoising. Following Strategy A, the first prompt treats the shadow as a separate painted silhouette to establish the wrong geometry independently, preventing the model from auto-correcting to physical laws later.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a separate black cat-shaped silhouette painted on the floor is facing RIGHT, opposite to the cat's body.",
+    "A cat facing left, but its dark cast shadow on the floor is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

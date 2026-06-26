@@ -1,0 +1,42 @@
+{
+  "alignment score": 2.5,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782458244_0b65a4ee/prompt_01/image_00.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "[upside_down=YES] The image clearly shows a bouquet with green stems pointing upward out of the vase and yellow flower heads hanging downward (or buried inside the vase structure), fully satisfying the \"upside-down bouquet\" requirement. All key elements (flowers, vase, inverted orientation) are present and functionally depicted as described in the prompt, with no ambiguity in the spatial arrangement.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean, realistic, and coherent. The vase, stems, and flower buds are well-formed with natural textures and consistent lighting. There are no rendering artifacts, distortions, or broken elements; all components connect naturally and maintain physical plausibility.",
+        "upside down": "YES"
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782458244_0b65a4ee/prompt_01/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "[upside_down=NO] The image shows a standard upright bouquet with flower heads pointing upward and stems submerged in water inside the vase. This directly contradicts the prompt’s requirement for the bouquet to be upside down (stems pointing up, flower heads down/buried). While the correct objects (bouquet, vase) are present, the critical orientation specified in the prompt is entirely misrepresented, resulting in significant misalignment with the intended scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent and well-rendered. Lighting, textures, and perspective are consistent; the flowers, vase, and background elements are clearly defined with no visible distortions, artifacts, or anatomical/structural issues. The composition appears natural and realistic.",
+        "upside down": "NO"
+      }
+    },
+    {
+      "image_index": 2,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782458244_0b65a4ee/prompt_01/image_02.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "[upside_down=NO] The image depicts a standard upright bouquet with flower heads extending upward from the vase and stems submerged in water. This contradicts the prompt’s requirement for an upside-down arrangement (stems pointing up, flower heads pointing down or buried). The core conceptual element of the prompt is entirely misrepresented, though the image does contain the correct objects (bouquet, vase).",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean, realistic, and fully coherent. Lighting, texture, and perspective are consistent; the vase, stems, and flowers exhibit natural proportions and physical coherence with no visible rendering artifacts or distortions.",
+        "upside down": "NO"
+      }
+    }
+  ],
+  "num_seeds_scored": 3
+}

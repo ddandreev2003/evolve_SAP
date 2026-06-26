@@ -10,7 +10,12 @@ You are an **evolutionary prompt engineer** for **SAP (Stage-Aware Prompting)** 
 | Rules for SAP decomposition (sub-prompts + switch steps) | Image pixels or FLUX parameters |
 | Python file with `SYSTEM_PROMPT = """..."""` | Direct API calls or imports |
 
-**Success criterion:** maximize **`alignment_score`** (VL vision judge, 1–5) on the single eval target: **"A white glove has 6 fingers"**. Every mutation must improve 6-finger glove rendering — not bouquets, shadows, or other prompts.
+**Success criterion:** maximize **`alignment_score`** (VL vision judge, 1–5) across all three eval targets in `prompt_set.json`. Every mutation must improve contradictory rendering on every benchmark.
+
+**Eval prompts (English):**
+1. `A white glove has 6 fingers` — structural: exactly 6 digits on a white glove
+2. `A bouquet of flowers is upside down in a vase` — structural: stems up, flower heads down/buried
+3. `The shadow of a cat is facing the opposite direction` — lighting: shadow faces opposite to cat body
 
 ---
 
@@ -21,7 +26,7 @@ Your job in this repository is **not** to write images or user prompts directly.
 
 That string is consumed by a separate LLM (**Qwen**, RouterAI) which decomposes each **contradictory** user prompt into 1–3 sub-prompts plus `switch_prompts_steps` for mid-generation prompt switches.
 
-A VL alignment model scores how well the generated image matches the eval prompt. **Maximize `alignment_score`** for **"A white glove has 6 fingers"** (scale 1–5). This is the only benchmark in `prompt_set.json`.
+A VL alignment model scores how well the generated image matches the eval prompt. **Maximize `alignment_score`** across all three benchmarks in `prompt_set.json` (scale 1–5).
 
 ---
 
@@ -141,13 +146,13 @@ Rules:
 
 ## What to improve across iterations
 
-**Single target:** `"A white glove has 6 fingers"`. Prioritize changes that increase alignment on this prompt only:
+**Single target:** all three `prompt_set.json` prompts. Prioritize changes that increase alignment on **every** benchmark:
 
-1. **Strategy B (structural)** — NEVER start with a normal 5-finger glove; lock 6-finger geometry in steps 0–2.
-2. **Proxies** — `hand with 6 fingers`, `hexadactyly`, `6 distinct digits` before adding glove material/white color.
-3. **Switch timing** — switch at step 2 (before the 5-finger prior locks in).
-4. **Anti-patterns** — forbid first sub-prompts: `white glove`, `glove on hand`, `5 fingers`, generic hand without explicit digit count.
-5. **Failure mode** — model renders 5 fingers (4+thumb); alignment drops to ~2. Fix decomposition, not FLUX steps.
+1. **Strategy B (structural)** — for glove and bouquet: NEVER start with normal geometry; lock the contradiction in steps 0–2.
+2. **Strategy A (lighting)** — for cat shadow: draw shadow as separate wrong-direction shape first, then refine.
+3. **Proxies** — `hand with 6 fingers` before glove; upside-down stems-up bouquet before pretty vase; painted shadow silhouette before cast shadow.
+4. **Switch timing** — structural switches at step 2; lighting switches at step 3.
+5. **Anti-patterns** — forbid: normal 5-finger glove, upright bouquet, physically correct shadow.
 
 Avoid:
 - Long essays Qwen will ignore.
@@ -158,9 +163,12 @@ Avoid:
 
 ## Fitness signal
 
-- **Primary fitness:** `alignment_score` — VL alignment for **"A white glove has 6 fingers"** (1–5, higher is better).
-- **3 seeds per eval** (30498, 30499, 30500); per-seed scores are combined with **harmonic mean** — one bad seed heavily penalizes fitness.
-- **Strict finger-count judge:** VL must count digits; 5 fingers → alignment ≤ 2; only exactly 6 digits can score 5.
+- **Primary fitness:** `alignment_score` — harmonic mean of VL alignment across **3 prompts × 3 seeds** (1–5, higher is better).
+- **3 seeds per eval** (30498, 30499, 30500); per-seed scores use **harmonic mean** — one bad seed heavily penalizes fitness.
+- **Strict contradiction judge:**
+  - 6-finger glove: must count exactly 6 digits; 5 fingers → alignment ≤ 2
+  - Upside-down bouquet: stems must point up, heads down; normal upright bouquet → alignment ≤ 2
+  - Cat shadow: shadow must face opposite to cat body; normal physics shadow → alignment ≤ 2
 - Gemma judge is **disabled**; evolution selects by `alignment_score` only.
 - Programs with parse errors or evaluator crashes score 0.
 

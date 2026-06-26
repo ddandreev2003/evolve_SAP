@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is extremely strong. We use 'mutant', 'no thumb', and explicit counting to break the standard human hand schema and force 6 distinct digits.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide. The hand has exactly 6 fingers in a row, no thumb. Count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, polydactyly, hexadactyly, strictly 6 fingers.",
+    "A white leather glove with palm facing forward, fingers spread wide. The glove has exactly 6 finger stalls in a row, no thumb. Count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

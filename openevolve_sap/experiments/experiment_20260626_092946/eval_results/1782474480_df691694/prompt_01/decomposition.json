@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural/Spatial Contradiction. Flowers naturally grow upward. Introducing \"bouquet\" early triggers the upright growth prior. Prompt 1 describes the components (stems up, heads down) as separate shapes to override geometry priors during the critical layout stage (steps 0-2).",
+  "prompts_list": [
+    "A glass vase on a table. Jammed into the vase are bare green plant stems pointing straight UP towards the ceiling. The colorful flower blooms are stuffed upside down, buried deep inside the vase pointing DOWN.",
+    "A bouquet of flowers placed completely upside down in a vase, with bare stems pointing up into the air and flower heads hanging down inside the vase"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

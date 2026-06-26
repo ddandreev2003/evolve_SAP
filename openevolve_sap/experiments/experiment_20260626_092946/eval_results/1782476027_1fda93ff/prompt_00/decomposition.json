@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is extremely strong in diffusion models. To break it, we use explicit numerical counting in the first prompt to force unique geometry, avoiding standard anatomy names before introducing the specific glove texture in the final stage.",
+  "prompts_list": [
+    "A flat open palm facing the camera. The hand has exactly 6 fingers spread out like a fan. Count the fingers: 1, 2, 3, 4, 5, 6. Six separate digits attached to the palm. Polydactyly, hexadactyly.",
+    "A white leather glove with exactly 6 fingers. The glove has 6 distinct finger stalls spread like a fan. Count them: 1, 2, 3, 4, 5, 6. Hexadactyly glove, strictly 6 fingers."
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

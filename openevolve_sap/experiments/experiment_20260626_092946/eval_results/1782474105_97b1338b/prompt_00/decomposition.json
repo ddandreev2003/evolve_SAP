@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The 5-finger prior is extremely strong for hands/gloves. To break it, we never list standard anatomy (thumb/index) as it triggers the normal schema. Instead, we use an extreme structural proxy (mutant hand) with explicit counting (1-6) and forbid a thumb to force 6 distinct digits before geometry locks. Switch at step 2 ensures the counter-intuitive count survives the identity transition to the glove.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical long fingers in a row, absolutely no thumb, just 6 fingers side-by-side, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, polydactyly, hexadactyly, strictly 6 fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical long finger stalls in a row, absolutely no thumb, just 6 stalls side-by-side, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

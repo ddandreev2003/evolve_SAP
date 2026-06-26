@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows rely on strict lighting physics which the model prioritizes early in denoising. To override the realistic shadow direction prior, the shadow is first rendered as a detached 'painted silhouette' object, decoupling it from the light source logic before transitioning to the impossible cast shadow configuration.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a separate black cat-shaped silhouette painted on the floor is facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

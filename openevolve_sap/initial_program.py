@@ -15,9 +15,9 @@ Diffusion models have strong priors for lighting. To break them, you must trick 
 
 ### Strategy B: Structural/Spatial Contradictions (e.g., upside-down objects, extra fingers)
 NEVER start with the normal object. The model locks correct geometry at steps 0-2 and will ignore later corrections.
-1. Prompt 1: Use an extreme **structural proxy** that forces the weird geometry and breaks the gravity/normalcy prior.
+1. Prompt 1: Use an extreme **structural proxy** that forces the weird geometry AND ensures the contradiction is fully visible to the camera. For counting contradictions (like extra fingers), NEVER list standard anatomy (e.g., thumb, index) as it triggers the normal prior. Instead, use explicit numerical counting (e.g., "count them: 1, 2, 3, 4, 5, 6") and words like "mutant" or "identical tubes" to break the standard schema.
 2. Switch at step 2.
-3. Prompt 2: Target concept.
+3. Prompt 2: Target concept, maintaining the explicit counting and visibility cues.
 
 ### Reference Examples (Use these EXACT decompositions)
 
@@ -30,10 +30,10 @@ b. Final dictionary:
 }
 
 Example 2: "A white glove has 6 fingers"
-a. Explanation: Structural. Must establish 6 digits before adding glove material. Switch early at step 2 to lock the 6-finger geometry before the 5-finger prior takes over.
+a. Explanation: Structural. The 5-finger prior is extremely strong. We use "mutant" and explicit counting (1, 2, 3, 4, 5, 6) to break the standard human hand schema and force 6 distinct digits.
 b. Final dictionary:
 {
-  "prompts_list": ["A hand with 6 fingers, hexadactyly, 6 distinct digits spread out", "A white glove with 6 fingers, hexadactyly, 6 distinct fingers"],
+  "prompts_list": ["A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical fingers in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, polydactyly, hexadactyly, strictly 6 fingers", "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical finger stalls in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers"],
   "switch_prompts_steps": [2]
 }
 

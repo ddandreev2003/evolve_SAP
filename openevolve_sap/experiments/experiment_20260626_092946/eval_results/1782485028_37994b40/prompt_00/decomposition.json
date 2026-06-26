@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove with 6 fingers creates a structural contradiction against the strong human hand prior (4 fingers + 1 thumb). To override this, the prompt begins with a structural proxy—a mutant hand—using explicit counting and prohibiting the thumb to break the geometry lock. Once the six digits are established (Step 2), the second prompt applies the white glove material without altering the underlying structure.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical long fingers in a row, absolutely no thumb, just 6 fingers side-by-side, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, polydactyly, hexadactyly, strictly 6 fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical long finger stalls in a row, absolutely no thumb, just 6 stalls side-by-side, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Must break the \"flowers grow up\" prior immediately. Avoid the word \"bouquet\" in stage 1 to prevent the normal upright prior from locking. Use \"clear glass\" to force the model to render the buried flowers.",
+  "prompts_list": [
+    "A clear glass vase on a table. Emerging from the vase opening, a thick bundle of long green plant stems points straight UP towards the ceiling. The colorful flower heads are inverted, stuffed deep inside the clear glass vase, pointing down, visible through the glass.",
+    "A bouquet of flowers placed completely upside down in a clear glass vase, with stems pointing up and flower heads hanging down inside, visible through the glass."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

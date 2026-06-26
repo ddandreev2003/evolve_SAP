@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A five-finger prior is deeply embedded in the model's understanding of hands and gloves. Directly specifying 'six fingers' early forces the geometry to override the common pentadactyl schema. Establishing the distorted limb structure before adding the specific 'white glove' texture ensures the unusual anatomy remains stable throughout generation.",
+  "prompts_list": [
+    "A close-up of a hand with six clearly distinct fingers splayed open",
+    "A white latex glove worn on a hand with six clearly distinct fingers splayed open"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

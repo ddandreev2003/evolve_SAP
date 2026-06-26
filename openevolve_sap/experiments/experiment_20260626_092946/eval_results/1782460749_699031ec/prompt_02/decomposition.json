@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows typically align with the light source, making the opposite direction physically contradictory. Starting with the shadow as a separate painted silhouette establishes the conflicting orientation early before merging it into a natural cast shadow, preserving scene geometry.",
+  "prompts_list": [
+    "A cat sitting facing left. On the ground, a separate black cat-shaped silhouette painted on the floor faces right.",
+    "A cat facing left, its cast shadow faces the opposite direction, pointing right, defying light."
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

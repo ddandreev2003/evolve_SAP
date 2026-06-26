@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upwards, so an upside-down bouquet violates botanical physics. This is a structural contradiction requiring early locking of the inverted geometry. Start by explicitly defining the stem direction relative to the vase before summarizing the final composition.",
+  "prompts_list": [
+    "A clear glass vase on a table. Long green flower stems point straight UP towards the ceiling out of the vase. The flower blossoms are stuffed upside down inside the vase, pointing down.",
+    "A bouquet of flowers in a glass vase, completely upside down. Stems point up, blooms are inside the vase pointing down."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

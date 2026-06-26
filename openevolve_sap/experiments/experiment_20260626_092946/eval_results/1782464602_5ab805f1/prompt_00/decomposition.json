@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction. The prior for standard 5-finger hands is extremely strong and locks geometry in early stages. We use a \"mutant hand\" structural proxy with explicit numerical counting to force the incorrect count before transitioning to the specific glove identity.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward. Count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, hexadactyly.",
+    "A white leather glove with palm facing forward. Count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, strictly 6 fingers."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

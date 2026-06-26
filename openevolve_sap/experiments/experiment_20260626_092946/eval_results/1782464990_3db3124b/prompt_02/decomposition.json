@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting. Must trick the model into drawing the shadow as a separate shape first, then reinforce the opposite direction explicitly.",
+  "prompts_list": [
+    "A cat sitting on the floor, facing LEFT. Next to the cat, a solid black cat-shaped shadow is cast on the floor, but the shadow is facing RIGHT. The shadow points right, the cat points left.",
+    "A cat facing left. Its dark cast shadow on the ground faces the opposite direction, pointing RIGHT. The shadow's head points right, defying the light source."
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural contradiction. Flowers naturally grow upward, so starting with the normal object would lock correct geometry at steps 0-2. Use a proxy describing components separately to break the upright prior before introducing the final impossible arrangement.",
+  "prompts_list": [
+    "A clear glass vase on a table. Emerging from the vase opening, a thick bundle of long green plant stems points straight UP towards the ceiling. The colorful flower heads are inverted, stuffed deep inside the vase, pointing down.",
+    "A bouquet of flowers placed completely upside down in a clear glass vase, with stems pointing up and flower heads hanging down inside, visible through the glass."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

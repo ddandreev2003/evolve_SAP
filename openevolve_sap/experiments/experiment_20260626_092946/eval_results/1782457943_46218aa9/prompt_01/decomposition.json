@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Flowers naturally grow upward. To prevent the model from correcting the orientation based on learned priors, the prompt describes the physical geometry first—stems extending up while heads enter down—before stating the final composition.",
+  "prompts_list": [
+    "Clear glass vase. Thick green stems stick straight UP out of the opening. Flower heads buried inside pointing DOWN.",
+    "Upside down bouquet in vase, stems up, flower heads down."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

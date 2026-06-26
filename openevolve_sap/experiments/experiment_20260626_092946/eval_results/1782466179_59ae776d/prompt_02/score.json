@@ -1,0 +1,42 @@
+{
+  "alignment score": 3.333333333333333,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782466179_59ae776d/prompt_02/image_00.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "[shadow_opposite=YES] The cat is facing left, and its shadow extends to the right, clearly defying the natural direction of the cat’s body orientation (opposite direction). The image explicitly demonstrates the scenario described in the prompt with no ambiguity.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, realistic photograph with consistent lighting, sharp detail in the cat’s fur and the asphalt texture, and a natural shadow. There are no rendering artifacts, distortions, or anatomical inconsistencies—the scene is fully coherent and visually flawless.",
+        "shadow opposite": "YES"
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782466179_59ae776d/prompt_02/image_01.png",
+      "alignment score": 2.0,
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "[shadow_opposite=NO] The cat is facing left (head orientation), and its shadow extends to the left, matching the cat’s facing direction. This follows normal physics (shadow direction consistent with light source), so it fails to satisfy the prompt’s requirement of the shadow facing the opposite direction. Key conceptual element (opposite shadow direction) is fundamentally misrepresented.",
+        "quality score": 5,
+        "quality explanation": "The image is a clear, realistic photograph with consistent lighting, sharp detail on the cat’s fur and the pavement texture, and a well-defined shadow. No rendering artifacts, distortions, or anatomical inconsistencies are present; all elements appear physically coherent and natural.",
+        "shadow opposite": "NO"
+      }
+    },
+    {
+      "image_index": 2,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782466179_59ae776d/prompt_02/image_02.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "[shadow_opposite=YES] The image clearly shows a cat facing left with its shadow extending to the right, directly violating normal shadow physics by facing the opposite direction of the cat’s body orientation. All key elements (cat, shadow, and their directional relationship) are present and unambiguous, fully satisfying the prompt’s requirement.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and visually coherent. The cat’s fur texture, anatomy, and proportions are accurate, with no distortion or artifacts. The shadow is smoothly rendered and consistent with the cat’s shape, and lighting/perspective are natural. No flaws disrupt readability or realism.",
+        "shadow opposite": "YES"
+      }
+    }
+  ],
+  "num_seeds_scored": 3
+}

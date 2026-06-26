@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers biologically grow upwards, creating a strong prior conflict with an inverted vase arrangement. Using structural prompting forces the model to lock the vase geometry first, then explicitly define the impossible orientation (stems up, heads down) to bypass the standard growth schema.",
+  "prompts_list": [
+    "A clear glass vase on a table. Inside the clear glass vase, a bouquet of flowers is stuffed completely upside down. The thick green stems stick straight UP into the air out of the vase opening. The colorful flower heads are buried deep inside the clear glass vase, pointing down, visible through the glass.",
+    "A bouquet of flowers placed completely upside down in a clear glass vase, with stems pointing up and flower heads hanging down inside, visible through the glass"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

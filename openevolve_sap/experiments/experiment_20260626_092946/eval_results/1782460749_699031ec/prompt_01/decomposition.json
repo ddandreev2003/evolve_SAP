@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers typically hang downwards due to gravity. Since the setup defies this norm, a structural proxy establishing stems pointing UP is used first to lock in the inverted orientation before resolving the final floral arrangement.",
+  "prompts_list": [
+    "A glass vase. Inside, a bouquet is stuffed upside down. Thick green stems stick straight UP into the air. Flower heads are buried inside, pointing down.",
+    "A bouquet of flowers upside down in a vase, stems pointing up, flower heads hanging down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

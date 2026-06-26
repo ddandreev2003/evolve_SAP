@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Must break the \"flowers grow up\" prior immediately. Avoid \"hanging down\" which causes drooping upright flowers. Use \"pointing DOWN towards the floor\" to force the inverse geometry.",
+  "prompts_list": [
+    "A clear glass vase resting upright on a table. A bouquet of flowers is stuffed completely upside down into the vase. The bare green stems stick straight UP towards the ceiling, extending out of the vase opening. The colorful flower heads are pointing DOWN towards the floor, buried deep inside the vase.",
+    "A bouquet of flowers placed completely upside down in an upright glass vase, with bare stems pointing straight UP towards the ceiling and flower heads pointing DOWN towards the floor"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

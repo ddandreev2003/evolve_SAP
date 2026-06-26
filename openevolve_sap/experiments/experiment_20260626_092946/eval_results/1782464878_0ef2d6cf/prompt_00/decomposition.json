@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The \"5-finger prior\" is deeply locked in the model for gloves. To force a 6th digit, we must introduce a non-glove structure first that implies polydactyly, such as an alien or mutant hand, before transitioning to the specific material of a white glove without changing the underlying geometry.",
+  "prompts_list": [
+    "An alien hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical fingers in a row, no thumb. Six distinct separate digits, polydactyly, hexadactyly, strictly 6 fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical finger stalls in a row, no thumb. Six distinct separate tubes, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

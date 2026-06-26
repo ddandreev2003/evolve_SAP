@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove typically implies a five-fingered anatomy, creating a structural contradiction. To prevent the model from locking correct geometry early, the prompt starts with an alien hand establishing the six-digit structure before applying the white glove texture.",
+  "prompts_list": [
+    "An alien hand with palm facing forward, fingers spread wide apart. The hand has exactly 6 identical fingers in a row, hexadactyly, strictly 6 fingers",
+    "A white glove with palm facing forward, fingers spread wide apart. The glove has exactly 6 identical finger stalls in a row, hexadactyly, strictly 6 fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

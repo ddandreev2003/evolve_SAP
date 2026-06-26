@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers typically grow upward with stems in soil, not in a vase pointing out. This structural contradiction requires establishing the container geometry first before forcing the inverted arrangement to prevent the model from auto-correcting the growth direction.",
+  "prompts_list": [
+    "A clear glass vase sitting on a wooden table.",
+    "A bouquet of flowers stuffed completely upside down in the vase, with thick green stems pointing straight up out of the opening and flower heads buried inside."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting. Shadows typically align with the light source in generated images, making opposite directions physically inconsistent. To force this contradiction, the shadow is introduced early as a detached silhouette object on the ground, ensuring the geometry is locked before transitioning to the full scene with the impossible lighting condition.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a separate black cat-shaped silhouette painted on the floor is facing RIGHT, opposite to the cat.",
+    "A cat facing left, but its cast shadow is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

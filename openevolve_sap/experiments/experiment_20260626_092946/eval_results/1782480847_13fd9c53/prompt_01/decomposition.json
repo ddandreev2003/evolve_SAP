@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural contradiction. Flowers naturally grow upwards, creating a strong prior for orientation. The model locks gravity at stages 0-2, so we force the inverted geometry (stems up, flowers down/in) as a separate physical arrangement first before applying the target label.",
+  "prompts_list": [
+    "A large heavy glass vase in the center of the image. Sticking straight UP out of the top of the vase are bare green plant stems. The colorful flower heads are buried upside down inside the glass vase, pointing DOWN.",
+    "A bouquet of flowers placed completely upside down in a glass vase, with thick green stems pointing straight up out of the vase and flower heads buried inside pointing down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

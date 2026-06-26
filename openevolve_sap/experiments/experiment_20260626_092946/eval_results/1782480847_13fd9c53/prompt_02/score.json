@@ -1,0 +1,42 @@
+{
+  "alignment score": 4.999999999999999,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782480847_13fd9c53/prompt_02/image_00.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "[shadow_opposite=YES] The image clearly depicts a cat facing left while its shadow extends to the right, directly fulfilling the prompt's requirement that the shadow faces the opposite direction from the cat's body orientation. Both elements (cat and shadow) are present, correctly oriented, and their relationship is unambiguous, demonstrating concrete semantic fidelity to the prompt.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no rendering artifacts. The cat’s anatomy (fur texture, limb structure, facial features) is anatomically correct and sharply defined. Lighting and perspective are consistent, with the shadow naturally connecting to the cat and the asphalt surface showing coherent texture. The high contrast between light and dark areas enhances realism without distortion.",
+        "shadow opposite": "YES"
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782480847_13fd9c53/prompt_02/image_01.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "[shadow_opposite=YES] The image clearly shows a cat facing right with its shadow cast to the left, directly satisfying the \"opposite direction\" requirement. The cat and shadow are distinct, and their directional relationship explicitly matches the prompt’s meaning without ambiguity or symbolic interpretation.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity photograph with no visible rendering artifacts. Lighting, texture (concrete surface), and perspective are consistent. The cat and shadow are sharply defined, anatomically coherent, and free from distortion or warping. The scene is visually natural and fully coherent.",
+        "shadow opposite": "YES"
+      }
+    },
+    {
+      "image_index": 2,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782480847_13fd9c53/prompt_02/image_02.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "[shadow_opposite=YES] The image clearly shows a cat facing left with its shadow extending to the right, directly satisfying the \"opposite direction\" requirement. The cat’s body orientation and shadow direction are unambiguous and conform to the prompt’s core condition. All key elements (cat, shadow, directional opposition) are explicitly present and correctly depicted.",
+        "quality score": 5,
+        "quality explanation": "The image is a sharp, well-lit photograph with no visible artifacts, distortions, or anatomical inconsistencies. The cat’s form, shadow, and background (asphalt texture) are rendered coherently with natural lighting and perspective. No broken elements or surreal blending are present, and the scene maintains physical plausibility.",
+        "shadow opposite": "YES"
+      }
+    }
+  ],
+  "num_seeds_scored": 3
+}

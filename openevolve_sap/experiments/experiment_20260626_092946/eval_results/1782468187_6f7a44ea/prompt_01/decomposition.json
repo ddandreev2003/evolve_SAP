@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Flowers naturally grow upward, creating a strong geometric prior against inversion. Describing the physical orientation of stems pointing up and heads down forces the geometry override before refining the subject identity.",
+  "prompts_list": [
+    "A clear glass vase on a table. An upside-down bouquet is stuffed into the vase. The thick green stems stick straight UP towards the ceiling out of the vase opening. The colorful flower heads are buried deep inside the vase, pointing down.",
+    "A bouquet of flowers placed completely upside down in a glass vase, with stems pointing up and flower heads hanging down inside"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting strategy. Breaks the physics prior by treating the shadow as a distinct physical shape on the ground facing the opposite direction first, establishing the layout before linking it to the cat.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground, a dark shadow shaped like a cat is cast facing RIGHT. The shadow points the opposite way.",
+    "A cat facing left, casting a dark shadow on the ground. The shadow is facing the opposite direction, pointing right, defying physics."
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

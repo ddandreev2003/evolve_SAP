@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "A bouquet of flowers is typically seen growing upwards from soil. This structural contradiction requires forcing the geometry early to prevent the model from correcting the orientation during later denoising stages.",
+  "prompts_list": [
+    "A clear glass vase on a table. Inside the vase, a bouquet of flowers is placed completely upside down. The thick green stems stick straight UP into the air, extending out of the vase opening. The colorful flower heads are pointing DOWN, clearly visible through the glass.",
+    "A bouquet of flowers placed completely upside down in a clear glass vase, with stems pointing up and flower heads pointing down inside"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

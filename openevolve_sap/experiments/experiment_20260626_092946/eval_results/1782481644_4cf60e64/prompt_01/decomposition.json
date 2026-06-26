@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Must break the \"flowers grow up\" prior immediately. We avoid the word \"bouquet\" in Prompt 1 to prevent the upright prior, and make the vase prominent.",
+  "prompts_list": [
+    "A large clear glass vase sitting prominently in the center of a table. Emerging from deep inside the vase, long green plant stems stick straight UP out of the vase opening towards the ceiling. The colorful flower blooms are stuffed upside down inside the vase, pointing DOWN. Upside down plant arrangement, stems up, flowers down.",
+    "A bouquet of flowers placed completely upside down inside a glass vase, with thick green stems pointing straight up out of the vase and flower heads buried inside pointing down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

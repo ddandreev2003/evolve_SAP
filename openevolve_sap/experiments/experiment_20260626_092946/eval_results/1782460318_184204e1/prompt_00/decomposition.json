@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Gloves are conventionally designed for five fingers, creating a geometric contradiction. Starting with a polydactyl hand establishes the correct digit count and layout before introducing the fabric constraints of the glove, ensuring the extra finger is maintained in the final render.",
+  "prompts_list": [
+    "A human hand with six distinct fingers spread wide, palm forward.",
+    "A white glove covering a hand with six fingers, each finger stall distinct."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

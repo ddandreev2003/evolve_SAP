@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Lighting contradiction. Standard diffusion priors assume shadows align with the light source and object position. To achieve this, the model must be tricked into accepting the impossible shadow geometry first by describing it as an attached shape, before resolving the final scene.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. Attached to the cat's paws, a solid black shadow stretches on the ground, but the shadow's silhouette is facing RIGHT, completely opposite to the cat's body.",
+    "A cat facing left, but its cast shadow on the ground is facing the opposite direction, pointing right, defying the light source"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

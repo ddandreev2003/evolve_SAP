@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural contradiction with strong prior against 6-fingered hands. Using \"mutant\" with explicit numerical counting (1, 2, 3, 4, 5, 6) breaks the standard 5-digit schema before switching to the target white glove concept.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical fingers in a row, featuring an extra sixth digit, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, polydactyly, hexadactyly, strictly 6 fingers, never 5 fingers.",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical finger stalls in a row, featuring an extra sixth stall, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers, never 5 fingers."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

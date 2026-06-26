@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The standard prior for gloves and hands strongly favors five fingers. A direct generation attempt typically corrects the sixth digit automatically. To force the correct contradiction, we first establish a non-human anatomical baseline using an \"alien\" or \"hexadactyl\" hand in the initial stage, which breaks the 5-finger schema. Once the geometry is locked, the second prompt layers the specific \"white glove\" material over this structure, preserving the six digits through the materialization phase.",
+  "prompts_list": [
+    "An alien hand with palm facing forward, fingers pointing straight up. The hand has exactly 6 identical fingers in a single straight row, absolutely no thumb. Six distinct separate digits, hexadactyly, strictly 6 fingers, never 5.",
+    "A white glove designed for an alien hand, palm facing forward, fingers pointing straight up. The glove has exactly 6 identical finger stalls in a single straight row. Six distinct separate tubes, hexadactyly, strictly 6 fingers."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

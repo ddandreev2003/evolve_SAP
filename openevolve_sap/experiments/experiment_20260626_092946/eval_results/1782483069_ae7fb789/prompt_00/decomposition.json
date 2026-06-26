@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "The 5-finger anatomical prior is extremely strong. We use a \"mutant hand\" proxy and explicit counting to break the standard schema, forcing the contradiction to be visible before introducing the glove material.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical fingers in a row, count them: 1, 2, 3, 4, 5, 6.",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical finger stalls in a row, count them: 1, 2, 3, 4, 5, 6."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

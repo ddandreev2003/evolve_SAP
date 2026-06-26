@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove is typically associated with five fingers, making the six-finger constraint a strong structural contradiction against human anatomy priors. Using a \"mutant hand\" description early forces the model to accept hexadactyly before applying the texture of the glove, ensuring the geometry locks correctly.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward. The thumb is replaced by an extra finger. The hand has exactly 6 identical fingers side-by-side in a single row. Count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, polydactyly, hexadactyly, strictly 6 fingers total, no thumb.",
+    "A white glove with palm facing forward. The thumb is replaced by an extra finger. The glove has exactly 6 identical finger stalls side-by-side in a single row. Count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly, strictly 6 fingers total, no thumb."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

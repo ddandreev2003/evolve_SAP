@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove typically fits 5 fingers due to a strong anatomical prior. To break this, Prompt 1 uses a \"mutant\" hand proxy with explicit numerical counting to force the extra digit geometry during the critical layout stage before transitioning to the final glove identity.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly 6 identical fingers in a row, count them: 1, 2, 3, 4, 5, 6. Strictly 6 fingers.",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly 6 identical finger stalls in a row, count them: 1, 2, 3, 4, 5, 6. Strictly 6 fingers."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

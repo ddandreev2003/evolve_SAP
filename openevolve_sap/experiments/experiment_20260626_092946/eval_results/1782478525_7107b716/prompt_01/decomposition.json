@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. The model has a strong prior that flowers grow upward. We must avoid the word \"bouquet\" initially to prevent triggering the correct geometry, instead describing the physical components (stems, blooms) inverted relative to the vase. The vase is emphasized as heavy and prominent to ensure it remains in the frame.",
+  "prompts_list": [
+    "A large, heavy, prominent clear glass vase sitting in the center of a table. Sticking straight UP out of the vase opening are long green plant stems. The colorful flower blooms are at the bottom of the stems, pointing DOWN into the vase. Upside down plant arrangement, stems up, flowers down.",
+    "A bouquet of flowers placed completely upside down in a vase, with thick green stems pointing straight up out of the vase and flower heads buried inside pointing down"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

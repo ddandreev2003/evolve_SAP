@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Must break the \"flowers grow up\" prior immediately by focusing on stems pointing up and avoiding the word \"bouquet\" in stage 1 to prevent geometry locking.",
+  "prompts_list": [
+    "A clear glass vase on a table. Long green flower stems stick straight UP into the air from the vase opening. The colorful flower blooms point DOWN, buried deep inside the vase.",
+    "A bouquet of flowers placed completely upside down in a vase, stems pointing straight up, flower heads hanging down inside the vase."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

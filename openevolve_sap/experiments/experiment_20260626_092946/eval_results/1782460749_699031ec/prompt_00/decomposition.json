@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Standard gloves typically conform to human anatomy with five fingers, making six digits a structural contradiction. By starting with a mutant hand, we establish the correct geometry and finger count early. Switching to the white glove ensures the final material renders correctly over the pre-established shape.",
+  "prompts_list": [
+    "A mutant hand, palm forward, fingers spread. Exactly 6 identical fingers in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct digits, polydactyly.",
+    "A white glove, palm forward, fingers spread. Exactly 6 identical finger stalls in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct tubes, hexadactyly."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

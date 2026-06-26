@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove typically conforms to a standard 5-finger anatomy. Using explicit counting on a bare hand first establishes the polydactyl structure early, preventing the model from correcting the digit count when the specific glove material is introduced.",
+  "prompts_list": [
+    "A bare hand with exactly 6 fingers, palm facing camera. Polydactyly, 6 distinct digits. Count the fingers: 1, 2, 3, 4, 5, 6.",
+    "A white glove with exactly 6 fingers, palm facing camera. Polydactyly, 6 distinct finger stalls. Count the glove fingers: 1, 2, 3, 4, 5, 6."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

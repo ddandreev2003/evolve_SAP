@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural/Spatial Contradiction. The 5-finger prior is extremely strong in diffusion models. Geometry locks early (steps 0-2), so starting with the glove would result in a standard 5-finger shape. Instead, we use a mutant hand proxy with explicit spelling (\"exactly six\"), negative constraints (\"no thumb\"), and structural descriptors (\"polydactyly\") to force the weird geometry before switching to the final target concept.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly six identical fingers in a row, no thumb. Six distinct separate digits, polydactyly, hexadactyly, strictly six fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly six identical finger stalls in a row, no thumb. Six distinct separate tubes, hexadactyly, strictly six fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

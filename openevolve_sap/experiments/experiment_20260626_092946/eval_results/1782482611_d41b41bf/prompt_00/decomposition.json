@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is extremely strong for human anatomy. Starting with a 'mutant hand' structure ensures the geometric contradiction (hexadactyly) is established in the critical geometry phase (steps 0-2) before introducing the material identity of the glove. Explicit counting cues prevent the model from reverting to standard anatomy during early denoising.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide. The hand has exactly 6 identical fingers in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate digits, hexadactyly.",
+    "A white glove with palm facing forward, fingers spread wide. The glove has exactly 6 identical finger stalls in a row, count them: 1, 2, 3, 4, 5, 6. Six distinct separate tubes, hexadactyly."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

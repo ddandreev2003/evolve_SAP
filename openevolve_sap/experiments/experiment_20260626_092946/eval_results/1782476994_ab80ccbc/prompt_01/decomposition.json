@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Break \"flowers grow up\" prior immediately. Starting with explicit stem-direction instructions forces the model to render the unnatural geometry in Stage 0-2 before shaping details.",
+  "prompts_list": [
+    "A clear glass vase on a table. Inside the clear glass vase, a bouquet of flowers is stuffed completely upside down. The thick green stems stick straight UP into the air out of the vase opening. The colorful flower heads are buried deep inside the clear glass vase, pointing down, visible through the glass.",
+    "A bouquet of flowers placed completely upside down in a clear glass vase, with stems pointing up and flower heads hanging down inside, visible through the glass."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

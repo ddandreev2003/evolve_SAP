@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A standard glove anatomy implies five digits. Starting with a polydactyl hand establishes the required geometric foundation before the material texture is applied, preventing the model from correcting the finger count to the usual five during shape generation.",
+  "prompts_list": [
+    "A human hand with six fingers",
+    "A white glove on a six-fingered hand"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Flowers have a strong growing-upward prior in diffusion models. Starting with anatomical descriptions of stems pointing up and flower heads down forces the correct inverted geometry before applying the \"bouquet\" label to prevent triggering the upright growth schema.",
+  "prompts_list": [
+    "A glass vase on a table. Sticking straight UP out of the vase opening are long green plant stems. The colorful flower blooms are at the bottom of the stems, pointing DOWN into the vase. Upside down plant arrangement, stems up, flowers down.",
+    "A bouquet of flowers placed completely upside down in a vase, with thick green stems pointing straight up out of the vase and flower heads buried inside pointing down"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

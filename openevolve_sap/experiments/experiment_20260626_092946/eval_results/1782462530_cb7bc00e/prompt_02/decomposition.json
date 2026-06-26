@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows are physically bound to light sources, making opposite direction a strong contradiction. Starting with the cat's base geometry locks the shape before the final stage introduces the impossible lighting direction as a separate attribute.",
+  "prompts_list": [
+    "A cat sitting on the ground facing left",
+    "A cat sitting on the ground facing left, casting a shadow that points right"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

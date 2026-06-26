@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove with 6 fingers presents a structural contradiction regarding limb anatomy. Standard diffusion models tend to normalize hand shapes to five digits during early denoising to maintain realism. Using a bare hand as a structural proxy ensures the incorrect geometry is locked in before any texture is applied. Transitioning to the glove material then applies the visual style to the existing shape without forcing the model to recalculate the finger count back to five.",
+  "prompts_list": [
+    "A bare human hand with exactly six fingers, palm facing forward.",
+    "A white leather glove with exactly six fingers, palm facing forward."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "original_prompt": "The shadow of a cat is facing the opposite direction",
+  "explanation": "Shadows naturally align with light sources and gravity. To break this strong geometric prior, Prompt 1 forces the shadow to act as a separate physical decal facing the wrong way before transitioning to the final impossible lighting configuration.",
+  "prompts_list": [
+    "A cat sitting and facing LEFT. On the ground next to it, a solid black painted decal shaped like a cat facing RIGHT. The dark decal points RIGHT while the real cat faces LEFT, completely opposite directions.",
+    "A cat facing left, casting a dark shadow on the ground. The shadow is shaped like a cat facing RIGHT, completely opposite to the real cat. Impossible shadow, shadow faces right, cat faces left."
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

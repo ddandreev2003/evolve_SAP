@@ -1,0 +1,42 @@
+{
+  "alignment score": 4.999999999999999,
+  "per_seed": [
+    {
+      "image_index": 0,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782480847_13fd9c53/prompt_01/image_00.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "[upside_down=YES] The image clearly depicts a bouquet with green stems pointing upward out of the vase opening and flower heads (yellow buds) positioned downward, fully contained within the vase. This satisfies the mandatory \"upside-down bouquet\" rule and accurately conveys the prompt’s literal meaning. All key elements (vase, stems, flower heads) are present and arranged to demonstrate the intended scenario without ambiguity or misrepresentation.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent, with no rendering artifacts, distortions, or broken elements. The vase, stems, and flower buds are well-defined, with consistent lighting, realistic textures, and natural perspective. All components appear physically plausible and anatomically correct for their forms, contributing to a polished and professional appearance.",
+        "upside down": "YES"
+      }
+    },
+    {
+      "image_index": 1,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782480847_13fd9c53/prompt_01/image_01.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "[upside_down=YES] The image clearly shows a bouquet with green stems pointing upward out of the vase and colorful flower heads positioned downward inside the vase, fully adhering to the \"upside-down\" requirement. The objects (flowers, vase) and their spatial relationship directly match the prompt’s description without ambiguity or misrepresentation.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. The vase, stems, and flower heads are well-defined with consistent lighting, natural textures, and no rendering artifacts. Perspective and physical connections (e.g., stems rooted in the vase) appear realistic and undistorted.",
+        "upside down": "YES"
+      }
+    },
+    {
+      "image_index": 2,
+      "image_path": "/home/ubuntu/evolve_SAP/openevolve_sap/experiments/experiment_20260626_092946/eval_results/1782480847_13fd9c53/prompt_01/image_02.png",
+      "alignment score": 5.0,
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "[upside_down=YES] The image perfectly embodies the prompt's meaning: a bouquet with green stems pointing upward out of the vase and colorful purple flower heads fully submerged and pointing downward inside the vase, with no ambiguity in orientation or object roles.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no rendering artifacts; lighting, texture, and perspective are consistent, and all elements (stems, flowers, vase, water) appear physically plausible and well-defined.",
+        "upside down": "YES"
+      }
+    }
+  ],
+  "num_seeds_scored": 3
+}

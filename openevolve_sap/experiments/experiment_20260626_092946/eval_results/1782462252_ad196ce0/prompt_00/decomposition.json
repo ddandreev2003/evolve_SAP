@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "A white glove is commonly associated with five fingers due to strong anatomical priors. Starting with a mutant hand explicitly defines six digits early in the generation process, bypassing the standard schema. The final prompt applies the specific white glove texture once the geometry is locked.",
+  "prompts_list": [
+    "A mutant hand with six fingers, palm facing forward, fingers spread wide",
+    "A white glove with six fingers, palm facing forward, fingers spread wide, white fabric"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

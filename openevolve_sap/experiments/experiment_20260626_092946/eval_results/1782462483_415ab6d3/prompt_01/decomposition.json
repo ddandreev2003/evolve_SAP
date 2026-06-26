@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A bouquet of flowers is upside down in a vase",
+  "explanation": "Structural. Flowers naturally grow upwards, creating a strong biological prior. To counteract this, the first prompt explicitly forces the inverted geometry (stems up, heads down) during the critical shape-locking stage (steps 0-2), ensuring the model accepts the impossible configuration before refining identity.",
+  "prompts_list": [
+    "A clear glass vase on a table. An upside-down bouquet is stuffed into the vase. The thick green stems stick straight UP towards the ceiling out of the vase opening. The colorful flower heads are buried deep inside the vase, pointing down.",
+    "A bouquet of flowers placed completely upside down in a glass vase, with stems pointing up and flower heads hanging down inside"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

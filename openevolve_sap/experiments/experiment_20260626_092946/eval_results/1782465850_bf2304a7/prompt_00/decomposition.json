@@ -1,0 +1,11 @@
+{
+  "original_prompt": "A white glove has 6 fingers",
+  "explanation": "Structural. The 5-finger prior is extremely strong. We use 'mutant', 'no thumb', and spelled-out numbers to break the standard human hand schema without causing text artifacts, switching early to lock the geometry before introducing the glove identity.",
+  "prompts_list": [
+    "A mutant hand with palm facing forward, fingers spread wide apart like a fan. The hand has exactly six identical fingers in a row, no thumb. Six distinct separate digits, polydactyly, hexadactyly, strictly six fingers",
+    "A white glove with palm facing forward, fingers spread wide apart like a fan. The glove has exactly six identical finger stalls in a row, no thumb. Six distinct separate tubes, hexadactyly, strictly six fingers"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}
