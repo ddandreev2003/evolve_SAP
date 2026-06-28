@@ -1,0 +1,9 @@
+{
+  "prompt": "An upside down knife is about to slice a tomato",
+  "method": "evolved_llm",
+  "seeds": [
+    82158,
+    53476,
+    63679
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "explanation": "Trains are associated with tracks, not asphalt roads. Introducing a \"vehicle\" on asphalt emulates the expectation of asphalt transportation before transitioning to the train identity.",
+  "prompts_list": [
+    "A vehicle on asphalt",
+    "A train on asphalt"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

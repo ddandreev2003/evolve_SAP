@@ -1,0 +1,12 @@
+{
+  "explanation": "Logos have strong upright orientation priors in training data. To prevent the model from auto-correcting the symbol, the car's geometry is established first. The logo is introduced as a standard object, and finally, the upside-down inversion is forced as a specific detail attribute once the visual context is resolved.",
+  "prompts_list": [
+    "A modern luxury car driving on a sunny street",
+    "A modern luxury car with a Mercedes-Benz logo on the hood",
+    "A modern luxury car with an upside-down Mercedes-Benz logo on the hood"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "explanation": "Hitting an eight ball with a racket contradicts pool physics (cues vs rackets). Starting with a standard pool scene anchors the geometry. Transitioning to a racket substitutes the tool shape while maintaining the pose. Specifying the eight ball locks the target object in the final stage.",
+  "prompts_list": [
+    "A woman playing billiards with a cue stick",
+    "A woman hitting a ball with a tennis racket",
+    "A woman hitting an eight ball with a tennis racket"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

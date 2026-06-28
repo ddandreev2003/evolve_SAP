@@ -1,0 +1,10 @@
+{
+  "explanation": "A kitchen sink is more typical for dirty dishes. Starting with a bathroom sink stabilizes the unusual primary setting, then the dishes are added to reflect their presence in an unexpected environment.",
+  "prompts_list": [
+    "A clean bathroom sink",
+    "Dirty dishes in a bathroom sink"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

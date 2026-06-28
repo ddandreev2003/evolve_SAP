@@ -1,0 +1,36 @@
+{
+  "prompt": "A wagon is being pushed from behind by two opposite facing horses horses",
+  "method": "json_mapping",
+  "per_seed": {
+    "91608": {
+      "seed": 91608,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_wagon_is_being_pushed_from_behind_by_two_opposite_facing_horses_horses/seed_91608.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains a wagon and horses, but significantly misrepresents the prompt. The prompt specifies \"two opposite facing horses\" pushing \"from behind,\" but the image shows three horses positioned in front of the wagon (pulling rather than pushing). All horses face the same direction (forward), not \"opposite facing\" as required. The fundamental action described in the prompt (horses pushing from behind) is completely absent, as the horses are clearly harnessed to pull the wagon from the front. While some relevant components (wagon, horses) are present, the key elements of number, position, direction, and action are substantially misrepresented.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The horses are anatomically correct with well-formed features, the wagon is rendered with precise detail, and lighting, texture, and perspective are consistent throughout. Elements connect naturally with no floating objects, clipped limbs, or merged shapes. The rendering appears professional and visually deliberate, with excellent attention to detail in the grass, shadows, and overall composition."
+      }
+    },
+    "47411": {
+      "seed": 47411,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_wagon_is_being_pushed_from_behind_by_two_opposite_facing_horses_horses/seed_47411.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts four horses *pulling* a wagon (facing forward, away from the wagon), whereas the prompt specifies **two opposite-facing horses pushing the wagon from behind**. Key mismatches include: (1) incorrect number of horses (4 vs. 2), (2) action misaligned (pulling vs. pushing), and (3) directionality (horses face forward, not \"opposite-facing\" as required). While the wagon and horses are present, the core intent of the prompt (pushing from behind with two specific horses) is fundamentally misrepresented.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality black-and-white photograph with no visible rendering artifacts. All elements (horses, wagon, landscape) are anatomically coherent, with consistent lighting, texture, and perspective. Limbs, harnesses, and wagon structure are well-defined, and there are no distortions, clipped shapes, or implausible blending. The visual clarity and realism meet the highest standard."
+      }
+    },
+    "11288": {
+      "seed": 11288,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_wagon_is_being_pushed_from_behind_by_two_opposite_facing_horses_horses/seed_11288.png",
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts three horses **pulling** a wagon from the front (horses face forward, wagon behind them), whereas the prompt specifies **two horses pushing the wagon from behind** while **opposite facing** (horses should face away from the wagon or each other). Key mismatches include: incorrect number of horses (3 vs. 2), wrong action (pulling vs. pushing), and incorrect orientation (horses face forward, not opposite as required). The scene fundamentally misrepresents the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine. Horses, wagon, and background are rendered with realistic textures, consistent lighting, and anatomical coherence. No distortions, broken elements, or artifacts are present—details like harnesses, wheels, and foliage are sharp and naturally integrated."
+      }
+    }
+  }
+}

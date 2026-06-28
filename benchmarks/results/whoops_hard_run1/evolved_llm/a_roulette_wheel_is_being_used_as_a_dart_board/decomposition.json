@@ -1,0 +1,12 @@
+{
+  "explanation": "A roulette wheel has deep pockets while a dart board is flat; combining them risks geometric distortion. The sequence begins with a neutral circular shape to establish layout, defines the roulette object to lock the specific geometry, and finally introduces the darts to enforce the contradictory usage once the structure is stable.",
+  "prompts_list": [
+    "A round wheel mounted on a wall",
+    "A classic roulette wheel mounted on a wall",
+    "A roulette wheel used as a dart board with darts stuck in the pockets"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "explanation": "Disneyland creates a strong prior for joy and smiling faces. Breaking the prompt isolates the environment layout, introduces the subjects neutrally, and forces the contradictory emotional state only in the final stage where facial details are resolved.",
+  "prompts_list": [
+    "A bright day at Disneyland theme park with buildings and visitors.",
+    "Three children standing on the paved walkway at Disneyland.",
+    "Three sad and unhappy children standing on the paved walkway at Disneyland."
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

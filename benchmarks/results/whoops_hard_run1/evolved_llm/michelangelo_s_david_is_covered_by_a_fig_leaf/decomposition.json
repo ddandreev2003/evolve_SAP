@@ -1,0 +1,12 @@
+{
+  "explanation": "Michelangelo's David is strongly associated with nudity in its canonical form. Directly prompting for a fig leaf can cause the model to ignore the constraint due to the strong statue identity prior. Starting with a generic marble statue geometry, identifying the specific artwork, and finally imposing the leaf ensures the visual element adheres to the correct placement without being overridden by the statue's default appearance.",
+  "prompts_list": [
+    "A white marble statue of a standing man",
+    "Michelangelo's David statue",
+    "Michelangelo's David statue with a fig leaf covering the lower torso"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

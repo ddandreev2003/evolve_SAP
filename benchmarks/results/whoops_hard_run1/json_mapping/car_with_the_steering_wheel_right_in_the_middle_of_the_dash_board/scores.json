@@ -1,0 +1,36 @@
+{
+  "prompt": "car with the steering wheel right in the middle of the dash board",
+  "method": "json_mapping",
+  "per_seed": {
+    "32118": {
+      "seed": 32118,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/car_with_the_steering_wheel_right_in_the_middle_of_the_dash_board/seed_32118.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image fully conveys the prompt's meaning by depicting a car interior with the steering wheel positioned precisely in the middle of the dashboard. The central placement of the steering wheel is clearly visible and functional, matching the prompt's description without symbolic or metaphorical interpretation. All key elements (steering wheel, dashboard, and car interior) are present and correctly illustrated to demonstrate the intended unusual configuration, with no missing or misrepresented attributes.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible rendering artifacts. Lighting, texture, and perspective are consistent across the scene, and all elements (e.g., steering wheel controls, dashboard components, and gauges) are well-formed, anatomically correct, and physically connected without distortion, warping, or implausible blending. The high level of detail and realism ensures the image is visually flawless."
+      }
+    },
+    "21180": {
+      "seed": 21180,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/car_with_the_steering_wheel_right_in_the_middle_of_the_dash_board/seed_21180.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly depicts a car interior with the steering wheel positioned **exactly in the middle of the dashboard**, as specified in the prompt. The steering wheel is centered on the dashboard, with no ambiguity about its placement or role. All key elements (steering wheel, dashboard, and their spatial relationship) are present and functionally accurate, fulfilling the prompt’s requirement without symbolic or metaphorical representation.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean, realistic, and coherent. The steering wheel, dashboard controls, and other elements are sharply rendered with consistent lighting, texture, and perspective. There are no visible artifacts, distortions, or broken geometry (e.g., no floating components, fused shapes, or anatomical errors). The background blur is a deliberate depth-of-field effect, not a rendering flaw, and all key components appear physically plausible."
+      }
+    },
+    "49309": {
+      "seed": 49309,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/car_with_the_steering_wheel_right_in_the_middle_of_the_dash_board/seed_49309.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly depicts a car interior with the steering wheel positioned centrally on the dashboard, exactly as described in the prompt. The steering wheel’s placement is unambiguous, and the scene directly illustrates the functional arrangement specified (no symbolic or metaphorical interpretation needed). All key elements (steering wheel, dashboard) are present with correct spatial relationships, fully conveying the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent with no rendering artifacts. The steering wheel, dashboard, and gauges are sharply defined, with consistent lighting, texture, and perspective. Complex elements (e.g., the steering wheel’s shape, dashboard controls) are anatomically and structurally sound, and there are no distortions, floating objects, or implausible blending. The image appears clean, realistic, and fully polished."
+      }
+    }
+  }
+}

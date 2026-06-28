@@ -1,0 +1,12 @@
+{
+  "explanation": "The term \"Jack O'Lantern\" strongly triggers a \"Pumpkin\" prior (large vegetable, hollow), conflicting with the input \"Orange\" (small citrus fruit). Starting with a basic \"Orange fruit\" establishes the correct scale and skin texture during the layout phase. A second step introduces the carving action on the specific fruit type. The final step solidifies the Halloween association without the model defaulting to a pumpkin size.",
+  "prompts_list": [
+    "A round orange citrus fruit on a wooden surface",
+    "A round orange citrus fruit with a small carved face on its side",
+    "An orange carved as a Jack O'Lantern with a carved smiley face"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

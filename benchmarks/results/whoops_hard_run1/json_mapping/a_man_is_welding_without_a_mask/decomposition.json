@@ -1,0 +1,10 @@
+{
+  "explanation": "Welding is typically performed with appropriate safety gear. Depicting a man engaged in the activity with safety gear helps establish the context of welding before introducing the anomaly of masklessness.",
+  "prompts_list": [
+    "A man welding with a mask",
+    "A man welding without a mask"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

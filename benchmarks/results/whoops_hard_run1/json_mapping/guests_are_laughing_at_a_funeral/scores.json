@@ -1,0 +1,36 @@
+{
+  "prompt": "Guests are laughing at a funeral.",
+  "method": "json_mapping",
+  "per_seed": {
+    "84625": {
+      "seed": 84625,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/guests_are_laughing_at_a_funeral/seed_84625.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts guests laughing, which aligns with the action described in the prompt. However, the scene is clearly a celebratory event (e.g., a wedding reception or formal party), not a funeral. Key contextual elements of a funeral—such as a casket, mournful attire (beyond dark suits), religious symbols, or somber setting—are entirely absent. The bright outdoor setting, floral arrangements on a dining table, and joyful atmosphere directly contradict the funeral context required by the prompt. While \"guests laughing\" is present, the critical situational context is fundamentally misrepresented, reducing the score to 2.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine. All elements are rendered with high fidelity: faces, hands, and anatomy are coherent and natural; lighting is consistent; textures (e.g., fabric, flowers, tableware) are realistic; and perspective is accurate. No artifacts, distortions, or physical inconsistencies (e.g., floating objects, merged limbs) are present. The composition is sharp, well-lit, and professionally executed, warranting a perfect score for visual quality."
+      }
+    },
+    "67220": {
+      "seed": 67220,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/guests_are_laughing_at_a_funeral/seed_67220.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly depicts a funeral setting with multiple coffins adorned with floral arrangements, and guests (dressed in formal attire typical for funerals) are visibly laughing and clapping. The scene concretely illustrates the prompt’s meaning without symbolic or metaphorical representation—guests’ laughter and the funeral context (coffins, solemn attire) are both present and functionally aligned with the described situation.",
+        "quality score": 4,
+        "quality explanation": "The image is largely clean and coherent, with consistent lighting, realistic textures, and proper perspective. However, there is noticeable repetition in facial features among the guests (a common AI-generation artifact), and some hands appear slightly stiff or overly similar in pose. These minor issues prevent a perfect score but do not disrupt overall readability or anatomical coherence."
+      }
+    },
+    "7018": {
+      "seed": 7018,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/guests_are_laughing_at_a_funeral/seed_7018.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows people laughing and dressed in formal attire, which partially matches the \"guests\" and \"laughing\" elements of the prompt. However, it does not depict a funeral setting. The scene appears to be a celebratory business or political gathering in a garden with bright sunlight and joyful expressions, rather than a somber funeral environment. There are no clear funeral indicators like coffins, graves, mourning symbols, or a solemn atmosphere. While some relevant components (people in formal wear laughing) are present, the key element of \"funeral\" is significantly misrepresented, as the context suggests a happy event rather than a funeral.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. Faces, hands, and bodies appear anatomically correct and well-formed. Lighting is consistent throughout the scene, with natural sunlight creating realistic shadows and highlights. The perspective is natural, and all elements connect physically in a plausible manner without floating objects, clipped limbs, or merged shapes. The image has sharp focus, realistic textures, and professional photographic quality with no rendering artifacts or distortions."
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "explanation": "Trains are typically associated with rail tracks, not asphalt surfaces, creating a strong geometric prior conflict. Using a heavy truck as an intermediate proxy establishes the correct vehicle-to-road interaction and wheel-ground contact before transitioning to the train silhouette, preventing the model from hallucinating invisible rails.",
+  "prompts_list": [
+    "A heavy cargo truck driving on a paved asphalt road.",
+    "A freight train moving along a paved asphalt road."
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

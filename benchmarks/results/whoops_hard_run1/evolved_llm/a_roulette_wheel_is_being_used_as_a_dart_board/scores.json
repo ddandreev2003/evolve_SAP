@@ -1,0 +1,36 @@
+{
+  "prompt": "A roulette wheel is being used as a dart board.",
+  "method": "evolved_llm",
+  "per_seed": {
+    "24369": {
+      "seed": 24369,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_roulette_wheel_is_being_used_as_a_dart_board/seed_24369.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly depicts a roulette wheel mounted on a wall with darts embedded in its surface, directly illustrating the prompt’s scenario of a roulette wheel being used as a dart board. The correct objects (roulette wheel, darts) are present, and their interaction (darts stuck in the wheel) conveys the intended functional use without ambiguity, metaphor, or missing elements.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and visually coherent. The roulette wheel, darts, and wall texture are rendered with consistent lighting, sharp details, and no visible artifacts (e.g., distorted anatomy, floating objects, or warped geometry). All elements appear physically plausible and well-formed, with no disruptions to visual coherence."
+      }
+    },
+    "11515": {
+      "seed": 11515,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_roulette_wheel_is_being_used_as_a_dart_board/seed_11515.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly depicts a roulette wheel with multiple darts embedded in its surface, directly illustrating the prompt’s requirement that the roulette wheel is \"being used as a dart board.\" The correct objects (roulette wheel and darts) are present, and their interaction is concrete and functional—darts are visibly stuck in the wheel, confirming the intended use-case without symbolic or metaphorical ambiguity.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. The roulette wheel’s details (numbers, colors, segments) and darts are sharply defined, with no rendering artifacts, distortions, or broken elements. Lighting, texture, and perspective are consistent, and all objects (including the darts and wheel structure) connect naturally without warping, clipping, or implausible blending. The scene is fully realistic and free of visual flaws."
+      }
+    },
+    "84851": {
+      "seed": 84851,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_roulette_wheel_is_being_used_as_a_dart_board/seed_84851.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly depicts a roulette wheel mounted on a wall with darts embedded in it, directly illustrating the prompt’s scenario of a roulette wheel being used as a dart board. The correct objects (roulette wheel, darts) are present, their roles are unambiguous (darts are actively used as projectiles targeting the wheel), and the scene conveys a concrete, functional use-case without symbolic or metaphorical ambiguity.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent with no rendering artifacts. The roulette wheel’s segments, numbers, and darts are sharply defined, with consistent lighting, texture, and perspective. The brick wall background and the wheel’s structure show no distortions, warping, or anatomical inconsistencies. All elements connect naturally, and the overall rendering is clean and realistic."
+      }
+    }
+  }
+}

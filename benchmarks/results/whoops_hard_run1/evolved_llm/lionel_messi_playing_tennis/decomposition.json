@@ -1,0 +1,12 @@
+{
+  "explanation": "Lionel Messi is culturally bound to soccer (feet/ball), conflicting with tennis geometry (hands/racquet). We use a structural bridge strategy: 1) Generic athlete establishes the correct arm/pose/court layout. 2) Resemblance descriptor adds Messi's facial features to the fixed pose. 3) Full name confirms identity without disrupting the already formed tennis action.",
+  "prompts_list": [
+    "A man playing tennis on a clay court holding a racquet",
+    "A man resembling Lionel Messi playing tennis on a clay court",
+    "Lionel Messi playing tennis on a clay court"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

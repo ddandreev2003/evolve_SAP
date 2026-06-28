@@ -1,0 +1,36 @@
+{
+  "prompt": "A smartphone plugged into a typewriter.",
+  "method": "json_mapping",
+  "per_seed": {
+    "51486": {
+      "seed": 51486,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_smartphone_plugged_into_a_typewriter/seed_51486.png",
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image contains both a smartphone and a typewriter, which are the correct objects from the prompt. However, the smartphone is merely resting on the typewriter without any visible physical connection (e.g., a plug or cable) to indicate it is \"plugged into\" the device. The critical action of \"plugging in\" is missing, which is central to the prompt’s intended interaction. While the main subjects are present, the absence of this functional relationship significantly undermines the alignment.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean, realistic, and fully coherent. The typewriter and smartphone are rendered with sharp detail, consistent lighting, and accurate textures. There are no visible artifacts, distortions, or anatomical inconsistencies (e.g., keys, dials, and the smartphone’s edges are well-defined). The composition maintains physical plausibility, with objects positioned naturally and no signs of warping, clipping, or surreal blending."
+      }
+    },
+    "50309": {
+      "seed": 50309,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_smartphone_plugged_into_a_typewriter/seed_50309.png",
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a typewriter but contains no smartphone, which is a critical element of the prompt. The required interaction (\"plugged into\") is also entirely absent, as there is no smartphone or any indication of it being connected to the typewriter. The scene fails to reflect the prompt’s core requirement of combining these two specific objects in the described functional relationship.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and realistic, with consistent lighting, sharp textures, and coherent perspective. The typewriter’s mechanical components (keys, paper roller, metal parts) are well-defined, anatomically accurate, and free of distortions or artifacts. There are no floating elements, merged shapes, or rendering errors, making the scene fully coherent and polished."
+      }
+    },
+    "9433": {
+      "seed": 9433,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_smartphone_plugged_into_a_typewriter/seed_9433.png",
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a typewriter with a sheet of paper, but **no smartphone is present** and **no plugging action is shown**. The prompt explicitly requires a smartphone connected to the typewriter, yet the image contains only the typewriter. The core elements (smartphone + physical connection) are entirely missing, making the scene completely inconsistent with the prompt. There is no functional or concrete illustration of the described interaction.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity, photorealistic rendering with no visible artifacts or distortions. The typewriter’s mechanical components (keys, levers, rollers) are sharply defined, textures (leather casing, metal parts) are consistent, and lighting/perspective is natural. The paper is correctly positioned without floating or clipping, and all elements exhibit physical coherence. The rendering is clean, detailed, and fully realistic."
+      }
+    }
+  }
+}

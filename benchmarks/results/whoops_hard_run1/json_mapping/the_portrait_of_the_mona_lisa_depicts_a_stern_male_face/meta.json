@@ -1,0 +1,9 @@
+{
+  "prompt": "The portrait of the Mona Lisa depicts a stern male face.",
+  "method": "json_mapping",
+  "seeds": [
+    47077,
+    29306,
+    11982
+  ]
+}

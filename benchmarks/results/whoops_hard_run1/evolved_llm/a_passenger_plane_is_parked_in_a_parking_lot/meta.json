@@ -1,0 +1,9 @@
+{
+  "prompt": "A passenger plane is parked in a parking lot.",
+  "method": "evolved_llm",
+  "seeds": [
+    9878,
+    68502,
+    34740
+  ]
+}

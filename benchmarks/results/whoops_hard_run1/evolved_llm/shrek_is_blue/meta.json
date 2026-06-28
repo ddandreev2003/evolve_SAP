@@ -1,0 +1,9 @@
+{
+  "prompt": "Shrek is blue.",
+  "method": "evolved_llm",
+  "seeds": [
+    17394,
+    95927,
+    27538
+  ]
+}

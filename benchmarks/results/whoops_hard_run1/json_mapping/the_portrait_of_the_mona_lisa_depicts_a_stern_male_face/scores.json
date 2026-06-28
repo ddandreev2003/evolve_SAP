@@ -1,0 +1,36 @@
+{
+  "prompt": "The portrait of the Mona Lisa depicts a stern male face.",
+  "method": "json_mapping",
+  "per_seed": {
+    "47077": {
+      "seed": 47077,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_portrait_of_the_mona_lisa_depicts_a_stern_male_face/seed_47077.png",
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts the iconic Mona Lisa, which is universally recognized as a portrait of a woman with a subtle, enigmatic expression. The prompt explicitly describes \"a stern male face,\" but the image shows a female face with no stern or masculine attributes. The core elements—gender (male vs. female) and expression (stern vs. ambiguous)—are fundamentally misrepresented. No aspect of the image aligns with the prompt’s requirements, as it is a direct reproduction of the historical female portrait.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-fidelity reproduction of the Mona Lisa with no visible rendering artifacts. Lighting, texture, and perspective are consistent and realistic, matching the original painting’s style. Facial features, hair, and clothing are anatomically coherent and well-formed, with smooth blending and no distortions. The overall composition is physically plausible and visually deliberate, demonstrating exceptional rendering fidelity."
+      }
+    },
+    "29306": {
+      "seed": 29306,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_portrait_of_the_mona_lisa_depicts_a_stern_male_face/seed_29306.png",
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The prompt specifies a \"stern male face\" in the Mona Lisa portrait, but the image clearly depicts a female figure with long hair, feminine facial features, and traditional attire associated with the original Mona Lisa. The gender and key attributes described in the prompt are entirely misrepresented, failing to convey the intended meaning.",
+        "quality score": 5,
+        "quality explanation": "The image exhibits no visible rendering artifacts, distortions, or broken elements. The face, hair, and clothing are well-formed, with consistent lighting, texture, and perspective. Anatomical details are coherent, and the overall composition maintains visual realism and fidelity typical of a classical portrait painting."
+      }
+    },
+    "11982": {
+      "seed": 11982,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_portrait_of_the_mona_lisa_depicts_a_stern_male_face/seed_11982.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a portrait of the Mona Lisa, which is historically and visually a female figure with a neutral/enigmatic expression. The prompt incorrectly describes it as depicting \"a stern male face,\" which is completely inaccurate. While the image does show a portrait (a relevant component), the key elements of gender (male vs. female) and expression (stern vs. neutral) are fundamentally misrepresented. The portrait clearly shows feminine features and lacks the stern expression described in the prompt, significantly misrepresenting the core attributes specified.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality rendering with no visible flaws. The face, hair, and clothing are well-formed and anatomically correct. Lighting and texture are consistent throughout, with appropriate shading and detail in the skin, hair, and fabric. The portrait maintains visual coherence with proper proportions and realistic rendering of all elements. There are no distortions, artifacts, or broken features—everything appears physically plausible and professionally rendered."
+      }
+    }
+  }
+}

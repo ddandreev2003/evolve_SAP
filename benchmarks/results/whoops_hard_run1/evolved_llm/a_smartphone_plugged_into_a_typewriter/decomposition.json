@@ -1,0 +1,12 @@
+{
+  "explanation": "Connecting a modern smartphone to a mechanical typewriter presents a physical impossibility (wrong era, wrong ports). To handle the structural contradiction, the prompt sequence isolates the complex typewriter geometry first, introduces the smartphone as a separate nearby object to stabilize scale, and finally enforces the connection in the last step when fine details are resolved.",
+  "prompts_list": [
+    "A vintage typewriter on a wooden desk.",
+    "A vintage typewriter on a wooden desk with a smartphone next to it.",
+    "A smartphone plugged into a vintage typewriter."
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

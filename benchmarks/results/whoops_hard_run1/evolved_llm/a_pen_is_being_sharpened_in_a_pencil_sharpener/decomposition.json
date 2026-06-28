@@ -1,0 +1,10 @@
+{
+  "explanation": "Pens are not designed to fit inside pencil sharpeners, creating a physical contradiction. By starting with a pencil—the correct object for the tool—we allow the model to lock the geometric alignment and sharpening mechanism before substituting the incompatible pen shape.",
+  "prompts_list": [
+    "A pencil being sharpened in a pencil sharpener",
+    "A pen being sharpened in a pencil sharpener"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

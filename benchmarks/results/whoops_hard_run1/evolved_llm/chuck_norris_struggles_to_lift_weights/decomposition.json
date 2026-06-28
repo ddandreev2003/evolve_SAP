@@ -1,0 +1,12 @@
+{
+  "explanation": "Chuck Norris is culturally stereotyped as impossibly strong, creating a prior conflict with the \"struggles\" action. We anchor the pose first using a generic athlete to lock the straining muscle geometry and body language. The celebrity identity is then introduced via a proxy resemblance before resolving to the exact name, ensuring the struggle semantics are preserved over the heroic appearance prior.",
+  "prompts_list": [
+    "A muscular man struggling to lift heavy weights",
+    "A man resembling Chuck Norris struggling to lift heavy weights",
+    "Chuck Norris struggling to lift weights"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

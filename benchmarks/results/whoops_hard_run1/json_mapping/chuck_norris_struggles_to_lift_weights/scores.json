@@ -1,0 +1,36 @@
+{
+  "prompt": "Chuck Norris struggles to lift weights",
+  "method": "json_mapping",
+  "per_seed": {
+    "60998": {
+      "seed": 60998,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/chuck_norris_struggles_to_lift_weights/seed_60998.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a man lifting a barbell in a gym, which partially aligns with the \"lift weights\" component of the prompt. However, the subject is not Chuck Norris (a specific public figure with recognizable features), and the man appears to be lifting the weight with ease rather than \"struggling\" (no visible strain, facial tension, or physical difficulty). The core elements—Chuck Norris as the subject and the action of struggling—are missing or misrepresented, reducing alignment to a minor conceptual match.",
+        "quality score": 5,
+        "quality explanation": "The image is rendered with high visual fidelity. Lighting, textures, and perspective are consistent and realistic. The subject’s anatomy (hands, limbs, facial features) is coherent and well-formed, with no distortions or artifacts. Objects like the barbell and gym equipment connect naturally, and the background elements are logically integrated. No rendering flaws or incoherent details are present."
+      }
+    },
+    "54578": {
+      "seed": 54578,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/chuck_norris_struggles_to_lift_weights/seed_54578.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a man lifting a barbell in a gym, which includes relevant components like weights and a gym setting. However, the subject is not identifiable as Chuck Norris (lacking his distinct appearance or cultural association), and the action does not convey \"struggling\"—the figure appears to be lifting with proper form and ease, showing strength rather than difficulty. The core elements of the prompt (specific person and emotional/physical state of struggle) are significantly misrepresented, though the general activity (weightlifting) is present.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no rendering artifacts. Anatomy (hands, muscles, posture) is anatomically correct and coherent, with precise grips on the barbell. Lighting, textures (e.g., gym flooring, clothing fabric), and perspective are consistent. All objects (dumbbells, equipment, flooring) connect naturally without floating, clipping, or warping. The scene is realistic and fully coherent, exhibiting professional-level rendering."
+      }
+    },
+    "8061": {
+      "seed": 8061,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/chuck_norris_struggles_to_lift_weights/seed_8061.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a man lifting weights in a gym setting, which partially addresses the \"lift weights\" aspect of the prompt. However, it significantly misrepresents two key elements: the person is not Chuck Norris (appearing as a younger man with different features), and there is no indication of \"struggling\" - the individual demonstrates controlled form with no visible strain or difficulty. While weights and a lifting action are present, the specific subject and the core concept of struggle are missing, making this a significant misrepresentation of the prompt's intent.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The subject's anatomy is well-rendered with natural muscle definition, realistic hands gripping the barbell, and proper posture. Lighting is consistent throughout the scene, with appropriate shadows and highlights. The gym equipment, flooring, and background elements are all sharply defined and physically coherent, with no artifacts, distortions, or broken elements. The image maintains consistent perspective and texture across all components, demonstrating professional-level rendering quality."
+      }
+    }
+  }
+}

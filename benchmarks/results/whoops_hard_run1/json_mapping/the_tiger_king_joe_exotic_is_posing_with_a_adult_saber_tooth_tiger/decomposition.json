@@ -1,0 +1,10 @@
+{
+  "explanation": "Joe Exotic is an iconic figure and poses are typically static. Introducing a regular tiger maintains size and pose, allowing the model to focus on identity and unique features of a saber-tooth tiger later.",
+  "prompts_list": [
+    "The tiger King, Joe Exotic, posing with an adult tiger",
+    "The tiger King, Joe Exotic, posing with a saber-tooth tiger"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

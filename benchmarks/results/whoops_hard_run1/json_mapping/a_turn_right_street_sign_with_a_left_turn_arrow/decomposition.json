@@ -1,0 +1,10 @@
+{
+  "explanation": "Signs are structured with specific geometric forms and spatial logic. Introducing the left turn arrow last maintains visual consistency and logic within the sign's established design framework.",
+  "prompts_list": [
+    "A turn right street sign",
+    "A turn right street sign with a left turn arrow"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "prompt": "The Sphinx is decorated like a sarcophagus and located outside a Mayan temple",
+  "method": "evolved_llm",
+  "seeds": [
+    84524,
+    48239,
+    54354
+  ]
+}

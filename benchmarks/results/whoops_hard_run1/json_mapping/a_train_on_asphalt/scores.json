@@ -1,0 +1,36 @@
+{
+  "prompt": "A train on asphalt.",
+  "method": "json_mapping",
+  "per_seed": {
+    "38222": {
+      "seed": 38222,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_train_on_asphalt/seed_38222.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains both a train and asphalt, but critically misrepresents the spatial relationship specified in the prompt. The train is positioned on railroad tracks, not on the asphalt surface as required by \"A train on asphalt.\" While both elements are present, the core functional relationship (\"on\") is entirely incorrect—the train is adjacent to the asphalt road rather than situated upon it. This constitutes a significant misrepresentation of the prompt's literal meaning, as the train's intended placement on asphalt (even if physically unusual) is the central requirement.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-resolution photograph with exceptional visual coherence. All elements—including the train's detailed textures, mechanical components, and branding; the asphalt's granular surface; and the railroad tracks—are rendered with realistic clarity. Lighting is natural and consistent, perspective is accurate, and there are no artifacts, distortions, or anatomical/structural flaws. The composition maintains physical plausibility throughout, with clean edges, proper object separation, and seamless blending of elements."
+      }
+    },
+    "71125": {
+      "seed": 71125,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_train_on_asphalt/seed_71125.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The prompt \"a train on asphalt\" requires the train to be situated directly on an asphalt surface, implying the train's wheels or base should contact the asphalt. However, the image shows the train on railway tracks with gravel ballast, while the asphalt is present only as a separate, adjacent road surface. The train is not depicted on asphalt at all, misrepresenting the core relationship specified in the prompt. Although both a train and asphalt are visible, the key functional interaction (the train being *on* asphalt) is entirely missing, constituting a significant conceptual misalignment.",
+        "quality score": 5,
+        "quality explanation": "The image is rendered with high fidelity, exhibiting no visible artifacts, distortions, or broken elements. Lighting, textures (e.g., the asphalt grain and train surface), and perspective are consistent and realistic throughout. All components, including the train's structure, tracks, and background elements, are physically coherent and well-formed, with natural connections and no implausible blending or warping. The scene appears fully coherent and photographically realistic."
+      }
+    },
+    "47884": {
+      "seed": 47884,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_train_on_asphalt/seed_47884.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains a train and an asphalt surface, but the train is positioned on railway tracks rather than on the asphalt. The prompt \"a train on asphalt\" requires the train to be situated directly on an asphalt surface (e.g., as if on a road), which is not depicted. Instead, the asphalt is visible only as an adjacent platform or road, while the train occupies the tracks. This misrepresents the key spatial relationship (\"on\"), as the train's placement contradicts the prompt's core requirement. While relevant elements (train and asphalt) are present, the intent is significantly misrepresented, as the scene does not illustrate a functional or concrete scenario where a train operates on asphalt.",
+        "quality score": 5,
+        "quality explanation": "The image is highly realistic and free of visible flaws. Lighting, texture, and perspective are consistent across all elements: the asphalt has a natural, detailed texture; the train's surfaces (including paint, windows, and metal components) are smooth and well-defined; and the railway tracks show coherent gravel ballast and alignment. There are no rendering artifacts, distortions, or broken elements—e.g., no melted features, fused geometry, or implausible blending. The scene is physically coherent, with all objects (train, tracks, background foliage) appearing naturally connected and anatomically correct for their context. The overall rendering is clean, sharp, and professional."
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "prompt": "A man is welding without a mask",
+  "method": "evolved_llm",
+  "seeds": [
+    15779,
+    64356,
+    72844
+  ]
+}

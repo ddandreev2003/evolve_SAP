@@ -1,0 +1,39 @@
+{
+  "prompt": "A bouquet of flowers is upside down in a vase",
+  "method": "json_mapping",
+  "per_seed": {
+    "44885": {
+      "seed": 44885,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_bouquet_of_flowers_is_upside_down_in_a_vase/seed_44885.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "[upside_down=NO] The image depicts a standard upright bouquet with flower heads pointing upward and stems submerged in the vase, directly contradicting the prompt's requirement for the bouquet to be upside down (stems up, flower heads down). Since the orientation is normal, alignment is significantly misrepresented per the mandatory rule.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and realistic, with well-defined textures, consistent lighting, and coherent composition. The flowers, vase, and background elements are rendered without distortion, artifacts, or anatomical inconsistencies, demonstrating high rendering fidelity.",
+        "upside down": "NO"
+      }
+    },
+    "51684": {
+      "seed": 51684,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_bouquet_of_flowers_is_upside_down_in_a_vase/seed_51684.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "[upside_down=NO] The image depicts a standard upright bouquet with flower heads positioned above the vase and stems submerged in water, directly contradicting the prompt's requirement for an upside-down arrangement (stems pointing up, flower heads down/buried). While the correct objects (bouquet, vase) are present, the core action (upside-down orientation) is entirely misrepresented, resulting in significant conceptual misalignment.",
+        "quality score": 5,
+        "quality explanation": "The image exhibits high visual fidelity with realistic lighting, sharp detail in flower petals and leaves, consistent perspective, and natural textures. There are no rendering artifacts, distorted elements, or coherence issues—objects appear physically plausible and professionally composed.",
+        "upside down": "NO"
+      }
+    },
+    "73346": {
+      "seed": 73346,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_bouquet_of_flowers_is_upside_down_in_a_vase/seed_73346.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "[upside_down=NO] The image depicts a standard upright bouquet with flower heads above the vase and stems submerged in water, directly contradicting the prompt’s requirement for an upside-down arrangement (stems pointing up, flower heads down/buried). Key elements of the prompt’s intended scenario are entirely misrepresented, resulting in a score of 2 per the alignment rules for UPSIDE_DOWN = NO.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean, realistic, and fully coherent. Lighting, textures, and perspective are consistent; the vase, flowers, and background show no rendering artifacts, distortions, or broken elements. All components are well-formed and physically plausible.",
+        "upside down": "NO"
+      }
+    }
+  }
+}

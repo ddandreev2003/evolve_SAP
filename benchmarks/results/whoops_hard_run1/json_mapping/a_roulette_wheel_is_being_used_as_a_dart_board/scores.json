@@ -1,0 +1,36 @@
+{
+  "prompt": "A roulette wheel is being used as a dart board.",
+  "method": "json_mapping",
+  "per_seed": {
+    "84851": {
+      "seed": 84851,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_roulette_wheel_is_being_used_as_a_dart_board/seed_84851.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a roulette wheel, but it lacks any indication of it being used as a dart board (e.g., darts, dart-throwing context, or functional interaction). The prompt requires the roulette wheel to be *used* in this specific way, which is entirely absent. While the main object (roulette wheel) is present, the critical action and context described in the prompt are missing, resulting in significant misrepresentation of the intended scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean, with consistent lighting, sharp textures, and precise geometric alignment. The roulette wheel’s segments, numbers, and structural details are rendered coherently without distortion, artifacts, or anatomical inconsistencies (e.g., no warped shapes or broken elements). The composition is realistic and free of visual flaws."
+      }
+    },
+    "11515": {
+      "seed": 11515,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_roulette_wheel_is_being_used_as_a_dart_board/seed_11515.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a hybrid design that combines elements of both a roulette wheel and a dartboard, but it fails to demonstrate the roulette wheel \"being used as a dart board\" as specified in the prompt. There are no darts visible in the image, nor any indication of the wheel being actively used for dart throwing. The prompt requires showing the roulette wheel in the functional role of a dart board (i.e., being targeted by darts), but instead this appears to be a designed hybrid object rather than a roulette wheel repurposed for darts. The key element of \"being used\" is missing, making this a significant conceptual misrepresentation of the prompt's intent.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. The circular object has consistent lighting, sharp details, and well-defined sections. The numbers are clearly legible, the perspective is accurate, and all elements are properly formed without any distortion, warping, or rendering artifacts. The overall composition appears professionally rendered with excellent visual fidelity and physical coherence throughout the scene."
+      }
+    },
+    "24369": {
+      "seed": 24369,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_roulette_wheel_is_being_used_as_a_dart_board/seed_24369.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a hybrid object that combines elements of both a roulette wheel and a dart board, but fails to accurately represent the prompt's specific scenario. While it contains circular numbering and sections reminiscent of both games, it doesn't depict an actual roulette wheel (standard roulette wheels have numbers 1-36 plus 0/00, not the non-standard numbers like 37, 69, and \"SJ\" shown here). Most critically, there is no evidence of the object being *used* as a dart board - no darts are visible, and there's no indication of active use or the functional relationship described in the prompt. The image presents a conceptual hybrid rather than showing a roulette wheel being repurposed for dart play, significantly misrepresenting the intended scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is rendered with exceptional visual quality. It shows clean, consistent lighting and perspective throughout the circular board. The wood grain background is realistic and well-textured, with proper grain direction and natural color variation. All elements are sharply defined with no visible artifacts, distortions, or broken geometry. The metallic rings, colored sections, and numbering are all precisely rendered with consistent proportions and clear boundaries. There are no issues with floating elements, clipped sections, or unnatural blending - the entire composition appears physically coherent and professionally rendered."
+      }
+    }
+  }
+}

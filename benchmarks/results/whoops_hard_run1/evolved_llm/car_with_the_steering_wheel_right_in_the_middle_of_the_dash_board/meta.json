@@ -1,0 +1,9 @@
+{
+  "prompt": "car with the steering wheel right in the middle of the dash board",
+  "method": "evolved_llm",
+  "seeds": [
+    32118,
+    21180,
+    49309
+  ]
+}

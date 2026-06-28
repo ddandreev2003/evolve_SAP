@@ -1,0 +1,9 @@
+{
+  "prompt": "Movie goers nibble on vegetables instead of popcorn",
+  "method": "json_mapping",
+  "seeds": [
+    80048,
+    34145,
+    11928
+  ]
+}

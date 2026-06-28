@@ -1,0 +1,9 @@
+{
+  "prompt": "A woman hits an eight ball with a racket",
+  "method": "evolved_llm",
+  "seeds": [
+    75411,
+    79101,
+    66494
+  ]
+}

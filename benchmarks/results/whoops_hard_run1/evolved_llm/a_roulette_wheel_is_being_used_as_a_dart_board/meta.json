@@ -1,0 +1,9 @@
+{
+  "prompt": "A roulette wheel is being used as a dart board.",
+  "method": "evolved_llm",
+  "seeds": [
+    24369,
+    11515,
+    84851
+  ]
+}

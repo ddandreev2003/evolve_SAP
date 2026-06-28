@@ -1,0 +1,9 @@
+{
+  "prompt": "The portrait of the Mona Lisa depicts a stern male face.",
+  "method": "evolved_llm",
+  "seeds": [
+    47077,
+    29306,
+    11982
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "prompt": "Michelangelo's David is covered by a fig leaf.",
+  "method": "json_mapping",
+  "seeds": [
+    43474,
+    92901,
+    24185
+  ]
+}

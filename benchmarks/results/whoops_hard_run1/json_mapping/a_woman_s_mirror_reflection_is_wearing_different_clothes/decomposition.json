@@ -1,0 +1,12 @@
+{
+  "explanation": "A human-looking mannequin serves as a precursor for a reflection with a minimal clothing proxy. The transition to the reflective surface allows the model to resolve the contradicting element without breaking spatial layout.",
+  "prompts_list": [
+    "A mannequin in front of a mirror",
+    "A woman and her reflection in the mirror",
+    "A woman's mirror reflection is wearing different clothes"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

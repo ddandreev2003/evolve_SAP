@@ -1,0 +1,9 @@
+{
+  "prompt": "A pen is being sharpened in a pencil sharpener.",
+  "method": "evolved_llm",
+  "seeds": [
+    46559,
+    96649,
+    70015
+  ]
+}

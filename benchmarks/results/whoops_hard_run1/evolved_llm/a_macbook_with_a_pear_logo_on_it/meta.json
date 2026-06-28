@@ -1,0 +1,9 @@
+{
+  "prompt": "A MacBook with a pear logo on it.",
+  "method": "evolved_llm",
+  "seeds": [
+    2100,
+    99989,
+    95790
+  ]
+}

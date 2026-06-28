@@ -1,0 +1,36 @@
+{
+  "prompt": "A passenger plane is parked in a parking lot.",
+  "method": "evolved_llm",
+  "per_seed": {
+    "9878": {
+      "seed": 9878,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_passenger_plane_is_parked_in_a_parking_lot/seed_9878.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly depicts a passenger plane parked in a parking lot, with the plane positioned among cars in a typical parking area. The key elements—passenger plane, parking lot, and parked vehicles—are present and functionally represented as described in the prompt. The scene conveys the intended situation (a plane occupying a parking space) without symbolic or metaphorical ambiguity.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. The plane’s structure (windows, doors, landing gear) and surrounding vehicles are rendered with consistent lighting, texture, and perspective. No artifacts, distortions, or anatomical/structural inconsistencies are present; all elements appear physically plausible and well-defined."
+      }
+    },
+    "68502": {
+      "seed": 68502,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_passenger_plane_is_parked_in_a_parking_lot/seed_68502.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a passenger plane correctly, but it is positioned on an airport tarmac (with hangars and service vehicles) rather than a *parking lot*. Parking lots are designated for ground vehicles (e.g., cars, trucks) and feature paved spaces, markings, and infrastructure incompatible with aircraft. The scene misrepresents the intended location and functional context of the prompt, as airports and parking lots serve fundamentally different purposes. While the plane is \"parked,\" the setting is entirely inconsistent with the prompt’s requirement, constituting a significant misrepresentation of the scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is photorealistic with no visible rendering flaws. The plane’s anatomy (wings, engines, landing gear) is structurally coherent, lighting and shadows are consistent, and textures (e.g., concrete, metal) appear natural. Background elements (hangars, vehicles) are well-defined, with no distorted features, floating objects, or implausible blending. Perspective and scale are realistic, and complex details (e.g., windows, engine intakes) are sharply rendered. The scene is visually cohesive and free of artifacts."
+      }
+    },
+    "34740": {
+      "seed": 34740,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_passenger_plane_is_parked_in_a_parking_lot/seed_34740.png",
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image shows a passenger plane parked, which satisfies the presence of the main subject. However, the plane is situated on an airport tarmac—not a parking lot as specified in the prompt. A parking lot is typically a designated area for vehicles like cars, not aircraft, making the location a critical contextual misalignment. The scene fails to depict the intended setting, though the plane itself is correctly rendered as parked.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent and realistic. There are no rendering artifacts, distortions, or broken elements. Lighting, texture, and perspective are consistent across the scene, and all objects (e.g., the plane, ground vehicles, and background structures) are well-formed and physically plausible. The image is sharp, detailed, and free of visual flaws."
+      }
+    }
+  }
+}

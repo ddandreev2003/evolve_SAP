@@ -1,0 +1,489 @@
+2026-06-28 13:58:21,167 | INFO | Selected 30 prompts
+2026-06-28 13:58:21,235 | INFO | Phase: all | out_dir: /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1
+2026-06-28 13:58:21,236 | INFO | Loading FLUX (SAP_LOW_VRAM=0)
+2026-06-28 14:02:29,285 | INFO | Progress 1/60
+2026-06-28 14:03:20,373 | INFO | [evolved_llm] generating 3 seeds: A bouquet of flowers is upside down in a vase
+2026-06-28 14:04:33,075 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_bouquet_of_flowers_is_upside_down_in_a_vase/seed_44885.png
+2026-06-28 14:04:33,315 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_bouquet_of_flowers_is_upside_down_in_a_vase/seed_51684.png
+2026-06-28 14:04:33,664 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_bouquet_of_flowers_is_upside_down_in_a_vase/seed_73346.png
+2026-06-28 14:04:33,664 | INFO | Progress 2/60
+2026-06-28 14:04:33,665 | INFO | [json_mapping] generating 3 seeds: A bouquet of flowers is upside down in a vase
+2026-06-28 14:05:40,285 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_bouquet_of_flowers_is_upside_down_in_a_vase/seed_44885.png
+2026-06-28 14:05:40,598 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_bouquet_of_flowers_is_upside_down_in_a_vase/seed_51684.png
+2026-06-28 14:05:40,986 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_bouquet_of_flowers_is_upside_down_in_a_vase/seed_73346.png
+2026-06-28 14:05:40,987 | INFO | Progress 3/60
+2026-06-28 14:06:43,900 | INFO | [evolved_llm] generating 3 seeds: A man is welding without a mask
+2026-06-28 14:07:50,376 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_man_is_welding_without_a_mask/seed_15779.png
+2026-06-28 14:07:50,797 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_man_is_welding_without_a_mask/seed_64356.png
+2026-06-28 14:07:51,222 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_man_is_welding_without_a_mask/seed_72844.png
+2026-06-28 14:07:51,222 | INFO | Progress 4/60
+2026-06-28 14:07:51,223 | INFO | [json_mapping] generating 3 seeds: A man is welding without a mask
+2026-06-28 14:08:57,939 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_man_is_welding_without_a_mask/seed_15779.png
+2026-06-28 14:08:58,292 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_man_is_welding_without_a_mask/seed_64356.png
+2026-06-28 14:08:58,648 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_man_is_welding_without_a_mask/seed_72844.png
+2026-06-28 14:08:58,648 | INFO | Progress 5/60
+2026-06-28 14:09:59,721 | INFO | [evolved_llm] generating 3 seeds: A wagon is being pushed from behind by two opposite facing h
+2026-06-28 14:11:06,052 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_wagon_is_being_pushed_from_behind_by_two_opposite_facing_horses_horses/seed_91608.png
+2026-06-28 14:11:06,426 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_wagon_is_being_pushed_from_behind_by_two_opposite_facing_horses_horses/seed_47411.png
+2026-06-28 14:11:06,701 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_wagon_is_being_pushed_from_behind_by_two_opposite_facing_horses_horses/seed_11288.png
+2026-06-28 14:11:06,701 | INFO | Progress 6/60
+2026-06-28 14:11:06,702 | INFO | [json_mapping] generating 3 seeds: A wagon is being pushed from behind by two opposite facing h
+2026-06-28 14:12:13,347 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_wagon_is_being_pushed_from_behind_by_two_opposite_facing_horses_horses/seed_91608.png
+2026-06-28 14:12:13,693 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_wagon_is_being_pushed_from_behind_by_two_opposite_facing_horses_horses/seed_47411.png
+2026-06-28 14:12:13,960 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_wagon_is_being_pushed_from_behind_by_two_opposite_facing_horses_horses/seed_11288.png
+2026-06-28 14:12:13,960 | INFO | Progress 7/60
+2026-06-28 14:12:46,867 | INFO | [evolved_llm] generating 3 seeds: A turn right street sign with a left turn arrow
+2026-06-28 14:13:52,988 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_turn_right_street_sign_with_a_left_turn_arrow/seed_28047.png
+2026-06-28 14:13:53,112 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_turn_right_street_sign_with_a_left_turn_arrow/seed_91968.png
+2026-06-28 14:13:53,228 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_turn_right_street_sign_with_a_left_turn_arrow/seed_72714.png
+2026-06-28 14:13:53,228 | INFO | Progress 8/60
+2026-06-28 14:13:53,231 | INFO | [json_mapping] generating 3 seeds: A turn right street sign with a left turn arrow
+2026-06-28 14:14:59,841 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_turn_right_street_sign_with_a_left_turn_arrow/seed_28047.png
+2026-06-28 14:15:00,232 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_turn_right_street_sign_with_a_left_turn_arrow/seed_91968.png
+2026-06-28 14:15:00,575 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_turn_right_street_sign_with_a_left_turn_arrow/seed_72714.png
+2026-06-28 14:15:00,576 | INFO | Progress 9/60
+2026-06-28 14:15:43,503 | INFO | [evolved_llm] generating 3 seeds: car with the steering wheel right in the middle of the dash 
+2026-06-28 14:16:49,903 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/car_with_the_steering_wheel_right_in_the_middle_of_the_dash_board/seed_32118.png
+2026-06-28 14:16:50,209 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/car_with_the_steering_wheel_right_in_the_middle_of_the_dash_board/seed_21180.png
+2026-06-28 14:16:50,546 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/car_with_the_steering_wheel_right_in_the_middle_of_the_dash_board/seed_49309.png
+2026-06-28 14:16:50,546 | INFO | Progress 10/60
+2026-06-28 14:16:50,549 | INFO | [json_mapping] generating 3 seeds: car with the steering wheel right in the middle of the dash 
+2026-06-28 14:17:57,207 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/car_with_the_steering_wheel_right_in_the_middle_of_the_dash_board/seed_32118.png
+2026-06-28 14:17:57,481 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/car_with_the_steering_wheel_right_in_the_middle_of_the_dash_board/seed_21180.png
+2026-06-28 14:17:57,788 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/car_with_the_steering_wheel_right_in_the_middle_of_the_dash_board/seed_49309.png
+2026-06-28 14:17:57,788 | INFO | Progress 11/60
+2026-06-28 14:18:36,697 | INFO | [evolved_llm] generating 3 seeds: The portrait of the Mona Lisa depicts a stern male face.
+2026-06-28 14:19:43,228 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/the_portrait_of_the_mona_lisa_depicts_a_stern_male_face/seed_47077.png
+2026-06-28 14:19:43,653 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/the_portrait_of_the_mona_lisa_depicts_a_stern_male_face/seed_29306.png
+2026-06-28 14:19:44,083 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/the_portrait_of_the_mona_lisa_depicts_a_stern_male_face/seed_11982.png
+2026-06-28 14:19:44,084 | INFO | Progress 12/60
+2026-06-28 14:19:44,087 | INFO | [json_mapping] generating 3 seeds: The portrait of the Mona Lisa depicts a stern male face.
+2026-06-28 14:20:50,774 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_portrait_of_the_mona_lisa_depicts_a_stern_male_face/seed_47077.png
+2026-06-28 14:20:51,202 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_portrait_of_the_mona_lisa_depicts_a_stern_male_face/seed_29306.png
+2026-06-28 14:20:51,619 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_portrait_of_the_mona_lisa_depicts_a_stern_male_face/seed_11982.png
+2026-06-28 14:20:51,619 | INFO | Progress 13/60
+2026-06-28 14:21:28,530 | INFO | [evolved_llm] generating 3 seeds: Children are unhappy at Disneyland."
+2026-06-28 14:22:34,915 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/children_are_unhappy_at_disneyland/seed_93906.png
+2026-06-28 14:22:35,206 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/children_are_unhappy_at_disneyland/seed_86071.png
+2026-06-28 14:22:35,484 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/children_are_unhappy_at_disneyland/seed_45881.png
+2026-06-28 14:22:35,484 | INFO | Progress 14/60
+2026-06-28 14:22:35,484 | INFO | [json_mapping] generating 3 seeds: Children are unhappy at Disneyland."
+2026-06-28 14:23:42,119 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/children_are_unhappy_at_disneyland/seed_93906.png
+2026-06-28 14:23:42,451 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/children_are_unhappy_at_disneyland/seed_86071.png
+2026-06-28 14:23:42,745 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/children_are_unhappy_at_disneyland/seed_45881.png
+2026-06-28 14:23:42,746 | INFO | Progress 15/60
+2026-06-28 14:24:05,003 | INFO | [evolved_llm] generating 3 seeds: An orange carved as a Jack O'Lantern.
+2026-06-28 14:25:11,502 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/an_orange_carved_as_a_jack_o_lantern/seed_75312.png
+2026-06-28 14:25:11,952 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/an_orange_carved_as_a_jack_o_lantern/seed_24301.png
+2026-06-28 14:25:12,272 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/an_orange_carved_as_a_jack_o_lantern/seed_38352.png
+2026-06-28 14:25:12,272 | INFO | Progress 16/60
+2026-06-28 14:25:12,274 | INFO | [json_mapping] generating 3 seeds: An orange carved as a Jack O'Lantern.
+2026-06-28 14:26:18,896 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/an_orange_carved_as_a_jack_o_lantern/seed_75312.png
+2026-06-28 14:26:19,334 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/an_orange_carved_as_a_jack_o_lantern/seed_24301.png
+2026-06-28 14:26:19,619 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/an_orange_carved_as_a_jack_o_lantern/seed_38352.png
+2026-06-28 14:26:19,620 | INFO | Progress 17/60
+2026-06-28 14:27:07,680 | INFO | [evolved_llm] generating 3 seeds: A pen is being sharpened in a pencil sharpener.
+2026-06-28 14:28:14,011 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_pen_is_being_sharpened_in_a_pencil_sharpener/seed_46559.png
+2026-06-28 14:28:14,386 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_pen_is_being_sharpened_in_a_pencil_sharpener/seed_96649.png
+2026-06-28 14:28:14,765 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_pen_is_being_sharpened_in_a_pencil_sharpener/seed_70015.png
+2026-06-28 14:28:14,765 | INFO | Progress 18/60
+2026-06-28 14:28:14,767 | INFO | [json_mapping] generating 3 seeds: A pen is being sharpened in a pencil sharpener.
+2026-06-28 14:29:21,473 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_pen_is_being_sharpened_in_a_pencil_sharpener/seed_46559.png
+2026-06-28 14:29:21,931 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_pen_is_being_sharpened_in_a_pencil_sharpener/seed_96649.png
+2026-06-28 14:29:22,268 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_pen_is_being_sharpened_in_a_pencil_sharpener/seed_70015.png
+2026-06-28 14:29:22,268 | INFO | Progress 19/60
+2026-06-28 14:30:05,975 | INFO | [evolved_llm] generating 3 seeds: The Sphinx is decorated like a sarcophagus and located outsi
+2026-06-28 14:31:12,373 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/the_sphinx_is_decorated_like_a_sarcophagus_and_located_outside_a_mayan_temple/seed_84524.png
+2026-06-28 14:31:12,618 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/the_sphinx_is_decorated_like_a_sarcophagus_and_located_outside_a_mayan_temple/seed_48239.png
+2026-06-28 14:31:12,849 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/the_sphinx_is_decorated_like_a_sarcophagus_and_located_outside_a_mayan_temple/seed_54354.png
+2026-06-28 14:31:12,849 | INFO | Progress 20/60
+2026-06-28 14:31:12,852 | INFO | [json_mapping] generating 3 seeds: The Sphinx is decorated like a sarcophagus and located outsi
+2026-06-28 14:32:19,474 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_sphinx_is_decorated_like_a_sarcophagus_and_located_outside_a_mayan_temple/seed_84524.png
+2026-06-28 14:32:19,756 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_sphinx_is_decorated_like_a_sarcophagus_and_located_outside_a_mayan_temple/seed_48239.png
+2026-06-28 14:32:20,065 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_sphinx_is_decorated_like_a_sarcophagus_and_located_outside_a_mayan_temple/seed_54354.png
+2026-06-28 14:32:20,065 | INFO | Progress 21/60
+2026-06-28 14:33:16,657 | INFO | [evolved_llm] generating 3 seeds: Shrek is blue.
+2026-06-28 14:34:23,039 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/shrek_is_blue/seed_17394.png
+2026-06-28 14:34:23,448 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/shrek_is_blue/seed_95927.png
+2026-06-28 14:34:23,836 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/shrek_is_blue/seed_27538.png
+2026-06-28 14:34:23,836 | INFO | Progress 22/60
+2026-06-28 14:34:23,839 | INFO | [json_mapping] generating 3 seeds: Shrek is blue.
+2026-06-28 14:35:30,460 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/shrek_is_blue/seed_17394.png
+2026-06-28 14:35:30,804 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/shrek_is_blue/seed_95927.png
+2026-06-28 14:35:31,138 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/shrek_is_blue/seed_27538.png
+2026-06-28 14:35:31,138 | INFO | Progress 23/60
+2026-06-28 14:36:02,840 | INFO | [evolved_llm] generating 3 seeds: A MacBook with a pear logo on it.
+2026-06-28 14:37:09,224 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_macbook_with_a_pear_logo_on_it/seed_2100.png
+2026-06-28 14:37:09,622 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_macbook_with_a_pear_logo_on_it/seed_99989.png
+2026-06-28 14:37:10,004 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_macbook_with_a_pear_logo_on_it/seed_95790.png
+2026-06-28 14:37:10,004 | INFO | Progress 24/60
+2026-06-28 14:37:10,006 | INFO | [json_mapping] generating 3 seeds: A MacBook with a pear logo on it.
+2026-06-28 14:38:16,502 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_macbook_with_a_pear_logo_on_it/seed_2100.png
+2026-06-28 14:38:16,824 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_macbook_with_a_pear_logo_on_it/seed_99989.png
+2026-06-28 14:38:17,147 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_macbook_with_a_pear_logo_on_it/seed_95790.png
+2026-06-28 14:38:17,147 | INFO | Progress 25/60
+2026-06-28 14:38:58,765 | INFO | [evolved_llm] generating 3 seeds: A woman hits an eight ball with a racket
+2026-06-28 14:40:05,263 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_woman_hits_an_eight_ball_with_a_racket/seed_75411.png
+2026-06-28 14:40:05,679 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_woman_hits_an_eight_ball_with_a_racket/seed_79101.png
+2026-06-28 14:40:06,094 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_woman_hits_an_eight_ball_with_a_racket/seed_66494.png
+2026-06-28 14:40:06,094 | INFO | Progress 26/60
+2026-06-28 14:40:06,095 | INFO | [json_mapping] generating 3 seeds: A woman hits an eight ball with a racket
+2026-06-28 14:41:12,844 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_hits_an_eight_ball_with_a_racket/seed_75411.png
+2026-06-28 14:41:13,237 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_hits_an_eight_ball_with_a_racket/seed_79101.png
+2026-06-28 14:41:13,624 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_hits_an_eight_ball_with_a_racket/seed_66494.png
+2026-06-28 14:41:13,624 | INFO | Progress 27/60
+2026-06-28 14:41:47,496 | INFO | [evolved_llm] generating 3 seeds: Movie goers nibble on vegetables instead of popcorn
+2026-06-28 14:42:53,827 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/movie_goers_nibble_on_vegetables_instead_of_popcorn/seed_80048.png
+2026-06-28 14:42:54,125 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/movie_goers_nibble_on_vegetables_instead_of_popcorn/seed_34145.png
+2026-06-28 14:42:54,289 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/movie_goers_nibble_on_vegetables_instead_of_popcorn/seed_11928.png
+2026-06-28 14:42:54,289 | INFO | Progress 28/60
+2026-06-28 14:42:54,291 | INFO | [json_mapping] generating 3 seeds: Movie goers nibble on vegetables instead of popcorn
+2026-06-28 14:44:01,029 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/movie_goers_nibble_on_vegetables_instead_of_popcorn/seed_80048.png
+2026-06-28 14:44:01,404 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/movie_goers_nibble_on_vegetables_instead_of_popcorn/seed_34145.png
+2026-06-28 14:44:01,826 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/movie_goers_nibble_on_vegetables_instead_of_popcorn/seed_11928.png
+2026-06-28 14:44:01,827 | INFO | Progress 29/60
+2026-06-28 14:44:35,569 | INFO | [evolved_llm] generating 3 seeds: A full pepper shaker turned upside down with nothing coming 
+2026-06-28 14:45:41,954 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_full_pepper_shaker_turned_upside_down_with_nothing_coming_out_of_it/seed_66660.png
+2026-06-28 14:45:42,268 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_full_pepper_shaker_turned_upside_down_with_nothing_coming_out_of_it/seed_62899.png
+2026-06-28 14:45:42,737 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_full_pepper_shaker_turned_upside_down_with_nothing_coming_out_of_it/seed_99543.png
+2026-06-28 14:45:42,737 | INFO | Progress 30/60
+2026-06-28 14:45:42,741 | INFO | [json_mapping] generating 3 seeds: A full pepper shaker turned upside down with nothing coming 
+2026-06-28 14:46:49,331 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_full_pepper_shaker_turned_upside_down_with_nothing_coming_out_of_it/seed_66660.png
+2026-06-28 14:46:49,573 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_full_pepper_shaker_turned_upside_down_with_nothing_coming_out_of_it/seed_62899.png
+2026-06-28 14:46:50,019 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_full_pepper_shaker_turned_upside_down_with_nothing_coming_out_of_it/seed_99543.png
+2026-06-28 14:46:50,020 | INFO | Progress 31/60
+2026-06-28 14:47:34,247 | INFO | [evolved_llm] generating 3 seeds: The tiger King, joe exotic, is posing with a adult saber too
+2026-06-28 14:48:40,632 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/the_tiger_king_joe_exotic_is_posing_with_a_adult_saber_tooth_tiger/seed_79948.png
+2026-06-28 14:48:41,042 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/the_tiger_king_joe_exotic_is_posing_with_a_adult_saber_tooth_tiger/seed_16093.png
+2026-06-28 14:48:41,348 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/the_tiger_king_joe_exotic_is_posing_with_a_adult_saber_tooth_tiger/seed_27402.png
+2026-06-28 14:48:41,348 | INFO | Progress 32/60
+2026-06-28 14:48:41,352 | INFO | [json_mapping] generating 3 seeds: The tiger King, joe exotic, is posing with a adult saber too
+2026-06-28 14:49:47,962 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_tiger_king_joe_exotic_is_posing_with_a_adult_saber_tooth_tiger/seed_79948.png
+2026-06-28 14:49:48,325 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_tiger_king_joe_exotic_is_posing_with_a_adult_saber_tooth_tiger/seed_16093.png
+2026-06-28 14:49:48,608 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/the_tiger_king_joe_exotic_is_posing_with_a_adult_saber_tooth_tiger/seed_27402.png
+2026-06-28 14:49:48,608 | INFO | Progress 33/60
+2026-06-28 14:50:47,134 | INFO | [evolved_llm] generating 3 seeds: A scale is balanced with one side being filled and other sid
+2026-06-28 14:51:53,548 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_scale_is_balanced_with_one_side_being_filled_and_other_side_being_empty/seed_94000.png
+2026-06-28 14:51:53,665 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_scale_is_balanced_with_one_side_being_filled_and_other_side_being_empty/seed_86185.png
+2026-06-28 14:51:54,030 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_scale_is_balanced_with_one_side_being_filled_and_other_side_being_empty/seed_34898.png
+2026-06-28 14:51:54,030 | INFO | Progress 34/60
+2026-06-28 14:51:54,034 | INFO | [json_mapping] generating 3 seeds: A scale is balanced with one side being filled and other sid
+2026-06-28 14:53:00,635 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_scale_is_balanced_with_one_side_being_filled_and_other_side_being_empty/seed_94000.png
+2026-06-28 14:53:00,784 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_scale_is_balanced_with_one_side_being_filled_and_other_side_being_empty/seed_86185.png
+2026-06-28 14:53:01,047 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_scale_is_balanced_with_one_side_being_filled_and_other_side_being_empty/seed_34898.png
+2026-06-28 14:53:01,048 | INFO | Progress 35/60
+2026-06-28 14:53:51,526 | INFO | [evolved_llm] generating 3 seeds: Michelangelo's David is covered by a fig leaf.
+2026-06-28 14:54:57,747 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/michelangelo_s_david_is_covered_by_a_fig_leaf/seed_43474.png
+2026-06-28 14:54:58,213 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/michelangelo_s_david_is_covered_by_a_fig_leaf/seed_92901.png
+2026-06-28 14:54:58,385 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/michelangelo_s_david_is_covered_by_a_fig_leaf/seed_24185.png
+2026-06-28 14:54:58,385 | INFO | Progress 36/60
+2026-06-28 14:54:58,385 | INFO | [json_mapping] generating 3 seeds: Michelangelo's David is covered by a fig leaf.
+2026-06-28 14:56:05,073 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/michelangelo_s_david_is_covered_by_a_fig_leaf/seed_43474.png
+2026-06-28 14:56:05,540 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/michelangelo_s_david_is_covered_by_a_fig_leaf/seed_92901.png
+2026-06-28 14:56:05,995 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/michelangelo_s_david_is_covered_by_a_fig_leaf/seed_24185.png
+2026-06-28 14:56:05,995 | INFO | Progress 37/60
+2026-06-28 14:56:47,809 | INFO | [evolved_llm] generating 3 seeds: Chuck Norris struggles to lift weights
+2026-06-28 14:57:54,197 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/chuck_norris_struggles_to_lift_weights/seed_60998.png
+2026-06-28 14:57:54,537 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/chuck_norris_struggles_to_lift_weights/seed_8061.png
+2026-06-28 14:57:54,908 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/chuck_norris_struggles_to_lift_weights/seed_54578.png
+2026-06-28 14:57:54,908 | INFO | Progress 38/60
+2026-06-28 14:57:54,912 | INFO | [json_mapping] generating 3 seeds: Chuck Norris struggles to lift weights
+2026-06-28 14:59:01,639 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/chuck_norris_struggles_to_lift_weights/seed_60998.png
+2026-06-28 14:59:02,033 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/chuck_norris_struggles_to_lift_weights/seed_8061.png
+2026-06-28 14:59:02,457 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/chuck_norris_struggles_to_lift_weights/seed_54578.png
+2026-06-28 14:59:02,458 | INFO | Progress 39/60
+2026-06-28 15:00:01,631 | INFO | [evolved_llm] generating 3 seeds: A woman's mirror reflection is wearing different clothes.
+2026-06-28 15:01:08,090 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_woman_s_mirror_reflection_is_wearing_different_clothes/seed_24232.png
+2026-06-28 15:01:08,473 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_woman_s_mirror_reflection_is_wearing_different_clothes/seed_70978.png
+2026-06-28 15:01:08,910 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_woman_s_mirror_reflection_is_wearing_different_clothes/seed_83715.png
+2026-06-28 15:01:08,910 | INFO | Progress 40/60
+2026-06-28 15:01:08,915 | INFO | [json_mapping] generating 3 seeds: A woman's mirror reflection is wearing different clothes.
+2026-06-28 15:02:15,743 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_s_mirror_reflection_is_wearing_different_clothes/seed_24232.png
+2026-06-28 15:02:16,176 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_s_mirror_reflection_is_wearing_different_clothes/seed_70978.png
+2026-06-28 15:02:16,554 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_s_mirror_reflection_is_wearing_different_clothes/seed_83715.png
+2026-06-28 15:02:16,555 | INFO | Progress 41/60
+2026-06-28 15:03:22,286 | INFO | [evolved_llm] generating 3 seeds: A train on asphalt.
+2026-06-28 15:04:28,485 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_train_on_asphalt/seed_71125.png
+2026-06-28 15:04:28,808 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_train_on_asphalt/seed_47884.png
+2026-06-28 15:04:29,127 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_train_on_asphalt/seed_38222.png
+2026-06-28 15:04:29,127 | INFO | Progress 42/60
+2026-06-28 15:04:29,130 | INFO | [json_mapping] generating 3 seeds: A train on asphalt.
+2026-06-28 15:05:35,624 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_train_on_asphalt/seed_71125.png
+2026-06-28 15:05:35,942 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_train_on_asphalt/seed_47884.png
+2026-06-28 15:05:36,197 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_train_on_asphalt/seed_38222.png
+2026-06-28 15:05:36,198 | INFO | Progress 43/60
+2026-06-28 15:06:56,801 | INFO | [evolved_llm] generating 3 seeds: Lionel Messi playing tennis
+2026-06-28 15:08:03,173 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/lionel_messi_playing_tennis/seed_3130.png
+2026-06-28 15:08:03,582 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/lionel_messi_playing_tennis/seed_26683.png
+2026-06-28 15:08:03,993 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/lionel_messi_playing_tennis/seed_91835.png
+2026-06-28 15:08:03,993 | INFO | Progress 44/60
+2026-06-28 15:08:03,998 | INFO | [json_mapping] generating 3 seeds: Lionel Messi playing tennis
+2026-06-28 15:09:10,667 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/lionel_messi_playing_tennis/seed_3130.png
+2026-06-28 15:09:11,082 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/lionel_messi_playing_tennis/seed_26683.png
+2026-06-28 15:09:11,505 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/lionel_messi_playing_tennis/seed_91835.png
+2026-06-28 15:09:11,506 | INFO | Progress 45/60
+2026-06-28 15:10:33,140 | INFO | [evolved_llm] generating 3 seeds: A man jumping in to an empty swimming pool.
+2026-06-28 15:11:39,437 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_man_jumping_in_to_an_empty_swimming_pool/seed_49483.png
+2026-06-28 15:11:39,776 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_man_jumping_in_to_an_empty_swimming_pool/seed_24818.png
+2026-06-28 15:11:40,200 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_man_jumping_in_to_an_empty_swimming_pool/seed_46784.png
+2026-06-28 15:11:40,200 | INFO | Progress 46/60
+2026-06-28 15:11:40,203 | INFO | [json_mapping] generating 3 seeds: A man jumping in to an empty swimming pool.
+2026-06-28 15:12:46,751 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_man_jumping_in_to_an_empty_swimming_pool/seed_49483.png
+2026-06-28 15:12:47,118 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_man_jumping_in_to_an_empty_swimming_pool/seed_24818.png
+2026-06-28 15:12:47,470 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_man_jumping_in_to_an_empty_swimming_pool/seed_46784.png
+2026-06-28 15:12:47,470 | INFO | Progress 47/60
+2026-06-28 15:13:21,805 | INFO | [evolved_llm] generating 3 seeds: A car with an upside down Mercedes-Benz logo.
+2026-06-28 15:14:28,473 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_car_with_an_upside_down_mercedes_benz_logo/seed_2450.png
+2026-06-28 15:14:28,840 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_car_with_an_upside_down_mercedes_benz_logo/seed_83287.png
+2026-06-28 15:14:29,267 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_car_with_an_upside_down_mercedes_benz_logo/seed_95297.png
+2026-06-28 15:14:29,267 | INFO | Progress 48/60
+2026-06-28 15:14:29,271 | INFO | [json_mapping] generating 3 seeds: A car with an upside down Mercedes-Benz logo.
+2026-06-28 15:15:35,937 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_car_with_an_upside_down_mercedes_benz_logo/seed_2450.png
+2026-06-28 15:15:36,351 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_car_with_an_upside_down_mercedes_benz_logo/seed_83287.png
+2026-06-28 15:15:36,705 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_car_with_an_upside_down_mercedes_benz_logo/seed_95297.png
+2026-06-28 15:15:36,706 | INFO | Progress 49/60
+2026-06-28 15:16:27,585 | INFO | [evolved_llm] generating 3 seeds: An upside down knife is about to slice a tomato
+2026-06-28 15:17:33,917 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/an_upside_down_knife_is_about_to_slice_a_tomato/seed_82158.png
+2026-06-28 15:17:34,305 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/an_upside_down_knife_is_about_to_slice_a_tomato/seed_53476.png
+2026-06-28 15:17:34,719 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/an_upside_down_knife_is_about_to_slice_a_tomato/seed_63679.png
+2026-06-28 15:17:34,719 | INFO | Progress 50/60
+2026-06-28 15:17:34,720 | INFO | [json_mapping] generating 3 seeds: An upside down knife is about to slice a tomato
+2026-06-28 15:18:41,416 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/an_upside_down_knife_is_about_to_slice_a_tomato/seed_82158.png
+2026-06-28 15:18:41,852 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/an_upside_down_knife_is_about_to_slice_a_tomato/seed_53476.png
+2026-06-28 15:18:42,274 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/an_upside_down_knife_is_about_to_slice_a_tomato/seed_63679.png
+2026-06-28 15:18:42,275 | INFO | Progress 51/60
+2026-06-28 15:19:18,700 | INFO | [evolved_llm] generating 3 seeds: Dirty dishes in a bathroom sink
+2026-06-28 15:20:25,161 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/dirty_dishes_in_a_bathroom_sink/seed_52878.png
+2026-06-28 15:20:25,500 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/dirty_dishes_in_a_bathroom_sink/seed_48050.png
+2026-06-28 15:20:25,909 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/dirty_dishes_in_a_bathroom_sink/seed_21246.png
+2026-06-28 15:20:25,909 | INFO | Progress 52/60
+2026-06-28 15:20:25,911 | INFO | [json_mapping] generating 3 seeds: Dirty dishes in a bathroom sink
+2026-06-28 15:21:32,658 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/dirty_dishes_in_a_bathroom_sink/seed_52878.png
+2026-06-28 15:21:33,038 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/dirty_dishes_in_a_bathroom_sink/seed_48050.png
+2026-06-28 15:21:33,430 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/dirty_dishes_in_a_bathroom_sink/seed_21246.png
+2026-06-28 15:21:33,431 | INFO | Progress 53/60
+2026-06-28 15:22:32,074 | INFO | [evolved_llm] generating 3 seeds: A roulette wheel is being used as a dart board.
+2026-06-28 15:23:38,408 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_roulette_wheel_is_being_used_as_a_dart_board/seed_24369.png
+2026-06-28 15:23:38,775 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_roulette_wheel_is_being_used_as_a_dart_board/seed_11515.png
+2026-06-28 15:23:39,047 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_roulette_wheel_is_being_used_as_a_dart_board/seed_84851.png
+2026-06-28 15:23:39,047 | INFO | Progress 54/60
+2026-06-28 15:23:39,051 | INFO | [json_mapping] generating 3 seeds: A roulette wheel is being used as a dart board.
+2026-06-28 15:24:45,675 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_roulette_wheel_is_being_used_as_a_dart_board/seed_24369.png
+2026-06-28 15:24:45,833 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_roulette_wheel_is_being_used_as_a_dart_board/seed_11515.png
+2026-06-28 15:24:46,042 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_roulette_wheel_is_being_used_as_a_dart_board/seed_84851.png
+2026-06-28 15:24:46,043 | INFO | Progress 55/60
+2026-06-28 15:25:28,096 | INFO | [evolved_llm] generating 3 seeds: A smartphone plugged into a typewriter.
+2026-06-28 15:26:34,599 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_smartphone_plugged_into_a_typewriter/seed_51486.png
+2026-06-28 15:26:35,064 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_smartphone_plugged_into_a_typewriter/seed_50309.png
+2026-06-28 15:26:35,405 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_smartphone_plugged_into_a_typewriter/seed_9433.png
+2026-06-28 15:26:35,405 | INFO | Progress 56/60
+2026-06-28 15:26:35,408 | INFO | [json_mapping] generating 3 seeds: A smartphone plugged into a typewriter.
+2026-06-28 15:27:42,019 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_smartphone_plugged_into_a_typewriter/seed_51486.png
+2026-06-28 15:27:42,437 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_smartphone_plugged_into_a_typewriter/seed_50309.png
+2026-06-28 15:27:42,671 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_smartphone_plugged_into_a_typewriter/seed_9433.png
+2026-06-28 15:27:42,672 | INFO | Progress 57/60
+2026-06-28 15:28:19,774 | INFO | [evolved_llm] generating 3 seeds: A passenger plane is parked in a parking lot.
+2026-06-28 15:29:26,160 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_passenger_plane_is_parked_in_a_parking_lot/seed_9878.png
+2026-06-28 15:29:26,485 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_passenger_plane_is_parked_in_a_parking_lot/seed_68502.png
+2026-06-28 15:29:26,870 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/a_passenger_plane_is_parked_in_a_parking_lot/seed_34740.png
+2026-06-28 15:29:26,870 | INFO | Progress 58/60
+2026-06-28 15:29:26,874 | INFO | [json_mapping] generating 3 seeds: A passenger plane is parked in a parking lot.
+2026-06-28 15:30:33,548 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_passenger_plane_is_parked_in_a_parking_lot/seed_9878.png
+2026-06-28 15:30:33,913 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_passenger_plane_is_parked_in_a_parking_lot/seed_68502.png
+2026-06-28 15:30:34,265 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_passenger_plane_is_parked_in_a_parking_lot/seed_34740.png
+2026-06-28 15:30:34,266 | INFO | Progress 59/60
+2026-06-28 15:31:21,905 | INFO | [evolved_llm] generating 3 seeds: Guests are laughing at a funeral.
+2026-06-28 15:32:28,344 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/guests_are_laughing_at_a_funeral/seed_67220.png
+2026-06-28 15:32:28,683 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/guests_are_laughing_at_a_funeral/seed_84625.png
+2026-06-28 15:32:29,063 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/evolved_llm/guests_are_laughing_at_a_funeral/seed_7018.png
+2026-06-28 15:32:29,064 | INFO | Progress 60/60
+2026-06-28 15:32:29,065 | INFO | [json_mapping] generating 3 seeds: Guests are laughing at a funeral.
+2026-06-28 15:33:35,785 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/guests_are_laughing_at_a_funeral/seed_67220.png
+2026-06-28 15:33:36,127 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/guests_are_laughing_at_a_funeral/seed_84625.png
+2026-06-28 15:33:36,521 | INFO | Saved /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/guests_are_laughing_at_a_funeral/seed_7018.png
+2026-06-28 15:33:36,522 | INFO | Keeping FLUX loaded (SAP_KEEP_MODEL_LOADED=1); release in evaluate phase
+2026-06-28 15:33:56,112 | INFO | FLUX released before VL evaluation
+2026-06-28 15:33:56,119 | INFO | VL tasks to run: 180 (workers=3)
+2026-06-28 15:34:03,439 | INFO | Scored [evolved_llm] seed=73346 alignment=5 | A bouquet of flowers is upside down in a
+2026-06-28 15:34:04,616 | INFO | Scored [evolved_llm] seed=44885 alignment=5 | A bouquet of flowers is upside down in a
+2026-06-28 15:34:08,916 | INFO | Scored [evolved_llm] seed=51684 alignment=5 | A bouquet of flowers is upside down in a
+2026-06-28 15:34:20,092 | INFO | Scored [json_mapping] seed=44885 alignment=2 | A bouquet of flowers is upside down in a
+2026-06-28 15:34:21,198 | INFO | Scored [json_mapping] seed=51684 alignment=2 | A bouquet of flowers is upside down in a
+2026-06-28 15:34:26,731 | INFO | Scored [json_mapping] seed=73346 alignment=2 | A bouquet of flowers is upside down in a
+2026-06-28 15:34:29,665 | INFO | Scored [evolved_llm] seed=64356 alignment=2 | A man is welding without a mask
+2026-06-28 15:34:33,304 | INFO | Scored [evolved_llm] seed=15779 alignment=5 | A man is welding without a mask
+2026-06-28 15:34:42,119 | INFO | Scored [evolved_llm] seed=72844 alignment=5 | A man is welding without a mask
+2026-06-28 15:34:43,613 | INFO | Scored [json_mapping] seed=64356 alignment=5 | A man is welding without a mask
+2026-06-28 15:34:45,650 | INFO | Scored [json_mapping] seed=15779 alignment=5 | A man is welding without a mask
+2026-06-28 15:34:59,116 | INFO | Scored [json_mapping] seed=72844 alignment=5 | A man is welding without a mask
+2026-06-28 15:34:59,793 | INFO | Scored [evolved_llm] seed=91608 alignment=2 | A wagon is being pushed from behind by t
+2026-06-28 15:35:11,683 | INFO | Scored [evolved_llm] seed=47411 alignment=3 | A wagon is being pushed from behind by t
+2026-06-28 15:35:18,400 | INFO | Scored [evolved_llm] seed=11288 alignment=2 | A wagon is being pushed from behind by t
+2026-06-28 15:35:23,896 | INFO | Scored [json_mapping] seed=91608 alignment=2 | A wagon is being pushed from behind by t
+2026-06-28 15:35:35,667 | INFO | Scored [json_mapping] seed=47411 alignment=2 | A wagon is being pushed from behind by t
+2026-06-28 15:35:38,617 | INFO | Scored [json_mapping] seed=11288 alignment=1 | A wagon is being pushed from behind by t
+2026-06-28 15:36:02,082 | INFO | Scored [evolved_llm] seed=91968 alignment=2 | A turn right street sign with a left tur
+2026-06-28 15:36:09,436 | INFO | Scored [evolved_llm] seed=72714 alignment=5 | A turn right street sign with a left tur
+2026-06-28 15:36:17,119 | INFO | Scored [evolved_llm] seed=28047 alignment=3 | A turn right street sign with a left tur
+2026-06-28 15:36:22,095 | INFO | Scored [json_mapping] seed=28047 alignment=1 | A turn right street sign with a left tur
+2026-06-28 15:36:48,502 | INFO | Scored [json_mapping] seed=72714 alignment=2 | A turn right street sign with a left tur
+2026-06-28 15:36:50,535 | INFO | Scored [json_mapping] seed=91968 alignment=1 | A turn right street sign with a left tur
+2026-06-28 15:36:59,348 | INFO | Scored [evolved_llm] seed=32118 alignment=2 | car with the steering wheel right in the
+2026-06-28 15:37:12,354 | INFO | Scored [evolved_llm] seed=49309 alignment=5 | car with the steering wheel right in the
+2026-06-28 15:37:20,189 | INFO | Scored [json_mapping] seed=32118 alignment=5 | car with the steering wheel right in the
+2026-06-28 15:37:21,513 | INFO | Scored [evolved_llm] seed=21180 alignment=2 | car with the steering wheel right in the
+2026-06-28 15:37:22,721 | INFO | Scored [json_mapping] seed=21180 alignment=5 | car with the steering wheel right in the
+2026-06-28 15:37:30,621 | INFO | Scored [json_mapping] seed=49309 alignment=5 | car with the steering wheel right in the
+2026-06-28 15:37:38,971 | INFO | Scored [evolved_llm] seed=29306 alignment=1 | The portrait of the Mona Lisa depicts a 
+2026-06-28 15:37:47,214 | INFO | Scored [evolved_llm] seed=11982 alignment=1 | The portrait of the Mona Lisa depicts a 
+2026-06-28 15:37:51,082 | INFO | Scored [json_mapping] seed=47077 alignment=1 | The portrait of the Mona Lisa depicts a 
+2026-06-28 15:37:56,208 | INFO | Scored [json_mapping] seed=29306 alignment=1 | The portrait of the Mona Lisa depicts a 
+2026-06-28 15:38:00,438 | INFO | Scored [evolved_llm] seed=47077 alignment=5 | The portrait of the Mona Lisa depicts a 
+2026-06-28 15:38:13,300 | INFO | Scored [json_mapping] seed=11982 alignment=2 | The portrait of the Mona Lisa depicts a 
+2026-06-28 15:38:17,061 | INFO | Scored [evolved_llm] seed=86071 alignment=3 | Children are unhappy at Disneyland."
+2026-06-28 15:38:33,611 | INFO | Scored [evolved_llm] seed=45881 alignment=2 | Children are unhappy at Disneyland."
+2026-06-28 15:38:35,752 | INFO | Scored [json_mapping] seed=93906 alignment=2 | Children are unhappy at Disneyland."
+2026-06-28 15:38:45,603 | INFO | Scored [evolved_llm] seed=93906 alignment=2 | Children are unhappy at Disneyland."
+2026-06-28 15:38:53,475 | INFO | Scored [json_mapping] seed=86071 alignment=2 | Children are unhappy at Disneyland."
+2026-06-28 15:38:54,286 | INFO | Scored [evolved_llm] seed=75312 alignment=5 | An orange carved as a Jack O'Lantern.
+2026-06-28 15:38:55,417 | INFO | Scored [json_mapping] seed=45881 alignment=2 | Children are unhappy at Disneyland."
+2026-06-28 15:39:09,104 | INFO | Scored [evolved_llm] seed=38352 alignment=2 | An orange carved as a Jack O'Lantern.
+2026-06-28 15:39:21,024 | INFO | Scored [json_mapping] seed=75312 alignment=1 | An orange carved as a Jack O'Lantern.
+2026-06-28 15:39:24,404 | INFO | Scored [evolved_llm] seed=24301 alignment=2 | An orange carved as a Jack O'Lantern.
+2026-06-28 15:39:28,701 | INFO | Scored [json_mapping] seed=24301 alignment=2 | An orange carved as a Jack O'Lantern.
+2026-06-28 15:39:40,203 | INFO | Scored [json_mapping] seed=38352 alignment=2 | An orange carved as a Jack O'Lantern.
+2026-06-28 15:39:44,847 | INFO | Scored [evolved_llm] seed=46559 alignment=2 | A pen is being sharpened in a pencil sha
+2026-06-28 15:40:07,693 | INFO | Scored [evolved_llm] seed=96649 alignment=5 | A pen is being sharpened in a pencil sha
+2026-06-28 15:40:12,520 | INFO | Scored [json_mapping] seed=46559 alignment=2 | A pen is being sharpened in a pencil sha
+2026-06-28 15:40:13,814 | INFO | Scored [evolved_llm] seed=70015 alignment=2 | A pen is being sharpened in a pencil sha
+2026-06-28 15:40:40,840 | INFO | Scored [json_mapping] seed=70015 alignment=2 | A pen is being sharpened in a pencil sha
+2026-06-28 15:40:41,722 | INFO | Scored [json_mapping] seed=96649 alignment=2 | A pen is being sharpened in a pencil sha
+2026-06-28 15:40:44,488 | INFO | Scored [evolved_llm] seed=84524 alignment=5 | The Sphinx is decorated like a sarcophag
+2026-06-28 15:41:01,135 | INFO | Scored [evolved_llm] seed=48239 alignment=2 | The Sphinx is decorated like a sarcophag
+2026-06-28 15:41:22,615 | INFO | Scored [json_mapping] seed=48239 alignment=3 | The Sphinx is decorated like a sarcophag
+2026-06-28 15:41:23,803 | INFO | Scored [evolved_llm] seed=54354 alignment=3 | The Sphinx is decorated like a sarcophag
+2026-06-28 15:41:30,743 | INFO | Scored [json_mapping] seed=84524 alignment=2 | The Sphinx is decorated like a sarcophag
+2026-06-28 15:41:33,750 | INFO | Scored [evolved_llm] seed=17394 alignment=5 | Shrek is blue.
+2026-06-28 15:41:44,989 | INFO | Scored [json_mapping] seed=54354 alignment=2 | The Sphinx is decorated like a sarcophag
+2026-06-28 15:41:56,741 | INFO | Scored [json_mapping] seed=17394 alignment=5 | Shrek is blue.
+2026-06-28 15:42:06,935 | INFO | Scored [evolved_llm] seed=27538 alignment=5 | Shrek is blue.
+2026-06-28 15:42:07,918 | INFO | Scored [evolved_llm] seed=95927 alignment=1 | Shrek is blue.
+2026-06-28 15:42:14,864 | INFO | Scored [json_mapping] seed=95927 alignment=1 | Shrek is blue.
+2026-06-28 15:42:23,424 | INFO | Scored [json_mapping] seed=27538 alignment=5 | Shrek is blue.
+2026-06-28 15:42:27,327 | INFO | Scored [evolved_llm] seed=99989 alignment=2 | A MacBook with a pear logo on it.
+2026-06-28 15:42:36,433 | INFO | Scored [evolved_llm] seed=2100 alignment=3 | A MacBook with a pear logo on it.
+2026-06-28 15:42:41,906 | INFO | Scored [evolved_llm] seed=95790 alignment=3 | A MacBook with a pear logo on it.
+2026-06-28 15:42:46,851 | INFO | Scored [json_mapping] seed=99989 alignment=2 | A MacBook with a pear logo on it.
+2026-06-28 15:42:51,950 | INFO | Scored [json_mapping] seed=2100 alignment=2 | A MacBook with a pear logo on it.
+2026-06-28 15:42:56,107 | INFO | Scored [json_mapping] seed=95790 alignment=5 | A MacBook with a pear logo on it.
+2026-06-28 15:43:18,449 | INFO | Scored [evolved_llm] seed=66494 alignment=2 | A woman hits an eight ball with a racket
+2026-06-28 15:43:23,068 | INFO | Scored [evolved_llm] seed=75411 alignment=2 | A woman hits an eight ball with a racket
+2026-06-28 15:43:35,431 | INFO | Scored [json_mapping] seed=79101 alignment=2 | A woman hits an eight ball with a racket
+2026-06-28 15:43:38,226 | INFO | Scored [evolved_llm] seed=79101 alignment=2 | A woman hits an eight ball with a racket
+2026-06-28 15:43:51,465 | INFO | Scored [json_mapping] seed=66494 alignment=2 | A woman hits an eight ball with a racket
+2026-06-28 15:43:51,747 | INFO | Scored [evolved_llm] seed=80048 alignment=5 | Movie goers nibble on vegetables instead
+2026-06-28 15:43:55,748 | INFO | Scored [json_mapping] seed=75411 alignment=2 | A woman hits an eight ball with a racket
+2026-06-28 15:44:07,072 | INFO | Scored [evolved_llm] seed=34145 alignment=5 | Movie goers nibble on vegetables instead
+2026-06-28 15:44:09,084 | INFO | Scored [json_mapping] seed=80048 alignment=5 | Movie goers nibble on vegetables instead
+2026-06-28 15:44:16,438 | INFO | Scored [evolved_llm] seed=11928 alignment=4 | Movie goers nibble on vegetables instead
+2026-06-28 15:44:22,961 | INFO | Scored [json_mapping] seed=34145 alignment=5 | Movie goers nibble on vegetables instead
+2026-06-28 15:44:33,963 | INFO | Scored [evolved_llm] seed=66660 alignment=5 | A full pepper shaker turned upside down 
+2026-06-28 15:44:36,172 | INFO | Scored [json_mapping] seed=11928 alignment=5 | Movie goers nibble on vegetables instead
+2026-06-28 15:44:38,725 | INFO | Scored [evolved_llm] seed=62899 alignment=2 | A full pepper shaker turned upside down 
+2026-06-28 15:44:50,746 | INFO | Scored [json_mapping] seed=62899 alignment=3 | A full pepper shaker turned upside down 
+2026-06-28 15:45:07,290 | INFO | Scored [json_mapping] seed=66660 alignment=5 | A full pepper shaker turned upside down 
+2026-06-28 15:45:12,275 | INFO | Scored [json_mapping] seed=99543 alignment=4 | A full pepper shaker turned upside down 
+2026-06-28 15:45:23,216 | INFO | Scored [evolved_llm] seed=79948 alignment=2 | The tiger King, joe exotic, is posing wi
+2026-06-28 15:45:23,444 | INFO | Scored [evolved_llm] seed=99543 alignment=3 | A full pepper shaker turned upside down 
+2026-06-28 15:45:29,626 | INFO | Scored [evolved_llm] seed=16093 alignment=2 | The tiger King, joe exotic, is posing wi
+2026-06-28 15:45:42,126 | INFO | Scored [json_mapping] seed=16093 alignment=2 | The tiger King, joe exotic, is posing wi
+2026-06-28 15:45:51,919 | INFO | Scored [json_mapping] seed=79948 alignment=2 | The tiger King, joe exotic, is posing wi
+2026-06-28 15:45:57,989 | INFO | Scored [evolved_llm] seed=27402 alignment=2 | The tiger King, joe exotic, is posing wi
+2026-06-28 15:46:12,216 | INFO | Scored [json_mapping] seed=27402 alignment=2 | The tiger King, joe exotic, is posing wi
+2026-06-28 15:46:13,554 | INFO | Scored [evolved_llm] seed=86185 alignment=5 | A scale is balanced with one side being 
+2026-06-28 15:46:16,921 | INFO | Scored [evolved_llm] seed=94000 alignment=2 | A scale is balanced with one side being 
+2026-06-28 15:46:29,116 | INFO | Scored [evolved_llm] seed=34898 alignment=2 | A scale is balanced with one side being 
+2026-06-28 15:46:29,521 | INFO | Scored [json_mapping] seed=86185 alignment=2 | A scale is balanced with one side being 
+2026-06-28 15:46:29,835 | INFO | Scored [json_mapping] seed=94000 alignment=2 | A scale is balanced with one side being 
+2026-06-28 15:46:37,666 | INFO | Scored [json_mapping] seed=34898 alignment=2 | A scale is balanced with one side being 
+2026-06-28 15:46:42,161 | INFO | Scored [evolved_llm] seed=92901 alignment=1 | Michelangelo's David is covered by a fig
+2026-06-28 15:46:46,927 | INFO | Scored [evolved_llm] seed=43474 alignment=2 | Michelangelo's David is covered by a fig
+2026-06-28 15:47:01,338 | INFO | Scored [json_mapping] seed=43474 alignment=1 | Michelangelo's David is covered by a fig
+2026-06-28 15:47:01,569 | INFO | Scored [evolved_llm] seed=24185 alignment=1 | Michelangelo's David is covered by a fig
+2026-06-28 15:47:07,586 | INFO | Scored [json_mapping] seed=92901 alignment=1 | Michelangelo's David is covered by a fig
+2026-06-28 15:47:17,074 | INFO | Scored [evolved_llm] seed=60998 alignment=2 | Chuck Norris struggles to lift weights
+2026-06-28 15:47:29,529 | INFO | Scored [json_mapping] seed=24185 alignment=2 | Michelangelo's David is covered by a fig
+2026-06-28 15:47:30,369 | INFO | Scored [evolved_llm] seed=8061 alignment=2 | Chuck Norris struggles to lift weights
+2026-06-28 15:47:42,771 | INFO | Scored [json_mapping] seed=60998 alignment=2 | Chuck Norris struggles to lift weights
+2026-06-28 15:47:49,383 | INFO | Scored [evolved_llm] seed=54578 alignment=2 | Chuck Norris struggles to lift weights
+2026-06-28 15:47:57,342 | INFO | Scored [json_mapping] seed=54578 alignment=2 | Chuck Norris struggles to lift weights
+2026-06-28 15:48:07,801 | INFO | Scored [evolved_llm] seed=70978 alignment=2 | A woman's mirror reflection is wearing d
+2026-06-28 15:48:09,532 | INFO | Scored [json_mapping] seed=8061 alignment=2 | Chuck Norris struggles to lift weights
+2026-06-28 15:48:29,294 | INFO | Scored [evolved_llm] seed=24232 alignment=5 | A woman's mirror reflection is wearing d
+2026-06-28 15:48:38,292 | INFO | Scored [json_mapping] seed=70978 alignment=5 | A woman's mirror reflection is wearing d
+2026-06-28 15:48:47,917 | INFO | Scored [json_mapping] seed=83715 alignment=5 | A woman's mirror reflection is wearing d
+2026-06-28 15:48:50,240 | INFO | Scored [json_mapping] seed=24232 alignment=5 | A woman's mirror reflection is wearing d
+2026-06-28 15:49:10,885 | INFO | Scored [evolved_llm] seed=83715 alignment=2 | A woman's mirror reflection is wearing d
+2026-06-28 15:49:22,305 | INFO | Scored [evolved_llm] seed=38222 alignment=5 | A train on asphalt.
+2026-06-28 15:49:28,076 | INFO | Scored [evolved_llm] seed=71125 alignment=2 | A train on asphalt.
+2026-06-28 15:49:28,229 | INFO | Scored [evolved_llm] seed=47884 alignment=5 | A train on asphalt.
+2026-06-28 15:49:49,272 | INFO | Scored [json_mapping] seed=38222 alignment=2 | A train on asphalt.
+2026-06-28 15:49:53,320 | INFO | Scored [json_mapping] seed=71125 alignment=2 | A train on asphalt.
+2026-06-28 15:49:58,533 | INFO | Scored [json_mapping] seed=47884 alignment=2 | A train on asphalt.
+2026-06-28 15:50:02,940 | INFO | Scored [evolved_llm] seed=3130 alignment=1 | Lionel Messi playing tennis
+2026-06-28 15:50:11,424 | INFO | Scored [json_mapping] seed=3130 alignment=2 | Lionel Messi playing tennis
+2026-06-28 15:50:12,174 | INFO | Scored [evolved_llm] seed=26683 alignment=2 | Lionel Messi playing tennis
+2026-06-28 15:50:21,502 | INFO | Scored [evolved_llm] seed=91835 alignment=2 | Lionel Messi playing tennis
+2026-06-28 15:50:23,304 | INFO | Scored [json_mapping] seed=91835 alignment=2 | Lionel Messi playing tennis
+2026-06-28 15:50:26,259 | INFO | Scored [json_mapping] seed=26683 alignment=2 | Lionel Messi playing tennis
+2026-06-28 15:50:36,229 | INFO | Scored [evolved_llm] seed=49483 alignment=2 | A man jumping in to an empty swimming po
+2026-06-28 15:50:51,034 | INFO | Scored [evolved_llm] seed=24818 alignment=3 | A man jumping in to an empty swimming po
+2026-06-28 15:50:54,036 | INFO | Scored [json_mapping] seed=49483 alignment=3 | A man jumping in to an empty swimming po
+2026-06-28 15:50:58,580 | INFO | Scored [evolved_llm] seed=46784 alignment=3 | A man jumping in to an empty swimming po
+2026-06-28 15:51:13,825 | INFO | Scored [evolved_llm] seed=2450 alignment=2 | A car with an upside down Mercedes-Benz 
+2026-06-28 15:51:17,102 | INFO | Scored [json_mapping] seed=46784 alignment=2 | A man jumping in to an empty swimming po
+2026-06-28 15:51:25,484 | INFO | Scored [json_mapping] seed=24818 alignment=3 | A man jumping in to an empty swimming po
+2026-06-28 15:51:26,179 | INFO | Scored [evolved_llm] seed=83287 alignment=2 | A car with an upside down Mercedes-Benz 
+2026-06-28 15:51:36,344 | INFO | Scored [evolved_llm] seed=95297 alignment=3 | A car with an upside down Mercedes-Benz 
+2026-06-28 15:51:55,550 | INFO | Scored [json_mapping] seed=83287 alignment=2 | A car with an upside down Mercedes-Benz 
+2026-06-28 15:52:04,775 | INFO | Scored [json_mapping] seed=95297 alignment=2 | A car with an upside down Mercedes-Benz 
+2026-06-28 15:52:09,644 | INFO | Scored [json_mapping] seed=2450 alignment=2 | A car with an upside down Mercedes-Benz 
+2026-06-28 15:52:19,515 | INFO | Scored [evolved_llm] seed=82158 alignment=5 | An upside down knife is about to slice a
+2026-06-28 15:52:26,612 | INFO | Scored [evolved_llm] seed=63679 alignment=3 | An upside down knife is about to slice a
+2026-06-28 15:52:29,460 | INFO | Scored [evolved_llm] seed=53476 alignment=3 | An upside down knife is about to slice a
+2026-06-28 15:52:36,973 | INFO | Scored [json_mapping] seed=82158 alignment=3 | An upside down knife is about to slice a
+2026-06-28 15:52:39,137 | INFO | Scored [json_mapping] seed=63679 alignment=3 | An upside down knife is about to slice a
+2026-06-28 15:52:52,828 | INFO | Scored [json_mapping] seed=53476 alignment=3 | An upside down knife is about to slice a
+2026-06-28 15:52:55,203 | INFO | Scored [evolved_llm] seed=52878 alignment=5 | Dirty dishes in a bathroom sink
+2026-06-28 15:53:13,501 | INFO | Scored [evolved_llm] seed=48050 alignment=2 | Dirty dishes in a bathroom sink
+2026-06-28 15:53:16,798 | INFO | Scored [evolved_llm] seed=21246 alignment=3 | Dirty dishes in a bathroom sink
+2026-06-28 15:53:17,183 | INFO | Scored [json_mapping] seed=52878 alignment=5 | Dirty dishes in a bathroom sink
+2026-06-28 15:53:29,042 | INFO | Scored [evolved_llm] seed=24369 alignment=5 | A roulette wheel is being used as a dart
+2026-06-28 15:53:34,358 | INFO | Scored [json_mapping] seed=21246 alignment=5 | Dirty dishes in a bathroom sink
+2026-06-28 15:53:39,505 | INFO | Scored [evolved_llm] seed=11515 alignment=5 | A roulette wheel is being used as a dart
+2026-06-28 15:53:42,185 | INFO | Scored [json_mapping] seed=48050 alignment=2 | Dirty dishes in a bathroom sink
+2026-06-28 15:53:44,382 | INFO | Scored [evolved_llm] seed=84851 alignment=5 | A roulette wheel is being used as a dart
+2026-06-28 15:53:57,309 | INFO | Scored [json_mapping] seed=84851 alignment=2 | A roulette wheel is being used as a dart
+2026-06-28 15:54:02,005 | INFO | Scored [json_mapping] seed=11515 alignment=2 | A roulette wheel is being used as a dart
+2026-06-28 15:54:06,770 | INFO | Scored [json_mapping] seed=24369 alignment=2 | A roulette wheel is being used as a dart
+2026-06-28 15:54:08,402 | INFO | Scored [evolved_llm] seed=51486 alignment=5 | A smartphone plugged into a typewriter.
+2026-06-28 15:54:09,432 | INFO | Scored [evolved_llm] seed=50309 alignment=1 | A smartphone plugged into a typewriter.
+2026-06-28 15:54:19,703 | INFO | Scored [json_mapping] seed=51486 alignment=3 | A smartphone plugged into a typewriter.
+2026-06-28 15:54:21,897 | INFO | Scored [json_mapping] seed=50309 alignment=1 | A smartphone plugged into a typewriter.
+2026-06-28 15:54:25,107 | INFO | Scored [evolved_llm] seed=9433 alignment=2 | A smartphone plugged into a typewriter.
+2026-06-28 15:54:33,733 | INFO | Scored [json_mapping] seed=9433 alignment=1 | A smartphone plugged into a typewriter.
+2026-06-28 15:54:34,177 | INFO | Scored [evolved_llm] seed=9878 alignment=5 | A passenger plane is parked in a parking
+2026-06-28 15:54:37,878 | INFO | Scored [evolved_llm] seed=68502 alignment=2 | A passenger plane is parked in a parking
+2026-06-28 15:54:46,835 | INFO | Scored [evolved_llm] seed=34740 alignment=3 | A passenger plane is parked in a parking
+2026-06-28 15:55:03,515 | INFO | Scored [json_mapping] seed=68502 alignment=2 | A passenger plane is parked in a parking
+2026-06-28 15:55:04,042 | INFO | Scored [json_mapping] seed=9878 alignment=2 | A passenger plane is parked in a parking
+2026-06-28 15:55:34,687 | INFO | Scored [evolved_llm] seed=67220 alignment=2 | Guests are laughing at a funeral.
+2026-06-28 15:55:40,380 | INFO | Scored [evolved_llm] seed=84625 alignment=2 | Guests are laughing at a funeral.
+2026-06-28 15:55:41,270 | INFO | Scored [json_mapping] seed=34740 alignment=2 | A passenger plane is parked in a parking
+2026-06-28 15:55:53,341 | INFO | Scored [evolved_llm] seed=7018 alignment=2 | Guests are laughing at a funeral.
+2026-06-28 15:55:56,623 | INFO | Scored [json_mapping] seed=84625 alignment=2 | Guests are laughing at a funeral.
+2026-06-28 15:55:58,378 | INFO | Scored [json_mapping] seed=67220 alignment=5 | Guests are laughing at a funeral.
+2026-06-28 15:56:20,868 | INFO | Scored [json_mapping] seed=7018 alignment=2 | Guests are laughing at a funeral.
+2026-06-28 15:56:20,888 | INFO | Saved summary: /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/summary.json
+2026-06-28 15:56:25,237 | INFO | Saved plot: /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/comparison.png and /home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/comparison.pdf
+2026-06-28 15:56:25,237 | INFO | Done.

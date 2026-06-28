@@ -1,0 +1,10 @@
+{
+  "explanation": "Funerals are somber occasions traditionally associated with a quiet or solemn atmosphere. Setting the initial scene with a typical outdoor or indoor funeral environment establishes mood and context before introducing the unexpected emotional reaction.",
+  "prompts_list": [
+    "A funeral with guests",
+    "Guests are laughing at a funeral"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

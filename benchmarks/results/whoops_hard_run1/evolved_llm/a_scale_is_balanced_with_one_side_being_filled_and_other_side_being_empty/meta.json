@@ -1,0 +1,9 @@
+{
+  "prompt": "A scale is balanced with one side being filled and other side being empty.",
+  "method": "evolved_llm",
+  "seeds": [
+    94000,
+    86185,
+    34898
+  ]
+}

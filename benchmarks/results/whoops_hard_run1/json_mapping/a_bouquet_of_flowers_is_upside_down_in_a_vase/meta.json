@@ -1,0 +1,9 @@
+{
+  "prompt": "A bouquet of flowers is upside down in a vase",
+  "method": "json_mapping",
+  "seeds": [
+    44885,
+    51684,
+    73346
+  ]
+}

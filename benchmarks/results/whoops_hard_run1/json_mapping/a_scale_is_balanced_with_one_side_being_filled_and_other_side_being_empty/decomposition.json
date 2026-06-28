@@ -1,0 +1,10 @@
+{
+  "explanation": "A scale cannot be logically balanced with only one side filled. Starting with a balanced scale with identical objects provides a coherent foundation before introducing the contradictory concept.",
+  "prompts_list": [
+    "A balanced scale with equal weights on both sides",
+    "A balanced scale with one side being filled and the other side being empty"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

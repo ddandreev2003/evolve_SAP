@@ -1,0 +1,36 @@
+{
+  "prompt": "A woman hits an eight ball with a racket",
+  "method": "json_mapping",
+  "per_seed": {
+    "79101": {
+      "seed": 79101,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_hits_an_eight_ball_with_a_racket/seed_79101.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts a woman using a **cue stick** (not a racket) to strike a ball on a pool table. While the eight ball is present and the action of hitting a ball is shown, the prompt explicitly specifies a \"racket,\" which is fundamentally incorrect for billiards (rackets are used in sports like tennis or badminton). The core object (racket) is entirely misrepresented, and the interaction (hitting an eight ball with a racket) is not functionally or contextually possible. The scene accurately shows pool gameplay but fails to align with the prompt’s critical requirement of a \"racket,\" rendering the intended scenario incoherent.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. Lighting, texture, and perspective are consistent and realistic. The woman’s anatomy (hands, posture, and grip on the cue) is anatomically correct and well-formed, with no distortions or artifacts. Objects (e.g., pool balls, table, cue) are rendered with sharp detail, natural physical coherence, and plausible spatial relationships. There are no broken elements, warped features, or rendering errors; the scene appears as a high-fidelity photograph."
+      }
+    },
+    "66494": {
+      "seed": 66494,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_hits_an_eight_ball_with_a_racket/seed_66494.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image contains a woman, an eight ball, and a racket, but the interaction is fundamentally mismatched with the prompt’s intent. Billiards (where eight balls are used) requires a cue stick, not a tennis racket, so the depicted action is non-functional and conceptually incorrect. While key objects are present, the core relationship between the racket and the eight ball is misrepresented, as this combination does not reflect a valid real-world scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is visually pristine with no rendering artifacts. Anatomy (face, hands, limbs) is anatomically correct and well-defined, the racket and billiard balls are sharply rendered, and lighting/perspective is consistent. The scene is coherent and realistic, with no distorted elements or visual inconsistencies."
+      }
+    },
+    "75411": {
+      "seed": 75411,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_hits_an_eight_ball_with_a_racket/seed_75411.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a woman using a tennis racket to hit a ball on a pool table, but the prompt specifies hitting an *eight ball* (a black ball with the number 8) with a *racket*. The ball in the image is red (not the eight ball), and a tennis racket is not the correct tool for pool (a cue stick is standard). While the woman and the action of hitting a ball are present, the key elements (eight ball, appropriate tool for the context) are significantly misrepresented, failing to convey the intended scenario.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent with no rendering artifacts. The woman’s anatomy, facial features, and hands are well-formed. The racket, pool table, and background elements (e.g., blurred spectators, colored balls) exhibit consistent lighting, texture, and perspective. The blurred background is a deliberate stylistic choice, not a flaw, and all objects appear physically plausible and cleanly rendered."
+      }
+    }
+  }
+}

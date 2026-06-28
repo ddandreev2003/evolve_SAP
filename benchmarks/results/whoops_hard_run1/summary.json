@@ -1,0 +1,296 @@
+{
+  "timestamp": "2026-06-28T12:56:20.887422+00:00",
+  "num_prompts": 30,
+  "methods": {
+    "evolved_llm": {
+      "mean_alignment": 3.0,
+      "median_alignment": 3.0,
+      "std_alignment": 0.9108400680852976,
+      "n_prompts": 30
+    },
+    "json_mapping": {
+      "mean_alignment": 2.6222222222222222,
+      "median_alignment": 2.0,
+      "std_alignment": 1.1602468873072544,
+      "n_prompts": 30
+    }
+  },
+  "per_prompt": [
+    {
+      "index": 0,
+      "prompt": "A bouquet of flowers is upside down in a vase",
+      "methods": {
+        "evolved_llm": 5.0,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 3.0
+    },
+    {
+      "index": 1,
+      "prompt": "A man is welding without a mask",
+      "methods": {
+        "evolved_llm": 4.0,
+        "json_mapping": 5.0
+      },
+      "delta_evolved_minus_json": -1.0
+    },
+    {
+      "index": 2,
+      "prompt": "A wagon is being pushed from behind by two opposite facing horses horses",
+      "methods": {
+        "evolved_llm": 2.3333333333333335,
+        "json_mapping": 1.6666666666666667
+      },
+      "delta_evolved_minus_json": 0.6666666666666667
+    },
+    {
+      "index": 3,
+      "prompt": "A turn right street sign with a left turn arrow",
+      "methods": {
+        "evolved_llm": 3.3333333333333335,
+        "json_mapping": 1.3333333333333333
+      },
+      "delta_evolved_minus_json": 2.0
+    },
+    {
+      "index": 4,
+      "prompt": "car with the steering wheel right in the middle of the dash board",
+      "methods": {
+        "evolved_llm": 3.0,
+        "json_mapping": 5.0
+      },
+      "delta_evolved_minus_json": -2.0
+    },
+    {
+      "index": 5,
+      "prompt": "The portrait of the Mona Lisa depicts a stern male face.",
+      "methods": {
+        "evolved_llm": 2.3333333333333335,
+        "json_mapping": 1.3333333333333333
+      },
+      "delta_evolved_minus_json": 1.0000000000000002
+    },
+    {
+      "index": 6,
+      "prompt": "Children are unhappy at Disneyland.\"",
+      "methods": {
+        "evolved_llm": 2.3333333333333335,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 0.3333333333333335
+    },
+    {
+      "index": 7,
+      "prompt": "An orange carved as a Jack O'Lantern.",
+      "methods": {
+        "evolved_llm": 3.0,
+        "json_mapping": 1.6666666666666667
+      },
+      "delta_evolved_minus_json": 1.3333333333333333
+    },
+    {
+      "index": 8,
+      "prompt": "A pen is being sharpened in a pencil sharpener.",
+      "methods": {
+        "evolved_llm": 3.0,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 1.0
+    },
+    {
+      "index": 9,
+      "prompt": "The Sphinx is decorated like a sarcophagus and located outside a Mayan temple",
+      "methods": {
+        "evolved_llm": 3.3333333333333335,
+        "json_mapping": 2.3333333333333335
+      },
+      "delta_evolved_minus_json": 1.0
+    },
+    {
+      "index": 10,
+      "prompt": "Shrek is blue.",
+      "methods": {
+        "evolved_llm": 3.6666666666666665,
+        "json_mapping": 3.6666666666666665
+      },
+      "delta_evolved_minus_json": 0.0
+    },
+    {
+      "index": 11,
+      "prompt": "A MacBook with a pear logo on it.",
+      "methods": {
+        "evolved_llm": 2.6666666666666665,
+        "json_mapping": 3.0
+      },
+      "delta_evolved_minus_json": -0.3333333333333335
+    },
+    {
+      "index": 12,
+      "prompt": "A woman hits an eight ball with a racket",
+      "methods": {
+        "evolved_llm": 2.0,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 0.0
+    },
+    {
+      "index": 13,
+      "prompt": "Movie goers nibble on vegetables instead of popcorn",
+      "methods": {
+        "evolved_llm": 4.666666666666667,
+        "json_mapping": 5.0
+      },
+      "delta_evolved_minus_json": -0.33333333333333304
+    },
+    {
+      "index": 14,
+      "prompt": "A full pepper shaker turned upside down with nothing coming out of it.",
+      "methods": {
+        "evolved_llm": 3.3333333333333335,
+        "json_mapping": 4.0
+      },
+      "delta_evolved_minus_json": -0.6666666666666665
+    },
+    {
+      "index": 15,
+      "prompt": "The tiger King, joe exotic, is posing with a adult saber tooth tiger.",
+      "methods": {
+        "evolved_llm": 2.0,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 0.0
+    },
+    {
+      "index": 16,
+      "prompt": "A scale is balanced with one side being filled and other side being empty.",
+      "methods": {
+        "evolved_llm": 3.0,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 1.0
+    },
+    {
+      "index": 17,
+      "prompt": "Michelangelo's David is covered by a fig leaf.",
+      "methods": {
+        "evolved_llm": 1.3333333333333333,
+        "json_mapping": 1.3333333333333333
+      },
+      "delta_evolved_minus_json": 0.0
+    },
+    {
+      "index": 18,
+      "prompt": "Chuck Norris struggles to lift weights",
+      "methods": {
+        "evolved_llm": 2.0,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 0.0
+    },
+    {
+      "index": 19,
+      "prompt": "A woman's mirror reflection is wearing different clothes.",
+      "methods": {
+        "evolved_llm": 3.0,
+        "json_mapping": 5.0
+      },
+      "delta_evolved_minus_json": -2.0
+    },
+    {
+      "index": 20,
+      "prompt": "A train on asphalt.",
+      "methods": {
+        "evolved_llm": 4.0,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 2.0
+    },
+    {
+      "index": 21,
+      "prompt": "Lionel Messi playing tennis",
+      "methods": {
+        "evolved_llm": 1.6666666666666667,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": -0.33333333333333326
+    },
+    {
+      "index": 22,
+      "prompt": "A man jumping in to an empty swimming pool.",
+      "methods": {
+        "evolved_llm": 2.6666666666666665,
+        "json_mapping": 2.6666666666666665
+      },
+      "delta_evolved_minus_json": 0.0
+    },
+    {
+      "index": 23,
+      "prompt": "A car with an upside down Mercedes-Benz logo.",
+      "methods": {
+        "evolved_llm": 2.3333333333333335,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 0.3333333333333335
+    },
+    {
+      "index": 24,
+      "prompt": "An upside down knife is about to slice a tomato",
+      "methods": {
+        "evolved_llm": 3.6666666666666665,
+        "json_mapping": 3.0
+      },
+      "delta_evolved_minus_json": 0.6666666666666665
+    },
+    {
+      "index": 25,
+      "prompt": "Dirty dishes in a bathroom sink",
+      "methods": {
+        "evolved_llm": 3.3333333333333335,
+        "json_mapping": 4.0
+      },
+      "delta_evolved_minus_json": -0.6666666666666665
+    },
+    {
+      "index": 26,
+      "prompt": "A roulette wheel is being used as a dart board.",
+      "methods": {
+        "evolved_llm": 5.0,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 3.0
+    },
+    {
+      "index": 27,
+      "prompt": "A smartphone plugged into a typewriter.",
+      "methods": {
+        "evolved_llm": 2.6666666666666665,
+        "json_mapping": 1.6666666666666667
+      },
+      "delta_evolved_minus_json": 0.9999999999999998
+    },
+    {
+      "index": 28,
+      "prompt": "A passenger plane is parked in a parking lot.",
+      "methods": {
+        "evolved_llm": 3.3333333333333335,
+        "json_mapping": 2.0
+      },
+      "delta_evolved_minus_json": 1.3333333333333335
+    },
+    {
+      "index": 29,
+      "prompt": "Guests are laughing at a funeral.",
+      "methods": {
+        "evolved_llm": 2.0,
+        "json_mapping": 3.0
+      },
+      "delta_evolved_minus_json": -1.0
+    }
+  ],
+  "comparison": {
+    "mean_delta_evolved_minus_json": 0.3777777777777778,
+    "evolved_win_rate": 0.5,
+    "ties": 6,
+    "n_compared": 30
+  }
+}

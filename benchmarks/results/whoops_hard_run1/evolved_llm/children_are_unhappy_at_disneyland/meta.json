@@ -1,0 +1,9 @@
+{
+  "prompt": "Children are unhappy at Disneyland.\"",
+  "method": "evolved_llm",
+  "seeds": [
+    93906,
+    86071,
+    45881
+  ]
+}

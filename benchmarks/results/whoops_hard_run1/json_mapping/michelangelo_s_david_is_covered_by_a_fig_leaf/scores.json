@@ -1,0 +1,36 @@
+{
+  "prompt": "Michelangelo's David is covered by a fig leaf.",
+  "method": "json_mapping",
+  "per_seed": {
+    "43474": {
+      "seed": 43474,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/michelangelo_s_david_is_covered_by_a_fig_leaf/seed_43474.png",
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image depicts a classical male statue, but it does not represent Michelangelo’s David (which is a specific, historically recognized sculpture of a young David with distinct pose and features). Additionally, the figure is covered by a draped cloth rather than a fig leaf, which is the key object specified in the prompt. The core elements—Michelangelo’s David and a fig leaf—are entirely absent or misrepresented, so the image fails to convey the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent and well-rendered. Anatomy (muscles, hands, posture) is anatomically correct and detailed. The draped cloth flows naturally, with consistent lighting and texture. The background landscape integrates smoothly with the figure, and there are no visible distortions, artifacts, or broken elements. The overall composition is realistic and polished, with no flaws affecting visual coherence."
+      }
+    },
+    "92901": {
+      "seed": 92901,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/michelangelo_s_david_is_covered_by_a_fig_leaf/seed_92901.png",
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image does not reflect the prompt. Michelangelo’s David is a specific, historically recognized statue of a youthful male figure (often depicted with a sling and in a contrapposto pose), whereas the statue here is anatomically and stylistically distinct (e.g., muscular build, draped cloth, and pose differ from David). Additionally, the prompt specifies a “fig leaf,” but the covering is a large, flowing drape, not a fig leaf. Both the subject (David) and the key element (fig leaf) are entirely misrepresented, so the image fails to align with the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent and well-rendered. The statue’s anatomy (muscles, limbs, hands) is anatomically precise, with no distortion or broken elements. The draped cloth flows naturally, and the lighting, texture, and perspective are consistent throughout. There are no visible artifacts, warped features, or implausible blending of objects—everything appears physically coherent and realistic. The rendering is clean and deliberate, meeting the highest standard for visual quality."
+      }
+    },
+    "24185": {
+      "seed": 24185,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/michelangelo_s_david_is_covered_by_a_fig_leaf/seed_24185.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image depicts Michelangelo’s David, but the statue is covered by a draped cloth rather than a fig leaf as specified in the prompt. While the main subject (the statue) and the concept of \"covering\" are present, the key element (a fig leaf—a small, specific botanical covering) is significantly misrepresented. The cloth is a fundamentally different object and does not fulfill the prompt’s requirement, making the alignment inadequate.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent with no rendering artifacts. The statue’s anatomy (muscles, hands, face) is anatomically correct and well-defined, the drapery of the cloth is detailed and natural, and lighting/perspective are consistent. There are no distorted features, floating elements, or physical inconsistencies, resulting in a clean and realistic depiction."
+      }
+    }
+  }
+}

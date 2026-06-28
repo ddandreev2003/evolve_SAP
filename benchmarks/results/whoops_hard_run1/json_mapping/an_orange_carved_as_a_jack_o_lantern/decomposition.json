@@ -1,0 +1,10 @@
+{
+  "explanation": "Jack O'Lanterns are traditionally pumpkins, so starting with a pumpkin stabilizes traditional shape and scene before transitioning to an orange.",
+  "prompts_list": [
+    "A pumpkin carved as a Jack O'Lantern",
+    "An orange carved as a Jack O'Lantern"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

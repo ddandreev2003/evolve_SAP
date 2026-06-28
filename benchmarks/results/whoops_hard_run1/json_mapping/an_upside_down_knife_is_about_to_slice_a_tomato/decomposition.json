@@ -1,0 +1,10 @@
+{
+  "explanation": "The idea of a knife slicing a tomato is natural, but its orientation (upside down) conflicts with expectations. Establish the tomato and knife layout first, then adjust the knife position to ensure clarity and feasibility.",
+  "prompts_list": [
+    "A knife about to slice a tomato",
+    "An upside down knife about to slice a tomato"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

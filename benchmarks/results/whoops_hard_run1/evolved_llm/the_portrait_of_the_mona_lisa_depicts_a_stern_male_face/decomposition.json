@@ -1,0 +1,12 @@
+{
+  "explanation": "The Mona Lisa carries a strong visual prior for a female figure with a subtle smile. To enforce the contradictory male identity and stern expression, we first establish the art style and composition to fix the layout, then introduce the male subject to shift geometry, and finally apply the specific landmark name once the structural foundation is stable.",
+  "prompts_list": [
+    "A renaissance oil painting portrait with dramatic lighting",
+    "A portrait of a stern man in a renaissance style",
+    "The portrait of the Mona Lisa depicts a stern male face"
+  ],
+  "switch_prompts_steps": [
+    3,
+    5
+  ]
+}

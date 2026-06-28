@@ -1,0 +1,12 @@
+{
+  "explanation": "Safety protocols for welding strongly bias models to generate protective helmets or masks, making \"without a mask\" a high-conflict constraint. By starting with a neutral figure, introducing the welding tools separately, and finally specifying the absence of the mask, we prevent the model from defaulting to the standard \"safe\" welding schema and allow it to resolve the bare face geometry before applying the negative constraint.",
+  "prompts_list": [
+    "A man standing in an industrial factory",
+    "A man standing in an industrial factory holding a welding torch",
+    "A man welding metal sparks in an industrial factory without a protective face mask, bare face clearly visible"
+  ],
+  "switch_prompts_steps": [
+    3,
+    5
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "explanation": "The contradiction lies between the full shaker and its contents not falling out. Establishing the pepper shaker in its inverted position first helps the model set the improbable scene before adding the crucial aspect of no falling pepper.",
+  "prompts_list": [
+    "An upside-down pepper shaker",
+    "A full pepper shaker turned upside down with nothing coming out of it"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

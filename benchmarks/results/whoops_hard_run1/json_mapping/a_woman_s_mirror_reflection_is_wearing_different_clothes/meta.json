@@ -1,0 +1,9 @@
+{
+  "prompt": "A woman's mirror reflection is wearing different clothes.",
+  "method": "json_mapping",
+  "seeds": [
+    24232,
+    70978,
+    83715
+  ]
+}

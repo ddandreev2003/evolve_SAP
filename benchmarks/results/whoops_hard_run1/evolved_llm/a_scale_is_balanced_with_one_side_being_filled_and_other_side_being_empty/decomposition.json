@@ -1,0 +1,12 @@
+{
+  "explanation": "A scale with unequal weight cannot be balanced according to physics. To force this impossible state, we first establish the geometry of a perfectly level scale with no weight, then confirm it handles weight normally with equal loads, and finally override the physics to show unequal weight maintaining the level beam. This staged approach anchors the 'horizontal beam' structure before applying the contradictory 'unequal weight' constraint.",
+  "prompts_list": [
+    "A classic brass balance scale with nothing on the pans, resting in a perfectly balanced horizontal position.",
+    "A classic brass balance scale with two identical heavy weights on the pans, resting in a perfectly balanced horizontal position.",
+    "A classic brass balance scale with one side filled with rocks and the other side completely empty, yet the beam remains perfectly balanced horizontally."
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "explanation": "Disneyland is synonymous with joy. Begin with a generic theme park setting to introduce the layout before refining to Disneyland specifically, preserving emotional cues to conclude with the contradiction.",
+  "prompts_list": [
+    "Children are unhappy at a theme park",
+    "Children are unhappy at Disneyland"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

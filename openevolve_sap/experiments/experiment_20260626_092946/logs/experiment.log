@@ -112,3 +112,5 @@
 2026-06-26 17:43:48,333 INFO [openevolve_sap.experiment] [worker_8] evaluation_started {"run_id": "1782485028_37994b40", "program_path": "/tmp/tmpyjcuioo4.py", "mode": "evaluation", "prompt_indices": [0]}
 2026-06-26 18:47:11,713 INFO [openevolve_sap.experiment] [worker_11] evaluation_started {"run_id": "1782488831_16d753af", "program_path": "/tmp/tmp59ffgr7l.py", "mode": "evaluation", "prompt_indices": [0]}
 2026-06-26 18:47:11,720 INFO [openevolve_sap.experiment] [worker_11] evaluation_started {"run_id": "1782488831_b08f0dab", "program_path": "/tmp/tmp59ffgr7l.py", "mode": "evaluation", "prompt_indices": null}
+2026-06-26 18:53:23,622 INFO [openevolve_sap.experiment] [worker_10] evaluation_started {"run_id": "1782489203_4da3fc40", "program_path": "/tmp/tmpbv37jrcu.py", "mode": "evaluation", "prompt_indices": [0]}
+2026-06-26 18:53:33,339 INFO [openevolve_sap.experiment] [scheduler] experiment_complete {"metrics": {"alignment_score": 4.285714285714285, "gemma_score": 0.0, "combined_score": 4.285714285714285, "num_eval_prompts": 3.0, "eval_stage": 2.0, "stage1_passed": 1.0}}

@@ -1,0 +1,36 @@
+{
+  "prompt": "Movie goers nibble on vegetables instead of popcorn",
+  "method": "json_mapping",
+  "per_seed": {
+    "80048": {
+      "seed": 80048,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/movie_goers_nibble_on_vegetables_instead_of_popcorn/seed_80048.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly depicts moviegoers in a theater setting (rows of seated individuals with a darkened background typical of cinemas) actively nibbling on leafy green vegetables (lettuce). The prompt’s requirement of \"vegetables instead of popcorn\" is satisfied, as no popcorn is present and the vegetables are being consumed in the same manner popcorn would be. The scene is concrete, functional, and directly illustrates the intended scenario without metaphorical or hybrid representation. All key elements (audience, theater environment, vegetable consumption) are present and correctly contextualized.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent with no rendering artifacts or distortions. Faces, hands, and clothing are anatomically consistent and well-defined. Lighting is realistic (theater ambiance with focused illumination on the audience), textures (e.g., lettuce, fabric of suits) are natural, and perspective is consistent. There are no floating objects, merged shapes, or implausible anatomical details—every element connects logically and appears physically plausible. The overall rendering is clean and realistic."
+      }
+    },
+    "34145": {
+      "seed": 34145,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/movie_goers_nibble_on_vegetables_instead_of_popcorn/seed_34145.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image fully conveys the prompt's meaning. It shows multiple movie goers seated in what appears to be a theater environment (evidenced by the audience arrangement and focused attention). They are clearly nibbling on vegetables (celery stalks) rather than popcorn, which directly illustrates the specific substitution described in the prompt. The key elements - movie goers, vegetable consumption, and the absence of popcorn - are all present and correctly depicted in a concrete, functional manner that matches the intended situation without metaphor or symbolism.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. Faces, hands, and the celery stalks are well-formed and anatomically correct. Lighting is consistent across the scene, with natural texture details visible in clothing, skin, and the vegetables. Perspective is appropriate, and all elements connect naturally without floating objects, clipped limbs, or merged shapes. The background blur (bokeh effect) is applied professionally while maintaining sharp focus on the foreground subjects, demonstrating high-quality rendering throughout."
+      }
+    },
+    "11928": {
+      "seed": 11928,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/movie_goers_nibble_on_vegetables_instead_of_popcorn/seed_11928.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly depicts moviegoers in a theater setting actively nibbling on green vegetables (e.g., green beans or asparagus), which directly replaces the typical popcorn associated with movie-watching. While one individual in the background holds popcorn, the primary focus is on the group consuming vegetables, fulfilling the \"instead of popcorn\" intent by showcasing a concrete, functional substitution. All key elements (theater context, vegetable consumption, and the implied replacement of popcorn) are present and unambiguously aligned with the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually coherent with no rendering artifacts. Faces, hands, and vegetable grips are anatomically correct and natural. Lighting, texture, and perspective are consistent across the scene, and all elements (e.g., seats, clothing, and food) connect logically without distortion, warping, or implausible blending. The overall rendering is clean, realistic, and free of noticeable flaws."
+      }
+    }
+  }
+}

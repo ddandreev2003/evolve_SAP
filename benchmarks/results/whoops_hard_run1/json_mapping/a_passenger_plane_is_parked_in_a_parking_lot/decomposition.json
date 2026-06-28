@@ -1,0 +1,10 @@
+{
+  "explanation": "A plane taxiing on a runway provides a visually coherent concept that shares spatial similarity with parking. Transitioning to a parking lot makes the layout shift plausible before merging with the full unconventional scene.",
+  "prompts_list": [
+    "A passenger plane taxiing on a runway",
+    "A passenger plane parked in a parking lot"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

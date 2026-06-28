@@ -1,0 +1,10 @@
+{
+  "explanation": "A roulette wheel and dart board share a similar circular design. Starting with a dartboard stabilizes structure before introducing the roulette wheel's distinct features.",
+  "prompts_list": [
+    "A dart board",
+    "A roulette wheel used as a dart board"
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

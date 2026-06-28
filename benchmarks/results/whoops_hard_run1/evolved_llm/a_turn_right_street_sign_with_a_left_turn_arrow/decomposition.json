@@ -1,0 +1,10 @@
+{
+  "explanation": "Traffic signs rely on consistent pairing of text and directional symbols. Starting with the base geometric structure ensures the sign form is stable before introducing the conflicting visual data, guiding the model through the semantic contradiction without collapsing the layout.",
+  "prompts_list": [
+    "A green rectangular traffic sign mounted on a vertical metal pole.",
+    "A green rectangular traffic sign displaying the text 'TURN RIGHT' above a white arrow pointing strictly to the LEFT."
+  ],
+  "switch_prompts_steps": [
+    2
+  ]
+}

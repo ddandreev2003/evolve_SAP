@@ -1,0 +1,12 @@
+{
+  "explanation": "Horses naturally pull wagons, not push them, creating a structural contradiction. Additionally, \"opposite facing\" implies conflicting geometry. Using humans establishes the pushing action safely, while horse-costumed humans bridge the identity gap before revealing the final anatomically impossible configuration of opposing horses exerting force.",
+  "prompts_list": [
+    "Two men pushing a heavy wooden wagon along a dirt road",
+    "Two men in horse costumes pushing a heavy wooden wagon along a dirt road",
+    "Two horses facing opposite directions pushing a heavy wooden wagon from behind"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

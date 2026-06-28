@@ -1,0 +1,9 @@
+{
+  "prompt": "A wagon is being pushed from behind by two opposite facing horses horses",
+  "method": "evolved_llm",
+  "seeds": [
+    91608,
+    47411,
+    11288
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "prompt": "Children are unhappy at Disneyland.\"",
+  "method": "json_mapping",
+  "seeds": [
+    93906,
+    86071,
+    45881
+  ]
+}

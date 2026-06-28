@@ -1,0 +1,10 @@
+{
+  "explanation": "A typewriter represents older technology and dominates large-scale shape and layout. Starting with a generic power cord enables the distribution of lines and connections, transitioning smoothly to the hybrid concept of the smartphone connection.",
+  "prompts_list": [
+    "A typewriter with a power cord",
+    "A smartphone plugged into a typewriter"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

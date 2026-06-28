@@ -1,0 +1,10 @@
+{
+  "explanation": "The famous sculpture “David” presents a stable layout and identity achieved early in composition. Introducing a fig leaf—a small, but semantically significant addition—late ensures the sculpture remains anatomically correct and recognizable.",
+  "prompts_list": [
+    "Michelangelo's David",
+    "Michelangelo's David is covered by a fig leaf"
+  ],
+  "switch_prompts_steps": [
+    9
+  ]
+}

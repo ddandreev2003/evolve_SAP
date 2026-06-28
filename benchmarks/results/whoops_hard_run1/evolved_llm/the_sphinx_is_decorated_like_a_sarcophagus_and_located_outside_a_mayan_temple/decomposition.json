@@ -1,0 +1,12 @@
+{
+  "explanation": "The combination of an Egyptian Sphinx and a Mayan temple creates a strong geographical and cultural contradiction that can confuse the layout generation. Additionally, \"decorated like a sarcophagus\" introduces a material/textural conflict (wrappings vs stone). By first establishing the environment, then defining a generic \"human-lion\" shape (statue) in that location, and finally specifying the Sphinx and sarcophagus details, we guide the model through the identity and textural shift without breaking structural coherence.",
+  "prompts_list": [
+    "Ancient Mayan temple ruins surrounded by dense jungle.",
+    "A large human-lion statue standing in front of the Mayan temple.",
+    "The Sphinx is decorated like a sarcophagus and located outside a Mayan temple."
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

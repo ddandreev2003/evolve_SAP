@@ -1,0 +1,9 @@
+{
+  "prompt": "Michelangelo's David is covered by a fig leaf.",
+  "method": "evolved_llm",
+  "seeds": [
+    43474,
+    92901,
+    24185
+  ]
+}

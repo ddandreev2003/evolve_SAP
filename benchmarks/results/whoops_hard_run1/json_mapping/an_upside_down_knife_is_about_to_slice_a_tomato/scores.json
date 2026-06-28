@@ -1,0 +1,36 @@
+{
+  "prompt": "An upside down knife is about to slice a tomato",
+  "method": "json_mapping",
+  "per_seed": {
+    "82158": {
+      "seed": 82158,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/an_upside_down_knife_is_about_to_slice_a_tomato/seed_82158.png",
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image contains the correct objects (a knife and a tomato) and depicts the action of the knife approaching the tomato as if about to slice it. However, the knife is oriented normally (handle above the blade), not \"upside down\" as specified in the prompt. The prompt explicitly requires the knife to be inverted, which is a critical attribute. While the core interaction (knife and tomato) is present, the missing/inaccurate orientation of the knife constitutes a significant conceptual error, reducing the score to 3.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The knife, tomato, hand, and cutting board exhibit realistic textures, consistent lighting, and precise details (e.g., water droplets on the tomato, metallic sheen on the blade). There are no rendering artifacts, distorted anatomy, or physical inconsistencies—the hand grips the knife naturally, and all elements connect coherently. The shallow depth of field is stylistically deliberate, not a flaw."
+      }
+    },
+    "63679": {
+      "seed": 63679,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/an_upside_down_knife_is_about_to_slice_a_tomato/seed_63679.png",
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image contains the correct objects (knife and tomato) and depicts a slicing action, but the knife is oriented normally (not upside down) as specified in the prompt. The key attribute of the knife being \"upside down\" is missing, which significantly misrepresents the intended scenario. While the core interaction (slicing) is present, the incorrect orientation of the knife undermines full semantic fidelity.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The knife and tomato are rendered with realistic textures, consistent lighting, and precise perspective. There are no distortions, artifacts, or anatomical errors; all elements connect naturally and appear physically coherent. The composition is sharp and professional, with no visible flaws."
+      }
+    },
+    "53476": {
+      "seed": 53476,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/an_upside_down_knife_is_about_to_slice_a_tomato/seed_53476.png",
+      "score": {
+        "alignment score": 3,
+        "alignment explanation": "The image contains the correct objects (knife and tomato) and depicts the action of the knife approaching the tomato. However, the knife is **not upside down**—it is held in a standard orientation with the blade facing downward, which directly contradicts the prompt’s requirement for an \"upside down knife.\" This critical attribute (orientation of the knife) is missing, making the scene misaligned with the prompt’s specific description.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and coherent. The knife, tomato, hands, and wooden surface are rendered with realistic textures, consistent lighting, and precise details (e.g., the tomato’s sheen, the knife’s reflection, and anatomically correct hands). There are no visible artifacts, distortions, or broken elements, and all components connect naturally within the scene."
+      }
+    }
+  }
+}

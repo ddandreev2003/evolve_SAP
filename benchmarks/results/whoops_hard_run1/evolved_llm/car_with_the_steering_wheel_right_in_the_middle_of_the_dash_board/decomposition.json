@@ -1,0 +1,12 @@
+{
+  "explanation": "Standard vehicles feature offset steering wheels (left or right). To overcome the structural prior, the prompt sequence begins with a neutral interior, transitions to a symmetrical dashboard layout to break lateral bias, and concludes with the specific centralized steering requirement.",
+  "prompts_list": [
+    "A car interior view",
+    "A car interior with a symmetrical dashboard",
+    "A car with the steering wheel right in the middle of the dashboard"
+  ],
+  "switch_prompts_steps": [
+    3,
+    5
+  ]
+}

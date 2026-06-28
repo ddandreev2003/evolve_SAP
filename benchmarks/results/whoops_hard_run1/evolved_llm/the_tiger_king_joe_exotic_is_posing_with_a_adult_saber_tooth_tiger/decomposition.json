@@ -1,0 +1,12 @@
+{
+  "explanation": "Joe Exotic is a specific public figure and Saber-Toothed Tigers are an extinct species, creating a high-conflict scenario involving identity and biological accuracy. The strategy stabilizes the composition by first establishing the human-cat interaction with generic subjects. Then, the identity is locked to prevent face morphing during the animal type swap. Finally, the modern tiger is replaced with the prehistoric Saber-Toothed Tiger once the pose and proximity are established.",
+  "prompts_list": [
+    "A man posing with a tiger",
+    "Joe Exotic posing with a tiger",
+    "Joe Exotic posing with an adult saber tooth tiger"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

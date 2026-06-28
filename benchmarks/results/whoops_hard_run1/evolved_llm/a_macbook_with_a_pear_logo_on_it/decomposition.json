@@ -1,0 +1,12 @@
+{
+  "explanation": "A MacBook carries a strong visual prior for an Apple logo, making a pear symbol a structural contradiction. To resolve this, we first establish the general laptop geometry, then populate the lid with a neutral generic shape, and finally substitute it with the pear detail during the high-resolution stages where the model accepts shape overrides.",
+  "prompts_list": [
+    "A closed silver laptop resting on a wooden desk.",
+    "A closed silver laptop with a simple grey circular logo on the lid.",
+    "A MacBook with a distinctive pear logo on the lid."
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

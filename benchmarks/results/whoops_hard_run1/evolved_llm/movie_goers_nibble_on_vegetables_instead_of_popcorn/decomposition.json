@@ -1,0 +1,12 @@
+{
+  "explanation": "The strong cultural prior associates cinema snacks with fluffy, yellow popcorn. By starting with general theater seating, then adding generic snacks to establish hand-object geometry, the final step replaces the visual texture with firm vegetables, overcoming the semantic expectation without breaking the composition.",
+  "prompts_list": [
+    "A crowd of people sitting in a dark cinema theater watching a movie",
+    "A crowd of people sitting in a dark cinema theater eating snacks from bowls",
+    "A crowd of people sitting in a dark cinema theater eating fresh carrots and celery instead of popcorn"
+  ],
+  "switch_prompts_steps": [
+    4,
+    8
+  ]
+}

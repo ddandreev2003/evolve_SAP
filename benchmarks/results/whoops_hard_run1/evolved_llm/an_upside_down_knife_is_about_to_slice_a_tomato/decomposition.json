@@ -1,0 +1,10 @@
+{
+  "explanation": "A knife is typically oriented with the handle up and blade down for slicing. To avoid the model defaulting to this strong structural prior, the prompt starts with a standard slicing scenario to establish the layout. The contradiction (upside down orientation) is introduced in the second step during the shape definition phase.",
+  "prompts_list": [
+    "A knife slicing a tomato on a wooden table",
+    "An upside down knife slicing a tomato on a wooden table"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

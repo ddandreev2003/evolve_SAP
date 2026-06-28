@@ -1,0 +1,10 @@
+{
+  "explanation": "Since car logos are typically upright, starting with a standard Mercedes-Benz car logo keeps initial visual balance, then transitioning to the surreal upside down appearance.",
+  "prompts_list": [
+    "A car with a Mercedes-Benz logo",
+    "A car with an upside down Mercedes-Benz logo"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

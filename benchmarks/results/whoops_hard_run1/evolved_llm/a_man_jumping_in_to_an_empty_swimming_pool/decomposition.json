@@ -1,0 +1,12 @@
+{
+  "explanation": "Strong priors associate swimming pools with water and splashes, making \"empty pool\" difficult. The strategy establishes the container geometry first (basin) to lock the shape, explicitly denies water in the intermediate step to override the material prior, and resolves to the final specific prompt once the empty state is stable.",
+  "prompts_list": [
+    "A man jumping into a large concrete basin",
+    "A man jumping into a concrete swimming pool without water",
+    "A man jumping into an empty swimming pool"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

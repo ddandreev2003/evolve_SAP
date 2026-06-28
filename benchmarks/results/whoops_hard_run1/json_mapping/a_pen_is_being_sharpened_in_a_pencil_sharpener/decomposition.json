@@ -1,0 +1,10 @@
+{
+  "explanation": "Substituting a pencil for a pen initially helps stabilize visual structure and familiar object interaction before introducing the unusual act of sharpening a pen.",
+  "prompts_list": [
+    "A pencil is being sharpened in a pencil sharpener",
+    "A pen is being sharpened in a pencil sharpener"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

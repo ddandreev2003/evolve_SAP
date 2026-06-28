@@ -1,0 +1,10 @@
+{
+  "explanation": "Lionel Messi is strongly associated with soccer, presenting a semantic contradiction with tennis. Starting with a generic athlete enables correct pose and gear layout before transitioning to Messi's identity.",
+  "prompts_list": [
+    "A generic athlete playing tennis",
+    "Lionel Messi playing tennis"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

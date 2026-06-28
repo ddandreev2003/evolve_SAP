@@ -1,0 +1,10 @@
+{
+  "explanation": "The Sphinx and Mayan temple are both large structures with significant visual detail, but they should be stabilized sequentially to avoid layout conflict. Introducing the Sphinx decor like a sarcophagus last avoids early distortion.",
+  "prompts_list": [
+    "The Sphinx located outside a Mayan temple",
+    "The Sphinx decorated like a sarcophagus located outside a Mayan temple"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

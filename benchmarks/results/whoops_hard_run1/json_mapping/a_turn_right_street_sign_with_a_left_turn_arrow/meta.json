@@ -1,0 +1,9 @@
+{
+  "prompt": "A turn right street sign with a left turn arrow",
+  "method": "json_mapping",
+  "seeds": [
+    28047,
+    91968,
+    72714
+  ]
+}

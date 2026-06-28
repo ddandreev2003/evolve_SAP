@@ -1,0 +1,12 @@
+{
+  "explanation": "A mirror reflection is typically identical to the subject, creating a strong semantic prior for duplication. Starting with the basic scene layout stabilizes the composition before introducing specific clothing details. By defining the woman's outfit first and explicitly contrasting the reflection's attire last, we guide the model to render two distinct entities rather than a single duplicated subject.",
+  "prompts_list": [
+    "A woman standing in front of a full-length mirror.",
+    "A woman standing in front of a full-length mirror wearing a blue sweater and jeans.",
+    "A woman standing in front of a full-length mirror wearing a blue sweater and jeans, but her reflection is wearing a flowing red gown."
+  ],
+  "switch_prompts_steps": [
+    2,
+    7
+  ]
+}

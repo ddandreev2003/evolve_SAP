@@ -1,0 +1,10 @@
+{
+  "explanation": "The Mona Lisa is an iconic subject; starting with the portrait establishes composition and lighting to ensure scene stability before transitioning to the male facial features.",
+  "prompts_list": [
+    "The portrait of the Mona Lisa",
+    "The portrait of the Mona Lisa depicts a stern male face"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

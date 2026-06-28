@@ -1,0 +1,12 @@
+{
+  "explanation": "Horses are typically seen pulling wagons, not pushing. Starting with a pushable object stabilizes the expected push action, and introducing the horses last helps refine layout without initial friction.",
+  "prompts_list": [
+    "A wagon being pushed from behind",
+    "A wagon being pushed from behind by two horses",
+    "A wagon being pushed from behind by two opposite facing horses"
+  ],
+  "switch_prompts_steps": [
+    3,
+    6
+  ]
+}

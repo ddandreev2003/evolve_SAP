@@ -1,0 +1,12 @@
+{
+  "explanation": "Shrek's canonical green skin creates a strong prior conflict with the requested blue color. Directly prompting \"Blue Shrek\" often results in the model reverting to green or mixing both colors. By starting with a generic swamp creature (structure), enforcing the blue texture (material), and finally naming the character (identity), we bypass the green skin prior.",
+  "prompts_list": [
+    "A large muscular swamp creature standing in water",
+    "A large blue swamp creature with rough texture standing in water",
+    "Shrek with bright blue skin standing in water"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

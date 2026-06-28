@@ -1,0 +1,10 @@
+{
+  "explanation": "Chuck Norris, known for strength, is not typically depicted struggling. A generic character in a gym struggling with weights allows dynamic pose development before identity refinement.",
+  "prompts_list": [
+    "A man struggling to lift weights in a gym",
+    "Chuck Norris struggles to lift weights"
+  ],
+  "switch_prompts_steps": [
+    6
+  ]
+}

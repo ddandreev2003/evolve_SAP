@@ -1,0 +1,60 @@
+{
+  "created_at": "2026-06-28T10:58:21.167805+00:00",
+  "prompts_file": "/home/ubuntu/evolve_SAP/benchmarks/original_prompts/Whoops_Hard.txt",
+  "mapping_json": "/home/ubuntu/evolve_SAP/benchmarks/SAP_prompts/Whoops_Hard_prompt_mapping.json",
+  "seeds_json": "/home/ubuntu/evolve_SAP/benchmarks/evaluated_seeds/Whoops_Hard_prompt_seed_map.json",
+  "evolved_prompt": "/home/ubuntu/evolve_SAP/openevolve_sap/best_evolved_system_prompt.txt",
+  "methods": [
+    "evolved_llm",
+    "json_mapping"
+  ],
+  "num_prompts": 30,
+  "prompts": [
+    "A bouquet of flowers is upside down in a vase",
+    "A man is welding without a mask",
+    "A wagon is being pushed from behind by two opposite facing horses horses",
+    "A turn right street sign with a left turn arrow",
+    "car with the steering wheel right in the middle of the dash board",
+    "The portrait of the Mona Lisa depicts a stern male face.",
+    "Children are unhappy at Disneyland.\"",
+    "An orange carved as a Jack O'Lantern.",
+    "A pen is being sharpened in a pencil sharpener.",
+    "The Sphinx is decorated like a sarcophagus and located outside a Mayan temple",
+    "Shrek is blue.",
+    "A MacBook with a pear logo on it.",
+    "A woman hits an eight ball with a racket",
+    "Movie goers nibble on vegetables instead of popcorn",
+    "A full pepper shaker turned upside down with nothing coming out of it.",
+    "The tiger King, joe exotic, is posing with a adult saber tooth tiger.",
+    "A scale is balanced with one side being filled and other side being empty.",
+    "Michelangelo's David is covered by a fig leaf.",
+    "Chuck Norris struggles to lift weights",
+    "A woman's mirror reflection is wearing different clothes.",
+    "A train on asphalt.",
+    "Lionel Messi playing tennis",
+    "A man jumping in to an empty swimming pool.",
+    "A car with an upside down Mercedes-Benz logo.",
+    "An upside down knife is about to slice a tomato",
+    "Dirty dishes in a bathroom sink",
+    "A roulette wheel is being used as a dart board.",
+    "A smartphone plugged into a typewriter.",
+    "A passenger plane is parked in a parking lot.",
+    "Guests are laughing at a funeral."
+  ],
+  "generation": {
+    "height": 1024,
+    "width": 1024,
+    "num_inference_steps": 50,
+    "guidance_scale": 3.5
+  },
+  "gpu": {
+    "cuda_available": true,
+    "device_index": 0,
+    "device_name": "NVIDIA A100 80GB PCIe",
+    "total_memory_gb": 79.25
+  },
+  "env": {
+    "SAP_LOW_VRAM": "0",
+    "SAP_KEEP_MODEL_LOADED": "1"
+  }
+}

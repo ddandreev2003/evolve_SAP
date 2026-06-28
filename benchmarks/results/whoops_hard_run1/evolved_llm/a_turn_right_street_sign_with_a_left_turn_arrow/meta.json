@@ -1,0 +1,9 @@
+{
+  "prompt": "A turn right street sign with a left turn arrow",
+  "method": "evolved_llm",
+  "seeds": [
+    28047,
+    91968,
+    72714
+  ]
+}

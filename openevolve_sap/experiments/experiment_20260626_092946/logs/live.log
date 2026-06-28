@@ -1159,3 +1159,8 @@
 15:47:11 | INFO       | 1782488831_16d75 | cache hit (profile=stage1)
 15:47:11 | INFO       | 1782488831_b08f0 | evaluation started
 15:47:11 | INFO       | 1782488831_b08f0 | cache hit (profile=stage2)
+15:53:23 | INFO       | 1782489203_4da3f | evaluation started
+15:53:25 | EVAL       | 1782489203_4da3f | evaluation started | prompts=1 | pipeline=True | parallel_sap=True
+15:53:25 | PIPELINE   | 1782489203_4da3f | start 1 prompts | sap_workers=4 | vl_workers=3
+15:53:25 | SAP        | 1782489203_4da3f | parallel decompose x1
+15:53:25 | INFO       | 1782489203_4da3f | prompt 1/1: decompose

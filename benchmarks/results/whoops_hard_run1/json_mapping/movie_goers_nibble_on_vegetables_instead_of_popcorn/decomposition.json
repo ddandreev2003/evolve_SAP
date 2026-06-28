@@ -1,0 +1,10 @@
+{
+  "explanation": "The experience of being at the movies is easily recognized, and popcorn is typically associated with this setting. Starting with popcorn stabilizes the layout before bringing in the unusual vegetable substitution.",
+  "prompts_list": [
+    "Movie goers nibble on popcorn",
+    "Movie goers nibble on vegetables instead of popcorn"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

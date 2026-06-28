@@ -1,0 +1,12 @@
+{
+  "explanation": "The model strongly associates inverted containers with spilling contents due to gravity priors. By starting with a neutral upright state, transitioning to the inverted pose, and finally enforcing the 'empty emission' condition, the scene overrides physics expectations without losing object coherence.",
+  "prompts_list": [
+    "A pepper shaker standing upright on a table",
+    "A pepper shaker turned upside down on a table",
+    "A pepper shaker turned upside down with nothing coming out of it"
+  ],
+  "switch_prompts_steps": [
+    4,
+    7
+  ]
+}

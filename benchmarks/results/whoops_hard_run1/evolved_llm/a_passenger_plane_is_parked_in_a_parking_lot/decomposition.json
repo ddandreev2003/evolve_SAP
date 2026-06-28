@@ -1,0 +1,12 @@
+{
+  "explanation": "A passenger plane is typically sized for runways, making a parking lot setting physically improbable. To prevent scale collapse or hallucination, the prompt starts by establishing the parking lot geometry. A large fuselage is introduced next to define the object's massive footprint without conflicting with the environment immediately. Finally, the specific identity of the passenger plane is applied once the layout is stable.",
+  "prompts_list": [
+    "A wide concrete parking lot with white lane markings and parked cars",
+    "A large grey aircraft fuselage resting on a parking lot surface among cars",
+    "A passenger plane is parked in a parking lot"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

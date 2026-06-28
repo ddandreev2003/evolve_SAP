@@ -1,0 +1,10 @@
+{
+  "explanation": "Starting with a tennis ball, a typical object for rackets, and transitioning to the less common eight ball aligns progression from conventional to unconventional.",
+  "prompts_list": [
+    "A woman hits a tennis ball with a racket",
+    "A woman hits an eight ball with a racket"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

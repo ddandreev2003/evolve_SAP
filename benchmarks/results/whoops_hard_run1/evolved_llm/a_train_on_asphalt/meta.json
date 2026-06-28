@@ -1,0 +1,9 @@
+{
+  "prompt": "A train on asphalt.",
+  "method": "evolved_llm",
+  "seeds": [
+    71125,
+    47884,
+    38222
+  ]
+}

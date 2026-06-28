@@ -1,0 +1,10 @@
+{
+  "explanation": "The MacBook layout and design should be established first to constrain layout. Substitute in a generic fruit logo temporarily, which maintains shape and design intention before switching to the specific pear logo.",
+  "prompts_list": [
+    "A MacBook with a fruit logo on it",
+    "A MacBook with a pear logo on it"
+  ],
+  "switch_prompts_steps": [
+    5
+  ]
+}

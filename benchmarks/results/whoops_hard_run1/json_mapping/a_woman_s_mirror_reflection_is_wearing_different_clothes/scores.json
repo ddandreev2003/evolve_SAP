@@ -1,0 +1,36 @@
+{
+  "prompt": "A woman's mirror reflection is wearing different clothes.",
+  "method": "json_mapping",
+  "per_seed": {
+    "70978": {
+      "seed": 70978,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_s_mirror_reflection_is_wearing_different_clothes/seed_70978.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image clearly depicts a woman facing a mirror where her reflection is wearing distinct clothing (a cardigan, white top, and jeans) compared to her actual outfit (a gray coat). The key elements—woman, mirror, and differing attire in the reflection—are present and functionally represented without ambiguity. The scene concretely illustrates the prompt’s requirement of a reflection wearing different clothes, with no symbolic or metaphorical interpretation needed.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. Faces, hands, and clothing exhibit natural anatomy and coherent textures. Lighting is consistent across the scene, with realistic reflections in the mirror and no distortions. All elements (e.g., the lamp, window, and furniture) are well-formed, physically plausible, and integrated seamlessly. There are no rendering artifacts, warping, or broken details."
+      }
+    },
+    "83715": {
+      "seed": 83715,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_s_mirror_reflection_is_wearing_different_clothes/seed_83715.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image perfectly conveys the prompt's meaning. A woman stands before a mirror, and her reflection is clearly wearing a different outfit (denim jacket and jeans) compared to her actual clothing (beige jacket). The mirror, the woman, and the contrasting attire are all present and functionally depicted without ambiguity. The scene illustrates the exact scenario described—no symbolic or metaphorical interpretation is needed, and all key elements (woman, mirror, differing clothes) are concretely represented with correct relationships.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. Lighting, texture, and perspective are consistent throughout, with natural shadows and realistic fabric details. Faces, hands, and anatomy are anatomically correct and well-formed, with no distortions, warping, or artifacts. The mirror frame, door, and clothing show precise rendering, and all elements connect cohesively (e.g., no floating limbs or merged shapes). The composition is realistic and free of visual imperfections."
+      }
+    },
+    "24232": {
+      "seed": 24232,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_woman_s_mirror_reflection_is_wearing_different_clothes/seed_24232.png",
+      "score": {
+        "alignment score": 5,
+        "alignment explanation": "The image perfectly conveys the prompt's meaning. A woman stands in front of a mirror, and her reflection is clearly wearing different clothes (denim jacket, black top, and dark pants) than the woman herself (brown long-sleeve top). The key elements are present and correctly depicted: the woman, the mirror, and the contrasting outfits between the actual person and her reflection. The scene concretely illustrates the intended situation without symbolic or metaphorical representation - it's a straightforward depiction of a mirror reflection showing different clothing than the person observing it.",
+        "quality score": 5,
+        "quality explanation": "The image is clean, realistic, and fully coherent with no visible flaws. All elements are well-rendered with consistent lighting, natural textures, and proper perspective. The faces, hands (including the hand holding the phone), and hair appear anatomically correct and naturally formed. There are no distortions, artifacts, or broken elements - the reflection in the mirror is logically consistent with the scene. The lighting from the window creates natural shadows and highlights throughout the composition, and all objects connect naturally without floating, clipping, or unnatural blending."
+      }
+    }
+  }
+}

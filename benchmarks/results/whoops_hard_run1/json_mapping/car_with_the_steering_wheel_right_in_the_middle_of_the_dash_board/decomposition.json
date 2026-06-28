@@ -1,0 +1,10 @@
+{
+  "explanation": "A car's layout is a high-level visual element, but a steering wheel in the middle is an uncommon sight. Starting with a normal car stabilizes the overall geometry before moving the steering wheel to the central location.",
+  "prompts_list": [
+    "A car",
+    "A car with the steering wheel in the middle of the dashboard"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

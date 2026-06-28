@@ -1,0 +1,9 @@
+{
+  "prompt": "A car with an upside down Mercedes-Benz logo.",
+  "method": "json_mapping",
+  "seeds": [
+    2450,
+    83287,
+    95297
+  ]
+}

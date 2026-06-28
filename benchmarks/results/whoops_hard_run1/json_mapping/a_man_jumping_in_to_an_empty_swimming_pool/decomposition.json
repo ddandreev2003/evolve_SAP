@@ -1,0 +1,10 @@
+{
+  "explanation": "The pool structure precedes the action of jumping. \"Empty\" is emphasized at the end as it's a high-detail focus that contrasts typical filled imagery.",
+  "prompts_list": [
+    "A man about to jump into a swimming pool",
+    "A man jumping into an empty swimming pool"
+  ],
+  "switch_prompts_steps": [
+    4
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "explanation": "Dishes are semantically linked to kitchens, creating a conflict when placed in a bathroom. To resolve this, the prompt starts with the bathroom geometry alone to lock the incorrect location, then introduces the foreign objects, and finally applies the dirty texture to emphasize the contradiction without destabilizing the initial scene structure.",
+  "prompts_list": [
+    "A clean white bathroom sink with vanity fixtures",
+    "A bathroom sink filled with stacked dishes",
+    "Dirty dishes in a bathroom sink"
+  ],
+  "switch_prompts_steps": [
+    3,
+    7
+  ]
+}

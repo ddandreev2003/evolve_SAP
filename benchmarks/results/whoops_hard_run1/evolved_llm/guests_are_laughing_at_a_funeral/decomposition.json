@@ -1,0 +1,12 @@
+{
+  "explanation": "Funerals carry a strong prior for grief and silence, conflicting with laughter. To resolve this, the prompt first establishes the scene and figure layout (identity/context), introduces a milder positive expression (smiling) to override the sorrow bias, and concludes with the contradictory loud behavior (laughing) once the geometry is stable.",
+  "prompts_list": [
+    "Guests gathered at a funeral service",
+    "Guests gathered at a funeral service, smiling warmly",
+    "Guests are laughing at a funeral"
+  ],
+  "switch_prompts_steps": [
+    3,
+    5
+  ]
+}

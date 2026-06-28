@@ -137,3 +137,16 @@
 2026-06-26 18:45:11,039 - openevolve.controller - INFO - Received signal 15, initiating graceful shutdown...
 2026-06-26 18:45:11,040 - openevolve.process_parallel - INFO - Graceful shutdown requested...
 2026-06-26 18:45:11,045 - openevolve_sap.core.evolution_patch - INFO - SAP: draining 4 in-flight iteration(s) before shutdown
+2026-06-26 18:53:32,847 - openevolve.controller - INFO - Received signal 15, initiating graceful shutdown...
+2026-06-26 18:53:32,848 - openevolve.process_parallel - INFO - Graceful shutdown requested...
+2026-06-26 18:53:32,883 - openevolve_sap.core.evolution_patch - WARNING - SAP: drained iteration 53 with error: A process in the process pool was terminated abruptly while the future was running or pending.
+2026-06-26 18:53:32,884 - openevolve_sap.core.evolution_patch - INFO - ✅ Evolution completed - Shutdown requested
+2026-06-26 18:53:32,884 - openevolve.controller - INFO - Evolution stopped due to shutdown request
+2026-06-26 18:53:32,884 - openevolve_sap.core.evolution_patch - INFO - SAP: saving shutdown checkpoint at attempt 40 (23 successful cycles)
+2026-06-26 18:53:33,087 - openevolve.database - INFO - Saved database with 24 programs to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_40
+2026-06-26 18:53:33,087 - openevolve.controller - INFO - Saved best program at checkpoint 40 with metrics: alignment_score=4.2857, gemma_score=0.0000, combined_score=4.2857, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-26 18:53:33,087 - openevolve.controller - INFO - Saved checkpoint at iteration 40 to /home/ubuntu/evolve_SAP/openevolve_sap/output/checkpoints/checkpoint_40
+2026-06-26 18:53:33,337 - openevolve.process_parallel - INFO - Stopped process pool
+2026-06-26 18:53:33,337 - openevolve.controller - INFO - Using tracked best program: 635e1f62-bc19-4f22-b563-3d3495fcef64
+2026-06-26 18:53:33,337 - openevolve.controller - INFO - Evolution complete. Best program has metrics: alignment_score=4.2857, gemma_score=0.0000, combined_score=4.2857, num_eval_prompts=3.0000, eval_stage=2.0000, stage1_passed=1.0000
+2026-06-26 18:53:33,338 - openevolve.controller - INFO - Saved best program to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program.py with program info to /home/ubuntu/evolve_SAP/openevolve_sap/output/best/best_program_info.json

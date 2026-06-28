@@ -1,0 +1,36 @@
+{
+  "prompt": "A passenger plane is parked in a parking lot.",
+  "method": "json_mapping",
+  "per_seed": {
+    "68502": {
+      "seed": 68502,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_passenger_plane_is_parked_in_a_parking_lot/seed_68502.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image correctly depicts a passenger plane, and it is parked (stationary). However, the location is fundamentally misrepresented: the plane is situated on an airport tarmac/runway, not a parking lot. A \"parking lot\" explicitly refers to a designated area for **vehicles like cars**, not aircraft. The scene fails to illustrate the intended scenario (a passenger plane in a car parking lot), which is a critical conceptual error. While the main subject (the plane) is present, the core contextual element (location) is entirely incorrect, rendering the situation non-functional for the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually flawless. The plane is rendered with precise anatomical accuracy (engines, landing gear, windows, and fuselage are coherent and correctly proportioned). Lighting, texture, and perspective are consistent across the entire scene, with natural shadows and no distortion. The background (tarmac, distant buildings) is sharp and physically plausible. There are no artifacts, warping, or broken elements—every component connects naturally, resulting in a clean, realistic, and fully coherent photograph."
+      }
+    },
+    "9878": {
+      "seed": 9878,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_passenger_plane_is_parked_in_a_parking_lot/seed_9878.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a passenger plane parked, but it is situated on an airport tarmac or runway, not in a parking lot. Parking lots are typically designated for ground vehicles like cars, with specific features such as marked stalls for automobiles, which are absent here. The scene misrepresents the key contextual element of the prompt, as airports are not parking lots, and the intended situation (a plane in a car-oriented parking area) is not concretely illustrated. While the main subject (the plane) is present and parked, the location is fundamentally incorrect, leading to significant misalignment with the prompt's meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean and realistic, with consistent lighting, texture, and perspective throughout. There are no rendering artifacts, distortions, or broken elements; the plane's components (e.g., wings, engines, landing gear) are well-formed and physically coherent, with natural connections and no floating or clipped parts. The sky, tarmac, and overall scene exhibit high fidelity, appearing as a professional photograph with no visible flaws."
+      }
+    },
+    "34740": {
+      "seed": 34740,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_passenger_plane_is_parked_in_a_parking_lot/seed_34740.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a passenger plane that is parked, which satisfies the main subject requirement. However, the location is significantly misrepresented. The prompt specifies \"a parking lot,\" which conventionally refers to an area designed for vehicles like cars, not aircraft. Instead, the image depicts the plane on an airport tarmac or apron—a standard location for aircraft parking. This is a fundamental contextual error, as the plane is in its expected operational environment rather than an unconventional setting like a car parking lot. The key element of location is misrepresented, making the scene inconsistent with the prompt's intent.",
+        "quality score": 5,
+        "quality explanation": "The image is visually clean, realistic, and fully coherent with no visible flaws. The plane, ground markings, buildings, and background elements are rendered with consistent lighting, texture, and perspective. There are no distortions, artifacts, or broken elements; all components appear physically plausible and well-formed. The overall composition is sharp, detailed, and professionally executed, meeting the highest standard for visual quality."
+      }
+    }
+  }
+}

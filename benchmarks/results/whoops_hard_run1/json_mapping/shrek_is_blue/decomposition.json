@@ -1,0 +1,10 @@
+{
+  "explanation": "Shrek is a distinct character with a recognizable green color. Using a simple \"blue ogre\" initially sets the stage for a color change before fully introducing Shrek to ensure visual coherence.",
+  "prompts_list": [
+    "A blue ogre",
+    "Shrek is blue"
+  ],
+  "switch_prompts_steps": [
+    3
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "prompt": "A turn right street sign with a left turn arrow",
+  "method": "json_mapping",
+  "per_seed": {
+    "28047": {
+      "seed": 28047,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_turn_right_street_sign_with_a_left_turn_arrow/seed_28047.png",
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The image shows a green diamond-shaped sign with two vertical arrows (one pointing up, one down), which does not correspond to a \"turn right street sign with a left turn arrow.\" A turn right sign typically features a right-pointing arrow, and the prompt specifies a contradiction (a right-turn sign displaying a left arrow). The image contains neither a right-turn indication nor a left-turn arrow, making it completely misaligned with the prompt’s meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is a clean, realistic photograph with no visible rendering artifacts. The sign, pole, and background are sharply defined, with consistent lighting, texture, and perspective. All elements are physically coherent and well-formed, showing no distortion or surreal blending."
+      }
+    },
+    "72714": {
+      "seed": 72714,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_turn_right_street_sign_with_a_left_turn_arrow/seed_72714.png",
+      "score": {
+        "alignment score": 2,
+        "alignment explanation": "The image shows a blue street sign with a **right turn arrow** (curved arrow pointing right) and a straight arrow, but the prompt explicitly requires a **left turn arrow** (which would curve left). While the image contains a street sign and arrows (relevant components), the critical element—the left turn arrow—is absent and replaced with a right turn arrow. This misrepresents the core intent of the prompt, as the described interaction (a turn-right sign with a left-turn arrow) is not depicted. The scene fails to illustrate the requested contradiction or hybrid instruction, as the arrows present do not align with the prompt’s wording.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with no visible rendering artifacts. The street sign is sharply defined, with consistent lighting, clean edges, and realistic textures. The background (blurred buildings and sky) uses intentional bokeh without distortion, and all elements (e.g., the sign’s bolts, pole, and arrow shapes) are physically coherent and well-formed. Perspective and color consistency are maintained throughout, resulting in a fully realistic and flawlessly rendered scene."
+      }
+    },
+    "91968": {
+      "seed": 91968,
+      "image_path": "/home/ubuntu/evolve_SAP/benchmarks/results/whoops_hard_run1/json_mapping/a_turn_right_street_sign_with_a_left_turn_arrow/seed_91968.png",
+      "score": {
+        "alignment score": 1,
+        "alignment explanation": "The prompt specifies \"a turn right street sign with a left turn arrow,\" implying a single sign that **incorrectly** uses a left-turn arrow to indicate a right-turn instruction (a contradictory or erroneous sign). The image shows two distinct signs: a yellow circular sign with a left-turn arrow (a standard left-turn sign) and a black-and-white sign with a right-turn arrow (a standard right-turn sign). There is no single sign that combines a \"turn right\" designation with a left-turn arrow. The scene depicts two functionally correct, separate signs, which does not align with the prompt’s contradictory requirement. Thus, the image fails to convey the intended meaning.",
+        "quality score": 5,
+        "quality explanation": "The image is a high-quality photograph with sharp focus on the signs and pole, consistent lighting, and realistic textures (e.g., the weathered metal pole and clear signage). The background buildings are intentionally blurred (bokeh effect), maintaining visual coherence. There are no rendering artifacts, distortions, or broken elements—every component appears physically plausible and well-formed. The composition is clean and realistic, with no visible flaws."
+      }
+    }
+  }
+}
